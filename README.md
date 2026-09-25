@@ -16,9 +16,10 @@ An open research notebook asking which recurring voltage patterns different toke
 
 The comparison uses the existing frozen numerical baseline; no pretrained EEG/LLM checkpoint was run. The separate [model compatibility audit](notes/model-compatibility-2026-09-25.md) records actual input and checkpoint constraints. Four participants and later sessions remain reserved. Greater same-person similarity can also reflect stable anatomy, sensors or artifacts; it is not proof of universal tokens.
 
-Reproduce Experiment008 with the existing locked environment (all commands from this directory):
+Recompute Experiment008 in a separate checkout with the existing locked environment. Preserve the checked-in published receipts by moving them aside before creating a fresh run (all commands from that checkout directory):
 
 ```sh
+mv results/008 results/008-published
 python -m eegt.repeated freeze
 python -m eegt.repeated acquire
 python -m eegt.repeated qualify
@@ -27,7 +28,7 @@ python -m eegt.repeated evaluate
 python scripts/report_repeated.py
 ```
 
-The published manifest freezes the selection. Existing immutable analyses refuse overwrite; use a clean copy with the release's locked dependencies when rerunning. The baseline `results/003/model.json` is already in source. To rebuild the cross-release index, extract the v0.3.0 database asset too; Experiment008's numerical analysis needs only its newly acquired sources. [Release assets](https://github.com/h3ro-dev/eegt/releases/tag/v0.4.0) contain the new databases and feature arrays; original waves remain at OpenNeuro.
+The published manifest freezes the selection. Existing immutable analyses refuse overwrite; use a clean copy with the release's locked dependencies when rerunning. The baseline `results/003/model.json` is already in source. The v0.4.0 data bundle includes the small v0.3.0 source catalog needed to rebuild the cross-release index; Experiment008's numerical analysis needs only its newly acquired sources. [Release assets](https://github.com/h3ro-dev/eegt/releases/tag/v0.4.0) contain the new databases and feature arrays; original waves remain at OpenNeuro.
 
 ## Continuous database milestone · v0.3.0
 

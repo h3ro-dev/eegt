@@ -88,3 +88,5 @@ The requested eegt.utilize.com name stays a separate DNS/TLS acceptance item.
 3. Once hypotheses and adapters are fixed, evaluate on the four untouched EESM23 participants and preserve later sessions for a separate repeat-session test. Do not examine reserved waves during method development.
 4. Admit actual Neurable data only after physical units, channel/reference order and source timing are verified. Historical device wire evidence is not automatically calibrated EEGT input.
 5. Publish each material run with its numbered note, complete denominator and correction history.
+
+A second repeated-session source is pinned for future intake: [EESM19 / ds005185 v1.0.2](https://openneuro.org/datasets/ds005185/versions/1.0.2). The metadata inventory contains 200 sleep SET files from 20 source participants, totaling 68.91 GB. No waves were downloaded. Resolve its inherited technical sidecars and ear-only channel selection, then freeze a bounded subset before acquisition; see [the candidate receipt](protocol/future-ear-source-intake-2026-09-25.json).

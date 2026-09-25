@@ -25,6 +25,10 @@ def run(root=ROOT):
     for directory in ['results/008','results/corpus-v2','data/derived/008']:
         paths += [p for p in (root/directory).rglob('*') if p.is_file() and not p.name.endswith('.partial')]
     paths += [root/p for p in ['results/corpus-v1/corpus.sqlite','results/corpus-v1/summary.json','results/003/model.json','protocol/experiment-008.json','protocol/corpus-manifest-008.json','notes/experiment-008.md','notes/model-compatibility-2026-09-25.md','notes/validation-008.md','requirements.lock']]
+    for directory in ['eegt','scripts','tests']:
+        paths += sorted((root/directory).glob('*.py'))
+    paths += sorted((root/'protocol').glob('*.json'))
+    paths += [root/p for p in ['README.md','DATABASE.md','RUNBOOK.md','STRATEGY.md','CITATION.cff','LICENSE']]
     paths=sorted(set(paths))
     content={str(p.relative_to(root)):dict(bytes=p.stat().st_size,sha256=digest(p)) for p in paths}
     dest=out/'eegt-v0.4.0-data.tar.gz'

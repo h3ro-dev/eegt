@@ -1,0 +1,48 @@
+{
+  "schema": "eegt-processing-receipt/v1",
+  "experiment": "008",
+  "protocol_freeze_commit": "700b2d0",
+  "protocol_frozen_at": "2026-09-25T15:12:01.147326+00:00",
+  "run_state": "COMPUTED_AND_INDEPENDENTLY_REVIEWED",
+  "raw_acquisition_bytes": 1865998768,
+  "source_files": 12,
+  "feature_bytes": 123612165,
+  "numerical_workers": 1,
+  "native_numeric_thread_cap": 1,
+  "observed_extract_rss_kib": 967056,
+  "observed_extract_cpu_percent": 99.2,
+  "observed_memory_pressure_level": 1,
+  "database_totals": {
+    "analyzed_recordings": 12,
+    "candidate_recordings": 12,
+    "complete_pairs": 6,
+    "full_qualified_hours": 86.38362111111111,
+    "qualified_recordings": 12,
+    "selected_analysis_hours": 48.0,
+    "transition_events": 47476,
+    "valid_windows": 306392,
+    "windows": 345564
+  },
+  "tests": {
+    "count": 50,
+    "status": "PASS",
+    "warnings": "treated as errors"
+  },
+  "old_experiment003_input_hashes_unchanged": true,
+  "failed_preanalysis_attempt": "Qualification stopped before a receipt was produced because a NumPy sample count was not JSON-serializable. Integer conversion was corrected and a synthetic embedded-SET regression test added before feature extraction. No selection, threshold or outcome changed.",
+  "billing": {
+    "raw_data_access_charge_usd": 0,
+    "provider_inference_actual_cost_usd": null,
+    "note": "Native provider allowance used for research/review; dollar cost not supplied by native receipts."
+  },
+  "new_reserved_source_participants": [
+    "007",
+    "008",
+    "009",
+    "010"
+  ],
+  "checkpoint_inference_executed": false,
+  "physical_neurable_input_admitted": false,
+  "review_receipt_sha256": "eb5b8ec14e08a22026ae380ad257887c9528844e2559f6a8de213c7e1607e634",
+  "review_report_sha256": "5bce222e15a3c41669031d30ff5d38f2c4bced9e7b26b4c9410cf0b1d0fcddd8"
+}
