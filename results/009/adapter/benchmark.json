@@ -1,0 +1,41 @@
+{
+  "shape": [
+    1,
+    4,
+    30,
+    200
+  ],
+  "python": "3.12.14",
+  "torch": "2.4.1",
+  "numpy": "1.26.4",
+  "cpu_logical_count": 14,
+  "torch_intraop_threads": 1,
+  "torch_interop_threads": 1,
+  "process_thread_rows_after_warmup": 1,
+  "current_rss_mib": 373.96875,
+  "peak_rss_mib": 373.96875,
+  "checkpoint_load_wall_s": 1.2225846250075847,
+  "inference_wall_s": [
+    1.5459631669800729,
+    1.2714672090951353,
+    1.479858750011772,
+    1.5702951247803867,
+    1.170902291778475
+  ],
+  "inference_wall_median_s": 1.479858750011772,
+  "inference_cpu_s": [
+    0.3176709999999998,
+    0.2892930000000007,
+    0.3369630000000008,
+    0.37085599999999985,
+    0.3613039999999996
+  ],
+  "inference_cpu_median_s": 0.3369630000000008,
+  "environment_threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  }
+}

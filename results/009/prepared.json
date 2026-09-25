@@ -1,0 +1,3633 @@
+{
+  "array_path": "data/derived/009/prepared.npz",
+  "array_sha256": "627c2de46632a4eb7dd2e205996f43fdbb22744c40d68f64273a885c4a9540df",
+  "created_at_utc": "2026-09-25T17:32:43.398622+00:00",
+  "discovery_contract": "The encoder receives only numeric patches; source grouping remains in this curator receipt.",
+  "inputs": {
+    "eegt/pretrained_study.py": "6ab7db0c7c067f31cc6fb385f5e3a35f9a0f18a3e0706f521864f0979ef59624",
+    "protocol/corpus-manifest-008.json": "2358ceb6673058989932ac70e83ae7fd52151b0dd5ab8dc53db5371b130807f5",
+    "protocol/experiment-009.json": "5c45dc42d237b89653909bf536f3cf44927a28303f808ac1d0bc48b2c00562f1",
+    "requirements.lock": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6",
+    "results/003/model.json": "c37fcb23e99e217ee0405504cab12723563a0717834643c949aa3116864f5879",
+    "results/008/features.json": "0d405a99bf4a0be5834cc6121469ef289d25e14a0d78bfe0f6cda858b24287ab",
+    "results/008/qualification.json": "33e0ac19e09888435be1c41c1baffb03d722ef73f0ae11c02f9b509efa905654"
+  },
+  "records": [
+    {
+      "array_row": null,
+      "baseline_valid_centers": 9,
+      "candidate_index": 0,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 23,
+      "candidate_index": 1,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 16,
+      "candidate_index": 2,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 3,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 4,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 5,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 21,
+      "candidate_index": 6,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 7,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 24,
+      "candidate_index": 8,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 9,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 10,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 11,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 12,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 13,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 14,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 24,
+      "candidate_index": 15,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 16,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 17,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 18,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 19,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 20,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 21,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 22,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 9,
+      "candidate_index": 23,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 8,
+      "candidate_index": 24,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 24,
+      "candidate_index": 25,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": 0,
+      "baseline_array_sha256": {
+        "coordination": "a2013218c2a524708b117db059632c2254f51176f129e69ef3c5a54e85860e75",
+        "morphology": "489f8e776398113d6b56c2c7bec4257e510b8c25eef0fc8604fd51f96d1d7c7a",
+        "spectrum": "6af62c1aec2f66212c27f333e381f83d7add8b233d5cc787892e82d442a70506"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 26,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "fa4f8eace3bb4915b26b0525cbbaab7617be6c1dc530e6335aae6939ce9dab94",
+      "preprocessed_peak_uv": 81.9057572997642,
+      "reasons": [],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 180,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 27,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 28,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 29,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 30,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 31,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 3,
+      "candidate_index": 32,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 22,
+      "candidate_index": 33,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 17,
+      "candidate_index": 34,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 6,
+      "candidate_index": 35,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 5,
+      "candidate_index": 36,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 23,
+      "candidate_index": 37,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 38,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 39,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 11,
+      "candidate_index": 40,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": 1,
+      "baseline_array_sha256": {
+        "coordination": "6cc632889c213984cfee4ff3e674effe62f76a85c349eeb46c5e7646a427fcc9",
+        "morphology": "6949ffaca0d3c5dddb5320fea5eb85a68df0c31d11b04ed5bbbbd125f8cef5d8",
+        "spectrum": "5e982a95ae564696b294c2c0b5299115a15b94d45a25f9c901a449dabeea69cb"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 41,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "3cd08ca1e8f64c2f9900dc612370b1c43258a1b2b424dffb79419073c4638c27",
+      "preprocessed_peak_uv": 92.3288607464679,
+      "reasons": [],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 30,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": 2,
+      "baseline_array_sha256": {
+        "coordination": "d49addfa5f861dbdbb63d99515f4f757d3365c52419185380637e65194c118aa",
+        "morphology": "e8b4b3805ec3f309267153f90e867d2e5352c8040a0e9513cf8fe8f3df341857",
+        "spectrum": "2f9c89725c6790d4df395add3a7cbf9fdbc8b0a3f3bab5b97221ee5e8aedee15"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 42,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "8df1bf848663f0e8a45bb97e484f95420a6dffe0d052c76d747ec424dbde0507",
+      "preprocessed_peak_uv": 97.42258481011446,
+      "reasons": [],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 60,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 15,
+      "candidate_index": 43,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 17,
+      "candidate_index": 44,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 22,
+      "candidate_index": 45,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 13,
+      "candidate_index": 46,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 47,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 48,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 49,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 50,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 51,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 52,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": 3,
+      "baseline_array_sha256": {
+        "coordination": "032cdaf3fc3f1da37c92b76209b8cafc501ea88c6c287e4b53ceb659d8a04bcd",
+        "morphology": "4f33053638246fdd4ef43bfc9ed39adb982fa456348d566c518245dd3f05dd72",
+        "spectrum": "bd1cbcd0e07d9e43160cea60fb13ead0c4a6966afbf6a7fb47c56bfb806ca74a"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 53,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "c43d127508fbff46ae6424bea799a46873c48c574535887e4f51363eacae241e",
+      "preprocessed_peak_uv": 96.61130018610898,
+      "reasons": [],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 390,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 54,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 14,
+      "candidate_index": 55,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 21,
+      "candidate_index": 56,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 4,
+      "candidate_index": 57,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 58,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 19,
+      "candidate_index": 59,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 23,
+      "candidate_index": 60,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 61,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 62,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 63,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": 4,
+      "baseline_array_sha256": {
+        "coordination": "216048c2bb938bd5a181081988456fa880f67f94cccf2d30a65d54fa27b6f897",
+        "morphology": "67bc8df3de793aa74eaf57ab49b44d5d79db22e926cad98e74af1067b34b9b75",
+        "spectrum": "fd62b61c3ae6caa0ca87d0465b64abf6d9830f453a7ca658d39197824792318f"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 64,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "e36d58290c6102f505845d2240ac48a40ad801724a0b10b43d21cc50c64a3feb",
+      "preprocessed_peak_uv": 50.191288496744356,
+      "reasons": [],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 120,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 65,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 66,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 67,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 68,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 69,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 70,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 19,
+      "candidate_index": 71,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 23,
+      "candidate_index": 72,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 73,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 22,
+      "candidate_index": 74,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 75,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 76,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 77,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 78,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 12,
+      "candidate_index": 79,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 80,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 81,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 9,
+      "candidate_index": 82,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 83,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 84,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 21,
+      "candidate_index": 85,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 2,
+      "candidate_index": 86,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 87,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 88,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 89,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 90,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 91,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 92,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 93,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 94,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 95,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 96,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 97,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 98,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 99,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 10,
+      "candidate_index": 100,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 21,
+      "candidate_index": 101,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 21,
+      "candidate_index": 102,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 103,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 104,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 105,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 106,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 107,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 108,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 109,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 110,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 24,
+      "candidate_index": 111,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 112,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 113,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 23,
+      "candidate_index": 114,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 115,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 27,
+      "candidate_index": 116,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 117,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 118,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 24,
+      "candidate_index": 119,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 120,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 121,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 27,
+      "candidate_index": 122,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 24,
+      "candidate_index": 123,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 21,
+      "candidate_index": 124,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 125,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 19,
+      "candidate_index": 126,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": 5,
+      "baseline_array_sha256": {
+        "coordination": "9eb1949db53271c4c56b62d64a55e4d651def6d9a0bba76518b45578e3fb3671",
+        "morphology": "c7c2d11360a732076b90bd783d202ecd32ccf26af6b8ee74725f6ccca1e45a82",
+        "spectrum": "d488ff6da49860c114ebbe20f79a5cbe5bd2465e1c5a464a2ec9846cb3b2f5a2"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 127,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "f205de5c18238de4e765e75700f4b910c0914dd950673a27d7a903687293f5df",
+      "preprocessed_peak_uv": 92.83652819183304,
+      "reasons": [],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 210,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 128,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 27,
+      "candidate_index": 129,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 9,
+      "candidate_index": 130,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 131,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 16,
+      "candidate_index": 132,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 19,
+      "candidate_index": 133,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 134,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 22,
+      "candidate_index": 135,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 12,
+      "candidate_index": 136,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 10,
+      "candidate_index": 137,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 23,
+      "candidate_index": 138,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 139,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 140,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 141,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 142,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 143,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 144,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 145,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 146,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 147,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 148,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 149,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 150,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 151,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 152,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 153,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 154,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 155,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 156,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 157,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 158,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 159,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 19,
+      "candidate_index": 160,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 161,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 162,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 20,
+      "candidate_index": 163,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 11,
+      "candidate_index": 164,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 5,
+      "candidate_index": 165,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 166,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 27,
+      "candidate_index": 167,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 22,
+      "candidate_index": 168,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 169,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 170,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 171,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 14,
+      "candidate_index": 172,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 5,
+      "candidate_index": 173,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 174,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 175,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 1,
+      "candidate_index": 176,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 17,
+      "candidate_index": 177,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 27,
+      "candidate_index": 178,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 179,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 19,
+      "candidate_index": 180,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 27,
+      "candidate_index": 181,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 26,
+      "candidate_index": 182,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 183,
+      "duration_seconds": 30,
+      "reasons": [
+        "nonfinite native samples"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": 6,
+      "baseline_array_sha256": {
+        "coordination": "b7879cb3b9114554e2cf043d7c1fad0a8251a0112d48f01d6f94299c8444e5d4",
+        "morphology": "0d630f8e3d11428f2ae9c55e2ed34dfe4c80f9cc1665c317e5f0e22228b92aef",
+        "spectrum": "f9808022096054269ca0ba7453a800165fedc85e6abd4c8bac26d256e7f79766"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 184,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "8755d5c559cedd0248d9d5cb990b7bce01f0437ed9b40d91447c4eb7553b92a5",
+      "preprocessed_peak_uv": 75.33691972781915,
+      "reasons": [],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 120,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 185,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 186,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 187,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 188,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 189,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 24,
+      "candidate_index": 190,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 191,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 25,
+      "candidate_index": 192,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 193,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 28,
+      "candidate_index": 194,
+      "duration_seconds": 30,
+      "reasons": [
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 27,
+      "candidate_index": 195,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 15,
+      "candidate_index": 196,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 23,
+      "candidate_index": 197,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": 7,
+      "baseline_array_sha256": {
+        "coordination": "a2644c7f651364b4e4042a4a0b12035f74268fd23c4812febe5a921f9d77994d",
+        "morphology": "aac6908382b3fac249b135404730f60877df186e975fa2e5e74393c7f1e177ff",
+        "spectrum": "ab6ab9008d4ab4efa491b77207dfd103cdfff967891fc5ae39dab0fd2a382c15"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 198,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "66ae58702df279735baf02070ec1e58abdb22ea28635a58546a6977c5e5e4aad",
+      "preprocessed_peak_uv": 96.28715779642442,
+      "reasons": [],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 540,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": 8,
+      "baseline_array_sha256": {
+        "coordination": "8e532d32e1e408b4201a6c98def0551da3e405d468e2fe21fe3664d06996a3fb",
+        "morphology": "6091bc5bc18bb96d7732e134bef6ee02205cecd16bce5c8402e600b2f86d1f4a",
+        "spectrum": "2be5af0d2d04f1e069d3103dab63c7f44baf52c9125a85fc644222eb6cffd728"
+      },
+      "baseline_valid_centers": 28,
+      "candidate_index": 199,
+      "duration_seconds": 30,
+      "prepared_array_sha256": "2eef0d1a55de43318ca930c154b862681c656989e3f2de2a6eb66b9d25d79a18",
+      "preprocessed_peak_uv": 74.21322963863224,
+      "reasons": [],
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005",
+      "start_seconds": 570,
+      "status": "ELIGIBLE"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 200,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 201,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 202,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 203,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 3,
+      "candidate_index": 204,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 205,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 206,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 207,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 208,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 209,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 210,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 211,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 212,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 213,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 214,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 215,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 216,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 217,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 1,
+      "candidate_index": 218,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 219,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 1,
+      "candidate_index": 220,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 0,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 221,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 30,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 1,
+      "candidate_index": 222,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 60,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 223,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 90,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 224,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 120,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 6,
+      "candidate_index": 225,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 150,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 2,
+      "candidate_index": 226,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 180,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 4,
+      "candidate_index": 227,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 210,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 2,
+      "candidate_index": 228,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 240,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 2,
+      "candidate_index": 229,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "nonfinite native samples"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 270,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 8,
+      "candidate_index": 230,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 300,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 1,
+      "candidate_index": 231,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 330,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 1,
+      "candidate_index": 232,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 360,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 233,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 390,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 1,
+      "candidate_index": 234,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 420,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 1,
+      "candidate_index": 235,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 450,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 12,
+      "candidate_index": 236,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 480,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 4,
+      "candidate_index": 237,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 510,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 0,
+      "candidate_index": 238,
+      "duration_seconds": 30,
+      "preprocessed_peak_uv": 88.27426764883506,
+      "reasons": [
+        "BASELINE_QC"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 540,
+      "status": "REJECTED"
+    },
+    {
+      "array_row": null,
+      "baseline_valid_centers": 3,
+      "candidate_index": 239,
+      "duration_seconds": 30,
+      "reasons": [
+        "BASELINE_QC",
+        "preprocessed absolute amplitude exceeds 100 uV"
+      ],
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006",
+      "start_seconds": 570,
+      "status": "REJECTED"
+    }
+  ],
+  "rejection_counts": {
+    "BASELINE_QC": 171,
+    "nonfinite native samples": 70,
+    "preprocessed absolute amplitude exceeds 100 uV": 160
+  },
+  "schema": "eegt-pretrained-prepared/v1",
+  "source_hashes": {
+    "data/cache/ds005178/sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-earEEG_eeg.set": "4a48c81877a7ffffa1ccd090cfb2d9f3dfcfac478fff52640b16b9a7aef90efe",
+    "data/cache/ds005178/sub-001/ses-002/eeg/sub-001_ses-002_task-sleep_acq-earEEG_eeg.set": "382e4ef4b6667071b7a371129cf7aa08031b1a963b9414938c688d4c0be5aca4",
+    "data/cache/ds005178/sub-002/ses-001/eeg/sub-002_ses-001_task-sleep_acq-earEEG_eeg.set": "bc459c3d7073db20c090103124af119ebccb7f8347b8eb303eb6c0c15717287a",
+    "data/cache/ds005178/sub-002/ses-002/eeg/sub-002_ses-002_task-sleep_acq-earEEG_eeg.set": "6db2252503fbc623a1a6d2bc847100d49ec68b6969974ec509e0729ae976758b",
+    "data/cache/ds005178/sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-earEEG_eeg.set": "076e478bfc223c0f81105ac31ee2ec13307298945ce40e5172bea7a3ca30a968",
+    "data/cache/ds005178/sub-003/ses-002/eeg/sub-003_ses-002_task-sleep_acq-earEEG_eeg.set": "299b93354588e12e3738fd2dab3882a3f966313a644a4430273da87af5a8139e",
+    "data/cache/ds005178/sub-004/ses-001/eeg/sub-004_ses-001_task-sleep_acq-earEEG_eeg.set": "42943e46ec611cac3a3dbcecfd92912f35e092c573b23f35d2c447b5c66c187a",
+    "data/cache/ds005178/sub-004/ses-002/eeg/sub-004_ses-002_task-sleep_acq-earEEG_eeg.set": "adecd20dca40ac42a25c304884410600d1adb8314281a4f68d8c9af1ef078dc9",
+    "data/cache/ds005178/sub-005/ses-001/eeg/sub-005_ses-001_task-sleep_acq-earEEG_eeg.set": "fb84f5e4354e9a08db8bebd215b8f13b3f8a884b09846e1f4dae788e5c0b38a4",
+    "data/cache/ds005178/sub-005/ses-002/eeg/sub-005_ses-002_task-sleep_acq-earEEG_eeg.set": "c2177909cb2d825e0dae42b9860c6e8897981f310f902d1cda967118d20384b6",
+    "data/cache/ds005178/sub-006/ses-001/eeg/sub-006_ses-001_task-sleep_acq-earEEG_eeg.set": "5db81e10f81b9b67d9c3bfe876b754d7645ce5f3bb2a95df7e9b3e289179d132",
+    "data/cache/ds005178/sub-006/ses-002/eeg/sub-006_ses-002_task-sleep_acq-earEEG_eeg.set": "0e833ec23daa5dd246eaeecc1f589bacbe5faad614d544f54e62be338cdf8b8e",
+    "data/derived/008/13d73c7c2d4467655f14f87a.npz": "30916f79286a9e42b048b5f13b90daa61223a6680513feea430907011fbc7f0f",
+    "data/derived/008/3547bf8a1ada993d6537b989.npz": "07aa20344cf45b9e3b679b3b7e3b1e699aafb1155c37f3a1923b96813854d231",
+    "data/derived/008/505284a21c453899cd814cfc.npz": "9f98dcbdb583c14a6c85df97d44d4dc94ad5535cb99315002a7ee90be16cb6b4",
+    "data/derived/008/69ef03116e5a723e1ed7517d.npz": "56f9c033a56264157e04e1bfded6e2758a67829251a09399d2079ef60170a684",
+    "data/derived/008/92ed14e224d7e78fe07ba140.npz": "7139511ddbc78b859b4c251c9889f127654ac9b7adb108068184ad27ee43b69b",
+    "data/derived/008/967f50cf7f0325877f3f857b.npz": "d751e6c2342b4b009605f30eead6c0fe6def38fb9ce3a49378ca26c7c6e25d30",
+    "data/derived/008/994b9095fb35625b16fd1e8f.npz": "829d8d380eeab0e12fb4f8bf7aa773625fd2c8d992e3c430a85cd5d0dc55cd3f",
+    "data/derived/008/a9a07129bb93b4fefffdf689.npz": "c2532631306b8a5393bf3b99ef7aaacbb38cd0ff6c35d61ba6f337224c093aa7",
+    "data/derived/008/b1d2f8c1de3792b06dcbe154.npz": "6497e74e2c2e40aead046cc860fd202ba7510381e4e33c6bad26cf80a4fd76b0",
+    "data/derived/008/bcdc9aae2113b52db91990cf.npz": "e79d0153b386f34f50f5b77ac2cf2f9a607af4bb9db09e2e9540f8db06f50e0e",
+    "data/derived/008/d22340de41eff601bb6701d6.npz": "c61ea6d1a3b19a92387349bef99089f36e5765ff1823876b439f8592151c482e",
+    "data/derived/008/fa5b67db66646a5545dbfea4.npz": "efc6e899a0e0f1738ad5c5860ada0eaf7369aefd7822e88bf1103181ca81057e"
+  },
+  "totals": {
+    "candidate_blocks": 240,
+    "candidate_hours": 2,
+    "candidate_recordings": 12,
+    "eligible_blocks": 9,
+    "eligible_seconds": 270,
+    "rejected_blocks": 231
+  }
+}

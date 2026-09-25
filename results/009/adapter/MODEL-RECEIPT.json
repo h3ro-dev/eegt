@@ -1,0 +1,250 @@
+{
+  "artifacts": {
+    "REPORT.md": {
+      "bytes": 5382,
+      "path": "out/REPORT.md",
+      "sha256": "cf13a2f79c726aab414abefe79daaa0fbdf9bc0e042ecee55c16e6bf926a3054"
+    },
+    "pretrained.py": {
+      "bytes": 4434,
+      "path": "out/pretrained.py",
+      "sha256": "f64fa16898852048dcdd14da2f843d7b239c5e4e697e7be3a71643fb838841a0"
+    },
+    "test_pretrained.py": {
+      "bytes": 6426,
+      "path": "out/test_pretrained.py",
+      "sha256": "a22ee0ad97472e192372f0ec50e6f16b23a2e589f27cd3a69d8a2768d9ca1d1e"
+    }
+  },
+  "checkpoint": {
+    "architecture": {
+      "codebook_size_f": 4096,
+      "codebook_size_t": 4096,
+      "if_codebook": false,
+      "in_channels": 200,
+      "num_res_layers": 8,
+      "out_channels": 200,
+      "res_channels": 200,
+      "s4_bidirectional": true,
+      "s4_d_state": 64,
+      "s4_dropout": 0.1,
+      "s4_layernorm": true,
+      "s4_lmax": 570,
+      "skip_channels": 200
+    },
+    "architecture_source": "Pretrain/pretrain_EEGSSM.py",
+    "file": {
+      "bytes": 60901006,
+      "path": "scratch/CodeBrain.pth",
+      "sha256": "d9714b8732c9883a04d022ee66254cd578ae1fa27f5458e6ab7f1aa96e9a7352"
+    },
+    "key_first": "module.patch_embedding.mask_encoding",
+    "key_last": "module.norm.bias",
+    "key_manifest": {
+      "bytes": 22356,
+      "path": "out/checkpoint-keys.tsv",
+      "sha256": "9d8c8206d8b6900cd25f4ab84a153f0d52ef625bf9da3ef4dfb8c29b56048c95"
+    },
+    "load": "torch.load(file, weights_only=True, map_location='cpu') after size and SHA-256 verification",
+    "model_parameter_count": 15167600,
+    "prefix_normalization": "remove exactly one module. from every key; no dropped keys",
+    "raw_prefix": "module.",
+    "raw_tensor_keys": 269,
+    "revision": "bef08d2fdb1759685371cc635aad21ce59163689",
+    "state_tensor_numel": 15196408,
+    "strict_load": "PASS; 269/269 keys matched, no missing or unexpected keys",
+    "url": "https://huggingface.co/YjMajy/CodeBrain/resolve/bef08d2fdb1759685371cc635aad21ce59163689/CodeBrain.pth"
+  },
+  "created_at_utc": "2026-09-25T17:36:06.953581+00:00",
+  "environment": {
+    "einops": "0.8.1",
+    "numerical_threads": {
+      "blas_environment": {
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      },
+      "process_thread_rows_after_warmup": 1,
+      "torch_interop": 1,
+      "torch_intraop": 1
+    },
+    "numpy": "1.26.4",
+    "opt_einsum": "3.4.0",
+    "platform": "macOS arm64",
+    "python": "3.12.14",
+    "python_path": "/Users/codynewreward/lanes.noindex/eco-uzwh8s.23/scratch/venv/bin/python",
+    "requirements": {
+      "bytes": 211,
+      "path": "out/requirements-encoder.lock",
+      "sha256": "1db32b395b1ca94bce6243882163a9f0b650827534a6dccdccaf4e2d2c802c68"
+    },
+    "torch": "2.4.1"
+  },
+  "interface": {
+    "adapter_batch_one_mapping": "unsqueeze only leading batch dimension",
+    "class": "CodeBrainEncoder(checkpoint_path)",
+    "input": "finite numpy.float32 [B,4,30,200], B>=1, preprocessed microvolts/100",
+    "method": "encode(patches)",
+    "output": "finite numpy.float32 [B,4,30,200] full patch embeddings",
+    "preprocessing": "none",
+    "upstream_batch_one_shape": [
+      4,
+      30,
+      200
+    ]
+  },
+  "limits": [
+    "No real EEG inference or scientific comparisons in this lane",
+    "Input channel order and spatial meaning supplied by caller",
+    "Torch/BLAS process environment must be set before earlier imports"
+  ],
+  "native_runtime": {
+    "effort": "max",
+    "evidence": "/Users/codynewreward/.codex-profiles/studio9-utlyze/sessions/2026/09/25/rollout-2026-09-25T11-18-35-01a0d993-78e1-70e3-b235-597a56495ae4.jsonl: JSONL line 8 turn_context",
+    "model": "gpt-6-sol",
+    "session_id": "01a0d993-78e1-70e3-b235-597a56495ae4"
+  },
+  "owner": "session-15973a4f1cd4f2fc1898f7929c98e0bc",
+  "parent": "session-13ffd342d925791b856652db872e4142",
+  "performance": {
+    "benchmark_file": {
+      "bytes": 929,
+      "path": "out/benchmark.json",
+      "sha256": "4b3ae7f22215564e796115575ad97378a47eb659228393142e0903ed410c81ca"
+    },
+    "checkpoint_load_wall_s": 1.2225846250075847,
+    "cpu_logical_count": 14,
+    "current_rss_mib": 373.96875,
+    "environment_threads": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "inference_cpu_median_s": 0.3369630000000008,
+    "inference_cpu_s": [
+      0.3176709999999998,
+      0.2892930000000007,
+      0.3369630000000008,
+      0.37085599999999985,
+      0.3613039999999996
+    ],
+    "inference_wall_median_s": 1.479858750011772,
+    "inference_wall_s": [
+      1.5459631669800729,
+      1.2714672090951353,
+      1.479858750011772,
+      1.5702951247803867,
+      1.170902291778475
+    ],
+    "numpy": "1.26.4",
+    "peak_rss_mib": 373.96875,
+    "process_thread_rows_after_warmup": 1,
+    "python": "3.12.14",
+    "shape": [
+      1,
+      4,
+      30,
+      200
+    ],
+    "torch": "2.4.1",
+    "torch_interop_threads": 1,
+    "torch_intraop_threads": 1
+  },
+  "resources": {
+    "actual_network_bytes": null,
+    "disk_bound_gib": 2,
+    "download_bound_gib": 1.5,
+    "initial_demand": "2 GiB RAM / one numerical CPU",
+    "network_note": "Exact transfer bytes not logged; retained checkpoint plus uv cache under 0.5 GiB",
+    "scratch_kib": 888664
+  },
+  "schema": "eegt-codebrain-adapter-receipt/v1",
+  "status": "VERIFIED_ADAPTER; ROOT_INTEGRATION_PENDING",
+  "upstream": {
+    "archive": {
+      "bytes": 2858462,
+      "path": "input/codebrain.zip",
+      "sha256": "4ebe7c8324a7a03e6cd54b7aa417bc65881d0c34bfc1089194f19c7ea8739805"
+    },
+    "commit": "22d350caf68246d2fda4f630ef837420db3fb130",
+    "compatibility_patch": {
+      "bytes": 586,
+      "diff": "--- official/Models/SSSM.py\n+++ eegt/vendor/codebrain/SSSM.py\n@@ -1,7 +1,7 @@\n import math\n import torch\n import torch.nn as nn\n-from Models.SGConv import GConv\n+from .SGConv import GConv\n from einops import rearrange, repeat\n \n \n@@ -126,7 +126,7 @@\n         h_t, _ = self.S41(h)\n \n         h_s = rearrange(h_t, \"b c l -> b l c\")\n-        SWA_mask = self.generate_local_window_mask(L, 1).cuda()\n+        SWA_mask = self.generate_local_window_mask(L, 1).to(h_s.device)\n         h_s, _ = self.attention(h_s, h_s, h_s, attn_mask=SWA_mask)\n         h_s = rearrange(h_s, \"b l c -> b c l\")\n \n",
+      "path": "out/vendor.patch",
+      "scope": "relative SGConv import and attention mask device transfer only",
+      "sha256": "14fe2162eaddeff7a9cc510be9042a6be05afa3e903a08aa64c66b94e0066700"
+    },
+    "license": "Apache-2.0; official CodeBrain LICENSE copied byte-identically",
+    "repository": "https://github.com/jingyingma01/CodeBrain",
+    "source_files": {
+      "LICENSE": {
+        "bytes": 11357,
+        "path": "scratch/source/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "Models/SGConv.py": {
+        "bytes": 13776,
+        "path": "scratch/source/Models/SGConv.py",
+        "sha256": "94f12f897ab4e8784a45d64fb65664184c872e6928159a6759fda2920c488be8"
+      },
+      "Models/SSSM.py": {
+        "bytes": 11845,
+        "path": "scratch/source/Models/SSSM.py",
+        "sha256": "e2fe5f7364907129507f3a9e946df9f9e44e10c3511efdcf772fab46d6fa278f"
+      },
+      "Pretrain/pretrain_EEGSSM.py": {
+        "bytes": 5269,
+        "path": "scratch/source/Pretrain/pretrain_EEGSSM.py",
+        "sha256": "7bf6fe7dca837669a9d7da6b855bd32435c226e0b26a0088ddc71d5cfd81cc01"
+      }
+    },
+    "vendored_files": {
+      "LICENSE": {
+        "bytes": 11357,
+        "path": "out/vendor/codebrain/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "SGConv.py": {
+        "bytes": 13776,
+        "path": "out/vendor/codebrain/SGConv.py",
+        "sha256": "94f12f897ab4e8784a45d64fb65664184c872e6928159a6759fda2920c488be8"
+      },
+      "SSSM.py": {
+        "bytes": 11847,
+        "path": "out/vendor/codebrain/SSSM.py",
+        "sha256": "9f7b892a3908ad838cb43a842c14c2a165e7f93d6243b31f0c9d32c90183253b"
+      }
+    }
+  },
+  "verification": {
+    "checks": [
+      "strict weights and frozen eval",
+      "batch1/batch2 shape",
+      "repeat determinism",
+      "finite zero/sine/noise outputs",
+      "batch vs single within atol=rtol=2e-5",
+      "malformed/permuted shape, dtype and nonfinite refusal",
+      "same-size checkpoint tamper refused before torch.load",
+      "diagonal-zero/off-diagonal-negative-infinity mask",
+      "original pinned CPU forward equivalent within atol=rtol=1e-6",
+      "inference_mode enabled"
+    ],
+    "status": "PASS",
+    "synthetic_only": true,
+    "test_count": 7,
+    "test_log": {
+      "bytes": 1629,
+      "path": "out/test-output.txt",
+      "sha256": "24f6326fe2248d183601f1ca6743f22b36b4dd42939bf209f613eaa900e69edd"
+    },
+    "warnings": [
+      "torch.nn.utils.weight_norm FutureWarning",
+      "torch.nn.functional.dropout2d 3D-input UserWarning"
+    ]
+  },
+  "work_id": "eco-uzwh8s.23"
+}
