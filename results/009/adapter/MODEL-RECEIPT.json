@@ -1,9 +1,9 @@
 {
   "artifacts": {
     "REPORT.md": {
-      "bytes": 5382,
+      "bytes": 5884,
       "path": "out/REPORT.md",
-      "sha256": "cf13a2f79c726aab414abefe79daaa0fbdf9bc0e042ecee55c16e6bf926a3054"
+      "sha256": "062cb9d5aa265c9c174b61e6608303e203c4ed54e3d20738d0bd1568d49a49e0"
     },
     "pretrained.py": {
       "bytes": 4434,
@@ -55,7 +55,7 @@
     "strict_load": "PASS; 269/269 keys matched, no missing or unexpected keys",
     "url": "https://huggingface.co/YjMajy/CodeBrain/resolve/bef08d2fdb1759685371cc635aad21ce59163689/CodeBrain.pth"
   },
-  "created_at_utc": "2026-09-25T17:36:06.953581+00:00",
+  "created_at_utc": "2026-09-25T17:44:05.267941+00:00",
   "environment": {
     "einops": "0.8.1",
     "numerical_threads": {
@@ -81,6 +81,48 @@
       "sha256": "1db32b395b1ca94bce6243882163a9f0b650827534a6dccdccaf4e2d2c802c68"
     },
     "torch": "2.4.1"
+  },
+  "input_manifest": {
+    "checks": {
+      "input/PLAN.md": {
+        "actual_sha256": "2f0817a56ccabb1687826a125434f22ace1e352ee18186a61b043ad4772a1eb8",
+        "bytes": 3706,
+        "expected_sha256": "2f0817a56ccabb1687826a125434f22ace1e352ee18186a61b043ad4772a1eb8",
+        "match": true
+      },
+      "input/codebrain.zip": {
+        "actual_sha256": "4ebe7c8324a7a03e6cd54b7aa417bc65881d0c34bfc1089194f19c7ea8739805",
+        "bytes": 2858462,
+        "expected_sha256": "4ebe7c8324a7a03e6cd54b7aa417bc65881d0c34bfc1089194f19c7ea8739805",
+        "match": true
+      },
+      "input/fleet-context.json": {
+        "actual_sha256": "ddc8dbe440c214411a71c77036bb12e485015186b0b051da1d44c120605b88ab",
+        "bytes": 249113,
+        "expected_sha256": "da5662cbc45e19961b94d00e1f7828f780c8ff32284520323d6620eb1c4e8b3f",
+        "match": false
+      },
+      "input/model-compatibility-2026-09-25.md": {
+        "actual_sha256": "59ef72e764524cda196fb08a18a91503e30aa518c5a0cbea492a38b9b7bb61a6",
+        "bytes": 8958,
+        "expected_sha256": "59ef72e764524cda196fb08a18a91503e30aa518c5a0cbea492a38b9b7bb61a6",
+        "match": true
+      },
+      "input/model-compatibility.json": {
+        "actual_sha256": "732b8c534f2d9a3eaef81fe7c827c2974167ee0a97143d460580858dc98bb55d",
+        "bytes": 12504,
+        "expected_sha256": "732b8c534f2d9a3eaef81fe7c827c2974167ee0a97143d460580858dc98bb55d",
+        "match": true
+      }
+    },
+    "manifest": {
+      "bytes": 699,
+      "path": "input-manifest.json",
+      "sha256": "013b8bfe10fa26605f1544e6ed8587274b9effcfab379f9b7d379dd5b9837f61"
+    },
+    "matched": 4,
+    "mismatch_context": "Root confirmed fleet-context telemetry refresh after manifest generation in Inbox message dcc833d0-c7c6-4aeb-a331-443781e63067; input files were read-only to this lane",
+    "total": 5
   },
   "interface": {
     "adapter_batch_one_mapping": "unsqueeze only leading batch dimension",
@@ -160,7 +202,7 @@
     "download_bound_gib": 1.5,
     "initial_demand": "2 GiB RAM / one numerical CPU",
     "network_note": "Exact transfer bytes not logged; retained checkpoint plus uv cache under 0.5 GiB",
-    "scratch_kib": 888664
+    "scratch_kib": 888668
   },
   "schema": "eegt-codebrain-adapter-receipt/v1",
   "status": "VERIFIED_ADAPTER; ROOT_INTEGRATION_PENDING",

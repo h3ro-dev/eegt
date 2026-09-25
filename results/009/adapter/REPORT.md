@@ -27,6 +27,8 @@ For one `[1,4,30,200]` synthetic 30-second window after one warmup, five forward
 
 Torch issued the upstream `weight_norm` deprecation and the `dropout2d` 3D-input behavior warning. Warnings were not globally suppressed. The `dropout2d` operation is inactive in eval mode, but the source arithmetic remains untouched.
 
+One input manifest entry differs: `input/fleet-context.json` is 249,113 bytes in both places, but the manifest lists SHA-256 `da5662cbc45e19961b94d00e1f7828f780c8ff32284520323d6620eb1c4e8b3f`, while the present file is `ddc8dbe440c214411a71c77036bb12e485015186b0b051da1d44c120605b88ab`. Its timestamp predates this session. The root confirmed this was a telemetry refresh after manifest generation; the CodeBrain ZIP and all other input entries match their manifests. This lane did not edit `input/`.
+
 ## Interface boundary
 
 `encode` accepts only finite NumPy `float32` `[B,4,30,200]` arrays with `B>=1`, already preprocessed and scaled by the caller in microvolts/100. It returns finite NumPy `float32` arrays of the same shape. It has no names, coordinates, identity or task fields. The official spatial kernel spans 19 channel positions and operates on the four supplied channel slots; the adapter cannot validate spatial meaning. No real EEG, task output, or scientific transfer claim was evaluated here.

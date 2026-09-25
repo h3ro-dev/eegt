@@ -87,6 +87,12 @@ token geometry. Experiment008 adds a bounded descriptive repeat-night comparison
 
 `results/008/catalog.sqlite` holds the twelve new raw-record receipts. `results/008/analysis.sqlite` adds per-record metrics and primary-scale transition events; `data/derived/008/*.npz` retains feature rows, timestamps, validity and native segment keys. The JSON summary includes all cross-night distance cells and all exact pairing-permutation statistics. The frozen training reference is reused without refitting.
 
+## Pretrained comparison extension · v0.5.0
+
+`results/009/analysis.sqlite` retains 240 candidates, 27 segment/view comparisons and 36 waveform-control comparisons. Candidate rows include source grouping, native start seconds and rejection reasons. `data/derived/009/prepared.npz` contains nine `[4,30,200]` numerical wave blocks and aligned frozen descriptors; `embeddings.npz` contains the 45 model outputs. Source identity, array order, dtype, shape and numerical bytes are hash-bound. The checkpoint and source commits are pinned in `protocol/experiment-009.json`.
+
+Only 9/240 segments qualify (3.75%). That denominator is candidate 30-second segments from the selected first ten minutes of each recording; it is neither corpus coverage nor diagnostic accuracy. There are zero complete eligible participant pairs and no primary p values. This reuses exposed recordings and does not increase the corpus's qualified recording or hour totals. Original source files, participants and recording-hours must not be counted again because another model processed them.
+
 Downloaded hours (86.38), selected analysis hours (48), QC windows and scored-context exposure are distinct. The dataset's other four participants remain untouched. The other nights of analyzed participants are reserved for new-session evaluation, not new-person evaluation.
 
 A **held-out person** is someone whose recordings were never used to choose or tune the method. A **held-out session** is another recording occasion, possibly from someone already represented. A **held-out device or dataset** tests another measurement setup or source. These tests answer different questions; success at one cannot stand in for the others. Grouping metadata stays in the evaluator, while discovery receives anonymous numeric arrays.

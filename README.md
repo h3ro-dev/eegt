@@ -2,13 +2,39 @@
 
 **An LLM’s interpretation of your brainwaves**
 
-An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release is a numerical experiment on public around-ear EEG. Its models are LLM-authored unsupervised algorithms; this does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
+An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release adds a pinned pretrained EEG encoder to the existing numerical views of public around-ear EEG. This does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
 
 - [Research Notes website](https://h3ro-dev.github.io/eegt/)
 - [Continuous corpus and transitions](https://h3ro-dev.github.io/eegt/growth.html)
 - [Database contract](DATABASE.md), [Experiment 003 protocol](protocol/experiment-003.json), and [input contract](protocol/INPUT-CONTRACT.md)
 - [Experiment 002 data card](DATA_CARD.md), [results](results/002/metrics.json), and [model card](MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
+
+## Pretrained encoder feasibility · v0.5.0
+
+[Experiment009](https://h3ro-dev.github.io/eegt/pretrained.html) runs the fixed CodeBrain EEGSSM backbone on four ear channels. Nine of 240 prespecified 30-second segments pass the common quality gate: 4.5 minutes from a two-hour candidate sample. The encoder completes 45 passes including waveform controls. No participant has three valid segments in each of two nights, so all six planned participant-level comparisons are **INSUFFICIENT_PARTICIPANTS**. No p values or universal-agreement claim are produced. All candidates, exclusions, segment correlations and outputs are retained.
+
+The model runs continuous embeddings, not the full discrete tokenizer or an LLM decoder. Its 19-scalp-channel pretraining does not validate four-ear-channel geometry; pretraining overlap is unknown. This experiment adds no new source recordings or participants. The corpus inventory remains 66 qualified recordings / 309.85 recorded hours. See [the note](notes/experiment-009.md), [protocol](protocol/experiment-009.json) and [release bundle](https://github.com/h3ro-dev/eegt/releases/tag/v0.5.0).
+
+Recompute the comparisons from the v0.5.0 bundle in a separate directory, with Python 3.12 and the original numerical `requirements.lock`. Preserve the published summary before rerunning:
+
+```sh
+mv results/009/summary.json results/009/summary-published.json
+python -m eegt.pretrained_study evaluate
+python scripts/report_pretrained.py
+```
+
+For encoder inference, use a **separate** Python 3.12 environment with `requirements-encoder.lock`; Torch 2.4.1 uses NumPy 1.26.4, while the original numerical environment remains unchanged. Download the [pinned official weights](https://huggingface.co/YjMajy/CodeBrain/resolve/bef08d2fdb1759685371cc635aad21ce59163689/CodeBrain.pth); the adapter verifies its size and SHA before safe loading. In a rerun copy, move the published `results/009/inference.json` aside and run:
+
+```sh
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+python -m eegt.pretrained_study infer --checkpoint /absolute/path/CodeBrain.pth
+CODEBRAIN_CHECKPOINT=/absolute/path/CodeBrain.pth python tests/test_pretrained.py
+```
+
+The full original-source equivalence test additionally needs `CODEBRAIN_UPSTREAM_ZIP`, the archive for [commit22d350c](https://github.com/jingyingma01/CodeBrain/archive/22d350caf68246d2fda4f630ef837420db3fb130.zip). Tests report unavailable optional dependencies or source-reference evidence as skips, not passes. For raw-to-prepared reproduction, also obtain the v0.4.0 feature bundle and its pinned twelve raw recordings, preserve `results/009/prepared.json`, then run `python -m eegt.pretrained_study prepare` in the numerical environment. The v0.5.0 archive already includes the nine derived wave blocks and aligned descriptors needed for inference and evaluation. Original full recordings and model weights are not bundled.
+
+EEGT-owned code is MIT; vendored CodeBrain files are Apache-2.0 with [attribution and modification notice](eegt/vendor/codebrain/NOTICE). Source-wave derivatives retain their CC0 source provenance.
 
 ## Repeated-session milestone · v0.4.0
 
@@ -36,7 +62,7 @@ The full pinned around-ear source inventory contains 55 recordings and 21,535,18
 
 Experiment 003 measures changes in waveform shape, spectrum and sensor coordination, preserving native gaps. Experiment 004 records the expanded corpus; 006 tests phase and nuisance controls; 007 reports frozen participant/dataset transfer. Experiment 005 is a prepared Neurable capture protocol and **has not run**. See the [Research Notes](notes/) and [current priorities](STRATEGY.md).
 
-The methods see numerical samples and technical timing/validity only. They receive no identity, task or clinical labels. These are three LLM-authored numerical views, not three pretrained LLMs independently discovering the same language. This historical milestone had no repeated sessions. Experiment008 below the current release adds a first repeat-night comparison; pretrained-model inference and actual headset transfer remain open.
+The methods see numerical samples and technical timing/validity only. They receive no identity, task or clinical labels. These are three LLM-authored numerical views, not three pretrained LLMs independently discovering the same language. This historical milestone had no repeated sessions. Experiment008 adds a first repeat-night comparison; Experiment009 adds pretrained EEG encoder execution with insufficient participant support. Actual headset transfer remains open.
 
 ## Earlier tokenization baseline · v0.2.0
 

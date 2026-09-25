@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-25T17:44:31.947510+00:00",
+  "machine": "studio4",
+  "launch": "root-owned bounded numeric process, no new agent",
+  "available_immediate_bytes": 25576062976,
+  "pressure": "1",
+  "load": "{ 13.00 13.96 14.24 }",
+  "disk_free_bytes": 177034670080,
+  "observed_synthetic_peak_mib": 373.96875,
+  "demand": "one numerical CPU, less than1GiB RAM,45forwards"
+}
