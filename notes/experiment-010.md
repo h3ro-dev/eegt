@@ -50,7 +50,7 @@ Correlations are aggregated as a median within a recording, then a mean over the
 
 ## Waveform controls
 
-The same selected signals are run at half amplitude, with reversed polarity, with reversed channel order, and with independent Fourier-phase randomization in each channel. These summaries compare the encoder with itself under each transformation; they do not establish cross-model agreement. High half-gain agreement and low phase-randomized agreement suggest sensitivity to temporal organization, while polarity and channel changes still affect the representation. This does not separate neural structure from artifacts.
+The same selected signals are run at half amplitude, with reversed polarity, with reversed channel order, and with independent Fourier-phase randomization in each channel. These summaries compare the encoder with itself under each transformation; they do not establish cross-model agreement. The phase-control seed is 9009 plus the candidate ordinal, used solely to reproduce random phases; the original model input contains only wave values. High half-gain agreement and low phase-randomized agreement suggest sensitivity to temporal organization, while polarity and channel changes still affect the representation. This does not separate neural structure from artifacts.
 
 | Waveform control | Geometry vs original rho | Change vs original rho | Embedding RMS displacement |
 | --- | --- | --- | --- |

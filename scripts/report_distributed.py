@@ -76,7 +76,7 @@ def run(root=ROOT):
                     "that universal geometry exists. They also do not prove that individual patterns repeat across nights.")
     control_text=("The same selected signals are run at half amplitude, with reversed polarity, with reversed channel order, and with independent "
                   "Fourier-phase randomization in each channel. These summaries compare the encoder with itself under each transformation; they do "
-                  "not establish cross-model agreement. High half-gain agreement and low phase-randomized agreement suggest sensitivity to temporal "
+                  "not establish cross-model agreement. The phase-control seed is 9009 plus the candidate ordinal, used solely to reproduce random phases; the original model input contains only wave values. High half-gain agreement and low phase-randomized agreement suggest sensitivity to temporal "
                   "organization, while polarity and channel changes still affect the representation. This does not separate neural structure from artifacts.")
     method=("Inputs contain only four numeric ear-EEG channels, native microvolts, thirty seconds at 250 Hz, bandpassed at 0.3–75 Hz, "
             "notched at 60 Hz, resampled to 200 Hz and divided by 100. The source reports 50 Hz mains; the retained 60 Hz notch does not specifically "

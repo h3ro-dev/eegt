@@ -1,0 +1,271 @@
+"""Independent, bounded audit of the sealed Experiment 010 snapshot."""
+import collections
+import hashlib
+import json
+import math
+import sqlite3
+from pathlib import Path
+
+import numpy as np
+from scipy.spatial.distance import pdist, squareform
+from scipy.stats import spearmanr
+
+HERE = Path(__file__).resolve().parents[1]
+ROOT = HERE / "input/repo"
+VIEWS = ("morphology", "spectrum", "coordination")
+VARIANTS = ("original", "gain_half", "polarity_flip", "channel_reverse", "independent_phase")
+checks = []
+
+
+def check(label, condition):
+    if not condition:
+        raise AssertionError(label)
+    checks.append(label)
+
+
+def digest(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def arrhash(array):
+    a = np.ascontiguousarray(array)
+    return hashlib.sha256(a.dtype.str.encode() + str(a.shape).encode() + a.tobytes()).hexdigest()
+
+
+def close(a, b, atol=2e-12):
+    return bool(np.allclose(a, b, rtol=0, atol=atol, equal_nan=False))
+
+
+def rho(a, b):
+    return float(spearmanr(np.asarray(a).ravel(), np.asarray(b).ravel()).statistic)
+
+
+def distances(emb, base):
+    cosine = squareform(pdist(emb.astype(np.float64), metric="cosine"))
+    numerical = squareform(pdist(base.astype(np.float64), metric="euclidean")) / math.sqrt(base.shape[1])
+    return cosine, numerical
+
+
+def nested(values, selected):
+    """Rows are blocks. Return draw-wise mean of complete person scores."""
+    v = np.atleast_2d(values)
+    by_pair = collections.defaultdict(list)
+    for i, row in enumerate(selected):
+        by_pair[(row["source_subject"], row["session"])].append(i)
+    people = []
+    per_person = {}
+    for person in sorted({r["source_subject"] for r in selected}):
+        a, b = by_pair[(person, "001")], by_pair[(person, "002")]
+        if len(a) >= 3 and len(b) >= 3:
+            per_person[person] = (np.median(v[:, a], axis=1) + np.median(v[:, b], axis=1)) / 2
+            people.append(per_person[person])
+    return np.mean(np.stack(people), axis=0), per_person
+
+
+def variant(patch, name, seed):
+    if name == "original":
+        return patch.copy()
+    if name == "gain_half":
+        return patch * np.float32(0.5)
+    if name == "polarity_flip":
+        return -patch
+    if name == "channel_reverse":
+        return patch[::-1].copy()
+    if name == "independent_phase":
+        wave = patch.reshape(4, 6000).astype(np.float64)
+        spectrum = np.fft.rfft(wave, axis=1)
+        phase = np.random.default_rng(seed).uniform(-np.pi, np.pi, spectrum.shape)
+        phase[:, [0, -1]] = 0
+        return np.fft.irfft(spectrum * np.exp(1j * phase), n=6000, axis=1).astype(np.float32).reshape(patch.shape)
+    raise AssertionError(name)
+
+
+def main():
+    manifest = json.loads((HERE / "input/MANIFEST.json").read_text())
+    for name, sha in manifest.items():
+        check("manifest:" + name, digest(ROOT / name) == sha)
+    p9 = json.loads((ROOT / "protocol/experiment-009.json").read_text())
+    p10 = json.loads((ROOT / "protocol/experiment-010.json").read_text())
+    prepared = json.loads((ROOT / "results/010/prepared.json").read_text())
+    inference = json.loads((ROOT / "results/010/inference.json").read_text())
+    summary = json.loads((ROOT / "results/010/summary.json").read_text())
+    for key in ("source", "encoder", "preprocessing", "baseline", "representation", "inference", "controls"):
+        check("protocol inherited:" + key, p9[key] == p10[key])
+    check("protocol quality thresholds", {k: v for k, v in p9["quality"].items() if k != "rule"} ==
+          {k: v for k, v in p10["quality"].items() if k != "rule"})
+    check("protocol prior hash", digest(ROOT / "protocol/experiment-009.json") == p10["prior_exposure"]["experiment_009_protocol_sha256"])
+    check("freeze predates preparation", p10["frozen_at_utc"] < prepared["created_at_utc"] < inference["observed_at_utc"])
+    for name, sha in prepared["inputs"].items():
+        check("prepared input:" + name, digest(ROOT / name) == sha)
+    check("prepared archive receipt", prepared["array_sha256"] == digest(ROOT / prepared["array_path"]))
+    check("inference prepared receipt", inference["prepared_receipt_sha256"] == digest(ROOT / "results/010/prepared.json"))
+    check("inference prepared archive", inference["prepared_archive_sha256"] == prepared["array_sha256"])
+    check("inference protocol", inference["protocol_sha256"] == digest(ROOT / "protocol/experiment-010.json"))
+    check("checkpoint pin", inference["checkpoint_sha256"] == p10["encoder"]["weight_sha256"])
+    for name, sha in inference["code_sha256"].items():
+        check("inference code:" + name, digest(ROOT / name) == sha)
+    for name, sha in summary["inputs"].items():
+        check("summary input:" + name, digest(ROOT / name) == sha)
+    check("embedding archive receipt", inference["array_sha256"] == digest(ROOT / inference["array_path"]))
+    check("analysis database receipt", summary["analysis_sha256"] == digest(ROOT / "results/010/analysis.sqlite"))
+
+    rows = prepared["records"]
+    check("5760 contiguous candidate indices", len(rows) == 5760 and [r["candidate_index"] for r in rows] == list(range(5760)))
+    groups = collections.defaultdict(list)
+    for row in rows:
+        groups[(row["source_subject"], row["session"])].append(row)
+        check("row quality:" + str(row["candidate_index"]), (row["quality_status"] == "PASS") == (not row["reasons"]))
+        check("row stratum:" + str(row["candidate_index"]), row["stratum_index"] == row["start_seconds"] // 1200)
+        check("row rejection:" + str(row["candidate_index"]), row["quality_status"] == "PASS" or row["status"] == "REJECTED")
+    check("exact source pairs", set(groups) == {(x, y) for x in p10["source"]["subjects"] for y in p10["source"]["sessions"]})
+    check("recording IDs unique", len({v[0]["recording_id"] for v in groups.values()}) == 12)
+    for pair, group in groups.items():
+        check("480 exact times:" + str(pair), [r["start_seconds"] for r in group] == list(range(0, 14400, 30)))
+        check("record identity:" + str(pair), len({r["recording_id"] for r in group}) == 1)
+    by_stratum = collections.defaultdict(list)
+    for row in rows:
+        if row["quality_status"] == "PASS":
+            by_stratum[(row["recording_id"], row["stratum_index"])].append(row)
+    expected = {sorted(group, key=lambda r: r["start_seconds"])[(len(group) - 1) // 2]["candidate_index"]
+                for group in by_stratum.values()}
+    selected = [r for r in rows if r["status"] == "ELIGIBLE"]
+    check("lower median selection", {r["candidate_index"] for r in selected} == expected)
+    check("all other statuses", all(r["status"] == ("ELIGIBLE" if r["candidate_index"] in expected else
+          "QUALIFIED_UNSELECTED" if r["quality_status"] == "PASS" else "REJECTED") for r in rows))
+    counts = collections.Counter((r["source_subject"], r["session"]) for r in selected)
+    complete = sorted(x for x in p10["source"]["subjects"] if min(counts[(x, "001")], counts[(x, "002")]) >= 3)
+    check("paired person gate", complete == prepared["inference_gate"]["complete_participants"] and len(complete) == 5)
+    check("person 003 descriptive", counts[("003", "001")] == 1 and counts[("003", "002")] == 11)
+    check("110 complete-person blocks", sum(counts[(x, y)] for x in complete for y in ("001", "002")) == 110)
+    statuses = collections.Counter(r["status"] for r in rows)
+    check("totals", statuses == {"ELIGIBLE": 122, "QUALIFIED_UNSELECTED": 2851, "REJECTED": 2787})
+    check("quality count", sum(r["quality_status"] == "PASS" for r in rows) == 2973)
+    check("reasons count", dict(collections.Counter(reason for r in rows for reason in r["reasons"])) == prepared["rejection_counts"])
+    check("summary totals", summary["totals"] == prepared["totals"] and summary["rejection_counts"] == prepared["rejection_counts"])
+    quality_limits = p10["quality"]
+    check("selected all 28 centers", all(r["baseline_valid_centers"] == 28 for r in selected))
+    check("selected finite native", all(r["nonfinite_samples_per_channel"] == [0] * 4 for r in selected))
+    check("selected amplitude", all(r["preprocessed_peak_uv"] <= quality_limits["maximum_preprocessed_absolute_uv"] for r in selected))
+
+    with np.load(ROOT / prepared["array_path"], allow_pickle=False) as archive:
+        data = {name: archive[name] for name in archive.files}
+    with np.load(ROOT / inference["array_path"], allow_pickle=False) as archive:
+        emb = {name: archive[name] for name in archive.files}
+    check("prepared shapes", data["patches"].shape == (122, 4, 30, 200) and data["patches"].dtype == np.float32)
+    check("embedding shapes", emb["embeddings"].shape == (122, 5, 4, 30, 200) and emb["embeddings"].dtype == np.float32)
+    check("array row order", np.array_equal(data["candidate_indices"], emb["candidate_indices"]) and
+          np.array_equal(data["candidate_indices"], [r["candidate_index"] for r in selected]))
+    check("variant order", list(emb["variants"]) == list(VARIANTS))
+    check("array finiteness", all(np.isfinite(x).all() for x in data.values() if np.issubdtype(x.dtype, np.number)) and
+          np.isfinite(emb["embeddings"]).all())
+    measures = {(r["candidate_index"], r["variant"]): r for r in inference["measurements"]}
+    check("610 unique measured forwards", len(inference["measurements"]) == len(measures) == inference["block_variant_runs"] == 610)
+    for i, row in enumerate(selected):
+        check("prepared row index:" + str(i), row["array_row"] == i)
+        check("prepared patch hash:" + str(i), arrhash(data["patches"][i]) == row["prepared_array_sha256"])
+        check("prepared amplitude:" + str(i), abs(np.max(np.abs(data["patches"][i])) * 100 - row["preprocessed_peak_uv"]) < 2e-5)
+        for view in VIEWS:
+            check("prepared baseline hash:" + str(i) + view,
+                  arrhash(data["baseline_" + view][i]) == row["baseline_array_sha256"][view])
+        for j, name in enumerate(VARIANTS):
+            measurement = measures[(row["candidate_index"], name)]
+            check("input variant hash:" + str(i) + name, arrhash(variant(data["patches"][i], name, 9009 + row["candidate_index"])) == measurement["input_sha256"])
+            check("output variant hash:" + str(i) + name, arrhash(emb["embeddings"][i, j]) == measurement["output_sha256"])
+
+    comp = {(r["candidate_index"], r["view"]): r for r in summary["block_comparisons"]}
+    ctrl = {(r["candidate_index"], r["variant"]): r for r in summary["block_controls"]}
+    check("366 unique comparisons", len(comp) == len(summary["block_comparisons"]) == 366)
+    check("488 unique controls", len(ctrl) == len(summary["block_controls"]) == 488)
+    upper = np.triu_indices(28, 1)
+    scores = {key: [] for key in ((metric, view) for metric in ("geometry", "change") for view in VIEWS)}
+    shifts = {key: [] for key in scores}
+    control_scores = collections.defaultdict(list)
+    for i, row in enumerate(selected):
+        pooled = emb["embeddings"][i].astype(np.float64).mean(axis=1)[:, 1:29, :]
+        model, _ = distances(pooled[0], data["baseline_morphology"][i])
+        model_steps = np.diag(model, 1)
+        for view in VIEWS:
+            _, baseline = distances(pooled[0], data["baseline_" + view][i])
+            rec = comp[(row["candidate_index"], view)]
+            geometry = rho(model[upper], baseline[upper])
+            change = rho(model_steps, np.diag(baseline, 1))
+            check("geometry value:" + str(i) + view, close(geometry, rec["geometry"]))
+            check("change value:" + str(i) + view, close(change, rec["change"]))
+            scores[("geometry", view)].append(geometry)
+            scores[("change", view)].append(change)
+            geom_shifts = [rho(model[np.ix_((np.arange(28) - k) % 28, (np.arange(28) - k) % 28)][upper],
+                               baseline[upper]) for k in range(1, 28)]
+            change_shifts = [rho(model_steps[(np.arange(27) - k) % 27], np.diag(baseline, 1)) for k in range(1, 27)]
+            check("27 geometry shifts:" + str(i) + view, close(geom_shifts, rec["geometry_null"]))
+            check("26 change shifts:" + str(i) + view, close(change_shifts, rec["change_null"]))
+            shifts[("geometry", view)].append(geom_shifts)
+            shifts[("change", view)].append(change_shifts)
+        for j, name in enumerate(VARIANTS[1:], start=1):
+            changed, _ = distances(pooled[j], data["baseline_morphology"][i])
+            rec = ctrl[(row["candidate_index"], name)]
+            g = rho(model[upper], changed[upper])
+            c = rho(model_steps, np.diag(changed, 1))
+            displacement = float(np.sqrt(np.mean((pooled[j] - pooled[0]) ** 2)))
+            check("control geometry:" + str(i) + name, close(g, rec["geometry_rho"]))
+            check("control change:" + str(i) + name, close(c, rec["change_rho"]))
+            check("control displacement:" + str(i) + name, close(displacement, rec["rms_embedding_displacement"]))
+            for metric, value in (("geometry_rho", g), ("change_rho", c), ("rms_embedding_displacement", displacement)):
+                control_scores[(name, metric)].append(value)
+
+    rng = np.random.default_rng(p10["inference"]["seed"])
+    stat_checks = []
+    for metric in ("geometry", "change"):
+        for view in VIEWS:
+            entry = next(r for r in summary["primary_statistics"] if (r["metric"], r["view"]) == (metric, view))
+            obs, people = nested(scores[(metric, view)], selected)
+            choices = np.asarray(shifts[(metric, view)])
+            indexes = rng.integers(0, choices.shape[1], size=(1999, 122))
+            sampled = choices[np.arange(122)[None, :], indexes]
+            null, _ = nested(sampled, selected)
+            count = int(np.count_nonzero(null >= obs[0] - 1e-12))
+            p = (1 + count) / 2000
+            check("observed statistic:" + metric + view, close(obs[0], entry["observed_mean_participant_rho"]))
+            check("person statistics:" + metric + view, all(close(people[x][0], r["mean_two_sessions"]) for x, r in
+                  ((r["source_subject"], r) for r in entry["participants"])))
+            check("all 1999 null values:" + metric + view, close(null, entry["null_values"]))
+            check("null summaries:" + metric + view, close(np.mean(null), entry["null_mean"]) and
+                  close(np.quantile(null, [.025, .5, .975]), entry["null_quantiles"]))
+            check("tail and Bonferroni:" + metric + view, count == entry["upper_tail_count"] and
+                  close(p, entry["p_greater"]) and close(min(1, 6 * p), entry["p_bonferroni_six"]))
+            stat_checks.append({"metric": metric, "view": view, "observed": float(obs[0]),
+                                "upper_tail_count": count, "p_greater": p, "p_bonferroni_six": min(1, 6 * p)})
+    for name in VARIANTS[1:]:
+        for metric in ("geometry_rho", "change_rho", "rms_embedding_displacement"):
+            entry = next(r for r in summary["control_summaries"] if (r["variant"], r["metric"]) == (name, metric))
+            value, people = nested(control_scores[(name, metric)], selected)
+            check("control summary:" + name + metric, close(value[0], entry["mean_participant_value"]) and
+                  len(people) == entry["complete_participants"])
+
+    db = sqlite3.connect(f"file:{ROOT/'results/010/analysis.sqlite'}?mode=ro", uri=True)
+    check("sqlite integrity", db.execute("PRAGMA integrity_check").fetchone() == ("ok",))
+    check("sqlite foreign keys", not db.execute("PRAGMA foreign_key_check").fetchall())
+    for table, expected_rows in (("candidates", rows), ("comparisons", summary["block_comparisons"]),
+                                 ("controls", summary["block_controls"])):
+        records = [json.loads(item[0]) for item in db.execute(f"SELECT receipt_json FROM {table} ORDER BY rowid")]
+        check("sqlite exact rows:" + table, records == expected_rows)
+    db.close()
+    output = {
+        "schema": "eegt-independent-science-audit/v1",
+        "input_manifest_sha256": digest(HERE / "input/MANIFEST.json"),
+        "protocol_sha256": digest(ROOT / "protocol/experiment-010.json"),
+        "checks_passed": len(checks),
+        "comparison_observations": 122 * 3 * 2,
+        "shift_values": 122 * 3 * (27 + 26),
+        "control_observations": 122 * 4,
+        "null_draws": 6 * 1999,
+        "primary_statistics": stat_checks,
+        "selected_by_person_night": {f"{a}-{b}": counts[(a, b)] for a, b in sorted(groups)},
+        "manifest_file_count": len(manifest),
+        "scientific_caveat": "All checks use sealed derived arrays and receipts; original source waveform eligibility was not rerun.",
+    }
+    (HERE / "scratch/audit-result.json").write_text(json.dumps(output, indent=2) + "\n")
+    print(json.dumps(output, indent=2))
+
+
+if __name__ == "__main__":
+    main()
