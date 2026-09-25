@@ -1,0 +1,82 @@
+{
+  "observed_at_utc": "2026-09-25T22:07:12.259151+00:00",
+  "status": "PASS",
+  "waveform_variant_input_hashes_verified": 610,
+  "prior_009_candidate_quality_decisions_unchanged": 240,
+  "paired_gate": {
+    "status": "READY",
+    "complete_participants": [
+      "001",
+      "002",
+      "004",
+      "005",
+      "006"
+    ],
+    "complete_participant_count": 5,
+    "minimum_blocks_per_night": 3,
+    "minimum_complete_participants": 3,
+    "records": [
+      {
+        "source_subject": "001",
+        "session": "001",
+        "selected_blocks": 11
+      },
+      {
+        "source_subject": "001",
+        "session": "002",
+        "selected_blocks": 12
+      },
+      {
+        "source_subject": "002",
+        "session": "001",
+        "selected_blocks": 12
+      },
+      {
+        "source_subject": "002",
+        "session": "002",
+        "selected_blocks": 12
+      },
+      {
+        "source_subject": "003",
+        "session": "001",
+        "selected_blocks": 1
+      },
+      {
+        "source_subject": "003",
+        "session": "002",
+        "selected_blocks": 11
+      },
+      {
+        "source_subject": "004",
+        "session": "001",
+        "selected_blocks": 12
+      },
+      {
+        "source_subject": "004",
+        "session": "002",
+        "selected_blocks": 10
+      },
+      {
+        "source_subject": "005",
+        "session": "001",
+        "selected_blocks": 11
+      },
+      {
+        "source_subject": "005",
+        "session": "002",
+        "selected_blocks": 12
+      },
+      {
+        "source_subject": "006",
+        "session": "001",
+        "selected_blocks": 8
+      },
+      {
+        "source_subject": "006",
+        "session": "002",
+        "selected_blocks": 10
+      }
+    ]
+  },
+  "scope": "Exact source/array and control identity plus unchanged quality decisions for overlapping first-ten-minute candidates; independent numerical review is separate."
+}

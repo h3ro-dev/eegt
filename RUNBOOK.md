@@ -1,6 +1,6 @@
 # Repeatable research and publication
 
-Accountable project: EEGT. Maintain one authoritative experiment plan. Published v0.2.0, v0.3.0, v0.4.0 and v0.5.0 artifacts are immutable; a rerun is an additional receipt, not permission to change their findings.
+Accountable project: EEGT. Maintain one authoritative experiment plan. Published v0.2.0, v0.3.0, v0.4.0, v0.5.0 and v0.6.0 artifacts are immutable; a rerun is an additional receipt, not permission to change their findings.
 
 1. Check for a material new open around-ear waveform source, new compatible model, source update or concrete defect. An unchanged check produces no new experiment or public result.
 2. Before fetching or fitting, allocate the next experiment number and write its question, source/subject selection, fixed slice/time scales, train/evaluation groups, QC, models/seeds, outcome definitions, controls, resource estimate and publication boundary. Hash the protocol. Use only open sources; retain primary metadata and attribution. No private EEG or clinical/semantic labels are needed for this program.
@@ -20,3 +20,7 @@ If the public host or remote is unavailable, preserve the completed local releas
 After Experiment008, EESM23 participants001–006 and sessions001–002 are exposed. Participants007–010 and all other sessions remain waveform-unexposed by EEGT. Session-only reserves from exposed participants do not prove new-person transfer. The capture boundary is documented in protocol/neurable-availability-recheck-2026-09-25.json.
 
 Experiment009 reuses the first ten minutes of those same twelve recordings. Keep its failed eligibility result: do not extend sampling, relax amplitude/QC thresholds, pool dependent windows as participants or invent statistics for missing pairs. Freeze any time-distributed follow-up as a new experiment before model agreement is inspected. Use the separate encoder environment and full checkpoint/source verification documented in README; do not upgrade the historical numerical environment in place.
+
+Experiment010 expands the time coverage within the already exposed first four hours using frozen quality-only selection. It must not be counted as 48 new recorded hours. Paired eligibility is recomputed from the complete census before inference and again per metric; the release refuses a changed sampler, input receipt or unaccepted review. All5760candidate outcomes stay visible, including2851quality-pass but unselected blocks. Five complete paired people contribute110selected blocks to the primary comparisons, while all122selected blocks retain descriptive outputs.
+
+The next scientific action is a separately frozen second compatible encoder and cycle/burst plus artifact/reference controls, without consuming reserved people. Geometry effects in010are small even though they exceed its specified conditional shift null; change-profile tests do not clear correction. Never promote this result into universal, diagnostic or semantic validation. Keep the fixed50Hzsource/60Hznotch mismatch explicit; any alternate filter is a new protocol.

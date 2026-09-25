@@ -96,3 +96,11 @@ Only 9/240 segments qualify (3.75%). That denominator is candidate 30-second seg
 Downloaded hours (86.38), selected analysis hours (48), QC windows and scored-context exposure are distinct. The dataset's other four participants remain untouched. The other nights of analyzed participants are reserved for new-session evaluation, not new-person evaluation.
 
 A **held-out person** is someone whose recordings were never used to choose or tune the method. A **held-out session** is another recording occasion, possibly from someone already represented. A **held-out device or dataset** tests another measurement setup or source. These tests answer different questions; success at one cannot stand in for the others. Grouping metadata stays in the evaluator, while discovery receives anonymous numeric arrays.
+
+## Experiment 010: quality census and selected model support
+
+`results/010/prepared.json` retains every one of 5,760 candidate blocks with source, night, native start, twenty-minute stratum, rejection reasons, missing-sample counts, and separate `quality_status` and selection `status`. `PASS` quality is not a neural diagnosis. Selection `ELIGIBLE` is the lower temporal median quality-pass block of a nonempty stratum. `QUALIFIED_UNSELECTED` remains in the ledger with its reason for omission defined by that rule.
+
+`data/derived/010/prepared.npz` contains 122 selected numeric wave arrays and aligned descriptors, with row hashes. `embeddings.npz` contains 610 variant outputs; `inference.json` binds every output to its input and code/checkpoint. `analysis.sqlite` has 5,760 candidates, 366 block/view comparisons and 488 control comparisons. Per-metric complete-participant aggregation uses five people and 110 selected blocks; person 003's twelve blocks remain descriptive.
+
+The census covers 48 already exposed hours, of which 24.775 hours pass the thirty-second quality gate. Selected model support is 61 minutes. These are analytical subsets, not extra recorded hours or new people. The corpus remains 67 candidates, 66 qualified source recordings and 309.85 qualified source hours. The v0.6.0 release provides the new derivatives and receipts; v0.4.0 retains original baseline features, and pinned public archives retain full source recordings.

@@ -2,13 +2,34 @@
 
 **An LLM’s interpretation of your brainwaves**
 
-An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release adds a pinned pretrained EEG encoder to the existing numerical views of public around-ear EEG. This does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
+An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release compares a pinned pretrained EEG encoder with frozen numerical views on time-distributed public around-ear EEG. This does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
 
 - [Research Notes website](https://h3ro-dev.github.io/eegt/)
 - [Continuous corpus and transitions](https://h3ro-dev.github.io/eegt/growth.html)
 - [Database contract](DATABASE.md), [Experiment 003 protocol](protocol/experiment-003.json), and [input contract](protocol/INPUT-CONTRACT.md)
 - [Experiment 002 data card](DATA_CARD.md), [results](results/002/metrics.json), and [model card](MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
+
+## Time-distributed comparison · v0.6.0
+
+[Experiment 010](https://h3ro-dev.github.io/eegt/distributed.html) checks **5,760 thirty-second blocks** within the same twelve previously exposed recordings: **2,973 quality-qualified (51.61%)**, **122 selected by a frozen time rule**, and **610 model forward passes**. Five people qualify for paired-night comparisons, contributing 110 selected blocks; person 003's twelve selected blocks remain descriptive. This adds no new source people or recorded hours. The corpus remains 67 candidates, 66 qualified recordings and 309.85 qualified source hours.
+
+Geometry correlations with waveform shape, spectrum and sensor coordination are weak: **0.0815, 0.0381 and 0.0419**, each adjusted p = 0.003 under the prescribed cyclic-shift test. Change-profile correlations do not clear correction (adjusted p = 0.387, 1.000 and 0.639). These conditional tests on five already exposed people do not establish shared inflection points, universal tokens, semantic meaning or physical Neurable transfer. A continuous pretrained backbone was tested; a second learned encoder and a full discrete tokenizer remain future work.
+
+[Note](notes/experiment-010.md) · [Frozen protocol](protocol/experiment-010.json) · [Independent validation](notes/validation-010.md) · [Release and data](https://github.com/h3ro-dev/eegt/releases/tag/v0.6.0). Numeric discovery receives no identity, history or semantic labels. All candidate outcomes remain in the provenance ledger; quality and selection are distinct.
+
+To reproduce the comparisons from the extracted v0.6.0 bundle in a separate directory, install `requirements.lock` with Python 3.12, preserve the existing summary, then run:
+
+```sh
+mv results/010/summary.json results/010/summary-published.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python -m eegt.distributed_study evaluate
+python scripts/report_distributed.py
+python -W error -m unittest discover -s tests -q
+```
+
+To rerun actual inference, use a separate environment with `requirements-encoder.lock`, obtain the pinned official checkpoint described below, preserve `results/010/inference.json` and `data/derived/010/embeddings.npz`, then run `python -m eegt.distributed_study infer --checkpoint /path/to/CodeBrain.pth`. Loading rejects an incorrect checkpoint hash. Raw-to-prepared reproduction additionally needs the pinned twelve source recordings and v0.4.0 baseline feature files; preserve `results/010/prepared.json` and run `python -m eegt.distributed_study prepare`. Original full recordings and weights are not redistributed here. Published results are immutable; keep reruns in a separate directory.
+
+The inherited 60 Hz notch does not specifically remove the source's 50 Hz mains; no preprocessing or eligibility threshold was relaxed for this run. Pretraining overlap and validity of 19-scalp-to-four-ear spatial transfer remain unknown. Untouched participants 007–010 and unexamined later sessions are reserved.
 
 ## Pretrained encoder feasibility · v0.5.0
 
