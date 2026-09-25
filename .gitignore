@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+data/cache/
+data/derived/
+dist/
+.pytest_cache/
+.DS_Store
+site/.jev-work.json
+site/BUILD-BRIEF.md
+site/LANE-REPORT.md

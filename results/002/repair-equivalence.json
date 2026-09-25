@@ -1,0 +1,23 @@
+{
+  "schema": "eegt-repair-equivalence/v1",
+  "original_metrics_sha256": "1a5d5119974ec44ac8a6c59c4d52fdd1cccef6d2cc9e836f516d72996365c50a",
+  "repaired_metrics_sha256": "f1b948f10a9270bb3e8734d670eed246640cd8f6725c593212ddd54cfad9899e",
+  "numerical_fields_identical": {
+    "qc": true,
+    "models": true,
+    "agreements": true,
+    "controls": true,
+    "permutation_nulls": true,
+    "interpretation": true
+  },
+  "archive_bytes_identical": {
+    "models.npz": true,
+    "assignments.npz": true
+  },
+  "wave_archive_bytes_identical": {
+    "native-slices.npz": true,
+    "analysis-waves.npz": true
+  },
+  "decompressed_window_ledger_identical": true,
+  "difference": "Only the preparation/evaluation integrity boundary, explicit evaluation window IDs, source hashes and run resource timing changed. No experimental selection or numerical result changed."
+}

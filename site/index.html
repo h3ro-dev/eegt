@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="EEGT is an open research notebook for numeric EEG tokenization experiments, methods, and limits.">
+  <title>EEGT — Open research notebook</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="EEGT, back to top">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span>EEGT<span class="brand-period">.</span></span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#purpose">Purpose</a>
+        <a href="#contract">Signal contract</a>
+        <a href="#notes">Research notes</a>
+        <a href="#methods">Methods</a>
+        <a href="#sources">Sources</a>
+      </nav>
+      <a class="header-repo" href="https://github.com/h3ro-dev/eegt">View code <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Open research notebook <span class="eyebrow-rule" aria-hidden="true"></span> 001—002</p>
+        <h1 id="hero-title">Signals,<br><em>before stories.</em></h1>
+        <p class="hero-subtitle">An LLM’s interpretation of your brainwaves</p>
+        <p class="hero-lede">EEGT studies whether a small vocabulary of numeric tokens can retain useful structure in EEG recordings. The notebook shows the inputs, tests, and limits behind each result.</p>
+        <div class="hero-actions">
+          <a class="button button-ink" href="#experiment-002">Read current note <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#methods">See the method <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="hero-caveat">Token IDs describe measured signal patterns. They are not words, thoughts, diagnoses, or interpretations of a person.</p>
+      </div>
+
+      <figure class="signal-figure">
+        <div class="figure-heading">
+          <span>FIG. 01</span>
+          <span>WAVEFORM → TOKEN</span>
+        </div>
+        <div class="figure-stage">
+          <div class="figure-axis"><span>amplitude</span><span>time →</span></div>
+          <svg class="waveform" viewBox="0 0 600 180" role="img" aria-labelledby="wave-title wave-desc" preserveAspectRatio="none">
+            <title id="wave-title">Schematic waveform divided into windows</title>
+            <desc id="wave-desc">An invented line illustrates successive numeric signal windows. It is not recorded EEG or a result.</desc>
+            <path class="wave-baseline" d="M0 90H600" />
+            <path class="wave-grid" d="M150 15V165M300 15V165M450 15V165" />
+            <path class="wave-line" d="M0 91 C12 91 17 85 24 79 S34 108 44 105 S55 69 64 71 S78 118 86 119 S99 89 108 86 S124 95 135 94 S145 68 156 66 S172 110 180 113 S194 81 204 78 S215 99 227 96 S243 74 254 76 S267 113 279 111 S291 86 301 85 S314 103 325 101 S341 57 350 58 S363 125 374 128 S387 91 399 90 S414 104 424 102 S438 77 450 80 S462 116 473 114 S488 78 499 76 S510 99 523 99 S540 82 550 85 S564 112 575 110 S588 89 600 88" />
+            <circle cx="150" cy="66" r="4" /><circle cx="300" cy="85" r="4" /><circle cx="450" cy="80" r="4" />
+          </svg>
+          <div class="window-row" aria-hidden="true"><span>window 01</span><span>window 02</span><span>window 03</span><span>window 04</span></div>
+          <div class="figure-arrow" aria-hidden="true">↓ <span>numeric codebook</span></div>
+          <div class="token-row" aria-label="Illustrative token IDs, not experimental output">
+            <span>03</span><span>11</span><span>03</span><span>07</span>
+          </div>
+        </div>
+        <figcaption><strong>Schematic only.</strong> Invented shape and IDs show the process, not a recording, decoded meaning, or measured result.</figcaption>
+      </figure>
+    </section>
+
+    <div class="status-strip" aria-label="Notebook at a glance">
+      <div class="shell status-grid">
+        <p><span>Current protocol</span><strong>Experiment 002</strong></p>
+        <p><span>Input</span><strong>Open around-ear EEG</strong></p>
+        <p><span>Release rule</span><strong>Numbers after verification</strong></p>
+      </div>
+    </div>
+
+    <section class="section shell" id="purpose" aria-labelledby="purpose-title">
+      <div class="section-intro">
+        <p class="section-number">01 / PURPOSE</p>
+        <h2 id="purpose-title">Can a compact vocabulary keep the shape of a signal?</h2>
+        <p class="section-lede">EEGT turns short numeric EEG windows into discrete IDs, then asks how stable, useful, and limited those IDs are on recordings the model has not seen.</p>
+      </div>
+      <div class="purpose-grid">
+        <article>
+          <span class="step-number">01</span>
+          <h3>Observe</h3>
+          <p>Begin with open EEG recordings and preserve the original samples. Numeric quality checks describe what can be analyzed.</p>
+        </article>
+        <article>
+          <span class="step-number">02</span>
+          <h3>Compress</h3>
+          <p>Learn unsupervised codebooks from waveform, spectrum, and time-frequency views. Each token is an index in a learned vocabulary.</p>
+        </article>
+        <article>
+          <span class="step-number">03</span>
+          <h3>Challenge</h3>
+          <p>Compare multiple seeds and vocabulary sizes, including on held-out recordings. Report numerical agreement and failure cases.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contract-section" id="contract" aria-labelledby="contract-title">
+      <div class="shell contract-grid">
+        <div>
+          <p class="section-number">02 / INPUT CONTRACT</p>
+          <h2 id="contract-title">Raw numbers in. Claims stay bounded.</h2>
+          <p>The discovery input is signal values and the numeric information needed to place them in time and channels. Task, identity, and clinical labels do not teach the codebook; metadata is kept separately for scientific audit.</p>
+          <a class="light-link" href="#methods">Read the reproducible protocol <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="contract-card" aria-label="Numeric input and output contract">
+          <div class="contract-card-top"><span>INPUT / OUTPUT</span><span>TYPE CONTRACT · NO SAMPLE DATA</span></div>
+          <div class="contract-line"><span class="contract-key">input</span><span>sample index × channel value</span></div>
+          <div class="contract-line"><span class="contract-key">context</span><span>sampling rate + fixed processing</span></div>
+          <div class="contract-line"><span class="contract-key">output</span><span>window → integer token ID</span></div>
+          <div class="contract-divider" aria-hidden="true"></div>
+          <p><span class="contract-signal" aria-hidden="true">●</span> No words, task labels, identity labels, or diagnoses in discovery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell acquisition-section" id="acquisition" aria-labelledby="acquisition-title">
+      <div class="section-intro acquisition-intro">
+        <p class="section-number">03 / ACQUISITION SCOPE</p>
+        <h2 id="acquisition-title">Compatible in format is not validated on hardware.</h2>
+        <p class="section-lede">The Neurable Research Kit publicly advertises 12 EEG channels at 500 Hz. The open cEEGrid recordings below share an around-ear measurement geometry, but they were not captured with that headset. An import adapter cannot establish physical headset performance.</p>
+      </div>
+      <div class="source-table-wrap">
+        <table class="source-table">
+          <caption>Sources and their role in this notebook</caption>
+          <thead><tr><th scope="col">Source</th><th scope="col">Measurement</th><th scope="col">Here</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><a href="https://www.neurable.com/researchgrant">Neurable Research Kit <span aria-hidden="true">↗</span></a></th><td>Advertised: 12 EEG channels, 500 Hz</td><td>Target for a numeric import contract; no kit capture tested here.</td></tr>
+            <tr><th scope="row"><a href="https://openneuro.org/datasets/ds004015">OpenNeuro ds004015 <span aria-hidden="true">↗</span></a></th><td>Selected cEEGrid around-ear recordings, 500 Hz</td><td>Open source recordings for Experiment 002.</td></tr>
+            <tr><th scope="row"><a href="https://openneuro.org/datasets/ds005207">OpenNeuro ds005207 <span aria-hidden="true">↗</span></a></th><td>Selected cEEGrid around-ear recordings, 250 Hz</td><td>Open source recordings for Experiment 002.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Rates describe the selected source recordings. Source datasets can contain other acquisition types or rates; the run manifest must identify each selected file.</p>
+    </section>
+
+    <section class="section notes-section" id="notes" aria-labelledby="notes-title">
+      <div class="shell notes-grid">
+        <div class="notes-intro">
+          <p class="section-number">04 / RESEARCH NOTES</p>
+          <h2 id="notes-title">A ledger, not a reveal.</h2>
+          <p>Each entry separates fixed inputs from measured outcomes and states what a result can support.</p>
+          <div class="ledger-key"><span class="key-line" aria-hidden="true"></span> Latest entry first</div>
+        </div>
+
+        <div class="note-stack">
+          <article class="note-card current-note" id="experiment-002" aria-labelledby="exp002-title">
+            <div class="note-topline"><span>NOTE 002 / AROUND-EAR STUDY</span><span class="note-status"><span aria-hidden="true"></span> <span id="experiment-002-badge">Analysis in progress</span></span></div>
+            <div class="note-heading"><h3 id="exp002-title">Different views, different vocabularies</h3><span class="note-index" aria-hidden="true">02</span></div>
+            <p class="note-description">Eight around-ear recordings were checked numerically and tokenized with three unsupervised feature families. All 27 seed and vocabulary settings were retained and reproduced.</p>
+            <div class="fixed-inputs" aria-label="Fixed inputs for Experiment 002">
+              <div><strong>8</strong><span>fixed-selected recordings</span></div>
+              <div><strong>2,769,602,360</strong><span>source bytes</span></div>
+              <div><strong>600 s</strong><span>slice per recording, starting at 60 s</span></div>
+            </div>
+            <div class="result-panel" id="experiment-002-results" aria-live="polite" aria-atomic="true">
+              <p class="result-label">VERIFIED OUTCOME</p>
+              <p class="result-pending">In progress — results will appear after verification.</p>
+            </div>
+            <figure class="result-figure">
+              <a href="./data/congruence.png"><img src="./data/congruence.png" width="1800" height="864" alt="Measured agreement matrices: spectrum and time-frequency agree more than either agrees with waveform shape. External adjusted Rand scores are 0.289, 0.039 and 0.019; identical partitions would score 1." loading="lazy"></a>
+              <figcaption>Measured Experiment 002 results. Select the graphic to inspect the full-size matrix.</figcaption>
+            </figure>
+            <div class="note-foot"><span>Source selection and slice are fixed.</span><a href="#methods">Protocol <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="note-card historical-note" id="experiment-001" aria-labelledby="exp001-title">
+            <div class="note-topline"><span>NOTE 001 / HISTORICAL SEED</span><span class="complete-badge">Completed baseline</span></div>
+            <div class="note-heading"><h3 id="exp001-title">A small spectral baseline meets external data</h3><span class="note-index" aria-hidden="true">01</span></div>
+            <p class="note-description">A scalp-trained, single-channel spectral codebook was an early baseline. Its external coverage was low; this does not demonstrate universal patterns or brain meaning.</p>
+            <div class="historical-stats">
+              <div><strong>14</strong><span>recordings</span></div>
+              <div><strong>27,266</strong><span>two-second, single-channel windows</span></div>
+              <div><strong>18,374</strong><span>tokens</span></div>
+            </div>
+            <div class="coverage-card">
+              <div><span>EXTERNAL WINDOW COVERAGE</span><strong>11.36%</strong></div>
+              <div class="coverage-rule" role="img" aria-label="393 covered of 3,458 external windows, or 11.36 percent"><span></span></div>
+              <p><strong>393 / 3,458 windows</strong> covered. Another 3,011 were out of distribution and 54 were clipped. The denominator counts windows, not people or meaning.</p>
+            </div>
+            <div class="note-foot"><span>Historical seed · bounded interpretation</span><a href="./data/experiment-001.json" download>Download summary JSON <span aria-hidden="true">↓</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell methods-section" id="methods" aria-labelledby="methods-title">
+      <div class="section-intro methods-intro">
+        <p class="section-number">05 / REPRODUCIBLE METHODS & LIMITS</p>
+        <h2 id="methods-title">Make every transformation visible.</h2>
+        <p class="section-lede">The source files remain intact. Derived numeric views, quality decisions, seeds, and run settings belong in the release record with the outcomes they produce.</p>
+      </div>
+      <div class="method-layout">
+        <div class="protocol-list">
+          <div class="protocol-item"><span>01</span><div><h3>Fix the input</h3><p>Experiment 002 uses eight selected recordings and the interval from 60 to 660 seconds in each. Preserve original samples; document any re-reference, filter, resampling, and window rule as fixed parameters before reporting results.</p></div></div>
+          <div class="protocol-item"><span>02</span><div><h3>Learn without labels</h3><p>Run numeric QC, then learn waveform, spectrum, and time-frequency codebooks with multiple seeds and <i>K</i> = 8, 16, and 32. Discovery sees no hidden task or identity labels; audit metadata remains separate.</p></div></div>
+          <div class="protocol-item"><span>03</span><div><h3>Test the held-out recordings</h3><p>Held-out means testing on recordings that did not teach the tokenizer its patterns.</p></div></div>
+          <div class="protocol-item"><span>04</span><div><h3>Publish the numerical outcome</h3><p>Report adjusted Rand and adjusted mutual information, which tolerate renamed token IDs; occupied and effective vocabulary; coverage; reconstruction; and shuffled controls. Publish both successes and failures.</p></div></div>
+        </div>
+        <aside class="limits-card" aria-labelledby="limits-title">
+          <p class="limits-kicker">INTERPRETATION BOUNDARY</p>
+          <h3 id="limits-title">A token is a label for a measured pattern.</h3>
+          <p>These are LLM-authored numeric models. Agreement between their outputs would not show that multiple pretrained LLMs independently rediscovered a universal brain language.</p>
+          <ul>
+            <li>No semantic or clinical claim is tested.</li>
+            <li>A compact vocabulary can lose signal detail.</li>
+            <li>Related around-ear geometry is not headset validation.</li>
+            <li>Experiment 001 is a historical baseline, not evidence of universality.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section sources-section" id="sources" aria-labelledby="sources-title">
+      <div class="shell sources-grid">
+        <div>
+          <p class="section-number">06 / OPEN CODE & DOWNLOADS</p>
+          <h2 id="sources-title">Inspect the trail.</h2>
+          <p>Inspect the code, original open sources, numerical findings and downloadable waveforms. Every result retains its protocol and checksum trail.</p>
+        </div>
+        <div class="resource-list">
+          <a href="https://github.com/h3ro-dev/eegt"><span class="resource-number">01</span><span><strong>Project repository</strong><small>Code and run documentation</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://github.com/h3ro-dev/eegt/releases/tag/v0.2.0"><span class="resource-number">02</span><span><strong>Research data release</strong><small>Waveforms, tokens, codebooks and checksums</small></span><span class="resource-arrow" aria-hidden="true">↓</span></a>
+          <a href="https://openneuro.org/datasets/ds004015"><span class="resource-number">03</span><span><strong>OpenNeuro ds004015</strong><small>Source dataset</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://openneuro.org/datasets/ds005207"><span class="resource-number">04</span><span><strong>OpenNeuro ds005207</strong><small>Source dataset</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-main"><div><span class="footer-brand">EEGT<span>.</span></span><p>Open notes on EEG tokenization.</p></div><a href="#top">Back to top ↑</a></div>
+    <div class="shell footer-bottom"><span>Numbers before narrative.</span><span>No custom domain or hardware validation claimed.</span></div>
+  </footer>
+</body>
+</html>

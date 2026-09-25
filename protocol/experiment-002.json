@@ -1,0 +1,34 @@
+{
+  "schema": "eegt-protocol/v2",
+  "experiment": "002",
+  "frozen_before_waveform_inspection": true,
+  "analysis": "anonymous around-ear numerical tokenizer pilot",
+  "source_selection": "fixed ascending public subject identifiers, no waveform-based selection",
+  "sources": [
+    {"dataset": "ds004015", "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e", "subjects": ["001", "002", "003", "004", "005", "006"], "splits": ["train", "train", "train", "validation", "test", "test"]},
+    {"dataset": "ds005207", "git_commit": "6e6e824f5bafdd300bbcba4cb772ebc5b369f842", "subjects": ["001", "003"], "splits": ["external", "external"]}
+  ],
+  "slice_start_seconds": 60,
+  "slice_duration_seconds": 600,
+  "window_seconds": 2,
+  "overlap_seconds": 0,
+  "analysis_sample_rate_hz": 100,
+  "analysis_band_hz": [1, 40],
+  "filter": "per-window fourth-order Butterworth bandpass, forward-backward, then polyphase resampling to 100 Hz; edge effects retained and disclosed",
+  "qc": {"minimum_std_uv": 0.05, "maximum_ptp_uv": 500, "maximum_50_or_60hz_ratio": 0.3, "line_analysis_requires_native_nyquist_above_hz": 65, "unknown_adc_rails": "report unknown; do not fabricate clipping labels"},
+  "methods": ["spectrum", "waveform", "time_frequency"],
+  "method_contract": {
+    "spectrum": "40 uniform 1-Hz power cells from 1 to 40 Hz, log10; no canonical physiological band or semantic labels",
+    "waveform": "mean-centered RMS-normalized 200-sample waveform; PCA 20 dimensions learned only from training",
+    "time_frequency": "log10 power at 2,4,...,40 Hz in each of four nonoverlapping 0.5-second subwindows"
+  },
+  "vocabulary_sizes": [8, 16, 32],
+  "seeds": [17, 29, 43],
+  "clusterer": "KMeans, k-means++, n_init=1, max_iter=200; all seeds reported",
+  "ood_rule": "distance to nearest center exceeds the 99th percentile training distance; report raw assignment and abstention separately",
+  "controls": ["within-window sample permutation", "independent Fourier phase randomization", "K=1 reconstruction baseline", "random label permutation agreement null"],
+  "agreement": ["adjusted Rand index", "adjusted mutual information", "same-method seed agreement", "cross-method agreement at matched K and seed", "training-centroid waveform and spectrum reconstruction relative to K=1"],
+  "uncertainty": "per-recording values and range; small descriptive pilot, no population universality confidence",
+  "primary_comparison": "K=16, seed=17; all prespecified settings retained",
+  "exclusions": ["semantic targets", "identity/context features", "sleep/task annotations", "cross-source channel mapping", "private EEG", "clinical claims", "MW75 physical validation"]
+}

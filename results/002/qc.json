@@ -1,0 +1,152 @@
+{
+  "schema": "eegt-qc/v2",
+  "records": [
+    {
+      "recording": "r001",
+      "recording_index": 0,
+      "split": "train",
+      "native_sample_rate_hz": 500.0,
+      "eeg_channels": 18,
+      "native_total_samples_per_channel": 2692960,
+      "slice_samples_per_channel": 300000,
+      "duration_endpoint_difference_samples": 0.0,
+      "total_windows": 5400,
+      "qc_pass": 5391,
+      "qc_abstain": 9,
+      "reasons": {
+        "HIGH_AMPLITUDE": 9
+      },
+      "adc_clipping_status": "UNKNOWN_RAILS",
+      "decoder_warnings": []
+    },
+    {
+      "recording": "r002",
+      "recording_index": 1,
+      "split": "train",
+      "native_sample_rate_hz": 500.0,
+      "eeg_channels": 18,
+      "native_total_samples_per_channel": 1762378,
+      "slice_samples_per_channel": 300000,
+      "duration_endpoint_difference_samples": 0.0,
+      "total_windows": 5400,
+      "qc_pass": 5386,
+      "qc_abstain": 14,
+      "reasons": {
+        "LINE_DOMINATED": 2,
+        "HIGH_AMPLITUDE": 12
+      },
+      "adc_clipping_status": "UNKNOWN_RAILS",
+      "decoder_warnings": []
+    },
+    {
+      "recording": "r003",
+      "recording_index": 2,
+      "split": "train",
+      "native_sample_rate_hz": 500.0,
+      "eeg_channels": 18,
+      "native_total_samples_per_channel": 2760462,
+      "slice_samples_per_channel": 300000,
+      "duration_endpoint_difference_samples": 0.0,
+      "total_windows": 5400,
+      "qc_pass": 5391,
+      "qc_abstain": 9,
+      "reasons": {
+        "HIGH_AMPLITUDE": 9
+      },
+      "adc_clipping_status": "UNKNOWN_RAILS",
+      "decoder_warnings": []
+    },
+    {
+      "recording": "r004",
+      "recording_index": 3,
+      "split": "validation",
+      "native_sample_rate_hz": 500.0,
+      "eeg_channels": 18,
+      "native_total_samples_per_channel": 2703099,
+      "slice_samples_per_channel": 300000,
+      "duration_endpoint_difference_samples": 0.0,
+      "total_windows": 5400,
+      "qc_pass": 5390,
+      "qc_abstain": 10,
+      "reasons": {
+        "HIGH_AMPLITUDE": 10
+      },
+      "adc_clipping_status": "UNKNOWN_RAILS",
+      "decoder_warnings": []
+    },
+    {
+      "recording": "r005",
+      "recording_index": 4,
+      "split": "test",
+      "native_sample_rate_hz": 500.0,
+      "eeg_channels": 18,
+      "native_total_samples_per_channel": 1415171,
+      "slice_samples_per_channel": 300000,
+      "duration_endpoint_difference_samples": 0.0,
+      "total_windows": 5400,
+      "qc_pass": 5392,
+      "qc_abstain": 8,
+      "reasons": {
+        "HIGH_AMPLITUDE": 8
+      },
+      "adc_clipping_status": "UNKNOWN_RAILS",
+      "decoder_warnings": []
+    },
+    {
+      "recording": "r006",
+      "recording_index": 5,
+      "split": "test",
+      "native_sample_rate_hz": 500.0,
+      "eeg_channels": 18,
+      "native_total_samples_per_channel": 1408527,
+      "slice_samples_per_channel": 300000,
+      "duration_endpoint_difference_samples": 0.0,
+      "total_windows": 5400,
+      "qc_pass": 5400,
+      "qc_abstain": 0,
+      "reasons": {},
+      "adc_clipping_status": "UNKNOWN_RAILS",
+      "decoder_warnings": []
+    },
+    {
+      "recording": "r007",
+      "recording_index": 6,
+      "split": "external",
+      "native_sample_rate_hz": 250.0,
+      "eeg_channels": 15,
+      "native_total_samples_per_channel": 11022000,
+      "slice_samples_per_channel": 150000,
+      "duration_endpoint_difference_samples": 1.0,
+      "total_windows": 4500,
+      "qc_pass": 4393,
+      "qc_abstain": 107,
+      "reasons": {
+        "HIGH_AMPLITUDE": 107
+      },
+      "adc_clipping_status": "UNKNOWN_RAILS",
+      "decoder_warnings": []
+    },
+    {
+      "recording": "r008",
+      "recording_index": 7,
+      "split": "external",
+      "native_sample_rate_hz": 250.0,
+      "eeg_channels": 12,
+      "native_total_samples_per_channel": 10930000,
+      "slice_samples_per_channel": 150000,
+      "duration_endpoint_difference_samples": 1.0,
+      "total_windows": 3600,
+      "qc_pass": 3545,
+      "qc_abstain": 55,
+      "reasons": {
+        "HIGH_AMPLITUDE": 55
+      },
+      "adc_clipping_status": "UNKNOWN_RAILS",
+      "decoder_warnings": []
+    }
+  ],
+  "total_windows": 40500,
+  "qc_pass": 40288,
+  "qc_abstain": 212,
+  "protocol_sha256": "6d6449e057117221cfa9f01d5d9b30af518d223e60d81fa02ec0366ae27b0675"
+}

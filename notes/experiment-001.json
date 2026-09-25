@@ -1,0 +1,100 @@
+{
+  "artifacts": {
+    "codebook_json_sha256": "3af90cdf52a64547e3a2ca9fd37a4d62ee173024a9c4f3de319674de6ae31b57",
+    "codebook_model_sha256": "efd459a385b4bc611882589ba1758fc2889787e75b33bd75f959baa9005874cc",
+    "manifest_json_sha256": "0b1722213aebc2e827b07d17abce7a6542030494aad0dcd8687ae846ce3d32cc",
+    "metrics_json_sha256": "cae3e6b74976949a02028d5de364aa1f45b5cc6eef0ccc96916e86a63e6aef88",
+    "source_manifest_sha256": "240d42c4fc8a14c643f8b0584d5b484e20e185b1146c886d7bcf45c739f62e86",
+    "tokens_jsonl_sha256": "5e9a8d0ec3688686a83833b77c34f9c228184725ec3317a5ea22e570b97e18a3",
+    "tokens_sqlite_sha256": "76d12a06e66462af92d6dac0642bfa84e55ac1feb73a64f93313186f4b7d473d"
+  },
+  "blank_slate_input": {
+    "clinical_labels": false,
+    "identity": false,
+    "numeric_signal_windows": true,
+    "participant_history": false,
+    "permitted_acquisition_geometry": true,
+    "provenance_sidecar_separate": true,
+    "semantic_annotations": false,
+    "task_or_stimulus_labels": false
+  },
+  "checks": {
+    "byte_identical_complete_offline_runs": 2,
+    "independent_readback_checks": 53,
+    "release": "local research delivery only",
+    "tests": 21
+  },
+  "data": {
+    "codebook_fit_participants": 3,
+    "codebook_fit_windows": 8239,
+    "codebook_size": 16,
+    "feature_vector": "six spectral bands plus RMS",
+    "licensed_public_edf_recordings": 14,
+    "two_second_channel_windows": 27266
+  },
+  "date": "2026-09-24",
+  "experiment_id": "EEGT-EXP-001",
+  "interpretation": [
+    "Reproducible signal-token baseline.",
+    "External coverage is 393/3458 = 11.36%; it is not a people, brain activity, or meaning percentage.",
+    "No semantic, clinical, universal, session, site, device, waveform, or cognitive-reading claim."
+  ],
+  "next": "EEGT-EXP-002: independent tokenizer and model congruence under a frozen anonymous-input protocol with held-out participants/devices and nuisance/null controls.",
+  "nuisance": {
+    "channel_scale_conditional_token_change_rate": 0.16143247615328835,
+    "channel_scale_coverage": 0.9756721454228802,
+    "common_average_reference_conditional_token_change_rate": 0.7561177934467026,
+    "common_average_reference_coverage": 0.5248721018830956,
+    "reverse_channel_order_changed_tokens": 0
+  },
+  "public_website_status": "pending_source_and_deployment_readback",
+  "qc_reason_count_note": "Reason entries are preserved from metrics.json and may be non-additive when a window has multiple reasons.",
+  "question": "Deterministic spectral codebook assignment and external coverage baseline; no semantic or universal claim.",
+  "schema": "eegt-research-note/v1",
+  "splits": {
+    "external_test": {
+      "clipped_abstentions": 54,
+      "coverage": 0.11364950838635049,
+      "ood_abstentions": 3011,
+      "qc_reason_counts": {
+        "CLIPPED": 54
+      },
+      "tokens": 393,
+      "windows": 3458
+    },
+    "same_dataset_test": {
+      "coverage": 0.8879788306451613,
+      "ood_abstentions": 442,
+      "qc_reason_counts": {
+        "HIGH_PTP": 188,
+        "INCOMPLETE_WINDOW": 256,
+        "LINE_DOMINATED": 3
+      },
+      "tokens": 7047,
+      "windows": 7936
+    },
+    "train": {
+      "coverage": 0.6885920698924731,
+      "ood_abstentions": 42,
+      "qc_reason_counts": {
+        "HIGH_PTP": 1081,
+        "INCOMPLETE_WINDOW": 384,
+        "LINE_DOMINATED": 2235
+      },
+      "tokens": 8197,
+      "windows": 11904
+    },
+    "validation": {
+      "coverage": 0.6897681451612904,
+      "ood_abstentions": 1027,
+      "qc_reason_counts": {
+        "INCOMPLETE_WINDOW": 128,
+        "LINE_DOMINATED": 76
+      },
+      "tokens": 2737,
+      "windows": 3968
+    }
+  },
+  "status": "published_to_local_ledger",
+  "title": "Seed-v1 spectral tokenization baseline"
+}

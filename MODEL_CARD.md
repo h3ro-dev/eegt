@@ -1,0 +1,13 @@
+# Model card: numerical tokenizers v0.2.0
+
+These are small unsupervised numerical models, authored and implemented with an LLM. There is no pretrained EEG foundation model or language-model decoding backend in Experiment 002. Independent pretrained LLM discovery is a separate question; this release does not pass off K-means agreement as that evidence.
+
+The three families consume the same anonymous voltage windows: log power in uniform 1-Hz cells, RMS-normalized waveform shape reduced by train-only PCA, and log power in four short subwindows. All use train-fitted scaling, K-means++ with one initialization for each explicitly reported seed, K=8/16/32, and seeds17/29/43. Training uses three distinct participant records from ds004015; no test or external data fits scaling, PCA, centers, OOD thresholds or reconstruction means. The validation participant is reported without model selection. Models share their training data and clustering objective, so these are not fully independent rediscoveries.
+
+Nearest-center distance above the 99th percentile training distance causes abstention. Every QC-passing window still has a raw nearest-center assignment for comparisons on a common denominator. Accepted-token comparisons use the explicit intersection. Token IDs are arbitrary. Common-target reconstruction uses cluster-conditional means learned on training data; normalized-wave and standardized-spectrum distortion are separately compared to K=1.
+
+All 27 settings and per-recording results are in metrics.json; the primary display is K=16/seed17 fixed before fitting. Some external models have high coverage while heavily concentrating use on a few codes. Neither occupancy nor ARI supplies semantic labels. Shared spectrum objectives can explain more agreement between spectrum and time-frequency than with phase-sensitive shape models.
+
+Controls shuffle samples inside processed windows or randomize Fourier phase while preserving unwindowed Fourier magnitudes. A Hann-window spectrum may change under that latter control. Label permutations establish a numerical null scale, not a participant-level p-value; windows and channels within a person are dependent. Report per-recording variation and avoid population confidence from this eight-person pilot.
+
+Limits: no attention/diagnosis/thought/sleep-stage target, no clinical use, no physical MW75 capture, unknown ADC clipping rails, residual artifacts, possible acquisition/subject nuisance structure, simple feature families, fixed vocabulary assumptions, finite window/filter edge effects, small source and participant coverage. Pretrained LLMs cannot literally have no prior knowledge; the blank input contract excludes explicit history and identity instead.

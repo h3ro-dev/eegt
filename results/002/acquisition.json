@@ -1,0 +1,151 @@
+{
+  "schema": "eegt-acquisition/v2",
+  "files": [
+    {
+      "recording": "r001",
+      "dataset": "ds004015",
+      "path": "sub-001/eeg/sub-001_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "bytes": 10856976,
+      "sha256": "d885d6b3d61ce56f2b1bf9bdf920ef623c9e731a649fb3e3372e0100bf6d39d6",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "16fcb0def11bc4841df48a00f41b8bf3"
+    },
+    {
+      "recording": "r001",
+      "dataset": "ds004015",
+      "path": "sub-001/eeg/sub-001_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "bytes": 193893120,
+      "sha256": "b4418f80d5d18ffe5f91aeff8113e9e82ab0efa4440da40a390284993207703a",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "f843ba6a19c86aa71bc40bbd0546ddef"
+    },
+    {
+      "recording": "r002",
+      "dataset": "ds004015",
+      "path": "sub-002/eeg/sub-002_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "bytes": 7134344,
+      "sha256": "4cb15dbad493bf5683e849b56dfa9273976cca649e9e4c2f7f8bf80dff2cf5f3",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "829f26f8468f3d98db7c56782b2592c1"
+    },
+    {
+      "recording": "r002",
+      "dataset": "ds004015",
+      "path": "sub-002/eeg/sub-002_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "bytes": 126891216,
+      "sha256": "41b702afbf68a76f73fa6aa71cfd1becfdcb4222dbe88acdeec1105981c618c6",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "c7c33efb818f3f71c3ea932736b3dbf9"
+    },
+    {
+      "recording": "r003",
+      "dataset": "ds004015",
+      "path": "sub-003/eeg/sub-003_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "bytes": 11134464,
+      "sha256": "b95a5f286c009ebfb1710bf54503b156e3b0fa3fad0bd9de5d3c0afd983dd61b",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "64821f08eaa85dbeb942b0bb7f2b89f9"
+    },
+    {
+      "recording": "r003",
+      "dataset": "ds004015",
+      "path": "sub-003/eeg/sub-003_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "bytes": 198753264,
+      "sha256": "afc23c18a09166f63b183569e4195d5dbad0b49b49da155726eb8dbf8b33de23",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "39e8ff7ad398eeddc5d497a5a1e05182"
+    },
+    {
+      "recording": "r004",
+      "dataset": "ds004015",
+      "path": "sub-004/eeg/sub-004_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "bytes": 10896768,
+      "sha256": "e87e2554badf3de86ffe7fe5e354154a513451031eb3b93630fa2e7278d9d97b",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "82f5a272bac0021f2105b27cf633c697"
+    },
+    {
+      "recording": "r004",
+      "dataset": "ds004015",
+      "path": "sub-004/eeg/sub-004_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "bytes": 194623128,
+      "sha256": "b7eb6527c323308eb19ef144bb4caffd1b52ec018f3b4b9378902dddbd1a9d79",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "e05c7f8e47ea6e7d0fb91c6e7e18618d"
+    },
+    {
+      "recording": "r005",
+      "dataset": "ds004015",
+      "path": "sub-005/eeg/sub-005_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "bytes": 5748432,
+      "sha256": "1ddea469bc4f864fc4bb6377b084525103ca3a0c7da270d64f3cb5d3cfbe2c3e",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "98dea8dfdfaf2f44d01504838e3c8764"
+    },
+    {
+      "recording": "r005",
+      "dataset": "ds004015",
+      "path": "sub-005/eeg/sub-005_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "bytes": 101892312,
+      "sha256": "63b5e45135bc021226da47d2008cf755102b4813b73f63f9c4fffcc7db58b72a",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "37571311079d7feba93e7943e42efa2d"
+    },
+    {
+      "recording": "r006",
+      "dataset": "ds004015",
+      "path": "sub-006/eeg/sub-006_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "bytes": 5720976,
+      "sha256": "8b15600cfcf51f2335736d3745e06782e3c88d457508c50e6d44dec991299de3",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "8d919fe6d6ed7334b9e4ea2e2bda910f"
+    },
+    {
+      "recording": "r006",
+      "dataset": "ds004015",
+      "path": "sub-006/eeg/sub-006_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "bytes": 101413944,
+      "sha256": "a5a6b13ef2478b6c4e363bd7db463d4909294e5a4ba0ec3093d3a86318823e39",
+      "upstream_algorithm": "md5",
+      "upstream_digest": "c5fdcc66b9acb65b7064c9bbfea6cc5e"
+    },
+    {
+      "recording": "r007",
+      "dataset": "ds005207",
+      "path": "sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "bytes": 44102080,
+      "sha256": "fdbbcbc9c519a3be6044693107f230cebad32aaad774339644d5e83ad398fbdb",
+      "upstream_algorithm": "sha256",
+      "upstream_digest": "fdbbcbc9c519a3be6044693107f230cebad32aaad774339644d5e83ad398fbdb"
+    },
+    {
+      "recording": "r007",
+      "dataset": "ds005207",
+      "path": "sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "bytes": 925848000,
+      "sha256": "44fa55ffdfec8191d1b6562c530ab0e5bee1d3264ecd62e768032f0480191b3f",
+      "upstream_algorithm": "sha256",
+      "upstream_digest": "44fa55ffdfec8191d1b6562c530ab0e5bee1d3264ecd62e768032f0480191b3f"
+    },
+    {
+      "recording": "r008",
+      "dataset": "ds005207",
+      "path": "sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "bytes": 43733336,
+      "sha256": "012a43d156d3d373fd42c5671f92a76c400f8022f9e3dd0c3cb7736870caeeff",
+      "upstream_algorithm": "sha256",
+      "upstream_digest": "012a43d156d3d373fd42c5671f92a76c400f8022f9e3dd0c3cb7736870caeeff"
+    },
+    {
+      "recording": "r008",
+      "dataset": "ds005207",
+      "path": "sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "bytes": 786960000,
+      "sha256": "95abb439a9b2808dffc08e9df75fb59a9356f439430ada199bd05060a68e7a7b",
+      "upstream_algorithm": "sha256",
+      "upstream_digest": "95abb439a9b2808dffc08e9df75fb59a9356f439430ada199bd05060a68e7a7b"
+    }
+  ],
+  "total_bytes": 2769602360,
+  "source_manifest_sha256": "afeb4181a98c7c030d36373f4dbbc40822fc463def3a8a27800a66764898d00c"
+}

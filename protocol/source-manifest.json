@@ -1,0 +1,447 @@
+{
+  "schema": "eegt-source-manifest/v2",
+  "protocol_sha256": "6d6449e057117221cfa9f01d5d9b30af518d223e60d81fa02ec0366ae27b0675",
+  "dataset_descriptions": [
+    {
+      "dataset": "ds004015",
+      "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e",
+      "description": {
+        "Name": "Attended speaker paradigm (cEEGrid data)",
+        "BIDSVersion": "v5.2",
+        "License": "CC0",
+        "Authors": [
+          "Bjoern Holtze",
+          "Marc Rosenkranz",
+          "Manuela Jaeger",
+          "Stefan Debener",
+          "Bojana Mirkovic"
+        ],
+        "ReferencesAndLinks": [
+          "https://doi.org/10.3389/fnins.2022.869426"
+        ],
+        "DatasetDOI": "doi:10.18112/openneuro.ds004015.v1.0.2"
+      },
+      "readme": "Within this study cEEGrid data from two previous studies were pooled. \n15 participants from Jaeger et al. (2020) and 21 from Holtze et al. (2021) were included. \nParticipants performed a two-competing speaker paradigm in both original studies. \nParticipants were instructed to either attend to the left or right audio book. \nThe paradigm consisted of six (Jaeger et al. 2020) or five (Holtze et al. 2021) \n10-minute blocks of audio book presentation. In Jaeger et al. (2020) both audio \nbooks were always presented equally loud. In Holtze et al. 2021, a 10-minute block could \neither be presented in the omnidirectional condition (both audio books were presented \nequally loud) or in the beamforming condition (the to-be-attended audio book \nwas louder than the to-be-ignored audio book). The first 10-minute block was always \npresented in the omnidirectional condition whereas the conditions were alternated \nfor the later four blocks, with one half of the participants starting with the \nomnidirectonal condition and the other half starting with the beamforming condition. \nThe article (https://doi.org/10.3389/fnins.2022.869426) contains all methodological details\n\n- Bj\u00f6rn Holtze (February, 2022)"
+    },
+    {
+      "dataset": "ds005207",
+      "git_commit": "6e6e824f5bafdd300bbcba4cb772ebc5b369f842",
+      "description": {
+        "Name": "Surrey cEEGrid sleep data set",
+        "BIDSVersion": "1.7.0",
+        "DatasetType": "raw",
+        "Authors": [
+          "Kaare B. Mikkelsen",
+          "James K Ebajemito",
+          "Maria A Bonmati-Carrion",
+          "Nayantara Santhi",
+          "Victoria L Revell",
+          "Giuseppe Atzori",
+          "Laura Birch",
+          "Ciro Della Monica",
+          "Stefan Debener",
+          "Derk-Jan Dijk",
+          "Annette Sterr",
+          "Maarten De Vos"
+        ],
+        "License": "CC0",
+        "HowToAcknowledge": "Please cite Mikkelsen et al 2018: https://doi.org/10.1111/jsr.12786",
+        "DatasetDOI": "doi:10.18112/openneuro.ds005207.v1.0.0"
+      },
+      "readme": "Surrey sleep data set\r\n\r\n**Overview**\r\n\r\nThis dataset was collected as part of a research project on wearable sleep monitoring which took place in spring 2017.\r\n\r\nThe data set contains nightly EEG recordings from 20 healthy participants ('subjects'). Some recordings are full polysomnography (PSG) measurements, others are cEEGrid measurements. Most subjects have both PSG and ceegrid recordings from the same night, though a few are missing one or the other.\r\n\r\n**Format**\r\n\r\nThe dataset is formatted according to the Brain Imaging Data Structure. See the 'dataset_description.json' file for the specific BIDS version used. The EEG data format chosen is the '.set' format of EEGLAB.\r\n\r\nFor more information, see the following link:\r\nhttps://bids-specification.readthedocs.io/en/stable/01-introduction.html\r\n\r\n\r\n**Task description**\r\n\r\nThe patient performed no tasks. The recording equipment was mounted immediately prior to bedtime, and the recordings took place at the sleep laboratory of the Surrey Clinical Research Centre.\r\n\r\nNote that due to a miscommunication during the study, alignment information between cEEGrid and PSG recordings has not been saved. This means that to obtain a useful comparison between the two methods, for instance to align the manual scoring with the cEEGrid recordings, some post processing has to be performed. In the derivative dataset, 'aligned1', we have shared our own best attempt at alignment. \r\n\r\nThe data set was previously described in the paper \r\n'Machine-learning-derived sleep\u2013wake staging from around-the-ear electroencephalogram outperforms manual scoring and actigraphy', Mikkelsen et al 2018, https://doi.org/10.1111/jsr.12786\r\n\r\n**Contact**\r\n\r\nFor questions regarding this data set, contact: \r\nKaare Mikkelsen, Mikkelsen.kaare@ece.au.dk, https://orcid.org/0000-0002-7360-8629"
+    }
+  ],
+  "recordings": [
+    {
+      "recording": "r001",
+      "dataset": "ds004015",
+      "subject": "001",
+      "split": "train",
+      "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e",
+      "metadata": {
+        "InstitutionAddress": "Ammerlaender Heerstr. 114-118, 26129 Oldenburg, Germany",
+        "InstitutionName": "University of Oldenburg",
+        "InstitutionalDepartmentName": "Department of Psychology",
+        "PowerLineFrequency": 50,
+        "ManufacturersModelName": "BrainAmp",
+        "SoftwareFilters": {
+          "Highpass": {
+            "cutoff": "0.0159 (Hz)"
+          },
+          "Lowpass": {
+            "cutoff": "250 (Hz)"
+          }
+        },
+        "TaskName": "AttendedSpeakerParadigmcEEGridAttention",
+        "EEGChannelCount": 18,
+        "EEGReference": "R04b",
+        "RecordingType": "continuous",
+        "RecordingDuration": 5385.92,
+        "SamplingFrequency": 500,
+        "EOGChannelCount": 0,
+        "ECGChannelCount": 0,
+        "EMGChannelCount": 0
+      },
+      "channels_tsv": "name\ttype\tunits\nR08\tEEG\tmicroV\nR07\tEEG\tmicroV\nR06\tEEG\tmicroV\nR05\tEEG\tmicroV\nR04\tEEG\tmicroV\nR03\tEEG\tmicroV\nR02\tEEG\tmicroV\nR01\tEEG\tmicroV\nL08\tEEG\tmicroV\nL07\tEEG\tmicroV\nL06\tEEG\tmicroV\nL05\tEEG\tmicroV\nL04b\tEEG\tmicroV\nL04a\tEEG\tmicroV\nL04\tEEG\tmicroV\nL03\tEEG\tmicroV\nL02\tEEG\tmicroV\nL01\tEEG\tmicroV\n",
+      "files": [
+        {
+          "path": "sub-001/eeg/sub-001_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+          "bytes": 10856976,
+          "algorithm": "md5",
+          "expected_digest": "16fcb0def11bc4841df48a00f41b8bf3",
+          "annex": "../../.git/annex/objects/V8/2g/MD5E-s10856976--16fcb0def11bc4841df48a00f41b8bf3.set/MD5E-s10856976--16fcb0def11bc4841df48a00f41b8bf3.set",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-001/eeg/sub-001_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set"
+        },
+        {
+          "path": "sub-001/eeg/sub-001_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+          "bytes": 193893120,
+          "algorithm": "md5",
+          "expected_digest": "f843ba6a19c86aa71bc40bbd0546ddef",
+          "annex": "../../.git/annex/objects/83/5x/MD5E-s193893120--f843ba6a19c86aa71bc40bbd0546ddef.fdt/MD5E-s193893120--f843ba6a19c86aa71bc40bbd0546ddef.fdt",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-001/eeg/sub-001_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt"
+        }
+      ]
+    },
+    {
+      "recording": "r002",
+      "dataset": "ds004015",
+      "subject": "002",
+      "split": "train",
+      "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e",
+      "metadata": {
+        "InstitutionAddress": "Ammerlaender Heerstr. 114-118, 26129 Oldenburg, Germany",
+        "InstitutionName": "University of Oldenburg",
+        "InstitutionalDepartmentName": "Department of Psychology",
+        "PowerLineFrequency": 50,
+        "ManufacturersModelName": "BrainAmp",
+        "SoftwareFilters": {
+          "Highpass": {
+            "cutoff": "0.0159 (Hz)"
+          },
+          "Lowpass": {
+            "cutoff": "250 (Hz)"
+          }
+        },
+        "TaskName": "AttendedSpeakerParadigmcEEGridAttention",
+        "EEGChannelCount": 18,
+        "EEGReference": "R04b",
+        "RecordingType": "continuous",
+        "RecordingDuration": 3524.756,
+        "SamplingFrequency": 500,
+        "EOGChannelCount": 0,
+        "ECGChannelCount": 0,
+        "EMGChannelCount": 0
+      },
+      "channels_tsv": "name\ttype\tunits\nR08\tEEG\tmicroV\nR07\tEEG\tmicroV\nR06\tEEG\tmicroV\nR05\tEEG\tmicroV\nR04\tEEG\tmicroV\nR03\tEEG\tmicroV\nR02\tEEG\tmicroV\nR01\tEEG\tmicroV\nL08\tEEG\tmicroV\nL07\tEEG\tmicroV\nL06\tEEG\tmicroV\nL05\tEEG\tmicroV\nL04b\tEEG\tmicroV\nL04a\tEEG\tmicroV\nL04\tEEG\tmicroV\nL03\tEEG\tmicroV\nL02\tEEG\tmicroV\nL01\tEEG\tmicroV\n",
+      "files": [
+        {
+          "path": "sub-002/eeg/sub-002_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+          "bytes": 7134344,
+          "algorithm": "md5",
+          "expected_digest": "829f26f8468f3d98db7c56782b2592c1",
+          "annex": "../../.git/annex/objects/Qq/qj/MD5E-s7134344--829f26f8468f3d98db7c56782b2592c1.set/MD5E-s7134344--829f26f8468f3d98db7c56782b2592c1.set",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-002/eeg/sub-002_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set"
+        },
+        {
+          "path": "sub-002/eeg/sub-002_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+          "bytes": 126891216,
+          "algorithm": "md5",
+          "expected_digest": "c7c33efb818f3f71c3ea932736b3dbf9",
+          "annex": "../../.git/annex/objects/pV/mq/MD5E-s126891216--c7c33efb818f3f71c3ea932736b3dbf9.fdt/MD5E-s126891216--c7c33efb818f3f71c3ea932736b3dbf9.fdt",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-002/eeg/sub-002_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt"
+        }
+      ]
+    },
+    {
+      "recording": "r003",
+      "dataset": "ds004015",
+      "subject": "003",
+      "split": "train",
+      "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e",
+      "metadata": {
+        "InstitutionAddress": "Ammerlaender Heerstr. 114-118, 26129 Oldenburg, Germany",
+        "InstitutionName": "University of Oldenburg",
+        "InstitutionalDepartmentName": "Department of Psychology",
+        "PowerLineFrequency": 50,
+        "ManufacturersModelName": "BrainAmp",
+        "SoftwareFilters": {
+          "Highpass": {
+            "cutoff": "0.0159 (Hz)"
+          },
+          "Lowpass": {
+            "cutoff": "250 (Hz)"
+          }
+        },
+        "TaskName": "AttendedSpeakerParadigmcEEGridAttention",
+        "EEGChannelCount": 18,
+        "EEGReference": "R04b",
+        "RecordingType": "continuous",
+        "RecordingDuration": 5520.924,
+        "SamplingFrequency": 500,
+        "EOGChannelCount": 0,
+        "ECGChannelCount": 0,
+        "EMGChannelCount": 0
+      },
+      "channels_tsv": "name\ttype\tunits\nR08\tEEG\tmicroV\nR07\tEEG\tmicroV\nR06\tEEG\tmicroV\nR05\tEEG\tmicroV\nR04\tEEG\tmicroV\nR03\tEEG\tmicroV\nR02\tEEG\tmicroV\nR01\tEEG\tmicroV\nL08\tEEG\tmicroV\nL07\tEEG\tmicroV\nL06\tEEG\tmicroV\nL05\tEEG\tmicroV\nL04b\tEEG\tmicroV\nL04a\tEEG\tmicroV\nL04\tEEG\tmicroV\nL03\tEEG\tmicroV\nL02\tEEG\tmicroV\nL01\tEEG\tmicroV\n",
+      "files": [
+        {
+          "path": "sub-003/eeg/sub-003_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+          "bytes": 11134464,
+          "algorithm": "md5",
+          "expected_digest": "64821f08eaa85dbeb942b0bb7f2b89f9",
+          "annex": "../../.git/annex/objects/Wj/04/MD5E-s11134464--64821f08eaa85dbeb942b0bb7f2b89f9.set/MD5E-s11134464--64821f08eaa85dbeb942b0bb7f2b89f9.set",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-003/eeg/sub-003_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set"
+        },
+        {
+          "path": "sub-003/eeg/sub-003_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+          "bytes": 198753264,
+          "algorithm": "md5",
+          "expected_digest": "39e8ff7ad398eeddc5d497a5a1e05182",
+          "annex": "../../.git/annex/objects/vf/Xz/MD5E-s198753264--39e8ff7ad398eeddc5d497a5a1e05182.fdt/MD5E-s198753264--39e8ff7ad398eeddc5d497a5a1e05182.fdt",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-003/eeg/sub-003_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt"
+        }
+      ]
+    },
+    {
+      "recording": "r004",
+      "dataset": "ds004015",
+      "subject": "004",
+      "split": "validation",
+      "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e",
+      "metadata": {
+        "InstitutionAddress": "Ammerlaender Heerstr. 114-118, 26129 Oldenburg, Germany",
+        "InstitutionName": "University of Oldenburg",
+        "InstitutionalDepartmentName": "Department of Psychology",
+        "PowerLineFrequency": 50,
+        "ManufacturersModelName": "BrainAmp",
+        "SoftwareFilters": {
+          "Highpass": {
+            "cutoff": "0.0159 (Hz)"
+          },
+          "Lowpass": {
+            "cutoff": "250 (Hz)"
+          }
+        },
+        "TaskName": "AttendedSpeakerParadigmcEEGridAttention",
+        "EEGChannelCount": 18,
+        "EEGReference": "R04b",
+        "RecordingType": "continuous",
+        "RecordingDuration": 5406.198,
+        "SamplingFrequency": 500,
+        "EOGChannelCount": 0,
+        "ECGChannelCount": 0,
+        "EMGChannelCount": 0
+      },
+      "channels_tsv": "name\ttype\tunits\nR08\tEEG\tmicroV\nR07\tEEG\tmicroV\nR06\tEEG\tmicroV\nR05\tEEG\tmicroV\nR04\tEEG\tmicroV\nR03\tEEG\tmicroV\nR02\tEEG\tmicroV\nR01\tEEG\tmicroV\nL08\tEEG\tmicroV\nL07\tEEG\tmicroV\nL06\tEEG\tmicroV\nL05\tEEG\tmicroV\nL04b\tEEG\tmicroV\nL04a\tEEG\tmicroV\nL04\tEEG\tmicroV\nL03\tEEG\tmicroV\nL02\tEEG\tmicroV\nL01\tEEG\tmicroV\n",
+      "files": [
+        {
+          "path": "sub-004/eeg/sub-004_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+          "bytes": 10896768,
+          "algorithm": "md5",
+          "expected_digest": "82f5a272bac0021f2105b27cf633c697",
+          "annex": "../../.git/annex/objects/4j/JQ/MD5E-s10896768--82f5a272bac0021f2105b27cf633c697.set/MD5E-s10896768--82f5a272bac0021f2105b27cf633c697.set",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-004/eeg/sub-004_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set"
+        },
+        {
+          "path": "sub-004/eeg/sub-004_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+          "bytes": 194623128,
+          "algorithm": "md5",
+          "expected_digest": "e05c7f8e47ea6e7d0fb91c6e7e18618d",
+          "annex": "../../.git/annex/objects/7J/7w/MD5E-s194623128--e05c7f8e47ea6e7d0fb91c6e7e18618d.fdt/MD5E-s194623128--e05c7f8e47ea6e7d0fb91c6e7e18618d.fdt",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-004/eeg/sub-004_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt"
+        }
+      ]
+    },
+    {
+      "recording": "r005",
+      "dataset": "ds004015",
+      "subject": "005",
+      "split": "test",
+      "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e",
+      "metadata": {
+        "InstitutionAddress": "Ammerlaender Heerstr. 114-118, 26129 Oldenburg, Germany",
+        "InstitutionName": "University of Oldenburg",
+        "InstitutionalDepartmentName": "Department of Psychology",
+        "PowerLineFrequency": 50,
+        "ManufacturersModelName": "BrainAmp",
+        "SoftwareFilters": {
+          "Highpass": {
+            "cutoff": "0.0159 (Hz)"
+          },
+          "Lowpass": {
+            "cutoff": "250 (Hz)"
+          }
+        },
+        "TaskName": "AttendedSpeakerParadigmcEEGridAttention",
+        "EEGChannelCount": 18,
+        "EEGReference": "R04b",
+        "RecordingType": "continuous",
+        "RecordingDuration": 2830.342,
+        "SamplingFrequency": 500,
+        "EOGChannelCount": 0,
+        "ECGChannelCount": 0,
+        "EMGChannelCount": 0
+      },
+      "channels_tsv": "name\ttype\tunits\nR08\tEEG\tmicroV\nR07\tEEG\tmicroV\nR06\tEEG\tmicroV\nR05\tEEG\tmicroV\nR04\tEEG\tmicroV\nR03\tEEG\tmicroV\nR02\tEEG\tmicroV\nR01\tEEG\tmicroV\nL08\tEEG\tmicroV\nL07\tEEG\tmicroV\nL06\tEEG\tmicroV\nL05\tEEG\tmicroV\nL04b\tEEG\tmicroV\nL04a\tEEG\tmicroV\nL04\tEEG\tmicroV\nL03\tEEG\tmicroV\nL02\tEEG\tmicroV\nL01\tEEG\tmicroV\n",
+      "files": [
+        {
+          "path": "sub-005/eeg/sub-005_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+          "bytes": 5748432,
+          "algorithm": "md5",
+          "expected_digest": "98dea8dfdfaf2f44d01504838e3c8764",
+          "annex": "../../.git/annex/objects/fk/14/MD5E-s5748432--98dea8dfdfaf2f44d01504838e3c8764.set/MD5E-s5748432--98dea8dfdfaf2f44d01504838e3c8764.set",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-005/eeg/sub-005_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set"
+        },
+        {
+          "path": "sub-005/eeg/sub-005_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+          "bytes": 101892312,
+          "algorithm": "md5",
+          "expected_digest": "37571311079d7feba93e7943e42efa2d",
+          "annex": "../../.git/annex/objects/qj/4m/MD5E-s101892312--37571311079d7feba93e7943e42efa2d.fdt/MD5E-s101892312--37571311079d7feba93e7943e42efa2d.fdt",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-005/eeg/sub-005_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt"
+        }
+      ]
+    },
+    {
+      "recording": "r006",
+      "dataset": "ds004015",
+      "subject": "006",
+      "split": "test",
+      "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e",
+      "metadata": {
+        "InstitutionAddress": "Ammerlaender Heerstr. 114-118, 26129 Oldenburg, Germany",
+        "InstitutionName": "University of Oldenburg",
+        "InstitutionalDepartmentName": "Department of Psychology",
+        "PowerLineFrequency": 50,
+        "ManufacturersModelName": "BrainAmp",
+        "SoftwareFilters": {
+          "Highpass": {
+            "cutoff": "0.0159 (Hz)"
+          },
+          "Lowpass": {
+            "cutoff": "250 (Hz)"
+          }
+        },
+        "TaskName": "AttendedSpeakerParadigmcEEGridAttention",
+        "EEGChannelCount": 18,
+        "EEGReference": "R04b",
+        "RecordingType": "continuous",
+        "RecordingDuration": 2817.054,
+        "SamplingFrequency": 500,
+        "EOGChannelCount": 0,
+        "ECGChannelCount": 0,
+        "EMGChannelCount": 0
+      },
+      "channels_tsv": "name\ttype\tunits\nR08\tEEG\tmicroV\nR07\tEEG\tmicroV\nR06\tEEG\tmicroV\nR05\tEEG\tmicroV\nR04\tEEG\tmicroV\nR03\tEEG\tmicroV\nR02\tEEG\tmicroV\nR01\tEEG\tmicroV\nL08\tEEG\tmicroV\nL07\tEEG\tmicroV\nL06\tEEG\tmicroV\nL05\tEEG\tmicroV\nL04b\tEEG\tmicroV\nL04a\tEEG\tmicroV\nL04\tEEG\tmicroV\nL03\tEEG\tmicroV\nL02\tEEG\tmicroV\nL01\tEEG\tmicroV\n",
+      "files": [
+        {
+          "path": "sub-006/eeg/sub-006_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+          "bytes": 5720976,
+          "algorithm": "md5",
+          "expected_digest": "8d919fe6d6ed7334b9e4ea2e2bda910f",
+          "annex": "../../.git/annex/objects/ZJ/WV/MD5E-s5720976--8d919fe6d6ed7334b9e4ea2e2bda910f.set/MD5E-s5720976--8d919fe6d6ed7334b9e4ea2e2bda910f.set",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-006/eeg/sub-006_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set"
+        },
+        {
+          "path": "sub-006/eeg/sub-006_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+          "bytes": 101413944,
+          "algorithm": "md5",
+          "expected_digest": "c5fdcc66b9acb65b7064c9bbfea6cc5e",
+          "annex": "../../.git/annex/objects/gG/0X/MD5E-s101413944--c5fdcc66b9acb65b7064c9bbfea6cc5e.fdt/MD5E-s101413944--c5fdcc66b9acb65b7064c9bbfea6cc5e.fdt",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds004015/sub-006/eeg/sub-006_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt"
+        }
+      ]
+    },
+    {
+      "recording": "r007",
+      "dataset": "ds005207",
+      "subject": "001",
+      "split": "external",
+      "git_commit": "6e6e824f5bafdd300bbcba4cb772ebc5b369f842",
+      "metadata": {
+        "TaskName": "Sleep",
+        "SamplingFrequency": 250,
+        "EEGReference": "R4b",
+        "PowerLineFrequency": 50,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "The study participants were asked to stay in bed for 12 hrs between approximately 22:00 and 10:00 hours, during which they were allowed to sleep as much as they wanted ('ad libitum').",
+        "InstitutionName": "University of Oxford",
+        "InstitutionalDepartmentName": "Oxford Institute of Biomedical Engineering",
+        "InstitutionAddress": "Institute of Biomedical Engineering, Department of Engineering Science, Old Road Campus Research Building, University of Oxford, Headington, Oxford OX3 7DQ, UK",
+        "EEGChannelCount": 15,
+        "EOGChannelCount": 0,
+        "ECGChannelCount": 0,
+        "EMGChannelCount": 0,
+        "MiscChannelCount": 6,
+        "TriggerChannelCount": 0,
+        "EEGPlacementScheme": "10/20",
+        "RecordingDuration": 44087.996
+      },
+      "channels_tsv": "name\ttype\tunits\r\r\nR8\tEEG\tuV\r\r\nR7\tEEG\tuV\r\r\nR6\tEEG\tuV\r\r\nR5\tEEG\tuV\r\r\nR4\tEEG\tuV\r\r\nL8\tEEG\tuV\r\r\nL7\tEEG\tuV\r\r\nL6\tEEG\tuV\r\r\nL5\tEEG\tuV\r\r\nL4A\tEEG\tuV\r\r\nL4B\tEEG\tuV\r\r\nL4\tEEG\tuV\r\r\nL3\tEEG\tuV\r\r\nL2\tEEG\tuV\r\r\nL1\tEEG\tuV\r\r\nGyroX\tMISC\tdps\r\r\nGyroY\tMISC\tdps\r\r\nGyroZ\tMISC\tdps\r\r\nAccelerX\tMISC\tms2\r\r\nAccelerY\tMISC\tms2\r\r\nAccelerZ\tMISC\tms2\r\r\n",
+      "files": [
+        {
+          "path": "sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+          "bytes": 44102080,
+          "algorithm": "sha256",
+          "expected_digest": "fdbbcbc9c519a3be6044693107f230cebad32aaad774339644d5e83ad398fbdb",
+          "annex": "../../../.git/annex/objects/Vm/zX/SHA256E-s44102080--fdbbcbc9c519a3be6044693107f230cebad32aaad774339644d5e83ad398fbdb.set/SHA256E-s44102080--fdbbcbc9c519a3be6044693107f230cebad32aaad774339644d5e83ad398fbdb.set",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds005207/sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-cEEGrid_eeg.set"
+        },
+        {
+          "path": "sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+          "bytes": 925848000,
+          "algorithm": "sha256",
+          "expected_digest": "44fa55ffdfec8191d1b6562c530ab0e5bee1d3264ecd62e768032f0480191b3f",
+          "annex": "../../../.git/annex/objects/fg/4v/SHA256E-s925848000--44fa55ffdfec8191d1b6562c530ab0e5bee1d3264ecd62e768032f0480191b3f.fdt/SHA256E-s925848000--44fa55ffdfec8191d1b6562c530ab0e5bee1d3264ecd62e768032f0480191b3f.fdt",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds005207/sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-cEEGrid_eeg.fdt"
+        }
+      ]
+    },
+    {
+      "recording": "r008",
+      "dataset": "ds005207",
+      "subject": "003",
+      "split": "external",
+      "git_commit": "6e6e824f5bafdd300bbcba4cb772ebc5b369f842",
+      "metadata": {
+        "TaskName": "Sleep",
+        "SamplingFrequency": 250,
+        "EEGReference": "R4b",
+        "PowerLineFrequency": 50,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "The study participants were asked to stay in bed for 12 hrs between approximately 22:00 and 10:00 hours, during which they were allowed to sleep as much as they wanted ('ad libitum').",
+        "InstitutionName": "University of Oxford",
+        "InstitutionalDepartmentName": "Oxford Institute of Biomedical Engineering",
+        "InstitutionAddress": "Institute of Biomedical Engineering, Department of Engineering Science, Old Road Campus Research Building, University of Oxford, Headington, Oxford OX3 7DQ, UK",
+        "EEGChannelCount": 12,
+        "EOGChannelCount": 0,
+        "ECGChannelCount": 0,
+        "EMGChannelCount": 0,
+        "MiscChannelCount": 6,
+        "TriggerChannelCount": 0,
+        "EEGPlacementScheme": "10/20",
+        "RecordingDuration": 43719.996
+      },
+      "channels_tsv": "name\ttype\tunits\r\r\nR5\tEEG\tuV\r\r\nR4\tEEG\tuV\r\r\nR3\tEEG\tuV\r\r\nR2\tEEG\tuV\r\r\nR1\tEEG\tuV\r\r\nL5\tEEG\tuV\r\r\nL4A\tEEG\tuV\r\r\nL4B\tEEG\tuV\r\r\nL4\tEEG\tuV\r\r\nL3\tEEG\tuV\r\r\nL2\tEEG\tuV\r\r\nL1\tEEG\tuV\r\r\nGyroX\tMISC\tdps\r\r\nGyroY\tMISC\tdps\r\r\nGyroZ\tMISC\tdps\r\r\nAccelerX\tMISC\tms2\r\r\nAccelerY\tMISC\tms2\r\r\nAccelerZ\tMISC\tms2\r\r\n",
+      "files": [
+        {
+          "path": "sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+          "bytes": 43733336,
+          "algorithm": "sha256",
+          "expected_digest": "012a43d156d3d373fd42c5671f92a76c400f8022f9e3dd0c3cb7736870caeeff",
+          "annex": "../../../.git/annex/objects/VM/3Q/SHA256E-s43733336--012a43d156d3d373fd42c5671f92a76c400f8022f9e3dd0c3cb7736870caeeff.set/SHA256E-s43733336--012a43d156d3d373fd42c5671f92a76c400f8022f9e3dd0c3cb7736870caeeff.set",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds005207/sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-cEEGrid_eeg.set"
+        },
+        {
+          "path": "sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+          "bytes": 786960000,
+          "algorithm": "sha256",
+          "expected_digest": "95abb439a9b2808dffc08e9df75fb59a9356f439430ada199bd05060a68e7a7b",
+          "annex": "../../../.git/annex/objects/53/ZG/SHA256E-s786960000--95abb439a9b2808dffc08e9df75fb59a9356f439430ada199bd05060a68e7a7b.fdt/SHA256E-s786960000--95abb439a9b2808dffc08e9df75fb59a9356f439430ada199bd05060a68e7a7b.fdt",
+          "url": "https://s3.amazonaws.com/openneuro.org/ds005207/sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-cEEGrid_eeg.fdt"
+        }
+      ]
+    }
+  ],
+  "total_download_bytes": 2769602360
+}

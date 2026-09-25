@@ -1,0 +1,109 @@
+{
+  "schema": "eegt-release-assets/v2",
+  "release": "v0.2.0",
+  "assets": [
+    {
+      "name": "native-slices.npz",
+      "source_path": "data/derived/native-slices.npz",
+      "bytes": 79415190,
+      "sha256": "1f2cf216cb25c0ee4280625a97d342f0261fc61a9e6bb879b1549e1af5f23ace"
+    },
+    {
+      "name": "analysis-waves.npz",
+      "source_path": "data/derived/analysis-waves.npz",
+      "bytes": 30035654,
+      "sha256": "2a400321c0e7d3e25021c32544e9abd7e2241a3e401729d44b30c3a6e2e3f311"
+    },
+    {
+      "name": "models.npz",
+      "source_path": "results/002/models.npz",
+      "bytes": 1490234,
+      "sha256": "ceb5b4708757d0bb689abb8d38ddde427c04ad90b899bfab02d2d09c8803692c"
+    },
+    {
+      "name": "assignments.npz",
+      "source_path": "results/002/assignments.npz",
+      "bytes": 610910,
+      "sha256": "409ff8fcdb98c91ef6c0ba963789ce859baeee5116d34a3a2927ac64eef764a5"
+    },
+    {
+      "name": "windows.csv.gz",
+      "source_path": "results/002/windows.csv.gz",
+      "bytes": 606324,
+      "sha256": "0adc6f38969f9cfee6aefa95e62874fbd156b78f225f86d0ea9e46ed47740ceb"
+    },
+    {
+      "name": "window-hashes.csv.gz",
+      "source_path": "results/002/window-hashes.csv.gz",
+      "bytes": 1643327,
+      "sha256": "e2f178208c5d7ccf57f3a0821d3d35e4171c0dbdc253db769b73d5e05b532275"
+    },
+    {
+      "name": "evaluation-index.npz",
+      "source_path": "results/002/evaluation-index.npz",
+      "bytes": 66522,
+      "sha256": "008b644822da84e9282ce34207aeefab53d3030b5b7d4f1b83d4f21a184f8303"
+    },
+    {
+      "name": "metrics.json",
+      "source_path": "results/002/metrics.json",
+      "bytes": 507963,
+      "sha256": "f1b948f10a9270bb3e8734d670eed246640cd8f6725c593212ddd54cfad9899e"
+    },
+    {
+      "name": "provenance.json",
+      "source_path": "results/002/provenance.json",
+      "bytes": 7220,
+      "sha256": "5c9b56f67ab35dd6a2dee3feb0e24631e8784992b21cefb674fac237a8b1393f"
+    },
+    {
+      "name": "qc.json",
+      "source_path": "results/002/qc.json",
+      "bytes": 4275,
+      "sha256": "02545b7591726a00827a85b11a5dd41a0e50c4c89dddc4e131d2c0e298289339"
+    },
+    {
+      "name": "acquisition.json",
+      "source_path": "results/002/acquisition.json",
+      "bytes": 6109,
+      "sha256": "6e63a36e06317a9ecee33e622e933f7d02780d9c08fb25ecaec86577a9290a99"
+    },
+    {
+      "name": "reproduction.json",
+      "source_path": "results/002/reproduction.json",
+      "bytes": 1423,
+      "sha256": "3d5fbf1b14373ab0ff641c51dc1bd37d123f5d624adb49a72cb2a12444b6cd79"
+    },
+    {
+      "name": "resources.json",
+      "source_path": "results/002/resources.json",
+      "bytes": 925,
+      "sha256": "19b681aa0034a259fcc5240727f0b6754f90a15d2a40fc202dba603a0abb1a0e"
+    },
+    {
+      "name": "prepared-inputs.json",
+      "source_path": "results/002/prepared-inputs.json",
+      "bytes": 783,
+      "sha256": "abdafcc8a7a4a4131141d4c9b84f37fd67685d20575f88b8ee3b78f622fae4bd"
+    },
+    {
+      "name": "export-audit.json",
+      "source_path": "results/002/export-audit.json",
+      "bytes": 275,
+      "sha256": "3bb202389ddb1df8568f751316d2a195f861e32bbc2dd41ea600566a33aca84d"
+    },
+    {
+      "name": "repair-equivalence.json",
+      "source_path": "results/002/repair-equivalence.json",
+      "bytes": 862,
+      "sha256": "7bbcad850b4f28261e6940cb8c2f80c8ba43014844d1ea5ba71fb02ec7ce7839"
+    },
+    {
+      "name": "site-summary.json",
+      "source_path": "results/002/site-summary.json",
+      "bytes": 1693,
+      "sha256": "bb441885c272b23a1bbd505075db575af096f06829107df5f689b2957be31df7"
+    }
+  ],
+  "note": "Large binary assets are attached to the GitHub release; small JSON artifacts are also tracked in the source tree."
+}

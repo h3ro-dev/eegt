@@ -1,0 +1,12 @@
+{
+  "schema": "eegt-prepared-inputs/v1",
+  "files": {
+    "data/derived/analysis-waves.npz": "2a400321c0e7d3e25021c32544e9abd7e2241a3e401729d44b30c3a6e2e3f311",
+    "results/002/evaluation-index.npz": "008b644822da84e9282ce34207aeefab53d3030b5b7d4f1b83d4f21a184f8303",
+    "results/002/windows.csv.gz": "0adc6f38969f9cfee6aefa95e62874fbd156b78f225f86d0ea9e46ed47740ceb",
+    "results/002/provenance.json": "5c9b56f67ab35dd6a2dee3feb0e24631e8784992b21cefb674fac237a8b1393f",
+    "results/002/qc.json": "02545b7591726a00827a85b11a5dd41a0e50c4c89dddc4e131d2c0e298289339",
+    "protocol/experiment-002.json": "6d6449e057117221cfa9f01d5d9b30af518d223e60d81fa02ec0366ae27b0675",
+    "protocol/source-manifest.json": "afeb4181a98c7c030d36373f4dbbc40822fc463def3a8a27800a66764898d00c"
+  }
+}

@@ -1,0 +1,16 @@
+# Repeatable research and publication
+
+Accountable project: EEGT. Maintain one authoritative experiment plan. The initial v0.2.0 experiment is immutable; a rerun is an additional receipt, not permission to change its findings.
+
+1. Check for a material new open around-ear waveform source, new compatible model, source update or concrete defect. An unchanged check produces no new experiment or public result.
+2. Before fetching or fitting, allocate the next experiment number and write its question, source/subject selection, fixed slice/time scales, train/evaluation groups, QC, models/seeds, outcome definitions, controls, resource estimate and publication boundary. Hash the protocol. Use only open sources; retain primary metadata and attribution. No private EEG or clinical/semantic labels are needed for this program.
+3. Acquire a bounded batch and verify every pinned source digest, byte count, units, channel structure and native rate. Keep native data intact and provenance separate. Unknown fields or unsupported acquisition fail visibly. Never pad missing channels or claim resampling recreates a Neurable headset.
+4. Run the numeric contract and relevant tests, then all planned models/settings. Keep the codebook frozen for evaluation. Use participant-disjoint recordings and report every observed window denominator. Keep failed, abstained, null and collapsed outcomes.
+5. Check exact outputs and have nontrivial code/reporting changes reviewed. Verify serialization and repeatability. Actual review does not require a new independent scientific replication campaign.
+6. Write a numbered Research Note from machine-readable results, with source/protocol/model/output hashes, costs/resources, all selected settings, limits and the next decision. Publish derived arrays/tokens/models only under their recorded source terms. Retain correction history; never silently replace a published artifact.
+7. Tag a source release, upload its data and checksum assets, build the static ledger, and verify GitHub release assets plus the actual public URL after publication. A DNS alias is separately verified with DNS, HTTPS and content readback. Failed deployment stays failed until native verification succeeds.
+8. Notify James on a meaningful finding, successful publication, failure requiring action, or exact access need. Do not notify for unchanged scheduled checks. Weekly cadence is an intake check, not a requirement to generate new results every week.
+
+Initial operating bounds per new intake: up to 3 GB download, one numeric worker at a time, roughly 2 GB model working memory and one CPU thread, no paid model call without a documented cap/expected value. These are per-experiment planning estimates and need fresh measurement; they are not blanket fleet admission limits. Expand only for a justified question and measured physical fit. Record model versions and computational resources before expanding a run.
+
+If the public host or remote is unavailable, preserve the completed local release package and the exact error, try supported recovery or another authorized publication target, and keep public state explicit. If a dataset disappears or a checksum changes, do not silently substitute bytes; record the failed intake and freeze a new version after resolving provenance.

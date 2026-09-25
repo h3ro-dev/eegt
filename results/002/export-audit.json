@@ -1,0 +1,9 @@
+{
+  "schema": "eegt-export-audit/v1",
+  "checked_windows": 40500,
+  "unique_indices": 40500,
+  "native_slice_export_hashes_match": true,
+  "qc_pass": 40288,
+  "excluded": 212,
+  "window_hash_asset_sha256": "e2f178208c5d7ccf57f3a0821d3d35e4171c0dbdc253db769b73d5e05b532275"
+}

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eegt"
+version = "0.2.0"
+description = "Anonymous around-ear EEG tokenization experiments and open research ledger"
+requires-python = ">=3.12"
+dependencies = ["numpy==2.5.3", "scipy==1.18.1", "mne==1.13.2", "scikit-learn==1.9.1", "threadpoolctl==3.7.0"]
+license = "MIT"
+
+[tool.setuptools.packages.find]
+include = ["eegt*"]

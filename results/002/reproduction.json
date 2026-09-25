@@ -1,0 +1,41 @@
+{
+  "schema": "eegt-reproduction/v2",
+  "status": "PASS",
+  "original_metrics_sha256": "f1b948f10a9270bb3e8734d670eed246640cd8f6725c593212ddd54cfad9899e",
+  "repeat_metrics_sha256": "9c4aa8cc4ba9fc0442acb0fd67147399f2725c61c31ea8fc537e97ec1abcaed9",
+  "checks": {
+    "assignments.npz": {
+      "original_sha256": "409ff8fcdb98c91ef6c0ba963789ce859baeee5116d34a3a2927ac64eef764a5",
+      "repeat_sha256": "409ff8fcdb98c91ef6c0ba963789ce859baeee5116d34a3a2927ac64eef764a5",
+      "byte_identical": true
+    },
+    "models.npz": {
+      "original_sha256": "ceb5b4708757d0bb689abb8d38ddde427c04ad90b899bfab02d2d09c8803692c",
+      "repeat_sha256": "ceb5b4708757d0bb689abb8d38ddde427c04ad90b899bfab02d2d09c8803692c",
+      "byte_identical": true
+    },
+    "models": {
+      "identical": true
+    },
+    "agreements": {
+      "identical": true
+    },
+    "controls": {
+      "identical": true
+    },
+    "permutation_nulls": {
+      "identical": true
+    },
+    "qc": {
+      "identical": true
+    },
+    "prepared_input_hashes": {
+      "identical": true
+    },
+    "source_hashes": {
+      "identical": true
+    }
+  },
+  "all_nonresource_metric_fields_identical": true,
+  "method": "Separate copied repaired source and sealed derived inputs; fresh fit of all 27 models with one numerical thread. Full metric equality excludes only timing_seconds and peak_rss_native. Same platform, not independent scientific replication."
+}

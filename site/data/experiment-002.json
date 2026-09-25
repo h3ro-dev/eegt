@@ -1,0 +1,46 @@
+{
+  "status": "reproduced",
+  "headline": "Different methods find different pattern vocabularies.",
+  "summary": "Eight around-ear recordings; 27 fitted configurations. The run is numerically reproducible. High coverage did not produce a universal partition.",
+  "metrics": [
+    {
+      "label": "Source recordings",
+      "value": "8",
+      "detail": "Two CC0 cEEGrid collections; 80 recording-minutes analyzed."
+    },
+    {
+      "label": "QC-passing windows",
+      "value": "40,288 / 40,500",
+      "detail": "Two-second channel windows; not independent people."
+    },
+    {
+      "label": "Spectrum / time-frequency ARI",
+      "value": "0.2894",
+      "detail": "External set: the same 7,938 QC-passing windows. Identical partitions would score 1."
+    },
+    {
+      "label": "Spectrum / waveform ARI",
+      "value": "0.0387",
+      "detail": "External set: low agreement despite high token coverage."
+    }
+  ],
+  "downloads": [
+    {
+      "label": "Experiment 002 research note",
+      "url": "https://github.com/h3ro-dev/eegt/blob/main/notes/experiment-002.md"
+    },
+    {
+      "label": "All numerical results",
+      "url": "https://github.com/h3ro-dev/eegt/blob/main/results/002/metrics.json"
+    },
+    {
+      "label": "Waveforms, tokens and codebooks",
+      "url": "https://github.com/h3ro-dev/eegt/releases/tag/v0.2.0"
+    }
+  ],
+  "limitations": [
+    "LLM-authored numerical algorithms; independent pretrained-LLM discovery is not established.",
+    "cEEGrid recordings are not Neurable recordings. The decoded input adapter is tested; physical headset transfer is not.",
+    "Eight people; no semantic, clinical or universal claim. Coverage is not accuracy."
+  ]
+}

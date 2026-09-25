@@ -1,0 +1,22 @@
+{
+  "schema": "eegt-resource-receipt/v2",
+  "platform": "Studio0 macOS ARM64",
+  "numerical_threads": 1,
+  "downloaded_bytes": 2769602360,
+  "recording_minutes_analyzed": 80,
+  "prepare_wall_seconds": 34.35,
+  "prepare_peak_rss_bytes": 1070497792,
+  "fit_evaluate_wall_seconds": 16.57,
+  "fit_evaluate_peak_rss_bytes": 1839742976,
+  "model_fit_evaluate_internal_seconds": 14.00787654099986,
+  "cost": "No recording-level inference API was used. Agent research, implementation and review usage is not attributed as a dollar total. Existing local CPU and storage used.",
+  "repeat_fit_evaluate_wall_seconds": 16.0,
+  "repeat_fit_evaluate_peak_rss_bytes": 1886486528,
+  "prior_unrepaired_run": {
+    "prepare_wall_seconds": 28.31,
+    "prepare_peak_rss_bytes": 1091059712,
+    "fit_evaluate_wall_seconds": 16.27,
+    "fit_evaluate_peak_rss_bytes": 1881260032,
+    "model_fit_evaluate_internal_seconds": 13.675834416993894
+  }
+}

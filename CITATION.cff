@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software release and the original EEG datasets listed in DATA_CARD.md."
+type: software
+title: "EEGT: Anonymous around-ear EEG tokenization experiments"
+version: 0.2.0
+date-released: 2026-09-24
+authors:
+  - name: EEGT contributors
+repository-code: "https://github.com/h3ro-dev/eegt"
+url: "https://h3ro-dev.github.io/eegt/"
+license: MIT
