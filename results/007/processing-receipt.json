@@ -1,0 +1,62 @@
+{
+  "schema": "eegt-processing-receipt/v1",
+  "date": "2026-09-25",
+  "python": "3.12.12",
+  "machine_arch": "arm64",
+  "requirements_lock_sha256": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6",
+  "numerical_model_api_calls": 0,
+  "agent_authoring_api_cost_usd": null,
+  "cost_note": "Numerical processing is local. Native agent authoring/review monetary cost was not exposed.",
+  "stages": {
+    "extraction": {
+      "processes": 8,
+      "blas_threads_each": 1,
+      "wall_seconds": 307.67,
+      "max_rss_reported_bytes": 929808384,
+      "note": "macOS time reports maximum resident size; this is not a measured sum across eight concurrent children."
+    },
+    "evaluation": {
+      "processes": 1,
+      "wall_seconds": 66.31,
+      "max_rss_reported_bytes": 1683800064
+    },
+    "controls": {
+      "processes": 1,
+      "wall_seconds": 172.91,
+      "max_rss_reported_bytes": 1066237952
+    }
+  },
+  "unit_tests": {
+    "count": 44,
+    "failures": 0,
+    "warnings_as_errors": true,
+    "command": "python -W error -m unittest discover -s tests -q"
+  },
+  "audit": {
+    "status": "PASS",
+    "checks": 2412,
+    "sha256": "17e289452462fd71ab8cd65104b93fd130aabd7115673f8248349cadf4bd399f"
+  },
+  "github_actions": {
+    "status": "NOT_RUN",
+    "reason": "GitHub organization disables Actions; repository enable request returned HTTP 409; policy preserved."
+  },
+  "code_sha256": {
+    "eegt/__init__.py": "fb8c515d9d1e529126c493cfb674a144c75d0f4ad12de4e8ec190f4aeccc0959",
+    "eegt/acquire.py": "120dfbfde3c717572035356db3fe9ba5cf8cddea1eeeeab91673313100d730a3",
+    "eegt/artifacts.py": "4a84c228c972cab008dab508cd167b86ee60f88b0e551c1c4382385c8019352c",
+    "eegt/calibrate.py": "3dbb7835713c3a479b69adb600e7bd05907a7fcd4c259091f02df7b484da13f2",
+    "eegt/contract.py": "81e86845ec47fd41f32c451e3f4030588bd248c2729adc87848f0c955f3d9845",
+    "eegt/controls.py": "d58375540276c1571184c97270b503518a4ff59cdfdefaf32b547291fcc8c4c1",
+    "eegt/corpus.py": "e8be0e5d853af6d0d57a55bbbb8c704cca5e1feea35e4944db3ee477e525a640",
+    "eegt/evaluate.py": "6e2c4ceeaa91f3b7109cba4f9459b35c9e35380a6f59a9c40d53e95c842f2df1",
+    "eegt/growth.py": "3b3689c9679856ec6ce7e43517868dc6db5d5869d951300fd0a5fe119be18350",
+    "eegt/model.py": "a8f95e207ed3f67a686c97024e5ce93582891f406879330f6fb5e0cd084f3537",
+    "eegt/prepare.py": "188bfcdc5000fae25f05e8da832bebaf2d1325485fa5452823c785269db54619",
+    "eegt/signal.py": "c9f15e16cb289ac22ecdfad16f17c834c2453e77d1503d1177574e19e5d745d1",
+    "eegt/transitions.py": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d"
+  },
+  "main_result_sha256": "1a867fe7a431f1d114271bcc46efa339ed8a22461d4575f992e93a25c23fe87d",
+  "controls_result_sha256": "37b95a3d488b18391f9e885b81bb1bad9a0947676c8a6b65b0eb6cc86437eab3",
+  "transfer_result_sha256": "69317f811a5a5018586e807046e713df354fd67803c108ec90aea426258fd154"
+}

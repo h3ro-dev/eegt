@@ -5,17 +5,49 @@
 An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release is a numerical experiment on public around-ear EEG. Its models are LLM-authored unsupervised algorithms; this does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
 
 - [Research Notes website](https://h3ro-dev.github.io/eegt/)
-- [Experiment 002 protocol](protocol/experiment-002.json) and [input contract](protocol/INPUT-CONTRACT.md)
-- [Data card](DATA_CARD.md), [machine-readable results](results/002/metrics.json), [model card](MODEL_CARD.md)
+- [Continuous corpus and transitions](https://h3ro-dev.github.io/eegt/growth.html)
+- [Database contract](DATABASE.md), [Experiment 003 protocol](protocol/experiment-003.json), and [input contract](protocol/INPUT-CONTRACT.md)
+- [Experiment 002 data card](DATA_CARD.md), [results](results/002/metrics.json), and [model card](MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
 
-## What ran
+## Continuous database milestone · v0.3.0
+
+The full pinned around-ear source inventory contains 55 recordings and 21,535,181,808 verified bytes. Fifty-four qualify, totaling 223.47 decoded sample-hours. One recording remains quarantined for a duration discrepancy. Source participants, sessions, hours, multichannel windows and eligible scoring time have separate denominators. These are two public cEEGrid archives, with one recording per source participant; cross-archive identity overlap is unknown.
+
+Experiment 003 measures changes in waveform shape, spectrum and sensor coordination, preserving native gaps. Experiment 004 records the expanded corpus; 006 tests phase and nuisance controls; 007 reports frozen participant/dataset transfer. Experiment 005 is a prepared Neurable capture protocol and **has not run**. See the [Research Notes](notes/) and [current priorities](STRATEGY.md).
+
+The methods see numerical samples and technical timing/validity only. They receive no identity, task or clinical labels. These are three LLM-authored numerical views, not three pretrained LLMs independently discovering the same language. Pretrained-model comparison, repeated sessions and actual headset transfer remain next steps.
+
+## Earlier tokenization baseline · v0.2.0
 
 Eight fixed-selected recordings from two public CC0 cEEGrid collections; 80 recording-minutes analyzed; three people for fitting, one for validation reporting, two other people for same-source testing and two people from the other source. Forty thousand two-second channel windows are observations, not independent people. Three representations × three vocabulary sizes × three seeds = 27 fitted models. All prespecified settings, withheld windows and controls are retained.
 
 Neurable's Research Kit publicly specifies 12 EEG channels at 500 Hz. This package has a strict decoded-array import adapter at that boundary. The open cEEGrid data come from different electrodes/references and are not Neurable recordings. No physical headset validation is claimed. [Official Research Kit](https://www.neurable.com/products/research-kit).
 
-## Reproduce from the checkout
+## Reproduce the continuous corpus
+
+Use Python 3.12 with `requirements.lock`. Reserve about 25 GB for raw and derived data, plus separate space for any copied rerun. Original files remain in the public archives; release downloads provide the SQLite databases and numeric derivatives. No model API key is required.
+
+```sh
+uv venv .venv --python 3.12
+uv pip sync --python .venv/bin/python requirements.lock
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1
+.venv/bin/python -W error -m unittest discover -s tests -q
+.venv/bin/python -m eegt.corpus download --max-bytes 22000000000
+.venv/bin/python -m eegt.corpus qualify
+.venv/bin/python -m eegt.calibrate
+.venv/bin/python -m eegt.growth extract --workers 1
+.venv/bin/python -m eegt.growth evaluate
+.venv/bin/python -m eegt.controls
+.venv/bin/python scripts/report_growth.py
+.venv/bin/python scripts/audit_growth.py
+```
+
+The manifest is already frozen; do not reselect sources. Published outputs refuse replacement. For a rerun, copy the checkout to a new directory and move that copy's `results/corpus-v1`, `results/003`, `results/006`, `results/007`, and `data/derived/003` into a separate baseline directory before running. Preserve source files and the frozen protocol. Compare numerical arrays and metrics; SQLite binary hashes can differ with environment or serialization. Digital calibration checks the decoding conversion, not the original amplifier's accuracy.
+
+The default command uses one numerical process. Increase workers only after measuring CPU, memory and I/O capacity; the completed extraction used eight single-threaded processes. See [prepublication corrections](protocol/amendment-003.md). Never edit a hash receipt to admit changed inputs.
+
+## Reproduce the earlier Experiment 002
 
 Use Python 3.12 and the exact locked environment. The commands operate relative to this source checkout; it contains the versioned experiment assets.
 

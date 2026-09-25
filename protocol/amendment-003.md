@@ -36,7 +36,26 @@ The source corpus, participant split, numeric features, QC criteria, context
 scales and threshold quantile remain as frozen in the original protocol.
 
 Source qualification retained 55 candidates and quarantined ds005207 sub-026:
-its native sample count differs from declared duration by503samples at250Hz.
+its native sample count differs from declared duration by 503 samples at 250 Hz.
 The source bytes match upstream hashes. The discrepancy is preserved and the
 record remains excluded under the one-sample duration rule; no silent duration
 repair or interpolation was applied.
+
+## Additional corrections before held-out evaluation
+
+The first fitting attempt stopped at the timing-grid guard during the training
+threshold pass. Floating-point chunk ownership had admitted near-duplicate
+centers in 11 auditory recordings. Transient training reference statistics had
+been calculated, but no model or threshold artifact was frozen and no held-out
+or control result was produced. Window ownership now uses integer native
+half-sample coordinates. A 1,202-second off-grid regression fixture reproduces
+the seam and verifies exactly one row per center. Features were regenerated
+before fitting. Earlier feature receipts remain preserved as historical
+intermediates; they are not the final analysis inputs.
+
+Independent re-review also identified a reporting edge case: a control cohort
+could disappear when it had no analyzable main-run record. Control groups now
+derive from control eligibility independently, and a focused regression checks
+this case. Final reports and the audit verify every control row against its
+separate hash receipt and the summary. These changes do not alter the frozen
+split, feature definitions, QC rules, thresholds or boundary matching criteria.

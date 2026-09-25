@@ -12,10 +12,34 @@ from eegt.acquire import ROOT,digest
 from eegt.corpus import atomic_json
 from eegt.growth import bootstrap,json_ready,VIEWS
 
+GEOMETRY=('pre_post_distance','path_length','mean_speed','turning_angle_radians','return_distance')
+
 
 def grouped(record):
     if record['split']=='external': return 'external_exposed' if record['prior_exposure'] else 'external_unexposed'
     return record['split']
+
+
+def control_groups(records):
+    """Control eligibility is independent of main-run analyzability."""
+    groups=defaultdict(list)
+    for record in records:
+        if record['status']=='EVALUATED':groups[grouped(record)].append(record)
+    return groups
+
+
+def verify_control_rows(root,controls):
+    receipt_path=root/'results/006/row-receipt.json'
+    if digest(receipt_path)!=controls['row_receipt_sha256']:raise ValueError('control receipt changed')
+    receipt=json.loads(receipt_path.read_text())
+    if receipt['inputs']!=controls['inputs'] or receipt['files']!=controls['row_files']:raise ValueError('control receipt mismatch')
+    expected={r['recording_id']+'.json' for r in controls['records']}
+    if len(expected)!=len(controls['records']) or expected!=set(receipt['files']):raise ValueError('control row denominator mismatch')
+    for row in controls['records']:
+        path=root/'results/006'/(row['recording_id']+'.json')
+        if digest(path)!=receipt['files'][path.name]:raise ValueError('control row changed')
+        saved=json.loads(path.read_text())
+        if saved['inputs']!=controls['inputs'] or saved['result']!=row:raise ValueError('control summary does not match row')
 
 
 def pooled_agreement(rows):
@@ -53,6 +77,7 @@ def main():
         if digest(root/key)!=expected:raise ValueError('analysis input changed: '+key)
     for key,expected in controls['inputs'].items():
         if digest(root/key)!=expected:raise ValueError('control input changed: '+key)
+    verify_control_rows(root,controls)
     groups=defaultdict(list)
     for r in result['records']:groups[grouped(r)].append(r)
     group_summary={}
@@ -60,12 +85,24 @@ def main():
     for group,records in groups.items():
         agreement=[pooled_agreement(r['agreement']) for r in records]
         group_summary[group]=dict(records=len(records),windows=sum(r['windows'] for r in records),valid_windows=sum(r['valid_windows'] for r in records),agreement={key:bootstrap([a.get(key,{}).get('f1') for a in agreement]) for key in pair_keys},rates={v:bootstrap([r['event_counts'][v+':2.0']['events_per_scored_minute'] for r in records]) for v in VIEWS})
+    geometry_records={}
+    with sqlite3.connect(root/'results/003/analysis.sqlite') as db:
+        for record in result['records']:
+            rid=record['recording_id'];byview={}
+            for view in VIEWS:
+                rows=[json.loads(r[0]) for r in db.execute('SELECT geometry_json FROM transition_events WHERE recording_id=? AND view=? AND scale_seconds=2.0',(rid,view))]
+                byview[view]={}
+                for key in GEOMETRY:
+                    values=[r[key] for r in rows if r is not None and r[key] is not None]
+                    byview[view][key]=dict(events=len(values),median=float(np.median(values)) if values else None)
+            geometry_records[rid]=byview
+    for group,records in groups.items():
+        group_summary[group]['geometry']={view:{key:bootstrap([geometry_records[r['recording_id']][view][key]['median'] for r in records]) for key in GEOMETRY} for view in VIEWS}
     control_summary={}
     for variant in ['original','independent_phase','shared_phase','gain_1.1','polarity_reverse','time_reverse']:
-        chosen=[r for r in controls['records'] if r['status']=='EVALUATED']
         bygroup={}
-        for group in groups:
-            rr=[r for r in chosen if grouped(r)==group];agreements=[pooled_agreement(r['variants'][variant]['agreement']) for r in rr]
+        for group,rr in control_groups(controls['records']).items():
+            agreements=[pooled_agreement(r['variants'][variant]['agreement']) for r in rr]
             bygroup[group]=dict(records=len(rr),valid_windows=sum(r['variants'][variant]['valid_windows'] for r in rr),agreement={key:bootstrap([a.get(key,{}).get('f1') for a in agreements]) for key in pair_keys},rates={},paired_rate_difference={})
             for v in VIEWS:
                 key=v+':2.0'
@@ -78,7 +115,7 @@ def main():
                     if a is not None and b is not None:differences.append(b-a)
                 bygroup[group]['paired_rate_difference'][v]=bootstrap(differences)
         control_summary[variant]=bygroup
-    report=dict(schema='eegt-transfer-summary/v1',groups=group_summary,controls=control_summary,
+    report=dict(schema='eegt-transfer-summary/v1',groups=group_summary,controls=control_summary,geometry_per_record=geometry_records,
         input_hashes={p:digest(root/p) for p in ['results/corpus-v1/summary.json','results/003/summary.json','results/006/summary.json','scripts/report_growth.py']},
         aggregation='Pool event-match counts within each recording; bootstrap medians across source participant-recordings. Empty/empty event sets are missing for aggregate F1, not perfect biological agreement. Intervals are descriptive, not simultaneous or confirmatory confidence bounds.')
     atomic_json(root/'results/007/summary.json',json_ready(report),immutable=True)
@@ -88,6 +125,9 @@ def main():
     fheaders=['Group','Records','Valid/all multichannel windows','Shape / spectrum F1','Shape / coordination F1','Spectrum / coordination F1']
     rates=[[g,*[fmt(s['rates'][v]) for v in VIEWS]] for g,s in group_summary.items()]
     rheaders=['Group','Shape changes/min','Spectrum changes/min','Coordination changes/min']
+    grows=[[g,v,fmt(s['geometry'][v]['pre_post_distance']),fmt(s['geometry'][v]['turning_angle_radians'])] for g,s in group_summary.items() for v in VIEWS]
+    gheaders=['Group','Numerical view','Pre/post distance','Turning angle (radians)']
+    geometry_note='Geometry summarizes the median event within each recording, then the median across recordings. Distances use each view’s training-scaled feature coordinates; speed is distance per second and angle is radians. Different views do not share a proven common coordinate system. Endpoint return distance is not a recovery time. All five descriptors and contributing event counts are in the JSON and SQLite release.'
     ctrlrows=[]
     for variant,g in control_summary.items():
         s=g.get('external_unexposed')
@@ -99,6 +139,8 @@ def main():
     (root/'notes/experiment-003.md').write_text('# Research Notes · Experiment 003\n\nDate: 2026-09-25. State: numerical transition analysis computed.\n\nWe measure changes in waveform morphology, spectrum and sensor coordination at 0.5-, 2- and 8-second context scales, using two-second windows stepped every half-second. A training-only median/IQR reference and training 95th-percentile threshold are fixed before evaluation. Primary results use the 2-second context; all scales remain in the database. Geometry records pre/post distance, trajectory length, speed, angle and endpoint return distance. These are multivariate changes, not raw-wave mathematical inflection points, inferred recovery or millisecond microstates.\n\n'+common+'\n\n'+table(fheaders,frows)+'\nEntries are per-record medians, participant-bootstrap 95% intervals and contributing record counts. Event counts are pooled over continuous segments within a recording before calculating F1; empty/empty cases contribute no evidence to this aggregate. The overlapping windows are not independent statistical units.\n\n'+artifacts+'\n')
     (root/'notes/experiment-006.md').write_text('# Research Notes · Experiment 006\n\nDate: 2026-09-25. State: bounded phase and nuisance control battery computed.\n\n'+f"{controls['evaluated_recordings']} of {controls['candidate_recordings']} source records have a technically eligible control segment. The first native continuous interval long enough is used: 120 central seconds with 12-second halos on each side. This is a bounded control sample, not all 235 metadata-hours; ineligible records retain reasons.\n\n"+'Independent Fourier phase randomization preserves each channel\'s Fourier magnitudes. Shared randomization also preserves cross-spectra. Both change temporal localization. The same frozen detector is applied, with validity counts and matched original/variant supports for rate comparisons. Gain×1.1, polarity reversal and time reversal test nuisance sensitivity; reversal is reported with reflected timing and separate quality exposure.\n\n'+table(cheaders,ctrlrows)+'\nThis table uses prior-unexposed external records and each variant\'s own valid support. Paired-support rate differences are in the machine-readable summary; do not interpret changes in the table as entirely biological when validity differs. These controls are not a complete biological null and are not clinical validation.\n\n'+common+'\n\n'+artifacts+'\n')
     (root/'notes/experiment-007.md').write_text('# Research Notes · Experiment 007\n\nDate: 2026-09-25. State: frozen transfer evaluation computed.\n\nThe split uses source participants 001–024 for fitting, 025–030 for validation reporting and 031–036 for same-source tests. Sleep records form an external dataset; 001/003 were previously explored and remain separated from the other 17. There is one recording per participant in these snapshots: repeated-session reliability and verified device transfer remain unmeasured.\n\nHeld-out means a participant did not teach the detector its reference or thresholds. It does not prove independence from an LLM\'s pretraining, erase earlier exploration, or establish the absence of a shared person across public archives.\n\n'+table(rheaders,rates)+'\nRates use eligible scored-window centers × 0.5 seconds as exposure, not raw wall-clock time. Entries are per-record medians with descriptive participant-bootstrap 95% intervals. No labels exist to turn these rates into accuracy, sensitivity or specificity. A changed rate on sleep data can reflect acquisition, channel count, reference, artifact mix or actual physiological differences.\n\n'+table(fheaders,frows)+'\n'+common+'\n\n'+artifacts+'\n')
+    with (root/'notes/experiment-003.md').open('a') as note:
+        note.write('\n## Transition geometry\n\n'+table(gheaders,grows)+'\n'+geometry_note+'\n')
     site=root/'site';(site/'data').mkdir(exist_ok=True)
     atomic_json(site/'data/growth.json',json_ready(dict(corpus=corpus['coverage'],totals=result['totals'],groups=group_summary,controls=control_summary)))
     import matplotlib

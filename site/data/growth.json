@@ -1,0 +1,3402 @@
+{
+  "controls": {
+    "gain_1.1": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3076923076923077
+            ],
+            "median": 0.15384615384615385,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.10526315789473684,
+              0.2857142857142857
+            ],
+            "median": 0.19548872180451127,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.1,
+              0.16666666666666666
+            ],
+            "median": 0.13333333333333333,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.095890410958904,
+              1.1707317073170733
+            ],
+            "median": 1.1333110591379887,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              0.547945205479452,
+              6.439024390243903
+            ],
+            "median": 3.4934847978616776,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              5.853658536585366,
+              9.863013698630137
+            ],
+            "median": 7.8583361176077515,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 460
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.19047619047619047,
+              0.4
+            ],
+            "median": 0.3333333333333333,
+            "n": 15
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.3225806451612903,
+              0.5384615384615384
+            ],
+            "median": 0.38095238095238093,
+            "n": 15
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4444444444444444
+            ],
+            "median": 0.3157894736842105,
+            "n": 15
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.857142857142857,
+              4.304932735426009
+            ],
+            "median": 3.7333333333333334,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              6.457399103139013,
+              10.51094890510949
+            ],
+            "median": 7.210300429184549,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              7.361963190184048,
+              15.924170616113745
+            ],
+            "median": 8.23529411764706,
+            "n": 15
+          }
+        },
+        "records": 16,
+        "valid_windows": 3185
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 4
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              1.3445145467850714
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.2575107296137339
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1438
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.38095238095238093,
+              0.64
+            ],
+            "median": 0.46886446886446886,
+            "n": 24
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2857142857142857,
+              0.4444444444444444
+            ],
+            "median": 0.375,
+            "n": 23
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.28625258799171793
+            ],
+            "median": 0.07142857142857142,
+            "n": 24
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.575107296137339,
+              5.150214592274678
+            ],
+            "median": 3.8626609442060085,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              2.570417338278989,
+              5.9192825112107625
+            ],
+            "median": 4.120171673819742,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              1.3130727293817421,
+              3.257918552036199
+            ],
+            "median": 1.5450643776824033,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5599
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "median": 0.25,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.1
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.2575107296137339,
+              2.317596566523605
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              2.8326180257510734
+            ],
+            "median": 0.7725321888412017,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    },
+    "independent_phase": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -1.4457831325301205,
+              -1.0526315789473684
+            ],
+            "median": -1.2492073557387444,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              -8.674698795180722,
+              -0.5263157894736842
+            ],
+            "median": -4.600507292327204,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              -9.473684210526317,
+              -7.228915662650603
+            ],
+            "median": -8.35129993658846,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              1.0300429184549356,
+              1.2903225806451613
+            ],
+            "median": 1.1601827495500485,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 427
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -6.058536585365854,
+              -2.060085836909871
+            ],
+            "median": -3.7552272093671593,
+            "n": 10
+          },
+          "morphology": {
+            "ci95": [
+              -15.0,
+              -2.060085836909871
+            ],
+            "median": -7.927451695224207,
+            "n": 10
+          },
+          "spectrum": {
+            "ci95": [
+              -19.43181818181818,
+              -7.193793331132387
+            ],
+            "median": -8.495329462257006,
+            "n": 10
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 11
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 11
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 11
+          }
+        },
+        "records": 16,
+        "valid_windows": 2174
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -2.317596566523605,
+              0.0
+            ],
+            "median": -1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -1.3445145467850714,
+              0.0
+            ],
+            "median": -0.5150214592274678,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              -0.2575107296137339,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": null,
+            "median": 0.0,
+            "n": 1
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": null,
+            "median": 0.0,
+            "n": 1
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -5.150214592274678,
+              -2.575107296137339
+            ],
+            "median": -3.8626609442060085,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              -5.892857142857142,
+              -2.570417338278993
+            ],
+            "median": -4.120171673819742,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              -3.257918552036199,
+              -1.5450643776824033
+            ],
+            "median": -1.5870118268502513,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5760
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -2.317596566523605,
+              -0.2575107296137339
+            ],
+            "median": -0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -2.8326180257510734,
+              -0.2575107296137339
+            ],
+            "median": -0.7725321888412017,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              -1.0300429184549356,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    },
+    "original": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.3076923076923077,
+              0.5
+            ],
+            "median": 0.40384615384615385,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2,
+              0.2857142857142857
+            ],
+            "median": 0.24285714285714285,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.1,
+              0.16666666666666666
+            ],
+            "median": 0.13333333333333333,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.0526315789473684,
+              1.1707317073170733
+            ],
+            "median": 1.1116816431322207,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              1.0526315789473684,
+              6.439024390243903
+            ],
+            "median": 3.7458279845956355,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              5.853658536585366,
+              9.473684210526317
+            ],
+            "median": 7.663671373555841,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 465
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4
+            ],
+            "median": 0.3684210526315789,
+            "n": 15
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.30303030303030304,
+              0.5454545454545454
+            ],
+            "median": 0.3870967741935484,
+            "n": 15
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4444444444444444
+            ],
+            "median": 0.2857142857142857,
+            "n": 15
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.2748815165876777,
+              4.821428571428571
+            ],
+            "median": 3.6051502145922747,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              5.892857142857142,
+              10.263157894736842
+            ],
+            "median": 7.725321888412017,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              7.185628742514971,
+              15.789473684210527
+            ],
+            "median": 8.755364806866952,
+            "n": 15
+          }
+        },
+        "records": 16,
+        "valid_windows": 3265
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 4
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              1.3445145467850714
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.2575107296137339
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1438
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.38095238095238093,
+              0.64
+            ],
+            "median": 0.46886446886446886,
+            "n": 24
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2857142857142857,
+              0.47058823529411764
+            ],
+            "median": 0.375,
+            "n": 23
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.28625258799171793
+            ],
+            "median": 0.07142857142857142,
+            "n": 24
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.575107296137339,
+              5.150214592274678
+            ],
+            "median": 3.8626609442060085,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              2.570417338278989,
+              5.892857142857142
+            ],
+            "median": 4.120171673819742,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              1.5450643776824033,
+              3.257918552036199
+            ],
+            "median": 1.5870118268502513,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5611
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "median": 0.25,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.1
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.2575107296137339,
+              2.317596566523605
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              2.8326180257510734
+            ],
+            "median": 0.7725321888412017,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    },
+    "polarity_reverse": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.3076923076923077,
+              0.5
+            ],
+            "median": 0.40384615384615385,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2,
+              0.2857142857142857
+            ],
+            "median": 0.24285714285714285,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.1,
+              0.16666666666666666
+            ],
+            "median": 0.13333333333333333,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.0526315789473684,
+              1.1707317073170733
+            ],
+            "median": 1.1116816431322207,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              1.0526315789473684,
+              6.439024390243903
+            ],
+            "median": 3.7458279845956355,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              5.853658536585366,
+              9.473684210526317
+            ],
+            "median": 7.663671373555841,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 465
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4
+            ],
+            "median": 0.3684210526315789,
+            "n": 15
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.30303030303030304,
+              0.5454545454545454
+            ],
+            "median": 0.3870967741935484,
+            "n": 15
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4444444444444444
+            ],
+            "median": 0.2857142857142857,
+            "n": 15
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.2748815165876777,
+              4.821428571428571
+            ],
+            "median": 3.6051502145922747,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              5.892857142857142,
+              10.263157894736842
+            ],
+            "median": 7.725321888412017,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              7.185628742514971,
+              15.789473684210527
+            ],
+            "median": 8.755364806866952,
+            "n": 15
+          }
+        },
+        "records": 16,
+        "valid_windows": 3265
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 4
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              1.3445145467850714
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.2575107296137339
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1438
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.38095238095238093,
+              0.64
+            ],
+            "median": 0.46886446886446886,
+            "n": 24
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2857142857142857,
+              0.47058823529411764
+            ],
+            "median": 0.375,
+            "n": 23
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.28625258799171793
+            ],
+            "median": 0.07142857142857142,
+            "n": 24
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.575107296137339,
+              5.150214592274678
+            ],
+            "median": 3.8626609442060085,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              2.570417338278989,
+              5.892857142857142
+            ],
+            "median": 4.120171673819742,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              1.5450643776824033,
+              3.257918552036199
+            ],
+            "median": 1.5870118268502513,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5611
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "median": 0.25,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.1
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.2575107296137339,
+              2.317596566523605
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              2.8326180257510734
+            ],
+            "median": 0.7725321888412017,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    },
+    "shared_phase": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "median": 0.16666666666666666,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": 0.0,
+            "n": 1
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -1.4814814814814814,
+              -1.2834224598930482
+            ],
+            "median": -1.3824519706872649,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              -1.481481481481481,
+              3.8502673796791447
+            ],
+            "median": 1.1843929490988319,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              -7.0588235294117645,
+              -4.444444444444444
+            ],
+            "median": -5.751633986928104,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              5.0,
+              7.422680412371134
+            ],
+            "median": 6.211340206185567,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              2.5
+            ],
+            "median": 1.25,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 416
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.2857142857142857
+            ],
+            "median": 0.0625,
+            "n": 8
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.15384615384615385
+            ],
+            "median": 0.0,
+            "n": 9
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.6666666666666666
+            ],
+            "median": 0.0,
+            "n": 5
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -4.682926829268293,
+              0.0
+            ],
+            "median": -2.5,
+            "n": 11
+          },
+          "morphology": {
+            "ci95": [
+              -2.278481012658228,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 11
+          },
+          "spectrum": {
+            "ci95": [
+              -15.18987341772152,
+              -5.660377358490567
+            ],
+            "median": -8.704663212435232,
+            "n": 11
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 11
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              8.61244019138756
+            ],
+            "median": 2.0869565217391304,
+            "n": 11
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              2.1686746987951806
+            ],
+            "median": 0.0,
+            "n": 11
+          }
+        },
+        "records": 16,
+        "valid_windows": 2246
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.25
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -2.317596566523605,
+              0.0
+            ],
+            "median": -0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -0.2575107296137339,
+              4.8927038626609445
+            ],
+            "median": 1.5450643776824036,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              -0.2575107296137339,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.5150214592274678
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              5.150214592274678
+            ],
+            "median": 2.421131808327065,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1420
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.2361111111111111
+            ],
+            "median": 0.0,
+            "n": 20
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 19
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 16
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -3.9745208086536037,
+              -1.0300429184549358
+            ],
+            "median": -3.18142801404604,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              -3.6051502145922747,
+              -0.5150214592274678
+            ],
+            "median": -2.116015769133669,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              -3.257918552036199,
+              -1.5450643776824033
+            ],
+            "median": -1.5870118268502513,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              1.2875536480686693
+            ],
+            "median": 0.5800913747750243,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.5150214592274678,
+              4.635193133047211
+            ],
+            "median": 1.2875536480686693,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5719
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.2
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -1.6159388904201284,
+              0.0
+            ],
+            "median": -0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -1.0831988030082291,
+              2.3175965665236054
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              -1.0831988030082293,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              1.0831988030082293
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              3.9689727133125965
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1437
+      }
+    },
+    "time_reverse": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.23529411764705882,
+              0.25
+            ],
+            "median": 0.2426470588235294,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.26666666666666666,
+              0.3333333333333333
+            ],
+            "median": 0.3,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.07692307692307693,
+              0.15384615384615385
+            ],
+            "median": 0.11538461538461539,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.5853658536585364
+            ],
+            "median": 0.2926829268292682,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              1.7560975609756095,
+              2.105263157894737
+            ],
+            "median": 1.9306803594351734,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              3.1578947368421044
+            ],
+            "median": 1.5789473684210522,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.0526315789473684,
+              1.7560975609756098
+            ],
+            "median": 1.404364569961489,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              3.1578947368421053,
+              8.195121951219512
+            ],
+            "median": 5.676508344030809,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              5.853658536585366,
+              12.631578947368421
+            ],
+            "median": 9.242618741976894,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 465
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.10526315789473684,
+              0.3157894736842105
+            ],
+            "median": 0.2,
+            "n": 15
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.3157894736842105,
+              0.5270467836257303
+            ],
+            "median": 0.48484848484848486,
+            "n": 15
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.2,
+              0.38095238095238093
+            ],
+            "median": 0.35294117647058826,
+            "n": 15
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -0.5882352941176467,
+              0.7407407407407414
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              -0.6741573033707864,
+              1.0300429184549356
+            ],
+            "median": 0.5687203791469191,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.7407407407407423
+            ],
+            "median": 0.5454545454545467,
+            "n": 15
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.1374407582938388,
+              5.185185185185185
+            ],
+            "median": 2.9411764705882355,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              6.605504587155964,
+              9.022556390977444
+            ],
+            "median": 7.5,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              7.210300429184549,
+              16.578947368421055
+            ],
+            "median": 8.240343347639485,
+            "n": 15
+          }
+        },
+        "records": 16,
+        "valid_windows": 3265
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 4
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -0.2575107296137339,
+              0.2575107296137339
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -0.5150214592274678,
+              0.5529953917050692
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.5150214592274678
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              1.6399992088764068
+            ],
+            "median": 0.2575107296137339,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.5150214592274678
+            ],
+            "median": 0.2575107296137339,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1438
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.42105263157894735,
+              0.6666666666666666
+            ],
+            "median": 0.513157894736842,
+            "n": 24
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.13333333333333333,
+              0.4
+            ],
+            "median": 0.3333333333333333,
+            "n": 23
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3076923076923077
+            ],
+            "median": 0.1380952380952381,
+            "n": 24
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.5150214592274676
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.5150214592274678
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.575107296137339,
+              5.665236051502146
+            ],
+            "median": 3.6051502145922747,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              2.656904822014643,
+              5.542228694052728
+            ],
+            "median": 3.8626609442060085,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              1.5450643776824033,
+              3.0901287553648067
+            ],
+            "median": 1.5870118268502513,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5611
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.6190476190476191
+            ],
+            "median": 0.23076923076923078,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.4
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.4444444444444444
+            ],
+            "median": 0.0,
+            "n": 5
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -0.5150214592274679,
+              1.2875536480686696
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -0.515021459227468,
+              0.5150214592274678
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.832618025751073
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.5150214592274678,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    }
+  },
+  "corpus": [
+    {
+      "dataset_id": "ds004015",
+      "raw_eeg_values": 1532187324,
+      "recording_hours": 47.28973222222222,
+      "recordings": 36,
+      "source_participant_records": 36,
+      "source_sessions": 36,
+      "status": "QUALIFIED"
+    },
+    {
+      "dataset_id": "ds005207",
+      "raw_eeg_values": 2417097500,
+      "recording_hours": 176.18083333333334,
+      "recordings": 18,
+      "source_participant_records": 18,
+      "source_sessions": 18,
+      "status": "QUALIFIED"
+    },
+    {
+      "dataset_id": "ds005207",
+      "raw_eeg_values": null,
+      "recording_hours": null,
+      "recordings": 1,
+      "source_participant_records": 1,
+      "source_sessions": 1,
+      "status": "QUARANTINED"
+    }
+  ],
+  "groups": {
+    "external_exposed": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.12076340901612373,
+            0.20525333716090138
+          ],
+          "median": 0.16300837308851257,
+          "n": 2
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.5458583166777704,
+            0.5862785862785863
+          ],
+          "median": 0.5660684514781784,
+          "n": 2
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.09524910414980928,
+            0.19085752419085752
+          ],
+          "median": 0.1430533141703334,
+          "n": 2
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.237507861051189,
+              1.25607580695499
+            ],
+            "median": 1.2467918340030895,
+            "n": 2
+          },
+          "path_length": {
+            "ci95": [
+              4.3312775136791615,
+              4.396265324342465
+            ],
+            "median": 4.3637714190108134,
+            "n": 2
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.311969638503881,
+              1.322666890796998
+            ],
+            "median": 1.3173182646504396,
+            "n": 2
+          },
+          "return_distance": {
+            "ci95": [
+              1.3619599412215921,
+              1.374501002613335
+            ],
+            "median": 1.3682304719174636,
+            "n": 2
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.2825895038281527,
+              1.5603292821881851
+            ],
+            "median": 1.421459393008169,
+            "n": 2
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              2.5901121535143456,
+              2.7502716196775907
+            ],
+            "median": 2.670191886595968,
+            "n": 2
+          },
+          "path_length": {
+            "ci95": [
+              9.065392537300209,
+              9.625950668871567
+            ],
+            "median": 9.345671603085888,
+            "n": 2
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3888558810529514,
+              1.5483825693253195
+            ],
+            "median": 1.4686192251891355,
+            "n": 2
+          },
+          "return_distance": {
+            "ci95": [
+              1.5713225190992623,
+              1.7202025446721638
+            ],
+            "median": 1.6457625318857132,
+            "n": 2
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.298141167308529,
+              1.5247556545912735
+            ],
+            "median": 1.4114484109499013,
+            "n": 2
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              2.216015054223275,
+              2.7716463341431927
+            ],
+            "median": 2.4938306941832336,
+            "n": 2
+          },
+          "path_length": {
+            "ci95": [
+              7.756052689781463,
+              9.700762169501175
+            ],
+            "median": 8.728407429641319,
+            "n": 2
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.71543610848148,
+              0.7343341730598546
+            ],
+            "median": 0.7248851407706673,
+            "n": 2
+          },
+          "return_distance": {
+            "ci95": [
+              0.9955587303098975,
+              1.0930517341769088
+            ],
+            "median": 1.0443052322434032,
+            "n": 2
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.3459740861815388,
+              1.5485071805213197
+            ],
+            "median": 1.4472406333514294,
+            "n": 2
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            1.1595304851969774,
+            2.0987836343531145
+          ],
+          "median": 1.629157059775046,
+          "n": 2
+        },
+        "morphology": {
+          "ci95": [
+            10.393955234519792,
+            13.30925175082934
+          ],
+          "median": 11.851603492674567,
+          "n": 2
+        },
+        "spectrum": {
+          "ci95": [
+            11.157390342793954,
+            15.284892838473601
+          ],
+          "median": 13.221141590633778,
+          "n": 2
+        }
+      },
+      "records": 2,
+      "valid_windows": 121110,
+      "windows": 175610
+    },
+    "external_unexposed": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.19220779220779222,
+            0.2708333333333333
+          ],
+          "median": 0.24514036883433582,
+          "n": 16
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.4675192096764095,
+            0.5915795503365315
+          ],
+          "median": 0.48687982863229406,
+          "n": 16
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.19830950334019412,
+            0.2268041237113402
+          ],
+          "median": 0.20676021057724137,
+          "n": 16
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.2170322619618,
+              1.295889127327796
+            ],
+            "median": 1.2574226952568441,
+            "n": 16
+          },
+          "path_length": {
+            "ci95": [
+              4.2596129168663,
+              4.535611945647286
+            ],
+            "median": 4.400979433398955,
+            "n": 16
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3231752548044238,
+              1.3576198754189106
+            ],
+            "median": 1.338219076799312,
+            "n": 16
+          },
+          "return_distance": {
+            "ci95": [
+              1.3498221300478994,
+              1.4379438944056262
+            ],
+            "median": 1.399057378608358,
+            "n": 16
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.2901592071087484,
+              1.4806640213374358
+            ],
+            "median": 1.4300789851280804,
+            "n": 16
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              2.5105035891397107,
+              2.967210282741442
+            ],
+            "median": 2.8127910247884014,
+            "n": 16
+          },
+          "path_length": {
+            "ci95": [
+              8.78676256198899,
+              10.385235989595047
+            ],
+            "median": 9.844768586759404,
+            "n": 16
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.4209790449497417,
+              1.6479642332889375
+            ],
+            "median": 1.573583018648467,
+            "n": 16
+          },
+          "return_distance": {
+            "ci95": [
+              1.5875807924355274,
+              1.8094054360881635
+            ],
+            "median": 1.6741143270345802,
+            "n": 16
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.3758342326129425,
+              1.4443529163357887
+            ],
+            "median": 1.4187345742852107,
+            "n": 16
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              2.105626473270781,
+              2.505430606489174
+            ],
+            "median": 2.194147214848361,
+            "n": 16
+          },
+          "path_length": {
+            "ci95": [
+              7.369692656447732,
+              8.76900712271211
+            ],
+            "median": 7.6795152519692635,
+            "n": 16
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.7173696913740018,
+              0.740996087883126
+            ],
+            "median": 0.7282939933335493,
+            "n": 16
+          },
+          "return_distance": {
+            "ci95": [
+              0.980482224797447,
+              1.045324685767678
+            ],
+            "median": 0.9928277067335796,
+            "n": 16
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5064210784325192,
+              1.5610512571951438
+            ],
+            "median": 1.5510908269175343,
+            "n": 16
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            1.6038038801273022,
+            2.982157420523554
+          ],
+          "median": 2.012785281631345,
+          "n": 16
+        },
+        "morphology": {
+          "ci95": [
+            7.366125303240336,
+            15.018714811818963
+          ],
+          "median": 12.398382821323684,
+          "n": 16
+        },
+        "spectrum": {
+          "ci95": [
+            7.270560307206715,
+            13.197031431897555
+          ],
+          "median": 8.747049763917712,
+          "n": 16
+        }
+      },
+      "records": 16,
+      "valid_windows": 618537,
+      "windows": 1092838
+    },
+    "test": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.27701341115975264,
+            0.46998616874135546
+          ],
+          "median": 0.36855720527814617,
+          "n": 6
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.21285879455084705,
+            0.34713894782154164
+          ],
+          "median": 0.2696581196581197,
+          "n": 6
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.22041751352096178,
+            0.2999047230161971
+          ],
+          "median": 0.2883329399732515,
+          "n": 6
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.1639847113709407,
+              1.3334281144473117
+            ],
+            "median": 1.2586036187732255,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              4.073946489798293,
+              4.666998400565591
+            ],
+            "median": 4.405112665706289,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3461673344872425,
+              1.4018594775463789
+            ],
+            "median": 1.384825670706342,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              1.314684283529466,
+              1.5011493229862374
+            ],
+            "median": 1.425647667410727,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.4665571907711639,
+              1.5480806628768726
+            ],
+            "median": 1.5060278624756052,
+            "n": 6
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              1.4947001791789771,
+              1.7633698394569692
+            ],
+            "median": 1.608852072428269,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              5.23145062712642,
+              6.171794438099392
+            ],
+            "median": 5.630982253498942,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.2186002334051624,
+              1.3020265470534242
+            ],
+            "median": 1.265709146370254,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              1.3129735457314475,
+              1.3887263223309083
+            ],
+            "median": 1.3591147013577953,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5199332784628252,
+              1.6009311081284827
+            ],
+            "median": 1.5786508833866932,
+            "n": 6
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              1.7387447219567451,
+              1.9802116895806785
+            ],
+            "median": 1.8134839911631724,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              6.085606526848608,
+              6.930740913532375
+            ],
+            "median": 6.347193969071103,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.704320770744048,
+              0.7329475268504388
+            ],
+            "median": 0.7253460343387339,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              0.8956100318190723,
+              0.9692698638070073
+            ],
+            "median": 0.9337600222718823,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5180038100400466,
+              1.6010404716765096
+            ],
+            "median": 1.5585494712311183,
+            "n": 6
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            0.8401748655394097,
+            2.914596115515964
+          ],
+          "median": 1.9322762582841675,
+          "n": 6
+        },
+        "morphology": {
+          "ci95": [
+            1.1313372389656227,
+            2.022629331848404
+          ],
+          "median": 1.6095532440148852,
+          "n": 6
+        },
+        "spectrum": {
+          "ci95": [
+            1.1968136106679235,
+            3.1633781943538013
+          ],
+          "median": 2.670081717065507,
+          "n": 6
+        }
+      },
+      "records": 6,
+      "valid_windows": 53535,
+      "windows": 53802
+    },
+    "train": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.41825095057034223,
+            0.5112107623318386
+          ],
+          "median": 0.45303151176705225,
+          "n": 24
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.33525288813750354,
+            0.43205574912891986
+          ],
+          "median": 0.38656813479160507,
+          "n": 24
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.28735632183908044,
+            0.3964757709251101
+          ],
+          "median": 0.34064682042350947,
+          "n": 24
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.2383652192637704,
+              1.3089694615211214
+            ],
+            "median": 1.277070080744837,
+            "n": 24
+          },
+          "path_length": {
+            "ci95": [
+              4.334278267423197,
+              4.581393115323925
+            ],
+            "median": 4.4697452826069295,
+            "n": 24
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.4163026818759292,
+              1.4792669960431206
+            ],
+            "median": 1.4333399030016563,
+            "n": 24
+          },
+          "return_distance": {
+            "ci95": [
+              1.4553100615384336,
+              1.523668603635869
+            ],
+            "median": 1.501848079826079,
+            "n": 24
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.3507561491031241,
+              1.496953951654822
+            ],
+            "median": 1.426672274205432,
+            "n": 24
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              1.6090781742923679,
+              1.7169413486115412
+            ],
+            "median": 1.679457438620171,
+            "n": 24
+          },
+          "path_length": {
+            "ci95": [
+              5.631773610023288,
+              6.009294720140394
+            ],
+            "median": 5.878101035170599,
+            "n": 24
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3074133704396715,
+              1.3882309337896928
+            ],
+            "median": 1.342718811756987,
+            "n": 24
+          },
+          "return_distance": {
+            "ci95": [
+              1.3700911614228908,
+              1.4213793429407544
+            ],
+            "median": 1.3996296457590904,
+            "n": 24
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5146061296816984,
+              1.5758654298694923
+            ],
+            "median": 1.5489398066760276,
+            "n": 24
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              1.7395410804703793,
+              1.882335687574836
+            ],
+            "median": 1.811231485626268,
+            "n": 24
+          },
+          "path_length": {
+            "ci95": [
+              6.088393781646327,
+              6.5881749065119255
+            ],
+            "median": 6.339310199691939,
+            "n": 24
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.7258992420893422,
+              0.7708980296289225
+            ],
+            "median": 0.7529702260897411,
+            "n": 24
+          },
+          "return_distance": {
+            "ci95": [
+              0.9207871155263759,
+              0.9614255833770626
+            ],
+            "median": 0.941483554710087,
+            "n": 24
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5478101547617145,
+              1.560026280673671
+            ],
+            "median": 1.5576985593569572,
+            "n": 24
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            1.665931098294859,
+            2.70764907179493
+          ],
+          "median": 2.0191616094418157,
+          "n": 24
+        },
+        "morphology": {
+          "ci95": [
+            1.5064218852042668,
+            2.342104537260444
+          ],
+          "median": 1.739403658458145,
+          "n": 24
+        },
+        "spectrum": {
+          "ci95": [
+            1.6956816640289396,
+            2.908352078949278
+          ],
+          "median": 2.2960063645275373,
+          "n": 24
+        }
+      },
+      "records": 24,
+      "valid_windows": 230452,
+      "windows": 232332
+    },
+    "validation": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.3220511297434374,
+            0.5495367231638417
+          ],
+          "median": 0.4739307760141093,
+          "n": 6
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.3158235691753042,
+            0.4602650015229972
+          ],
+          "median": 0.40010773235194663,
+          "n": 6
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.28710650709041535,
+            0.5041165521191294
+          ],
+          "median": 0.40043360433604336,
+          "n": 6
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.219716781796015,
+              1.3429356665775252
+            ],
+            "median": 1.2914177614439366,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              4.269008736286052,
+              4.7002748330213375
+            ],
+            "median": 4.519962165053778,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3712814142704652,
+              1.4796114135754308
+            ],
+            "median": 1.4595431267327643,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              1.3969278995913026,
+              1.579299119060082
+            ],
+            "median": 1.4795485397162502,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.4002703768652853,
+              1.5491710446431892
+            ],
+            "median": 1.4620505735844427,
+            "n": 6
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              1.5436018972318275,
+              1.7583361923316159
+            ],
+            "median": 1.6733864167025025,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              5.402606640311396,
+              6.154176673160656
+            ],
+            "median": 5.856852458458759,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.2467606657228556,
+              1.3703108637188763
+            ],
+            "median": 1.3266117416275782,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              1.3273379916873798,
+              1.4872679424361261
+            ],
+            "median": 1.4199724590416296,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5212651607053789,
+              1.7195408658414246
+            ],
+            "median": 1.6118178890597985,
+            "n": 6
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              1.6675123766168474,
+              1.9149478768746082
+            ],
+            "median": 1.797098933577895,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              5.836293318158966,
+              6.702317569061128
+            ],
+            "median": 6.289846267522632,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.7201011021266732,
+              0.810015797732864
+            ],
+            "median": 0.7492158198116567,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              0.9149981111838676,
+              0.982695668075594
+            ],
+            "median": 0.9617792811313755,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5397859960741278,
+              1.5911025177730314
+            ],
+            "median": 1.5474209399603014,
+            "n": 6
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            1.5416375178023731,
+            3.718687996199647
+          ],
+          "median": 1.8142086441291192,
+          "n": 6
+        },
+        "morphology": {
+          "ci95": [
+            1.1408086896761511,
+            2.306153837863291
+          ],
+          "median": 1.9853052940326599,
+          "n": 6
+        },
+        "spectrum": {
+          "ci95": [
+            1.1143242110605955,
+            4.635837282685686
+          ],
+          "median": 2.0867153606843045,
+          "n": 6
+        }
+      },
+      "records": 6,
+      "valid_windows": 53765,
+      "windows": 54089
+    }
+  },
+  "totals": {
+    "analyzed_recordings": 54,
+    "source_recordings": 55,
+    "valid_windows": 1077399,
+    "windows": 1608671
+  }
+}

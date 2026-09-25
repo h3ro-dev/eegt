@@ -64,7 +64,15 @@ def run():
             check(rid+' '+key+' rate',(metric['events_per_scored_minute'] is None and not exposure) or (exposure>0 and np.isclose(metric['events_per_scored_minute'],count/exposure)))
     check('all window totals',n_windows==main['totals']['windows'] and n_valid==main['totals']['valid_windows'])
     check('control source denominator',len(ctrl['records'])==len(records))
+    check('control source identity',{r['recording_id'] for r in ctrl['records']}==set(records))
+    index=read('results/006/row-receipt.json')
+    check('control receipt hash',sha(ROOT/'results/006/row-receipt.json')==ctrl['row_receipt_sha256'])
+    check('control receipt inputs',index['inputs']==ctrl['inputs'])
+    check('control row file index',index['files']==ctrl['row_files'] and set(index['files'])=={r['recording_id']+'.json' for r in ctrl['records']})
     for r in ctrl['records']:
+        name=r['recording_id']+'.json';saved=read('results/006/'+name)
+        check(r['recording_id']+' control row hash',sha(ROOT/'results/006'/name)==index['files'][name])
+        check(r['recording_id']+' control row binding',saved['inputs']==ctrl['inputs'] and saved['result']==r)
         if r['status']!='EVALUATED':continue
         check(r['recording_id']+' all controls',set(r['variants'])=={'original','independent_phase','shared_phase','gain_1.1','polarity_reverse','time_reverse'})
         for variant,v in r['variants'].items():

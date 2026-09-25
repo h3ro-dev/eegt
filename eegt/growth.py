@@ -92,8 +92,12 @@ def extract_record(root, conn, rec, protocol):
                 if right-left<round(protocol['window_seconds']*sf): continue
                 samples=raw.get_data(picks=picks,start=left,stop=right)*1e6
                 out=methods.extract_features(samples,sf,window_seconds=protocol['window_seconds'],hop_seconds=protocol['hop_seconds'])
-                times=out['times']+left/sf
-                keep=(times>=core/sf)&(times<end/sf)
+                # Window centers can be half-samples. Select ownership in
+                # integer half-sample coordinates, avoiding duplicate seam
+                # rows from two nearly equal floating-point timestamps.
+                centers2=np.rint(out['times']*sf*2).astype(np.int64)+left*2
+                times=centers2/(2*sf)
+                keep=(centers2>=core*2)&(centers2<end*2)
                 arrays['times'].append(times[keep]); arrays['valid'].append(out['valid'][keep])
                 arrays['segment'].append(np.full(int(keep.sum()),seg,dtype=np.int32))
                 for view in VIEWS: arrays[view].append(out['views'][view][keep])

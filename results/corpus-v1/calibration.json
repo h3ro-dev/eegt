@@ -1,0 +1,499 @@
+{
+  "code_sha256": "3dbb7835713c3a479b69adb600e7bd05907a7fcd4c259091f02df7b484da13f2",
+  "corpus_sha256": "8977f92f2bab42ecfcedfd0d4204621e7e4ff74c2fffdb7d467cf612acba950c",
+  "limitation": "Digital decoding/unit conversion checked at start, middle and end; physical sensor calibration and undocumented acquisition errors remain unknown.",
+  "mne_version": "1.13.2",
+  "records": [
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "ad5a3328b6c55efbb3221625",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "b74b68bebcda493a4db8952a",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "dbfa5c04a8c224a2658cb240",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "2219351196d1be6920339bc0",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "3326ea898725be8674a28286",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "5587fd9f02629818e2d96390",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "361058659c8702ad20e20527",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "96dd2209487bed2c3a4a2dd4",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "80ec5c9af848d14204affac8",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "be1e68e53464fe21c9ea8f6d",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "9bbf4329af49afd4b214695e",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "c1781083d1b9641c0b2b894c",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "813fc44239acd4d32bea113f",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "71db1e918bf200fc43ed8f82",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "987a91bce590ac8566c7a209",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "1e75564b510efbab5250645f",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "241f1a0efee9b97ef2e8312a",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "01c0e5a982669a40ef39a2da",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "419fca2fb009345729cc774f",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "47f6976731f4a41af0e298cf",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "3d16f5d9d56d443bf0ee739c",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "f8fa9847c1c8378bf40090e7",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "d370dbd08c9368b7aba96fd4",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.8189894035458565e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "dd7a7ce86ae2e4cc9f5c6695",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.8189894035458565e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "b14de6aa3005cda869a7dac2",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "306a881a6e49424da743316b",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "d38fd501d069612f1e3c216c",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "28dcd586e1e3ea2aaf2e1e15",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "32bda0c52065b7bf709b3039",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "24ed84bce3c17a6934b8cf46",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "6288c5df99166b6b5d676bbd",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "bacddb4739a20ec7769d2c61",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "8db5bebfca952d2824051b0e",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "a4ee1f60731803275830d50f",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 3.637978807091713e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "4bd007ba65c9e5932ca3e165",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "e9394f83b05ae9a5dcceb9cd",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1440,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "6cf1efff79eb1002775afb83",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1152,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "83094d85bd89374f421dfdca",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1344,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "218a3073e690fd445c9ff785",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1632,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "0d196f92f0b378394cd760e6",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1344,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "2e81fd22516c2019aad9def1",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1440,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "3866b7eef005d3b1e4ca4919",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1152,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "2fd267fdbb112601cdfd31e9",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1344,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 2.9103830456733704e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "6b0fcc063642efabe9a42974",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "a3063e75f57c58fd4887848f",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "1b5acf2e3d881f8d845c5c3d",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1344,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "b2d963340624e2c88af9a4e7",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1344,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 2.9103830456733704e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "db100e5f83c5cf0ca5f68595",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1632,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 1.4551915228366852e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "e5f08ecd96f130639329ad9e",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1152,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 2.9103830456733704e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "38c82dce09dfa2382923466d",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 2.9103830456733704e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "cfe528de4fb205fdfafcf49f",
+      "status": "PASS"
+    },
+    {
+      "recording_id": "7a11c4433d6f9324bcc1083e",
+      "status": "SOURCE_QUARANTINED"
+    },
+    {
+      "checked_values": 1536,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "817b1ea63f7016a9620fd513",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 2.9103830456733704e-11,
+      "native_dtype": "little-endian float32",
+      "recording_id": "d3f9379217af650b56498de9",
+      "status": "PASS"
+    },
+    {
+      "checked_values": 1728,
+      "conversion_to_uv": 1000000.0,
+      "decoder_unit": "V",
+      "maximum_absolute_error_uv": 7.275957614183426e-12,
+      "native_dtype": "little-endian float32",
+      "recording_id": "3f6d6bc992797e60bf3e7b29",
+      "status": "PASS"
+    }
+  ],
+  "schema": "eegt-digital-calibration/v1"
+}

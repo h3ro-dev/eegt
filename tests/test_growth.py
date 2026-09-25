@@ -9,9 +9,44 @@ import numpy as np
 
 from eegt import growth,transitions as tr
 from eegt import controls,calibrate
+from scripts.report_growth import control_groups,verify_control_rows
 
 
 class GrowthTests(unittest.TestCase):
+    def test_control_only_cohort_is_retained(self):
+        record=dict(status='EVALUATED',split='external',prior_exposure=False,recording_id='control_only')
+        self.assertEqual(dict(control_groups([record,dict(status='FAILED',split='train')])),{'external_unexposed':[record]})
+
+    def test_report_rejects_control_summary_row_divergence(self):
+        from eegt.acquire import digest
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);out=root/'results/006';out.mkdir(parents=True)
+            row=dict(recording_id='a',status='INSUFFICIENT_CONTEXT');inputs={'test':'known'}
+            path=out/'a.json';path.write_text(json.dumps(dict(inputs=inputs,result=row)))
+            index=dict(inputs=inputs,files={'a.json':digest(path)})
+            receipt=out/'row-receipt.json';receipt.write_text(json.dumps(index))
+            summary=dict(inputs=inputs,records=[row.copy()],row_files=index['files'],row_receipt_sha256=digest(receipt))
+            verify_control_rows(root,summary)
+            summary['records'][0]['status']='EVALUATED'
+            with self.assertRaisesRegex(ValueError,'does not match row'):verify_control_rows(root,summary)
+
+    def test_long_off_grid_chunk_seam_has_one_row_per_native_center(self):
+        rate=500;start=790457;stop=start+1202*rate
+        class Raw:
+            info={'sfreq':rate}
+            def get_data(self,picks,start,stop):return np.zeros((2,stop-start))
+            def close(self):pass
+        def feature_fixture(samples,sf,**kw):
+            t=(np.arange(0,samples.shape[1]-1000+1,250)+500)/sf
+            return dict(times=t,valid=np.ones(len(t),dtype=bool),views={v:np.ones((len(t),1)) for v in growth.VIEWS},feature_names={},metadata={})
+        p=dict(chunk_seconds=600,halo_seconds=12,window_seconds=2,hop_seconds=.5)
+        with tempfile.TemporaryDirectory() as d,patch.object(growth,'source_raw',return_value=(Raw(),[0,1],[(start,stop)])),patch.object(growth.methods,'extract_features',side_effect=feature_fixture):
+            row=growth.extract_record(Path(d),None,{'recording_id':'seam'},p)
+            a=growth.load_features(Path(d),row)
+            expected=(np.arange(start,stop-1000+1,250)+500)/rate
+            np.testing.assert_array_equal(a['times'],expected)
+            self.assertEqual(row['windows'],len(expected))
+
     def test_completed_receipt_rejects_missing_or_duplicated_records(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);(root/'results/003').mkdir(parents=True);(root/'results/corpus-v1').mkdir()
