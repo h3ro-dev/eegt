@@ -16,6 +16,8 @@ An open research notebook asking which recurring voltage patterns different toke
 
 The model runs continuous embeddings, not the full discrete tokenizer or an LLM decoder. Its 19-scalp-channel pretraining does not validate four-ear-channel geometry; pretraining overlap is unknown. This experiment adds no new source recordings or participants. The corpus inventory remains 66 qualified recordings / 309.85 recorded hours. See [the note](notes/experiment-009.md), [protocol](protocol/experiment-009.json) and [release bundle](https://github.com/h3ro-dev/eegt/releases/tag/v0.5.0).
 
+The source metadata reports 50 Hz mains, while the fixed model recipe applies a 60 Hz notch; that notch does not specifically remove the source's 50 Hz component. This mismatch is retained and reported, rather than changing preprocessing after seeing results.
+
 Recompute the comparisons from the v0.5.0 bundle in a separate directory, with Python 3.12 and the original numerical `requirements.lock`. Preserve the published summary before rerunning:
 
 ```sh
@@ -29,7 +31,7 @@ For encoder inference, use a **separate** Python 3.12 environment with `requirem
 ```sh
 export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1
 python -m eegt.pretrained_study infer --checkpoint /absolute/path/CodeBrain.pth
-CODEBRAIN_CHECKPOINT=/absolute/path/CodeBrain.pth python tests/test_pretrained.py
+CODEBRAIN_CHECKPOINT=/absolute/path/CodeBrain.pth python -m unittest discover -s tests -p test_pretrained.py -v
 ```
 
 The full original-source equivalence test additionally needs `CODEBRAIN_UPSTREAM_ZIP`, the archive for [commit22d350c](https://github.com/jingyingma01/CodeBrain/archive/22d350caf68246d2fda4f630ef837420db3fb130.zip). Tests report unavailable optional dependencies or source-reference evidence as skips, not passes. For raw-to-prepared reproduction, also obtain the v0.4.0 feature bundle and its pinned twelve raw recordings, preserve `results/009/prepared.json`, then run `python -m eegt.pretrained_study prepare` in the numerical environment. The v0.5.0 archive already includes the nine derived wave blocks and aligned descriptors needed for inference and evaluation. Original full recordings and model weights are not bundled.

@@ -1,0 +1,6 @@
+{"recording_id": "anon", "dataset": "ds-test", "subject_key": "ds-test:sub-001", "split": "test", "status": "QUARANTINED", "reason": "ValueError: duration discrepancy greater than one sample", "decoder_warnings": [], "duration_metadata_error_samples": 100.0}
+{"recording_id": "anon", "dataset": "ds-test", "subject_key": "ds-test:sub-001", "split": "test", "status": "QUALIFIED", "reason": null, "decoder_warnings": [], "duration_metadata_error_samples": 0.0, "sample_rate_hz": 250.0, "samples_per_channel": 2500, "eeg_channels": 2, "duration_seconds": 10.0, "discontinuities": 2}
+----------------------------------------------------------------------
+Ran 61 tests in 1.185s
+
+OK (skipped=1)

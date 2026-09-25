@@ -10,6 +10,29 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from eegt.acquire import ROOT,digest
 from eegt.corpus import atomic_json
 
+MODEL_SOURCES = {'eegt/pretrained_study.py','eegt/pretrained.py',
+                 'eegt/vendor/codebrain/SSSM.py','eegt/vendor/codebrain/SGConv.py'}
+REVIEW_INPUTS = MODEL_SOURCES | {'scripts/package_pretrained.py','scripts/report_pretrained.py',
+    'protocol/experiment-009.json','results/009/prepared.json','results/009/inference.json',
+    'results/009/summary.json','README.md','requirements-encoder.lock',
+    'data/derived/009/prepared.npz','data/derived/009/embeddings.npz'}
+
+
+def verify_code_and_review(root, inference, review):
+    """Fail before creating an archive when recorded or reviewed source has drifted."""
+    root=Path(root)
+    recorded=inference.get('code_sha256',{})
+    if not MODEL_SOURCES <= recorded.keys():raise ValueError('inference source binding missing')
+    for path,sha in recorded.items():
+        if digest(root/path)!=sha:raise ValueError(f'inference source changed: {path}')
+    if review.get('status')!='ACCEPTED':raise ValueError('independent review has not accepted release')
+    reviewed=review.get('input_hashes',{}).get('snapshot_files_sha256',{})
+    if not REVIEW_INPUTS <= reviewed.keys():raise ValueError('accepted review input binding missing')
+    for path,sha in reviewed.items():
+        if not (root/path).resolve().is_relative_to(root.resolve()):raise ValueError('review path escapes root')
+        if digest(root/path)!=sha:raise ValueError(f'reviewed input changed: {path}')
+    return reviewed
+
 
 def run(root=ROOT):
     root=Path(root);out=root/'dist';out.mkdir(exist_ok=True)
@@ -23,7 +46,7 @@ def run(root=ROOT):
         if digest(root/receipt['array_path'])!=receipt['array_sha256']:raise ValueError('array changed')
     if digest(root/'results/009/analysis.sqlite')!=summary['analysis_sha256']:raise ValueError('database changed')
     review=json.loads((root/'results/009/independent-review.json').read_text())
-    if review.get('status')!='ACCEPTED':raise ValueError('independent review has not accepted release')
+    reviewed=verify_code_and_review(root,inference,review)
     paths=[]
     for directory in ['results/009','data/derived/009']:
         paths += [p for p in (root/directory).rglob('*') if p.is_file() and not p.name.endswith('.partial')]
@@ -37,6 +60,9 @@ def run(root=ROOT):
          'site/data/pretrained.json','site/data/pretrained-eligibility.png','pretrained.html','styles.css',
          'data/pretrained.json','data/pretrained-eligibility.png']]
     paths=sorted(set(paths))
+    for path in paths:
+        if path.suffix=='.py' and str(path.relative_to(root)) not in reviewed:
+            raise ValueError(f'unreviewed packaged source: {path.relative_to(root)}')
     content={str(p.relative_to(root)):dict(bytes=p.stat().st_size,sha256=digest(p)) for p in paths}
     dest=out/'eegt-v0.5.0-data.tar.gz'
     with dest.with_suffix('.partial').open('wb') as handle:
