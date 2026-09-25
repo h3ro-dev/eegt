@@ -1,0 +1,96 @@
+{
+  "schema": "eegt.integration-acceptance/v1",
+  "observed_at_utc": "2026-09-25T10:31:00Z",
+  "milestone": "items-1-through-5",
+  "scope": {
+    "included": [
+      "anonymous numeric input contract",
+      "open CC0 around-ear EEG acquisition",
+      "acquisition-aware QC",
+      "Neurable/MW75-compatible waveform path",
+      "multi-family numerical congruence and controls",
+      "public numbered ledger and recurring intake"
+    ],
+    "deferred": [
+      "semantic/clinical interpretation",
+      "independent scientific replication",
+      "private NoticingMind payloads",
+      "exact custom-domain DNS/TLS until provider custody is established"
+    ]
+  },
+  "source": {
+    "datasets": [
+      "ds004015 v1.0.2 CC0",
+      "ds005207 v1.0.0 CC0"
+    ],
+    "recordings": 8,
+    "files": 16,
+    "recording_minutes": 80,
+    "source_bytes": 2769602360,
+    "native_windows_exported": 40500,
+    "qc_pass": 40288,
+    "abstain": 212
+  },
+  "battery": {
+    "families": [
+      "spectrum",
+      "normalized_waveform_pca",
+      "time_frequency"
+    ],
+    "vocabularies": [
+      8,
+      16,
+      32
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "fits": 27,
+    "primary_external_ari": {
+      "spectrum_vs_time_frequency": 0.2894,
+      "spectrum_vs_waveform": 0.0387,
+      "waveform_vs_time_frequency": 0.0189
+    },
+    "interpretation": "High coverage does not establish a universal alphabet; agreement is representation- and split-dependent."
+  },
+  "verification": {
+    "unit_tests": 12,
+    "integrated_audit_checks": 3218,
+    "integrated_audit_failures": 0,
+    "copied_repeat": "PASS; non-resource metrics identical and models/assignments byte-identical",
+    "export_audit": "PASS; 40,500 unique indices and hashes match",
+    "repair_equivalence": "PASS; all numerical fields and core archives equivalent after ID/digest binding repair",
+    "metrics_sha256": "f1b948f10a9270bb3e8734d670eed246640cd8f6725c593212ddd54cfad9899e",
+    "repair_equivalence_sha256": "7bbcad850b4f28261e6940cb8c2f80c8ba43014844d1ea5ba71fb02ec7ce7839",
+    "reproduction_sha256": "3d5fbf1b14373ab0ff641c51dc1bd37d123f5d624adb49a72cb2a12444b6cd79"
+  },
+  "review": {
+    "original_independent_review": "FOUND EEGT-ALIGN-001; same-length reordered evaluation index was accepted by the pre-repair evaluator",
+    "repair": "explicit window IDs, uniqueness checks, prepared-input digest binding, four regression tests, regenerated run",
+    "current_claim": "Repair is integrated and source-audited; no independent PASS is claimed for the repaired turn.",
+    "provider_boundary": "Two native Astra repair-review attempts ended with serverOverloaded capacity errors; no bypass or alternate writer was used."
+  },
+  "publication": {
+    "repository": "https://github.com/h3ro-dev/eegt",
+    "release": "https://github.com/h3ro-dev/eegt/releases/tag/v0.2.0",
+    "release_tag": "v0.2.0",
+    "pages": "https://h3ro-dev.github.io/eegt/",
+    "pages_verified_http_status": 200,
+    "subtitle": "An LLM’s interpretation of your brainwaves",
+    "research_notes": [
+      "Experiment 001",
+      "Experiment 002"
+    ],
+    "heartbeat_automation": "eegt-research-intake; ACTIVE; weekly Monday 09:00 local"
+  },
+  "domain_boundary": {
+    "requested_hostname": "eegt.utilize.com",
+    "dns_verified": false,
+    "tls_verified": false,
+    "pages_cname_current": null,
+    "decision": "keep verified GitHub Pages URL live until DNS/TLS can be established and read back"
+  },
+  "historical_coverage_note": "Experiment 001 external coverage was 393/3458 = 11.36% of eligible windows assigned to the old codebook; it was not a percentage of people and did not measure meaning. The 4% wording was incorrect and is superseded by this denominator."
+}
