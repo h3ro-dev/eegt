@@ -1,0 +1,50 @@
+{
+  "schema": "eegt-extracted-bundle-check/v1",
+  "observed_at_utc": "2026-09-25T18:16:10.052986+00:00",
+  "stage": "candidate",
+  "status": "PASS",
+  "manifest_members_verified": 94,
+  "summary_recomputed_byte_identical": true,
+  "report_html_and_plot_byte_identical": true,
+  "tests": {
+    "passed": 60,
+    "optional_encoder_skip": 1
+  },
+  "array_sha256": {
+    "data/derived/009/prepared.npz": "627c2de46632a4eb7dd2e205996f43fdbb22744c40d68f64273a885c4a9540df",
+    "data/derived/009/embeddings.npz": "15e80ad1f50f812ab13d50c6c8ad49797855a5b4e232b3172b8bbf5bed182cd4"
+  },
+  "commands": [
+    {
+      "command": [
+        "-m",
+        "eegt.pretrained_study",
+        "evaluate"
+      ],
+      "exit_code": 0,
+      "output": "{\"totals\": {\"candidate_blocks\": 240, \"candidate_hours\": 2, \"candidate_recordings\": 12, \"eligible_blocks\": 9, \"eligible_seconds\": 270, \"rejected_blocks\": 231}, \"rejection_counts\": {\"BASELINE_QC\": 171, \"nonfinite native samples\": 70, \"preprocessed absolute amplitude exceeds 100 uV\": 160}}\n"
+    },
+    {
+      "command": [
+        "scripts/report_pretrained.py"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "{\"recording_id\": \"anon\", \"dataset\": \"ds-test\", \"subject_key\": \"ds-test:sub-001\", \"split\": \"test\", \"status\": \"QUARANTINED\", \"reason\": \"ValueError: duration discrepancy greater than one sample\", \"decoder_warnings\": [], \"duration_metadata_error_samples\": 100.0}\n{\"recording_id\": \"anon\", \"dataset\": \"ds-test\", \"subject_key\": \"ds-test:sub-001\", \"split\": \"test\", \"status\": \"QUALIFIED\", \"reason\": null, \"decoder_warnings\": [], \"duration_metadata_error_samples\": 0.0, \"sample_rate_hz\": 250.0, \"samples_per_channel\": 2500, \"eeg_channels\": 2, \"duration_seconds\": 10.0, \"discontinuities\": 2}\n----------------------------------------------------------------------\nRan 61 tests in 1.099s\n\nOK (skipped=1)\n"
+    }
+  ],
+  "scope": "Extracted files and documented evaluation/report commands. Final source/release transport is verified separately."
+}
