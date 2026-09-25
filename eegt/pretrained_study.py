@@ -213,17 +213,24 @@ def validate_prepared(root, receipt):
     return data, selected
 
 
-def infer(checkpoint, root=ROOT):
+def infer(checkpoint, root=ROOT, experiment="009"):
+    if experiment not in ("009", "010"):
+        raise ValueError("unsupported frozen experiment")
     from .pretrained import CodeBrainEncoder
     import torch
     root = Path(root)
-    if (root/'results/009/inference.json').exists():
+    if (root/f'results/{experiment}/inference.json').exists():
         raise FileExistsError('preserve existing inference run')
-    receipt = read(root/'results/009/prepared.json')
+    receipt = read(root/f'results/{experiment}/prepared.json')
     data, selected = validate_prepared(root,receipt)
-    protocol = read(root/'protocol/experiment-009.json')
-    if digest(root/'protocol/experiment-009.json') != receipt['inputs']['protocol/experiment-009.json']:
+    protocol = read(root/f'protocol/experiment-{experiment}.json')
+    if digest(root/f'protocol/experiment-{experiment}.json') != receipt['inputs'][f'protocol/experiment-{experiment}.json']:
         raise ValueError('protocol changed after preparation')
+    if experiment == "010":
+        from .distributed_study import validate_selection
+        gate = validate_selection(root, receipt, protocol)
+        if gate["status"] != "READY":
+            raise ValueError("INSUFFICIENT_PARTICIPANTS: inference gate refused")
     torch.set_num_threads(1)
     torch.set_num_interop_threads(1)
     encoder = CodeBrainEncoder(checkpoint)
@@ -246,13 +253,15 @@ def infer(checkpoint, root=ROOT):
         if index % 10 == 0:
             print(f'inferred {index+1}/{len(selected)} blocks; five variants each',flush=True)
     embeddings = np.stack(outputs) if outputs else np.empty((0,5,4,30,200),dtype=np.float32)
-    path = root/'data/derived/009/embeddings.npz'
+    path = root/f'data/derived/{experiment}/embeddings.npz'
     save_arrays(path, embeddings=embeddings,candidate_indices=data['candidate_indices'],variants=np.array(VARIANTS))
     code_paths = ['eegt/pretrained_study.py','eegt/pretrained.py']
+    if experiment == '010':
+        code_paths.append('eegt/distributed_study.py')
     code_paths += [str(p.relative_to(root)) for p in (root/'eegt/vendor/codebrain').glob('*.py')]
     result = dict(schema='eegt-pretrained-inference/v1',status='COMPLETE',
-                  prepared_receipt_sha256=digest(root/'results/009/prepared.json'),
-                  prepared_archive_sha256=receipt['array_sha256'],protocol_sha256=digest(root/'protocol/experiment-009.json'),
+                  prepared_receipt_sha256=digest(root/f'results/{experiment}/prepared.json'),
+                  prepared_archive_sha256=receipt['array_sha256'],protocol_sha256=digest(root/f'protocol/experiment-{experiment}.json'),
                   checkpoint_sha256=digest(Path(checkpoint)),code_sha256={p:digest(root/p) for p in code_paths},
                   array_path=str(path.relative_to(root)),array_sha256=digest(path),
                   shape=list(embeddings.shape),variants=list(VARIANTS),block_variant_runs=len(measurements),
@@ -261,7 +270,7 @@ def infer(checkpoint, root=ROOT):
                   observed_at_utc=datetime.now(timezone.utc).isoformat(),measurements=measurements)
     if result['checkpoint_sha256'] != protocol['encoder']['weight_sha256']:
         raise ValueError('checkpoint identity changed')
-    atomic_json(root/'results/009/inference.json',result)
+    atomic_json(root/f'results/{experiment}/inference.json',result)
     return result
 
 
@@ -328,14 +337,20 @@ def aggregate(values, rows, minimum_blocks=3):
     return (np.mean(scores,axis=0) if scores else None),record_meta,people
 
 
-def evaluate(root=ROOT):
-    root=Path(root);out=root/'results/009'
+def evaluate(root=ROOT, experiment="009"):
+    if experiment not in ("009", "010"):
+        raise ValueError("unsupported frozen experiment")
+    root=Path(root);out=root/f'results/{experiment}'
     if (out/'summary.json').exists():raise FileExistsError('preserve existing comparison')
-    prep=read(out/'prepared.json');run=read(out/'inference.json');p=read(root/'protocol/experiment-009.json')
+    prep=read(out/'prepared.json');run=read(out/'inference.json');p=read(root/f'protocol/experiment-{experiment}.json')
     if digest(out/'prepared.json')!=run['prepared_receipt_sha256'] or prep['array_sha256']!=run['prepared_archive_sha256']:
         raise ValueError('inference input binding mismatch')
-    if digest(root/'protocol/experiment-009.json')!=run['protocol_sha256'] or run['checkpoint_sha256']!=p['encoder']['weight_sha256']:
+    if digest(root/f'protocol/experiment-{experiment}.json')!=run['protocol_sha256'] or run['checkpoint_sha256']!=p['encoder']['weight_sha256']:
         raise ValueError('inference protocol/checkpoint binding mismatch')
+    if experiment == "010":
+        from .distributed_study import validate_selection
+        if validate_selection(root, prep, p)["status"] != "READY":
+            raise ValueError("INSUFFICIENT_PARTICIPANTS: comparison gate refused")
     data,rows=validate_prepared(root,prep)
     if digest(root/run['array_path'])!=run['array_sha256']:raise ValueError('embeddings changed')
     with np.load(root/run['array_path'],allow_pickle=False) as a:
@@ -409,7 +424,7 @@ def evaluate(root=ROOT):
     db.close();tmp.replace(dbpath)
     result=dict(schema='eegt-pretrained-comparison/v1',totals=prep['totals'],rejection_counts=prep['rejection_counts'],
         primary_statistics=stats,control_summaries=control_summary,block_comparisons=comparisons,block_controls=controls,
-        analysis_sha256=digest(dbpath),inputs={path:digest(root/path) for path in ['protocol/experiment-009.json','results/009/prepared.json','results/009/inference.json','eegt/pretrained_study.py']},
+        analysis_sha256=digest(dbpath),inputs={path:digest(root/path) for path in [f'protocol/experiment-{experiment}.json',f'results/{experiment}/prepared.json',f'results/{experiment}/inference.json','eegt/pretrained_study.py']},
         interpretation='Exploratory conditional within-recording alignment on exposed data. Shared filtered-wave dynamics, architecture, montage and artifacts can explain agreement; cyclic-shift exchangeability is an assumption. No independent pretrained generalization, universal tokens, brain meaning or physical Neurable transfer is established.')
     atomic_json(out/'summary.json',result)
     print(json.dumps({k:result[k] for k in ['totals','rejection_counts']}))

@@ -1,0 +1,76 @@
+{
+  "schema": "eegt-independent-science-audit/v1",
+  "input_manifest_sha256": "c01b308c9118b92c151b3e822a8271b832febc46d9a69e54fafa2bea3eaf3c74",
+  "protocol_sha256": "75f79f511d286254e544a50e470248153dc3b3fe38e1596936f748162cb3fa9b",
+  "checks_passed": 22354,
+  "comparison_observations": 732,
+  "shift_values": 19398,
+  "control_observations": 488,
+  "null_draws": 11994,
+  "primary_statistics": [
+    {
+      "metric": "geometry",
+      "view": "morphology",
+      "observed": 0.08149406068612691,
+      "upper_tail_count": 0,
+      "p_greater": 0.0005,
+      "p_bonferroni_six": 0.003
+    },
+    {
+      "metric": "geometry",
+      "view": "spectrum",
+      "observed": 0.038146451047915884,
+      "upper_tail_count": 0,
+      "p_greater": 0.0005,
+      "p_bonferroni_six": 0.003
+    },
+    {
+      "metric": "geometry",
+      "view": "coordination",
+      "observed": 0.04186073431819952,
+      "upper_tail_count": 0,
+      "p_greater": 0.0005,
+      "p_bonferroni_six": 0.003
+    },
+    {
+      "metric": "change",
+      "view": "morphology",
+      "observed": 0.03424908424908425,
+      "upper_tail_count": 128,
+      "p_greater": 0.0645,
+      "p_bonferroni_six": 0.387
+    },
+    {
+      "metric": "change",
+      "view": "spectrum",
+      "observed": 0.014072039072039072,
+      "upper_tail_count": 559,
+      "p_greater": 0.28,
+      "p_bonferroni_six": 1
+    },
+    {
+      "metric": "change",
+      "view": "coordination",
+      "observed": 0.027045177045177043,
+      "upper_tail_count": 212,
+      "p_greater": 0.1065,
+      "p_bonferroni_six": 0.639
+    }
+  ],
+  "selected_by_person_night": {
+    "001-001": 11,
+    "001-002": 12,
+    "002-001": 12,
+    "002-002": 12,
+    "003-001": 1,
+    "003-002": 11,
+    "004-001": 12,
+    "004-002": 10,
+    "005-001": 11,
+    "005-002": 12,
+    "006-001": 8,
+    "006-002": 10
+  },
+  "manifest_file_count": 65,
+  "scientific_caveat": "All checks use sealed derived arrays and receipts; original source waveform eligibility was not rerun."
+}

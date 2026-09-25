@@ -1,0 +1,35 @@
+{
+  "schema": "eegt-execution-context/v1",
+  "experiment": "010",
+  "observed_at_utc": "2026-09-25T22:08:14.162253+00:00",
+  "protocol_freeze_commit": "053d80d",
+  "protocol_sha256": "75f79f511d286254e544a50e470248153dc3b3fe38e1596936f748162cb3fa9b",
+  "implementation_commit": "676407b",
+  "preparation": {
+    "machine": "Studio0",
+    "elapsed_seconds": 13.761413916945457,
+    "max_rss_bytes": 1667448832,
+    "numerical_threads": 1,
+    "source_files_hash_verified": 12,
+    "baseline_feature_files_hash_verified": 12
+  },
+  "inference": {
+    "machine": "Studio4",
+    "elapsed_seconds": 35.69817849993706,
+    "max_rss_bytes": 638746624,
+    "numerical_threads": 1,
+    "forwards": 610,
+    "torch_version": "2.4.1",
+    "numpy_version": "1.26.4",
+    "time_scope": "After checkpoint construction through output archive writing; imports and checkpoint load excluded."
+  },
+  "cost": {
+    "new_raw_download_bytes": 0,
+    "per_window_paid_api_calls": 0,
+    "data_and_weights_access": "Public sources, no purchase",
+    "native_agent_provider_dollar_cost": "UNKNOWN"
+  },
+  "model": "One pinned CodeBrain EEGSSM continuous backbone; no new fitting and no second learned encoder",
+  "privacy": "Discovery functions receive numerical arrays only. Source person and session keys remain in curator/evaluation receipts; public source EEG only.",
+  "exposure": "No reserved participant or unexamined later session; all selected data lie in previously examined first-four-hour intervals."
+}
