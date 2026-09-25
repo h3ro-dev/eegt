@@ -1,0 +1,19 @@
+{
+  "experiment": "001",
+  "status": "completed historical seed",
+  "model": "small scalp-trained spectral baseline",
+  "recordings": 14,
+  "window_seconds": 2,
+  "window_granularity": "single-channel",
+  "windows": 27266,
+  "tokens": 18374,
+  "external": {
+    "denominator": "windows",
+    "windows": 3458,
+    "covered": 393,
+    "coverage_percent": 11.36,
+    "out_of_distribution": 3011,
+    "clipped": 54
+  },
+  "interpretation": "The baseline had low external window coverage. It does not demonstrate universal patterns or brain meaning."
+}
