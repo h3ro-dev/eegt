@@ -1,0 +1,20 @@
+--- official/Models/SSSM.py
++++ eegt/vendor/codebrain/SSSM.py
+@@ -1,7 +1,7 @@
+ import math
+ import torch
+ import torch.nn as nn
+-from Models.SGConv import GConv
++from .SGConv import GConv
+ from einops import rearrange, repeat
+ 
+ 
+@@ -126,7 +126,7 @@
+         h_t, _ = self.S41(h)
+ 
+         h_s = rearrange(h_t, "b c l -> b l c")
+-        SWA_mask = self.generate_local_window_mask(L, 1).cuda()
++        SWA_mask = self.generate_local_window_mask(L, 1).to(h_s.device)
+         h_s, _ = self.attention(h_s, h_s, h_s, attn_mask=SWA_mask)
+         h_s = rearrange(h_s, "b l c -> b c l")
+ 

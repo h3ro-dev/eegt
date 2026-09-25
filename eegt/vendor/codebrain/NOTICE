@@ -1,0 +1,6 @@
+CodeBrain EEGSSM source by the CodeBrain authors.
+Official source: https://github.com/jingyingma01/CodeBrain
+Pinned commit: 22d350caf68246d2fda4f630ef837420db3fb130
+License: Apache License 2.0; original LICENSE retained.
+EEGT modifications (2026-09-25): SSSM.py imports SGConv relatively; the attention mask moves to h_s.device instead of unconditionally calling cuda(). SGConv.py is unchanged.
+The EEGT wrapper preserves all checkpoint keys and restores the batch axis for batch size one.

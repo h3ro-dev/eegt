@@ -1,0 +1,269 @@
+{
+  "assignment_version": 1,
+  "checks": [
+    {
+      "evidence": "All 94 input/repo files match input/MANIFEST.json; pinned source ZIP SHA-256 4ebe7c8324a7a03e6cd54b7aa417bc65881d0c34bfc1089194f19c7ea8739805.",
+      "id": "snapshot_integrity",
+      "status": "PASS"
+    },
+    {
+      "evidence": "Recorded protocol freeze 2026-09-25T17:21:25.884734+00:00 precedes prepared receipt 17:32:43 and inference receipt 17:44:52; 240 distinct candidates, 12 recordings x 20 fixed blocks, 9 eligible. Freeze is verified by internal timestamps and hashes, without external clock attestation.",
+      "id": "protocol_freeze_and_eligibility",
+      "status": "PASS_WITH_LIMIT"
+    },
+    {
+      "evidence": "Candidate indices, 9 prepared waveform hashes, 27 baseline hashes, 45 input variant hashes and 45 output hashes match receipts; outputs are [9,5,4,30,200].",
+      "id": "array_source_binding",
+      "status": "PASS"
+    },
+    {
+      "evidence": "SciPy 1.14.1/NumPy 1.26.4 recomputation of all 54 geometry/change values and 1,431 shift-null values; maximum absolute differences 1.11e-16 and 2.22e-16, below 1e-9 tolerance.",
+      "id": "independent_numerical_recompute",
+      "result": {
+        "block_comparisons": 27,
+        "candidate_count": 240,
+        "complete_participants": 0,
+        "eligible_count": 9,
+        "embeddings_archive_sha256": "15e80ad1f50f812ab13d50c6c8ad49797855a5b4e232b3172b8bbf5bed182cd4",
+        "manifest_entries": 94,
+        "max_abs_null_delta": 2.220446049250313e-16,
+        "max_abs_numeric_delta": 1.1102230246251565e-16,
+        "null_values_checked": 1431,
+        "numeric_values_checked": 54,
+        "prepared_archive_sha256": "627c2de46632a4eb7dd2e205996f43fdbb22744c40d68f64273a885c4a9540df",
+        "protocol_sha256": "5c45dc42d237b89653909bf536f3cf44927a28303f808ac1d0bc48b2c00562f1",
+        "reason_counts": {
+          "BASELINE_QC": 171,
+          "nonfinite native samples": 70,
+          "preprocessed absolute amplitude exceeds 100 uV": 160
+        },
+        "sqlite_counts": {
+          "candidates": 240,
+          "comparisons": 27,
+          "controls": 36
+        },
+        "status": "PASS",
+        "summary_sha256": "bcc8d4e12f048adcad11505f15151b909c0c662f43ec838aac594dfd9587701e"
+      },
+      "status": "PASS"
+    },
+    {
+      "evidence": "PRAGMA integrity_check ok, no foreign-key violations, 240 candidate, 27 comparison and 36 control rows.",
+      "id": "sqlite_integrity",
+      "status": "PASS"
+    },
+    {
+      "evidence": "Fresh pytest run with checkpoint and pinned ZIP: 14 passed (7 study, 7 adapter), 5 upstream Torch warnings. Original-source CPU reference forward included. First collection attempt lacked opt-einsum; installed its exact lock version then reran successfully.",
+      "id": "focused_tests",
+      "status": "PASS"
+    },
+    {
+      "evidence": "Official ZIP SHA and checkpoint size/hash verified; SSSM differs only by relative import and CPU mask device transfer, SGConv and Apache LICENSE byte-identical; adapter strict-loads 269 tensors with weights_only=True, eval/inference_mode, preserves full [B,4,30,200] features.",
+      "id": "vendored_source_and_checkpoint",
+      "status": "PASS"
+    },
+    {
+      "evidence": "Fresh candidate 26 original forward input hash equals receipt; archived output hash equals receipt. Fresh output is not byte-identical on this host; maximum absolute delta 4.77e-6, mean absolute 8.00e-7, all elements within atol=rtol=1e-5 but not 1e-6.",
+      "id": "actual_archived_block_forward",
+      "result": {
+        "allclose_atol_rtol_1e-5": true,
+        "allclose_atol_rtol_1e-6": false,
+        "bitwise_equal": false,
+        "candidate_index": 26,
+        "input_sha256": "fa4f8eace3bb4915b26b0525cbbaab7617be6c1dc530e6335aae6939ce9dab94",
+        "max_abs_delta": 4.76837158203125e-06,
+        "mean_abs_delta": 8.004125220395508e-07,
+        "output_sha256": "80ebc0f9d8b33033feed9a075c830fc951c6e488043f6e2466f28fd0b10ac42b",
+        "recorded_archive_sha256": "9f7c8cd821a05afd41891129cbaa4331cc4df42501dbdbc70790f588d252b055",
+        "recorded_output_sha256": "9f7c8cd821a05afd41891129cbaa4331cc4df42501dbdbc70790f588d252b055",
+        "rmse": 1.02163392057264e-06,
+        "shape": [
+          4,
+          30,
+          200
+        ]
+      },
+      "status": "PASS_WITH_TOLERANCE"
+    },
+    {
+      "evidence": "Research Note and site say backbone-only, 19-scalp/4-ear limit, unknown overlap, 50-Hz source vs 60-Hz notch, no primary p or universal/clinical/Neurable claim. README gives most limits but omits the 50/60-Hz caveat.",
+      "id": "public_claims",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "evidence": "Packager does not check three recorded inference source digests; README directs report_pretrained.py from data tar, which omits site/data while reporter writes into that directory.",
+      "id": "package_reproduction",
+      "status": "CHANGES_REQUIRED"
+    }
+  ],
+  "findings": [
+    {
+      "detail": "package_pretrained.run checks each receipt's inputs map and only independent-review status. Inference stores eegt/pretrained.py and both vendored Python digests under code_sha256, so these three files are not checked before tar creation. The review status is not checked against this review's input hashes.",
+      "evidence_paths": [
+        "input/repo/scripts/package_pretrained.py",
+        "input/repo/results/009/inference.json",
+        "input/repo/eegt/pretrained.py",
+        "input/repo/eegt/vendor/codebrain/SSSM.py",
+        "input/repo/eegt/vendor/codebrain/SGConv.py"
+      ],
+      "id": "F1",
+      "required_change": "Validate inference.code_sha256 against included files and bind the accepted review to the exact release inputs (or perform and record an equivalent final hash gate). Rerun package checks after any changed reviewed file.",
+      "severity": "RELEASE_BLOCKING",
+      "title": "Package does not bind included adapter source to the inference receipt or review"
+    },
+    {
+      "detail": "README says to run scripts/report_pretrained.py from the v0.5.0 bundle. The tar path list omits site/, and the reporter writes site/data/pretrained-eligibility.png without creating site/data. That command cannot finish from the archive as described.",
+      "evidence_paths": [
+        "input/repo/README.md",
+        "input/repo/scripts/package_pretrained.py",
+        "input/repo/scripts/report_pretrained.py"
+      ],
+      "id": "F2",
+      "required_change": "Make the reporter create site/data, include the needed directory in the bundle, or specify a complete source checkout instead. Verify the documented command from the final extracted tar.",
+      "severity": "RELEASE_BLOCKING",
+      "title": "Documented report rerun lacks its output directory in the data bundle"
+    },
+    {
+      "detail": "All 12 source metadata rows state PowerLineFrequency 50 Hz, while fixed preprocessing applies a 60-Hz notch. The note and site explain that it does not specifically remove 50 Hz; README's Experiment009 section does not.",
+      "evidence_paths": [
+        "input/repo/README.md",
+        "input/repo/notes/experiment-009.md",
+        "input/repo/site/pretrained.html",
+        "input/repo/protocol/corpus-manifest-008.json"
+      ],
+      "id": "F3",
+      "required_change": "Add the same concise caveat to README before publication.",
+      "severity": "PUBLIC_COPY",
+      "title": "README omits the source mains and model notch mismatch"
+    }
+  ],
+  "input_hashes": {
+    "additional_sha256": {
+      "BRIEF.md": "a3d4687a86b870b93f2ef0d93db44ee79ce8ab37ca80794f96f8c6fbcdc0c26c",
+      "input/MANIFEST.json": "b0a9d0c2d429b094ccf84a3c9386fc18375c6745972d95f7bf53f549276e7e4c",
+      "input/PLAN.md": "439e530c5386e4c5eb39dad5d06217bbff1333852df4c7840a5a4fc7483d2efc",
+      "input/codebrain.zip": "4ebe7c8324a7a03e6cd54b7aa417bc65881d0c34bfc1089194f19c7ea8739805",
+      "input/fleet.json": "13c91ece0b9aa0d6737d093fd7fe70659cdee80225337a6622085c16813d2f28",
+      "scratch/CodeBrain.pth": "d9714b8732c9883a04d022ee66254cd578ae1fa27f5458e6ab7f1aa96e9a7352"
+    },
+    "snapshot_file_count": 94,
+    "snapshot_files_sha256": {
+      "CITATION.cff": "1aea575512144c13d12003ce030bff9e12caa3a3e4e391d3ab5b4dd69b68df3b",
+      "DATABASE.md": "b4ea89ec02066e5aa6901f515a493336674aba881e3cf44075ba064d69a1893d",
+      "LICENSE": "81d1fa0720e01c2b9e2c8b04e7d1713ee623c06db017b9583ea9a0b7e515abbd",
+      "README.md": "386ed8e21cc7314e8d84aa41b710f42789cd6f0dd29a2f16fe66911e4c80e82b",
+      "RUNBOOK.md": "11559610c9215e8c95a59c54714c6f0cb97269849d2612487aa456254d0f900c",
+      "STRATEGY.md": "ce8acd2467b87fe2d9e8a9c32d1a5ec9946c11c8ffdc12999146345071685548",
+      "data/derived/009/embeddings.npz": "15e80ad1f50f812ab13d50c6c8ad49797855a5b4e232b3172b8bbf5bed182cd4",
+      "data/derived/009/prepared.npz": "627c2de46632a4eb7dd2e205996f43fdbb22744c40d68f64273a885c4a9540df",
+      "data/pretrained-eligibility.png": "c895d700770929e5d8a82be9f48399facbed04c2777e14d3c51a3d471b28f824",
+      "data/pretrained.json": "bcc8d4e12f048adcad11505f15151b909c0c662f43ec838aac594dfd9587701e",
+      "eegt/__init__.py": "fb8c515d9d1e529126c493cfb674a144c75d0f4ad12de4e8ec190f4aeccc0959",
+      "eegt/acquire.py": "120dfbfde3c717572035356db3fe9ba5cf8cddea1eeeeab91673313100d730a3",
+      "eegt/artifacts.py": "4a84c228c972cab008dab508cd167b86ee60f88b0e551c1c4382385c8019352c",
+      "eegt/calibrate.py": "3dbb7835713c3a479b69adb600e7bd05907a7fcd4c259091f02df7b484da13f2",
+      "eegt/contract.py": "81e86845ec47fd41f32c451e3f4030588bd248c2729adc87848f0c955f3d9845",
+      "eegt/controls.py": "d58375540276c1571184c97270b503518a4ff59cdfdefaf32b547291fcc8c4c1",
+      "eegt/corpus.py": "e8be0e5d853af6d0d57a55bbbb8c704cca5e1feea35e4944db3ee477e525a640",
+      "eegt/evaluate.py": "6e2c4ceeaa91f3b7109cba4f9459b35c9e35380a6f59a9c40d53e95c842f2df1",
+      "eegt/growth.py": "3b3689c9679856ec6ce7e43517868dc6db5d5869d951300fd0a5fe119be18350",
+      "eegt/model.py": "a8f95e207ed3f67a686c97024e5ce93582891f406879330f6fb5e0cd084f3537",
+      "eegt/prepare.py": "188bfcdc5000fae25f05e8da832bebaf2d1325485fa5452823c785269db54619",
+      "eegt/pretrained.py": "f64fa16898852048dcdd14da2f843d7b239c5e4e697e7be3a71643fb838841a0",
+      "eegt/pretrained_study.py": "6ab7db0c7c067f31cc6fb385f5e3a35f9a0f18a3e0706f521864f0979ef59624",
+      "eegt/repeated.py": "5f39bbd820147fb4d4d1df715cd5b818c8fd9f3be46797cf090098812105b6c3",
+      "eegt/signal.py": "c9f15e16cb289ac22ecdfad16f17c834c2453e77d1503d1177574e19e5d745d1",
+      "eegt/transitions.py": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d",
+      "eegt/vendor/codebrain/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "eegt/vendor/codebrain/NOTICE": "26a18a2af6ee4936dad2a50000b842ba0dcf73ceeaf896309a43f18ba2e8533e",
+      "eegt/vendor/codebrain/SGConv.py": "94f12f897ab4e8784a45d64fb65664184c872e6928159a6759fda2920c488be8",
+      "eegt/vendor/codebrain/SSSM.py": "9f7b892a3908ad838cb43a842c14c2a165e7f93d6243b31f0c9d32c90183253b",
+      "index.html": "df676fea01ad7ea363c06d2bbe8213f2b4c43cfae38f6bc2c9f2d3fbeb2521c6",
+      "notes/experiment-009.md": "da68e2d201177dcd24c05e6a2eb16597d202deb1254b411e4eac89acc22484b8",
+      "pretrained.html": "ff7b27c9d95895d6f446e8d8b52179b5371f5f24d11bfb7987a95f362b7ab66b",
+      "protocol/INPUT-CONTRACT.md": "d62b4df2feab8e9774fb054008993aa2abdae22bed67ea39c901cbeb4d9a5534",
+      "protocol/amendment-001.md": "37863a26d78404f2013e5a16419dd33c84ede676a4aa4b815b38708c411a95b6",
+      "protocol/amendment-002.md": "6b24e9bfbc0e483868261172783f0576bad22835410ca4478a59046fe5c810df",
+      "protocol/amendment-003.md": "27374d34796b273d1b32dc85884507d7b33c6974155ae269e2a95afc71e1cfab",
+      "protocol/corpus-manifest-008.json": "2358ceb6673058989932ac70e83ae7fd52151b0dd5ab8dc53db5371b130807f5",
+      "protocol/corpus-manifest-v1.json": "a6dac5e85c6fe080f8665aa6223d45074b3880581c80701aff8bbfd32bc8d904",
+      "protocol/corpus-v1.json": "438a320618998cc70bc9c1d36f68f1f66590dced6cd07f51b69dfbc20bc36202",
+      "protocol/experiment-002.json": "6d6449e057117221cfa9f01d5d9b30af518d223e60d81fa02ec0366ae27b0675",
+      "protocol/experiment-003.json": "1a0da132216c4da31dd78345950db95439ada3d543788664b42f6f5c0f0939a0",
+      "protocol/experiment-008.json": "bf19d4cfe6dd2b31f8d16f5e768ed00cbfff875b926f2af3fa75c27f3b0d7860",
+      "protocol/experiment-009.json": "5c45dc42d237b89653909bf536f3cf44927a28303f808ac1d0bc48b2c00562f1",
+      "protocol/future-ear-source-intake-2026-09-25.json": "3061de6f1dbe4f0332f550133bf818df8922a5eb8e9c5c6616330758bf7415cd",
+      "protocol/neurable-availability-2026-09-25.json": "46af5d4e597f54eaaaba1598b7afe4c169281c673c1b87ad7e52b0d4c7927fda",
+      "protocol/neurable-availability-recheck-2026-09-25.json": "c0d32749f5f736e3eb962f8dfa20787dffa5f487c2419dd5dc88666d0f767788",
+      "protocol/neurable-pilot.md": "1b0738a737f987f1b774f8206d287e7f5bf706c10bd6aae97bf952cd3cc22380",
+      "protocol/source-manifest.json": "afeb4181a98c7c030d36373f4dbbc40822fc463def3a8a27800a66764898d00c",
+      "protocol/strategy-v2.md": "0d2c064c1ef0442bccc45e239f523539716cf3d61d38e4dd70dfb8c04d4b5bd6",
+      "protocol/strategy-v3.md": "1490c6adba3dccf06eb5ca3f85613d5ad1412a34125bbee5aa40b57136e6fcd3",
+      "protocol/transition-methods.md": "360b98459b1a3c25dd2b4a793a2e6db3b15dc282089b01a38edc673505481e2c",
+      "requirements-encoder.lock": "c70edc4ff592cda5d77139b8b29912ebb0e2853c9c2b1139fab79022816b6182",
+      "requirements.lock": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6",
+      "results/003/model.json": "c37fcb23e99e217ee0405504cab12723563a0717834643c949aa3116864f5879",
+      "results/008/features.json": "0d405a99bf4a0be5834cc6121469ef289d25e14a0d78bfe0f6cda858b24287ab",
+      "results/008/qualification.json": "33e0ac19e09888435be1c41c1baffb03d722ef73f0ae11c02f9b509efa905654",
+      "results/009/adapter/MODEL-RECEIPT.json": "4644386064b217c9fc9a50f08329e5d2cb5657b897e5f6c183b9a7f08746ee59",
+      "results/009/adapter/REPORT.md": "062cb9d5aa265c9c174b61e6608303e203c4ed54e3d20738d0bd1568d49a49e0",
+      "results/009/adapter/benchmark.json": "4b3ae7f22215564e796115575ad97378a47eb659228393142e0903ed410c81ca",
+      "results/009/adapter/checkpoint-keys.tsv": "9d8c8206d8b6900cd25f4ab84a153f0d52ef625bf9da3ef4dfb8c29b56048c95",
+      "results/009/adapter/requirements-encoder.lock": "1db32b395b1ca94bce6243882163a9f0b650827534a6dccdccaf4e2d2c802c68",
+      "results/009/adapter/test-output.txt": "24f6326fe2248d183601f1ca6743f22b36b4dd42939bf209f613eaa900e69edd",
+      "results/009/adapter/vendor.patch": "14fe2162eaddeff7a9cc510be9042a6be05afa3e903a08aa64c66b94e0066700",
+      "results/009/analysis.sqlite": "b7f0ec6eb63130dd4d4db8e9c9f07083b730c58997636b43cb1e8cf5573becdf",
+      "results/009/execution-admission.json": "3d6b2312f6e423cb24b446737b123a666e16b0e363ecaee913825cab4c734144",
+      "results/009/inference.json": "e55295da6537b0762ec0ac96719b55aa3a704fd73211a7f9a8db77735ef4600d",
+      "results/009/inference.log": "f2f65ec7ae34ff6a1f8baa0d60d97e6ce4de0b168d61af6da72dd2e0f4b1e117",
+      "results/009/prepared.json": "b4f8103b0d0beac251cc773dc5f411e44ad56ba79739e78830b790a9a2acdff7",
+      "results/009/report.json": "a1bf7d12eb43fda4a701138b1ed14ff56033e939e03abef11171671a22c6fe12",
+      "results/009/summary.json": "bcc8d4e12f048adcad11505f15151b909c0c662f43ec838aac594dfd9587701e",
+      "scripts/audit_growth.py": "64b7af17839abe40a6367ee38baab56affa8576afdca2c8fa791bf9a15ea2d3c",
+      "scripts/audit_results.py": "f3295b4d8c57b943845a03961ba6b188fbf0f4c438576916dd9c4b5e1812b388",
+      "scripts/package_growth.py": "9fbcfe75d8049f2c636bf9c541b7599600c51e216c7ba744f7b86cbc92ba1c8f",
+      "scripts/package_pretrained.py": "a20046fc57e8ff29de770ee457366a82206dd32dd30d599f0c6fcb5679df6f8d",
+      "scripts/package_repeated.py": "cd7c4a4d33a8cc737ac70751aa153cec78288d20b8db611d624012834d29b732",
+      "scripts/report.py": "f1d7dba040bbcff229f45f8c3dd95298e270be8de1b5eee608cd2e9ed378f547",
+      "scripts/report_growth.py": "2402389cf7fac47f1f630ccfab023bd1fe39e83c356b833acb91b13300d9ef60",
+      "scripts/report_pretrained.py": "e4353ec199243c668ae6af86c8d1d04132ee94424740bd89e3eb5259b835984f",
+      "scripts/report_repeated.py": "731dd3bde34beefd85349bbc6961d2712fc11b144003c319d21c10564b00c268",
+      "site/data/pretrained-eligibility.png": "c895d700770929e5d8a82be9f48399facbed04c2777e14d3c51a3d471b28f824",
+      "site/data/pretrained.json": "bcc8d4e12f048adcad11505f15151b909c0c662f43ec838aac594dfd9587701e",
+      "site/index.html": "df676fea01ad7ea363c06d2bbe8213f2b4c43cfae38f6bc2c9f2d3fbeb2521c6",
+      "site/pretrained.html": "ff7b27c9d95895d6f446e8d8b52179b5371f5f24d11bfb7987a95f362b7ab66b",
+      "site/styles.css": "e5c9d68f01daadae9d58fc49237eacd7bf26e8d0772412a5e0539f58fd5a0fe1",
+      "tests/test_artifacts.py": "323c75faab14845dbb678941ebbbc71015c8028ad631a2f0f6f508292d46614b",
+      "tests/test_contract.py": "a2df5095fe785d33def6b36280dbf9ea052a2dfb79eb0cddd8dfecb095c451f0",
+      "tests/test_corpus.py": "c321cc426ff8efb070d7c94bb874c3e8fcf3e236b5816f0230d0acd58e947c3e",
+      "tests/test_growth.py": "e9643a671d39501b71f7b546e4e782b35fb0a427d845d1ac531bb955e112fe4d",
+      "tests/test_pretrained.py": "1582ad2c2ed19835bd02b3ed3270223e63a2d5bf1dcf5ccc722cb63bab86f405",
+      "tests/test_pretrained_study.py": "8f7aab1d57b11e5a177c4a748691426a77c7aceb884870968b8a8a7dfd716f18",
+      "tests/test_repeated.py": "590e740eb6e0d5fdf1274e6822c4d5d285167d6e33106ed16d0cc40687d17d9d",
+      "tests/test_signal.py": "f0ce0f31fecb3b8500b24a5b44d6b1bd888476f6531f9661f7e99979bd701ae6",
+      "tests/test_transitions.py": "118a9f3de5e3eb5cc38a5f52a07c3a9ff28f96f6483a184b386f994cf4b3ab82"
+    },
+    "snapshot_manifest_sha256": "b0a9d0c2d429b094ccf84a3c9386fc18375c6745972d95f7bf53f549276e7e4c"
+  },
+  "limitations": [
+    "No raw EEG or reserved waveform files were opened; raw-to-prepared preprocessing and native gap detection were source-inspected but not rerun from source recordings.",
+    "Protocol freeze chronology rests on frozen receipt timestamps and hashes; no independent external timestamp proof was provided.",
+    "The full 57-pass general suite and one optional skip were reported by root but its log was not in this snapshot and were not independently rerun.",
+    "The final data tar, release assets, website and publication were not run or read back; root owns those steps.",
+    "A fresh forward on another host differed from archived float32 bytes; cause was not isolated. Within-1e-5 agreement supports computational consistency at that tolerance only.",
+    "With zero complete paired participants, cyclic-shift null p values and six-way multiplicity were inspected in code but correctly not executed for primary inference."
+  ],
+  "native_runtime": {
+    "effort": "max",
+    "evidence": "Studio1 native rollout turn_context in /Users/studio1/.codex-profiles/studio4-utlyze/sessions/2026/09/25/rollout-2026-09-25T11-49-59-01a0d9b0-381f-7310-a45c-8c8e06b1ab9f.jsonl",
+    "model": "gpt-6-sol",
+    "session_id": "01a0d9b0-381f-7310-a45c-8c8e06b1ab9f"
+  },
+  "parent_session": "session-13ffd342d925791b856652db872e4142",
+  "release_boundary": "Review only; no source edits or publication. Root integration owner must resolve findings, build the final tar from accepted code and verify it before release.",
+  "reviewed_at_utc": "2026-09-25T18:01:27.004569+00:00",
+  "role": "independent reviewer",
+  "schema": "eegt-experiment009-independent-review/v1",
+  "status": "CHANGES_REQUIRED",
+  "work_id": "eco-uzwh8s.25"
+}

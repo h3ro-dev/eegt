@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "results/009/summary.json": "bcc8d4e12f048adcad11505f15151b909c0c662f43ec838aac594dfd9587701e",
+    "scripts/report_pretrained.py": "e4353ec199243c668ae6af86c8d1d04132ee94424740bd89e3eb5259b835984f"
+  },
+  "outputs": {
+    "notes/experiment-009.md": "da68e2d201177dcd24c05e6a2eb16597d202deb1254b411e4eac89acc22484b8",
+    "site/data/pretrained-eligibility.png": "c895d700770929e5d8a82be9f48399facbed04c2777e14d3c51a3d471b28f824",
+    "site/data/pretrained.json": "bcc8d4e12f048adcad11505f15151b909c0c662f43ec838aac594dfd9587701e",
+    "site/pretrained.html": "ff7b27c9d95895d6f446e8d8b52179b5371f5f24d11bfb7987a95f362b7ab66b"
+  },
+  "schema": "eegt-pretrained-report/v1"
+}
