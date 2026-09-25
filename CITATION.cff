@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this software release and the original EEG datasets listed in DATA_CARD.md."
+message: "Please cite this software release and the original EEG sources linked in notes/experiment-010.md."
 type: software
 title: "EEGT: Anonymous around-ear EEG tokenization experiments"
 version: 0.6.0
