@@ -1,0 +1,50 @@
+{
+  "schema": "eegt-extracted-bundle-check/v1",
+  "observed_at_utc": "2026-09-25T22:35:09.422548+00:00",
+  "stage": "candidate",
+  "status": "PASS",
+  "manifest_members_verified": 93,
+  "summary_recomputed_byte_identical": true,
+  "report_html_and_plot_byte_identical": true,
+  "tests": {
+    "passed": 66,
+    "optional_encoder_skip": 1
+  },
+  "array_sha256": {
+    "data/derived/010/prepared.npz": "894cfc2f49371223ea488b6b662d909ba366ad1e84c215d18a37c9d64a138abc",
+    "data/derived/010/embeddings.npz": "5c961360971ed18c88a0c2e474fece27ca7db08d359ffa8223a81f1c64b7de40"
+  },
+  "commands": [
+    {
+      "command": [
+        "-m",
+        "eegt.distributed_study",
+        "evaluate"
+      ],
+      "exit_code": 0,
+      "output": "{\"totals\": {\"candidate_blocks\": 5760, \"candidate_hours\": 48, \"candidate_people\": 6, \"candidate_recordings\": 12, \"eligible_blocks\": 122, \"eligible_seconds\": 3660, \"qualified_unselected_blocks\": 2851, \"quality_qualified_blocks\": 2973, \"quality_qualified_seconds\": 89190, \"rejected_blocks\": 2787}, \"rejection_counts\": {\"BASELINE_QC\": 1606, \"nonfinite native samples\": 867, \"preprocessed absolute amplitude exceeds 100 uV\": 1690}}\n"
+    },
+    {
+      "command": [
+        "scripts/report_distributed.py"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "-W",
+        "error",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "{\"recording_id\": \"anon\", \"dataset\": \"ds-test\", \"subject_key\": \"ds-test:sub-001\", \"split\": \"test\", \"status\": \"QUARANTINED\", \"reason\": \"ValueError: duration discrepancy greater than one sample\", \"decoder_warnings\": [], \"duration_metadata_error_samples\": 100.0}\n{\"recording_id\": \"anon\", \"dataset\": \"ds-test\", \"subject_key\": \"ds-test:sub-001\", \"split\": \"test\", \"status\": \"QUALIFIED\", \"reason\": null, \"decoder_warnings\": [], \"duration_metadata_error_samples\": 0.0, \"sample_rate_hz\": 250.0, \"samples_per_channel\": 2500, \"eeg_channels\": 2, \"duration_seconds\": 10.0, \"discontinuities\": 2}\n----------------------------------------------------------------------\nRan 67 tests in 1.324s\n\nOK (skipped=1)\n"
+    }
+  ],
+  "scope": "Extracted files and documented evaluation/report commands. Final source/release transport is verified separately."
+}
