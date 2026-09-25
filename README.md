@@ -71,6 +71,8 @@ Preparation seals the related input files in `results/002/prepared-inputs.json`.
 
 ## How to read the numbers
 
+For the transition study, timing F1 is `2 × matched boundaries / (boundaries from view A + boundaries from view B)`. Matching is one-to-one within one second. One means all detected boundaries match; zero means none match. The headline is the median of these per-record scores, not a percentage of people or brain meaning. Empty/empty records contribute no aggregate agreement evidence.
+
 Coverage = accepted tokens divided by all selected windows (also separately reported against QC-passing windows). It is not accuracy. ARI/AMI compare assignments while allowing arbitrary token-number changes; 1 means identical partitions, near 0 means chance-level agreement under those metrics. High coverage does not mean stable, useful or universal tokens. Reconstruction ratios compare each model to a one-code baseline on the same observations; lower is better for that numerical target. The two sources and their unequal channel counts must not be treated as a population estimate.
 
 The older scalp seed, Experiment 001, assigned 393 of 3,458 external windows (11.36%). Experiment 002 changes datasets, representation and QC; its coverage is not a controlled improvement over that seed.
