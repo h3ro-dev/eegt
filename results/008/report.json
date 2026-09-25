@@ -1,0 +1,15 @@
+{
+  "inputs": {
+    "results/008/summary.json": "6321b09899edb38c0a1ab740ba58dc21c33fe68d60774899c26c2c43a8a51f63",
+    "scripts/report_repeated.py": "731dd3bde34beefd85349bbc6961d2712fc11b144003c319d21c10564b00c268"
+  },
+  "outputs": {
+    "notes/experiment-008.md": "3e5ac9971cacc563b47464d36b2be2be1b11ebd2cd84506bc3a32c70b15c5781",
+    "results/corpus-v2/corpus.sqlite": "b6c165596204df38d6f541c2cc90bfa7257f8d00175f5d945d36bb018da6ef10",
+    "results/corpus-v2/summary.json": "f6e29f6b00c2901d0afbb304473d123327befde5f7b7540ef29e7e07cf2c6d15",
+    "site/data/repeated-sessions.json": "6321b09899edb38c0a1ab740ba58dc21c33fe68d60774899c26c2c43a8a51f63",
+    "site/data/session-distances.png": "f73b38209121e23f3c0c9de7c390d95dd9bf8ab3d807b401102e26a3363a6369",
+    "site/repeated-sessions.html": "7e531543c4d2e45df38ac89f4398db48bd79354386f337601642b38f6bbe6bea"
+  },
+  "schema": "eegt-repeat-report/v1"
+}

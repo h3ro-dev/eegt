@@ -1,0 +1,1181 @@
+{
+  "archive_sha256": "1d0874fcf38fdec59c07d2655c0e7a821120ec459a1bfd03757e9696cb2dad97",
+  "description": {
+    "Authors": [
+      "Yousef Rezaei Tabar",
+      "Kaare Mikkelsen",
+      "Laura Birch",
+      "Nelly Shenton",
+      "Simon L Kappel",
+      "Astrid R Bertelsen",
+      "Reza Nikbakht",
+      "Hans O Toft",
+      "Chris H Henriksen",
+      "Martin C Hemmsen",
+      "Mike L Rank",
+      "Marit Otto",
+      "Preben Kidmose"
+    ],
+    "BIDSVersion": "1.9.0",
+    "DatasetDOI": "doi:10.18112/openneuro.ds005178.v1.0.0",
+    "DatasetType": "raw",
+    "License": "CC0",
+    "Name": "Ear-EEG Sleep Monitoring 2023 (EESM23)"
+  },
+  "frozen_at": "2026-09-25T15:12:01.147326+00:00",
+  "protocol_sha256": "bf19d4cfe6dd2b31f8d16f5e768ed00cbfff875b926f2af3fa75c27f3b0d7860",
+  "readme": "Ear-EEG Sleep Monitoring 2023 (EESM23) data set\r\n\r\n**Overview**\r\n\r\nThis dataset was collected as part of a research project on ear-EEG sleep monitoring which took place in 2020-2022.\r\n\r\nThe data set contains nightly EEG recordings from 10 healthy participants ('subjects'). The first two recordings consist of polysomnogrpahy (PSG) measurements and ear-EEG measurements. The remaining ten recordings consist of only ear-EEG measurements, though a few subjects were asked to repeat a recording. Only the accepted recordings can be found in the BIDS formatted data set.\r\n\r\nEach file consists of a video sequence followed by a sleep sequence. After the video sequence, the subject sent triggers to distinguish between the two sequences. Due to potential variability in triggering the device, the sequences remain in one file though it should be possible to manually sort the file into distinct video and sleep sequences.\r\nThere are no events.tsv files for Ear-EEG.\r\n\r\n\r\n**Task description**\r\n\r\nThe patient performed tasks prior to going to bed. These recordings are labeled with 'video' as task. After his, the real recording started, which took place during the night and began when the subject went to bed. These recordings are labeled as having task 'sleep'.\r\nFor the first two recordings, the recording equipment was mounted in the afternoon. For the remaining recordings, the subject mounted the ear-EEG equipment by themselves immediately prior to going to bed. All recordings took place at the subject's home.\r\n\r\nAs can be seen in the diaries accompanying the recordings, the subjects wrote down recording start, electrode test start, when they went to bed, lights-out and recording end, and marked these in the data files using the trigger button on the equipment.\r\n\r\n\r\n**Format**\r\n\r\nThe dataset is formatted according to the Brain Imaging Data Structure. See the 'dataset_description.json' file for the specific BIDS version used. The EEG data format chosen is the '.set' format of EEGLAB.\r\n\r\nFor more information, see the following link:\r\nhttps://bids-specification.readthedocs.io/en/stable/01-introduction.html\r\n\r\n\r\n**Contact**\r\n\r\nFor questions regarding this data set, contact: \r\nPreben Kidmose, pki@ece.au.dk, https://orcid.org/0000-0001-8628-8057 \r\nKaare Mikkelsen, Mikkelsen.kaare@ece.au.dk, https://orcid.org/0000-0002-7360-8629",
+  "records": [
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 145983904,
+        "expected_digest": "4a48c81877a7ffffa1ccd090cfb2d9f3dfcfac478fff52640b16b9a7aef90efe",
+        "path": "sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 24329.084,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "34b1cae73fc98ce060ae215cea8824d42798106af154746eab48555fbb9f066b",
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "session": "001",
+      "source_subject": "001"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 145421824,
+        "expected_digest": "382e4ef4b6667071b7a371129cf7aa08031b1a963b9414938c688d4c0be5aca4",
+        "path": "sub-001/ses-002/eeg/sub-001_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-001/ses-002/eeg/sub-001_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 24235.404,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "1e8eb318ccf8d7c07e4f0e81f58f476cb8583c82bc145213e6fa652dddd8e508",
+      "recording_id": "505284a21c453899cd814cfc",
+      "session": "002",
+      "source_subject": "001"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 169546416,
+        "expected_digest": "bc459c3d7073db20c090103124af119ebccb7f8347b8eb303eb6c0c15717287a",
+        "path": "sub-002/ses-001/eeg/sub-002_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-002/ses-001/eeg/sub-002_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 28256.168,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "c4f68050b69f020c585235492d42e0471e152f91c978cbe9a9d6a32eee1a3d33",
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "session": "001",
+      "source_subject": "002"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 155993536,
+        "expected_digest": "6db2252503fbc623a1a6d2bc847100d49ec68b6969974ec509e0729ae976758b",
+        "path": "sub-002/ses-002/eeg/sub-002_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-002/ses-002/eeg/sub-002_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 25997.356,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "3b20f4781ea6506d8632e29f1daa1f08e0982f5e454edbbab16934efdc5bbca2",
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "session": "002",
+      "source_subject": "002"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 113000784,
+        "expected_digest": "076e478bfc223c0f81105ac31ee2ec13307298945ce40e5172bea7a3ca30a968",
+        "path": "sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 18831.896,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "33f51311d703fe8dce79bea4dd439f593fee1048ea901039378504e49358909c",
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "session": "001",
+      "source_subject": "003"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 121799584,
+        "expected_digest": "299b93354588e12e3738fd2dab3882a3f966313a644a4430273da87af5a8139e",
+        "path": "sub-003/ses-002/eeg/sub-003_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-003/ses-002/eeg/sub-003_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 20298.364,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "5a149e24d5f2d494548791e0595ed4516dfaf9f0be8ad175deae907e81df9a65",
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "session": "002",
+      "source_subject": "003"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 195154144,
+        "expected_digest": "42943e46ec611cac3a3dbcecfd92912f35e092c573b23f35d2c447b5c66c187a",
+        "path": "sub-004/ses-001/eeg/sub-004_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-004/ses-001/eeg/sub-004_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 32524.124,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "d5ecf7ed9b568db6edd48165e9925584f6d64163d4826fdf76cc22d73480e4d9",
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "session": "001",
+      "source_subject": "004"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 191484576,
+        "expected_digest": "adecd20dca40ac42a25c304884410600d1adb8314281a4f68d8c9af1ef078dc9",
+        "path": "sub-004/ses-002/eeg/sub-004_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-004/ses-002/eeg/sub-004_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 31912.528,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "a6e32b37ad5cc35ae6889594511cc2933a195cebf9c0f38650284585bf2c71b3",
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "session": "002",
+      "source_subject": "004"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 131825776,
+        "expected_digest": "fb84f5e4354e9a08db8bebd215b8f13b3f8a884b09846e1f4dae788e5c0b38a4",
+        "path": "sub-005/ses-001/eeg/sub-005_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-005/ses-001/eeg/sub-005_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 21969.396,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "d88ac807fb5b65a1945777589bbbc9aeafcfd0ea0401a4bb217d2456e7c5883b",
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "session": "001",
+      "source_subject": "005"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 162004720,
+        "expected_digest": "c2177909cb2d825e0dae42b9860c6e8897981f310f902d1cda967118d20384b6",
+        "path": "sub-005/ses-002/eeg/sub-005_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-005/ses-002/eeg/sub-005_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 26999.22,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "7ecb101ce515bf142d295040c45438a087068ae16ac52fa3dcda262d01e388d8",
+      "recording_id": "d22340de41eff601bb6701d6",
+      "session": "002",
+      "source_subject": "005"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 145291152,
+        "expected_digest": "5db81e10f81b9b67d9c3bfe876b754d7645ce5f3bb2a95df7e9b3e289179d132",
+        "path": "sub-006/ses-001/eeg/sub-006_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-006/ses-001/eeg/sub-006_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 24213.624,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "e21a371c9c647af7a54c07dd688e8ca6b4cbb1c6258170515e9c55924baa1b69",
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "session": "001",
+      "source_subject": "006"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 188492352,
+        "expected_digest": "0e833ec23daa5dd246eaeecc1f589bacbe5faad614d544f54e62be338cdf8b8e",
+        "path": "sub-006/ses-002/eeg/sub-006_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-006/ses-002/eeg/sub-006_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 31413.824,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_sha256": "09088f768a8bf2cf2b93fd849a4211c9c612ac31316a80774344d8cfaff1a044",
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "session": "002",
+      "source_subject": "006"
+    }
+  ],
+  "reserved": [
+    {
+      "path": "sub-001/ses-003/eeg/sub-001_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-004/eeg/sub-001_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-005/eeg/sub-001_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-006/eeg/sub-001_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-007/eeg/sub-001_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-008/eeg/sub-001_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-009/eeg/sub-001_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-010/eeg/sub-001_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-011/eeg/sub-001_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-001/ses-012/eeg/sub-001_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "001"
+    },
+    {
+      "path": "sub-002/ses-003/eeg/sub-002_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-004/eeg/sub-002_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-005/eeg/sub-002_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-006/eeg/sub-002_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-007/eeg/sub-002_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-008/eeg/sub-002_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-009/eeg/sub-002_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-010/eeg/sub-002_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-011/eeg/sub-002_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-002/ses-012/eeg/sub-002_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "002"
+    },
+    {
+      "path": "sub-003/ses-003/eeg/sub-003_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-004/eeg/sub-003_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-005/eeg/sub-003_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-006/eeg/sub-003_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-007/eeg/sub-003_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-008/eeg/sub-003_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-009/eeg/sub-003_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-010/eeg/sub-003_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-011/eeg/sub-003_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-003/ses-012/eeg/sub-003_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "003"
+    },
+    {
+      "path": "sub-004/ses-003/eeg/sub-004_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-004/eeg/sub-004_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-005/eeg/sub-004_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-006/eeg/sub-004_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-007/eeg/sub-004_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-008/eeg/sub-004_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-009/eeg/sub-004_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-010/eeg/sub-004_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-011/eeg/sub-004_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-004/ses-012/eeg/sub-004_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "004"
+    },
+    {
+      "path": "sub-005/ses-003/eeg/sub-005_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-004/eeg/sub-005_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-005/eeg/sub-005_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-006/eeg/sub-005_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-007/eeg/sub-005_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-008/eeg/sub-005_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-009/eeg/sub-005_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-010/eeg/sub-005_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-011/eeg/sub-005_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-005/ses-012/eeg/sub-005_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "005"
+    },
+    {
+      "path": "sub-006/ses-003/eeg/sub-006_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-004/eeg/sub-006_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-005/eeg/sub-006_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-006/eeg/sub-006_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-007/eeg/sub-006_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-008/eeg/sub-006_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-009/eeg/sub-006_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-010/eeg/sub-006_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-011/eeg/sub-006_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-006/ses-012/eeg/sub-006_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "006"
+    },
+    {
+      "path": "sub-007/ses-001/eeg/sub-007_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "session": "001",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-002/eeg/sub-007_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "session": "002",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-003/eeg/sub-007_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-004/eeg/sub-007_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-005/eeg/sub-007_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-006/eeg/sub-007_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-007/eeg/sub-007_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-008/eeg/sub-007_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-009/eeg/sub-007_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-010/eeg/sub-007_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-011/eeg/sub-007_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-007/ses-012/eeg/sub-007_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "007"
+    },
+    {
+      "path": "sub-008/ses-001/eeg/sub-008_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "session": "001",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-002/eeg/sub-008_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "session": "002",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-003/eeg/sub-008_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-004/eeg/sub-008_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-005/eeg/sub-008_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-006/eeg/sub-008_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-007/eeg/sub-008_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-008/eeg/sub-008_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-009/eeg/sub-008_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-010/eeg/sub-008_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-011/eeg/sub-008_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-008/ses-012/eeg/sub-008_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "008"
+    },
+    {
+      "path": "sub-009/ses-001/eeg/sub-009_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "session": "001",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-002/eeg/sub-009_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "session": "002",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-003/eeg/sub-009_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-004/eeg/sub-009_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-005/eeg/sub-009_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-006/eeg/sub-009_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-007/eeg/sub-009_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-008/eeg/sub-009_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-009/eeg/sub-009_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-010/eeg/sub-009_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-011/eeg/sub-009_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-009/ses-012/eeg/sub-009_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "009"
+    },
+    {
+      "path": "sub-010/ses-001/eeg/sub-010_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "session": "001",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-002/eeg/sub-010_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "session": "002",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-003/eeg/sub-010_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "session": "003",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-004/eeg/sub-010_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "session": "004",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-005/eeg/sub-010_ses-005_task-sleep_acq-earEEG_eeg.set",
+      "session": "005",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-006/eeg/sub-010_ses-006_task-sleep_acq-earEEG_eeg.set",
+      "session": "006",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-007/eeg/sub-010_ses-007_task-sleep_acq-earEEG_eeg.set",
+      "session": "007",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-008/eeg/sub-010_ses-008_task-sleep_acq-earEEG_eeg.set",
+      "session": "008",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-009/eeg/sub-010_ses-009_task-sleep_acq-earEEG_eeg.set",
+      "session": "009",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-010/eeg/sub-010_ses-010_task-sleep_acq-earEEG_eeg.set",
+      "session": "010",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-011/eeg/sub-010_ses-011_task-sleep_acq-earEEG_eeg.set",
+      "session": "011",
+      "source_subject": "010"
+    },
+    {
+      "path": "sub-010/ses-012/eeg/sub-010_ses-012_task-sleep_acq-earEEG_eeg.set",
+      "session": "012",
+      "source_subject": "010"
+    }
+  ],
+  "schema": "eegt-repeat-manifest/v1",
+  "source": {
+    "acquisition": "earEEG",
+    "commit": "a57deb78cf1294497db88d73aaed06813850f236",
+    "dataset": "ds005178",
+    "license": "CC0",
+    "version": "1.0.0"
+  },
+  "total_download_bytes": 1865998768
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "eegt-device-availability/v1",
+  "date": "2026-09-25",
+  "research_kit_access": "HISTORICAL_ENGINEERING_EVIDENCE; CURRENT_LIVE_ACCESS_UNCONFIRMED",
+  "physical_capture_verified": false,
+  "physical_recordings_ingested": 0,
+  "documented_raw_interface": "Research Kit raw export or supported stream, subject to actual device documentation",
+  "consumer_summary_is_raw_eeg": false,
+  "protocol": "protocol/neurable-pilot.md",
+  "next_required_evidence": "Supported raw stream/export with primary physical unit/calibration evidence, actual channel/reference order, source clock/rate, and technical quality metadata; then qualify a consented EEGT capture.",
+  "scope": "Availability is unconfirmed, not a claim that James owns no compatible device. No physical capture or consented cohort is represented by this record.",
+  "source_recheck": "2026-09-25; read-only engineering contract and transport documentation; no private waveform opened",
+  "historical_engineering_evidence": "NoticingMind engineering documentation at source commit 4964469 records Research Kit access and owned-device wire evidence. This is historical source evidence, not fresh live acquisition or a newly qualified EEGT input.",
+  "admission_blocker": "Documented scaling factor is not verified physical microvolt calibration; device sampling clock is not established by packet counters or host arrival times.",
+  "physical_capture_verified_scope": "No physical capture has passed the EEGT raw-input qualification contract; do not infer that no historical device capture exists."
+}

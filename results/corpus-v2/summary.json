@@ -1,0 +1,49 @@
+{
+  "coverage": [
+    {
+      "dataset_id": "ds004015",
+      "recorded_hours": 47.28973222222222,
+      "recordings": 36,
+      "source_participants": 36,
+      "status": "QUALIFIED"
+    },
+    {
+      "dataset_id": "ds005178",
+      "recorded_hours": 86.38362111111111,
+      "recordings": 12,
+      "source_participants": 6,
+      "status": "QUALIFIED"
+    },
+    {
+      "dataset_id": "ds005207",
+      "recorded_hours": 176.18083333333334,
+      "recordings": 18,
+      "source_participants": 18,
+      "status": "QUALIFIED"
+    },
+    {
+      "dataset_id": "ds005207",
+      "recorded_hours": null,
+      "recordings": 1,
+      "source_participants": 1,
+      "status": "QUARANTINED"
+    }
+  ],
+  "database_sha256": "b6c165596204df38d6f541c2cc90bfa7257f8d00175f5d945d36bb018da6ef10",
+  "duplicate_file_hashes": [],
+  "limitation": "Source-local participant counts do not establish unique global people. This index is an inventory, not a new analysis of earlier raw data.",
+  "schema": "eegt-corpus-index/v2",
+  "source_hashes": {
+    "results/008/catalog.sqlite": "17d3317b637e9d26a5973fe007a4751f363f2e77afbc38bdf7e6eedc4afc6f32",
+    "results/008/qualification.json": "33e0ac19e09888435be1c41c1baffb03d722ef73f0ae11c02f9b509efa905654",
+    "results/corpus-v1/corpus.sqlite": "8977f92f2bab42ecfcedfd0d4204621e7e4ff74c2fffdb7d467cf612acba950c"
+  },
+  "totals": {
+    "candidate_recordings": 67,
+    "qualified_hours": 309.85418666666664,
+    "qualified_recordings": 66,
+    "source_files": 122,
+    "source_local_participants": 61,
+    "verified_download_bytes": 23401180576
+  }
+}

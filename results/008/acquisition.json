@@ -1,0 +1,79 @@
+{
+  "completed": true,
+  "manifest_sha256": "2358ceb6673058989932ac70e83ae7fd52151b0dd5ab8dc53db5371b130807f5",
+  "records": [
+    {
+      "bytes": 145983904,
+      "path": "data/cache/ds005178/sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "994b9095fb35625b16fd1e8f",
+      "sha256": "4a48c81877a7ffffa1ccd090cfb2d9f3dfcfac478fff52640b16b9a7aef90efe"
+    },
+    {
+      "bytes": 145421824,
+      "path": "data/cache/ds005178/sub-001/ses-002/eeg/sub-001_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "505284a21c453899cd814cfc",
+      "sha256": "382e4ef4b6667071b7a371129cf7aa08031b1a963b9414938c688d4c0be5aca4"
+    },
+    {
+      "bytes": 169546416,
+      "path": "data/cache/ds005178/sub-002/ses-001/eeg/sub-002_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "fa5b67db66646a5545dbfea4",
+      "sha256": "bc459c3d7073db20c090103124af119ebccb7f8347b8eb303eb6c0c15717287a"
+    },
+    {
+      "bytes": 155993536,
+      "path": "data/cache/ds005178/sub-002/ses-002/eeg/sub-002_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "13d73c7c2d4467655f14f87a",
+      "sha256": "6db2252503fbc623a1a6d2bc847100d49ec68b6969974ec509e0729ae976758b"
+    },
+    {
+      "bytes": 113000784,
+      "path": "data/cache/ds005178/sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "b1d2f8c1de3792b06dcbe154",
+      "sha256": "076e478bfc223c0f81105ac31ee2ec13307298945ce40e5172bea7a3ca30a968"
+    },
+    {
+      "bytes": 121799584,
+      "path": "data/cache/ds005178/sub-003/ses-002/eeg/sub-003_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "69ef03116e5a723e1ed7517d",
+      "sha256": "299b93354588e12e3738fd2dab3882a3f966313a644a4430273da87af5a8139e"
+    },
+    {
+      "bytes": 195154144,
+      "path": "data/cache/ds005178/sub-004/ses-001/eeg/sub-004_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "967f50cf7f0325877f3f857b",
+      "sha256": "42943e46ec611cac3a3dbcecfd92912f35e092c573b23f35d2c447b5c66c187a"
+    },
+    {
+      "bytes": 191484576,
+      "path": "data/cache/ds005178/sub-004/ses-002/eeg/sub-004_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "3547bf8a1ada993d6537b989",
+      "sha256": "adecd20dca40ac42a25c304884410600d1adb8314281a4f68d8c9af1ef078dc9"
+    },
+    {
+      "bytes": 131825776,
+      "path": "data/cache/ds005178/sub-005/ses-001/eeg/sub-005_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "bcdc9aae2113b52db91990cf",
+      "sha256": "fb84f5e4354e9a08db8bebd215b8f13b3f8a884b09846e1f4dae788e5c0b38a4"
+    },
+    {
+      "bytes": 162004720,
+      "path": "data/cache/ds005178/sub-005/ses-002/eeg/sub-005_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "d22340de41eff601bb6701d6",
+      "sha256": "c2177909cb2d825e0dae42b9860c6e8897981f310f902d1cda967118d20384b6"
+    },
+    {
+      "bytes": 145291152,
+      "path": "data/cache/ds005178/sub-006/ses-001/eeg/sub-006_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "a9a07129bb93b4fefffdf689",
+      "sha256": "5db81e10f81b9b67d9c3bfe876b754d7645ce5f3bb2a95df7e9b3e289179d132"
+    },
+    {
+      "bytes": 188492352,
+      "path": "data/cache/ds005178/sub-006/ses-002/eeg/sub-006_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "recording_id": "92ed14e224d7e78fe07ba140",
+      "sha256": "0e833ec23daa5dd246eaeecc1f589bacbe5faad614d544f54e62be338cdf8b8e"
+    }
+  ],
+  "schema": "eegt-repeat-acquisition/v1"
+}

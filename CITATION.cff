@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this software release and the original EEG datasets listed in DATA_CARD.md."
 type: software
 title: "EEGT: Anonymous around-ear EEG tokenization experiments"
-version: 0.3.0
+version: 0.4.0
 date-released: 2026-09-25
 authors:
   - name: EEGT contributors

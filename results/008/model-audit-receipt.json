@@ -1,0 +1,18 @@
+{
+  "schema": "eegt-model-audit-receipt/v1",
+  "original_report_sha256": "010188bc05c431e4bfe26796d80b1e5a108f9e71b34aeebbc39f776a9776ee3d",
+  "json_sha256": "732b8c534f2d9a3eaef81fe7c827c2974167ee0a97143d460580858dc98bb55d",
+  "native_worker_model": "gpt-6-sol",
+  "effort": "max",
+  "source_evidence": {
+    "source-evidence/codebrain-tree.json": "58fc3075ecbccaa1cb7281b63e448e7baac7bd56fbab67ca2c20b869be3509cb",
+    "source-evidence/codebrain-weights-index.json": "5c87a6385f899fc2d5c192e3e092969ef97157498b2f5cd5eef932a4fc273ef5",
+    "source-evidence/reve-base-weights-index.json": "1439d139804be97778c72e49d18daf8703d5a46ca70426b8888c57a9e26cb3f6",
+    "source-evidence/reve-large-weights-index.json": "c2b7ef923c147210a2df6042202931258144f4f6e11cf4c459872a0893e2b174",
+    "source-evidence/reve-open-subset-README.md": "e4eaa66a0176a0c3a30ec4328f4867a4d4e73b28f37b6ece103042784698e7a5",
+    "source-evidence/reve-positions-config.json": "8e89acf4d27cf1d24815add8df771e6cf138b68846e60796db57e36f1ec8d6f8",
+    "source-evidence/reve-positions-index.json": "7973126e06d50fe3c1f63e8ef678c4f7ed621fad0a0d9b9c889fd53d92dd155d",
+    "source-evidence/reve-tree.json": "82e693b3816f38f431288e48fb1e836d4f03cef008ce6676525fa455596080f1"
+  },
+  "publication_adjustment": "Updated working-evidence path wording and clarified historical Neurable evidence from root readback. No model inference or weights were run. The next software test is a proposed project action, not a new permission requirement."
+}

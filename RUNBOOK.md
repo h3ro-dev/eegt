@@ -1,6 +1,6 @@
 # Repeatable research and publication
 
-Accountable project: EEGT. Maintain one authoritative experiment plan. Published v0.2.0 and v0.3.0 artifacts are immutable; a rerun is an additional receipt, not permission to change their findings.
+Accountable project: EEGT. Maintain one authoritative experiment plan. Published v0.2.0, v0.3.0 and v0.4.0 artifacts are immutable; a rerun is an additional receipt, not permission to change their findings.
 
 1. Check for a material new open around-ear waveform source, new compatible model, source update or concrete defect. An unchanged check produces no new experiment or public result.
 2. Before fetching or fitting, allocate the next experiment number and write its question, source/subject selection, fixed slice/time scales, train/evaluation groups, QC, models/seeds, outcome definitions, controls, resource estimate and publication boundary. Hash the protocol. Use only open sources; retain primary metadata and attribution. No private EEG or clinical/semantic labels are needed for this program.
@@ -16,3 +16,5 @@ Initial operating bounds per new intake: up to 3 GB download, one numeric worker
 The v0.3.0 expansion acquired 21.54 GB once under a measured storage/CPU plan. Do not download this same corpus again during weekly intake. All evaluated participants in 003/006/007 are now exposed for future research: preserve their original split for reproducing this experiment, but do not relabel them as fresh holdouts for a new claim. Prioritize a genuinely new session, source or device over additional overlapping slices. Keep control eligibility independent of main-run eligibility, bind every row and derivative to its receipt, and run the release audit before rendering public notes.
 
 If the public host or remote is unavailable, preserve the completed local release package and the exact error, try supported recovery or another authorized publication target, and keep public state explicit. If a dataset disappears or a checksum changes, do not silently substitute bytes; record the failed intake and freeze a new version after resolving provenance.
+
+After Experiment008, EESM23 participants001–006 and sessions001–002 are exposed. Participants007–010 and all other sessions remain waveform-unexposed by EEGT. Session-only reserves from exposed participants do not prove new-person transfer. The capture boundary is documented in protocol/neurable-availability-recheck-2026-09-25.json.
