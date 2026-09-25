@@ -1,0 +1,42 @@
+{
+  "bead": "eco-uzwh8s.16",
+  "completed_at_america_denver": "2026-09-25T06:52:41-06:00",
+  "cost_note": "native task cost was not exposed; no new paid API calls were made by the implementation",
+  "effort": null,
+  "evidence_scope": "small synthetic numerical contract tests only; no corpus or biological validation",
+  "files": {
+    "METHODS.md": {
+      "bytes": 9551,
+      "sha256": "2e74625eaaeb3ad6159436d9fb82e2eba5b0f96971aaa4ddf3b5f153703a1e83"
+    },
+    "test_transitions.py": {
+      "bytes": 14149,
+      "sha256": "b7511143ad480b6592fe6eec75e4781efd060435df99217b1cd961bd523603e8"
+    },
+    "transitions.py": {
+      "bytes": 24367,
+      "sha256": "1c36bf0b3fa2877d18077c974e6c5cb1a596f0c906c00332800c5d14efd6beec"
+    }
+  },
+  "integration_owner": "lead/integrator; packet does not modify the parent codebase",
+  "lead_integrator": "session-13ffd342d925791b856652db872e4142",
+  "model": null,
+  "model_effort_note": "native model and effort receipt was not exposed in this packet",
+  "observed_api_cost_usd": null,
+  "owner": "session-91dd78f505871bef8e66dc64aae916b6",
+  "parent_task": "01a0d46f-1d63-72f3-95d0-692535ad6615",
+  "schema": "eegt-transition-packet-receipt/v1",
+  "status": "ready_for_parent_integration",
+  "verification": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -W error -m unittest discover -s out -p 'test_transitions.py' -v",
+    "errors": 0,
+    "exit_code": 0,
+    "failures": 0,
+    "numpy": "2.2.6",
+    "python": "3.12.12",
+    "reported_unittest_seconds": 1.203,
+    "scipy": "1.16.3",
+    "tests_run": 16,
+    "warnings": 0
+  }
+}

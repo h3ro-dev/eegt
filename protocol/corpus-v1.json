@@ -1,0 +1,20 @@
+{
+  "schema": "eegt-corpus-protocol/v1",
+  "corpus": "around-ear-v1",
+  "sources": [
+    {"dataset": "ds004015", "version": "1.0.2", "git_commit": "4ce40e5bb7a106c9effe2c67e0eae0645e91ac7e"},
+    {"dataset": "ds005207", "version": "1.0.0", "git_commit": "6e6e824f5bafdd300bbcba4cb772ebc5b369f842"}
+  ],
+  "selection": "All raw cEEGrid SET/FDT recordings present in the two pinned repository trees. Exclude sourcedata and derivatives copies, PSG, other modalities and stimulus files. No signal-based sampling.",
+  "scope": "All available records are acquired and qualified. Analysis exposure is counted separately; invalid or missing records remain in the denominator.",
+  "split": {
+    "ds004015": {"train": [1,24], "validation": [25,30], "test": [31,36]},
+    "ds005207": "external",
+    "prior_exposure": {"ds004015": ["001","002","003","004","005","006"], "ds005207": ["001","003"]},
+    "rules": "Group all records for a source participant. Source-local identifiers are not proof of cross-dataset disjoint identity. Validation and test are unused subjects in the current local project; pretrained-model exposure is unknown. Sleep external subjects 001 and 003 were used in Experiment 002 and are flagged exposed. Never tune to external metrics."
+  },
+  "technical_eligibility": {"minimum_eeg_channels": 2, "minimum_sample_rate_hz": 100, "required_units": ["uV", "microV", "µV"]},
+  "continuity": "Preserve native sample coordinates and channel order; no concatenation across recorded boundary/BAD annotations. Store zero-duration boundaries explicitly; model context may not cross them. Unrecorded clock gaps remain unknown.",
+  "database": "SQLite curator catalog and derived evidence tables; immutable raw files remain external to SQLite. Original technical metadata retained separately from label-blind discovery arrays.",
+  "release": "Source licenses and hashes retained. Database rows are source-local participant records, not a verified global person census. Clinical/semantic labels and physical Neurable acquisition are not established by this corpus."
+}

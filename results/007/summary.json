@@ -1,0 +1,7049 @@
+{
+  "aggregation": "Pool event-match counts within each recording; bootstrap medians across source participant-recordings. Empty/empty event sets are missing for aggregate F1, not perfect biological agreement. Intervals are descriptive, not simultaneous or confirmatory confidence bounds.",
+  "controls": {
+    "gain_1.1": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3076923076923077
+            ],
+            "median": 0.15384615384615385,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.10526315789473684,
+              0.2857142857142857
+            ],
+            "median": 0.19548872180451127,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.1,
+              0.16666666666666666
+            ],
+            "median": 0.13333333333333333,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.095890410958904,
+              1.1707317073170733
+            ],
+            "median": 1.1333110591379887,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              0.547945205479452,
+              6.439024390243903
+            ],
+            "median": 3.4934847978616776,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              5.853658536585366,
+              9.863013698630137
+            ],
+            "median": 7.8583361176077515,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 460
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.19047619047619047,
+              0.4
+            ],
+            "median": 0.3333333333333333,
+            "n": 15
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.3225806451612903,
+              0.5384615384615384
+            ],
+            "median": 0.38095238095238093,
+            "n": 15
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4444444444444444
+            ],
+            "median": 0.3157894736842105,
+            "n": 15
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.857142857142857,
+              4.304932735426009
+            ],
+            "median": 3.7333333333333334,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              6.457399103139013,
+              10.51094890510949
+            ],
+            "median": 7.210300429184549,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              7.361963190184048,
+              15.924170616113745
+            ],
+            "median": 8.23529411764706,
+            "n": 15
+          }
+        },
+        "records": 16,
+        "valid_windows": 3185
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 4
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              1.3445145467850714
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.2575107296137339
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1438
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.38095238095238093,
+              0.64
+            ],
+            "median": 0.46886446886446886,
+            "n": 24
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2857142857142857,
+              0.4444444444444444
+            ],
+            "median": 0.375,
+            "n": 23
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.28625258799171793
+            ],
+            "median": 0.07142857142857142,
+            "n": 24
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.575107296137339,
+              5.150214592274678
+            ],
+            "median": 3.8626609442060085,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              2.570417338278989,
+              5.9192825112107625
+            ],
+            "median": 4.120171673819742,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              1.3130727293817421,
+              3.257918552036199
+            ],
+            "median": 1.5450643776824033,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5599
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "median": 0.25,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.1
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.2575107296137339,
+              2.317596566523605
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              2.8326180257510734
+            ],
+            "median": 0.7725321888412017,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    },
+    "independent_phase": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -1.4457831325301205,
+              -1.0526315789473684
+            ],
+            "median": -1.2492073557387444,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              -8.674698795180722,
+              -0.5263157894736842
+            ],
+            "median": -4.600507292327204,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              -9.473684210526317,
+              -7.228915662650603
+            ],
+            "median": -8.35129993658846,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              1.0300429184549356,
+              1.2903225806451613
+            ],
+            "median": 1.1601827495500485,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 427
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -6.058536585365854,
+              -2.060085836909871
+            ],
+            "median": -3.7552272093671593,
+            "n": 10
+          },
+          "morphology": {
+            "ci95": [
+              -15.0,
+              -2.060085836909871
+            ],
+            "median": -7.927451695224207,
+            "n": 10
+          },
+          "spectrum": {
+            "ci95": [
+              -19.43181818181818,
+              -7.193793331132387
+            ],
+            "median": -8.495329462257006,
+            "n": 10
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 11
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 11
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 11
+          }
+        },
+        "records": 16,
+        "valid_windows": 2174
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -2.317596566523605,
+              0.0
+            ],
+            "median": -1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -1.3445145467850714,
+              0.0
+            ],
+            "median": -0.5150214592274678,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              -0.2575107296137339,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": null,
+            "median": 0.0,
+            "n": 1
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": null,
+            "median": 0.0,
+            "n": 1
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -5.150214592274678,
+              -2.575107296137339
+            ],
+            "median": -3.8626609442060085,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              -5.892857142857142,
+              -2.570417338278993
+            ],
+            "median": -4.120171673819742,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              -3.257918552036199,
+              -1.5450643776824033
+            ],
+            "median": -1.5870118268502513,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5760
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": null,
+            "n": 0
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -2.317596566523605,
+              -0.2575107296137339
+            ],
+            "median": -0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -2.8326180257510734,
+              -0.2575107296137339
+            ],
+            "median": -0.7725321888412017,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              -1.0300429184549356,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    },
+    "original": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.3076923076923077,
+              0.5
+            ],
+            "median": 0.40384615384615385,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2,
+              0.2857142857142857
+            ],
+            "median": 0.24285714285714285,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.1,
+              0.16666666666666666
+            ],
+            "median": 0.13333333333333333,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.0526315789473684,
+              1.1707317073170733
+            ],
+            "median": 1.1116816431322207,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              1.0526315789473684,
+              6.439024390243903
+            ],
+            "median": 3.7458279845956355,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              5.853658536585366,
+              9.473684210526317
+            ],
+            "median": 7.663671373555841,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 465
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4
+            ],
+            "median": 0.3684210526315789,
+            "n": 15
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.30303030303030304,
+              0.5454545454545454
+            ],
+            "median": 0.3870967741935484,
+            "n": 15
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4444444444444444
+            ],
+            "median": 0.2857142857142857,
+            "n": 15
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.2748815165876777,
+              4.821428571428571
+            ],
+            "median": 3.6051502145922747,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              5.892857142857142,
+              10.263157894736842
+            ],
+            "median": 7.725321888412017,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              7.185628742514971,
+              15.789473684210527
+            ],
+            "median": 8.755364806866952,
+            "n": 15
+          }
+        },
+        "records": 16,
+        "valid_windows": 3265
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 4
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              1.3445145467850714
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.2575107296137339
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1438
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.38095238095238093,
+              0.64
+            ],
+            "median": 0.46886446886446886,
+            "n": 24
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2857142857142857,
+              0.47058823529411764
+            ],
+            "median": 0.375,
+            "n": 23
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.28625258799171793
+            ],
+            "median": 0.07142857142857142,
+            "n": 24
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.575107296137339,
+              5.150214592274678
+            ],
+            "median": 3.8626609442060085,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              2.570417338278989,
+              5.892857142857142
+            ],
+            "median": 4.120171673819742,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              1.5450643776824033,
+              3.257918552036199
+            ],
+            "median": 1.5870118268502513,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5611
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "median": 0.25,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.1
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.2575107296137339,
+              2.317596566523605
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              2.8326180257510734
+            ],
+            "median": 0.7725321888412017,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    },
+    "polarity_reverse": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.3076923076923077,
+              0.5
+            ],
+            "median": 0.40384615384615385,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2,
+              0.2857142857142857
+            ],
+            "median": 0.24285714285714285,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.1,
+              0.16666666666666666
+            ],
+            "median": 0.13333333333333333,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.0526315789473684,
+              1.1707317073170733
+            ],
+            "median": 1.1116816431322207,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              1.0526315789473684,
+              6.439024390243903
+            ],
+            "median": 3.7458279845956355,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              5.853658536585366,
+              9.473684210526317
+            ],
+            "median": 7.663671373555841,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 465
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4
+            ],
+            "median": 0.3684210526315789,
+            "n": 15
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.30303030303030304,
+              0.5454545454545454
+            ],
+            "median": 0.3870967741935484,
+            "n": 15
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.18181818181818182,
+              0.4444444444444444
+            ],
+            "median": 0.2857142857142857,
+            "n": 15
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 15
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.2748815165876777,
+              4.821428571428571
+            ],
+            "median": 3.6051502145922747,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              5.892857142857142,
+              10.263157894736842
+            ],
+            "median": 7.725321888412017,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              7.185628742514971,
+              15.789473684210527
+            ],
+            "median": 8.755364806866952,
+            "n": 15
+          }
+        },
+        "records": 16,
+        "valid_windows": 3265
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 4
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              1.3445145467850714
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.2575107296137339
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1438
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.38095238095238093,
+              0.64
+            ],
+            "median": 0.46886446886446886,
+            "n": 24
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.2857142857142857,
+              0.47058823529411764
+            ],
+            "median": 0.375,
+            "n": 23
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.28625258799171793
+            ],
+            "median": 0.07142857142857142,
+            "n": 24
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.575107296137339,
+              5.150214592274678
+            ],
+            "median": 3.8626609442060085,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              2.570417338278989,
+              5.892857142857142
+            ],
+            "median": 4.120171673819742,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              1.5450643776824033,
+              3.257918552036199
+            ],
+            "median": 1.5870118268502513,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5611
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "median": 0.25,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.1
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.2575107296137339,
+              2.317596566523605
+            ],
+            "median": 0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              2.8326180257510734
+            ],
+            "median": 0.7725321888412017,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    },
+    "shared_phase": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "median": 0.16666666666666666,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": null,
+            "median": 0.0,
+            "n": 1
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -1.4814814814814814,
+              -1.2834224598930482
+            ],
+            "median": -1.3824519706872649,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              -1.481481481481481,
+              3.8502673796791447
+            ],
+            "median": 1.1843929490988319,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              -7.0588235294117645,
+              -4.444444444444444
+            ],
+            "median": -5.751633986928104,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              5.0,
+              7.422680412371134
+            ],
+            "median": 6.211340206185567,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              2.5
+            ],
+            "median": 1.25,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 416
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.2857142857142857
+            ],
+            "median": 0.0625,
+            "n": 8
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.15384615384615385
+            ],
+            "median": 0.0,
+            "n": 9
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.6666666666666666
+            ],
+            "median": 0.0,
+            "n": 5
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -4.682926829268293,
+              0.0
+            ],
+            "median": -2.5,
+            "n": 11
+          },
+          "morphology": {
+            "ci95": [
+              -2.278481012658228,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 11
+          },
+          "spectrum": {
+            "ci95": [
+              -15.18987341772152,
+              -5.660377358490567
+            ],
+            "median": -8.704663212435232,
+            "n": 11
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 11
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              8.61244019138756
+            ],
+            "median": 2.0869565217391304,
+            "n": 11
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              2.1686746987951806
+            ],
+            "median": 0.0,
+            "n": 11
+          }
+        },
+        "records": 16,
+        "valid_windows": 2246
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.25
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -2.317596566523605,
+              0.0
+            ],
+            "median": -0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -0.2575107296137339,
+              4.8927038626609445
+            ],
+            "median": 1.5450643776824036,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              -0.2575107296137339,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.5150214592274678
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              5.150214592274678
+            ],
+            "median": 2.421131808327065,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1420
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.2361111111111111
+            ],
+            "median": 0.0,
+            "n": 20
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 19
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 16
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -3.9745208086536037,
+              -1.0300429184549358
+            ],
+            "median": -3.18142801404604,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              -3.6051502145922747,
+              -0.5150214592274678
+            ],
+            "median": -2.116015769133669,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              -3.257918552036199,
+              -1.5450643776824033
+            ],
+            "median": -1.5870118268502513,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              1.2875536480686693
+            ],
+            "median": 0.5800913747750243,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.5150214592274678,
+              4.635193133047211
+            ],
+            "median": 1.2875536480686693,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5719
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.2
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -1.6159388904201284,
+              0.0
+            ],
+            "median": -0.5150214592274678,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -1.0831988030082291,
+              2.3175965665236054
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              -1.0831988030082293,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              1.0831988030082293
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.2575107296137339,
+              3.9689727133125965
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1437
+      }
+    },
+    "time_reverse": {
+      "external_exposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.23529411764705882,
+              0.25
+            ],
+            "median": 0.2426470588235294,
+            "n": 2
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.26666666666666666,
+              0.3333333333333333
+            ],
+            "median": 0.3,
+            "n": 2
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.07692307692307693,
+              0.15384615384615385
+            ],
+            "median": 0.11538461538461539,
+            "n": 2
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.5853658536585364
+            ],
+            "median": 0.2926829268292682,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              1.7560975609756095,
+              2.105263157894737
+            ],
+            "median": 1.9306803594351734,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              3.1578947368421044
+            ],
+            "median": 1.5789473684210522,
+            "n": 2
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.0526315789473684,
+              1.7560975609756098
+            ],
+            "median": 1.404364569961489,
+            "n": 2
+          },
+          "morphology": {
+            "ci95": [
+              3.1578947368421053,
+              8.195121951219512
+            ],
+            "median": 5.676508344030809,
+            "n": 2
+          },
+          "spectrum": {
+            "ci95": [
+              5.853658536585366,
+              12.631578947368421
+            ],
+            "median": 9.242618741976894,
+            "n": 2
+          }
+        },
+        "records": 2,
+        "valid_windows": 465
+      },
+      "external_unexposed": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.10526315789473684,
+              0.3157894736842105
+            ],
+            "median": 0.2,
+            "n": 15
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.3157894736842105,
+              0.5270467836257303
+            ],
+            "median": 0.48484848484848486,
+            "n": 15
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.2,
+              0.38095238095238093
+            ],
+            "median": 0.35294117647058826,
+            "n": 15
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -0.5882352941176467,
+              0.7407407407407414
+            ],
+            "median": 0.0,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              -0.6741573033707864,
+              1.0300429184549356
+            ],
+            "median": 0.5687203791469191,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.7407407407407423
+            ],
+            "median": 0.5454545454545467,
+            "n": 15
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              1.1374407582938388,
+              5.185185185185185
+            ],
+            "median": 2.9411764705882355,
+            "n": 15
+          },
+          "morphology": {
+            "ci95": [
+              6.605504587155964,
+              9.022556390977444
+            ],
+            "median": 7.5,
+            "n": 15
+          },
+          "spectrum": {
+            "ci95": [
+              7.210300429184549,
+              16.578947368421055
+            ],
+            "median": 8.240343347639485,
+            "n": 15
+          }
+        },
+        "records": 16,
+        "valid_windows": 3265
+      },
+      "test": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              1.0
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 4
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -0.2575107296137339,
+              0.2575107296137339
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -0.5150214592274678,
+              0.5529953917050692
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.5150214592274678
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              1.6399992088764068
+            ],
+            "median": 0.2575107296137339,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.5150214592274678
+            ],
+            "median": 0.2575107296137339,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1438
+      },
+      "train": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.42105263157894735,
+              0.6666666666666666
+            ],
+            "median": 0.513157894736842,
+            "n": 24
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.13333333333333333,
+              0.4
+            ],
+            "median": 0.3333333333333333,
+            "n": 23
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.3076923076923077
+            ],
+            "median": 0.1380952380952381,
+            "n": 24
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              0.5150214592274676
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              0.0,
+              0.5150214592274678
+            ],
+            "median": 0.0,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 24
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              2.575107296137339,
+              5.665236051502146
+            ],
+            "median": 3.6051502145922747,
+            "n": 24
+          },
+          "morphology": {
+            "ci95": [
+              2.656904822014643,
+              5.542228694052728
+            ],
+            "median": 3.8626609442060085,
+            "n": 24
+          },
+          "spectrum": {
+            "ci95": [
+              1.5450643776824033,
+              3.0901287553648067
+            ],
+            "median": 1.5870118268502513,
+            "n": 24
+          }
+        },
+        "records": 24,
+        "valid_windows": 5611
+      },
+      "validation": {
+        "agreement": {
+          "morphology / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.6190476190476191
+            ],
+            "median": 0.23076923076923078,
+            "n": 6
+          },
+          "morphology / spectrum @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.4
+            ],
+            "median": 0.0,
+            "n": 5
+          },
+          "spectrum / coordination @ 2.0s": {
+            "ci95": [
+              0.0,
+              0.4444444444444444
+            ],
+            "median": 0.0,
+            "n": 5
+          }
+        },
+        "paired_rate_difference": {
+          "coordination": {
+            "ci95": [
+              -0.5150214592274679,
+              1.2875536480686696
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              -0.515021459227468,
+              0.5150214592274678
+            ],
+            "median": 0.0,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "rates": {
+          "coordination": {
+            "ci95": [
+              0.0,
+              2.832618025751073
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "morphology": {
+            "ci95": [
+              0.5150214592274678,
+              2.317596566523605
+            ],
+            "median": 1.0300429184549356,
+            "n": 6
+          },
+          "spectrum": {
+            "ci95": [
+              0.0,
+              1.0300429184549356
+            ],
+            "median": 0.0,
+            "n": 6
+          }
+        },
+        "records": 6,
+        "valid_windows": 1440
+      }
+    }
+  },
+  "geometry_per_record": {
+    "01c0e5a982669a40ef39a2da": {
+      "coordination": {
+        "mean_speed": {
+          "events": 137,
+          "median": 1.1595291684856652
+        },
+        "path_length": {
+          "events": 137,
+          "median": 4.058352089699828
+        },
+        "pre_post_distance": {
+          "events": 137,
+          "median": 1.4715364482299544
+        },
+        "return_distance": {
+          "events": 137,
+          "median": 1.5194359376019346
+        },
+        "turning_angle_radians": {
+          "events": 137,
+          "median": 1.3698106116694548
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 104,
+          "median": 1.5897047767316406
+        },
+        "path_length": {
+          "events": 104,
+          "median": 5.563966718560742
+        },
+        "pre_post_distance": {
+          "events": 104,
+          "median": 1.2965658762150962
+        },
+        "return_distance": {
+          "events": 104,
+          "median": 1.3354343771156092
+        },
+        "turning_angle_radians": {
+          "events": 104,
+          "median": 1.4960405839714916
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 125,
+          "median": 1.737936472214012
+        },
+        "path_length": {
+          "events": 125,
+          "median": 6.0827776527490425
+        },
+        "pre_post_distance": {
+          "events": 125,
+          "median": 0.7589133093528974
+        },
+        "return_distance": {
+          "events": 125,
+          "median": 0.9666093231923808
+        },
+        "turning_angle_radians": {
+          "events": 125,
+          "median": 1.5335415638948975
+        }
+      }
+    },
+    "0d196f92f0b378394cd760e6": {
+      "coordination": {
+        "mean_speed": {
+          "events": 1785,
+          "median": 1.269996728499209
+        },
+        "path_length": {
+          "events": 1785,
+          "median": 4.444988549747232
+        },
+        "pre_post_distance": {
+          "events": 1785,
+          "median": 1.3576198754189106
+        },
+        "return_distance": {
+          "events": 1785,
+          "median": 1.4409306113725366
+        },
+        "turning_angle_radians": {
+          "events": 1785,
+          "median": 1.4860743252121884
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 8664,
+          "median": 2.945765990524434
+        },
+        "path_length": {
+          "events": 8664,
+          "median": 10.31018096683552
+        },
+        "pre_post_distance": {
+          "events": 8664,
+          "median": 1.6830086124222863
+        },
+        "return_distance": {
+          "events": 8664,
+          "median": 1.8473212727020862
+        },
+        "turning_angle_radians": {
+          "events": 8664,
+          "median": 1.4339257531295153
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 4954,
+          "median": 2.105626473270781
+        },
+        "path_length": {
+          "events": 4954,
+          "median": 7.369692656447732
+        },
+        "pre_post_distance": {
+          "events": 4954,
+          "median": 0.723801105272325
+        },
+        "return_distance": {
+          "events": 4954,
+          "median": 0.980482224797447
+        },
+        "turning_angle_radians": {
+          "events": 4954,
+          "median": 1.5512126179211054
+        }
+      }
+    },
+    "1b5acf2e3d881f8d845c5c3d": {
+      "coordination": {
+        "mean_speed": {
+          "events": 334,
+          "median": 1.2346941214054528
+        },
+        "path_length": {
+          "events": 334,
+          "median": 4.321429424919085
+        },
+        "pre_post_distance": {
+          "events": 334,
+          "median": 1.352431025869955
+        },
+        "return_distance": {
+          "events": 334,
+          "median": 1.3799543453968086
+        },
+        "turning_angle_radians": {
+          "events": 334,
+          "median": 1.495725090008626
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 1779,
+          "median": 3.2555591375273933
+        },
+        "path_length": {
+          "events": 1779,
+          "median": 11.394456981345877
+        },
+        "pre_post_distance": {
+          "events": 1779,
+          "median": 1.759422544882415
+        },
+        "return_distance": {
+          "events": 1779,
+          "median": 1.9295187435758898
+        },
+        "turning_angle_radians": {
+          "events": 1779,
+          "median": 1.5050355299908156
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 1714,
+          "median": 2.574607468413603
+        },
+        "path_length": {
+          "events": 1714,
+          "median": 9.011126139447612
+        },
+        "pre_post_distance": {
+          "events": 1714,
+          "median": 0.757374460263972
+        },
+        "return_distance": {
+          "events": 1714,
+          "median": 1.0871243217708746
+        },
+        "turning_angle_radians": {
+          "events": 1714,
+          "median": 1.5751884563505187
+        }
+      }
+    },
+    "1e75564b510efbab5250645f": {
+      "coordination": {
+        "mean_speed": {
+          "events": 442,
+          "median": 1.4774761102975806
+        },
+        "path_length": {
+          "events": 442,
+          "median": 5.1711663860415324
+        },
+        "pre_post_distance": {
+          "events": 442,
+          "median": 1.493068408132594
+        },
+        "return_distance": {
+          "events": 442,
+          "median": 1.5509415901396273
+        },
+        "turning_angle_radians": {
+          "events": 442,
+          "median": 1.5675157843448408
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 330,
+          "median": 1.8396094751600804
+        },
+        "path_length": {
+          "events": 330,
+          "median": 6.438633163060281
+        },
+        "pre_post_distance": {
+          "events": 330,
+          "median": 1.3531264448943774
+        },
+        "return_distance": {
+          "events": 330,
+          "median": 1.3906352888503037
+        },
+        "turning_angle_radians": {
+          "events": 330,
+          "median": 1.4685702028009873
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 117,
+          "median": 1.808456584518254
+        },
+        "path_length": {
+          "events": 117,
+          "median": 6.329598045813889
+        },
+        "pre_post_distance": {
+          "events": 117,
+          "median": 0.7708547710666959
+        },
+        "return_distance": {
+          "events": 117,
+          "median": 0.9014962445403855
+        },
+        "turning_angle_radians": {
+          "events": 117,
+          "median": 1.5851197440038394
+        }
+      }
+    },
+    "218a3073e690fd445c9ff785": {
+      "coordination": {
+        "mean_speed": {
+          "events": 1465,
+          "median": 1.277018701290063
+        },
+        "path_length": {
+          "events": 1465,
+          "median": 4.46956545451522
+        },
+        "pre_post_distance": {
+          "events": 1465,
+          "median": 1.3413869233625972
+        },
+        "return_distance": {
+          "events": 1465,
+          "median": 1.419786510400906
+        },
+        "turning_angle_radians": {
+          "events": 1465,
+          "median": 1.4806640213374358
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 11562,
+          "median": 2.8034014023198965
+        },
+        "path_length": {
+          "events": 11562,
+          "median": 9.811904908119637
+        },
+        "pre_post_distance": {
+          "events": 11562,
+          "median": 1.5774162788469028
+        },
+        "return_distance": {
+          "events": 11562,
+          "median": 1.680189341834074
+        },
+        "turning_angle_radians": {
+          "events": 11562,
+          "median": 1.4247808529046855
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 5887,
+          "median": 2.3705196251236944
+        },
+        "path_length": {
+          "events": 5887,
+          "median": 8.29681868793293
+        },
+        "pre_post_distance": {
+          "events": 5887,
+          "median": 0.7015235219813939
+        },
+        "return_distance": {
+          "events": 5887,
+          "median": 0.9858878090737716
+        },
+        "turning_angle_radians": {
+          "events": 5887,
+          "median": 1.4438193573189815
+        }
+      }
+    },
+    "2219351196d1be6920339bc0": {
+      "coordination": {
+        "mean_speed": {
+          "events": 232,
+          "median": 1.2480845579799489
+        },
+        "path_length": {
+          "events": 232,
+          "median": 4.368295952929822
+        },
+        "pre_post_distance": {
+          "events": 232,
+          "median": 1.4792669960431206
+        },
+        "return_distance": {
+          "events": 232,
+          "median": 1.5651704180627397
+        },
+        "turning_angle_radians": {
+          "events": 232,
+          "median": 1.4301628518015175
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 204,
+          "median": 1.6082372824765105
+        },
+        "path_length": {
+          "events": 204,
+          "median": 5.628830488667788
+        },
+        "pre_post_distance": {
+          "events": 204,
+          "median": 1.3471007063480687
+        },
+        "return_distance": {
+          "events": 204,
+          "median": 1.3700911614228908
+        },
+        "turning_angle_radians": {
+          "events": 204,
+          "median": 1.6022916320891762
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 473,
+          "median": 1.9602078913518672
+        },
+        "path_length": {
+          "events": 473,
+          "median": 6.860727619731535
+        },
+        "pre_post_distance": {
+          "events": 473,
+          "median": 0.7315014564275523
+        },
+        "return_distance": {
+          "events": 473,
+          "median": 0.9677038011307907
+        },
+        "turning_angle_radians": {
+          "events": 473,
+          "median": 1.5344503064174742
+        }
+      }
+    },
+    "241f1a0efee9b97ef2e8312a": {
+      "coordination": {
+        "mean_speed": {
+          "events": 191,
+          "median": 1.319902194344561
+        },
+        "path_length": {
+          "events": 191,
+          "median": 4.619657680205964
+        },
+        "pre_post_distance": {
+          "events": 191,
+          "median": 1.488329832315218
+        },
+        "return_distance": {
+          "events": 191,
+          "median": 1.5279012696698033
+        },
+        "turning_angle_radians": {
+          "events": 191,
+          "median": 1.588023406419214
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 154,
+          "median": 1.7305297152376078
+        },
+        "path_length": {
+          "events": 154,
+          "median": 6.056854003331628
+        },
+        "pre_post_distance": {
+          "events": 154,
+          "median": 1.4079385046272597
+        },
+        "return_distance": {
+          "events": 154,
+          "median": 1.475952100975563
+        },
+        "turning_angle_radians": {
+          "events": 154,
+          "median": 1.629225795390405
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 121,
+          "median": 1.7979384407536239
+        },
+        "path_length": {
+          "events": 121,
+          "median": 6.292784542637683
+        },
+        "pre_post_distance": {
+          "events": 121,
+          "median": 0.8227174571850281
+        },
+        "return_distance": {
+          "events": 121,
+          "median": 0.9686773215447302
+        },
+        "turning_angle_radians": {
+          "events": 121,
+          "median": 1.5007909606039431
+        }
+      }
+    },
+    "24ed84bce3c17a6934b8cf46": {
+      "coordination": {
+        "mean_speed": {
+          "events": 115,
+          "median": 1.352969479586496
+        },
+        "path_length": {
+          "events": 115,
+          "median": 4.7353931785527354
+        },
+        "pre_post_distance": {
+          "events": 115,
+          "median": 1.4648867952175126
+        },
+        "return_distance": {
+          "events": 115,
+          "median": 1.4415813588104558
+        },
+        "turning_angle_radians": {
+          "events": 115,
+          "median": 1.3954643008450427
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 135,
+          "median": 1.808365354021062
+        },
+        "path_length": {
+          "events": 135,
+          "median": 6.329278739073717
+        },
+        "pre_post_distance": {
+          "events": 135,
+          "median": 1.39741474094934
+        },
+        "return_distance": {
+          "events": 135,
+          "median": 1.5174194467828892
+        },
+        "turning_angle_radians": {
+          "events": 135,
+          "median": 1.4786528071976464
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 110,
+          "median": 1.6817732110944994
+        },
+        "path_length": {
+          "events": 110,
+          "median": 5.886206238830749
+        },
+        "pre_post_distance": {
+          "events": 110,
+          "median": 0.8285902934539635
+        },
+        "return_distance": {
+          "events": 110,
+          "median": 0.9921142745025553
+        },
+        "turning_angle_radians": {
+          "events": 110,
+          "median": 1.5410881342159204
+        }
+      }
+    },
+    "28dcd586e1e3ea2aaf2e1e15": {
+      "coordination": {
+        "mean_speed": {
+          "events": 348,
+          "median": 1.2523067504559569
+        },
+        "path_length": {
+          "events": 348,
+          "median": 4.3830736265958485
+        },
+        "pre_post_distance": {
+          "events": 348,
+          "median": 1.40341518335087
+        },
+        "return_distance": {
+          "events": 348,
+          "median": 1.4071803616246603
+        },
+        "turning_angle_radians": {
+          "events": 348,
+          "median": 1.5584006734269755
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 170,
+          "median": 1.681897286388601
+        },
+        "path_length": {
+          "events": 170,
+          "median": 5.886640502360104
+        },
+        "pre_post_distance": {
+          "events": 170,
+          "median": 1.3189053952391196
+        },
+        "return_distance": {
+          "events": 170,
+          "median": 1.4090339829301848
+        },
+        "turning_angle_radians": {
+          "events": 170,
+          "median": 1.6210220415129575
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 267,
+          "median": 1.7705567358395766
+        },
+        "path_length": {
+          "events": 267,
+          "median": 6.196948575438518
+        },
+        "pre_post_distance": {
+          "events": 267,
+          "median": 0.7329176602943867
+        },
+        "return_distance": {
+          "events": 267,
+          "median": 0.9157581011698048
+        },
+        "turning_angle_radians": {
+          "events": 267,
+          "median": 1.5857911595292091
+        }
+      }
+    },
+    "2e81fd22516c2019aad9def1": {
+      "coordination": {
+        "mean_speed": {
+          "events": 301,
+          "median": 1.1614876693532865
+        },
+        "path_length": {
+          "events": 301,
+          "median": 4.065206842736503
+        },
+        "pre_post_distance": {
+          "events": 301,
+          "median": 1.3211996226725249
+        },
+        "return_distance": {
+          "events": 301,
+          "median": 1.3498221300478994
+        },
+        "turning_angle_radians": {
+          "events": 301,
+          "median": 1.4307290748637256
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 458,
+          "median": 1.8973594786852548
+        },
+        "path_length": {
+          "events": 458,
+          "median": 6.640758175398392
+        },
+        "pre_post_distance": {
+          "events": 458,
+          "median": 1.272842789497761
+        },
+        "return_distance": {
+          "events": 458,
+          "median": 1.4263768456842898
+        },
+        "turning_angle_radians": {
+          "events": 458,
+          "median": 1.4334543877357167
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 1395,
+          "median": 2.17821089095638
+        },
+        "path_length": {
+          "events": 1395,
+          "median": 7.6237381183473305
+        },
+        "pre_post_distance": {
+          "events": 1395,
+          "median": 0.7191242886008734
+        },
+        "return_distance": {
+          "events": 1395,
+          "median": 0.9898839941652747
+        },
+        "turning_angle_radians": {
+          "events": 1395,
+          "median": 1.5550391270905317
+        }
+      }
+    },
+    "2fd267fdbb112601cdfd31e9": {
+      "coordination": {
+        "mean_speed": {
+          "events": 382,
+          "median": 1.395910283028478
+        },
+        "path_length": {
+          "events": 382,
+          "median": 4.885685990599673
+        },
+        "pre_post_distance": {
+          "events": 382,
+          "median": 1.3313833937559225
+        },
+        "return_distance": {
+          "events": 382,
+          "median": 1.4379438944056262
+        },
+        "turning_angle_radians": {
+          "events": 382,
+          "median": 1.4599497232854168
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 1995,
+          "median": 2.977252498774715
+        },
+        "path_length": {
+          "events": 1995,
+          "median": 10.420383745711502
+        },
+        "pre_post_distance": {
+          "events": 1995,
+          "median": 1.6735039764079345
+        },
+        "return_distance": {
+          "events": 1995,
+          "median": 1.8362089675856275
+        },
+        "turning_angle_radians": {
+          "events": 1995,
+          "median": 1.3758342326129425
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 2582,
+          "median": 2.6215379195312547
+        },
+        "path_length": {
+          "events": 2582,
+          "median": 9.17538271835939
+        },
+        "pre_post_distance": {
+          "events": 2582,
+          "median": 0.7838563003732706
+        },
+        "return_distance": {
+          "events": 2582,
+          "median": 1.1096114445904557
+        },
+        "turning_angle_radians": {
+          "events": 2582,
+          "median": 1.5509690359139634
+        }
+      }
+    },
+    "306a881a6e49424da743316b": {
+      "coordination": {
+        "mean_speed": {
+          "events": 191,
+          "median": 1.3305287724319164
+        },
+        "path_length": {
+          "events": 191,
+          "median": 4.656850703511707
+        },
+        "pre_post_distance": {
+          "events": 191,
+          "median": 1.494336031933349
+        },
+        "return_distance": {
+          "events": 191,
+          "median": 1.6114188034717332
+        },
+        "turning_angle_radians": {
+          "events": 191,
+          "median": 1.5165072109066369
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 163,
+          "median": 1.6226167692993536
+        },
+        "path_length": {
+          "events": 163,
+          "median": 5.6791586925477375
+        },
+        "pre_post_distance": {
+          "events": 163,
+          "median": 1.3343180880160368
+        },
+        "return_distance": {
+          "events": 163,
+          "median": 1.4571164380893633
+        },
+        "turning_angle_radians": {
+          "events": 163,
+          "median": 1.5638775142131114
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 419,
+          "median": 1.9847401247374827
+        },
+        "path_length": {
+          "events": 419,
+          "median": 6.9465904365811895
+        },
+        "pre_post_distance": {
+          "events": 419,
+          "median": 0.7283743012100207
+        },
+        "return_distance": {
+          "events": 419,
+          "median": 0.9598593616825335
+        },
+        "turning_angle_radians": {
+          "events": 419,
+          "median": 1.5504041157255868
+        }
+      }
+    },
+    "32bda0c52065b7bf709b3039": {
+      "coordination": {
+        "mean_speed": {
+          "events": 110,
+          "median": 1.2200451719404586
+        },
+        "path_length": {
+          "events": 110,
+          "median": 4.270158101791605
+        },
+        "pre_post_distance": {
+          "events": 110,
+          "median": 1.3391476451900606
+        },
+        "return_distance": {
+          "events": 110,
+          "median": 1.386675437557945
+        },
+        "turning_angle_radians": {
+          "events": 110,
+          "median": 1.405076452885528
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 59,
+          "median": 1.4645870251643014
+        },
+        "path_length": {
+          "events": 59,
+          "median": 5.126054588075055
+        },
+        "pre_post_distance": {
+          "events": 59,
+          "median": 1.2230691264874398
+        },
+        "return_distance": {
+          "events": 59,
+          "median": 1.2906541544107806
+        },
+        "turning_angle_radians": {
+          "events": 59,
+          "median": 1.781687052797817
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 53,
+          "median": 1.6532515421391953
+        },
+        "path_length": {
+          "events": 53,
+          "median": 5.786380397487184
+        },
+        "pre_post_distance": {
+          "events": 53,
+          "median": 0.7118279030433259
+        },
+        "return_distance": {
+          "events": 53,
+          "median": 0.9142381211979305
+        },
+        "turning_angle_radians": {
+          "events": 53,
+          "median": 1.5444377641950158
+        }
+      }
+    },
+    "3326ea898725be8674a28286": {
+      "coordination": {
+        "mean_speed": {
+          "events": 101,
+          "median": 1.3089694615211214
+        },
+        "path_length": {
+          "events": 101,
+          "median": 4.581393115323925
+        },
+        "pre_post_distance": {
+          "events": 101,
+          "median": 1.571024586034667
+        },
+        "return_distance": {
+          "events": 101,
+          "median": 1.627434952562319
+        },
+        "turning_angle_radians": {
+          "events": 101,
+          "median": 1.5098259274120758
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 70,
+          "median": 1.6837740380052417
+        },
+        "path_length": {
+          "events": 70,
+          "median": 5.893209133018345
+        },
+        "pre_post_distance": {
+          "events": 70,
+          "median": 1.3727102737514487
+        },
+        "return_distance": {
+          "events": 70,
+          "median": 1.41760028816514
+        },
+        "turning_angle_radians": {
+          "events": 70,
+          "median": 1.5104132874121439
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 79,
+          "median": 1.765384502447406
+        },
+        "path_length": {
+          "events": 79,
+          "median": 6.178845758565921
+        },
+        "pre_post_distance": {
+          "events": 79,
+          "median": 0.8286957939654034
+        },
+        "return_distance": {
+          "events": 79,
+          "median": 0.9145810212088309
+        },
+        "turning_angle_radians": {
+          "events": 79,
+          "median": 1.5572534885341287
+        }
+      }
+    },
+    "361058659c8702ad20e20527": {
+      "coordination": {
+        "mean_speed": {
+          "events": 154,
+          "median": 1.412636927943904
+        },
+        "path_length": {
+          "events": 154,
+          "median": 4.944229247803664
+        },
+        "pre_post_distance": {
+          "events": 154,
+          "median": 1.4939412412038515
+        },
+        "return_distance": {
+          "events": 154,
+          "median": 1.6132705745418159
+        },
+        "turning_angle_radians": {
+          "events": 154,
+          "median": 1.4494772892436094
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 231,
+          "median": 1.6090781742923679
+        },
+        "path_length": {
+          "events": 231,
+          "median": 5.631773610023288
+        },
+        "pre_post_distance": {
+          "events": 231,
+          "median": 1.3074133704396715
+        },
+        "return_distance": {
+          "events": 231,
+          "median": 1.4251583977163689
+        },
+        "turning_angle_radians": {
+          "events": 231,
+          "median": 1.5164967134064968
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 194,
+          "median": 1.814006386734282
+        },
+        "path_length": {
+          "events": 194,
+          "median": 6.349022353569987
+        },
+        "pre_post_distance": {
+          "events": 194,
+          "median": 0.8259508235643842
+        },
+        "return_distance": {
+          "events": 194,
+          "median": 0.9948297436579037
+        },
+        "turning_angle_radians": {
+          "events": 194,
+          "median": 1.555479641300659
+        }
+      }
+    },
+    "3866b7eef005d3b1e4ca4919": {
+      "coordination": {
+        "mean_speed": {
+          "events": 166,
+          "median": 1.2448486620144794
+        },
+        "path_length": {
+          "events": 166,
+          "median": 4.356970317050678
+        },
+        "pre_post_distance": {
+          "events": 166,
+          "median": 1.3254153047452775
+        },
+        "return_distance": {
+          "events": 166,
+          "median": 1.3595815799891322
+        },
+        "turning_angle_radians": {
+          "events": 166,
+          "median": 1.2901592071087484
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 743,
+          "median": 2.8221806472569066
+        },
+        "path_length": {
+          "events": 743,
+          "median": 9.877632265399173
+        },
+        "pre_post_distance": {
+          "events": 743,
+          "median": 1.6503203784794354
+        },
+        "return_distance": {
+          "events": 743,
+          "median": 1.7872878241785954
+        },
+        "turning_angle_radians": {
+          "events": 743,
+          "median": 1.4757152230748682
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 319,
+          "median": 2.151541694969976
+        },
+        "path_length": {
+          "events": 319,
+          "median": 7.530395932394917
+        },
+        "pre_post_distance": {
+          "events": 319,
+          "median": 0.6933237798658539
+        },
+        "return_distance": {
+          "events": 319,
+          "median": 0.9548040946015502
+        },
+        "turning_angle_radians": {
+          "events": 319,
+          "median": 1.4781148973796505
+        }
+      }
+    },
+    "38c82dce09dfa2382923466d": {
+      "coordination": {
+        "mean_speed": {
+          "events": 900,
+          "median": 1.3176205929709153
+        },
+        "path_length": {
+          "events": 900,
+          "median": 4.611672075398204
+        },
+        "pre_post_distance": {
+          "events": 900,
+          "median": 1.4416206535812006
+        },
+        "return_distance": {
+          "events": 900,
+          "median": 1.4969092817181529
+        },
+        "turning_angle_radians": {
+          "events": 900,
+          "median": 1.4155479556724022
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 4492,
+          "median": 3.0624085317541088
+        },
+        "path_length": {
+          "events": 4492,
+          "median": 10.71842986113938
+        },
+        "pre_post_distance": {
+          "events": 4492,
+          "median": 1.6479642332889375
+        },
+        "return_distance": {
+          "events": 4492,
+          "median": 1.8131521550879306
+        },
+        "turning_angle_radians": {
+          "events": 4492,
+          "median": 1.3966150609333097
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 2737,
+          "median": 2.1877180964625658
+        },
+        "path_length": {
+          "events": 2737,
+          "median": 7.657013337618981
+        },
+        "pre_post_distance": {
+          "events": 2737,
+          "median": 0.7142457722232537
+        },
+        "return_distance": {
+          "events": 2737,
+          "median": 0.9957714193018844
+        },
+        "turning_angle_radians": {
+          "events": 2737,
+          "median": 1.5571330900872726
+        }
+      }
+    },
+    "3d16f5d9d56d443bf0ee739c": {
+      "coordination": {
+        "mean_speed": {
+          "events": 170,
+          "median": 1.134482131398148
+        },
+        "path_length": {
+          "events": 170,
+          "median": 3.970687459893518
+        },
+        "pre_post_distance": {
+          "events": 170,
+          "median": 1.398593605726683
+        },
+        "return_distance": {
+          "events": 170,
+          "median": 1.5120511055825006
+        },
+        "turning_angle_radians": {
+          "events": 170,
+          "median": 1.3507561491031241
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 93,
+          "median": 1.5291519150600301
+        },
+        "path_length": {
+          "events": 93,
+          "median": 5.352031702710105
+        },
+        "pre_post_distance": {
+          "events": 93,
+          "median": 1.2880846496409828
+        },
+        "return_distance": {
+          "events": 93,
+          "median": 1.3959593413193687
+        },
+        "turning_angle_radians": {
+          "events": 93,
+          "median": 1.5114560645871549
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 77,
+          "median": 1.6409736029424753
+        },
+        "path_length": {
+          "events": 77,
+          "median": 5.7434076102986635
+        },
+        "pre_post_distance": {
+          "events": 77,
+          "median": 0.7847819715261646
+        },
+        "return_distance": {
+          "events": 77,
+          "median": 0.9415768760216335
+        },
+        "turning_angle_radians": {
+          "events": 77,
+          "median": 1.5588190656477754
+        }
+      }
+    },
+    "3f6d6bc992797e60bf3e7b29": {
+      "coordination": {
+        "mean_speed": {
+          "events": 624,
+          "median": 1.2222378638692009
+        },
+        "path_length": {
+          "events": 624,
+          "median": 4.2778325235422034
+        },
+        "pre_post_distance": {
+          "events": 624,
+          "median": 1.3125973267325532
+        },
+        "return_distance": {
+          "events": 624,
+          "median": 1.340289391540305
+        },
+        "turning_angle_radians": {
+          "events": 624,
+          "median": 1.5332667493088479
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 5311,
+          "median": 2.6656492313967184
+        },
+        "path_length": {
+          "events": 5311,
+          "median": 9.329772309888515
+        },
+        "pre_post_distance": {
+          "events": 5311,
+          "median": 1.473019338075193
+        },
+        "return_distance": {
+          "events": 5311,
+          "median": 1.6538629216233713
+        },
+        "turning_angle_radians": {
+          "events": 5311,
+          "median": 1.4126882956657356
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 3770,
+          "median": 2.072760219012048
+        },
+        "path_length": {
+          "events": 3770,
+          "median": 7.254660766542169
+        },
+        "pre_post_distance": {
+          "events": 3770,
+          "median": 0.7037344656946316
+        },
+        "return_distance": {
+          "events": 3770,
+          "median": 0.9579164382798957
+        },
+        "turning_angle_radians": {
+          "events": 3770,
+          "median": 1.5634406546004482
+        }
+      }
+    },
+    "419fca2fb009345729cc774f": {
+      "coordination": {
+        "mean_speed": {
+          "events": 111,
+          "median": 1.2499216618361775
+        },
+        "path_length": {
+          "events": 111,
+          "median": 4.374725816426621
+        },
+        "pre_post_distance": {
+          "events": 111,
+          "median": 1.4029444476493858
+        },
+        "return_distance": {
+          "events": 111,
+          "median": 1.5146185967229397
+        },
+        "turning_angle_radians": {
+          "events": 111,
+          "median": 1.307189695408903
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 117,
+          "median": 1.6992756800098245
+        },
+        "path_length": {
+          "events": 117,
+          "median": 5.947464880034386
+        },
+        "pre_post_distance": {
+          "events": 117,
+          "median": 1.2655906662200127
+        },
+        "return_distance": {
+          "events": 117,
+          "median": 1.3620703375321563
+        },
+        "turning_angle_radians": {
+          "events": 117,
+          "median": 1.6139990427963853
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 138,
+          "median": 1.7395410804703793
+        },
+        "path_length": {
+          "events": 138,
+          "median": 6.088393781646327
+        },
+        "pre_post_distance": {
+          "events": 138,
+          "median": 0.7678331705445243
+        },
+        "return_distance": {
+          "events": 138,
+          "median": 0.9562418435617444
+        },
+        "turning_angle_radians": {
+          "events": 138,
+          "median": 1.5415960129868957
+        }
+      }
+    },
+    "47f6976731f4a41af0e298cf": {
+      "coordination": {
+        "mean_speed": {
+          "events": 301,
+          "median": 1.4092016760073496
+        },
+        "path_length": {
+          "events": 301,
+          "median": 4.932205866025724
+        },
+        "pre_post_distance": {
+          "events": 301,
+          "median": 1.4327381951011642
+        },
+        "return_distance": {
+          "events": 301,
+          "median": 1.4902283721432026
+        },
+        "turning_angle_radians": {
+          "events": 301,
+          "median": 1.5085496867384647
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 403,
+          "median": 1.8062053763958623
+        },
+        "path_length": {
+          "events": 403,
+          "median": 6.321718817385518
+        },
+        "pre_post_distance": {
+          "events": 403,
+          "median": 1.3307962942051192
+        },
+        "return_distance": {
+          "events": 403,
+          "median": 1.402703591867644
+        },
+        "turning_angle_radians": {
+          "events": 403,
+          "median": 1.5237458723271575
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 268,
+          "median": 1.882335687574836
+        },
+        "path_length": {
+          "events": 268,
+          "median": 6.5881749065119255
+        },
+        "pre_post_distance": {
+          "events": 268,
+          "median": 0.7603882555853636
+        },
+        "return_distance": {
+          "events": 268,
+          "median": 0.9559184800774985
+        },
+        "turning_angle_radians": {
+          "events": 268,
+          "median": 1.5600127107472628
+        }
+      }
+    },
+    "4bd007ba65c9e5932ca3e165": {
+      "coordination": {
+        "mean_speed": {
+          "events": 178,
+          "median": 1.1861619044731517
+        },
+        "path_length": {
+          "events": 178,
+          "median": 4.151566665656031
+        },
+        "pre_post_distance": {
+          "events": 178,
+          "median": 1.371664008118589
+        },
+        "return_distance": {
+          "events": 178,
+          "median": 1.4518304714704393
+        },
+        "turning_angle_radians": {
+          "events": 178,
+          "median": 1.4704236101932655
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 68,
+          "median": 1.4312176750603802
+        },
+        "path_length": {
+          "events": 68,
+          "median": 5.00926186271133
+        },
+        "pre_post_distance": {
+          "events": 68,
+          "median": 1.2005309920906981
+        },
+        "return_distance": {
+          "events": 68,
+          "median": 1.3423810980596214
+        },
+        "turning_angle_radians": {
+          "events": 68,
+          "median": 1.5294246946804446
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 217,
+          "median": 1.7575529002020172
+        },
+        "path_length": {
+          "events": 217,
+          "median": 6.15143515070706
+        },
+        "pre_post_distance": {
+          "events": 217,
+          "median": 0.7331571883548622
+        },
+        "return_distance": {
+          "events": 217,
+          "median": 0.9307976163094708
+        },
+        "turning_angle_radians": {
+          "events": 217,
+          "median": 1.5603979091656246
+        }
+      }
+    },
+    "5587fd9f02629818e2d96390": {
+      "coordination": {
+        "mean_speed": {
+          "events": 54,
+          "median": 1.1683295922673258
+        },
+        "path_length": {
+          "events": 54,
+          "median": 4.08915357293564
+        },
+        "pre_post_distance": {
+          "events": 54,
+          "median": 1.4114789368704788
+        },
+        "return_distance": {
+          "events": 54,
+          "median": 1.4656846354299464
+        },
+        "turning_angle_radians": {
+          "events": 54,
+          "median": 1.297508641046894
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 63,
+          "median": 1.6959139749054408
+        },
+        "path_length": {
+          "events": 63,
+          "median": 5.935698912169043
+        },
+        "pre_post_distance": {
+          "events": 63,
+          "median": 1.401579684103645
+        },
+        "return_distance": {
+          "events": 63,
+          "median": 1.40272044146219
+        },
+        "turning_angle_radians": {
+          "events": 63,
+          "median": 1.485477085099173
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 148,
+          "median": 1.921572923962506
+        },
+        "path_length": {
+          "events": 148,
+          "median": 6.7255052338687715
+        },
+        "pre_post_distance": {
+          "events": 148,
+          "median": 0.6997455431312447
+        },
+        "return_distance": {
+          "events": 148,
+          "median": 0.9322107745567192
+        },
+        "turning_angle_radians": {
+          "events": 148,
+          "median": 1.594109174625948
+        }
+      }
+    },
+    "6288c5df99166b6b5d676bbd": {
+      "coordination": {
+        "mean_speed": {
+          "events": 47,
+          "median": 1.2788702340102092
+        },
+        "path_length": {
+          "events": 47,
+          "median": 4.476045819035732
+        },
+        "pre_post_distance": {
+          "events": 47,
+          "median": 1.3814243057335402
+        },
+        "return_distance": {
+          "events": 47,
+          "median": 1.275399750399357
+        },
+        "turning_angle_radians": {
+          "events": 47,
+          "median": 1.5077475525894692
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 110,
+          "median": 1.7876953342836535
+        },
+        "path_length": {
+          "events": 110,
+          "median": 6.256933669992787
+        },
+        "pre_post_distance": {
+          "events": 110,
+          "median": 1.3032051389324362
+        },
+        "return_distance": {
+          "events": 110,
+          "median": 1.388045687453435
+        },
+        "turning_angle_radians": {
+          "events": 110,
+          "median": 1.5966550291290171
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 239,
+          "median": 2.0224105713198126
+        },
+        "path_length": {
+          "events": 239,
+          "median": 7.078436999619345
+        },
+        "pre_post_distance": {
+          "events": 239,
+          "median": 0.7075699158599281
+        },
+        "return_distance": {
+          "events": 239,
+          "median": 0.9710772818013836
+        },
+        "turning_angle_radians": {
+          "events": 239,
+          "median": 1.5910141178293358
+        }
+      }
+    },
+    "6b0fcc063642efabe9a42974": {
+      "coordination": {
+        "mean_speed": {
+          "events": 761,
+          "median": 1.3329543381249604
+        },
+        "path_length": {
+          "events": 761,
+          "median": 4.665340183437362
+        },
+        "pre_post_distance": {
+          "events": 761,
+          "median": 1.335051230236027
+        },
+        "return_distance": {
+          "events": 761,
+          "median": 1.3975670134090976
+        },
+        "turning_angle_radians": {
+          "events": 761,
+          "median": 1.4294288953924352
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 2008,
+          "median": 2.524652970416708
+        },
+        "path_length": {
+          "events": 2008,
+          "median": 8.836285396458479
+        },
+        "pre_post_distance": {
+          "events": 2008,
+          "median": 1.430984756979441
+        },
+        "return_distance": {
+          "events": 2008,
+          "median": 1.5947991090114884
+        },
+        "turning_angle_radians": {
+          "events": 2008,
+          "median": 1.47579401483021
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 3023,
+          "median": 2.2635049123652884
+        },
+        "path_length": {
+          "events": 3023,
+          "median": 7.922267193278509
+        },
+        "pre_post_distance": {
+          "events": 3023,
+          "median": 0.740996087883126
+        },
+        "return_distance": {
+          "events": 3023,
+          "median": 1.0290037752402037
+        },
+        "turning_angle_radians": {
+          "events": 3023,
+          "median": 1.5610512571951438
+        }
+      }
+    },
+    "6cf1efff79eb1002775afb83": {
+      "coordination": {
+        "mean_speed": {
+          "events": 949,
+          "median": 1.237507861051189
+        },
+        "path_length": {
+          "events": 949,
+          "median": 4.3312775136791615
+        },
+        "pre_post_distance": {
+          "events": 949,
+          "median": 1.322666890796998
+        },
+        "return_distance": {
+          "events": 949,
+          "median": 1.374501002613335
+        },
+        "turning_angle_radians": {
+          "events": 949,
+          "median": 1.5603292821881851
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 6018,
+          "median": 2.5901121535143456
+        },
+        "path_length": {
+          "events": 6018,
+          "median": 9.065392537300209
+        },
+        "pre_post_distance": {
+          "events": 6018,
+          "median": 1.5483825693253195
+        },
+        "return_distance": {
+          "events": 6018,
+          "median": 1.7202025446721638
+        },
+        "turning_angle_radians": {
+          "events": 6018,
+          "median": 1.5247556545912735
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 5045,
+          "median": 2.216015054223275
+        },
+        "path_length": {
+          "events": 5045,
+          "median": 7.756052689781463
+        },
+        "pre_post_distance": {
+          "events": 5045,
+          "median": 0.71543610848148
+        },
+        "return_distance": {
+          "events": 5045,
+          "median": 0.9955587303098975
+        },
+        "turning_angle_radians": {
+          "events": 5045,
+          "median": 1.5485071805213197
+        }
+      }
+    },
+    "71db1e918bf200fc43ed8f82": {
+      "coordination": {
+        "mean_speed": {
+          "events": 260,
+          "median": 1.3512362737395405
+        },
+        "path_length": {
+          "events": 260,
+          "median": 4.729326958088392
+        },
+        "pre_post_distance": {
+          "events": 260,
+          "median": 1.4628838361096332
+        },
+        "return_distance": {
+          "events": 260,
+          "median": 1.4313871537096468
+        },
+        "turning_angle_radians": {
+          "events": 260,
+          "median": 1.4231816966093467
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 519,
+          "median": 1.7984303484193447
+        },
+        "path_length": {
+          "events": 519,
+          "median": 6.294506219467706
+        },
+        "pre_post_distance": {
+          "events": 519,
+          "median": 1.4051631534605529
+        },
+        "return_distance": {
+          "events": 519,
+          "median": 1.4641401639072222
+        },
+        "turning_angle_radians": {
+          "events": 519,
+          "median": 1.5153682633467194
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 397,
+          "median": 1.9304256118714644
+        },
+        "path_length": {
+          "events": 397,
+          "median": 6.756489641550125
+        },
+        "pre_post_distance": {
+          "events": 397,
+          "median": 0.7932374997326277
+        },
+        "return_distance": {
+          "events": 397,
+          "median": 1.006438683706131
+        },
+        "turning_angle_radians": {
+          "events": 397,
+          "median": 1.582822334916903
+        }
+      }
+    },
+    "80ec5c9af848d14204affac8": {
+      "coordination": {
+        "mean_speed": {
+          "events": 243,
+          "median": 1.3746438002361308
+        },
+        "path_length": {
+          "events": 243,
+          "median": 4.811253300826458
+        },
+        "pre_post_distance": {
+          "events": 243,
+          "median": 1.4301001947569627
+        },
+        "return_distance": {
+          "events": 243,
+          "median": 1.3343001979379885
+        },
+        "turning_angle_radians": {
+          "events": 243,
+          "median": 1.5119683615676565
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 207,
+          "median": 1.7280812750881718
+        },
+        "path_length": {
+          "events": 207,
+          "median": 6.048284462808601
+        },
+        "pre_post_distance": {
+          "events": 207,
+          "median": 1.3587895232260454
+        },
+        "return_distance": {
+          "events": 207,
+          "median": 1.4141104776449118
+        },
+        "turning_angle_radians": {
+          "events": 207,
+          "median": 1.5177561947762421
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 226,
+          "median": 1.7635141300635304
+        },
+        "path_length": {
+          "events": 226,
+          "median": 6.1722994552223565
+        },
+        "pre_post_distance": {
+          "events": 226,
+          "median": 0.7258992420893422
+        },
+        "return_distance": {
+          "events": 226,
+          "median": 0.8851361481496424
+        },
+        "turning_angle_radians": {
+          "events": 226,
+          "median": 1.5629639598563694
+        }
+      }
+    },
+    "813fc44239acd4d32bea113f": {
+      "coordination": {
+        "mean_speed": {
+          "events": 641,
+          "median": 1.4768058837191407
+        },
+        "path_length": {
+          "events": 641,
+          "median": 5.168820593016992
+        },
+        "pre_post_distance": {
+          "events": 641,
+          "median": 1.8185603343821077
+        },
+        "return_distance": {
+          "events": 641,
+          "median": 1.9491692390515893
+        },
+        "turning_angle_radians": {
+          "events": 641,
+          "median": 1.5280648264704406
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 614,
+          "median": 1.8764657034310972
+        },
+        "path_length": {
+          "events": 614,
+          "median": 6.567629962008841
+        },
+        "pre_post_distance": {
+          "events": 614,
+          "median": 1.437733336825286
+        },
+        "return_distance": {
+          "events": 614,
+          "median": 1.5348276163925703
+        },
+        "turning_angle_radians": {
+          "events": 614,
+          "median": 1.5574522017696615
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 344,
+          "median": 1.830760047216951
+        },
+        "path_length": {
+          "events": 344,
+          "median": 6.407660165259329
+        },
+        "pre_post_distance": {
+          "events": 344,
+          "median": 0.8603336097916576
+        },
+        "return_distance": {
+          "events": 344,
+          "median": 1.0097108861820836
+        },
+        "turning_angle_radians": {
+          "events": 344,
+          "median": 1.5483474206767172
+        }
+      }
+    },
+    "817b1ea63f7016a9620fd513": {
+      "coordination": {
+        "mean_speed": {
+          "events": 72,
+          "median": 1.1612723932292854
+        },
+        "path_length": {
+          "events": 72,
+          "median": 4.064453376302499
+        },
+        "pre_post_distance": {
+          "events": 72,
+          "median": 1.3073848423689154
+        },
+        "return_distance": {
+          "events": 72,
+          "median": 1.3308206548475803
+        },
+        "turning_angle_radians": {
+          "events": 72,
+          "median": 1.5712650227959966
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 313,
+          "median": 2.0809669412722647
+        },
+        "path_length": {
+          "events": 313,
+          "median": 7.283384294452926
+        },
+        "pre_post_distance": {
+          "events": 313,
+          "median": 1.2788138021659694
+        },
+        "return_distance": {
+          "events": 313,
+          "median": 1.4345277020572165
+        },
+        "turning_angle_radians": {
+          "events": 313,
+          "median": 1.4323806037635316
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 370,
+          "median": 1.946460218217804
+        },
+        "path_length": {
+          "events": 370,
+          "median": 6.812610763762314
+        },
+        "pre_post_distance": {
+          "events": 370,
+          "median": 0.7367357166177848
+        },
+        "return_distance": {
+          "events": 370,
+          "median": 0.9688802994332695
+        },
+        "turning_angle_radians": {
+          "events": 370,
+          "median": 1.5449408036859695
+        }
+      }
+    },
+    "83094d85bd89374f421dfdca": {
+      "coordination": {
+        "mean_speed": {
+          "events": 610,
+          "median": 1.25607580695499
+        },
+        "path_length": {
+          "events": 610,
+          "median": 4.396265324342465
+        },
+        "pre_post_distance": {
+          "events": 610,
+          "median": 1.311969638503881
+        },
+        "return_distance": {
+          "events": 610,
+          "median": 1.3619599412215921
+        },
+        "turning_angle_radians": {
+          "events": 610,
+          "median": 1.2825895038281527
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 5468,
+          "median": 2.7502716196775907
+        },
+        "path_length": {
+          "events": 5468,
+          "median": 9.625950668871567
+        },
+        "pre_post_distance": {
+          "events": 5468,
+          "median": 1.3888558810529514
+        },
+        "return_distance": {
+          "events": 5468,
+          "median": 1.5713225190992623
+        },
+        "turning_angle_radians": {
+          "events": 5468,
+          "median": 1.298141167308529
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 8041,
+          "median": 2.7716463341431927
+        },
+        "path_length": {
+          "events": 8041,
+          "median": 9.700762169501175
+        },
+        "pre_post_distance": {
+          "events": 8041,
+          "median": 0.7343341730598546
+        },
+        "return_distance": {
+          "events": 8041,
+          "median": 1.0930517341769088
+        },
+        "turning_angle_radians": {
+          "events": 8041,
+          "median": 1.3459740861815388
+        }
+      }
+    },
+    "8db5bebfca952d2824051b0e": {
+      "coordination": {
+        "mean_speed": {
+          "events": 121,
+          "median": 1.3718637257786281
+        },
+        "path_length": {
+          "events": 121,
+          "median": 4.801523040225199
+        },
+        "pre_post_distance": {
+          "events": 121,
+          "median": 1.4147925134679962
+        },
+        "return_distance": {
+          "events": 121,
+          "median": 1.5006994458502894
+        },
+        "turning_angle_radians": {
+          "events": 121,
+          "median": 1.4626907713490622
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 134,
+          "median": 1.6232148059432845
+        },
+        "path_length": {
+          "events": 134,
+          "median": 5.681251820801496
+        },
+        "pre_post_distance": {
+          "events": 134,
+          "median": 1.3008479551744123
+        },
+        "return_distance": {
+          "events": 134,
+          "median": 1.3894069572083818
+        },
+        "turning_angle_radians": {
+          "events": 134,
+          "median": 1.6052071871279485
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 82,
+          "median": 1.8694150821243276
+        },
+        "path_length": {
+          "events": 82,
+          "median": 6.542952787435146
+        },
+        "pre_post_distance": {
+          "events": 82,
+          "median": 0.7327378653460155
+        },
+        "return_distance": {
+          "events": 82,
+          "median": 0.9367224282342937
+        },
+        "turning_angle_radians": {
+          "events": 82,
+          "median": 1.5184242898587472
+        }
+      }
+    },
+    "96dd2209487bed2c3a4a2dd4": {
+      "coordination": {
+        "mean_speed": {
+          "events": 90,
+          "median": 1.2958436901457258
+        },
+        "path_length": {
+          "events": 90,
+          "median": 4.5354529155100405
+        },
+        "pre_post_distance": {
+          "events": 90,
+          "median": 1.4058216848633076
+        },
+        "return_distance": {
+          "events": 90,
+          "median": 1.4112787189115266
+        },
+        "turning_angle_radians": {
+          "events": 90,
+          "median": 1.220238757005737
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 61,
+          "median": 1.5396288169454004
+        },
+        "path_length": {
+          "events": 61,
+          "median": 5.388700859308901
+        },
+        "pre_post_distance": {
+          "events": 61,
+          "median": 1.3383369171659052
+        },
+        "return_distance": {
+          "events": 61,
+          "median": 1.3686211585328798
+        },
+        "turning_angle_radians": {
+          "events": 61,
+          "median": 1.4855025169692608
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 81,
+          "median": 1.5616972987424589
+        },
+        "path_length": {
+          "events": 81,
+          "median": 5.465940545598606
+        },
+        "pre_post_distance": {
+          "events": 81,
+          "median": 0.8147862809391303
+        },
+        "return_distance": {
+          "events": 81,
+          "median": 0.9045551768365931
+        },
+        "turning_angle_radians": {
+          "events": 81,
+          "median": 1.5646226269844272
+        }
+      }
+    },
+    "987a91bce590ac8566c7a209": {
+      "coordination": {
+        "mean_speed": {
+          "events": 123,
+          "median": 1.2256151529711568
+        },
+        "path_length": {
+          "events": 123,
+          "median": 4.2896530353990485
+        },
+        "pre_post_distance": {
+          "events": 123,
+          "median": 1.3166241203886375
+        },
+        "return_distance": {
+          "events": 123,
+          "median": 1.2974020701167437
+        },
+        "turning_angle_radians": {
+          "events": 123,
+          "median": 1.556578364836973
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 173,
+          "median": 1.5697536537224983
+        },
+        "path_length": {
+          "events": 173,
+          "median": 5.494137788028744
+        },
+        "pre_post_distance": {
+          "events": 173,
+          "median": 1.2884792224427601
+        },
+        "return_distance": {
+          "events": 173,
+          "median": 1.3671718664604924
+        },
+        "turning_angle_radians": {
+          "events": 173,
+          "median": 1.5448595827078244
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 334,
+          "median": 1.8577530344548943
+        },
+        "path_length": {
+          "events": 334,
+          "median": 6.50213562059213
+        },
+        "pre_post_distance": {
+          "events": 334,
+          "median": 0.7470271428265847
+        },
+        "return_distance": {
+          "events": 334,
+          "median": 0.9475319226212561
+        },
+        "turning_angle_radians": {
+          "events": 334,
+          "median": 1.5356497434613487
+        }
+      }
+    },
+    "9bbf4329af49afd4b214695e": {
+      "coordination": {
+        "mean_speed": {
+          "events": 131,
+          "median": 1.304015985748911
+        },
+        "path_length": {
+          "events": 131,
+          "median": 4.564055950121189
+        },
+        "pre_post_distance": {
+          "events": 131,
+          "median": 1.403603960922284
+        },
+        "return_distance": {
+          "events": 131,
+          "median": 1.4986535391162898
+        },
+        "turning_angle_radians": {
+          "events": 131,
+          "median": 1.4884408527230177
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 195,
+          "median": 1.7305616996482613
+        },
+        "path_length": {
+          "events": 195,
+          "median": 6.056965948768915
+        },
+        "pre_post_distance": {
+          "events": 195,
+          "median": 1.4480363036118271
+        },
+        "return_distance": {
+          "events": 195,
+          "median": 1.5515393315035708
+        },
+        "turning_angle_radians": {
+          "events": 195,
+          "median": 1.555653020671981
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 384,
+          "median": 2.269794526274311
+        },
+        "path_length": {
+          "events": 384,
+          "median": 7.944280841960087
+        },
+        "pre_post_distance": {
+          "events": 384,
+          "median": 0.690501541100301
+        },
+        "return_distance": {
+          "events": 384,
+          "median": 0.9605842955237174
+        },
+        "turning_angle_radians": {
+          "events": 384,
+          "median": 1.4430261907484103
+        }
+      }
+    },
+    "a3063e75f57c58fd4887848f": {
+      "coordination": {
+        "mean_speed": {
+          "events": 1015,
+          "median": 1.2819715392583475
+        },
+        "path_length": {
+          "events": 1015,
+          "median": 4.486900387404217
+        },
+        "pre_post_distance": {
+          "events": 1015,
+          "median": 1.3015915286464501
+        },
+        "return_distance": {
+          "events": 1015,
+          "median": 1.3091540632891565
+        },
+        "turning_angle_radians": {
+          "events": 1015,
+          "median": 1.479111246464433
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 7202,
+          "median": 2.89068503148436
+        },
+        "path_length": {
+          "events": 7202,
+          "median": 10.11739761019526
+        },
+        "pre_post_distance": {
+          "events": 7202,
+          "median": 1.5697497584500313
+        },
+        "return_distance": {
+          "events": 7202,
+          "median": 1.6680393122350865
+        },
+        "turning_angle_radians": {
+          "events": 7202,
+          "median": 1.3741980497865303
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 8577,
+          "median": 2.6128390927234535
+        },
+        "path_length": {
+          "events": 8577,
+          "median": 9.144936824532087
+        },
+        "pre_post_distance": {
+          "events": 8577,
+          "median": 0.7239325690669559
+        },
+        "return_distance": {
+          "events": 8577,
+          "median": 1.0546787188121072
+        },
+        "turning_angle_radians": {
+          "events": 8577,
+          "median": 1.3852679249029767
+        }
+      }
+    },
+    "a4ee1f60731803275830d50f": {
+      "coordination": {
+        "mean_speed": {
+          "events": 252,
+          "median": 1.2383370035362415
+        },
+        "path_length": {
+          "events": 252,
+          "median": 4.334179512376846
+        },
+        "pre_post_distance": {
+          "events": 252,
+          "median": 1.320670660855896
+        },
+        "return_distance": {
+          "events": 252,
+          "median": 1.3539688166595751
+        },
+        "turning_angle_radians": {
+          "events": 252,
+          "median": 1.5786610224780948
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 99,
+          "median": 1.558182683297574
+        },
+        "path_length": {
+          "events": 99,
+          "median": 5.453639391541509
+        },
+        "pre_post_distance": {
+          "events": 99,
+          "median": 1.2627882220003852
+        },
+        "return_distance": {
+          "events": 99,
+          "median": 1.3128086373275243
+        },
+        "turning_angle_radians": {
+          "events": 99,
+          "median": 1.571573126520466
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 194,
+          "median": 1.736256501072265
+        },
+        "path_length": {
+          "events": 194,
+          "median": 6.076897753752927
+        },
+        "pre_post_distance": {
+          "events": 194,
+          "median": 0.7010716256281677
+        },
+        "return_distance": {
+          "events": 194,
+          "median": 0.8820752566915528
+        },
+        "turning_angle_radians": {
+          "events": 194,
+          "median": 1.6110668255236837
+        }
+      }
+    },
+    "ad5a3328b6c55efbb3221625": {
+      "coordination": {
+        "mean_speed": {
+          "events": 145,
+          "median": 1.2835494215952263
+        },
+        "path_length": {
+          "events": 145,
+          "median": 4.492422975583292
+        },
+        "pre_post_distance": {
+          "events": 145,
+          "median": 1.5005855298803963
+        },
+        "return_distance": {
+          "events": 145,
+          "median": 1.4348661663019522
+        },
+        "turning_angle_radians": {
+          "events": 145,
+          "median": 1.2797992803937146
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 150,
+          "median": 1.6432541658315538
+        },
+        "path_length": {
+          "events": 150,
+          "median": 5.7513895804104385
+        },
+        "pre_post_distance": {
+          "events": 150,
+          "median": 1.4055261362567555
+        },
+        "return_distance": {
+          "events": 150,
+          "median": 1.3954711243278113
+        },
+        "turning_angle_radians": {
+          "events": 150,
+          "median": 1.5897081981835586
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 143,
+          "median": 1.69974659626007
+        },
+        "path_length": {
+          "events": 143,
+          "median": 5.949113086910245
+        },
+        "pre_post_distance": {
+          "events": 143,
+          "median": 0.7692053031222328
+        },
+        "return_distance": {
+          "events": 143,
+          "median": 0.9207871155263759
+        },
+        "turning_angle_radians": {
+          "events": 143,
+          "median": 1.5844835626307876
+        }
+      }
+    },
+    "b14de6aa3005cda869a7dac2": {
+      "coordination": {
+        "mean_speed": {
+          "events": 122,
+          "median": 1.3329018535685544
+        },
+        "path_length": {
+          "events": 122,
+          "median": 4.6651564874899405
+        },
+        "pre_post_distance": {
+          "events": 122,
+          "median": 1.4603433284474487
+        },
+        "return_distance": {
+          "events": 122,
+          "median": 1.5471794346484309
+        },
+        "turning_angle_radians": {
+          "events": 122,
+          "median": 1.539941415859403
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 102,
+          "median": 1.6648755470164038
+        },
+        "path_length": {
+          "events": 102,
+          "median": 5.827064414557413
+        },
+        "pre_post_distance": {
+          "events": 102,
+          "median": 1.3432069864884129
+        },
+        "return_distance": {
+          "events": 102,
+          "median": 1.364021828963979
+        },
+        "turning_angle_radians": {
+          "events": 102,
+          "median": 1.657394678885032
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 166,
+          "median": 1.8451556290117335
+        },
+        "path_length": {
+          "events": 166,
+          "median": 6.458044701541067
+        },
+        "pre_post_distance": {
+          "events": 166,
+          "median": 0.7914413020117645
+        },
+        "return_distance": {
+          "events": 166,
+          "median": 0.9636992005802175
+        },
+        "turning_angle_radians": {
+          "events": 166,
+          "median": 1.5964138760168538
+        }
+      }
+    },
+    "b2d963340624e2c88af9a4e7": {
+      "coordination": {
+        "mean_speed": {
+          "events": 1747,
+          "median": 1.3098067153972444
+        },
+        "path_length": {
+          "events": 1747,
+          "median": 4.584323503890356
+        },
+        "pre_post_distance": {
+          "events": 1747,
+          "median": 1.4000204029151695
+        },
+        "return_distance": {
+          "events": 1747,
+          "median": 1.4623670692320052
+        },
+        "turning_angle_radians": {
+          "events": 1747,
+          "median": 1.2570272385534045
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 10167,
+          "median": 3.290370306069748
+        },
+        "path_length": {
+          "events": 10167,
+          "median": 11.516296071244119
+        },
+        "pre_post_distance": {
+          "events": 10167,
+          "median": 1.5960005613265638
+        },
+        "return_distance": {
+          "events": 10167,
+          "median": 1.8094054360881635
+        },
+        "turning_angle_radians": {
+          "events": 10167,
+          "median": 1.1943813502764873
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 12149,
+          "median": 2.5811318188665995
+        },
+        "path_length": {
+          "events": 12149,
+          "median": 9.033961366033099
+        },
+        "pre_post_distance": {
+          "events": 12149,
+          "median": 0.7659213230186891
+        },
+        "return_distance": {
+          "events": 12149,
+          "median": 1.117527239759059
+        },
+        "turning_angle_radians": {
+          "events": 12149,
+          "median": 1.5736126361256544
+        }
+      }
+    },
+    "b74b68bebcda493a4db8952a": {
+      "coordination": {
+        "mean_speed": {
+          "events": 106,
+          "median": 1.2286764862840074
+        },
+        "path_length": {
+          "events": 106,
+          "median": 4.300367701994026
+        },
+        "pre_post_distance": {
+          "events": 106,
+          "median": 1.3635592329750497
+        },
+        "return_distance": {
+          "events": 106,
+          "median": 1.3520125667734169
+        },
+        "turning_angle_radians": {
+          "events": 106,
+          "median": 1.3480340391447818
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 81,
+          "median": 1.5537576426771385
+        },
+        "path_length": {
+          "events": 81,
+          "median": 5.438151749369984
+        },
+        "pre_post_distance": {
+          "events": 81,
+          "median": 1.25191443292963
+        },
+        "return_distance": {
+          "events": 81,
+          "median": 1.285046747092812
+        },
+        "turning_angle_radians": {
+          "events": 81,
+          "median": 1.6182515892507243
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 85,
+          "median": 1.7131040734913312
+        },
+        "path_length": {
+          "events": 85,
+          "median": 5.995864257219659
+        },
+        "pre_post_distance": {
+          "events": 85,
+          "median": 0.7127259963329152
+        },
+        "return_distance": {
+          "events": 85,
+          "median": 0.9170747872416686
+        },
+        "turning_angle_radians": {
+          "events": 85,
+          "median": 1.5303582203033603
+        }
+      }
+    },
+    "bacddb4739a20ec7769d2c61": {
+      "coordination": {
+        "mean_speed": {
+          "events": 166,
+          "median": 1.2949925031159952
+        },
+        "path_length": {
+          "events": 166,
+          "median": 4.532473760905984
+        },
+        "pre_post_distance": {
+          "events": 166,
+          "median": 1.3882270356791437
+        },
+        "return_distance": {
+          "events": 166,
+          "median": 1.3994648633510147
+        },
+        "turning_angle_radians": {
+          "events": 166,
+          "median": 1.504308172361741
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 127,
+          "median": 1.739044344630285
+        },
+        "path_length": {
+          "events": 127,
+          "median": 6.0866552062059975
+        },
+        "pre_post_distance": {
+          "events": 127,
+          "median": 1.2686300707401226
+        },
+        "return_distance": {
+          "events": 127,
+          "median": 1.313138454135371
+        },
+        "turning_angle_radians": {
+          "events": 127,
+          "median": 1.5857286402529207
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 206,
+          "median": 1.9380128078415444
+        },
+        "path_length": {
+          "events": 206,
+          "median": 6.783044827445405
+        },
+        "pre_post_distance": {
+          "events": 206,
+          "median": 0.7267417180275766
+        },
+        "return_distance": {
+          "events": 206,
+          "median": 0.967462445812631
+        },
+        "turning_angle_radians": {
+          "events": 206,
+          "median": 1.517583330221346
+        }
+      }
+    },
+    "be1e68e53464fe21c9ea8f6d": {
+      "coordination": {
+        "mean_speed": {
+          "events": 309,
+          "median": 1.1831248240546561
+        },
+        "path_length": {
+          "events": 309,
+          "median": 4.140936884191296
+        },
+        "pre_post_distance": {
+          "events": 309,
+          "median": 1.4270310504272918
+        },
+        "return_distance": {
+          "events": 309,
+          "median": 1.4944085826538342
+        },
+        "turning_angle_radians": {
+          "events": 309,
+          "median": 1.4853582165711794
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 437,
+          "median": 1.6860609385365897
+        },
+        "path_length": {
+          "events": 437,
+          "median": 5.901213284878064
+        },
+        "pre_post_distance": {
+          "events": 437,
+          "median": 1.438073127511452
+        },
+        "return_distance": {
+          "events": 437,
+          "median": 1.5118942436594736
+        },
+        "turning_angle_radians": {
+          "events": 437,
+          "median": 1.5530200306442306
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 563,
+          "median": 1.9324599629574848
+        },
+        "path_length": {
+          "events": 563,
+          "median": 6.763609870351197
+        },
+        "pre_post_distance": {
+          "events": 563,
+          "median": 0.7084285993377024
+        },
+        "return_distance": {
+          "events": 563,
+          "median": 0.9379803601455212
+        },
+        "turning_angle_radians": {
+          "events": 563,
+          "median": 1.5581436301797857
+        }
+      }
+    },
+    "c1781083d1b9641c0b2b894c": {
+      "coordination": {
+        "mean_speed": {
+          "events": 219,
+          "median": 1.2840711726939715
+        },
+        "path_length": {
+          "events": 219,
+          "median": 4.4942491044289
+        },
+        "pre_post_distance": {
+          "events": 219,
+          "median": 1.4339416109021481
+        },
+        "return_distance": {
+          "events": 219,
+          "median": 1.5070924615377208
+        },
+        "turning_angle_radians": {
+          "events": 219,
+          "median": 1.4713905694169278
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 163,
+          "median": 1.652588681820076
+        },
+        "path_length": {
+          "events": 163,
+          "median": 5.784060386370266
+        },
+        "pre_post_distance": {
+          "events": 163,
+          "median": 1.3247969800675414
+        },
+        "return_distance": {
+          "events": 163,
+          "median": 1.3965556996505368
+        },
+        "turning_angle_radians": {
+          "events": 163,
+          "median": 1.5941813015190172
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 235,
+          "median": 1.9623329905735998
+        },
+        "path_length": {
+          "events": 235,
+          "median": 6.868165467007599
+        },
+        "pre_post_distance": {
+          "events": 235,
+          "median": 0.7429965774331285
+        },
+        "return_distance": {
+          "events": 235,
+          "median": 0.9787634754967142
+        },
+        "turning_angle_radians": {
+          "events": 235,
+          "median": 1.559023431891208
+        }
+      }
+    },
+    "cfe528de4fb205fdfafcf49f": {
+      "coordination": {
+        "mean_speed": {
+          "events": 112,
+          "median": 1.1478433704657398
+        },
+        "path_length": {
+          "events": 112,
+          "median": 4.017451796630089
+        },
+        "pre_post_distance": {
+          "events": 112,
+          "median": 1.3209352048635699
+        },
+        "return_distance": {
+          "events": 112,
+          "median": 1.4005477438076182
+        },
+        "turning_angle_radians": {
+          "events": 112,
+          "median": 1.3310196625603194
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 527,
+          "median": 2.7132537926416815
+        },
+        "path_length": {
+          "events": 527,
+          "median": 9.496388274245886
+        },
+        "pre_post_distance": {
+          "events": 527,
+          "median": 1.4416845042286408
+        },
+        "return_distance": {
+          "events": 527,
+          "median": 1.6411726188856686
+        },
+        "turning_angle_radians": {
+          "events": 527,
+          "median": 1.3389568959951994
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 319,
+          "median": 1.9974762582063845
+        },
+        "path_length": {
+          "events": 319,
+          "median": 6.991166903722346
+        },
+        "pre_post_distance": {
+          "events": 319,
+          "median": 0.7173696913740018
+        },
+        "return_distance": {
+          "events": 319,
+          "median": 0.9806383105218242
+        },
+        "turning_angle_radians": {
+          "events": 319,
+          "median": 1.6000807022795653
+        }
+      }
+    },
+    "d370dbd08c9368b7aba96fd4": {
+      "coordination": {
+        "mean_speed": {
+          "events": 123,
+          "median": 1.1888547524418234
+        },
+        "path_length": {
+          "events": 123,
+          "median": 4.160991633546382
+        },
+        "pre_post_distance": {
+          "events": 123,
+          "median": 1.4318997154931359
+        },
+        "return_distance": {
+          "events": 123,
+          "median": 1.505042620535868
+        },
+        "turning_angle_radians": {
+          "events": 123,
+          "median": 1.2569253823386561
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 138,
+          "median": 1.6463553472204882
+        },
+        "path_length": {
+          "events": 138,
+          "median": 5.762243715271709
+        },
+        "pre_post_distance": {
+          "events": 138,
+          "median": 1.2826132926740312
+        },
+        "return_distance": {
+          "events": 138,
+          "median": 1.4182779014529627
+        },
+        "turning_angle_radians": {
+          "events": 138,
+          "median": 1.4735304369781592
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 198,
+          "median": 1.8495490955426277
+        },
+        "path_length": {
+          "events": 198,
+          "median": 6.473421834399197
+        },
+        "pre_post_distance": {
+          "events": 198,
+          "median": 0.7155830723297809
+        },
+        "return_distance": {
+          "events": 198,
+          "median": 0.9413902333985407
+        },
+        "turning_angle_radians": {
+          "events": 198,
+          "median": 1.5993888309464337
+        }
+      }
+    },
+    "d38fd501d069612f1e3c216c": {
+      "coordination": {
+        "mean_speed": {
+          "events": 149,
+          "median": 1.2193883916515713
+        },
+        "path_length": {
+          "events": 149,
+          "median": 4.267859370780499
+        },
+        "pre_post_distance": {
+          "events": 149,
+          "median": 1.4587429250180801
+        },
+        "return_distance": {
+          "events": 149,
+          "median": 1.5175157206220444
+        },
+        "turning_angle_radians": {
+          "events": 149,
+          "median": 1.4075939362622487
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 175,
+          "median": 1.7083070306421697
+        },
+        "path_length": {
+          "events": 175,
+          "median": 5.979074607247594
+        },
+        "pre_post_distance": {
+          "events": 175,
+          "median": 1.2704522049582716
+        },
+        "return_distance": {
+          "events": 175,
+          "median": 1.4309109351530744
+        },
+        "turning_angle_radians": {
+          "events": 175,
+          "median": 1.6026137366066395
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 142,
+          "median": 1.8236411313162133
+        },
+        "path_length": {
+          "events": 142,
+          "median": 6.382743959606746
+        },
+        "pre_post_distance": {
+          "events": 142,
+          "median": 0.765513979328927
+        },
+        "return_distance": {
+          "events": 142,
+          "median": 0.9732770616486328
+        },
+        "turning_angle_radians": {
+          "events": 142,
+          "median": 1.5384838579323352
+        }
+      }
+    },
+    "d3f9379217af650b56498de9": {
+      "coordination": {
+        "mean_speed": {
+          "events": 316,
+          "median": 1.1695295235908951
+        },
+        "path_length": {
+          "events": 316,
+          "median": 4.0933533325681335
+        },
+        "pre_post_distance": {
+          "events": 316,
+          "median": 1.342115618650423
+        },
+        "return_distance": {
+          "events": 316,
+          "median": 1.3479712981468992
+        },
+        "turning_angle_radians": {
+          "events": 316,
+          "median": 1.220352449650647
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 981,
+          "median": 2.0570109560993393
+        },
+        "path_length": {
+          "events": 981,
+          "median": 7.199538346347688
+        },
+        "pre_post_distance": {
+          "events": 981,
+          "median": 1.3301173690046775
+        },
+        "return_distance": {
+          "events": 981,
+          "median": 1.4135593317550907
+        },
+        "turning_angle_radians": {
+          "events": 981,
+          "median": 1.5598122551145166
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 218,
+          "median": 1.8653720947022694
+        },
+        "path_length": {
+          "events": 218,
+          "median": 6.528802331457943
+        },
+        "pre_post_distance": {
+          "events": 218,
+          "median": 0.7480997894523566
+        },
+        "return_distance": {
+          "events": 218,
+          "median": 0.9041904879026899
+        },
+        "turning_angle_radians": {
+          "events": 218,
+          "median": 1.5347272594853876
+        }
+      }
+    },
+    "db100e5f83c5cf0ca5f68595": {
+      "coordination": {
+        "mean_speed": {
+          "events": 100,
+          "median": 1.2868639261894144
+        },
+        "path_length": {
+          "events": 100,
+          "median": 4.50402374166295
+        },
+        "pre_post_distance": {
+          "events": 100,
+          "median": 1.3826676475035373
+        },
+        "return_distance": {
+          "events": 100,
+          "median": 1.4658940274243277
+        },
+        "turning_angle_radians": {
+          "events": 100,
+          "median": 1.2835359567766558
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 380,
+          "median": 2.3089434996688647
+        },
+        "path_length": {
+          "events": 380,
+          "median": 8.081302248841027
+        },
+        "pre_post_distance": {
+          "events": 380,
+          "median": 1.3689387518242901
+        },
+        "return_distance": {
+          "events": 380,
+          "median": 1.5212986632476833
+        },
+        "turning_angle_radians": {
+          "events": 380,
+          "median": 1.4113833604213173
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 491,
+          "median": 2.200576333234156
+        },
+        "path_length": {
+          "events": 491,
+          "median": 7.702017166319546
+        },
+        "pre_post_distance": {
+          "events": 491,
+          "median": 0.7326554176001425
+        },
+        "return_distance": {
+          "events": 491,
+          "median": 1.0095455032285134
+        },
+        "turning_angle_radians": {
+          "events": 491,
+          "median": 1.5257774842735086
+        }
+      }
+    },
+    "dbfa5c04a8c224a2658cb240": {
+      "coordination": {
+        "mean_speed": {
+          "events": 90,
+          "median": 1.0979518245866369
+        },
+        "path_length": {
+          "events": 90,
+          "median": 3.842831386053229
+        },
+        "pre_post_distance": {
+          "events": 90,
+          "median": 1.287892373642093
+        },
+        "return_distance": {
+          "events": 90,
+          "median": 1.2890162050563965
+        },
+        "turning_angle_radians": {
+          "events": 90,
+          "median": 1.3955061858079258
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 111,
+          "median": 1.4954668217571752
+        },
+        "path_length": {
+          "events": 111,
+          "median": 5.234133876150113
+        },
+        "pre_post_distance": {
+          "events": 111,
+          "median": 1.249202664097152
+        },
+        "return_distance": {
+          "events": 111,
+          "median": 1.3477927144616462
+        },
+        "turning_angle_radians": {
+          "events": 111,
+          "median": 1.5758654298694923
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 111,
+          "median": 1.6850821153344104
+        },
+        "path_length": {
+          "events": 111,
+          "median": 5.897787403670437
+        },
+        "pre_post_distance": {
+          "events": 111,
+          "median": 0.7050221279756441
+        },
+        "return_distance": {
+          "events": 111,
+          "median": 0.9134788604158542
+        },
+        "turning_angle_radians": {
+          "events": 111,
+          "median": 1.5491453459015436
+        }
+      }
+    },
+    "dd7a7ce86ae2e4cc9f5c6695": {
+      "coordination": {
+        "mean_speed": {
+          "events": 99,
+          "median": 1.2705907398944476
+        },
+        "path_length": {
+          "events": 99,
+          "median": 4.447067589630566
+        },
+        "pre_post_distance": {
+          "events": 99,
+          "median": 1.5322763219778632
+        },
+        "return_distance": {
+          "events": 99,
+          "median": 1.5474776929504852
+        },
+        "turning_angle_radians": {
+          "events": 99,
+          "median": 1.3716526748712128
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 124,
+          "median": 1.7169413486115412
+        },
+        "path_length": {
+          "events": 124,
+          "median": 6.009294720140394
+        },
+        "pre_post_distance": {
+          "events": 124,
+          "median": 1.3882309337896928
+        },
+        "return_distance": {
+          "events": 124,
+          "median": 1.4829867471124092
+        },
+        "turning_angle_radians": {
+          "events": 124,
+          "median": 1.601775653573588
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 163,
+          "median": 1.8902477489237857
+        },
+        "path_length": {
+          "events": 163,
+          "median": 6.61586712123325
+        },
+        "pre_post_distance": {
+          "events": 163,
+          "median": 0.7015257179844328
+        },
+        "return_distance": {
+          "events": 163,
+          "median": 0.9076545408915856
+        },
+        "turning_angle_radians": {
+          "events": 163,
+          "median": 1.5581470557508268
+        }
+      }
+    },
+    "e5f08ecd96f130639329ad9e": {
+      "coordination": {
+        "mean_speed": {
+          "events": 1034,
+          "median": 1.21208059185476
+        },
+        "path_length": {
+          "events": 1034,
+          "median": 4.24228207149166
+        },
+        "pre_post_distance": {
+          "events": 1034,
+          "median": 1.3644239257254958
+        },
+        "return_distance": {
+          "events": 1034,
+          "median": 1.4280788166825413
+        },
+        "turning_angle_radians": {
+          "events": 1034,
+          "median": 1.123029314214243
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 7213,
+          "median": 2.967210282741442
+        },
+        "path_length": {
+          "events": 7213,
+          "median": 10.385235989595047
+        },
+        "pre_post_distance": {
+          "events": 7213,
+          "median": 1.597283492331376
+        },
+        "return_distance": {
+          "events": 7213,
+          "median": 1.7606417343927792
+        },
+        "turning_angle_radians": {
+          "events": 7213,
+          "median": 1.303891818567028
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 6753,
+          "median": 2.505430606489174
+        },
+        "path_length": {
+          "events": 6753,
+          "median": 8.76900712271211
+        },
+        "pre_post_distance": {
+          "events": 6753,
+          "median": 0.733071965052234
+        },
+        "return_distance": {
+          "events": 6753,
+          "median": 1.045324685767678
+        },
+        "turning_angle_radians": {
+          "events": 6753,
+          "median": 1.4250151191710663
+        }
+      }
+    },
+    "e9394f83b05ae9a5dcceb9cd": {
+      "coordination": {
+        "mean_speed": {
+          "events": 76,
+          "median": 1.1418075182687297
+        },
+        "path_length": {
+          "events": 76,
+          "median": 3.9963263139405547
+        },
+        "pre_post_distance": {
+          "events": 76,
+          "median": 1.3889264416247618
+        },
+        "return_distance": {
+          "events": 76,
+          "median": 1.5015992001221854
+        },
+        "turning_angle_radians": {
+          "events": 76,
+          "median": 1.5175003032756504
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 165,
+          "median": 1.5944893389132537
+        },
+        "path_length": {
+          "events": 165,
+          "median": 5.580712686196388
+        },
+        "pre_post_distance": {
+          "events": 165,
+          "median": 1.2366694747196267
+        },
+        "return_distance": {
+          "events": 165,
+          "median": 1.375848304655969
+        },
+        "turning_angle_radians": {
+          "events": 165,
+          "median": 1.5104418622452058
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 95,
+          "median": 1.7412329428412252
+        },
+        "path_length": {
+          "events": 95,
+          "median": 6.094315299944288
+        },
+        "pre_post_distance": {
+          "events": 95,
+          "median": 0.7239503506498913
+        },
+        "return_distance": {
+          "events": 95,
+          "median": 0.9091448069465918
+        },
+        "turning_angle_radians": {
+          "events": 95,
+          "median": 1.5567010332966118
+        }
+      }
+    },
+    "f8fa9847c1c8378bf40090e7": {
+      "coordination": {
+        "mean_speed": {
+          "events": 184,
+          "median": 1.270479940618663
+        },
+        "path_length": {
+          "events": 184,
+          "median": 4.446679792165321
+        },
+        "pre_post_distance": {
+          "events": 184,
+          "median": 1.4474935130127502
+        },
+        "return_distance": {
+          "events": 184,
+          "median": 1.4553100615384336
+        },
+        "turning_angle_radians": {
+          "events": 184,
+          "median": 1.3450138310767574
+        }
+      },
+      "morphology": {
+        "mean_speed": {
+          "events": 92,
+          "median": 1.6751408392351006
+        },
+        "path_length": {
+          "events": 92,
+          "median": 5.862992937322852
+        },
+        "pre_post_distance": {
+          "events": 92,
+          "median": 1.3186790580560597
+        },
+        "return_distance": {
+          "events": 92,
+          "median": 1.3576823558800883
+        },
+        "turning_angle_radians": {
+          "events": 92,
+          "median": 1.5712668020788405
+        }
+      },
+      "spectrum": {
+        "mean_speed": {
+          "events": 121,
+          "median": 1.69953361248577
+        },
+        "path_length": {
+          "events": 121,
+          "median": 5.9483676437001956
+        },
+        "pre_post_distance": {
+          "events": 121,
+          "median": 0.7451481007405492
+        },
+        "return_distance": {
+          "events": 121,
+          "median": 0.9216151288415063
+        },
+        "turning_angle_radians": {
+          "events": 121,
+          "median": 1.5540242965365332
+        }
+      }
+    }
+  },
+  "groups": {
+    "external_exposed": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.12076340901612373,
+            0.20525333716090138
+          ],
+          "median": 0.16300837308851257,
+          "n": 2
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.5458583166777704,
+            0.5862785862785863
+          ],
+          "median": 0.5660684514781784,
+          "n": 2
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.09524910414980928,
+            0.19085752419085752
+          ],
+          "median": 0.1430533141703334,
+          "n": 2
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.237507861051189,
+              1.25607580695499
+            ],
+            "median": 1.2467918340030895,
+            "n": 2
+          },
+          "path_length": {
+            "ci95": [
+              4.3312775136791615,
+              4.396265324342465
+            ],
+            "median": 4.3637714190108134,
+            "n": 2
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.311969638503881,
+              1.322666890796998
+            ],
+            "median": 1.3173182646504396,
+            "n": 2
+          },
+          "return_distance": {
+            "ci95": [
+              1.3619599412215921,
+              1.374501002613335
+            ],
+            "median": 1.3682304719174636,
+            "n": 2
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.2825895038281527,
+              1.5603292821881851
+            ],
+            "median": 1.421459393008169,
+            "n": 2
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              2.5901121535143456,
+              2.7502716196775907
+            ],
+            "median": 2.670191886595968,
+            "n": 2
+          },
+          "path_length": {
+            "ci95": [
+              9.065392537300209,
+              9.625950668871567
+            ],
+            "median": 9.345671603085888,
+            "n": 2
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3888558810529514,
+              1.5483825693253195
+            ],
+            "median": 1.4686192251891355,
+            "n": 2
+          },
+          "return_distance": {
+            "ci95": [
+              1.5713225190992623,
+              1.7202025446721638
+            ],
+            "median": 1.6457625318857132,
+            "n": 2
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.298141167308529,
+              1.5247556545912735
+            ],
+            "median": 1.4114484109499013,
+            "n": 2
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              2.216015054223275,
+              2.7716463341431927
+            ],
+            "median": 2.4938306941832336,
+            "n": 2
+          },
+          "path_length": {
+            "ci95": [
+              7.756052689781463,
+              9.700762169501175
+            ],
+            "median": 8.728407429641319,
+            "n": 2
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.71543610848148,
+              0.7343341730598546
+            ],
+            "median": 0.7248851407706673,
+            "n": 2
+          },
+          "return_distance": {
+            "ci95": [
+              0.9955587303098975,
+              1.0930517341769088
+            ],
+            "median": 1.0443052322434032,
+            "n": 2
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.3459740861815388,
+              1.5485071805213197
+            ],
+            "median": 1.4472406333514294,
+            "n": 2
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            1.1595304851969774,
+            2.0987836343531145
+          ],
+          "median": 1.629157059775046,
+          "n": 2
+        },
+        "morphology": {
+          "ci95": [
+            10.393955234519792,
+            13.30925175082934
+          ],
+          "median": 11.851603492674567,
+          "n": 2
+        },
+        "spectrum": {
+          "ci95": [
+            11.157390342793954,
+            15.284892838473601
+          ],
+          "median": 13.221141590633778,
+          "n": 2
+        }
+      },
+      "records": 2,
+      "valid_windows": 121110,
+      "windows": 175610
+    },
+    "external_unexposed": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.19220779220779222,
+            0.2708333333333333
+          ],
+          "median": 0.24514036883433582,
+          "n": 16
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.4675192096764095,
+            0.5915795503365315
+          ],
+          "median": 0.48687982863229406,
+          "n": 16
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.19830950334019412,
+            0.2268041237113402
+          ],
+          "median": 0.20676021057724137,
+          "n": 16
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.2170322619618,
+              1.295889127327796
+            ],
+            "median": 1.2574226952568441,
+            "n": 16
+          },
+          "path_length": {
+            "ci95": [
+              4.2596129168663,
+              4.535611945647286
+            ],
+            "median": 4.400979433398955,
+            "n": 16
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3231752548044238,
+              1.3576198754189106
+            ],
+            "median": 1.338219076799312,
+            "n": 16
+          },
+          "return_distance": {
+            "ci95": [
+              1.3498221300478994,
+              1.4379438944056262
+            ],
+            "median": 1.399057378608358,
+            "n": 16
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.2901592071087484,
+              1.4806640213374358
+            ],
+            "median": 1.4300789851280804,
+            "n": 16
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              2.5105035891397107,
+              2.967210282741442
+            ],
+            "median": 2.8127910247884014,
+            "n": 16
+          },
+          "path_length": {
+            "ci95": [
+              8.78676256198899,
+              10.385235989595047
+            ],
+            "median": 9.844768586759404,
+            "n": 16
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.4209790449497417,
+              1.6479642332889375
+            ],
+            "median": 1.573583018648467,
+            "n": 16
+          },
+          "return_distance": {
+            "ci95": [
+              1.5875807924355274,
+              1.8094054360881635
+            ],
+            "median": 1.6741143270345802,
+            "n": 16
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.3758342326129425,
+              1.4443529163357887
+            ],
+            "median": 1.4187345742852107,
+            "n": 16
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              2.105626473270781,
+              2.505430606489174
+            ],
+            "median": 2.194147214848361,
+            "n": 16
+          },
+          "path_length": {
+            "ci95": [
+              7.369692656447732,
+              8.76900712271211
+            ],
+            "median": 7.6795152519692635,
+            "n": 16
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.7173696913740018,
+              0.740996087883126
+            ],
+            "median": 0.7282939933335493,
+            "n": 16
+          },
+          "return_distance": {
+            "ci95": [
+              0.980482224797447,
+              1.045324685767678
+            ],
+            "median": 0.9928277067335796,
+            "n": 16
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5064210784325192,
+              1.5610512571951438
+            ],
+            "median": 1.5510908269175343,
+            "n": 16
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            1.6038038801273022,
+            2.982157420523554
+          ],
+          "median": 2.012785281631345,
+          "n": 16
+        },
+        "morphology": {
+          "ci95": [
+            7.366125303240336,
+            15.018714811818963
+          ],
+          "median": 12.398382821323684,
+          "n": 16
+        },
+        "spectrum": {
+          "ci95": [
+            7.270560307206715,
+            13.197031431897555
+          ],
+          "median": 8.747049763917712,
+          "n": 16
+        }
+      },
+      "records": 16,
+      "valid_windows": 618537,
+      "windows": 1092838
+    },
+    "test": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.27701341115975264,
+            0.46998616874135546
+          ],
+          "median": 0.36855720527814617,
+          "n": 6
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.21285879455084705,
+            0.34713894782154164
+          ],
+          "median": 0.2696581196581197,
+          "n": 6
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.22041751352096178,
+            0.2999047230161971
+          ],
+          "median": 0.2883329399732515,
+          "n": 6
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.1639847113709407,
+              1.3334281144473117
+            ],
+            "median": 1.2586036187732255,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              4.073946489798293,
+              4.666998400565591
+            ],
+            "median": 4.405112665706289,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3461673344872425,
+              1.4018594775463789
+            ],
+            "median": 1.384825670706342,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              1.314684283529466,
+              1.5011493229862374
+            ],
+            "median": 1.425647667410727,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.4665571907711639,
+              1.5480806628768726
+            ],
+            "median": 1.5060278624756052,
+            "n": 6
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              1.4947001791789771,
+              1.7633698394569692
+            ],
+            "median": 1.608852072428269,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              5.23145062712642,
+              6.171794438099392
+            ],
+            "median": 5.630982253498942,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.2186002334051624,
+              1.3020265470534242
+            ],
+            "median": 1.265709146370254,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              1.3129735457314475,
+              1.3887263223309083
+            ],
+            "median": 1.3591147013577953,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5199332784628252,
+              1.6009311081284827
+            ],
+            "median": 1.5786508833866932,
+            "n": 6
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              1.7387447219567451,
+              1.9802116895806785
+            ],
+            "median": 1.8134839911631724,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              6.085606526848608,
+              6.930740913532375
+            ],
+            "median": 6.347193969071103,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.704320770744048,
+              0.7329475268504388
+            ],
+            "median": 0.7253460343387339,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              0.8956100318190723,
+              0.9692698638070073
+            ],
+            "median": 0.9337600222718823,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5180038100400466,
+              1.6010404716765096
+            ],
+            "median": 1.5585494712311183,
+            "n": 6
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            0.8401748655394097,
+            2.914596115515964
+          ],
+          "median": 1.9322762582841675,
+          "n": 6
+        },
+        "morphology": {
+          "ci95": [
+            1.1313372389656227,
+            2.022629331848404
+          ],
+          "median": 1.6095532440148852,
+          "n": 6
+        },
+        "spectrum": {
+          "ci95": [
+            1.1968136106679235,
+            3.1633781943538013
+          ],
+          "median": 2.670081717065507,
+          "n": 6
+        }
+      },
+      "records": 6,
+      "valid_windows": 53535,
+      "windows": 53802
+    },
+    "train": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.41825095057034223,
+            0.5112107623318386
+          ],
+          "median": 0.45303151176705225,
+          "n": 24
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.33525288813750354,
+            0.43205574912891986
+          ],
+          "median": 0.38656813479160507,
+          "n": 24
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.28735632183908044,
+            0.3964757709251101
+          ],
+          "median": 0.34064682042350947,
+          "n": 24
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.2383652192637704,
+              1.3089694615211214
+            ],
+            "median": 1.277070080744837,
+            "n": 24
+          },
+          "path_length": {
+            "ci95": [
+              4.334278267423197,
+              4.581393115323925
+            ],
+            "median": 4.4697452826069295,
+            "n": 24
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.4163026818759292,
+              1.4792669960431206
+            ],
+            "median": 1.4333399030016563,
+            "n": 24
+          },
+          "return_distance": {
+            "ci95": [
+              1.4553100615384336,
+              1.523668603635869
+            ],
+            "median": 1.501848079826079,
+            "n": 24
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.3507561491031241,
+              1.496953951654822
+            ],
+            "median": 1.426672274205432,
+            "n": 24
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              1.6090781742923679,
+              1.7169413486115412
+            ],
+            "median": 1.679457438620171,
+            "n": 24
+          },
+          "path_length": {
+            "ci95": [
+              5.631773610023288,
+              6.009294720140394
+            ],
+            "median": 5.878101035170599,
+            "n": 24
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3074133704396715,
+              1.3882309337896928
+            ],
+            "median": 1.342718811756987,
+            "n": 24
+          },
+          "return_distance": {
+            "ci95": [
+              1.3700911614228908,
+              1.4213793429407544
+            ],
+            "median": 1.3996296457590904,
+            "n": 24
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5146061296816984,
+              1.5758654298694923
+            ],
+            "median": 1.5489398066760276,
+            "n": 24
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              1.7395410804703793,
+              1.882335687574836
+            ],
+            "median": 1.811231485626268,
+            "n": 24
+          },
+          "path_length": {
+            "ci95": [
+              6.088393781646327,
+              6.5881749065119255
+            ],
+            "median": 6.339310199691939,
+            "n": 24
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.7258992420893422,
+              0.7708980296289225
+            ],
+            "median": 0.7529702260897411,
+            "n": 24
+          },
+          "return_distance": {
+            "ci95": [
+              0.9207871155263759,
+              0.9614255833770626
+            ],
+            "median": 0.941483554710087,
+            "n": 24
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5478101547617145,
+              1.560026280673671
+            ],
+            "median": 1.5576985593569572,
+            "n": 24
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            1.665931098294859,
+            2.70764907179493
+          ],
+          "median": 2.0191616094418157,
+          "n": 24
+        },
+        "morphology": {
+          "ci95": [
+            1.5064218852042668,
+            2.342104537260444
+          ],
+          "median": 1.739403658458145,
+          "n": 24
+        },
+        "spectrum": {
+          "ci95": [
+            1.6956816640289396,
+            2.908352078949278
+          ],
+          "median": 2.2960063645275373,
+          "n": 24
+        }
+      },
+      "records": 24,
+      "valid_windows": 230452,
+      "windows": 232332
+    },
+    "validation": {
+      "agreement": {
+        "morphology / coordination @ 2.0s": {
+          "ci95": [
+            0.3220511297434374,
+            0.5495367231638417
+          ],
+          "median": 0.4739307760141093,
+          "n": 6
+        },
+        "morphology / spectrum @ 2.0s": {
+          "ci95": [
+            0.3158235691753042,
+            0.4602650015229972
+          ],
+          "median": 0.40010773235194663,
+          "n": 6
+        },
+        "spectrum / coordination @ 2.0s": {
+          "ci95": [
+            0.28710650709041535,
+            0.5041165521191294
+          ],
+          "median": 0.40043360433604336,
+          "n": 6
+        }
+      },
+      "geometry": {
+        "coordination": {
+          "mean_speed": {
+            "ci95": [
+              1.219716781796015,
+              1.3429356665775252
+            ],
+            "median": 1.2914177614439366,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              4.269008736286052,
+              4.7002748330213375
+            ],
+            "median": 4.519962165053778,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.3712814142704652,
+              1.4796114135754308
+            ],
+            "median": 1.4595431267327643,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              1.3969278995913026,
+              1.579299119060082
+            ],
+            "median": 1.4795485397162502,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.4002703768652853,
+              1.5491710446431892
+            ],
+            "median": 1.4620505735844427,
+            "n": 6
+          }
+        },
+        "morphology": {
+          "mean_speed": {
+            "ci95": [
+              1.5436018972318275,
+              1.7583361923316159
+            ],
+            "median": 1.6733864167025025,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              5.402606640311396,
+              6.154176673160656
+            ],
+            "median": 5.856852458458759,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              1.2467606657228556,
+              1.3703108637188763
+            ],
+            "median": 1.3266117416275782,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              1.3273379916873798,
+              1.4872679424361261
+            ],
+            "median": 1.4199724590416296,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5212651607053789,
+              1.7195408658414246
+            ],
+            "median": 1.6118178890597985,
+            "n": 6
+          }
+        },
+        "spectrum": {
+          "mean_speed": {
+            "ci95": [
+              1.6675123766168474,
+              1.9149478768746082
+            ],
+            "median": 1.797098933577895,
+            "n": 6
+          },
+          "path_length": {
+            "ci95": [
+              5.836293318158966,
+              6.702317569061128
+            ],
+            "median": 6.289846267522632,
+            "n": 6
+          },
+          "pre_post_distance": {
+            "ci95": [
+              0.7201011021266732,
+              0.810015797732864
+            ],
+            "median": 0.7492158198116567,
+            "n": 6
+          },
+          "return_distance": {
+            "ci95": [
+              0.9149981111838676,
+              0.982695668075594
+            ],
+            "median": 0.9617792811313755,
+            "n": 6
+          },
+          "turning_angle_radians": {
+            "ci95": [
+              1.5397859960741278,
+              1.5911025177730314
+            ],
+            "median": 1.5474209399603014,
+            "n": 6
+          }
+        }
+      },
+      "rates": {
+        "coordination": {
+          "ci95": [
+            1.5416375178023731,
+            3.718687996199647
+          ],
+          "median": 1.8142086441291192,
+          "n": 6
+        },
+        "morphology": {
+          "ci95": [
+            1.1408086896761511,
+            2.306153837863291
+          ],
+          "median": 1.9853052940326599,
+          "n": 6
+        },
+        "spectrum": {
+          "ci95": [
+            1.1143242110605955,
+            4.635837282685686
+          ],
+          "median": 2.0867153606843045,
+          "n": 6
+        }
+      },
+      "records": 6,
+      "valid_windows": 53765,
+      "windows": 54089
+    }
+  },
+  "input_hashes": {
+    "results/003/summary.json": "1a867fe7a431f1d114271bcc46efa339ed8a22461d4575f992e93a25c23fe87d",
+    "results/006/summary.json": "37b95a3d488b18391f9e885b81bb1bad9a0947676c8a6b65b0eb6cc86437eab3",
+    "results/corpus-v1/summary.json": "980eb529d9d5cfbb28dc07581433b25c99def5346998162ff6a1c05e7bf01627",
+    "scripts/report_growth.py": "2402389cf7fac47f1f630ccfab023bd1fe39e83c356b833acb91b13300d9ef60"
+  },
+  "schema": "eegt-transfer-summary/v1"
+}

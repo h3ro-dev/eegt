@@ -1,42 +1,84 @@
-# EEGT execution strategy v2
+# EEGT strategy v3 · continuous corpus and transition geometry
 
-EEGT contributors. Date: 2026-09-24. This revision implements James's latest scope and supersedes the earlier eleven-item plan for the current milestone. The original plan and Experiment 001 remain historical records.
+Date: 2026-09-25. Accountable lead: EEGT root. This replaces the current work
+priorities while preserving the [earlier strategy](protocol/strategy-v2.md) and
+published experiments. Code, protocols, results and research notes are public;
+physical participant collection is a separate acquisition boundary.
 
-## Outcome and acceptance
+## Ordered work
 
-Deliver a reproducible, publicly inspectable first around-ear EEG experiment: anonymous numeric input contract, downloaded open source recordings with verified checksums, acquisition-aware quality accounting, multiple signal-tokenizer families and seeds, numerical agreement results, source code and downloadable derived data, numbered Research Notes, and a bounded repeatable intake/publication process. No semantic or clinical target and no independent-replication campaign is required for this milestone. Hardware capture is a later input, not something public cEEGrid data can prove.
+1. **Build a traceable database.** Pin every source version and byte hash; retain
+   native samples, technical metadata, gaps and explicit failures. Separate the
+   curator's source identity from numerical discovery. The current corpus has
+   55 available source recordings; 54 qualify and one is quarantined.
+2. **Analyze the full continuous exposure.** Fit morphology, spectrum and sensor
+   coordination references on the frozen training people only. Measure changes
+   at 0.5-, 2- and 8-second contexts. Compare transition timing and retain event
+   magnitude, trajectory length, speed, angle and endpoint return distance.
+3. **Challenge and publish the measurements.** Use phase randomization, gain,
+   polarity and time reversal; compare on matched validity support. Report every
+   record, participant-level summaries, independent software review, a release
+   audit and exact source-to-result hashes. Publish negative findings too.
+4. **Acquire repeated sessions and real Neurable waves.** Begin with the
+   [engineering capture protocol](protocol/neurable-pilot.md). Verify a raw
+   Research Kit export/stream, timestamps, gain and contact order before adding
+   it. Then examine reseating and repeat-day stability. Target one adult over
+   three sessions for feasibility, then ten adults over three sessions if actual
+   access, participation and the research process support it. These are planned
+   targets, not collected data or a powered clinical study.
+5. **Expand the signal descriptors one family at a time.** Add cycle shape and
+   burst duration first, followed by frequency drift/aperiodic slope, entropy
+   and recurrence, and carefully controlled lagged coupling. Validate on
+   synthetic signals and artifacts before fitting real data. See the
+   [primary research and feature priorities](notes/research-intake-2026-09-25.md).
+6. **Compare genuinely independent learned representations.** Audit published
+   checkpoints for around-ear channel/rate compatibility and training exposure.
+   Freeze compatible models such as CodeBrain or REVE only after that audit;
+   do not invent electrode positions or count LLM-authored code as independent
+   pretrained-model discovery. Compare aligned neighborhoods, transition timing
+   and invariant geometry as well as arbitrary token IDs. Keep transparent
+   baselines and actual compute/cost records.
+7. **Test meaning after discovery is fixed.** If James elects to pursue it,
+   independently aligned context can test what a pattern predicts in a separate
+   evaluation layer. No labels return to the discovery fit. Current experiments
+   establish neither diagnoses nor thought/emotion interpretation.
+8. **Grow the public ledger on meaningful new evidence.** Check weekly for new
+   compatible data, methods or concrete defects. Freeze a new numbered protocol
+   before each material run, independently review, and publish versioned data,
+   failures and Research Notes. Seek a DOI or manuscript after a stable release
+   and reproducible independent reuse; no content quota or automatic promotion
+   of a weak result into a universal-language claim.
 
-## Priority and dependencies
+## Acceptance, ownership and dependencies
 
-1. **Freeze the numeric-only contract.** Models receive ordered voltage samples, sampling interval, channel structure and an engineering-validity mask. No participant identity, dates, task, sleep stage, diagnosis, narrative, source name or prior token meanings. Separate provenance and split tables remain outside the model interface. Verify by injecting prohibited metadata and testing rejection. Freeze protocol and hashes before fitting. This is the first acceptance gate.
-2. **Acquire open around-ear EEG.** Start with OpenNeuro ds004015 (cEEGrid, 36 contributors in the published collection) and ds005207 (Surrey cEEGrid sleep, 20 in the collection). Both publisher metadata declare CC0. Download a fixed bounded subset with no access negotiation; retain source attribution and hashes. Select subjects by fixed identifier order, not attractive waveforms. Publish exact acquired counts rather than entire-collection counts. No NoticingMind/private payload access. Scalp source seed-v1 stays a separate historical comparator.
-3. **Validate and normalize the waveform boundary.** Verify declared and observed rates, units, channels and sample counts. Preserve native samples; make any resampling explicit. Account separately for nonfinite, incomplete, flat, high-amplitude and line-dominated windows. Unknown ADC rails remain unknown, not fabricated clipping detection. Keep raw source and derived arrays separate and publish every exclusion denominator.
-4. **Run the Neurable-relevant battery.** Compare continuous EEG features, spectrum-based clustering, waveform-shape clustering and time-frequency clustering with multiple seeds and vocabulary sizes. All consume EEG waves, not semantics or task labels. Use channelwise comparisons across sensor layouts; do not invent a mapping from cEEGrid electrodes to MW75 contacts. Neurable Research Kit publicly specifies 12 EEG channels at 500 Hz. Implement a strict decoded-array adapter at that boundary; no hardware validation is claimed from a synthetic adapter test.
-5. **Measure the numbers.** Report usable/total windows, occupied vocabulary, effective vocabulary, train-to-test reconstruction distortion, permutation-invariant cluster agreement, seed stability, waveform time-shuffle and phase-randomized controls. Include simple participant-disjoint fit/validation/test and a source held out from fitting. Report per-recording values and their spread; a small pilot does not support population-wide confidence. Fit scaling, centroids and alignment exclusively on training or designated calibration data. No best-seed cherry-picking.
-6. **Keep one practical unseen-data check.** “Held out” means a recording did not teach the tokenizer its patterns. Train on some people, then apply unchanged to other people and the other collection. This is a check against memorization. It is not a separate multi-site clinical validation project, and it does not establish meaning.
-7. **Semantic interpretation: deferred by James.** No attention, sleep-stage, emotion, thought, personality or diagnostic decoding in this release.
-8. **Independent scientific replication: deferred by James.** Software correctness and release review still apply to our own artifacts.
-9. **Publish the ledger and data from 1–5.** Experiment 001 is the earlier seed; Experiment 002 records this protocol and actual run. Planned, failed and completed states are explicit. Publish methods, all selected runs, QC, nulls, limitations, machine-readable metrics and derived token/waveform data. Version corrections; never fabricate completed notes. GitHub release and a static public Research Notes site form the minimum native publication proof. Keep the requested EEGT.Utilize.com hostname separate until ownership/DNS/TLS can be verified.
-10. **Open source and publicity.** MIT code, source-specific CC0 attribution, CITATION.cff, concise reproducible README, a tagged release and public issue templates. Publish the reproducible ledger first, then a concise release announcement on the site/repository. No direct messages to other people are needed. A DOI/preprint or broader announcement follows once release identity and repeatability exist.
-11. **Repeat on evidence, not on a content quota.** Weekly check for newly available compatible open recordings or a justified protocol/model change. Run a bounded batch only for a meaningful new input, record its frozen plan first, and publish the outcome including failures. Preserve earlier codebooks and held-out sets. Notify James on a meaningful result, failure or required action; stay quiet on unchanged checks.
+The software milestone is complete only after the source catalog, numerical
+battery, per-record and aggregate results, independent review, release assets
+and public website are verified. Root integrates and publishes. The isolated
+numerical worker owns its methods packet; the isolated reviewer owns its review
+packet. Private NoticingMind waves remain outside scope. The dependency is
+catalog → qualified arrays → frozen fit → controls/transfer → review → publication.
+The Neurable protocol can be prepared in parallel; physical capture cannot be
+substituted by a simulated adapter test.
 
-## Interfaces, ownership and integration
+The current scientific constraint is participant/session/device diversity.
+More windows make the time series denser but do not create more independent
+people. The two current sources provide one recording per source participant;
+global identity overlap, repeated-session stability and Neurable equivalence
+remain unknown. Evaluated holdouts are consumed for future new claims.
 
-Root owns protocol, acquisition, numerical pipeline, integration, release and acceptance. A separately admitted website worker may own only the static site directory. A reviewer may inspect the frozen implementation and results in a separate review directory. Existing accepted seed-v1 artifacts, NoticingMind data and unrelated marketing-site code are outside write scope. Raw downloads live in the ignored data/cache directory. Public exports contain anonymous waveforms/tokens and source provenance in separate files; identities are source pseudonyms and are never passed into fitting.
+## Proof and recovery
 
-Critical path: input contract → actual open files → validated waves → fitted battery and review → published release/readback. Current bottleneck is independent code/numerical review before the public release. Source acquisition, waveform decoding, all 27 fits, exact same-platform reproduction and the standalone site are complete locally. Publication and native readback follow review. Expected initial resource demand: one bounded download stream, less than 3 GB source files, one numerical process with native thread count capped to one, under 2 GB working memory for the selected time slices. These are estimates, not measured promises; record observed peak RSS/runtime and adjust before expansion. Fleet admission must be rechecked for every worker start.
+Record source, feature, model, control-row and aggregate hashes. Keep candidate,
+qualified, analyzed, QC-passing and scored-context denominators distinct.
+Resample participants for descriptive uncertainty; do not treat overlapping
+windows as independent. Poor agreement is a valid outcome. Preserve failed
+intermediates and append correction records; never tune against external
+results or silently replace a published artifact.
 
-## Decisions, limits and recovery
-
-- “Blank slate” applies to inputs and experimental fitting. A pretrained LLM still has prior training. This release distinguishes LLM-authored numeric algorithms from a pretrained LLM independently discovering a brain language. Agreement between algorithms is not proof of universality.
-- Source task and montage metadata are needed by the acquisition steward for decoding/QC and audit. They never enter model feature construction, cluster fitting or naming. Tokens have neutral integer IDs.
-- Use common 1–40 Hz support initially, a range both candidate sources and Neurable can acquire. Resampling does not add frequencies or reproduce another device's electrode geometry, reference or dry-contact noise.
-- cEEGrid sleep source warns that its PSG clock alignment was lost. This experiment uses only the native cEEGrid waveform and no PSG or stage labels.
-- Each new batch receives immutable input hashes, config, seed list, output hashes and a correction history. Recovery is to retain the failed run, repair code under a new version, rerun affected checks, and publish a correction. Roll back only this project's deployment/release assets.
-- A small pilot can complete the engineering milestone even with poor numerical agreement. Scientific failure is an outcome, not permission to hide the batch or change the acceptance rules after seeing it.
-
-## Primary sources
-
-- Neurable Research Kit: https://www.neurable.com/products/research-kit (checked 2026-09-24).
-- ds004015: https://openneuro.org/datasets/ds004015/versions/1.0.2 ; https://doi.org/10.3389/fnins.2022.869426 .
-- ds005207: https://openneuro.org/datasets/ds005207/versions/1.0.0 ; https://doi.org/10.1111/jsr.12786 .
+Raw downloads are immutable and resumable. Numeric processing uses bounded
+chunks and measured process counts. Native worker admission separately checks
+fleet capacity, ownership, provider identity and settings. GitHub Actions
+currently cannot run because the organization disables it; local tests and the
+separate reviewer provide their named evidence, not a fictional CI pass.
+Release through the existing public repository and verified GitHub Pages URL.
+The requested eegt.utilize.com name stays a separate DNS/TLS acceptance item.

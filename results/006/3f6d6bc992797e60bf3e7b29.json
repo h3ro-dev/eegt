@@ -1,0 +1,4301 @@
+{
+  "inputs": {
+    "eegt/controls.py": "d58375540276c1571184c97270b503518a4ff59cdfdefaf32b547291fcc8c4c1",
+    "eegt/transitions.py": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d",
+    "protocol/experiment-003.json": "1a0da132216c4da31dd78345950db95439ada3d543788664b42f6f5c0f0939a0",
+    "results/003/features.json": "48635788222bbae0e67e2f8cd2b7801047feb1a9cad6fb849d0f966e1f560dd3",
+    "results/003/model.json": "c37fcb23e99e217ee0405504cab12723563a0717834643c949aa3116864f5879",
+    "results/003/summary.json": "1a867fe7a431f1d114271bcc46efa339ed8a22461d4575f992e93a25c23fe87d"
+  },
+  "result": {
+    "central_seconds": 120,
+    "dataset": "ds005207",
+    "prior_exposure": false,
+    "recording_id": "3f6d6bc992797e60bf3e7b29",
+    "sample_rate_hz": 250.0,
+    "split": "external",
+    "start_sample": 0,
+    "status": "EVALUATED",
+    "stop_sample": 36000,
+    "variants": {
+      "gain_1.1": {
+        "agreement": [
+          {
+            "f1": 0.38095238095238093,
+            "matched": 8,
+            "median_abs_error_seconds": 0.75,
+            "n_a": 10,
+            "n_b": 32,
+            "precision": 0.25,
+            "recall": 0.8,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 4.5,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.37499999999999994,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 10,
+            "n_b": 6,
+            "precision": 0.5,
+            "recall": 0.3,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 1.5,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.3157894736842105,
+            "matched": 6,
+            "median_abs_error_seconds": 0.25,
+            "n_a": 32,
+            "n_b": 6,
+            "precision": 1.0,
+            "recall": 0.1875,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 1.5,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.1875,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 4,
+            "n_b": 28,
+            "precision": 0.10714285714285714,
+            "recall": 0.75,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 1.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.3333333333333333,
+            "matched": 1,
+            "median_abs_error_seconds": 1.0,
+            "n_a": 4,
+            "n_b": 2,
+            "precision": 0.5,
+            "recall": 0.25,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 1.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.13333333333333333,
+            "matched": 2,
+            "median_abs_error_seconds": 1.0,
+            "n_a": 28,
+            "n_b": 2,
+            "precision": 1.0,
+            "recall": 0.07142857142857142,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 2.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.3333333333333333,
+            "matched": 2,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 3,
+            "n_b": 9,
+            "precision": 0.2222222222222222,
+            "recall": 0.6666666666666666,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 3,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 9,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          }
+        ],
+        "event_counts": {
+          "coordination:0.5": {
+            "count": 6,
+            "events_per_scored_minute": 3.1578947368421053,
+            "scored_center_seconds": 114.0
+          },
+          "coordination:2.0": {
+            "count": 2,
+            "events_per_scored_minute": 1.1374407582938388,
+            "scored_center_seconds": 105.5
+          },
+          "coordination:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 81.5
+          },
+          "morphology:0.5": {
+            "count": 10,
+            "events_per_scored_minute": 5.2631578947368425,
+            "scored_center_seconds": 114.0
+          },
+          "morphology:2.0": {
+            "count": 4,
+            "events_per_scored_minute": 2.2748815165876777,
+            "scored_center_seconds": 105.5
+          },
+          "morphology:8.0": {
+            "count": 3,
+            "events_per_scored_minute": 2.2085889570552144,
+            "scored_center_seconds": 81.5
+          },
+          "spectrum:0.5": {
+            "count": 32,
+            "events_per_scored_minute": 16.842105263157894,
+            "scored_center_seconds": 114.0
+          },
+          "spectrum:2.0": {
+            "count": 28,
+            "events_per_scored_minute": 15.924170616113745,
+            "scored_center_seconds": 105.5
+          },
+          "spectrum:8.0": {
+            "count": 9,
+            "events_per_scored_minute": 6.625766871165644,
+            "scored_center_seconds": 81.5
+          }
+        },
+        "paired_support": {
+          "original": {
+            "agreement": [
+              {
+                "f1": 0.3902439024390244,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 31,
+                "precision": 0.25806451612903225,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 5,
+                "precision": 0.6,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.27777777777777773,
+                "matched": 5,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 31,
+                "n_b": 5,
+                "precision": 1.0,
+                "recall": 0.16129032258064516,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.18181818181818182,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 4,
+                "n_b": 29,
+                "precision": 0.10344827586206896,
+                "recall": 0.75,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 4,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.25,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.12903225806451613,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 29,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.06896551724137931,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 9,
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 9,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 5,
+                "events_per_scored_minute": 2.6315789473684212,
+                "scored_center_seconds": 114.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.1374407582938388,
+                "scored_center_seconds": 105.5
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 81.5
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.2631578947368425,
+                "scored_center_seconds": 114.0
+              },
+              "morphology:2.0": {
+                "count": 4,
+                "events_per_scored_minute": 2.2748815165876777,
+                "scored_center_seconds": 105.5
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.2085889570552144,
+                "scored_center_seconds": 81.5
+              },
+              "spectrum:0.5": {
+                "count": 31,
+                "events_per_scored_minute": 16.315789473684212,
+                "scored_center_seconds": 114.0
+              },
+              "spectrum:2.0": {
+                "count": 29,
+                "events_per_scored_minute": 16.492890995260662,
+                "scored_center_seconds": 105.5
+              },
+              "spectrum:8.0": {
+                "count": 9,
+                "events_per_scored_minute": 6.625766871165644,
+                "scored_center_seconds": 81.5
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                50.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                7.5,
+                10.0,
+                13.5,
+                15.5,
+                17.5,
+                20.5,
+                24.0,
+                26.5,
+                29.0,
+                34.5,
+                36.5,
+                47.0,
+                49.5,
+                52.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                79.0,
+                81.0,
+                84.0,
+                86.0,
+                88.0,
+                90.0,
+                104.5,
+                109.5,
+                114.5,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 228,
+              "coordination:2.0": 211,
+              "coordination:8.0": 163,
+              "morphology:0.5": 228,
+              "morphology:2.0": 211,
+              "morphology:8.0": 163,
+              "spectrum:0.5": 228,
+              "spectrum:2.0": 211,
+              "spectrum:8.0": 163
+            }
+          },
+          "valid_windows": 231,
+          "variant": {
+            "agreement": [
+              {
+                "f1": 0.38095238095238093,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 32,
+                "precision": 0.25,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.37499999999999994,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 6,
+                "precision": 0.5,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3157894736842105,
+                "matched": 6,
+                "median_abs_error_seconds": 0.25,
+                "n_a": 32,
+                "n_b": 6,
+                "precision": 1.0,
+                "recall": 0.1875,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.1875,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 4,
+                "n_b": 28,
+                "precision": 0.10714285714285714,
+                "recall": 0.75,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 4,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.25,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.13333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 28,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.07142857142857142,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 9,
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 9,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 6,
+                "events_per_scored_minute": 3.1578947368421053,
+                "scored_center_seconds": 114.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.1374407582938388,
+                "scored_center_seconds": 105.5
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 81.5
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.2631578947368425,
+                "scored_center_seconds": 114.0
+              },
+              "morphology:2.0": {
+                "count": 4,
+                "events_per_scored_minute": 2.2748815165876777,
+                "scored_center_seconds": 105.5
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.2085889570552144,
+                "scored_center_seconds": 81.5
+              },
+              "spectrum:0.5": {
+                "count": 32,
+                "events_per_scored_minute": 16.842105263157894,
+                "scored_center_seconds": 114.0
+              },
+              "spectrum:2.0": {
+                "count": 28,
+                "events_per_scored_minute": 15.924170616113745,
+                "scored_center_seconds": 105.5
+              },
+              "spectrum:8.0": {
+                "count": 9,
+                "events_per_scored_minute": 6.625766871165644,
+                "scored_center_seconds": 81.5
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                50.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                4.0,
+                7.5,
+                13.5,
+                15.5,
+                20.5,
+                24.0,
+                26.5,
+                29.0,
+                34.5,
+                36.5,
+                47.0,
+                49.5,
+                52.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                79.0,
+                81.0,
+                84.0,
+                86.0,
+                88.0,
+                90.0,
+                104.5,
+                109.5,
+                114.5,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 228,
+              "coordination:2.0": 211,
+              "coordination:8.0": 163,
+              "morphology:0.5": 228,
+              "morphology:2.0": 211,
+              "morphology:8.0": 163,
+              "spectrum:0.5": 228,
+              "spectrum:2.0": 211,
+              "spectrum:8.0": 163
+            }
+          }
+        },
+        "primary_event_times": {
+          "coordination": [
+            19.5,
+            23.0
+          ],
+          "morphology": [
+            22.0,
+            50.0,
+            73.5,
+            118.0
+          ],
+          "spectrum": [
+            4.0,
+            7.5,
+            13.5,
+            15.5,
+            20.5,
+            24.0,
+            26.5,
+            29.0,
+            34.5,
+            36.5,
+            47.0,
+            49.5,
+            52.0,
+            56.5,
+            67.0,
+            69.0,
+            73.5,
+            77.0,
+            79.0,
+            81.0,
+            84.0,
+            86.0,
+            88.0,
+            90.0,
+            104.5,
+            109.5,
+            114.5,
+            117.5
+          ]
+        },
+        "same_view_timing": {
+          "coordination": {
+            "f1": 1.0,
+            "matched": 2,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 2,
+            "n_b": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "morphology": {
+            "f1": 1.0,
+            "matched": 4,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 4,
+            "n_b": 4,
+            "precision": 1.0,
+            "recall": 1.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "spectrum": {
+            "f1": 0.9473684210526316,
+            "matched": 27,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 29,
+            "n_b": 28,
+            "precision": 0.9642857142857143,
+            "recall": 0.9310344827586207,
+            "total_abs_error_seconds": 0.0
+          }
+        },
+        "valid_windows": 231,
+        "windows": 240,
+        "windows_scored": {
+          "coordination:0.5": 228,
+          "coordination:2.0": 211,
+          "coordination:8.0": 163,
+          "morphology:0.5": 228,
+          "morphology:2.0": 211,
+          "morphology:8.0": 163,
+          "spectrum:0.5": 228,
+          "spectrum:2.0": 211,
+          "spectrum:8.0": 163
+        }
+      },
+      "independent_phase": {
+        "agreement": [
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          }
+        ],
+        "event_counts": {
+          "coordination:0.5": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 119.5
+          },
+          "coordination:2.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 116.5
+          },
+          "coordination:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 104.5
+          },
+          "morphology:0.5": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 119.5
+          },
+          "morphology:2.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 116.5
+          },
+          "morphology:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 104.5
+          },
+          "spectrum:0.5": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 119.5
+          },
+          "spectrum:2.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 116.5
+          },
+          "spectrum:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 104.5
+          }
+        },
+        "paired_support": {
+          "original": {
+            "agreement": [
+              {
+                "f1": 0.3902439024390244,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 31,
+                "precision": 0.25806451612903225,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 5,
+                "precision": 0.6,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.27777777777777773,
+                "matched": 5,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 31,
+                "n_b": 5,
+                "precision": 1.0,
+                "recall": 0.16129032258064516,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.17647058823529416,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 4,
+                "n_b": 30,
+                "precision": 0.1,
+                "recall": 0.75,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 4,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.25,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.125,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 30,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.06666666666666667,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 9,
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 9,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 5,
+                "events_per_scored_minute": 2.586206896551724,
+                "scored_center_seconds": 116.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.090909090909091,
+                "scored_center_seconds": 110.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.172413793103448,
+                "scored_center_seconds": 116.0
+              },
+              "morphology:2.0": {
+                "count": 4,
+                "events_per_scored_minute": 2.181818181818182,
+                "scored_center_seconds": 110.0
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.0930232558139537,
+                "scored_center_seconds": 86.0
+              },
+              "spectrum:0.5": {
+                "count": 31,
+                "events_per_scored_minute": 16.03448275862069,
+                "scored_center_seconds": 116.0
+              },
+              "spectrum:2.0": {
+                "count": 30,
+                "events_per_scored_minute": 16.363636363636363,
+                "scored_center_seconds": 110.0
+              },
+              "spectrum:8.0": {
+                "count": 9,
+                "events_per_scored_minute": 6.27906976744186,
+                "scored_center_seconds": 86.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                50.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                7.5,
+                10.0,
+                13.5,
+                15.5,
+                17.5,
+                20.5,
+                24.0,
+                26.5,
+                29.0,
+                34.5,
+                36.5,
+                47.0,
+                49.5,
+                52.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                79.0,
+                81.0,
+                84.0,
+                86.0,
+                88.0,
+                91.0,
+                93.0,
+                104.5,
+                109.5,
+                114.5,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 232,
+              "coordination:2.0": 220,
+              "coordination:8.0": 172,
+              "morphology:0.5": 232,
+              "morphology:2.0": 220,
+              "morphology:8.0": 172,
+              "spectrum:0.5": 232,
+              "spectrum:2.0": 220,
+              "spectrum:8.0": 172
+            }
+          },
+          "valid_windows": 234,
+          "variant": {
+            "agreement": [
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 116.0
+              },
+              "coordination:2.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 110.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "morphology:0.5": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 116.0
+              },
+              "morphology:2.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 110.0
+              },
+              "morphology:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "spectrum:0.5": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 116.0
+              },
+              "spectrum:2.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 110.0
+              },
+              "spectrum:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [],
+              "morphology": [],
+              "spectrum": []
+            },
+            "windows_scored": {
+              "coordination:0.5": 232,
+              "coordination:2.0": 220,
+              "coordination:8.0": 172,
+              "morphology:0.5": 232,
+              "morphology:2.0": 220,
+              "morphology:8.0": 172,
+              "spectrum:0.5": 232,
+              "spectrum:2.0": 220,
+              "spectrum:8.0": 172
+            }
+          }
+        },
+        "primary_event_times": {
+          "coordination": [],
+          "morphology": [],
+          "spectrum": []
+        },
+        "same_view_timing": {
+          "coordination": {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 2,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "morphology": {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 4,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "spectrum": {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 30,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "total_abs_error_seconds": 0.0
+          }
+        },
+        "valid_windows": 240,
+        "windows": 240,
+        "windows_scored": {
+          "coordination:0.5": 239,
+          "coordination:2.0": 233,
+          "coordination:8.0": 209,
+          "morphology:0.5": 239,
+          "morphology:2.0": 233,
+          "morphology:8.0": 209,
+          "spectrum:0.5": 239,
+          "spectrum:2.0": 233,
+          "spectrum:8.0": 209
+        }
+      },
+      "original": {
+        "agreement": [
+          {
+            "f1": 0.3902439024390244,
+            "matched": 8,
+            "median_abs_error_seconds": 0.75,
+            "n_a": 10,
+            "n_b": 31,
+            "precision": 0.25806451612903225,
+            "recall": 0.8,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 4.5,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.4,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 10,
+            "n_b": 5,
+            "precision": 0.6,
+            "recall": 0.3,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 1.5,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.27777777777777773,
+            "matched": 5,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 31,
+            "n_b": 5,
+            "precision": 1.0,
+            "recall": 0.16129032258064516,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 1.5,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.17647058823529416,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 4,
+            "n_b": 30,
+            "precision": 0.1,
+            "recall": 0.75,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 1.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.3333333333333333,
+            "matched": 1,
+            "median_abs_error_seconds": 1.0,
+            "n_a": 4,
+            "n_b": 2,
+            "precision": 0.5,
+            "recall": 0.25,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 1.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.125,
+            "matched": 2,
+            "median_abs_error_seconds": 1.0,
+            "n_a": 30,
+            "n_b": 2,
+            "precision": 1.0,
+            "recall": 0.06666666666666667,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 2.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.3333333333333333,
+            "matched": 2,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 3,
+            "n_b": 9,
+            "precision": 0.2222222222222222,
+            "recall": 0.6666666666666666,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 3,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 9,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          }
+        ],
+        "event_counts": {
+          "coordination:0.5": {
+            "count": 5,
+            "events_per_scored_minute": 2.586206896551724,
+            "scored_center_seconds": 116.0
+          },
+          "coordination:2.0": {
+            "count": 2,
+            "events_per_scored_minute": 1.090909090909091,
+            "scored_center_seconds": 110.0
+          },
+          "coordination:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 86.0
+          },
+          "morphology:0.5": {
+            "count": 10,
+            "events_per_scored_minute": 5.172413793103448,
+            "scored_center_seconds": 116.0
+          },
+          "morphology:2.0": {
+            "count": 4,
+            "events_per_scored_minute": 2.181818181818182,
+            "scored_center_seconds": 110.0
+          },
+          "morphology:8.0": {
+            "count": 3,
+            "events_per_scored_minute": 2.0930232558139537,
+            "scored_center_seconds": 86.0
+          },
+          "spectrum:0.5": {
+            "count": 31,
+            "events_per_scored_minute": 16.03448275862069,
+            "scored_center_seconds": 116.0
+          },
+          "spectrum:2.0": {
+            "count": 30,
+            "events_per_scored_minute": 16.363636363636363,
+            "scored_center_seconds": 110.0
+          },
+          "spectrum:8.0": {
+            "count": 9,
+            "events_per_scored_minute": 6.27906976744186,
+            "scored_center_seconds": 86.0
+          }
+        },
+        "paired_support": {
+          "original": {
+            "agreement": [
+              {
+                "f1": 0.3902439024390244,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 31,
+                "precision": 0.25806451612903225,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 5,
+                "precision": 0.6,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.27777777777777773,
+                "matched": 5,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 31,
+                "n_b": 5,
+                "precision": 1.0,
+                "recall": 0.16129032258064516,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.17647058823529416,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 4,
+                "n_b": 30,
+                "precision": 0.1,
+                "recall": 0.75,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 4,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.25,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.125,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 30,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.06666666666666667,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 9,
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 9,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 5,
+                "events_per_scored_minute": 2.586206896551724,
+                "scored_center_seconds": 116.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.090909090909091,
+                "scored_center_seconds": 110.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.172413793103448,
+                "scored_center_seconds": 116.0
+              },
+              "morphology:2.0": {
+                "count": 4,
+                "events_per_scored_minute": 2.181818181818182,
+                "scored_center_seconds": 110.0
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.0930232558139537,
+                "scored_center_seconds": 86.0
+              },
+              "spectrum:0.5": {
+                "count": 31,
+                "events_per_scored_minute": 16.03448275862069,
+                "scored_center_seconds": 116.0
+              },
+              "spectrum:2.0": {
+                "count": 30,
+                "events_per_scored_minute": 16.363636363636363,
+                "scored_center_seconds": 110.0
+              },
+              "spectrum:8.0": {
+                "count": 9,
+                "events_per_scored_minute": 6.27906976744186,
+                "scored_center_seconds": 86.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                50.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                7.5,
+                10.0,
+                13.5,
+                15.5,
+                17.5,
+                20.5,
+                24.0,
+                26.5,
+                29.0,
+                34.5,
+                36.5,
+                47.0,
+                49.5,
+                52.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                79.0,
+                81.0,
+                84.0,
+                86.0,
+                88.0,
+                91.0,
+                93.0,
+                104.5,
+                109.5,
+                114.5,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 232,
+              "coordination:2.0": 220,
+              "coordination:8.0": 172,
+              "morphology:0.5": 232,
+              "morphology:2.0": 220,
+              "morphology:8.0": 172,
+              "spectrum:0.5": 232,
+              "spectrum:2.0": 220,
+              "spectrum:8.0": 172
+            }
+          },
+          "valid_windows": 234,
+          "variant": {
+            "agreement": [
+              {
+                "f1": 0.3902439024390244,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 31,
+                "precision": 0.25806451612903225,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 5,
+                "precision": 0.6,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.27777777777777773,
+                "matched": 5,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 31,
+                "n_b": 5,
+                "precision": 1.0,
+                "recall": 0.16129032258064516,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.17647058823529416,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 4,
+                "n_b": 30,
+                "precision": 0.1,
+                "recall": 0.75,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 4,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.25,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.125,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 30,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.06666666666666667,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 9,
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 9,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 5,
+                "events_per_scored_minute": 2.586206896551724,
+                "scored_center_seconds": 116.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.090909090909091,
+                "scored_center_seconds": 110.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.172413793103448,
+                "scored_center_seconds": 116.0
+              },
+              "morphology:2.0": {
+                "count": 4,
+                "events_per_scored_minute": 2.181818181818182,
+                "scored_center_seconds": 110.0
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.0930232558139537,
+                "scored_center_seconds": 86.0
+              },
+              "spectrum:0.5": {
+                "count": 31,
+                "events_per_scored_minute": 16.03448275862069,
+                "scored_center_seconds": 116.0
+              },
+              "spectrum:2.0": {
+                "count": 30,
+                "events_per_scored_minute": 16.363636363636363,
+                "scored_center_seconds": 110.0
+              },
+              "spectrum:8.0": {
+                "count": 9,
+                "events_per_scored_minute": 6.27906976744186,
+                "scored_center_seconds": 86.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                50.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                7.5,
+                10.0,
+                13.5,
+                15.5,
+                17.5,
+                20.5,
+                24.0,
+                26.5,
+                29.0,
+                34.5,
+                36.5,
+                47.0,
+                49.5,
+                52.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                79.0,
+                81.0,
+                84.0,
+                86.0,
+                88.0,
+                91.0,
+                93.0,
+                104.5,
+                109.5,
+                114.5,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 232,
+              "coordination:2.0": 220,
+              "coordination:8.0": 172,
+              "morphology:0.5": 232,
+              "morphology:2.0": 220,
+              "morphology:8.0": 172,
+              "spectrum:0.5": 232,
+              "spectrum:2.0": 220,
+              "spectrum:8.0": 172
+            }
+          }
+        },
+        "primary_event_times": {
+          "coordination": [
+            19.5,
+            23.0
+          ],
+          "morphology": [
+            22.0,
+            50.0,
+            73.5,
+            118.0
+          ],
+          "spectrum": [
+            7.5,
+            10.0,
+            13.5,
+            15.5,
+            17.5,
+            20.5,
+            24.0,
+            26.5,
+            29.0,
+            34.5,
+            36.5,
+            47.0,
+            49.5,
+            52.0,
+            56.5,
+            67.0,
+            69.0,
+            73.5,
+            77.0,
+            79.0,
+            81.0,
+            84.0,
+            86.0,
+            88.0,
+            91.0,
+            93.0,
+            104.5,
+            109.5,
+            114.5,
+            117.5
+          ]
+        },
+        "same_view_timing": {
+          "coordination": {
+            "f1": 1.0,
+            "matched": 2,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 2,
+            "n_b": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "morphology": {
+            "f1": 1.0,
+            "matched": 4,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 4,
+            "n_b": 4,
+            "precision": 1.0,
+            "recall": 1.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "spectrum": {
+            "f1": 1.0,
+            "matched": 30,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 30,
+            "n_b": 30,
+            "precision": 1.0,
+            "recall": 1.0,
+            "total_abs_error_seconds": 0.0
+          }
+        },
+        "valid_windows": 234,
+        "windows": 240,
+        "windows_scored": {
+          "coordination:0.5": 232,
+          "coordination:2.0": 220,
+          "coordination:8.0": 172,
+          "morphology:0.5": 232,
+          "morphology:2.0": 220,
+          "morphology:8.0": 172,
+          "spectrum:0.5": 232,
+          "spectrum:2.0": 220,
+          "spectrum:8.0": 172
+        }
+      },
+      "polarity_reverse": {
+        "agreement": [
+          {
+            "f1": 0.3902439024390244,
+            "matched": 8,
+            "median_abs_error_seconds": 0.75,
+            "n_a": 10,
+            "n_b": 31,
+            "precision": 0.25806451612903225,
+            "recall": 0.8,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 4.5,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.4,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 10,
+            "n_b": 5,
+            "precision": 0.6,
+            "recall": 0.3,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 1.5,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.27777777777777773,
+            "matched": 5,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 31,
+            "n_b": 5,
+            "precision": 1.0,
+            "recall": 0.16129032258064516,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 1.5,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.17647058823529416,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 4,
+            "n_b": 30,
+            "precision": 0.1,
+            "recall": 0.75,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 1.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.3333333333333333,
+            "matched": 1,
+            "median_abs_error_seconds": 1.0,
+            "n_a": 4,
+            "n_b": 2,
+            "precision": 0.5,
+            "recall": 0.25,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 1.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.125,
+            "matched": 2,
+            "median_abs_error_seconds": 1.0,
+            "n_a": 30,
+            "n_b": 2,
+            "precision": 1.0,
+            "recall": 0.06666666666666667,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 2.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.3333333333333333,
+            "matched": 2,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 3,
+            "n_b": 9,
+            "precision": 0.2222222222222222,
+            "recall": 0.6666666666666666,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 3,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 9,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          }
+        ],
+        "event_counts": {
+          "coordination:0.5": {
+            "count": 5,
+            "events_per_scored_minute": 2.586206896551724,
+            "scored_center_seconds": 116.0
+          },
+          "coordination:2.0": {
+            "count": 2,
+            "events_per_scored_minute": 1.090909090909091,
+            "scored_center_seconds": 110.0
+          },
+          "coordination:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 86.0
+          },
+          "morphology:0.5": {
+            "count": 10,
+            "events_per_scored_minute": 5.172413793103448,
+            "scored_center_seconds": 116.0
+          },
+          "morphology:2.0": {
+            "count": 4,
+            "events_per_scored_minute": 2.181818181818182,
+            "scored_center_seconds": 110.0
+          },
+          "morphology:8.0": {
+            "count": 3,
+            "events_per_scored_minute": 2.0930232558139537,
+            "scored_center_seconds": 86.0
+          },
+          "spectrum:0.5": {
+            "count": 31,
+            "events_per_scored_minute": 16.03448275862069,
+            "scored_center_seconds": 116.0
+          },
+          "spectrum:2.0": {
+            "count": 30,
+            "events_per_scored_minute": 16.363636363636363,
+            "scored_center_seconds": 110.0
+          },
+          "spectrum:8.0": {
+            "count": 9,
+            "events_per_scored_minute": 6.27906976744186,
+            "scored_center_seconds": 86.0
+          }
+        },
+        "paired_support": {
+          "original": {
+            "agreement": [
+              {
+                "f1": 0.3902439024390244,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 31,
+                "precision": 0.25806451612903225,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 5,
+                "precision": 0.6,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.27777777777777773,
+                "matched": 5,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 31,
+                "n_b": 5,
+                "precision": 1.0,
+                "recall": 0.16129032258064516,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.17647058823529416,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 4,
+                "n_b": 30,
+                "precision": 0.1,
+                "recall": 0.75,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 4,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.25,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.125,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 30,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.06666666666666667,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 9,
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 9,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 5,
+                "events_per_scored_minute": 2.586206896551724,
+                "scored_center_seconds": 116.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.090909090909091,
+                "scored_center_seconds": 110.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.172413793103448,
+                "scored_center_seconds": 116.0
+              },
+              "morphology:2.0": {
+                "count": 4,
+                "events_per_scored_minute": 2.181818181818182,
+                "scored_center_seconds": 110.0
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.0930232558139537,
+                "scored_center_seconds": 86.0
+              },
+              "spectrum:0.5": {
+                "count": 31,
+                "events_per_scored_minute": 16.03448275862069,
+                "scored_center_seconds": 116.0
+              },
+              "spectrum:2.0": {
+                "count": 30,
+                "events_per_scored_minute": 16.363636363636363,
+                "scored_center_seconds": 110.0
+              },
+              "spectrum:8.0": {
+                "count": 9,
+                "events_per_scored_minute": 6.27906976744186,
+                "scored_center_seconds": 86.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                50.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                7.5,
+                10.0,
+                13.5,
+                15.5,
+                17.5,
+                20.5,
+                24.0,
+                26.5,
+                29.0,
+                34.5,
+                36.5,
+                47.0,
+                49.5,
+                52.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                79.0,
+                81.0,
+                84.0,
+                86.0,
+                88.0,
+                91.0,
+                93.0,
+                104.5,
+                109.5,
+                114.5,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 232,
+              "coordination:2.0": 220,
+              "coordination:8.0": 172,
+              "morphology:0.5": 232,
+              "morphology:2.0": 220,
+              "morphology:8.0": 172,
+              "spectrum:0.5": 232,
+              "spectrum:2.0": 220,
+              "spectrum:8.0": 172
+            }
+          },
+          "valid_windows": 234,
+          "variant": {
+            "agreement": [
+              {
+                "f1": 0.3902439024390244,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 31,
+                "precision": 0.25806451612903225,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 5,
+                "precision": 0.6,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.27777777777777773,
+                "matched": 5,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 31,
+                "n_b": 5,
+                "precision": 1.0,
+                "recall": 0.16129032258064516,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.17647058823529416,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 4,
+                "n_b": 30,
+                "precision": 0.1,
+                "recall": 0.75,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 4,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.25,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.125,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 30,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.06666666666666667,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 9,
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 9,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 5,
+                "events_per_scored_minute": 2.586206896551724,
+                "scored_center_seconds": 116.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.090909090909091,
+                "scored_center_seconds": 110.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.172413793103448,
+                "scored_center_seconds": 116.0
+              },
+              "morphology:2.0": {
+                "count": 4,
+                "events_per_scored_minute": 2.181818181818182,
+                "scored_center_seconds": 110.0
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.0930232558139537,
+                "scored_center_seconds": 86.0
+              },
+              "spectrum:0.5": {
+                "count": 31,
+                "events_per_scored_minute": 16.03448275862069,
+                "scored_center_seconds": 116.0
+              },
+              "spectrum:2.0": {
+                "count": 30,
+                "events_per_scored_minute": 16.363636363636363,
+                "scored_center_seconds": 110.0
+              },
+              "spectrum:8.0": {
+                "count": 9,
+                "events_per_scored_minute": 6.27906976744186,
+                "scored_center_seconds": 86.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                50.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                7.5,
+                10.0,
+                13.5,
+                15.5,
+                17.5,
+                20.5,
+                24.0,
+                26.5,
+                29.0,
+                34.5,
+                36.5,
+                47.0,
+                49.5,
+                52.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                79.0,
+                81.0,
+                84.0,
+                86.0,
+                88.0,
+                91.0,
+                93.0,
+                104.5,
+                109.5,
+                114.5,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 232,
+              "coordination:2.0": 220,
+              "coordination:8.0": 172,
+              "morphology:0.5": 232,
+              "morphology:2.0": 220,
+              "morphology:8.0": 172,
+              "spectrum:0.5": 232,
+              "spectrum:2.0": 220,
+              "spectrum:8.0": 172
+            }
+          }
+        },
+        "primary_event_times": {
+          "coordination": [
+            19.5,
+            23.0
+          ],
+          "morphology": [
+            22.0,
+            50.0,
+            73.5,
+            118.0
+          ],
+          "spectrum": [
+            7.5,
+            10.0,
+            13.5,
+            15.5,
+            17.5,
+            20.5,
+            24.0,
+            26.5,
+            29.0,
+            34.5,
+            36.5,
+            47.0,
+            49.5,
+            52.0,
+            56.5,
+            67.0,
+            69.0,
+            73.5,
+            77.0,
+            79.0,
+            81.0,
+            84.0,
+            86.0,
+            88.0,
+            91.0,
+            93.0,
+            104.5,
+            109.5,
+            114.5,
+            117.5
+          ]
+        },
+        "same_view_timing": {
+          "coordination": {
+            "f1": 1.0,
+            "matched": 2,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 2,
+            "n_b": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "morphology": {
+            "f1": 1.0,
+            "matched": 4,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 4,
+            "n_b": 4,
+            "precision": 1.0,
+            "recall": 1.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "spectrum": {
+            "f1": 1.0,
+            "matched": 30,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 30,
+            "n_b": 30,
+            "precision": 1.0,
+            "recall": 1.0,
+            "total_abs_error_seconds": 0.0
+          }
+        },
+        "valid_windows": 234,
+        "windows": 240,
+        "windows_scored": {
+          "coordination:0.5": 232,
+          "coordination:2.0": 220,
+          "coordination:8.0": 172,
+          "morphology:0.5": 232,
+          "morphology:2.0": 220,
+          "morphology:8.0": 172,
+          "spectrum:0.5": 232,
+          "spectrum:2.0": 220,
+          "spectrum:8.0": 172
+        }
+      },
+      "shared_phase": {
+        "agreement": [
+          {
+            "f1": 0.3157894736842105,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 3,
+            "n_b": 16,
+            "precision": 0.1875,
+            "recall": 1.0,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 2.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 3,
+            "n_b": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.1111111111111111,
+            "matched": 1,
+            "median_abs_error_seconds": 1.0,
+            "n_a": 16,
+            "n_b": 2,
+            "precision": 0.5,
+            "recall": 0.0625,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 1.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 3,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 1.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 0,
+            "n_b": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          }
+        ],
+        "event_counts": {
+          "coordination:0.5": {
+            "count": 2,
+            "events_per_scored_minute": 1.090909090909091,
+            "scored_center_seconds": 110.0
+          },
+          "coordination:2.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 83.0
+          },
+          "coordination:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 23.0
+          },
+          "morphology:0.5": {
+            "count": 3,
+            "events_per_scored_minute": 1.6363636363636365,
+            "scored_center_seconds": 110.0
+          },
+          "morphology:2.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 83.0
+          },
+          "morphology:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 23.0
+          },
+          "spectrum:0.5": {
+            "count": 16,
+            "events_per_scored_minute": 8.727272727272728,
+            "scored_center_seconds": 110.0
+          },
+          "spectrum:2.0": {
+            "count": 3,
+            "events_per_scored_minute": 2.1686746987951806,
+            "scored_center_seconds": 83.0
+          },
+          "spectrum:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 23.0
+          }
+        },
+        "paired_support": {
+          "original": {
+            "agreement": [
+              {
+                "f1": 0.4102564102564103,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 29,
+                "precision": 0.27586206896551724,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 5,
+                "precision": 0.6,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.29411764705882354,
+                "matched": 5,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 29,
+                "n_b": 5,
+                "precision": 1.0,
+                "recall": 0.1724137931034483,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.15384615384615383,
+                "matched": 2,
+                "median_abs_error_seconds": 0.25,
+                "n_a": 3,
+                "n_b": 23,
+                "precision": 0.08695652173913043,
+                "recall": 0.6666666666666666,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 3,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.3333333333333333,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.16,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 23,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.08695652173913043,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 5,
+                "events_per_scored_minute": 2.8169014084507045,
+                "scored_center_seconds": 106.5
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.518987341772152,
+                "scored_center_seconds": 79.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 23.0
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.633802816901409,
+                "scored_center_seconds": 106.5
+              },
+              "morphology:2.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.278481012658228,
+                "scored_center_seconds": 79.0
+              },
+              "morphology:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 23.0
+              },
+              "spectrum:0.5": {
+                "count": 29,
+                "events_per_scored_minute": 16.338028169014084,
+                "scored_center_seconds": 106.5
+              },
+              "spectrum:2.0": {
+                "count": 23,
+                "events_per_scored_minute": 17.468354430379748,
+                "scored_center_seconds": 79.0
+              },
+              "spectrum:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 7.826086956521738,
+                "scored_center_seconds": 23.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                7.5,
+                10.0,
+                13.5,
+                15.5,
+                17.5,
+                20.5,
+                24.0,
+                29.0,
+                33.5,
+                38.0,
+                47.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                84.0,
+                86.0,
+                88.0,
+                93.0,
+                104.5,
+                111.0,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 213,
+              "coordination:2.0": 158,
+              "coordination:8.0": 46,
+              "morphology:0.5": 213,
+              "morphology:2.0": 158,
+              "morphology:8.0": 46,
+              "spectrum:0.5": 213,
+              "spectrum:2.0": 158,
+              "spectrum:8.0": 46
+            }
+          },
+          "valid_windows": 223,
+          "variant": {
+            "agreement": [
+              {
+                "f1": 0.3157894736842105,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 3,
+                "n_b": 16,
+                "precision": 0.1875,
+                "recall": 1.0,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.1111111111111111,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 16,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.0625,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 1.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 0,
+                "n_b": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 2,
+                "events_per_scored_minute": 1.1267605633802817,
+                "scored_center_seconds": 106.5
+              },
+              "coordination:2.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 79.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 23.0
+              },
+              "morphology:0.5": {
+                "count": 3,
+                "events_per_scored_minute": 1.6901408450704227,
+                "scored_center_seconds": 106.5
+              },
+              "morphology:2.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 79.0
+              },
+              "morphology:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 23.0
+              },
+              "spectrum:0.5": {
+                "count": 16,
+                "events_per_scored_minute": 9.014084507042254,
+                "scored_center_seconds": 106.5
+              },
+              "spectrum:2.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.278481012658228,
+                "scored_center_seconds": 79.0
+              },
+              "spectrum:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 23.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [],
+              "morphology": [],
+              "spectrum": [
+                2.5,
+                77.5,
+                83.0
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 213,
+              "coordination:2.0": 158,
+              "coordination:8.0": 46,
+              "morphology:0.5": 213,
+              "morphology:2.0": 158,
+              "morphology:8.0": 46,
+              "spectrum:0.5": 213,
+              "spectrum:2.0": 158,
+              "spectrum:8.0": 46
+            }
+          }
+        },
+        "primary_event_times": {
+          "coordination": [],
+          "morphology": [],
+          "spectrum": [
+            2.5,
+            77.5,
+            83.0
+          ]
+        },
+        "same_view_timing": {
+          "coordination": {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 2,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "morphology": {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 3,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "total_abs_error_seconds": 0.0
+          },
+          "spectrum": {
+            "f1": 0.15384615384615383,
+            "matched": 2,
+            "median_abs_error_seconds": 0.75,
+            "n_a": 23,
+            "n_b": 3,
+            "precision": 0.6666666666666666,
+            "recall": 0.08695652173913043,
+            "total_abs_error_seconds": 1.5
+          }
+        },
+        "valid_windows": 229,
+        "windows": 240,
+        "windows_scored": {
+          "coordination:0.5": 220,
+          "coordination:2.0": 166,
+          "coordination:8.0": 46,
+          "morphology:0.5": 220,
+          "morphology:2.0": 166,
+          "morphology:8.0": 46,
+          "spectrum:0.5": 220,
+          "spectrum:2.0": 166,
+          "spectrum:8.0": 46
+        }
+      },
+      "time_reverse": {
+        "agreement": [
+          {
+            "f1": 0.4444444444444444,
+            "matched": 10,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 12,
+            "n_b": 33,
+            "precision": 0.30303030303030304,
+            "recall": 0.8333333333333334,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 3.5,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.4444444444444444,
+            "matched": 4,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 12,
+            "n_b": 6,
+            "precision": 0.6666666666666666,
+            "recall": 0.3333333333333333,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 2.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.3076923076923077,
+            "matched": 6,
+            "median_abs_error_seconds": 1.0,
+            "n_a": 33,
+            "n_b": 6,
+            "precision": 1.0,
+            "recall": 0.18181818181818182,
+            "scale": "0.5",
+            "segment": 0,
+            "total_abs_error_seconds": 4.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.3157894736842105,
+            "matched": 6,
+            "median_abs_error_seconds": 0.25,
+            "n_a": 7,
+            "n_b": 31,
+            "precision": 0.1935483870967742,
+            "recall": 0.8571428571428571,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 2.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.22222222222222224,
+            "matched": 1,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 7,
+            "n_b": 2,
+            "precision": 0.5,
+            "recall": 0.14285714285714285,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.12121212121212122,
+            "matched": 2,
+            "median_abs_error_seconds": 0.75,
+            "n_a": 31,
+            "n_b": 2,
+            "precision": 1.0,
+            "recall": 0.06451612903225806,
+            "scale": "2.0",
+            "segment": 0,
+            "total_abs_error_seconds": 1.5,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.4615384615384615,
+            "matched": 3,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 3,
+            "n_b": 10,
+            "precision": 0.3,
+            "recall": 1.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 1.0,
+            "view_a": "morphology",
+            "view_b": "spectrum"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 3,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "morphology",
+            "view_b": "coordination"
+          },
+          {
+            "f1": 0.0,
+            "matched": 0,
+            "median_abs_error_seconds": null,
+            "n_a": 10,
+            "n_b": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "scale": "8.0",
+            "segment": 0,
+            "total_abs_error_seconds": 0.0,
+            "view_a": "spectrum",
+            "view_b": "coordination"
+          }
+        ],
+        "event_counts": {
+          "coordination:0.5": {
+            "count": 6,
+            "events_per_scored_minute": 3.103448275862069,
+            "scored_center_seconds": 116.0
+          },
+          "coordination:2.0": {
+            "count": 2,
+            "events_per_scored_minute": 1.090909090909091,
+            "scored_center_seconds": 110.0
+          },
+          "coordination:8.0": {
+            "count": 0,
+            "events_per_scored_minute": 0.0,
+            "scored_center_seconds": 86.0
+          },
+          "morphology:0.5": {
+            "count": 12,
+            "events_per_scored_minute": 6.206896551724138,
+            "scored_center_seconds": 116.0
+          },
+          "morphology:2.0": {
+            "count": 7,
+            "events_per_scored_minute": 3.8181818181818183,
+            "scored_center_seconds": 110.0
+          },
+          "morphology:8.0": {
+            "count": 3,
+            "events_per_scored_minute": 2.0930232558139537,
+            "scored_center_seconds": 86.0
+          },
+          "spectrum:0.5": {
+            "count": 33,
+            "events_per_scored_minute": 17.06896551724138,
+            "scored_center_seconds": 116.0
+          },
+          "spectrum:2.0": {
+            "count": 31,
+            "events_per_scored_minute": 16.90909090909091,
+            "scored_center_seconds": 110.0
+          },
+          "spectrum:8.0": {
+            "count": 10,
+            "events_per_scored_minute": 6.976744186046512,
+            "scored_center_seconds": 86.0
+          }
+        },
+        "paired_reflected_timing": {
+          "coordination": {
+            "f1": 0.5,
+            "matched": 1,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 2,
+            "n_b": 2,
+            "precision": 0.5,
+            "recall": 0.5,
+            "total_abs_error_seconds": 0.0
+          },
+          "morphology": {
+            "f1": 0.5454545454545454,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 4,
+            "n_b": 7,
+            "precision": 0.42857142857142855,
+            "recall": 0.75,
+            "total_abs_error_seconds": 1.0
+          },
+          "spectrum": {
+            "f1": 0.9180327868852459,
+            "matched": 28,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 30,
+            "n_b": 31,
+            "precision": 0.9032258064516129,
+            "recall": 0.9333333333333333,
+            "total_abs_error_seconds": 0.5
+          }
+        },
+        "paired_support": {
+          "original": {
+            "agreement": [
+              {
+                "f1": 0.3902439024390244,
+                "matched": 8,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 10,
+                "n_b": 31,
+                "precision": 0.25806451612903225,
+                "recall": 0.8,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 10,
+                "n_b": 5,
+                "precision": 0.6,
+                "recall": 0.3,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.27777777777777773,
+                "matched": 5,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 31,
+                "n_b": 5,
+                "precision": 1.0,
+                "recall": 0.16129032258064516,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.17647058823529416,
+                "matched": 3,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 4,
+                "n_b": 30,
+                "precision": 0.1,
+                "recall": 0.75,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 1,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 4,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.25,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.125,
+                "matched": 2,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 30,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.06666666666666667,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3333333333333333,
+                "matched": 2,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 9,
+                "precision": 0.2222222222222222,
+                "recall": 0.6666666666666666,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 9,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 5,
+                "events_per_scored_minute": 2.586206896551724,
+                "scored_center_seconds": 116.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.090909090909091,
+                "scored_center_seconds": 110.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "morphology:0.5": {
+                "count": 10,
+                "events_per_scored_minute": 5.172413793103448,
+                "scored_center_seconds": 116.0
+              },
+              "morphology:2.0": {
+                "count": 4,
+                "events_per_scored_minute": 2.181818181818182,
+                "scored_center_seconds": 110.0
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.0930232558139537,
+                "scored_center_seconds": 86.0
+              },
+              "spectrum:0.5": {
+                "count": 31,
+                "events_per_scored_minute": 16.03448275862069,
+                "scored_center_seconds": 116.0
+              },
+              "spectrum:2.0": {
+                "count": 30,
+                "events_per_scored_minute": 16.363636363636363,
+                "scored_center_seconds": 110.0
+              },
+              "spectrum:8.0": {
+                "count": 9,
+                "events_per_scored_minute": 6.27906976744186,
+                "scored_center_seconds": 86.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                19.5,
+                23.0
+              ],
+              "morphology": [
+                22.0,
+                50.0,
+                73.5,
+                118.0
+              ],
+              "spectrum": [
+                7.5,
+                10.0,
+                13.5,
+                15.5,
+                17.5,
+                20.5,
+                24.0,
+                26.5,
+                29.0,
+                34.5,
+                36.5,
+                47.0,
+                49.5,
+                52.0,
+                56.5,
+                67.0,
+                69.0,
+                73.5,
+                77.0,
+                79.0,
+                81.0,
+                84.0,
+                86.0,
+                88.0,
+                91.0,
+                93.0,
+                104.5,
+                109.5,
+                114.5,
+                117.5
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 232,
+              "coordination:2.0": 220,
+              "coordination:8.0": 172,
+              "morphology:0.5": 232,
+              "morphology:2.0": 220,
+              "morphology:8.0": 172,
+              "spectrum:0.5": 232,
+              "spectrum:2.0": 220,
+              "spectrum:8.0": 172
+            }
+          },
+          "valid_windows": 234,
+          "variant": {
+            "agreement": [
+              {
+                "f1": 0.4444444444444444,
+                "matched": 10,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 12,
+                "n_b": 33,
+                "precision": 0.30303030303030304,
+                "recall": 0.8333333333333334,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 3.5,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.4444444444444444,
+                "matched": 4,
+                "median_abs_error_seconds": 0.5,
+                "n_a": 12,
+                "n_b": 6,
+                "precision": 0.6666666666666666,
+                "recall": 0.3333333333333333,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3076923076923077,
+                "matched": 6,
+                "median_abs_error_seconds": 1.0,
+                "n_a": 33,
+                "n_b": 6,
+                "precision": 1.0,
+                "recall": 0.18181818181818182,
+                "scale": "0.5",
+                "segment": 0,
+                "total_abs_error_seconds": 4.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.3157894736842105,
+                "matched": 6,
+                "median_abs_error_seconds": 0.25,
+                "n_a": 7,
+                "n_b": 31,
+                "precision": 0.1935483870967742,
+                "recall": 0.8571428571428571,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 2.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.22222222222222224,
+                "matched": 1,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 7,
+                "n_b": 2,
+                "precision": 0.5,
+                "recall": 0.14285714285714285,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.12121212121212122,
+                "matched": 2,
+                "median_abs_error_seconds": 0.75,
+                "n_a": 31,
+                "n_b": 2,
+                "precision": 1.0,
+                "recall": 0.06451612903225806,
+                "scale": "2.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.5,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.4615384615384615,
+                "matched": 3,
+                "median_abs_error_seconds": 0.0,
+                "n_a": 3,
+                "n_b": 10,
+                "precision": 0.3,
+                "recall": 1.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 1.0,
+                "view_a": "morphology",
+                "view_b": "spectrum"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 3,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "morphology",
+                "view_b": "coordination"
+              },
+              {
+                "f1": 0.0,
+                "matched": 0,
+                "median_abs_error_seconds": null,
+                "n_a": 10,
+                "n_b": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "scale": "8.0",
+                "segment": 0,
+                "total_abs_error_seconds": 0.0,
+                "view_a": "spectrum",
+                "view_b": "coordination"
+              }
+            ],
+            "event_counts": {
+              "coordination:0.5": {
+                "count": 6,
+                "events_per_scored_minute": 3.103448275862069,
+                "scored_center_seconds": 116.0
+              },
+              "coordination:2.0": {
+                "count": 2,
+                "events_per_scored_minute": 1.090909090909091,
+                "scored_center_seconds": 110.0
+              },
+              "coordination:8.0": {
+                "count": 0,
+                "events_per_scored_minute": 0.0,
+                "scored_center_seconds": 86.0
+              },
+              "morphology:0.5": {
+                "count": 12,
+                "events_per_scored_minute": 6.206896551724138,
+                "scored_center_seconds": 116.0
+              },
+              "morphology:2.0": {
+                "count": 7,
+                "events_per_scored_minute": 3.8181818181818183,
+                "scored_center_seconds": 110.0
+              },
+              "morphology:8.0": {
+                "count": 3,
+                "events_per_scored_minute": 2.0930232558139537,
+                "scored_center_seconds": 86.0
+              },
+              "spectrum:0.5": {
+                "count": 33,
+                "events_per_scored_minute": 17.06896551724138,
+                "scored_center_seconds": 116.0
+              },
+              "spectrum:2.0": {
+                "count": 31,
+                "events_per_scored_minute": 16.90909090909091,
+                "scored_center_seconds": 110.0
+              },
+              "spectrum:8.0": {
+                "count": 10,
+                "events_per_scored_minute": 6.976744186046512,
+                "scored_center_seconds": 86.0
+              }
+            },
+            "primary_event_times": {
+              "coordination": [
+                49.0,
+                101.0
+              ],
+              "morphology": [
+                47.0,
+                71.0,
+                73.5,
+                96.0,
+                99.0,
+                101.0,
+                105.5
+              ],
+              "spectrum": [
+                3.0,
+                6.0,
+                11.0,
+                16.0,
+                18.0,
+                27.5,
+                29.5,
+                32.5,
+                34.5,
+                36.5,
+                41.5,
+                43.5,
+                47.0,
+                49.5,
+                51.5,
+                53.5,
+                64.0,
+                68.5,
+                71.0,
+                73.5,
+                83.5,
+                86.0,
+                89.5,
+                91.5,
+                94.0,
+                96.5,
+                100.0,
+                105.0,
+                107.0,
+                110.5,
+                113.0
+              ]
+            },
+            "windows_scored": {
+              "coordination:0.5": 232,
+              "coordination:2.0": 220,
+              "coordination:8.0": 172,
+              "morphology:0.5": 232,
+              "morphology:2.0": 220,
+              "morphology:8.0": 172,
+              "spectrum:0.5": 232,
+              "spectrum:2.0": 220,
+              "spectrum:8.0": 172
+            }
+          }
+        },
+        "primary_event_times": {
+          "coordination": [
+            49.0,
+            101.0
+          ],
+          "morphology": [
+            47.0,
+            71.0,
+            73.5,
+            96.0,
+            99.0,
+            101.0,
+            105.5
+          ],
+          "spectrum": [
+            3.0,
+            6.0,
+            11.0,
+            16.0,
+            18.0,
+            27.5,
+            29.5,
+            32.5,
+            34.5,
+            36.5,
+            41.5,
+            43.5,
+            47.0,
+            49.5,
+            51.5,
+            53.5,
+            64.0,
+            68.5,
+            71.0,
+            73.5,
+            83.5,
+            86.0,
+            89.5,
+            91.5,
+            94.0,
+            96.5,
+            100.0,
+            105.0,
+            107.0,
+            110.5,
+            113.0
+          ]
+        },
+        "reflected_timing": {
+          "coordination": {
+            "f1": 0.5,
+            "matched": 1,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 2,
+            "n_b": 2,
+            "precision": 0.5,
+            "recall": 0.5,
+            "total_abs_error_seconds": 0.0
+          },
+          "morphology": {
+            "f1": 0.5454545454545454,
+            "matched": 3,
+            "median_abs_error_seconds": 0.5,
+            "n_a": 4,
+            "n_b": 7,
+            "precision": 0.42857142857142855,
+            "recall": 0.75,
+            "total_abs_error_seconds": 1.0
+          },
+          "spectrum": {
+            "f1": 0.9180327868852459,
+            "matched": 28,
+            "median_abs_error_seconds": 0.0,
+            "n_a": 30,
+            "n_b": 31,
+            "precision": 0.9032258064516129,
+            "recall": 0.9333333333333333,
+            "total_abs_error_seconds": 0.5
+          }
+        },
+        "reflection_note": "Reverse centers use the reflected original window grid. Reflect boundary labels as duration-time+hop because a boundary is labeled by its post-change window center. Paired results use reflected common validity; the unpaired result is retained separately.",
+        "valid_windows": 234,
+        "windows": 240,
+        "windows_scored": {
+          "coordination:0.5": 232,
+          "coordination:2.0": 220,
+          "coordination:8.0": 172,
+          "morphology:0.5": 232,
+          "morphology:2.0": 220,
+          "morphology:8.0": 172,
+          "spectrum:0.5": 232,
+          "spectrum:2.0": 220,
+          "spectrum:8.0": 172
+        }
+      }
+    }
+  }
+}

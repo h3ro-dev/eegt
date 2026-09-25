@@ -1,0 +1,12 @@
+{
+  "schema": "eegt-device-availability/v1",
+  "date": "2026-09-25",
+  "research_kit_access": "UNCONFIRMED",
+  "physical_capture_verified": false,
+  "physical_recordings_ingested": 0,
+  "documented_raw_interface": "Research Kit raw export or supported stream, subject to actual device documentation",
+  "consumer_summary_is_raw_eeg": false,
+  "protocol": "protocol/neurable-pilot.md",
+  "next_required_evidence": "An actual raw export or supported stream with channel order, reference, units, timestamps and gain documentation.",
+  "scope": "Availability is unconfirmed, not a claim that James owns no compatible device. No physical capture or consented cohort is represented by this record."
+}

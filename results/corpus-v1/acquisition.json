@@ -1,0 +1,888 @@
+{
+  "completed": true,
+  "files": [
+    {
+      "bytes": 193893120,
+      "dataset": "ds004015",
+      "path": "sub-001/eeg/sub-001_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "ad5a3328b6c55efbb3221625",
+      "sha256": "b4418f80d5d18ffe5f91aeff8113e9e82ab0efa4440da40a390284993207703a",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 10856976,
+      "dataset": "ds004015",
+      "path": "sub-001/eeg/sub-001_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "ad5a3328b6c55efbb3221625",
+      "sha256": "d885d6b3d61ce56f2b1bf9bdf920ef623c9e731a649fb3e3372e0100bf6d39d6",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 126891216,
+      "dataset": "ds004015",
+      "path": "sub-002/eeg/sub-002_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "b74b68bebcda493a4db8952a",
+      "sha256": "41b702afbf68a76f73fa6aa71cfd1becfdcb4222dbe88acdeec1105981c618c6",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 7134344,
+      "dataset": "ds004015",
+      "path": "sub-002/eeg/sub-002_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "b74b68bebcda493a4db8952a",
+      "sha256": "4cb15dbad493bf5683e849b56dfa9273976cca649e9e4c2f7f8bf80dff2cf5f3",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 198753264,
+      "dataset": "ds004015",
+      "path": "sub-003/eeg/sub-003_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "dbfa5c04a8c224a2658cb240",
+      "sha256": "afc23c18a09166f63b183569e4195d5dbad0b49b49da155726eb8dbf8b33de23",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 11134464,
+      "dataset": "ds004015",
+      "path": "sub-003/eeg/sub-003_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "dbfa5c04a8c224a2658cb240",
+      "sha256": "b95a5f286c009ebfb1710bf54503b156e3b0fa3fad0bd9de5d3c0afd983dd61b",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 194623128,
+      "dataset": "ds004015",
+      "path": "sub-004/eeg/sub-004_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "2219351196d1be6920339bc0",
+      "sha256": "b7eb6527c323308eb19ef144bb4caffd1b52ec018f3b4b9378902dddbd1a9d79",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 10896768,
+      "dataset": "ds004015",
+      "path": "sub-004/eeg/sub-004_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "2219351196d1be6920339bc0",
+      "sha256": "e87e2554badf3de86ffe7fe5e354154a513451031eb3b93630fa2e7278d9d97b",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 101892312,
+      "dataset": "ds004015",
+      "path": "sub-005/eeg/sub-005_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "3326ea898725be8674a28286",
+      "sha256": "63b5e45135bc021226da47d2008cf755102b4813b73f63f9c4fffcc7db58b72a",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 5748432,
+      "dataset": "ds004015",
+      "path": "sub-005/eeg/sub-005_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "3326ea898725be8674a28286",
+      "sha256": "1ddea469bc4f864fc4bb6377b084525103ca3a0c7da270d64f3cb5d3cfbe2c3e",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 101413944,
+      "dataset": "ds004015",
+      "path": "sub-006/eeg/sub-006_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "5587fd9f02629818e2d96390",
+      "sha256": "a5a6b13ef2478b6c4e363bd7db463d4909294e5a4ba0ec3093d3a86318823e39",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 5720976,
+      "dataset": "ds004015",
+      "path": "sub-006/eeg/sub-006_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "5587fd9f02629818e2d96390",
+      "sha256": "8b15600cfcf51f2335736d3745e06782e3c88d457508c50e6d44dec991299de3",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 180134280,
+      "dataset": "ds004015",
+      "path": "sub-007/eeg/sub-007_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "361058659c8702ad20e20527",
+      "sha256": "c851425555dde1ccb7147b61ef58ef745293db1b759583e37f5b7e8f346db359",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 10091704,
+      "dataset": "ds004015",
+      "path": "sub-007/eeg/sub-007_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "361058659c8702ad20e20527",
+      "sha256": "815b3823dd68889e64a2ae1744e25a98d4a8f0a5eea9b541aa71583fa34abdf6",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 203634360,
+      "dataset": "ds004015",
+      "path": "sub-008/eeg/sub-008_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "96dd2209487bed2c3a4a2dd4",
+      "sha256": "b976738aa499816b691396c282eee0b7e5ce2c47dc136a16a0237fca8646e8bd",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 11401968,
+      "dataset": "ds004015",
+      "path": "sub-008/eeg/sub-008_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "96dd2209487bed2c3a4a2dd4",
+      "sha256": "17589addde23ef0b58879d21f59cb160e76d2e2ce2beb8e98b55475f4d8ff6ee",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 186717096,
+      "dataset": "ds004015",
+      "path": "sub-009/eeg/sub-009_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "80ec5c9af848d14204affac8",
+      "sha256": "faab81642b4f3aeed8d01d1d67d70d6909c90b5342dcd354275b416ca1c62544",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 10461816,
+      "dataset": "ds004015",
+      "path": "sub-009/eeg/sub-009_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "80ec5c9af848d14204affac8",
+      "sha256": "4d2e3cd55280f7a421e54c84954e1cee56e772f33028948c283d2673f848d099",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 222828696,
+      "dataset": "ds004015",
+      "path": "sub-010/eeg/sub-010_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "be1e68e53464fe21c9ea8f6d",
+      "sha256": "28ae96b26160263ab7da515a422489fe61f0fd5d5c420821a161baa1803d71a9",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 12469088,
+      "dataset": "ds004015",
+      "path": "sub-010/eeg/sub-010_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "be1e68e53464fe21c9ea8f6d",
+      "sha256": "4a6d99795a18c575a20c61af11f023e094509c53266f15dc9796f1062b922a0f",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 207445680,
+      "dataset": "ds004015",
+      "path": "sub-011/eeg/sub-011_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "9bbf4329af49afd4b214695e",
+      "sha256": "09ea0278cd6858e87beb8d0e0016a06a8b0913270556690128279bfc4b24fdde",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 11609864,
+      "dataset": "ds004015",
+      "path": "sub-011/eeg/sub-011_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "9bbf4329af49afd4b214695e",
+      "sha256": "16058a64c1185004501fa82b245b5cc9d5a1b0535ed665b0b670a77cedcd584c",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 215605152,
+      "dataset": "ds004015",
+      "path": "sub-012/eeg/sub-012_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "c1781083d1b9641c0b2b894c",
+      "sha256": "5f93e52fa62a528bb28b06fb167aec09179e87e12b35bdc3a946f485a90dd24d",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 12067792,
+      "dataset": "ds004015",
+      "path": "sub-012/eeg/sub-012_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "c1781083d1b9641c0b2b894c",
+      "sha256": "08583358f7f06ec7f782278df0a3d7e92d849f2344eaf5a73767d9446602e171",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 162342216,
+      "dataset": "ds004015",
+      "path": "sub-013/eeg/sub-013_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "813fc44239acd4d32bea113f",
+      "sha256": "13cfc147088b02884274b91cd5892c1ed415c4d36e3006d7a60f49dc27939120",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9109272,
+      "dataset": "ds004015",
+      "path": "sub-013/eeg/sub-013_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "813fc44239acd4d32bea113f",
+      "sha256": "45d34b247432e53924950409286ccf566698f23b79d797f5e88dda066204ad75",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 202142376,
+      "dataset": "ds004015",
+      "path": "sub-014/eeg/sub-014_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "71db1e918bf200fc43ed8f82",
+      "sha256": "246e11515297ff33a95a6a4b91d848f0f4997bfbdfd48f9739837a528b31bdd4",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 11320744,
+      "dataset": "ds004015",
+      "path": "sub-014/eeg/sub-014_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "71db1e918bf200fc43ed8f82",
+      "sha256": "8e18398312185979e46fbc16526541458c5a5844249ecbe5092ba2bd86531478",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 250559712,
+      "dataset": "ds004015",
+      "path": "sub-015/eeg/sub-015_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "987a91bce590ac8566c7a209",
+      "sha256": "9ca0e5e047c17efc0f9b05436361f5ef098cedb3d1db96a810a3256bfaeaa8a3",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 14004224,
+      "dataset": "ds004015",
+      "path": "sub-015/eeg/sub-015_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "987a91bce590ac8566c7a209",
+      "sha256": "88bbdc125f9953fa26065ddd78a3b4acb16e6da83c96725a32b6588ce9abd9d5",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 153587376,
+      "dataset": "ds004015",
+      "path": "sub-016/eeg/sub-016_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "1e75564b510efbab5250645f",
+      "sha256": "3e027af586046e185379dc25b56d9fc1f713b0bb838bdfc09669b8938d34b3dc",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8633928,
+      "dataset": "ds004015",
+      "path": "sub-016/eeg/sub-016_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "1e75564b510efbab5250645f",
+      "sha256": "8c4dc533bdf9915961a29c3c81fb22c3ec8fd6a6be3daf665d2e3e009f6e8f32",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 159128424,
+      "dataset": "ds004015",
+      "path": "sub-017/eeg/sub-017_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "241f1a0efee9b97ef2e8312a",
+      "sha256": "2b73d93b63fd0516ed34c06ea15369417a2c58d72eb63100255a44e9f9b40265",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8940992,
+      "dataset": "ds004015",
+      "path": "sub-017/eeg/sub-017_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "241f1a0efee9b97ef2e8312a",
+      "sha256": "6fdb8c8bfc5ff4531af8bfc27819ab325ee7c5586669c7f0f38a1ae4849edcb1",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 159978744,
+      "dataset": "ds004015",
+      "path": "sub-018/eeg/sub-018_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "01c0e5a982669a40ef39a2da",
+      "sha256": "d1fa6307ef3f70626dc521a1284f7bc0bab3c9dc998a448ee3dad0d4c4c853d9",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8989144,
+      "dataset": "ds004015",
+      "path": "sub-018/eeg/sub-018_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "01c0e5a982669a40ef39a2da",
+      "sha256": "118bb2b6431d1cf7269d3d7fdbd6c4499fcc9ae9206e410624cb9e37b78b6a60",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 161487720,
+      "dataset": "ds004015",
+      "path": "sub-019/eeg/sub-019_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "419fca2fb009345729cc774f",
+      "sha256": "db2c060ceb2da494e86a9d105414ae9edb2f9fae68c96c0abacc4b7b58ea3225",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9073568,
+      "dataset": "ds004015",
+      "path": "sub-019/eeg/sub-019_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "419fca2fb009345729cc774f",
+      "sha256": "153afc628dace0961d31a6e4f30016d0fa8d9b58e8707b31aeee731a685fd790",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 159549696,
+      "dataset": "ds004015",
+      "path": "sub-020/eeg/sub-020_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "47f6976731f4a41af0e298cf",
+      "sha256": "87cf734b27d4e4cc7569e444d9c35a77cef0172424914e6fcb5fd923c754dcc8",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8964224,
+      "dataset": "ds004015",
+      "path": "sub-020/eeg/sub-020_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "47f6976731f4a41af0e298cf",
+      "sha256": "058e59056df5d3b028d058f702ab2a6f04ba1c0ffcb901681d42f35e3d92901d",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 158228496,
+      "dataset": "ds004015",
+      "path": "sub-021/eeg/sub-021_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "3d16f5d9d56d443bf0ee739c",
+      "sha256": "3d528842167c8b1c7d240ded2ad9af928e78e1ba7289327d485c55c4bb92fb73",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8892936,
+      "dataset": "ds004015",
+      "path": "sub-021/eeg/sub-021_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "3d16f5d9d56d443bf0ee739c",
+      "sha256": "e701f6c8d408bd26c7fc2a7b6902ea9860f4d5f3fb859819d73ed8dc945bdea0",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 160196976,
+      "dataset": "ds004015",
+      "path": "sub-022/eeg/sub-022_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "f8fa9847c1c8378bf40090e7",
+      "sha256": "152950f1325e50029ed8b2f643c30ec670591440584eb6652ce7e84e272e0b3c",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9001736,
+      "dataset": "ds004015",
+      "path": "sub-022/eeg/sub-022_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "f8fa9847c1c8378bf40090e7",
+      "sha256": "1101b70ea39742741620b3653d7bbf69867bf07bb2fb3ccb1419ceb0f0a45f87",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 165232728,
+      "dataset": "ds004015",
+      "path": "sub-023/eeg/sub-023_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "d370dbd08c9368b7aba96fd4",
+      "sha256": "9d258640f3ab36e380aa5e43769bc4738c80d0c4f0fcba139dc11cace6a656d5",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9283520,
+      "dataset": "ds004015",
+      "path": "sub-023/eeg/sub-023_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "d370dbd08c9368b7aba96fd4",
+      "sha256": "5ee15376c2f1e2a835b0a3d13eed34a19a4c51782aa103453c724ee8d0d33013",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 158822568,
+      "dataset": "ds004015",
+      "path": "sub-024/eeg/sub-024_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "dd7a7ce86ae2e4cc9f5c6695",
+      "sha256": "9850f5886d8351063f2565e111bc97c8902566f041142132cbd0dd4e980fb339",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8926144,
+      "dataset": "ds004015",
+      "path": "sub-024/eeg/sub-024_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "dd7a7ce86ae2e4cc9f5c6695",
+      "sha256": "3004daa72b110dfb4219effd9a58977118cfc561a02fa4f1ff399ddc17453003",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 154537200,
+      "dataset": "ds004015",
+      "path": "sub-025/eeg/sub-025_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "b14de6aa3005cda869a7dac2",
+      "sha256": "15acd61570aa179e6f01da1fefa6290b4f81428f469a39dd771a43feaabe6f14",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8685016,
+      "dataset": "ds004015",
+      "path": "sub-025/eeg/sub-025_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "b14de6aa3005cda869a7dac2",
+      "sha256": "d0048cab7f5eb86dc1b56c1e8e6171b79461adfa7dd7a144ef6da9484d5bfb31",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 167068944,
+      "dataset": "ds004015",
+      "path": "sub-026/eeg/sub-026_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "306a881a6e49424da743316b",
+      "sha256": "be673b645e807ef59fdc95852bfd2cea0852e967bdd886f70409fcd346aa903a",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9382864,
+      "dataset": "ds004015",
+      "path": "sub-026/eeg/sub-026_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "306a881a6e49424da743316b",
+      "sha256": "5f8de87837438b1896e485c21528fb9bb2100bb77f64869965ade84d63bf94c6",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 173439648,
+      "dataset": "ds004015",
+      "path": "sub-027/eeg/sub-027_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "d38fd501d069612f1e3c216c",
+      "sha256": "3ed0eafb7311157b3bccd9d26848c8a8e8689a4f2be2f88a58caa32c38667b5c",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9734448,
+      "dataset": "ds004015",
+      "path": "sub-027/eeg/sub-027_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "d38fd501d069612f1e3c216c",
+      "sha256": "5079e65f200624b1918273203f52b7a3ee6bb51ececc82d17fefdb08bab19fad",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 161383896,
+      "dataset": "ds004015",
+      "path": "sub-028/eeg/sub-028_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "28dcd586e1e3ea2aaf2e1e15",
+      "sha256": "f19317f738c4ba9e918e8a51a5dbdc008dba81b212e6ada8907d1db0b9c65da6",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9072432,
+      "dataset": "ds004015",
+      "path": "sub-028/eeg/sub-028_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "28dcd586e1e3ea2aaf2e1e15",
+      "sha256": "238fe1277ee014ac30f7d5d3fb8333b5a7d914f3e9949c5aa82ff97a074153e6",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 156916512,
+      "dataset": "ds004015",
+      "path": "sub-029/eeg/sub-029_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "32bda0c52065b7bf709b3039",
+      "sha256": "ddfc6769b0db8cf14fffb4abd886e93648d6f2d993c08cc9c007313577a54077",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8819352,
+      "dataset": "ds004015",
+      "path": "sub-029/eeg/sub-029_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "32bda0c52065b7bf709b3039",
+      "sha256": "74836cad4c46ee8ed2316f2d8f4a5798dd05bbe39035d378f9e6d3b96675fa40",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 161064792,
+      "dataset": "ds004015",
+      "path": "sub-030/eeg/sub-030_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "24ed84bce3c17a6934b8cf46",
+      "sha256": "c87946c85114b22359e804b24ee09902278d93242534b6352f39d286452ece11",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9047432,
+      "dataset": "ds004015",
+      "path": "sub-030/eeg/sub-030_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "24ed84bce3c17a6934b8cf46",
+      "sha256": "9fdc3ec8eb0f30774d24d0ddd167d4a49f9493d7aeea58fd4a5417ad5b9ec65b",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 161221968,
+      "dataset": "ds004015",
+      "path": "sub-031/eeg/sub-031_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "6288c5df99166b6b5d676bbd",
+      "sha256": "cacad2aa9b993e750ea3a2a39d5fcab817708e4dcff284983ff2deb0d1d6d719",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9064536,
+      "dataset": "ds004015",
+      "path": "sub-031/eeg/sub-031_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "6288c5df99166b6b5d676bbd",
+      "sha256": "e0163640307e0d07caab85510956813e8372144b116703aea8129aba6fd51c35",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 159803568,
+      "dataset": "ds004015",
+      "path": "sub-032/eeg/sub-032_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "bacddb4739a20ec7769d2c61",
+      "sha256": "5f02023749dce7dbcd21d6339c0a35d412bae5ccea5e99ce42517867843d200b",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8977176,
+      "dataset": "ds004015",
+      "path": "sub-032/eeg/sub-032_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "bacddb4739a20ec7769d2c61",
+      "sha256": "6c9f2a60e834b8e8e3b66799ad75910fcf9ebbe7b3ce2e2bcfa98f8e1a10db04",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 162661608,
+      "dataset": "ds004015",
+      "path": "sub-033/eeg/sub-033_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "8db5bebfca952d2824051b0e",
+      "sha256": "1b7898ae79bcff77c63c8fc716b8ad29bb72317f41bc4834aa34864a33cb8cac",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9143896,
+      "dataset": "ds004015",
+      "path": "sub-033/eeg/sub-033_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "8db5bebfca952d2824051b0e",
+      "sha256": "e8ad9394327591eff1834602b76587b63fe38dae8d87ac86367feebe1526ec9c",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 168110352,
+      "dataset": "ds004015",
+      "path": "sub-034/eeg/sub-034_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "a4ee1f60731803275830d50f",
+      "sha256": "2760110b98787b4a33ed98739ba5a8cf794316efacfc863f8ebcbaca859d0ef5",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 9442024,
+      "dataset": "ds004015",
+      "path": "sub-034/eeg/sub-034_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "a4ee1f60731803275830d50f",
+      "sha256": "93816df7e1e813ae593d61ef69e76d39ae0bb767f2375d7a17d703a21becc0fa",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 158646168,
+      "dataset": "ds004015",
+      "path": "sub-035/eeg/sub-035_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "4bd007ba65c9e5932ca3e165",
+      "sha256": "af0b2d84459ee722193a97d7cba64cfdc9cb585a7008a9e690b67bb33cf80780",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8916288,
+      "dataset": "ds004015",
+      "path": "sub-035/eeg/sub-035_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "4bd007ba65c9e5932ca3e165",
+      "sha256": "3001c41b30a65c390f2595421ccccef97c8a241cc14d41576b941f71db0ce708",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 158805360,
+      "dataset": "ds004015",
+      "path": "sub-036/eeg/sub-036_task-AttendedSpeakerParadigmcEEGridAttention_eeg.fdt",
+      "recording_id": "e9394f83b05ae9a5dcceb9cd",
+      "sha256": "6d385d71221aa5a7ea57ad939539b6b4439d9f2a5f95057a6730c61f410a200b",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 8922864,
+      "dataset": "ds004015",
+      "path": "sub-036/eeg/sub-036_task-AttendedSpeakerParadigmcEEGridAttention_eeg.set",
+      "recording_id": "e9394f83b05ae9a5dcceb9cd",
+      "sha256": "3cf7cc211eaf49ea344005dc70eae7d5d3d945183f3a026ed60622932e83754e",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 925848000,
+      "dataset": "ds005207",
+      "path": "sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "6cf1efff79eb1002775afb83",
+      "sha256": "44fa55ffdfec8191d1b6562c530ab0e5bee1d3264ecd62e768032f0480191b3f",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 44102080,
+      "dataset": "ds005207",
+      "path": "sub-001/ses-001/eeg/sub-001_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "6cf1efff79eb1002775afb83",
+      "sha256": "fdbbcbc9c519a3be6044693107f230cebad32aaad774339644d5e83ad398fbdb",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 786960000,
+      "dataset": "ds005207",
+      "path": "sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "83094d85bd89374f421dfdca",
+      "sha256": "95abb439a9b2808dffc08e9df75fb59a9356f439430ada199bd05060a68e7a7b",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 43733336,
+      "dataset": "ds005207",
+      "path": "sub-003/ses-001/eeg/sub-003_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "83094d85bd89374f421dfdca",
+      "sha256": "012a43d156d3d373fd42c5671f92a76c400f8022f9e3dd0c3cb7736870caeeff",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 877060000,
+      "dataset": "ds005207",
+      "path": "sub-004/ses-001/eeg/sub-004_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "218a3073e690fd445c9ff785",
+      "sha256": "464f98031ff95f3e866e09ca2dee41b3fcfbc9e9fb4e2caf5ba84e6f7563812a",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 43866832,
+      "dataset": "ds005207",
+      "path": "sub-004/ses-001/eeg/sub-004_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "218a3073e690fd445c9ff785",
+      "sha256": "3a538f0f6bb47bb6fe4810352233bfca20bdeb7cdd213f5e125d5ced0843b132",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 916458000,
+      "dataset": "ds005207",
+      "path": "sub-006/ses-001/eeg/sub-006_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "0d196f92f0b378394cd760e6",
+      "sha256": "f61c06e46a36a3ea0e18295edf714ecdd2cf2dfb3a901742ff542a08b44b891a",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 39860568,
+      "dataset": "ds005207",
+      "path": "sub-006/ses-001/eeg/sub-006_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "0d196f92f0b378394cd760e6",
+      "sha256": "01b6ae3c0796eca8cf43fdcec5f7eacf916a954d2bc9b70f49cac189d9cb0b04",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 849020000,
+      "dataset": "ds005207",
+      "path": "sub-007/ses-001/eeg/sub-007_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "2e81fd22516c2019aad9def1",
+      "sha256": "47517e7cf0f3e163ed1fbd0b612de1a891d6300e9f0f688961f88553385f5fe3",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 42464824,
+      "dataset": "ds005207",
+      "path": "sub-007/ses-001/eeg/sub-007_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "2e81fd22516c2019aad9def1",
+      "sha256": "3b86be202ced376cc39b2d97debddfdceea00af06ad327ab3b9b5ebf3c1f3f38",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 399861000,
+      "dataset": "ds005207",
+      "path": "sub-008/ses-001/eeg/sub-008_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "3866b7eef005d3b1e4ca4919",
+      "sha256": "011d73e1d5e24cda31984b73d0b2dfec1a099c19012d90f2629f1969697dd26a",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 19055080,
+      "dataset": "ds005207",
+      "path": "sub-008/ses-001/eeg/sub-008_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "3866b7eef005d3b1e4ca4919",
+      "sha256": "95ae87d471bd17ad8720ed87731388d21f64d785c2e895e9af4796d804cf2162",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 206478000,
+      "dataset": "ds005207",
+      "path": "sub-009/ses-001/eeg/sub-009_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "2fd267fdbb112601cdfd31e9",
+      "sha256": "6db158e3bc2b1911c9be5532af580a0cff2f71a34f404eb4691b465f1d6b4fc4",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 11484336,
+      "dataset": "ds005207",
+      "path": "sub-009/ses-001/eeg/sub-009_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "2fd267fdbb112601cdfd31e9",
+      "sha256": "2760d65b4087ba5840c58f60d4b1ec466855c25148d7abc20b8a025507a8b444",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 875380000,
+      "dataset": "ds005207",
+      "path": "sub-010/ses-001/eeg/sub-010_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "6b0fcc063642efabe9a42974",
+      "sha256": "7b6a32011f850bee7fbc1b0191315b9b86ba3aa3dcaf46f91090be56a0a56555",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 43782824,
+      "dataset": "ds005207",
+      "path": "sub-010/ses-001/eeg/sub-010_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "6b0fcc063642efabe9a42974",
+      "sha256": "3c4b0dbe7cb41905576f79e77ba9d484705a40c87608e882e99d88fe3ca1cec2",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 971688000,
+      "dataset": "ds005207",
+      "path": "sub-011/ses-001/eeg/sub-011_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "a3063e75f57c58fd4887848f",
+      "sha256": "1c704efc9320039dcc0c363e9ce57a1ffc39f0fa70be5595f70e5aa72caeff47",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 40501816,
+      "dataset": "ds005207",
+      "path": "sub-011/ses-001/eeg/sub-011_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "a3063e75f57c58fd4887848f",
+      "sha256": "603b8f45beec156cc20d4212709d52cf5512cf88ee7c920d722461ab01baa71e",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 374832000,
+      "dataset": "ds005207",
+      "path": "sub-013/ses-001/eeg/sub-013_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "1b5acf2e3d881f8d845c5c3d",
+      "sha256": "fad88909e94e9d61580f82a365521172d964f80becc58a190c0904414a9a3efd",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 15632816,
+      "dataset": "ds005207",
+      "path": "sub-013/ses-001/eeg/sub-013_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "1b5acf2e3d881f8d845c5c3d",
+      "sha256": "b36be0519001d820e6b630479423639b57c697052fca465986585b707c91523f",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 910120000,
+      "dataset": "ds005207",
+      "path": "sub-014/ses-001/eeg/sub-014_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "b2d963340624e2c88af9a4e7",
+      "sha256": "82f28aaf9da1acf36736c142bfa5840de78b693b79a9e585649321bef3d29429",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 45519832,
+      "dataset": "ds005207",
+      "path": "sub-014/ses-001/eeg/sub-014_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "b2d963340624e2c88af9a4e7",
+      "sha256": "be7c6709cf61f7e755eb87443d821c45363f2163ad54d972a711b387bb623a26",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 873320000,
+      "dataset": "ds005207",
+      "path": "sub-015/ses-001/eeg/sub-015_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "db100e5f83c5cf0ca5f68595",
+      "sha256": "44f72d8a3f55a50c8c4ab347f3b38a261ae320bc3ca08b1ab7c32c152a4e27e6",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 43679832,
+      "dataset": "ds005207",
+      "path": "sub-015/ses-001/eeg/sub-015_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "db100e5f83c5cf0ca5f68595",
+      "sha256": "af7d97c3d31db5f2e934a6dc3ec0db10d3a48fed46090aa9ebba1a4cfe32f87a",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 993715000,
+      "dataset": "ds005207",
+      "path": "sub-019/ses-001/eeg/sub-019_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "e5f08ecd96f130639329ad9e",
+      "sha256": "dbe795fbf9a8d44ac24d84da5128def637350b78d11027b3f8c5545b4a816178",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 43219576,
+      "dataset": "ds005207",
+      "path": "sub-019/ses-001/eeg/sub-019_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "e5f08ecd96f130639329ad9e",
+      "sha256": "831d5d9ee493f37a617e8b1abcf4fbd235be8c4092a18ad1dcfc2315a32edd04",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 777600000,
+      "dataset": "ds005207",
+      "path": "sub-024/ses-001/eeg/sub-024_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "38c82dce09dfa2382923466d",
+      "sha256": "dc3b0172b04caaef74cd6fa90011370b51c535d965226ab4d7979f8fe5c4c7e1",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 43213312,
+      "dataset": "ds005207",
+      "path": "sub-024/ses-001/eeg/sub-024_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "38c82dce09dfa2382923466d",
+      "sha256": "34d9e063dd6f65d50f977550f4fc17262fc818578badba4cc592012dfcb03299",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 814272000,
+      "dataset": "ds005207",
+      "path": "sub-025/ses-001/eeg/sub-025_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "cfe528de4fb205fdfafcf49f",
+      "sha256": "3294678650aec41e7df36558a81fb5db4fa7ad6689949ee464f1883f263873e7",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 33942816,
+      "dataset": "ds005207",
+      "path": "sub-025/ses-001/eeg/sub-025_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "cfe528de4fb205fdfafcf49f",
+      "sha256": "5a1b4030c04a02e0ac013ee58fc7a65bfa2e9c25e8d5c9cf9b16fab664ba0746",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 910706664,
+      "dataset": "ds005207",
+      "path": "sub-026/ses-001/eeg/sub-026_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "7a11c4433d6f9324bcc1083e",
+      "sha256": "08efd205c206b787e0b1947e7360a9813a6030f91913db043753e78d3d9a5a0c",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 43381056,
+      "dataset": "ds005207",
+      "path": "sub-026/ses-001/eeg/sub-026_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "7a11c4433d6f9324bcc1083e",
+      "sha256": "d01715843fd312211f714b9cec0a1dbdce5c07d5633a0a55f44f439883e7dc0e",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 92004000,
+      "dataset": "ds005207",
+      "path": "sub-027/ses-001/eeg/sub-027_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "817b1ea63f7016a9620fd513",
+      "sha256": "a77d0456d3e7475f084ba05da3fafa8f356ecc6f8cf1024fec405fa6177ed6a3",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 4196320,
+      "dataset": "ds005207",
+      "path": "sub-027/ses-001/eeg/sub-027_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "817b1ea63f7016a9620fd513",
+      "sha256": "b556266fc413bd39cf7a4779f39357d12cc9d6977ea4cd8be4e81b49bbeec739",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 791496000,
+      "dataset": "ds005207",
+      "path": "sub-028/ses-001/eeg/sub-028_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "d3f9379217af650b56498de9",
+      "sha256": "9f4cc3f57d6379da254f0303d513e8ac955e96992ca0ee3c6b792f4f4940b074",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 32993824,
+      "dataset": "ds005207",
+      "path": "sub-028/ses-001/eeg/sub-028_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "d3f9379217af650b56498de9",
+      "sha256": "b92d116317d4994d97340661feedec6e50671be7d6ea53f6235c35ecbde6fdd9",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 1037784000,
+      "dataset": "ds005207",
+      "path": "sub-029/ses-001/eeg/sub-029_ses-001_task-sleep_acq-cEEGrid_eeg.fdt",
+      "recording_id": "3f6d6bc992797e60bf3e7b29",
+      "sha256": "b8bd9dcf259db1df98d8805ae97bba712319ff32801bf83e15d68cf5bcd4a4ef",
+      "status": "VERIFIED"
+    },
+    {
+      "bytes": 43255816,
+      "dataset": "ds005207",
+      "path": "sub-029/ses-001/eeg/sub-029_ses-001_task-sleep_acq-cEEGrid_eeg.set",
+      "recording_id": "3f6d6bc992797e60bf3e7b29",
+      "sha256": "ad35723c1a722cac4163f3367c268ab2a31f2981f5cf68d60cef001e9fc4187c",
+      "status": "VERIFIED"
+    }
+  ],
+  "manifest_sha256": "a6dac5e85c6fe080f8665aa6223d45074b3880581c80701aff8bbfd32bc8d904",
+  "schema": "eegt-corpus-acquisition/v1",
+  "verified_bytes": 21535181808
+}

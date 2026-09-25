@@ -1,0 +1,127 @@
+{
+  "bead": "eco-uzwh8s.19",
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONWARNINGS=error PYTHONPATH=source3 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 out/.final-venv/bin/python -m unittest discover -s source3/tests -q",
+      "name": "locked_unit_tests",
+      "result": "PASS: 44 tests, zero failures"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONWARNINGS=error OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 out/.final-venv/bin/python out/.final-audit-copy/scripts/audit_growth.py",
+      "name": "isolated_growth_audit",
+      "output_sha256": "17e289452462fd71ab8cd65104b93fd130aabd7115673f8248349cadf4bd399f",
+      "result": "PASS: 2,412 checks; isolated output byte-identical to source3/results/007/audit.json"
+    },
+    {
+      "name": "independent_sql_array_reconciliation",
+      "result": "PASS: 55 catalog records; 54 qualified/analyzed; 110 VERIFIED catalog rows; 223.4705655556 decoded sample-hours; all 54 NPZ hashes and 90 exact native segment grids; 1,608,671 windows; 1,077,399 valid; 502,573 SQL events; 176,485 primary event geometries; all event scores/geometry counts/medians and 810 agreements"
+    },
+    {
+      "name": "model_refit",
+      "result": "PASS: all three reference vectors and nine thresholds bit-exact from 24 training records"
+    },
+    {
+      "name": "controls",
+      "result": "PASS: 55 row hashes and summary bindings; 324 variants; 1,134 stored timing-match rows recomputed including reversal reflection; paired rate denominators and all five cohorts"
+    },
+    {
+      "name": "aggregation_and_publication",
+      "result": "PASS: 375 median/bootstrap fields, 36 note rows and all 19 rows in four site tables exact; site JSON equals 007 summary groups/controls"
+    },
+    {
+      "name": "coordinate_repair",
+      "result": "PASS: final native grids unique; receipt binds 12 removed duplicates across 11 records; original intermediate feature arrays unavailable for independent old/new value comparison"
+    },
+    {
+      "name": "post_review_snapshot_hash",
+      "result": "PASS: 234 manifest files still match, no extras"
+    }
+  ],
+  "cost": "UNKNOWN",
+  "decision": "ACCEPTED",
+  "environment": {
+    "difference": "prior reviewer used Python 3.12.14; parent interpreter version unavailable",
+    "matplotlib": "3.11.2",
+    "mne": "1.13.2",
+    "numpy": "2.5.3",
+    "python": "3.13.15",
+    "requirements_lock_match": true,
+    "scipy": "1.18.1"
+  },
+  "interpretation_warnings": [
+    "External rate comparison remains confounded by dataset/acquisition/QC differences; prior-unexposed external valid fraction 618537/1092838 versus train 230452/232332.",
+    "Independent-phase external shape/spectrum control F1 has only 2 contributing records of 16; phase tests are descriptive.",
+    "Geometry is view-specific training-scaled RMS space; no universal or semantic inference from agreement."
+  ],
+  "native_route": {
+    "model": "gpt-6-sol",
+    "effort": "max",
+    "source": "latest native rollout turn_context"
+  },
+  "native_session": "01a0d8a6-c76e-7640-9aad-59df1e87d579",
+  "new_material_findings": [],
+  "omitted_boundaries": [
+    "raw 21.535 GB byte rehash and raw-to-MNE calibration rerun",
+    "old-versus-new retained-array comparison without old feature NPZs",
+    "biological truth and clinical accuracy",
+    "pretrained LLM comparison",
+    "physical Neurable capture",
+    "remote publication and native URL readback",
+    "GitHub Actions CI (disabled at organization level)"
+  ],
+  "original_findings": {
+    "H1": "PASS_FINAL",
+    "H2": "PASS_FINAL",
+    "M3": "PASS_FINAL",
+    "M4": "PASS_FINAL",
+    "M5": "PASS_FINAL",
+    "M6": "PASS_FINAL"
+  },
+  "parent_native_task": "01a0d46f-1d63-72f3-95d0-692535ad6615",
+  "recheck_finding_N1": "PASS_FINAL",
+  "report_path": "notes/validation-003.md",
+  "report_sha256": "b2de89eabb6470cc722c877c8c99442021a36d7149fdec513bf06cdb998062d5",
+  "reviewed_result_sha256": {
+    "notes/experiment-003.md": "bcfe169a6e709c5984219abad1a6fc88e678941cb025db40c1637a60cadd2e9b",
+    "notes/experiment-006.md": "a6d22a317835751a474f0175a975a4a11fbb6c9da82e9dd8c47725c37af94eaa",
+    "notes/experiment-007.md": "b95522f69b4d676458cc5e415bdde0049baf870de3d16fcc510509b86bcf1240",
+    "results/003/analysis.sqlite": "eda5f557862e29600f333d056399cc582c24cd1f124079561d0226733f64310d",
+    "results/003/coordinate-repair-equivalence.json": "8ead3548a9fb1911a5a58cb3ab4b91a667225affcbf6899df904c117f782706f",
+    "results/003/features.json": "48635788222bbae0e67e2f8cd2b7801047feb1a9cad6fb849d0f966e1f560dd3",
+    "results/003/model.json": "c37fcb23e99e217ee0405504cab12723563a0717834643c949aa3116864f5879",
+    "results/003/summary.json": "1a867fe7a431f1d114271bcc46efa339ed8a22461d4575f992e93a25c23fe87d",
+    "results/006/row-receipt.json": "bdc4b29d274302fd8e7a3bff8333c8e9b10043f2de052becb096365e0e870c84",
+    "results/006/summary.json": "37b95a3d488b18391f9e885b81bb1bad9a0947676c8a6b65b0eb6cc86437eab3",
+    "results/007/audit.json": "17e289452462fd71ab8cd65104b93fd130aabd7115673f8248349cadf4bd399f",
+    "results/007/summary.json": "69317f811a5a5018586e807046e713df354fd67803c108ec90aea426258fd154",
+    "results/corpus-v1/calibration.json": "4e7b37c6315001a011b210d5eab0b6f5a5bf052495345bd3c707bfea66433cd1",
+    "results/corpus-v1/corpus.sqlite": "8977f92f2bab42ecfcedfd0d4204621e7e4ff74c2fffdb7d467cf612acba950c",
+    "site/data/growth.json": "9794ccaae85f9944ca66c78160140352705a30dd08af9cc0730e37cc4a1631ec",
+    "site/growth.html": "cf9bc3d59e32dd1b88a014d0252be3c07cbde17a062fd4c5adee1fa2e569ec93"
+  },
+  "reviewed_source_sha256": {
+    "eegt/calibrate.py": "3dbb7835713c3a479b69adb600e7bd05907a7fcd4c259091f02df7b484da13f2",
+    "eegt/controls.py": "d58375540276c1571184c97270b503518a4ff59cdfdefaf32b547291fcc8c4c1",
+    "eegt/corpus.py": "e8be0e5d853af6d0d57a55bbbb8c704cca5e1feea35e4944db3ee477e525a640",
+    "eegt/growth.py": "3b3689c9679856ec6ce7e43517868dc6db5d5869d951300fd0a5fe119be18350",
+    "eegt/transitions.py": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d",
+    "protocol/amendment-003.md": "27374d34796b273d1b32dc85884507d7b33c6974155ae269e2a95afc71e1cfab",
+    "protocol/experiment-003.json": "1a0da132216c4da31dd78345950db95439ada3d543788664b42f6f5c0f0939a0",
+    "protocol/neurable-pilot.md": "1b0738a737f987f1b774f8206d287e7f5bf706c10bd6aae97bf952cd3cc22380",
+    "requirements.lock": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6",
+    "scripts/audit_growth.py": "64b7af17839abe40a6367ee38baab56affa8576afdca2c8fa791bf9a15ea2d3c",
+    "scripts/report_growth.py": "2402389cf7fac47f1f630ccfab023bd1fe39e83c356b833acb91b13300d9ef60",
+    "tests/test_growth.py": "e9643a671d39501b71f7b546e4e782b35fb0a427d845d1ac531bb955e112fe4d",
+    "tests/test_transitions.py": "118a9f3de5e3eb5cc38a5f52a07c3a9ff28f96f6483a184b386f994cf4b3ab82"
+  },
+  "schema": "eegt-final-independent-review-receipt/v1",
+  "scope": "bounded software and numerical source3 release; parent owns integration/publication",
+  "source3_bytes_verified": 763619902,
+  "source3_entries_verified": 234,
+  "source3_manifest_sha256": "22f642702c17535e12b6f2b4f21a2878ef918300244854c5f2610e84d481047e",
+  "source3_missing_extra_or_mismatched": 0,
+  "source3_unchanged_after_checks": true,
+  "original_report_sha256": "f00d1b491e76b2b551836694126edcf78e31c7684fa5ec0132f388e60b2dcd0a",
+  "original_receipt_sha256": "a000575bb83f8d596b03094209a968473a8687d0cfbeb21d1dac0bd2e36d8ca2",
+  "publication_note": "Public copy omits native filesystem paths; report links are adapted. Original artifacts remain in the private work packet. Release and live URL verification are recorded separately by the integrator."
+}

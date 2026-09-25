@@ -1,0 +1,12 @@
+{
+  "status": "IDENTICAL_NUMERIC_FEATURE_FILES",
+  "recordings": 54,
+  "all_feature_sha256_equal": true,
+  "source_records_in_each_receipt": [
+    55,
+    55
+  ],
+  "scope": "Same-platform extraction before and after pre-fit integrity gate corrections; not independent biological replication.",
+  "old_growth_code_sha256": "0cc86f669ec262bf7a7095d1cf6db3d0c6c1b76592767f417a7658c1af894537",
+  "new_growth_code_sha256": "77527a24103f748dd89826c516451f440b0113a4b3222f5df467d58d752a6010"
+}

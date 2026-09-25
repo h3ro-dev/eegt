@@ -9,3 +9,5 @@ dist/
 site/.jev-work.json
 site/BUILD-BRIEF.md
 site/LANE-REPORT.md
+results/**/*.sqlite
+results/**/*.partial

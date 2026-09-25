@@ -1,0 +1,22 @@
+{
+  "schema": "eegt-transition-protocol/v1",
+  "experiment": "003",
+  "question": "Do anonymous numerical representations agree on repeatable changes in around-ear EEG, beyond phase-randomized controls, and does frozen detection transfer to unused source participants and a different dataset?",
+  "freeze_stage": "After technical source inventory; before expanded waveform feature extraction. Eight source participants were explored in Experiments 001/002 and are explicitly flagged in the corpus protocol.",
+  "input": "All qualified recordings in corpus-manifest-v1.json. Numeric discovery functions receive samples in microvolts, sample rate and validity only. Dataset/participant/session/channel names and task labels stay in the curator/evaluation layer.",
+  "chunk_seconds": 600,
+  "halo_seconds": 12,
+  "window_seconds": 2,
+  "hop_seconds": 0.5,
+  "continuity": "Split at every logged boundary and remove BAD intervals. Never join context across gaps. Drop feature windows outside a native continuous interval. Feature timestamps remain in native recording seconds.",
+  "channel_selection": "EEG channels only; exclude channels explicitly marked bad in source technical metadata. Retain unknown status with disclosure. Require at least two channels.",
+  "views": ["morphology", "spectrum", "coordination"],
+  "interpretation": "These are distinct numerical representations, not independently pretrained LLMs reading raw EEG. None is assumption-free. A representation-level change is not a proven mental or clinical state change.",
+  "fit": {"source_split": "train", "maximum_feature_rows_per_recording": 1000, "sampling": "Evenly spaced eligible rows, equal maximum contribution per recording", "reference": "Coordinatewise training median and robust scale", "threshold_quantile": 0.95, "seed": 17},
+  "boundary": {"scales_seconds": [0.5, 2.0, 8.0], "minimum_separation_seconds": 2.0, "match_tolerance_seconds": 1.0, "primary_scale_seconds": 2.0},
+  "geometry": ["pre_post_distance", "path_length", "mean_speed", "turning_angle_radians", "return_distance"],
+  "controls": {"maximum_seconds_per_recording": 120, "selection": "First continuous interval at least 144 seconds; use 12-second halos around a 120-second central interval. Selection uses continuity and length only, not observed signal values.", "seed": 17, "variants": ["original", "independent_phase", "shared_phase", "gain_1.1", "polarity_reverse", "time_reverse"], "rules": "Same original segments and frozen reference/thresholds. Publish validity and exposure for each variant. Independent phase preserves per-channel Fourier magnitudes; shared phase additionally preserves cross-spectra. Surrogates change temporal localization, so their event counts alone are not a biological null proof."},
+  "aggregation": "Participant-recording is the statistical unit, not an overlapping window. Publish each record; aggregate medians with participant bootstrap intervals (1000 replicates, seed 17) only where at least two records exist. Both datasets currently have one record per source participant.",
+  "evaluation": "Internal test and external results are descriptive frozen evaluations; external prior-exposed and prior-unexposed records reported separately. No clinical accuracy, token semantics, universal geometry or cross-device equivalence claim follows from agreement alone.",
+  "failure_policy": "Preserve every source record in the coverage table, with failed/quarantined or insufficient-context reasons. Do not tune to external observations. Corrections that alter a result require a new recorded run and public correction note."
+}
