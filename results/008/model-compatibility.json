@@ -1,0 +1,152 @@
+{
+  "schema": "eco-uzwh8s.21/model-audit/v1",
+  "verified_at": "2026-09-25T15:18:52Z",
+  "scope": "Official CodeBrain and author-linked REVE releases only; source and metadata inspection; no checkpoint download, training, or inference",
+  "saved_source_evidence_bytes": 106831,
+  "checkpoint_bytes_downloaded": 0,
+  "sources": {
+    "codebrain": {
+      "paper": "https://arxiv.org/html/2506.09110v4",
+      "repository": "https://github.com/jingyingma01/CodeBrain",
+      "repository_commit": "22d350caf68246d2fda4f630ef837420db3fb130",
+      "weights_repository": "https://huggingface.co/YjMajy/CodeBrain",
+      "weights_commit": "bef08d2fdb1759685371cc635aad21ce59163689",
+      "official_link": "https://github.com/jingyingma01/CodeBrain/blob/22d350caf68246d2fda4f630ef837420db3fb130/Checkpoints/README.md"
+    },
+    "reve": {
+      "paper": "https://arxiv.org/html/2510.21585v1",
+      "authors_project": "https://brain-bzh.github.io/reve/",
+      "repository": "https://github.com/elouayas/reve_eeg",
+      "repository_commit": "06a7059a07c3dabd80aee60c3dbc1eca4bdbe1c7",
+      "base_weights": "https://huggingface.co/brain-bzh/reve-base",
+      "base_weights_commit": "dc2a075c287bb2f6c04ee5875bd79535a0f7dba6",
+      "large_weights": "https://huggingface.co/brain-bzh/reve-large",
+      "large_weights_commit": "317531c7b8e6d9777191598de8a8b816764dca07",
+      "positions": "https://huggingface.co/brain-bzh/reve-positions",
+      "positions_commit": "befa5b57a455b77cf302daf610c2e9ed8140bace",
+      "open_pretraining_subset_card": "https://huggingface.co/datasets/brain-bzh/reve-dataset/blob/main/README.md"
+    }
+  },
+  "models": [
+    {
+      "name": "CodeBrain",
+      "official": true,
+      "code_license": "Apache-2.0 in official GitHub LICENSE",
+      "weight_license": "Apache-2.0 declared in official Hugging Face model card metadata; no separate weight LICENSE file indexed",
+      "available_weights": [
+        {
+          "file": "CodeBrain_Tokenizer.pth",
+          "role": "TFDual tokenizer",
+          "size_bytes": 112295818,
+          "lfs_sha256": "e9560b670d64ea4712fd99a48dc2131326b919744c7d3eb504cf57b1ef3af999"
+        },
+        {
+          "file": "CodeBrain.pth",
+          "role": "EEGSSM pretrained encoder",
+          "size_bytes": 60901006,
+          "lfs_sha256": "d9714b8732c9883a04d022ee66254cd578ae1fa27f5458e6ab7f1aa96e9a7352"
+        }
+      ],
+      "release_status": "Both actual checkpoint files are indexed at the repository linked by the authors; no GitHub Releases assets were indexed. Neither checkpoint was downloaded or loaded.",
+      "waveform_contract": {
+        "sampling_hz": 200,
+        "training_window_seconds": 30,
+        "training_window_samples": 6000,
+        "patch_samples": 200,
+        "input_shape": "[batch, channels, 30 patches, 200 samples] for the published pretraining configuration",
+        "pretraining_channels": 19,
+        "training_preprocessing": "TUH/TUEG: selected 19 10-20 channels, 0.3-75 Hz bandpass, 60 Hz notch, reject absolute amplitude >100 microvolts, divide microvolt values by 100",
+        "input_units": "Pretraining code divides input arrays by 100; paper states the preprocessed values were in microvolts. Other incoming units require explicit conversion before this scale is reproduced.",
+        "channel_assumptions": "Paper calls stage-1 tokenizer channel agnostic; released tokenizer NeuralTransformer indexes learned positional embeddings by input_chans. Stage-2 PatchEmbedding has a (19,7) convolution over channel-order/time axes; no electrode names or coordinates are accepted. A supplied channel order is computationally sufficient but its learned spatial meaning for cEEGrid/ear montages is unvalidated.",
+        "output_interface": "Tokenizer get_tokens returns token_t and token_f discrete index arrays plus quantize_t and quantize_f embeddings; pretrained SSSM with if_codebook=false returns a channel x patch x 200 feature tensor, subject to code's squeeze(). No frozen task or semantic output head is supplied for these ear inputs.",
+        "sources": [
+          "https://arxiv.org/html/2506.09110v4",
+          "https://github.com/jingyingma01/CodeBrain/blob/22d350caf68246d2fda4f630ef837420db3fb130/Models/modeling_tokenizer.py",
+          "https://github.com/jingyingma01/CodeBrain/blob/22d350caf68246d2fda4f630ef837420db3fb130/Models/modeling_finetune.py",
+          "https://github.com/jingyingma01/CodeBrain/blob/22d350caf68246d2fda4f630ef837420db3fb130/Models/SSSM.py",
+          "https://github.com/jingyingma01/CodeBrain/blob/22d350caf68246d2fda4f630ef837420db3fb130/Pretrain/Trainer.py"
+        ]
+      },
+      "pretraining_corpus": "Authors report TUEG/TUH only, 1,109,545 30-second segments/about 9,246 hours. This is not a sample-level provenance roster.",
+      "overlap_with_target_datasets": {
+        "ds004015": "UNKNOWN",
+        "ds005207": "UNKNOWN",
+        "ds005178_EESM23": "UNKNOWN",
+        "ds005185_EESM19": "UNKNOWN"
+      },
+      "compatibility": {
+        "ds005178": "Waveform conversion is specified from supplied 250 Hz microvolt data: resample to 200 Hz, use 30-second [4,30,200] segments, apply the stated scale. Backbone code does not request coordinates, but pretrained behavior on four ear channels is untested and the 19-channel spatial kernel uses input order. As-shipped source also calls .cuda() for an attention mask, preventing a direct CPU/MPS run on this Mac.",
+        "ds004015": "500-to-200 Hz conversion is possible; waveform units, reference, channel order, and learned spatial correspondence must be checked in dataset metadata. No pretrained run was performed.",
+        "ds005207": "250-to-200 Hz conversion is possible; waveform units, reference, 12-18 channel order, and learned spatial correspondence must be checked. No pretrained run was performed.",
+        "executable_on_actual_inputs_without_invented_metadata": "CONDITIONAL_BACKBONE_ONLY: ds005178 supplies enough waveform units and channel order for a code-level SSSM feature smoke on a CUDA host after deterministic preprocessing. No coordinates need be fabricated. The full released tokenizer path has unresolved input_chans positional mapping; the released CUDA call blocks direct CPU/MPS execution here. Scientific transfer and checkpoint load are UNVERIFIED."
+      }
+    },
+    {
+      "name": "REVE",
+      "official": true,
+      "code_license": "MIT in official GitHub LICENSE",
+      "weight_license": "REVE Responsible Use License v1.0 (effective 2026-09-14) on current official Hugging Face base and large repositories; not MIT. Model metadata reports gated=false, but license conditions still apply.",
+      "available_weights": [
+        {
+          "file": "brain-bzh/reve-base/model.safetensors",
+          "size_bytes": 276773456,
+          "lfs_sha256": "8ecc650619598748286c2457f81f5c6bd12e8bb59db44f7b02af1955c44de8fe",
+          "embedding_dim": 512
+        },
+        {
+          "file": "brain-bzh/reve-large/model.safetensors",
+          "size_bytes": 1559929248,
+          "lfs_sha256": "f519428404aab27f7db816722c7fb8c73d08daf10986c9c21b0066be9e93bb31",
+          "embedding_dim": 1216
+        },
+        {
+          "file": "brain-bzh/reve-positions/model.safetensors",
+          "size_bytes": 6628,
+          "lfs_sha256": "4b793820b9df0998667deb6c8ce2dbb86b38221d5165c1844bc4971941b13f13",
+          "role": "Position lookup bank, not EEG encoder weights"
+        }
+      ],
+      "release_status": "Official author page links the code and weight collection; actual model.safetensors objects are indexed in official model repositories. No checkpoint was downloaded or loaded.",
+      "waveform_contract": {
+        "sampling_hz": 200,
+        "training_window_seconds": 10,
+        "training_window_samples": 2000,
+        "inference_minimum_samples_from_code": 200,
+        "patch_samples": 200,
+        "patch_overlap_samples": 20,
+        "input_shape": "EEG [batch, channels, time_samples], positions [batch, channels, 3]",
+        "input_units": "HF inference card does not prescribe a physical voltage unit or scaling. Official pretraining loader subtracts stored per-recording/channel mean, divides by stored standard deviation, and clips normalized values to [-15,15]. Exact normalization to apply for new recordings is not specified by the HF inference example.",
+        "channel_assumptions": "The encoder requires numerical 3D electrode positions aligned one-to-one with channel order. The official position bank maps exact known names and silently drops names absent from its map; its 543-name config contains none of RB, RT, LB, LT. User-supplied cEEGrid contact coordinates are unknown.",
+        "output_interface": "HF Reve.forward(eeg,pos) returns patch embeddings [batch, channels, patches, embed_dim]; attention_pooling can reduce these to [batch, embed_dim]. It does not directly output an ear EEG task label.",
+        "sources": [
+          "https://brain-bzh.github.io/reve/",
+          "https://github.com/elouayas/reve_eeg/blob/06a7059a07c3dabd80aee60c3dbc1eca4bdbe1c7/hf/reve-base/modeling_reve.py",
+          "https://github.com/elouayas/reve_eeg/blob/06a7059a07c3dabd80aee60c3dbc1eca4bdbe1c7/hf/reve-positions/position_bank.py",
+          "https://github.com/elouayas/reve_eeg/blob/06a7059a07c3dabd80aee60c3dbc1eca4bdbe1c7/src/utils/data_loading.py",
+          "https://github.com/elouayas/reve_eeg/blob/06a7059a07c3dabd80aee60c3dbc1eca4bdbe1c7/src/configs/preprocessing/default.yaml"
+        ]
+      },
+      "pretraining_corpus": "Authors report 92 datasets including 56 OpenNeuro datasets, but do not provide a complete sample-level manifest here. The released open subset README lists many OpenNeuro IDs but none of the four target IDs; it describes only about half the pretraining volume.",
+      "overlap_with_target_datasets": {
+        "ds004015": "UNKNOWN",
+        "ds005207": "UNKNOWN",
+        "ds005178_EESM23": "UNKNOWN",
+        "ds005185_EESM19": "UNKNOWN"
+      },
+      "compatibility": {
+        "ds005178": "NOT_EXECUTABLE_WITH_KNOWN_METADATA: sample rate can be resampled 250-to-200 Hz, but RB/RT/LB/LT have no exact position-bank entries and their absolute 3D contact coordinates are unknown. Supplying placeholder positions would invent metadata.",
+        "ds004015": "UNVERIFIED: resample 500-to-200 Hz; confirm exact channel names against position bank or obtain measured contact coordinates, plus input normalization.",
+        "ds005207": "UNVERIFIED: resample 250-to-200 Hz; confirm each montage's exact channel names against position bank or obtain measured contact coordinates, plus input normalization.",
+        "executable_on_actual_inputs_without_invented_metadata": "NO for the known ds005178 four-channel export. For ds004015/ds005207, position mapping is unverified, so a faithful run cannot yet be asserted."
+      }
+    }
+  ],
+  "blockers": [
+    "No model checkpoints were downloaded or run under this audit's explicit hold; checkpoint load/runtime compatibility remains unverified.",
+    "No complete per-recording pretraining roster or cross-dataset duplicate audit was found; overlap is UNKNOWN for all four target OpenNeuro datasets.",
+    "REVE needs real ear-contact 3D coordinates or an exact validated position-bank mapping; RB/RT/LB/LT are absent.",
+    "CodeBrain stage-1 channel-agnostic paper description conflicts with released learned positional embedding path; stage-2 spatial kernel uses ordinal channel order and an unconditional CUDA call.",
+    "Current physical raw Neurable Research Kit capture/access is unconfirmed; consumer focus summaries and excluded private data cannot stand in for raw EEG."
+  ],
+  "recommended_next_step": "First prioritize a frozen CodeBrain EEGSSM smoke on one pinned ds005178 recording after a separately authorized checkpoint/inference task: use its supplied RB/RT/LB/LT order, anti-alias resample 250 to 200 Hz, segment 30 s into [1,4,30,200], convert known microvolts to the paper's /100 scale, load the exact 60,901,006-byte official CodeBrain.pth by LFS SHA-256 on a CUDA-capable host, and check strict state-dict load plus finite feature shape. Do not infer accuracy or semantic content from this smoke. REVE's minimum prerequisite is an authoritative measured 3D position map for those four contacts and an explicit new-recording normalization choice; only then consider a separate frozen forward test. Preserve target-dataset provenance audit before treating any future score as independent transfer."
+}

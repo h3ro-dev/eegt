@@ -1,7 +1,7 @@
-# EEGT strategy v4 · repeated sessions and independent model compatibility
+# EEGT strategy v3 · continuous corpus and transition geometry
 
 Date: 2026-09-25. Accountable lead: EEGT root. This replaces the current work
-priorities while preserving the [earlier strategy](protocol/strategy-v3.md) and
+priorities while preserving the [earlier strategy](protocol/strategy-v2.md) and
 published experiments. Code, protocols, results and research notes are public;
 physical participant collection is a separate acquisition boundary.
 
@@ -10,7 +10,7 @@ physical participant collection is a separate acquisition boundary.
 1. **Build a traceable database.** Pin every source version and byte hash; retain
    native samples, technical metadata, gaps and explicit failures. Separate the
    curator's source identity from numerical discovery. The current corpus has
-   67 acquired source recordings across three datasets; 66 qualify and one remains quarantined. Experiment008 adds six source participants with two nights each.
+   55 available source recordings; 54 qualify and one is quarantined.
 2. **Analyze the full continuous exposure.** Fit morphology, spectrum and sensor
    coordination references on the frozen training people only. Measure changes
    at 0.5-, 2- and 8-second contexts. Compare transition timing and retain event
@@ -19,7 +19,7 @@ physical participant collection is a separate acquisition boundary.
    polarity and time reversal; compare on matched validity support. Report every
    record, participant-level summaries, independent software review, a release
    audit and exact source-to-result hashes. Publish negative findings too.
-4. **Test recurrence across sessions, then physical Neurable transfer.** Experiment008 adds an open repeated-night cohort using frozen numeric descriptors. Reserve new people and later nights before further tests. Use the
+4. **Acquire repeated sessions and real Neurable waves.** Begin with the
    [engineering capture protocol](protocol/neurable-pilot.md). Verify a raw
    Research Kit export/stream, timestamps, gain and contact order before adding
    it. Then examine reseating and repeat-day stability. Target one adult over
@@ -62,7 +62,9 @@ substituted by a simulated adapter test.
 
 The current scientific constraint is participant/session/device diversity.
 More windows make the time series denser but do not create more independent
-people. The first two sources provide one recording per source participant; the third supplies a six-person, two-night first battery. Global identity overlap, broader session reliability and Neurable equivalence remain unknown. The next scientific constraint is separating recurring signal structure from stable person, reference and sensor effects. Evaluated holdouts are consumed for future new claims.
+people. The two current sources provide one recording per source participant;
+global identity overlap, repeated-session stability and Neurable equivalence
+remain unknown. Evaluated holdouts are consumed for future new claims.
 
 ## Proof and recovery
 
@@ -80,11 +82,3 @@ currently cannot run because the organization disables it; local tests and the
 separate reviewer provide their named evidence, not a fictional CI pass.
 Release through the existing public repository and verified GitHub Pages URL.
 The requested eegt.utilize.com name stays a separate DNS/TLS acceptance item.
-
-## Next execution order after Experiment008
-
-1. Use the audit to qualify one real pretrained tokenizer input contract. Preserve true ear-channel metadata; model code that requires unknown coordinates cannot be repaired by guessing scalp positions.
-2. Challenge the repeated-night result with artifact/reference sensitivity and a new frozen feature family, initially using already exposed records. Cycle and burst shape remains first.
-3. Once hypotheses and adapters are fixed, evaluate on the four untouched EESM23 participants and preserve later sessions for a separate repeat-session test. Do not examine reserved waves during method development.
-4. Admit actual Neurable data only after physical units, channel/reference order and source timing are verified. Historical device wire evidence is not automatically calibrated EEGT input.
-5. Publish each material run with its numbered note, complete denominator and correction history.

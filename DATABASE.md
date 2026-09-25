@@ -78,5 +78,15 @@ ORDER BY recording_id, view, time_seconds;
    context. Add meaning only through later blinded evaluation after discovery.
 
 The current database has no proven Neurable capture, globally unique participant
-census, repeat-session reliability estimate, clinical endpoint or universal
-token geometry. These are research questions with separate acceptance evidence.
+census, population-level repeat-session reliability estimate, clinical endpoint or universal
+token geometry. Experiment008 adds a bounded descriptive repeat-night comparison, with separate acceptance evidence.
+
+## Repeated-session extension · v0.4.0
+
+`results/corpus-v2/corpus.sqlite` indexes all three sources with 67 candidates, 66 qualified records and retained quarantine. Its `coverage` view groups source and status; source-local participant counts are not a global identity census. Earlier catalog and analysis files remain unchanged.
+
+`results/008/catalog.sqlite` holds the twelve new raw-record receipts. `results/008/analysis.sqlite` adds per-record metrics and primary-scale transition events; `data/derived/008/*.npz` retains feature rows, timestamps, validity and native segment keys. The JSON summary includes all cross-night distance cells and all exact pairing-permutation statistics. The frozen training reference is reused without refitting.
+
+Downloaded hours (86.38), selected analysis hours (48), QC windows and scored-context exposure are distinct. The dataset's other four participants remain untouched. The other nights of analyzed participants are reserved for new-session evaluation, not new-person evaluation.
+
+A **held-out person** is someone whose recordings were never used to choose or tune the method. A **held-out session** is another recording occasion, possibly from someone already represented. A **held-out device or dataset** tests another measurement setup or source. These tests answer different questions; success at one cannot stand in for the others. Grouping metadata stays in the evaluator, while discovery receives anonymous numeric arrays.

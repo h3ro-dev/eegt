@@ -10,13 +10,32 @@ An open research notebook asking which recurring voltage patterns different toke
 - [Experiment 002 data card](DATA_CARD.md), [results](results/002/metrics.json), and [model card](MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
 
+## Repeated-session milestone · v0.4.0
+
+[Experiment008](https://h3ro-dev.github.io/eegt/repeated-sessions.html) adds 12 recordings from six participants, each measured on two nights: 86.38 qualified recorded hours. Its frozen analysis uses the first four hours of each recording (48 hours total). The expanded index contains 67 candidates, 66 qualified recordings and 309.85 qualified hours across three datasets. These are source records, not a verified global count of unique people.
+
+The comparison uses the existing frozen numerical baseline; no pretrained EEG/LLM checkpoint was run. The separate [model compatibility audit](notes/model-compatibility-2026-09-25.md) records actual input and checkpoint constraints. Four participants and later sessions remain reserved. Greater same-person similarity can also reflect stable anatomy, sensors or artifacts; it is not proof of universal tokens.
+
+Reproduce Experiment008 with the existing locked environment (all commands from this directory):
+
+```sh
+python -m eegt.repeated freeze
+python -m eegt.repeated acquire
+python -m eegt.repeated qualify
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python -m eegt.repeated extract
+python -m eegt.repeated evaluate
+python scripts/report_repeated.py
+```
+
+The published manifest freezes the selection. Existing immutable analyses refuse overwrite; use a clean copy with the release's locked dependencies when rerunning. The baseline `results/003/model.json` is already in source. To rebuild the cross-release index, extract the v0.3.0 database asset too; Experiment008's numerical analysis needs only its newly acquired sources. [Release assets](https://github.com/h3ro-dev/eegt/releases/tag/v0.4.0) contain the new databases and feature arrays; original waves remain at OpenNeuro.
+
 ## Continuous database milestone · v0.3.0
 
 The full pinned around-ear source inventory contains 55 recordings and 21,535,181,808 verified bytes. Fifty-four qualify, totaling 223.47 decoded sample-hours. One recording remains quarantined for a duration discrepancy. Source participants, sessions, hours, multichannel windows and eligible scoring time have separate denominators. These are two public cEEGrid archives, with one recording per source participant; cross-archive identity overlap is unknown.
 
 Experiment 003 measures changes in waveform shape, spectrum and sensor coordination, preserving native gaps. Experiment 004 records the expanded corpus; 006 tests phase and nuisance controls; 007 reports frozen participant/dataset transfer. Experiment 005 is a prepared Neurable capture protocol and **has not run**. See the [Research Notes](notes/) and [current priorities](STRATEGY.md).
 
-The methods see numerical samples and technical timing/validity only. They receive no identity, task or clinical labels. These are three LLM-authored numerical views, not three pretrained LLMs independently discovering the same language. Pretrained-model comparison, repeated sessions and actual headset transfer remain next steps.
+The methods see numerical samples and technical timing/validity only. They receive no identity, task or clinical labels. These are three LLM-authored numerical views, not three pretrained LLMs independently discovering the same language. This historical milestone had no repeated sessions. Experiment008 below the current release adds a first repeat-night comparison; pretrained-model inference and actual headset transfer remain open.
 
 ## Earlier tokenization baseline · v0.2.0
 
