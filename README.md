@@ -1,13 +1,15 @@
 # EEGT — EEG tokenization
 
-**An LLM’s interpretation of your brainwaves**
+**Project subtitle: An LLM’s interpretation of your brainwaves**
+
+The current experiment runs a continuous EEG encoder, not an LLM decoder or thought interpretation.
 
 An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release compares a pinned pretrained EEG encoder with frozen numerical views on time-distributed public around-ear EEG. This does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
 
 - [Research Notes website](https://h3ro-dev.github.io/eegt/)
 - [Continuous corpus and transitions](https://h3ro-dev.github.io/eegt/growth.html)
-- [Database contract](DATABASE.md), [Experiment 003 protocol](protocol/experiment-003.json), and [input contract](protocol/INPUT-CONTRACT.md)
-- [Experiment 002 data card](DATA_CARD.md), [results](results/002/metrics.json), and [model card](MODEL_CARD.md)
+- [Database contract](DATABASE.md), [Experiment 003 protocol](protocol/experiment-003.json), and [input contract](https://github.com/h3ro-dev/eegt/blob/v0.6.0/protocol/INPUT-CONTRACT.md)
+- [Experiment 002 data card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/DATA_CARD.md), [results](https://github.com/h3ro-dev/eegt/blob/v0.6.0/results/002/metrics.json), and [model card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
 
 ## Time-distributed comparison · v0.6.0
@@ -35,7 +37,7 @@ The inherited 60 Hz notch does not specifically remove the source's 50 Hz mains;
 
 [Experiment009](https://h3ro-dev.github.io/eegt/pretrained.html) runs the fixed CodeBrain EEGSSM backbone on four ear channels. Nine of 240 prespecified 30-second segments pass the common quality gate: 4.5 minutes from a two-hour candidate sample. The encoder completes 45 passes including waveform controls. No participant has three valid segments in each of two nights, so all six planned participant-level comparisons are **INSUFFICIENT_PARTICIPANTS**. No p values or universal-agreement claim are produced. All candidates, exclusions, segment correlations and outputs are retained.
 
-The model runs continuous embeddings, not the full discrete tokenizer or an LLM decoder. Its 19-scalp-channel pretraining does not validate four-ear-channel geometry; pretraining overlap is unknown. This experiment adds no new source recordings or participants. The corpus inventory remains 66 qualified recordings / 309.85 recorded hours. See [the note](notes/experiment-009.md), [protocol](protocol/experiment-009.json) and [release bundle](https://github.com/h3ro-dev/eegt/releases/tag/v0.5.0).
+The model runs continuous embeddings, not the full discrete tokenizer or an LLM decoder. Its 19-scalp-channel pretraining does not validate four-ear-channel geometry; pretraining overlap is unknown. This experiment adds no new source recordings or participants. The corpus inventory remains 66 qualified recordings / 309.85 recorded hours. See [the note](https://github.com/h3ro-dev/eegt/blob/v0.6.0/notes/experiment-009.md), [protocol](protocol/experiment-009.json) and [release bundle](https://github.com/h3ro-dev/eegt/releases/tag/v0.5.0).
 
 The source metadata reports 50 Hz mains, while the fixed model recipe applies a 60 Hz notch; that notch does not specifically remove the source's 50 Hz component. This mismatch is retained and reported, rather than changing preprocessing after seeing results.
 
@@ -63,7 +65,7 @@ EEGT-owned code is MIT; vendored CodeBrain files are Apache-2.0 with [attributio
 
 [Experiment008](https://h3ro-dev.github.io/eegt/repeated-sessions.html) adds 12 recordings from six participants, each measured on two nights: 86.38 qualified recorded hours. Its frozen analysis uses the first four hours of each recording (48 hours total). The expanded index contains 67 candidates, 66 qualified recordings and 309.85 qualified hours across three datasets. These are source records, not a verified global count of unique people.
 
-The comparison uses the existing frozen numerical baseline; no pretrained EEG/LLM checkpoint was run. The separate [model compatibility audit](notes/model-compatibility-2026-09-25.md) records actual input and checkpoint constraints. Four participants and later sessions remain reserved. Greater same-person similarity can also reflect stable anatomy, sensors or artifacts; it is not proof of universal tokens.
+The comparison uses the existing frozen numerical baseline; no pretrained EEG/LLM checkpoint was run. The separate [model compatibility audit](https://github.com/h3ro-dev/eegt/blob/v0.6.0/notes/model-compatibility-2026-09-25.md) records actual input and checkpoint constraints. Four participants and later sessions remain reserved. Greater same-person similarity can also reflect stable anatomy, sensors or artifacts; it is not proof of universal tokens.
 
 Recompute Experiment008 in a separate checkout with the existing locked environment. Preserve the checked-in published receipts by moving them aside before creating a fresh run (all commands from that checkout directory):
 
@@ -83,7 +85,7 @@ The published manifest freezes the selection. Existing immutable analyses refuse
 
 The full pinned around-ear source inventory contains 55 recordings and 21,535,181,808 verified bytes. Fifty-four qualify, totaling 223.47 decoded sample-hours. One recording remains quarantined for a duration discrepancy. Source participants, sessions, hours, multichannel windows and eligible scoring time have separate denominators. These are two public cEEGrid archives, with one recording per source participant; cross-archive identity overlap is unknown.
 
-Experiment 003 measures changes in waveform shape, spectrum and sensor coordination, preserving native gaps. Experiment 004 records the expanded corpus; 006 tests phase and nuisance controls; 007 reports frozen participant/dataset transfer. Experiment 005 is a prepared Neurable capture protocol and **has not run**. See the [Research Notes](notes/) and [current priorities](STRATEGY.md).
+Experiment 003 measures changes in waveform shape, spectrum and sensor coordination, preserving native gaps. Experiment 004 records the expanded corpus; 006 tests phase and nuisance controls; 007 reports frozen participant/dataset transfer. Experiment 005 is a prepared Neurable capture protocol and **has not run**. See the [Research Notes](https://github.com/h3ro-dev/eegt/tree/v0.6.0/notes/) and [current priorities](STRATEGY.md).
 
 The methods see numerical samples and technical timing/validity only. They receive no identity, task or clinical labels. These are three LLM-authored numerical views, not three pretrained LLMs independently discovering the same language. This historical milestone had no repeated sessions. Experiment008 adds a first repeat-night comparison; Experiment009 adds pretrained EEG encoder execution with insufficient participant support. Actual headset transfer remains open.
 
@@ -114,7 +116,7 @@ export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1
 
 The manifest is already frozen; do not reselect sources. Published outputs refuse replacement. For a rerun, copy the checkout to a new directory and move that copy's `results/corpus-v1`, `results/003`, `results/006`, `results/007`, and `data/derived/003` into a separate baseline directory before running. Preserve source files and the frozen protocol. Compare numerical arrays and metrics; SQLite binary hashes can differ with environment or serialization. Digital calibration checks the decoding conversion, not the original amplifier's accuracy.
 
-The default command uses one numerical process. Increase workers only after measuring CPU, memory and I/O capacity; the completed extraction used eight single-threaded processes. See [prepublication corrections](protocol/amendment-003.md). Never edit a hash receipt to admit changed inputs.
+The default command uses one numerical process. Increase workers only after measuring CPU, memory and I/O capacity; the completed extraction used eight single-threaded processes. See [prepublication corrections](https://github.com/h3ro-dev/eegt/blob/v0.6.0/protocol/amendment-003.md). Never edit a hash receipt to admit changed inputs.
 
 ## Reproduce the earlier Experiment 002
 
@@ -136,7 +138,7 @@ The source manifest is already frozen; acquisition verifies 16 SET/FDT files, to
 
 All processing is explicit: a fixed slice, engineering QC, 1–40 Hz filtering and 100 Hz resampling, then spectrum, normalized waveform/PCA and time-frequency features with train-fitted clustering. The frozen protocol and prefit padding clarification specify those choices. Raw source samples and native slices remain separate. Source identity and task labels never enter the discovery API.
 
-Preparation seals the related input files in `results/002/prepared-inputs.json`. Evaluation verifies their hashes and matching window IDs before fitting. If the files are mixed, altered or missing, regenerate from the pinned sources; do not hand-edit a receipt to bypass the check. The [prepublication repair record](protocol/amendment-002.md) explains the defect that motivated this boundary.
+Preparation seals the related input files in `results/002/prepared-inputs.json`. Evaluation verifies their hashes and matching window IDs before fitting. If the files are mixed, altered or missing, regenerate from the pinned sources; do not hand-edit a receipt to bypass the check. The [prepublication repair record](https://github.com/h3ro-dev/eegt/blob/v0.6.0/protocol/amendment-002.md) explains the defect that motivated this boundary.
 
 ## How to read the numbers
 
@@ -148,6 +150,6 @@ The older scalp seed, Experiment 001, assigned 393 of 3,458 external windows (11
 
 ## Contribute and publish
 
-Start with a proposed numbered protocol or a reproducible defect. Keep acquisition metadata outside model inputs; record source versions, checksums, units and channel geometry; retain all selected seeds/settings and failures. See [CONTRIBUTING.md](CONTRIBUTING.md) and [the repeatable workflow](RUNBOOK.md). Every completed batch gets an immutable release and Research Note; corrections are appended and linked. No semantic or clinical claim is a default interpretation of a token.
+Start with a proposed numbered protocol or a reproducible defect. Keep acquisition metadata outside model inputs; record source versions, checksums, units and channel geometry; retain all selected seeds/settings and failures. See [CONTRIBUTING.md](https://github.com/h3ro-dev/eegt/blob/v0.6.0/CONTRIBUTING.md) and [the repeatable workflow](RUNBOOK.md). Every completed batch gets an immutable release and Research Note; corrections are appended and linked. No semantic or clinical claim is a default interpretation of a token.
 
-Code: MIT. Derived numeric data/codebooks: CC0-1.0, with upstream source terms and attribution retained. See [LICENSE](LICENSE), [DATA_CARD.md](DATA_CARD.md), and [CITATION.cff](CITATION.cff).
+Code: MIT. Derived numeric data/codebooks: CC0-1.0, with upstream source terms and attribution retained. See [LICENSE](LICENSE), [DATA_CARD.md](https://github.com/h3ro-dev/eegt/blob/v0.6.0/DATA_CARD.md), and [CITATION.cff](CITATION.cff).
