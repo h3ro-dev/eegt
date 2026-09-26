@@ -1,0 +1,17 @@
+{
+  "base_manifest_sha256": "60ac1312851e60017dc7e21c89f5570ebb36c1288354a69822db74d1fc3c590a",
+  "created_at_utc": "2026-09-26T02:17:43.797736+00:00",
+  "diff_sha256": "bcc9f6427612918ca05c29bc57eecf75b751532d68f61a3100930aefce49f7fe",
+  "failed_database_partial_sha256": "345e586e04fc65bc2a20bc288ca114189c9e7c50b268abe6856d55732136d2b8",
+  "failed_evaluation_log_sha256": "41fa67f0d898a0af2000dc2548d992ad00cdea34095cf083de6dbd66411f2155",
+  "inference_forwards_added": 0,
+  "preserved_prior_database_sha256": "23f0f6e0d952df41aabe56b02d9823e05fa8647330af8f367c6d23f6ec67f6b6",
+  "preserved_prior_summary_sha256": "9ef3f4890fce33f51fec85db14291417bf6856191c7e397c3842b1c0a408d3f5",
+  "prior_amendment_sha256": "4e43b8c9a057f24a2c54f195cc045a678d13995180e9040fa7d8075ab8b1f4d3",
+  "reason": "After inference, the first offline evaluation failed at JSON serialization of numpy.int64 valid-block counts. A type-only cast repaired output. A subsequent offline reproduction matched byte for byte but still required checkpoint bytes; offline validation now verifies its pinned inference receipt and skips reading the checkpoint. Original manifest, failed output, prior summary/database and code revisions are preserved. No scientific metric, support, aggregation, or inference choice changed.",
+  "schema": "eegt-cross-encoder-analysis-amendment/v1",
+  "scientific_choices_changed": false,
+  "scope": "COUNT_SERIALIZATION_AND_WEIGHTLESS_REPRODUCTION",
+  "source_after_sha256": "cfc934775d663396713f3105dd121878186ff1d375c9531398f25a5a5c389eae",
+  "source_before_sha256": "f5b54d32f7cf5e29160aa3b39be642c10e92e482d9808d89742459339a1a4c32"
+}

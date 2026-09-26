@@ -104,3 +104,11 @@ A **held-out person** is someone whose recordings were never used to choose or t
 `data/derived/010/prepared.npz` contains 122 selected numeric wave arrays and aligned descriptors, with row hashes. `embeddings.npz` contains 610 variant outputs; `inference.json` binds every output to its input and code/checkpoint. `analysis.sqlite` has 5,760 candidates, 366 block/view comparisons and 488 control comparisons. Per-metric complete-participant aggregation uses five people and 110 selected blocks; person 003's twelve blocks remain descriptive.
 
 The census covers 48 already exposed hours, of which 24.775 hours pass the thirty-second quality gate. Selected model support is 61 minutes. These are analytical subsets, not extra recorded hours or new people. The corpus remains 67 candidates, 66 qualified source recordings and 309.85 qualified source hours. The v0.6.0 release provides the new derivatives and receipts; v0.4.0 retains original baseline features, and pinned public archives retain full source recordings.
+
+## Experiment 011: two pretrained encoders on identical inputs
+
+The selected waves and CodeBrain outputs remain the exact010archives. `data/derived/011/embeddings.npz` adds610CBraMod outputs with shape `[122,5,4,30,200]`. `results/011/inference.json` and the frozen run manifest bind all variant input/output hashes. Discovery receives numeric arrays; curator keys are used only for provenance and participant-level evaluation.
+
+`results/011/analysis.sqlite` retains5,760candidates,1,220model-output receipts,610cross-model comparisons,976within-model controls,732descriptor comparisons,244paired rows,2primary tests and60aggregate statistics. Aggregate record/person tables contain720/360rows. Each primary test uses five complete people, ten recordings and110blocks; person003remains descriptive. All122selected blocks remain available. This experiment adds no recorded hours or source participants.
+
+The v0.7.0 bundle uses captured `input/` and `repo/` roots so source hashes and prior selection checks reproduce exactly. It includes both model output archives and prepared waves; checkpoints and full raw sources remain upstream. Post-inference serialization/offline-dependency corrections and the original test source are retained. See `REPRODUCE-011.md` and `notes/validation-011.md` for exact commands and the independent release gate.

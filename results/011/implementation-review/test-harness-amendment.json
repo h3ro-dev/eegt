@@ -1,0 +1,8 @@
+{
+  "schema": "eegt-test-harness-amendment/v1",
+  "scope": "Canonical checkout optional checkpoint fixture lookup only",
+  "reason": "The worker test's packet-relative preflight cannot run in a plain repository checkout without captured inputs and upstream weights. Canonical test accepts explicit EEGT_011_PACKET; without an explicit packet and absent checkpoint it skips only that integration test. Eight pure synthetic tests remain mandatory. Explicit incorrect packet paths still fail.",
+  "scientific_source_changed": false,
+  "original_test_preserved": "results/011/frozen-tests/test_cross_encoder_study.py",
+  "release_archive_mapping": "Archive repo/tests/test_cross_encoder_study.py uses the preserved original bytes required by the pre-inference manifest. Canonical tests and this amendment are separately reviewed. No inference or scientific result is rerun or changed."
+}

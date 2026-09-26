@@ -1,0 +1,105 @@
+{
+  "schema": "eegt-cross-encoder-protocol/v1",
+  "experiment": "011",
+  "frozen_at_utc": "2026-09-26T01:46:14.260413+00:00",
+  "question": "Do two separately pretrained EEG encoders produce similar within-block geometry and change magnitudes on identical ear-EEG inputs, and is that alignment greater than on paired phase-scrambled inputs?",
+  "scope": "Exploratory development comparison using the exact exposed Experiment010 selection. Two distinct backbones; shared architecture and scalp pretraining remain possible explanations. No model fitting, labels, identity, history or semantics in discovery; no literal token-ID equivalence.",
+  "inputs": {
+    "protocol/experiment-010.json": "75f79f511d286254e544a50e470248153dc3b3fe38e1596936f748162cb3fa9b",
+    "results/010/prepared.json": "545186e75a2a1ca88b0e1da3dc08100fa6bf8d90c6c788358b523e224f3e367c",
+    "results/010/inference.json": "be6ac5395f9c251df6e3e7e29540e642bcbe1da373391f47a6a28645df036201",
+    "data/derived/010/prepared.npz": "894cfc2f49371223ea488b6b662d909ba366ad1e84c215d18a37c9d64a138abc",
+    "data/derived/010/embeddings.npz": "5c961360971ed18c88a0c2e474fece27ca7db08d359ffa8223a81f1c64b7de40",
+    "requirements.lock": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6",
+    "eegt/pretrained_study.py": "80187b84274606d4d7d4c514d7eb05b892b4b8df96b8a92b6ea099293a232e3c",
+    "eegt/distributed_study.py": "0f4f670b16494c6626a0edd36f53e94cbae2c1462c466209bede6108e5996266"
+  },
+  "selection": {
+    "prepared_receipt": "results/010/prepared.json",
+    "prepared_archive": "data/derived/010/prepared.npz",
+    "rule": "Use all and only the122 ELIGIBLE rows in original array order from010; verify archive, per-block hashes, candidate-index order and every baseline array. Do not acquire or inspect further waves for011. Original5760-candidate QC census remains inherited context, not new exposure.",
+    "blocks": 122,
+    "seconds_per_block": 30,
+    "selected_seconds": 3660,
+    "primary_expected_people": 5,
+    "descriptive_incomplete_person": "003",
+    "sessions": [
+      "001",
+      "002"
+    ],
+    "minimum_blocks_per_record": 3,
+    "minimum_complete_people": 3
+  },
+  "codebrain": {
+    "receipt": "results/010/inference.json",
+    "archive": "data/derived/010/embeddings.npz",
+    "reuse": "Reuse the610 archived full-grid outputs, independently checking archive and all per-output input/output hashes. No second CodeBrain run is needed unless a verified corruption requires an explicitly recorded recovery.",
+    "checkpoint_sha256": "d9714b8732c9883a04d022ee66254cd578ae1fa27f5458e6ab7f1aa96e9a7352"
+  },
+  "cbramod": {
+    "checkpoint_bytes": 19775842,
+    "checkpoint_sha256": "0792cb808c14e6b7a2bb2ce1dff379bc47bc54c49a779825bdfeb33bf8157178",
+    "code_commit": "b9e961003214326972c567eff390e75b0287e32a",
+    "weight_commit": "500543c7e30bda1b22bfd51a49301b238dee21fd",
+    "input_output_shape": [
+      1,
+      4,
+      30,
+      200
+    ],
+    "device": "CPU float32, one numerical thread, eval/inference, frozen strict-loaded actual weights",
+    "maximum_scientific_forwards": 610,
+    "implementation_gate": "Require accepted eco-uzwh8s.30 independent adapter review before actual scientific inference. Seal final code hashes in a run manifest before inference."
+  },
+  "preprocessing": {
+    "rule": "Exactly the010 prepared microvolt/100 numerical arrays and inherited preprocessing. No new filter, reference, normalization, channel mapping or resizing. The historical60Hz notch on a50Hz dataset remains a declared limitation.",
+    "natural_channel_order": [
+      "RB",
+      "RT",
+      "LB",
+      "LT"
+    ]
+  },
+  "variants": [
+    "original",
+    "gain_half",
+    "polarity_flip",
+    "channel_reverse",
+    "independent_phase"
+  ],
+  "variant_definition": "Use unchanged pretrained_study.waveform_variant with seed9009+candidate_index, as010. Check every variant input hash against010 inference. Independent phase is the SAME transformed input in both models; it preserves per-channel Fourier magnitude but changes local timing/interchannel phase. It is a nuisance comparator, not an assumption-free biological null.",
+  "representation": {
+    "pool": "Arithmetic mean over four channel embeddings, then retain indices1..28, centers1.5..28.5seconds, yielding28x200 for each model. All vectors have full30second context.",
+    "geometry": "Spearman correlation with average ties of the378 upper-triangle cosine distances among28 vectors in modelA versus modelB.",
+    "change": "Spearman correlation with average ties of27 adjacent cosine-distance magnitudes in modelA versus modelB. This measures aligned contextual change magnitudes, not discrete inflection localization.",
+    "abstention": "Any nonfinite, zero-norm or constant distance vector abstains with explicit reason. No substituted zero, smoothing, fitted alignment or vector rotation."
+  },
+  "primary": {
+    "family": [
+      "geometry_original_minus_phase",
+      "change_original_minus_phase"
+    ],
+    "block_effect": "For each selected block and metric compute cross-model rho(original) minus cross-model rho(independent_phase); retain only rows where both are finite. A separate validity set for each metric is reported.",
+    "aggregate": "Within each source recording, median block delta with >=3 valid paired blocks. Mean its two session medians for each complete person. Unweighted mean of complete person effects. Report every block, recording and person, including exclusions and incomplete person003.",
+    "test": "Exact two-sided participant sign-flip test over all2^n sign combinations on the n complete-person effects. Null requires independent people and sign-symmetry of person effects under zero contrast; shared device/protocol/architecture artifacts are not ruled out. p=count(abs(mean(signed effects)) >= abs(observed mean)-1e-12)/2^n, including identity and its negative; no Monte Carlo plus-one.",
+    "multiplicity": "Bonferroni across exactly2 primary tests; corrected p=min(1,2*p).",
+    "minimum_people": 3,
+    "small_sample_limit": "For expected n=5 the minimum attainable unadjusted two-sided p is2/32=.0625, corrected .125. This experiment estimates patterns; it cannot establish a population claim at conventional .05 with this test.",
+    "missing": "If <3 complete people, report INSUFFICIENT_PARTICIPANTS and all descriptive values; do not tune selection or thresholds."
+  },
+  "secondary": {
+    "cross_model": "For all5 variants report geometry/change rho using the same nested record/session/person aggregation, separate transparent denominators. Descriptive, no additional p-values.",
+    "within_model_controls": "For each model and each4 transformed variants versus original, report geometry rho, change rho, RMS embedding displacement and maximum input amplitude. Same original-selected support; descriptive only.",
+    "transparent_descriptors": "For each model original versus the inherited morphology,spectrum,coordination descriptors report geometry and change rho using existing cosine-versus-RMS-Euclidean definitions and frozen003 standardization. Descriptor inputs are numerical views of the same waves, not independent truth. Descriptive only.",
+    "absolute_original_and_phase": "Alongside delta report original and phase values on identical paired-valid rows, with every person effect. Do not compare differently supported aggregate means as a paired effect."
+  },
+  "output_contract": {
+    "arrays": "Archive full CBraMod float32[122,5,4,30,200] grid, candidate_indices and ordered variants. Hash each input/output and the compressed archive.",
+    "ledger": "analysis.sqlite with candidate identities/eligibility, block cross-model metrics, paired effects, descriptors and within-model controls, primary/source/foreign-key checks; canonical summary JSON contains all planned results and status. No unpublished best-run selection.",
+    "provenance": "Freeze protocol hash before inference, seal final analysis/adapter/vendor/dependency/input hashes; record wall clock, exact versions, CPU/RSS, all610forward timings. Reruns use a separate directory and immutable receipts.",
+    "reproduction": "Provide actual offline evaluation command consuming only included prepared/baseline arrays and two embedding archives. Extracted release must reproduce numerical summary within declared1e-12 floating tolerance; ignore wallclock only. Also publish licensed code/source/weight links."
+  },
+  "prior_exposure": "010 selection and CodeBrain results were known when writing this protocol. CBraMod adapter smoke used first and last selected blocks and synthetic input before this freeze; no cross-model agreement outcome was calculated or inspected. This is outcome-prespecified development analysis, not pristine preregistration. The two smoke blocks remain disclosed, not selectively removed.",
+  "reserve": "EESM23 participants007-010 and all unexamined later sessions remain unopened until separately frozen validation. EESM19 development intake belongs to another task, not011.",
+  "claims": "Any agreement concerns these contextual continuous features on one exposed ear-EEG dataset. Distinct encoders do not prove disjoint pretraining, universal brain tokens, semantic meaning, diagnosis or physical Neurable transfer. Publish low, null, reversed and artifact-compatible findings."
+}

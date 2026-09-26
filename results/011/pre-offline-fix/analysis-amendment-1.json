@@ -1,0 +1,14 @@
+{
+  "base_manifest_sha256": "60ac1312851e60017dc7e21c89f5570ebb36c1288354a69822db74d1fc3c590a",
+  "created_at_utc": "2026-09-26T02:14:04.642757+00:00",
+  "diff_sha256": "292e56db962a5da0e1fd916331277542e9586a302ff561a90314a34d6cb5d2fe",
+  "failed_database_partial_sha256": "345e586e04fc65bc2a20bc288ca114189c9e7c50b268abe6856d55732136d2b8",
+  "failed_evaluation_log_sha256": "41fa67f0d898a0af2000dc2548d992ad00cdea34095cf083de6dbd66411f2155",
+  "inference_forwards_added": 0,
+  "reason": "The first offline evaluation failed before writing a summary because a valid-block count used numpy.int64 and JSON refused it. Convert that count to a Python int; no metric, support, aggregation, or inference choice changed. Preserve original manifest and failed artifacts. Allow this single recorded analysis-source revision in offline evaluation only.",
+  "schema": "eegt-cross-encoder-analysis-amendment/v1",
+  "scientific_choices_changed": false,
+  "scope": "COUNT_SERIALIZATION_ONLY",
+  "source_after_sha256": "264179c1623c8acae4113027ff08997244dfd01bd0ca9afd0ef682f259b66fbc",
+  "source_before_sha256": "f5b54d32f7cf5e29160aa3b39be642c10e92e482d9808d89742459339a1a4c32"
+}

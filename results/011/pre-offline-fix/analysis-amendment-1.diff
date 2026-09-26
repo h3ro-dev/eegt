@@ -1,0 +1,61 @@
+--- repo/results/011/pre-amendment-cross_encoder_study.py	2026-09-25 20:12:47
++++ repo/eegt/cross_encoder_study.py	2026-09-25 20:13:13
+@@ -215,7 +215,7 @@
+     return manifest
+ 
+ 
+-def verify_manifest(inputs):
++def verify_manifest(inputs, allow_analysis_amendment=False):
+     packet, root = inputs["packet"], inputs["root"]
+     path = root / "results/011/run-manifest.json"
+     manifest = read(path)
+@@ -229,8 +229,21 @@
+     for relative, record in manifest["executable_and_dependency_files"].items():
+         target = root / relative
+         if target.stat().st_size != record["bytes"]:
+-            raise ValueError(f"manifest source byte count mismatch: {relative}")
+-        require_hash(target, record["sha256"], f"manifest source {relative}")
++            changed = True
++        else:
++            changed = digest(target) != record["sha256"]
++        if changed:
++            if not allow_analysis_amendment or relative != "eegt/cross_encoder_study.py":
++                raise ValueError(f"manifest source mismatch: {relative}")
++            amendment_path = root / "results/011/analysis-amendment.json"
++            amendment = read(amendment_path)
++            if (amendment["schema"] != "eegt-cross-encoder-analysis-amendment/v1"
++                    or amendment["scope"] != "COUNT_SERIALIZATION_ONLY"
++                    or amendment["base_manifest_sha256"] != digest(path)
++                    or amendment["source_before_sha256"] != record["sha256"]
++                    or amendment["source_after_sha256"] != digest(target)
++                    or amendment["source_before_sha256"] != digest(root / "results/011/pre-amendment-cross_encoder_study.py")):
++                raise ValueError("analysis amendment binding mismatch")
+     return manifest
+ 
+ 
+@@ -387,7 +400,7 @@
+                            mean_two_sessions=(float((sessions["001"]["median"] + sessions["002"]["median"]) / 2)
+                                               if valid else None)))
+     scores = [p["mean_two_sessions"] for p in people if p["status"] == "COMPLETE"]
+-    return dict(selected_blocks=len(selected), valid_blocks=sum(b["value"] is not None and np.isfinite(b["value"]) for b in blocks),
++    return dict(selected_blocks=len(selected), valid_blocks=int(sum(b["value"] is not None and np.isfinite(b["value"]) for b in blocks)),
+                 records=records, participants=people, complete_participants=len(scores),
+                 mean_participant_value=None if not scores else float(np.mean(scores)))
+ 
+@@ -659,7 +672,7 @@
+ def evaluate(packet_root, output_dir):
+     """Offline analysis; only the frozen arrays, receipts and sources are read."""
+     inputs = validate_inputs(packet_root)
+-    verify_manifest(inputs)
++    verify_manifest(inputs, allow_analysis_amendment=True)
+     root = inputs["root"]
+     inference = read(root / "results/011/inference.json")
+     if inference["status"] != "COMPLETE" or inference["run_manifest_sha256"] != digest(root / "results/011/run-manifest.json"):
+@@ -677,6 +690,7 @@
+         raise FileExistsError("preserve existing evaluation")
+     counts = write_sqlite(out / "analysis.sqlite", inputs, summary, inference)
+     summary["input_hashes"] = dict(run_manifest=digest(root / "results/011/run-manifest.json"),
++                                   analysis_amendment=digest(root / "results/011/analysis-amendment.json"),
+                                    cbramod_archive=inference["array_sha256"],
+                                    codebrain_archive=inputs["old_run"]["array_sha256"],
+                                    prepared_archive=inputs["prepared_receipt"]["array_sha256"])
