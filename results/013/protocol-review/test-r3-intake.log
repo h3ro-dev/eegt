@@ -1,0 +1,26 @@
+test_archive_replay_requires_identical_arrays_and_preserves_bytes (tests.test_validation_intake_resources.ResourceAdmissionTests.test_archive_replay_requires_identical_arrays_and_preserves_bytes) ... ok
+test_each_bound_refuses_before_work (tests.test_validation_intake_resources.ResourceAdmissionTests.test_each_bound_refuses_before_work) ... ok
+test_first_record_stops_then_requires_hash_bound_admission (tests.test_validation_intake_resources.ResourceAdmissionTests.test_first_record_stops_then_requires_hash_bound_admission) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 7.037s
+
+OK
+        8.73 real         2.05 user         0.65 sys
+           118128640  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15734  page reclaims
+                1000  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1261  voluntary context switches
+               10776  involuntary context switches
+          7130032326  instructions retired
+          5419121613  cycles elapsed
+            90718736  peak memory footprint

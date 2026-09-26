@@ -1,0 +1,23 @@
+combined_shared_gate ACCEPTED
+engineering_sessions ['005', '006']
+engineering_shape (2, 12, 15000)
+engineering_masked_tail True
+per_row_hashes_match True
+        4.96 real         1.30 user         0.40 sys
+           108675072  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14004  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1344  voluntary context switches
+                4101  involuntary context switches
+          5115809318  instructions retired
+          3426159884  cycles elapsed
+            79807016  peak memory footprint
