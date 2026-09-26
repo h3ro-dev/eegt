@@ -1,0 +1,19 @@
+{
+  "blocks": 122,
+  "extraction_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/transition-extracted-r2",
+  "extraction_receipt_path": "results/012/extraction-receipt.json",
+  "extraction_receipt_sha256": "ae38d8ba0533d29ddd61c6bf6c30c241ee67db750324bd3451c360b68a6a9171",
+  "full_scientific_summary": true,
+  "generated_receipt_path": "results/012/generated-reproduction.json",
+  "generated_receipt_sha256": "8f316918c467ac5b24aa5ca8103f256d32362dcfda57355d036f9b0fa0e29ff5",
+  "index_sha256": "427627c73149bce542b77ca152d2e0a4c0c32eb0b6b983839d360e8967c949bb",
+  "native_execution_path": "results/012/implementation-review/history/native-replay-r2.json",
+  "native_execution_sha256": "e22a4afdb5bd1f6f313a14ed34b2a07d8a3a4ef0ed5e48f4ee7e1d7bf7a684a0",
+  "observed_utc": "2026-09-26T07:19:54.997102+00:00",
+  "partitions": 2806,
+  "run_manifest_sha256": "3359e83c54cdd1bc58d74f9779610a42ebe0f6b626c0cd786ef7ba159cef7ce0",
+  "schema": "eegt-012-bound-extracted-reproduction/v1",
+  "stage_manifest_path": "dist/eegt-v0.8.0-review-r2-manifest.json",
+  "stage_manifest_sha256": "1ed73399dafc3a859860406bf6ea73298432435aa3311828c0754bfa455be6c8",
+  "status": "REPRODUCED"
+}

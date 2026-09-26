@@ -1,6 +1,6 @@
 {
   "schema": "eegt-012-implementation-acceptance/v1",
-  "status": "ACCEPTED_FOR_STAGING",
+  "status": "ACCEPTED",
   "created_utc": "2026-09-26T06:15:33.778956+00:00",
   "reviewer_thread_id": "01a0d46f-1d63-72f3-95d0-692535ad6615",
   "implementation_author_thread_id": "01a0dc16-b578-77c3-9071-91229a2f2f52",
@@ -9,10 +9,30 @@
   "index_sha256": "427627c73149bce542b77ca152d2e0a4c0c32eb0b6b983839d360e8967c949bb",
   "numerical_check_sha256": "f3685d6733a53136883cd8830b063a2a48cddc15532cfa0311b0d1a6f35acfb1",
   "sample_regeneration_sha256": "e7c4bdc1ec21d0cef85c5e10245b07674d9911dac2b20a07d107db51dcd4922a",
-  "scope": "Independent frozen implementation review,22canonical tests,56analytic assertions,all four empirical primary endpoints and matching invariants, six exact detector regenerations. Complete extracted ledger replay and independent final release review remain required before release/bead closure.",
+  "scope": "Accepted frozen scientific implementation, complete exposed-data record and canonical integration:22 canonical tests,56 analytic assertions, independent primary/matching audit, six exact preselected detector regenerations, and complete extracted replay. This accepts eco-uzwh8s.34.2 only. Parent publication and release-tooling review remain separate.",
   "deferred": [
-    "full extracted ledger replay",
-    "independent publication and release acceptance",
-    "native public release/download/page readback"
-  ]
+    "independent final release-tooling/publication acceptance in eco-uzwh8s.34.3",
+    "final release packaging and native public release/download/page readback in parent eco-uzwh8s.34"
+  ],
+  "accepted_utc": "2026-09-26T07:05:47.060263+00:00",
+  "complete_replay": {
+    "generated_path": "results/012/implementation-review/history/generated-reproduction-r1.json",
+    "generated_sha256": "0efa5cdc0f9d1f91e36dd8e32348a94a3d72b4e57322a30f20d8040d88ca66af",
+    "native_execution_path": "results/012/implementation-review/history/native-replay-r1.json",
+    "native_execution_sha256": "8bebb5c085ede6aa7255d6fa43188a4beacc2f73391acf341a666f03a7d3fbce",
+    "cpu_seconds": 1501.4353549999998,
+    "peak_rss_bytes": 1220624384,
+    "blocks": 122,
+    "partitions": 2806,
+    "full_scientific_summary": true
+  },
+  "corrected_candidate_replay": {
+    "replay_path": "results/012/extracted-reproduction.json",
+    "replay_sha256": "33320cca43e031be80af0caa7ec4063c0328b45c6d3453561fb0c33592b463c0",
+    "generated_receipt_sha256": "8f316918c467ac5b24aa5ca8103f256d32362dcfda57355d036f9b0fa0e29ff5",
+    "native_execution_sha256": "e22a4afdb5bd1f6f313a14ed34b2a07d8a3a4ef0ed5e48f4ee7e1d7bf7a684a0",
+    "full_scientific_summary": true,
+    "blocks": 122,
+    "partitions": 2806
+  }
 }
