@@ -1,6 +1,6 @@
 # Rebuild the consolidated EEGT catalog
 
-Preparation document. The final catalog, independent acceptance and public release are not yet complete.
+Version 0.10.0 catalog reproduction. The independent review accompanies the immutable candidate snapshot, whose historical status fields are preserved.
 
 The catalog is a curator index of accepted numerical releases. Rebuilding it reads receipts and SQLite rows; it does not decode EEG, regenerate events, run encoders or acquire new participants. Large event ledgers stay in their own immutable releases. Source-local people are scoped to dataset and must not be summed as globally unique people.
 

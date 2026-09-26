@@ -1,0 +1,18 @@
+{
+  "approved_utc": "2026-09-26T21:58:33.256228+00:00",
+  "catalog_manifest_sha256": "ce0b389c129d0cc2579b1a655c6646d3c920a713189bb2b21fbd5c223ec1d8b5",
+  "database_sha256": "cefcbd423b57cc8b9345f4731c542369a8c43b1cc2c09cd0473f2a16efe91790",
+  "limits": [
+    "Catalog publication, public downloads and live readback were not performed or accepted by this reviewer.",
+    "The already published 013 receipt and its four imported member hashes were checked locally; live v0.9.0 services and all ten public assets were not re-fetched in this pass.",
+    "Historical waveform/model/event computations, Experiment 001/002 coverage and exact 012 phase-control values remain prior-release evidence, not outputs of this metadata rebuild.",
+    "The ds005185 source file URLs and hashes are retained; its original license text is not bundled. Original source terms govern any upstream reuse; this catalog package redistributes no raw waves.",
+    "CITATION.cff records 2026-09-26 as date-released; root must confirm it matches the actual v0.10.0 publication date when releasing the candidate.",
+    "No DOI has been deposited or issued."
+  ],
+  "logical_content_sha256": "64efd3d566264f18c30a15d71eeca13ac7ec9f4060024228c1fc509996b58f1f",
+  "publication": "Public downloads and live readback remain required",
+  "review_sha256": "6491f1aca26c610356064536b91f3e81916d4baa379a88f2abe9763ffcc1d527",
+  "schema": "eegt-catalog-release-approval/v1",
+  "status": "ACCEPTED_FOR_PUBLICATION"
+}

@@ -1,6 +1,6 @@
 # Querying the consolidated curator index
 
-Preparation document: the final database is not released yet. These queries work against the proposed SQLite schema; they neither decode EEG nor run a model.
+These queries use the version 0.10.0 SQLite schema; they neither decode EEG nor run a model.
 
 Source hours describe qualified recordings, including portions not analyzed. They are not selected-window hours. Reanalysis in several experiments does not add source hours. People are scoped to dataset; the same source-local label in two datasets does not establish that it is the same person.
 

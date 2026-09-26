@@ -1,6 +1,6 @@
-# Data card: consolidated EEGT catalog candidate
+# Data card: consolidated EEGT catalog v0.10.0
 
-This catalog joins accepted recording, source-file, experiment, model and result receipts. Final consolidated counts and independent publication acceptance are pending. The released catalog summary supplies the authoritative counts; do not infer people or source hours from repeated experiment rows.
+This catalog joins accepted recording, source-file, experiment, model and result receipts. The independently rebuilt catalog contains 89 candidate recordings, 88 qualified recordings and 476.053296 qualified source hours. The released catalog summary supplies the authoritative counts; do not infer people or source hours from repeated experiment rows.
 
 Experiment013 qualified 20 pinned EESM23 recordings containing 151.8486311111111 source hours. Its fixed first-four-hour grid contains 9,600 thirty-second candidates (80 hours), 4,117 quality passes and 174 selected blocks (87 minutes before detector guards). Six complete new-session participants support four endpoints. Two complete new-person participants fail the prespecified minimum of three, leaving that cohort's four primary endpoints unestimated. Quality passes are engineering eligibility, not proof of artifact-free brain activity.
 

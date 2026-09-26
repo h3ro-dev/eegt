@@ -1,4 +1,4 @@
-# Consolidated catalog candidate
+# Consolidated catalog v0.10.0
 
 The consolidated curator index joins recording identities, verified source files, experiment protocols, fixed model hashes, endpoint receipts and explicitly recorded artifact dependencies. Each imported row preserves its original JSON evidence and input hash. The final release includes a versioned SQLite database, the complete input manifest, all curator inputs and the deterministic builder. Large event/model arrays stay in their original immutable release archives.
 
