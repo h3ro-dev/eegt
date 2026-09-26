@@ -1,0 +1,34 @@
+[
+  {
+    "name": "v2-quality-red",
+    "exit_code": 1,
+    "elapsed_seconds": 10.341,
+    "last_lines": [
+      "v2-repo/tests/test_validation_intake.py:324: AssertionError",
+      "=========================== short test summary info ============================",
+      "FAILED v2-repo/tests/test_validation_intake.py::test_quality_releases_decoder_before_feature_extraction",
+      "1 failed in 8.27s"
+    ],
+    "log": "out/raw/v2-quality-red.log"
+  },
+  {
+    "name": "v2-quality-green",
+    "exit_code": 0,
+    "elapsed_seconds": 2.375,
+    "last_lines": [
+      ".                                                                        [100%]",
+      "1 passed in 1.91s"
+    ],
+    "log": "out/raw/v2-quality-green.log"
+  },
+  {
+    "name": "v2-intake-suite",
+    "exit_code": 0,
+    "elapsed_seconds": 5.908,
+    "last_lines": [
+      ".........s.......                                               [100%]",
+      "16 passed, 1 skipped, 9 subtests passed in 5.32s"
+    ],
+    "log": "out/raw/v2-intake-suite.log"
+  }
+]

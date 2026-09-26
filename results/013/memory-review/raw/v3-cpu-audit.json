@@ -1,0 +1,22 @@
+{
+  "explanation": "Child calls getrusage(RUSAGE_SELF) before Pipe.send and interpreter teardown; parent waits but does not add reaped-child CPU.",
+  "illustrative_bound_between_reported_and_actual_seconds": 4.6845255,
+  "os_complete_aggregate_cpu_after_two_reads_seconds": 4.81552,
+  "post_snapshot_cpu_gaps_seconds": [
+    0.12980499999999973,
+    0.13218400000000008
+  ],
+  "reaped_child_cpu_deltas_seconds": [
+    1.8099889999999998,
+    1.7758440000000002
+  ],
+  "schema": "eegt-v3-review-cpu-crosscheck/v1",
+  "source_log": "out/raw/v3-cpu-crosscheck.log",
+  "tight_bound_would_falsely_pass": true,
+  "total_child_cpu_underaccounted_seconds": 0.2619889999999998,
+  "v3_accounted_child_cpu_deltas_seconds": [
+    1.6801840000000001,
+    1.6436600000000001
+  ],
+  "v3_reported_aggregate_cpu_after_two_reads_seconds": 4.553531
+}

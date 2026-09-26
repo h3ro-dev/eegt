@@ -1,0 +1,23 @@
+selected_blocks= 0
+completed_event_blocks= 0
+indexed_partitions= 0
+status= NO_ELIGIBLE_BLOCKS
+endpoints= {'NOT_ESTIMABLE'}
+       10.08 real         1.18 user         0.65 sys
+           102957056  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12352  page reclaims
+                1281  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1598  voluntary context switches
+                9888  involuntary context switches
+          4233590589  instructions retired
+          4309682296  cycles elapsed
+            73138728  peak memory footprint

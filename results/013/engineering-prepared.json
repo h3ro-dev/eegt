@@ -1,0 +1,115 @@
+{
+  "schema": "eegt-013-engineering-preparation/v1",
+  "status": "PREPARED",
+  "contract_sha256": "93d4769d8d1653f26ed4c64bfaf312083f1e0511a47fb830c4319d2a5326fe17",
+  "run_source_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "array_path": "data/derived/013/engineering-input/engineering-native.npz",
+  "array_sha256": "90f7937611c0926a1b6264e37968202ae59509f6dd3b57f0235c2252f2c007bd",
+  "records": [
+    {
+      "recording_id": "1fe05e5b3fcf7a4178a157a6",
+      "source": {
+        "bytes": 740791480,
+        "path": "sub-001/ses-005/eeg/sub-001_ses-005_task-sleep_acq-earEEG_eeg.fdt",
+        "sha256": "8ea124f0096ad44e4f381f16b0027349faea39251f73c726d42d7b34516901a0"
+      },
+      "source_subject": "001",
+      "session": "005",
+      "channel_names": [
+        "ELA",
+        "ELB",
+        "ELC",
+        "ELT",
+        "ELE",
+        "ELI",
+        "ERA",
+        "ERB",
+        "ERC",
+        "ERT",
+        "ERE",
+        "ERI"
+      ],
+      "start_sample": 0,
+      "stop_sample": 15000,
+      "sample_rate_hz": 500,
+      "native_array_sha256": "7ade5c0fc75321673ceae180e642ded55fe2c5686a3e72f9ac1d5b249081ca99",
+      "valid_mask_sha256": "8239f1eb0c70b408672bc894ad4b48856dec7b171dfb91ae3d8326b068907bd1",
+      "invalid_samples_per_channel": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_mask_set_sha256": "f4d484f09830fb69baa4e7c1829b4890251e3035a14df4da42d12588097e7820"
+    },
+    {
+      "recording_id": "34eb47bbc0ef7695ea8a0bd8",
+      "source": {
+        "bytes": 602413240,
+        "path": "sub-001/ses-006/eeg/sub-001_ses-006_task-sleep_acq-earEEG_eeg.fdt",
+        "sha256": "33a2961de1818e824fbde0d06435f3be0a6e2f758f8d5d49d0fcab40e0adbd02"
+      },
+      "source_subject": "001",
+      "session": "006",
+      "channel_names": [
+        "ELA",
+        "ELB",
+        "ELC",
+        "ELT",
+        "ELE",
+        "ELI",
+        "ERA",
+        "ERB",
+        "ERC",
+        "ERT",
+        "ERE",
+        "ERI"
+      ],
+      "start_sample": 0,
+      "stop_sample": 15000,
+      "sample_rate_hz": 500,
+      "native_array_sha256": "dd146e42dc43030e8eab651813b877f4acafc6b3e1062b1655ef4ef4f6c2fc77",
+      "valid_mask_sha256": "8239f1eb0c70b408672bc894ad4b48856dec7b171dfb91ae3d8326b068907bd1",
+      "invalid_samples_per_channel": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_mask_set_sha256": "902a9550f56a8c00e0c80a94bd02bef5f1b9fa1ce1dac38f3c214f031dc2c616"
+    }
+  ],
+  "sample_rate_hz": 500,
+  "channel_names": [
+    "ELA",
+    "ELB",
+    "ELC",
+    "ELT",
+    "ELE",
+    "ELI",
+    "ERA",
+    "ERB",
+    "ERC",
+    "ERT",
+    "ERE",
+    "ERI"
+  ],
+  "inference": "DESCRIPTIVE_ONLY",
+  "encoder_status": "NOT_EVALUATED_FOR_12_CONTACTS"
+}

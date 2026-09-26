@@ -1,0 +1,29 @@
+{
+  "observed_unix": 1790428671.469502,
+  "coverage": {
+    "observed": 7,
+    "denominator": 7
+  },
+  "studio1": {
+    "cpu_busy_ratio": 0.18,
+    "cpu_logical_cores": 32.0,
+    "cpu_physical_cores": 32.0,
+    "disk_io_bytes_per_second": 15005122.56,
+    "files_limit": 491520.0,
+    "files_open": 24883.0,
+    "legacy_largest_filesystem_free_bytes": 3062921789440.0,
+    "legacy_largest_filesystem_size_bytes": 7998551654400.0,
+    "load_per_core": 0.273125,
+    "memory_pressure_dispatch_level": 1.0,
+    "memory_used_percent": 37.16641366481781,
+    "network_receive_bytes_per_second": 15322.994367,
+    "network_transmit_bytes_per_second": 15621.831459,
+    "ram_free_speculative_bytes": 165115379712.0,
+    "ram_reclaimable_estimate_bytes": 166926811136.0,
+    "ram_total_bytes": 549755813888.0,
+    "source_observed_timestamp_seconds": 1790428620.0,
+    "source_reachable": 1.0,
+    "source_row_present": 1.0
+  },
+  "source_age_seconds": 51.469501972198486
+}

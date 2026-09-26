@@ -1,0 +1,13 @@
+{
+  "measurement_boundary": "one full record; caps checked at record boundaries",
+  "recording_id": "8fcee35718c91d4e7ac7d529",
+  "resources": {
+    "artifact_bytes": 65826069,
+    "cpu_seconds": 26.881477,
+    "process_peak_rss_bytes": 489324544,
+    "wall_seconds": 26.887017124914564
+  },
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "schema": "eegt-validation-intake-profile/v1",
+  "stage": "quality"
+}

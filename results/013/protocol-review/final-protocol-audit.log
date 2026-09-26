@@ -1,0 +1,37 @@
+effective_protocol_sha256 680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9
+effective_engineering_contract_sha256 93d4769d8d1653f26ed4c64bfaf312083f1e0511a47fb830c4319d2a5326fe17
+protocol_state FROZEN
+engineering_state FROZEN
+inherited_scientific_count 16
+inherited_scientific_mismatches {}
+prepared_variants_equal True
+native_variants_equal True
+fixed_eight_family True
+source_records 20
+source_cohorts {'new_people': 4, 'new_sessions': 6}
+source_manifest_bound True
+checkpoint_refs_match_011 {'codebrain': True, 'cbramod': True}
+checkpoint_payloads_in_review_packet {'codebrain': False, 'cbramod': False}
+prospective_manifest_state DRAFT_NOT_ACCEPTED
+prospective_manifest_stale_input_count 5
+prospective_manifest_stale_inputs {'eegt/validation_intake.py': ('96c2c1d3c3940a90088bf96a271ef346e282243eebc7773f0265e529a1f12229', '76051cca7249eb91aa622347f17974452aaa176b516b170fadf51cca6239e126'), 'eegt/validation_study.py': ('3266ec0a8d933b03c6cb8aecc4ddee79bb2c5b35f0ae87984abe085e8beab340', 'e3a16c6bebbba696eeab10aa3953536e9a5478476142066514aa233e2455b4b5'), 'protocol/engineering-input-013.json': ('de3817aea1d43d9c98868e9decafc22bd1ada76c27d7edf65955890bff7af116', '93d4769d8d1653f26ed4c64bfaf312083f1e0511a47fb830c4319d2a5326fe17'), 'protocol/experiment-013.json': ('84a40308c2904c6088395e198262cd0b17fd23585ce8c4f7047cafa50071c61d', '680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9'), 'tests/test_validation_intake.py': ('27b73906f7d2f384c9ba995f2c78d5b3550ed5a7e26d46eb1d5585488f062214', '22d666642b3c7539031f72421cb8a7afce0a5f94f06fa1261a7046f91555fa7e')}
+accepted_run_manifest_present False
+resource_control {'bounds': {'artifact_bytes': 10000000000, 'cpu_seconds': 7200, 'rss_bytes': 2147483648}, 'cpu_scope': 'Per stage invocation; repeated first-record work is recorded separately, not hidden.', 'first_record_gate': 'Each stage stops after the first fixed source record for a hash-bound root resource admission before proceeding. A missing or quarantined first record is explicitly limited evidence; admission must consider the exposed full-record profile and planned source sizes. First-record replay preserves equal numeric arrays.', 'measurement_boundary': 'Before and after each full record; CPU/RSS/artifact checks are record-boundary refusals, not OS hard limits. One record can overshoot before refusal.', 'stages': ['qualify', 'quality', 'prepare']}
+        2.69 real         0.90 user         0.25 sys
+            88326144  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12018  page reclaims
+                  10  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 418  voluntary context switches
+                4213  involuntary context switches
+          3468783520  instructions retired
+          2314119201  cycles elapsed
+            59540032  peak memory footprint

@@ -1,0 +1,1 @@
+events 3.12.14 {'numpy': '1.26.4', 'scipy': '1.14.1', 'bycycle': '1.2.0', 'neurodsp': '2.3.0'}

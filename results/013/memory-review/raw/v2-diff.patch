@@ -1,0 +1,87 @@
+--- candidate/eegt/validation_intake.py
++++ update-root-v2/eegt/validation_intake.py
+@@ -500,6 +500,9 @@
+                            dtype=np.float64)
+         finally:
+             raw.close()
++            # Embedded EEGLAB reads cache full arrays even with preload=False.
++            del raw
++            gc.collect()
+         if x.shape != (4, n) or n != min(rec["samples_per_channel"], 4 * 3600 * RATE):
+             raise ValueError("native source support changed")
+         gaps = [tuple(g) if not isinstance(g, dict) else
+--- candidate/tests/test_validation_intake.py
++++ update-root-v2/tests/test_validation_intake.py
+@@ -276,6 +276,72 @@
+                                         stop_seconds=3 / intake.RATE)]
+ 
+ 
++def test_quality_releases_decoder_before_feature_extraction(tmp_path, monkeypatch):
++    import mne
++
++    protocol, source = _identity_source()
++    source["records"] = source["records"][:1]
++    src = source["records"][0]
++    for name, value in ((intake.SOURCE_PATH, source), (intake.PROTOCOL_PATH, protocol),
++                        (intake.FREEZE_PATH, {})):
++        _json(tmp_path / name, value)
++    path = intake._record_path(tmp_path, source, src)
++    path.parent.mkdir(parents=True)
++    path.write_bytes(b"right")
++    rec = dict(src, status="QUALIFIED", samples_per_channel=8, gaps=[],
++               sha256=intake.digest(path))
++    _json(tmp_path / "results/013/qualification.json", dict(
++        inputs={intake.SOURCE_PATH: intake.digest(tmp_path / intake.SOURCE_PATH)}))
++    monkeypatch.setattr(intake, "require_accepted_freeze", lambda *_: ({}, protocol, source))
++    monkeypatch.setattr(intake, "_verify_qualification", lambda *_: [rec])
++    refs, closed = [], []
++    samples = np.arange(32, dtype=np.float64).reshape(4, 8)
++
++    class Raw:
++        info, ch_names, n_times = {"sfreq": 250}, list(intake.CHANNELS), 8
++
++        def __init__(self):
++            self.cycle = self
++            refs.append(weakref.ref(self))
++
++        def get_data(self, **_kwargs):
++            return samples.copy()
++
++        def close(self):
++            closed.append(True)
++
++    class Guard:
++        def __init__(self, *_args):
++            pass
++
++        def check(self):
++            return {}
++
++        def after_record(self, *_args):
++            assert refs[0]() is None
++
++    def extract(x, gaps):
++        assert closed == [True] and refs[0]() is None
++        np.testing.assert_array_equal(x, samples * 1e6)
++        assert gaps == []
++        return np.empty(0), np.empty(0, dtype=bool)
++
++    monkeypatch.setattr(mne.io, "read_raw_eeglab", lambda *_a, **_k: Raw())
++    monkeypatch.setattr(intake, "extract_baseline_valid", extract)
++    monkeypatch.setattr(intake, "IntakeResources", Guard)
++    was_enabled = gc.isenabled()
++    gc.disable()
++    try:
++        receipt = intake.build_quality_census(tmp_path)
++    finally:
++        if was_enabled:
++            gc.enable()
++    archive = receipt["native_archives"][rec["recording_id"]]
++    with np.load(tmp_path / archive["path"], allow_pickle=False) as saved:
++        np.testing.assert_array_equal(saved["samples_uv"], samples * 1e6)
++        assert saved["valid"].all()
++
++
+ def test_all_missing_sources_keep_9600_candidates_and_zero_shaped_arrays(tmp_path):
+     protocol, source = _identity_source()
+     qualification = dict(records=[])

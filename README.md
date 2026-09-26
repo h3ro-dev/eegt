@@ -12,6 +12,14 @@ An open research notebook asking which recurring voltage patterns different toke
 - [Experiment 002 data card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/DATA_CARD.md), [results](https://github.com/h3ro-dev/eegt/blob/v0.6.0/results/002/metrics.json), and [model card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
 
+## Fixed validation · Experiment 013 candidate
+
+The completed numerical run adds 20 pinned recordings (151.848631 source hours), censuses 9,600 candidate blocks and selects 174 under frozen quality and time rules. Six complete new-session participants support four comparisons; adjusted p values are 1.00, 0.25, 0.50 and 1.00, all inconclusive. Only two new-person participants qualify, so that cohort fails the frozen minimum and its four primary results remain not estimable.
+
+Both pinned encoders completed 650 forwards. The ledger has 4,002 event partitions, 141,984 native matching rows and 7,656 morphology rows. A separate descriptive engineering check used two 30-second EESM19 sessions with 12 contacts. Independent final output review, extracted replay and publication readback remain pending; this is not yet a published validation release.
+
+[Candidate note](notes/experiment-013.md) · [Frozen protocol](protocol/experiment-013.json) · [Candidate reproduction guide](REPRODUCE-013.md) · [Numerical summary](results/013/summary.json).
+
 ## Direct waveform landmarks · v0.8.0
 
 [Experiment 012](https://h3ro-dev.github.io/eegt/events.html) measures extrema, inflections, cycles and bursts across **122 already selected blocks**. It retains **2,806 complete event partitions**, **99,552 native matching rows** and **2,440 event-to-encoder comparison rows**. Five paired people contribute 110 primary blocks. CodeBrain's mean original-minus-phase differences are **0.0355 for geometry** and **0.0754 for change**; CBraMod's are **0.0054** and **0.0078**. Adjusted p values are **0.50, 0.25, 1.00 and 1.00** respectively: all inconclusive. No new people, source hours or model forward passes are counted.

@@ -1,0 +1,26 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "intake-qualify",
+  "profile_sha256": "90cb9abc64b4ef82094cf3bc80c5eea1c826cc242fb90daddcdcd99625b0a134",
+  "run_manifest_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-13ffd342d925791b856652db872e4142",
+  "reviewed_utc": "2026-09-26T12:28:28.639199+00:00",
+  "evidence": {
+    "acquisition_sha256": "ade003e9284e7f74ed7cfa20b362d90e4a4648188c9b9fce46c2e8808b6b09bc",
+    "physical_snapshot": "work/continuation/validation-qualify-native-refresh.json",
+    "first_record_bytes": 116646624,
+    "largest_record_bytes": 240919408,
+    "simple_linear_peak_estimate_bytes": 1396880456.738638
+  },
+  "interpretation": "Full first-record qualification peak 676331520 bytes; linear scaling by largest pinned file gives below 2 GiB. This is an estimate, not proof of every record peak. Existing record-boundary hard checks remain; no bound increase. Current Studio1 physical fit supports the fixed one-thread process, with lock-held recheck required before continuation."
+}

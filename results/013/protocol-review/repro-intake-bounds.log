@@ -1,0 +1,25 @@
+accepted_freeze_bounds {'artifact_bytes': 1, 'blas_threads': 1, 'cpu_seconds': 0.0001, 'first_block_required': True, 'max_download_bytes': 4000000000, 'numeric_processes': 1, 'rss_bytes': 1}
+qualification_rows 20 resource_fields []
+quality_rows 9600 maximum_rss_native 116441088
+prepared_candidates 9600 eligible 0 maximum_rss_native 150159360
+frozen_rss_bound 1
+frozen_artifact_bound 1
+actual_artifact_bytes 11014947
+       10.88 real         2.16 user         0.73 sys
+           183762944  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20155  page reclaims
+                1146  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2020  voluntary context switches
+                9559  involuntary context switches
+         10337707753  instructions retired
+          5971102580  cycles elapsed
+           156467776  peak memory footprint

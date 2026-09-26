@@ -1,0 +1,20 @@
+{
+  "complete_replay_accepted": false,
+  "enforced_cpu_limit_seconds": 7200,
+  "exit_code": 152,
+  "independent_review_sha256": "96628bee50c472a9ac71c56f05cbe07908cfdf808c659c5c628af95525433232",
+  "maximum_rss_bytes": 1404698624,
+  "resource_readback_note": "Includes native termination overhead; this is a failed attempt, not admitted runtime.",
+  "review_turn": "01a0de65-8986-71c3-91e4-19b9ff93fc5f",
+  "reviewer_actor": "session-88981af3c741f4ce3c045aff76ce659b",
+  "reviewer_thread": "01a0de2e-79a9-7be0-a9e2-d9a38d94fb26",
+  "schema": "eegt-013-original-replay-failure/v1",
+  "scientific_mismatch_observed": false,
+  "status": "CPU_LIMIT_NO_COMPLETE_RECEIPT",
+  "stderr_sha256": "60779b0b5f4eb3486b01480809e137b3bbd431c1b463209f612c8e808fb4a379",
+  "stdout_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "system_seconds": 261.08,
+  "user_seconds": 6958.67,
+  "wall_seconds": 8568.84
+}

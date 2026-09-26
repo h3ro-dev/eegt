@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "inference-codebrain",
+  "profile_sha256": "566adcb0904a31b027e3d2c5f5d31263fcc5a43009cbdf1727af8b5374b22f06",
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "reviewed_utc": "2026-09-26T14:36:46.179552+00:00",
+  "rationale": "First block541474816B peak;130 eligible new-session blocks, projected220.35 CPU seconds. Profile multiplies all preexisting artifacts by130; correct storage accounting is current1.33GB plus129 part archives(448118B each) and final embedding archive<=62.4MB, safely below10GB. Sequential process, fresh Studio1 headroom already checked; no competing EEG process."
+}

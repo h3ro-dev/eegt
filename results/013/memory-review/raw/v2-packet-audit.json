@@ -1,0 +1,40 @@
+{
+  "all_63_bindings_present": true,
+  "amends_original_sha256": true,
+  "changed_bindings": [
+    "eegt/validation_intake.py",
+    "tests/test_validation_intake.py"
+  ],
+  "changed_manifest_fields": [
+    "inputs"
+  ],
+  "draft_not_executable": true,
+  "original_manifest_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e",
+  "overlay_file_mismatches": [],
+  "overlay_inventory": {
+    "AMENDMENT-MANIFEST-DRAFT.json": {
+      "bytes": 9761,
+      "sha256": "8487b401f816bf26eb65ab22a389c680ccffdfe5fe4c70bb98b1f7998fff9e19"
+    },
+    "POLICY-2026-09-26.1.md": {
+      "bytes": 28370,
+      "sha256": "561522b1af1bd17e96de62ea5c45cd0938d4cadfcbaa9a2b846b062d5cc2fdc4"
+    },
+    "README.md": {
+      "bytes": 849,
+      "sha256": "213eba7e528aaebdc8a8cb0daf365315056c294182aad1823fabf849947bbd52"
+    },
+    "eegt/validation_intake.py": {
+      "bytes": 51272,
+      "sha256": "eb9cdbe5bc464d7ff4f3a56ab5c0bacd8189933e174d50b1c6f50ec05bd0b4cf"
+    },
+    "tests/test_validation_intake.py": {
+      "bytes": 21381,
+      "sha256": "5431a2a821e80af6df62e068f4dc5a5bccfd6c73357c10600d770c79f5ac195b"
+    }
+  },
+  "schema": "eegt-013-independent-v2-audit/v1",
+  "science_protocol_source_and_gates_unchanged": true,
+  "v2_diff_sha256": "c877cdd68be3ed7db211c3d4334f8c350f165ff72822ab8d8f022ffeb1cbccf1",
+  "v2_source_binding_mismatches": []
+}

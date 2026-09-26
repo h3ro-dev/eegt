@@ -11,3 +11,4 @@ site/BUILD-BRIEF.md
 site/LANE-REPORT.md
 results/**/*.sqlite
 results/**/*.partial
+results/013/inference-*-parts/*.npz

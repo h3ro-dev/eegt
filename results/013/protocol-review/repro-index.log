@@ -1,0 +1,21 @@
+completed_block_ids= [0]
+partition_block_ids= [1]
+verify_indexed_partitions_return= 23
+        1.81 real         1.10 user         0.29 sys
+            89440256  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12766  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  14  voluntary context switches
+                3810  involuntary context switches
+          3551648371  instructions retired
+          2516791090  cycles elapsed
+            60686864  peak memory footprint

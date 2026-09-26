@@ -1,0 +1,19 @@
+{"action": "preflight", "error_type": "ValueError", "freeze_sha256": "b22164ef61f9bd4379ccc17ef1a23b950fcb89474f1cb5a47486258de2168483", "observed_utc": "2026-09-26T12:01:54.959488+00:00", "reason": "loaded EEGT source differs from accepted freeze: scripts/reproduce_validation.py", "schema": "eegt-validation-failed-attempt/v1", "traceback": "Traceback (most recent call last):\n  File \"/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/shadow-cli/reproduce_validation.py\", line 63, in main\n    result = preflight(root)\n             ^^^^^^^^^^^^^^^\n  File \"/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/shadow-cli/reproduce_validation.py\", line 39, in preflight\n    study.require_accepted_freeze(root)\n  File \"/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/packet/repo/eegt/validation_study.py\", line 138, in require_accepted_freeze\n    shared_seal, _, _ = shared(root=root, phase=stage or \"encoder\")\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/packet/repo/eegt/validation_intake.py\", line 124, in require_accepted_freeze\n    verify_loaded_sources(seal)\n  File \"/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/packet/repo/eegt/validation_provenance.py\", line 39, in verify_loaded_sources\n    raise ValueError(f'loaded EEGT source differs from accepted freeze: {relative}')\nValueError: loaded EEGT source differs from accepted freeze: scripts/reproduce_validation.py\n"}
+        2.15 real         0.97 user         0.28 sys
+            95911936  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13191  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 240  voluntary context switches
+                4139  involuntary context switches
+          3679336125  instructions retired
+          2849646919  cycles elapsed
+            67125824  peak memory footprint

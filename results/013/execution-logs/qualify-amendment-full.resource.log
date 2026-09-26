@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/scripts/prepare_validation.py", line 61, in <module>
+    main()
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/scripts/prepare_validation.py", line 43, in main
+    result = intake.qualify_sources(args.root)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 349, in qualify_sources
+    guard.after_record(index, rec["recording_id"])
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 165, in after_record
+    measured = self.check()
+               ^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 157, in check
+    _check_bounds(measured, self.seal["resource_bounds"])
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_study.py", line 576, in _check_bounds
+    raise RuntimeError("fixed CPU/RSS/artifact bound exceeded")
+RuntimeError: fixed CPU/RSS/artifact bound exceeded
+        3.28 real         2.41 user         0.81 sys
+          2420178944  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              155664  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 443  voluntary context switches
+                 222  involuntary context switches
+         23389594777  instructions retired
+         11475177977  cycles elapsed
+          2393229472  peak memory footprint

@@ -1,0 +1,22 @@
+{"event":"start","fixture_scope":"previously exposed Experiment008 001/001 copied once and linked within scratch","missing_rows":8,"pid":62424,"rss_bound_bytes":2147483648,"source_sha256":"4a48c81877a7ffffa1ccd090cfb2d9f3dfcfac478fff52640b16b9a7aef90efe","time_unix":1790428118.9874,"verified_rows":12}
+{"current_rss_bytes":811302912,"event":"record","gc_collected":9,"index":0,"peak_rss_bytes":811302912,"recording_id":"8fcee35718c91d4e7ac7d529","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811302912,"event":"record","gc_collected":9,"index":1,"peak_rss_bytes":811302912,"recording_id":"a8f1c640088d79f1fdc25387","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811302912,"event":"record","gc_collected":9,"index":2,"peak_rss_bytes":811302912,"recording_id":"cad043988e4a5cc29a27ea7c","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811302912,"event":"record","gc_collected":9,"index":3,"peak_rss_bytes":811302912,"recording_id":"943b4d505266fafc2c7e5a27","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811302912,"event":"record","gc_collected":9,"index":4,"peak_rss_bytes":811302912,"recording_id":"2cee23cd1b9199d0cee8cc2a","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811302912,"event":"record","gc_collected":9,"index":5,"peak_rss_bytes":811302912,"recording_id":"692fc9929daa7ddde2d890ab","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":9,"index":6,"peak_rss_bytes":811319296,"recording_id":"1954fd06995a095113d5ed1c","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":9,"index":7,"peak_rss_bytes":811319296,"recording_id":"747248be763f180dd5d9ca8a","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":9,"index":8,"peak_rss_bytes":811319296,"recording_id":"9ad08b60cb89ce4973ac81a9","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":9,"index":9,"peak_rss_bytes":811319296,"recording_id":"8420824fdd77c456f8422dc1","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":9,"index":10,"peak_rss_bytes":811319296,"recording_id":"4db090b59a372e712689746c","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":9,"index":11,"peak_rss_bytes":811319296,"recording_id":"55417dd7cef0dc3142a54637","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":0,"index":12,"peak_rss_bytes":811319296,"recording_id":"22ae77e0133917ef4ca64d36","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":0,"index":13,"peak_rss_bytes":811319296,"recording_id":"0fa6e0a3f7b427a97324923f","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":0,"index":14,"peak_rss_bytes":811319296,"recording_id":"1374bafe2757e7b35f8353c5","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":0,"index":15,"peak_rss_bytes":811319296,"recording_id":"586b7b2149fb788b2fdbeba9","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":0,"index":16,"peak_rss_bytes":811319296,"recording_id":"fb0ebd3541bd298ec4a0bf42","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":0,"index":17,"peak_rss_bytes":811319296,"recording_id":"2cb9b5564134776c20bacff3","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":0,"index":18,"peak_rss_bytes":811319296,"recording_id":"533f97c9580d3cf0d73d31c0","rss_bound_bytes":2147483648}
+{"current_rss_bytes":811319296,"event":"record","gc_collected":0,"index":19,"peak_rss_bytes":811319296,"recording_id":"9db5323cb23c54eec80a9136","rss_bound_bytes":2147483648}
+{"bound_bytes":2147483648,"collections":[9,9,9,9,9,9,9,9,9,9,9,9,0,0,0,0,0,0,0,0],"current_rss_bytes":811368448,"event":"result","missing_rows_kept":true,"peak_rss_bytes":811368448,"qualification_fields_equal_archived":true,"qualified_rows":12,"receipt_sha256":"7d4a7eb28525b3fbcb5ae3c0461bab4b70de0462cba21e383b8e4e74c86bc784","total_rows":20}

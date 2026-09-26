@@ -1,0 +1,48 @@
+test_correct_partition_count_with_wrong_block_is_rejected (tests.test_validation_ledger.LedgerMembershipTests.test_correct_partition_count_with_wrong_block_is_rejected) ... ok
+test_unselected_completed_candidate_is_rejected (tests.test_validation_ledger.LedgerMembershipTests.test_unselected_completed_candidate_is_rejected) ... ok
+test_zero_eligible_has_explicit_no_experiment_status (tests.test_validation_ledger.LedgerMembershipTests.test_zero_eligible_has_explicit_no_experiment_status) ... ok
+test_duplicate_and_misjoined_identities_rejected (tests.test_validation_study.ValidationContractTests.test_duplicate_and_misjoined_identities_rejected) ... ok
+test_engineering_numeric_mask_and_night_contract (tests.test_validation_study.ValidationContractTests.test_engineering_numeric_mask_and_night_contract) ... ok
+test_exact_signflip_fixed_eight_test_resolution (tests.test_validation_study.ValidationContractTests.test_exact_signflip_fixed_eight_test_resolution) ... ok
+test_exposed_012_full_first_block_numeric_parity (tests.test_validation_study.ValidationContractTests.test_exposed_012_full_first_block_numeric_parity) ... ok
+test_failed_forward_preserves_explicit_failure (tests.test_validation_study.ValidationContractTests.test_failed_forward_preserves_explicit_failure) ... ok
+test_failed_synthetic_event_preserves_failure_row (tests.test_validation_study.ValidationContractTests.test_failed_synthetic_event_preserves_failure_row) ... ok
+test_generic_counts_and_distinct_actual_nights (tests.test_validation_study.ValidationContractTests.test_generic_counts_and_distinct_actual_nights) ... ok
+test_hash_checked_first_block_and_deterministic_resume (tests.test_validation_study.ValidationContractTests.test_hash_checked_first_block_and_deterministic_resume) ... ok
+test_missing_model_and_support_failures_never_create_positive_p (tests.test_validation_study.ValidationContractTests.test_missing_model_and_support_failures_never_create_positive_p) ... ok
+test_missing_night_and_no_cohort_borrowing (tests.test_validation_study.ValidationContractTests.test_missing_night_and_no_cohort_borrowing) ... ok
+test_no_ready_cohort_writes_empty_model_archive_without_forward (tests.test_validation_study.ValidationContractTests.test_no_ready_cohort_writes_empty_model_archive_without_forward) ... ok
+test_real_encoder_torch_version_mismatch_refused_before_forward (tests.test_validation_study.ValidationContractTests.test_real_encoder_torch_version_mismatch_refused_before_forward) ... ok
+test_shared_verifier_cannot_bypass_analysis_freeze_checks (tests.test_validation_study.ValidationContractTests.test_shared_verifier_cannot_bypass_analysis_freeze_checks) ... ok
+test_source_changes_and_missing_freeze_fail_closed (tests.test_validation_study.ValidationContractTests.test_source_changes_and_missing_freeze_fail_closed) ... ok
+test_synthetic_first_event_block_and_recorded_replay (tests.test_validation_study.ValidationContractTests.test_synthetic_first_event_block_and_recorded_replay) ... ok
+test_under_three_people_cannot_generate_positive_inference (tests.test_validation_study.ValidationContractTests.test_under_three_people_cannot_generate_positive_inference) ... ok
+test_zero_eligible_and_insufficient_people_are_explicit (tests.test_validation_study.ValidationContractTests.test_zero_eligible_and_insufficient_people_are_explicit) ... ok
+test_layout_contact_order_and_masks (tests.test_validation_engineering.EngineeringTests.test_layout_contact_order_and_masks) ... ok
+test_no_undeclared_contact_or_unit_substitution (tests.test_validation_engineering.EngineeringTests.test_no_undeclared_contact_or_unit_substitution) ... ok
+test_preparation_receipt_array_join (tests.test_validation_engineering.EngineeringTests.test_preparation_receipt_array_join) ... ok
+test_source_change_and_short_support_refused (tests.test_validation_engineering.EngineeringTests.test_source_change_and_short_support_refused) ... ok
+test_unaccepted_freeze_prevents_source_access (tests.test_validation_engineering.EngineeringTests.test_unaccepted_freeze_prevents_source_access) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 73.471s
+
+OK
+       75.79 real        45.29 user         2.96 sys
+          1707589632  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              176529  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 421  voluntary context switches
+              140981  involuntary context switches
+        190361710966  instructions retired
+         97750416107  cycles elapsed
+          1678476968  peak memory footprint

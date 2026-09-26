@@ -1,0 +1,16 @@
+{
+  "measurement_boundary": "one full record; caps checked at record boundaries",
+  "recording_id": "8fcee35718c91d4e7ac7d529",
+  "resources": {
+    "artifact_bytes": 1603850,
+    "cpu_seconds": 1.280183,
+    "max_worker_peak_rss_bytes": 666320896,
+    "memory_accounting": "parent peak plus maximum sequential worker peak",
+    "process_peak_rss_bytes": 776716288,
+    "wall_seconds": 1.7461891669081524,
+    "worker_cpu_seconds": 0.689124
+  },
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "schema": "eegt-validation-intake-profile/v1",
+  "stage": "qualify"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "FAILED_RESOURCE_BOUND",
+  "failed_peak_rss_bytes": 2420178944,
+  "resource_bound_bytes": 2147483648,
+  "scientific_outputs": "No qualification receipt, quality selection, model or event outputs",
+  "technical_exposure": "All20 sources acquired. Original failed subset unknown. Diagnostic trace observed first14 records through 0fa6e0a3f7b427a97324923f. No v3 empirical execution.",
+  "files": {
+    "first-record-qualify.json": "11db1c41f8fab459f003483f339ae598ee1420e84c5bc224dc0db26333416dd8",
+    "RUN-SOURCE-MANIFEST.json": "d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad",
+    "first-block-review-intake-qualify.json": "934058a0eaa5f0b737e4dab38f51a535e020df18c1b34c7bd3a3ba9cc1dfa87a",
+    "qualify-amendment-first.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qualify-amendment-full.resource.log": "a526b560d979c18e320340fccae870d40d96885b9836d77ae85b13af25d093e3",
+    "qualify-amendment-full.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qualify-memory-trace.log": "908e494671c07948166f2385a5cbe8070726bc05352eed37a4b0a040fa1506cc",
+    "qualify-amendment-first.resource.log": "8a3eecb3f422448fd8a93675f439059098598ca7e44bd7258196af2ffb786a65"
+  }
+}

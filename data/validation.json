@@ -1,0 +1,3229 @@
+{
+  "schema": "eegt-013-presentation/v1",
+  "summary_sha256": "545995685035b07091eba615250f39db2046a46675769320deb377326a8bf251",
+  "prepared_sha256": "b3297aa9571d8221a54f91efc3e434a2fb859f8c940d82edc565b49e617c80f5",
+  "qualification_sha256": "40bc333cb1de9c59028f883dbf4132dcc547e7ab35465da4a2fcd60d3b22512b",
+  "engineering_summary_sha256": "6c9c4ebff8b24c78abf115aff7210c28518105ec6e2edd768622b10c7638cf97",
+  "qualified_source_hours": 151.84863111111113,
+  "totals": {
+    "candidate_blocks": 9600,
+    "candidate_recordings": 20,
+    "eligible_blocks": 174,
+    "qualified_unselected_blocks": 3943,
+    "quality_qualified_blocks": 4117,
+    "rejected_blocks": 5483
+  },
+  "full_scientific_summary": {
+    "candidate_blocks": 9600,
+    "cohort_inference_gates": {
+      "new_people": {
+        "complete_participant_count": 2,
+        "complete_participants": [
+          "008",
+          "010"
+        ],
+        "minimum_blocks_per_night": 3,
+        "minimum_complete_participants": 3,
+        "records": [
+          {
+            "selected_blocks": 0,
+            "session": "001",
+            "source_subject": "007"
+          },
+          {
+            "selected_blocks": 4,
+            "session": "002",
+            "source_subject": "007"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "001",
+            "source_subject": "008"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "002",
+            "source_subject": "008"
+          },
+          {
+            "selected_blocks": 0,
+            "session": "001",
+            "source_subject": "009"
+          },
+          {
+            "selected_blocks": 0,
+            "session": "002",
+            "source_subject": "009"
+          },
+          {
+            "selected_blocks": 11,
+            "session": "001",
+            "source_subject": "010"
+          },
+          {
+            "selected_blocks": 5,
+            "session": "002",
+            "source_subject": "010"
+          }
+        ],
+        "status": "INSUFFICIENT_PARTICIPANTS"
+      },
+      "new_sessions": {
+        "complete_participant_count": 6,
+        "complete_participants": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006"
+        ],
+        "minimum_blocks_per_night": 3,
+        "minimum_complete_participants": 3,
+        "records": [
+          {
+            "selected_blocks": 9,
+            "session": "003",
+            "source_subject": "001"
+          },
+          {
+            "selected_blocks": 8,
+            "session": "004",
+            "source_subject": "001"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "003",
+            "source_subject": "002"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "004",
+            "source_subject": "002"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "003",
+            "source_subject": "003"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "004",
+            "source_subject": "003"
+          },
+          {
+            "selected_blocks": 9,
+            "session": "003",
+            "source_subject": "004"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "004",
+            "source_subject": "004"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "003",
+            "source_subject": "005"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "004",
+            "source_subject": "005"
+          },
+          {
+            "selected_blocks": 8,
+            "session": "003",
+            "source_subject": "006"
+          },
+          {
+            "selected_blocks": 12,
+            "session": "004",
+            "source_subject": "006"
+          }
+        ],
+        "status": "READY"
+      }
+    },
+    "completed_event_blocks": 174,
+    "indexed_partitions": 4002,
+    "input_acceptance_sha256": "0bf59dff4171d333847b17347c4128e9fb92821bd414e970f060e412d632e36e",
+    "interpretation_limits": "numeric events only; no semantic, clinical, or population-transfer inference",
+    "missing_ready_model_effect_rows": 0,
+    "morphology_rows": 7656,
+    "native_match_rows": 141984,
+    "native_variants": [
+      "primary",
+      "gain_x2",
+      "polarity_xneg1",
+      "additive_offset_50uv",
+      "smoothing_21ms",
+      "smoothing_51ms",
+      "passband_0p5_40",
+      "passband_1_30",
+      "notch_50hz",
+      "notch_60hz",
+      "add_50hz",
+      "add_60hz",
+      "common_mean_reference",
+      "spike_100uv_8ms",
+      "symmetric_clipping_50uv",
+      "independent_phase",
+      "shared_phase",
+      "shift_plus_200ms"
+    ],
+    "prepared_variants": [
+      "original",
+      "gain_half",
+      "polarity_flip",
+      "channel_reverse",
+      "independent_phase"
+    ],
+    "primary_endpoints": [
+      {
+        "cohort": "new_people",
+        "metric": "geometry",
+        "model": "codebrain",
+        "paired_valid_blocks": 0,
+        "participants": [
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "007",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "008",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "009",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "010",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          }
+        ],
+        "records": [
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "007",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 6461,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6497,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6526,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6709,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "007",
+            "recording_id": "0fa6e0a3f7b427a97324923f",
+            "selected_blocks": 4,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 6737,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6779,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6818,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6858,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6901,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6940,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6978,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7018,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7059,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7101,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7139,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7178,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "008",
+            "recording_id": "1374bafe2757e7b35f8353c5",
+            "selected_blocks": 12,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 7222,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7266,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7298,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7339,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7382,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7420,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7459,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7499,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7540,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7579,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7617,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7659,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "008",
+            "recording_id": "586b7b2149fb788b2fdbeba9",
+            "selected_blocks": 12,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "009",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "009",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 8712,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8739,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8779,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8825,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8860,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8907,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8937,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8986,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9016,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9060,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9095,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "010",
+            "recording_id": "533f97c9580d3cf0d73d31c0",
+            "selected_blocks": 11,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 9418,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9458,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9501,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9547,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9581,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "010",
+            "recording_id": "9db5323cb23c54eec80a9136",
+            "selected_blocks": 5,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          }
+        ],
+        "selected_blocks": 44,
+        "test": {
+          "alpha": 0.05,
+          "assignments": 0,
+          "extreme_count": null,
+          "family_size": 8,
+          "n": 0,
+          "observed_mean": null,
+          "p_bonferroni_eight": null,
+          "p_two_sided": null,
+          "reason": "COHORT_INFERENCE_GATE",
+          "sign_symmetry_assumption": "participant effects exchangeable under sign reversal",
+          "status": "NOT_ESTIMABLE",
+          "two_sided_minimum_p": null
+        }
+      },
+      {
+        "cohort": "new_people",
+        "metric": "change",
+        "model": "codebrain",
+        "paired_valid_blocks": 0,
+        "participants": [
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "007",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "008",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "009",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "010",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          }
+        ],
+        "records": [
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "007",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 6461,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6497,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6526,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6709,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "007",
+            "recording_id": "0fa6e0a3f7b427a97324923f",
+            "selected_blocks": 4,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 6737,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6779,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6818,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6858,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6901,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6940,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6978,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7018,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7059,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7101,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7139,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7178,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "008",
+            "recording_id": "1374bafe2757e7b35f8353c5",
+            "selected_blocks": 12,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 7222,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7266,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7298,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7339,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7382,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7420,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7459,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7499,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7540,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7579,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7617,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7659,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "008",
+            "recording_id": "586b7b2149fb788b2fdbeba9",
+            "selected_blocks": 12,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "009",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "009",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 8712,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8739,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8779,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8825,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8860,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8907,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8937,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8986,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9016,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9060,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9095,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "010",
+            "recording_id": "533f97c9580d3cf0d73d31c0",
+            "selected_blocks": 11,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 9418,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9458,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9501,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9547,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9581,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "010",
+            "recording_id": "9db5323cb23c54eec80a9136",
+            "selected_blocks": 5,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          }
+        ],
+        "selected_blocks": 44,
+        "test": {
+          "alpha": 0.05,
+          "assignments": 0,
+          "extreme_count": null,
+          "family_size": 8,
+          "n": 0,
+          "observed_mean": null,
+          "p_bonferroni_eight": null,
+          "p_two_sided": null,
+          "reason": "COHORT_INFERENCE_GATE",
+          "sign_symmetry_assumption": "participant effects exchangeable under sign reversal",
+          "status": "NOT_ESTIMABLE",
+          "two_sided_minimum_p": null
+        }
+      },
+      {
+        "cohort": "new_people",
+        "metric": "geometry",
+        "model": "cbramod",
+        "paired_valid_blocks": 0,
+        "participants": [
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "007",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "008",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "009",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "010",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          }
+        ],
+        "records": [
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "007",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 6461,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6497,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6526,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6709,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "007",
+            "recording_id": "0fa6e0a3f7b427a97324923f",
+            "selected_blocks": 4,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 6737,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6779,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6818,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6858,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6901,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6940,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6978,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7018,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7059,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7101,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7139,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7178,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "008",
+            "recording_id": "1374bafe2757e7b35f8353c5",
+            "selected_blocks": 12,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 7222,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7266,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7298,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7339,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7382,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7420,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7459,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7499,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7540,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7579,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7617,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7659,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "008",
+            "recording_id": "586b7b2149fb788b2fdbeba9",
+            "selected_blocks": 12,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "009",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "009",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 8712,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8739,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8779,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8825,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8860,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8907,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8937,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8986,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9016,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9060,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9095,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "010",
+            "recording_id": "533f97c9580d3cf0d73d31c0",
+            "selected_blocks": 11,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 9418,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9458,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9501,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9547,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9581,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "010",
+            "recording_id": "9db5323cb23c54eec80a9136",
+            "selected_blocks": 5,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          }
+        ],
+        "selected_blocks": 44,
+        "test": {
+          "alpha": 0.05,
+          "assignments": 0,
+          "extreme_count": null,
+          "family_size": 8,
+          "n": 0,
+          "observed_mean": null,
+          "p_bonferroni_eight": null,
+          "p_two_sided": null,
+          "reason": "COHORT_INFERENCE_GATE",
+          "sign_symmetry_assumption": "participant effects exchangeable under sign reversal",
+          "status": "NOT_ESTIMABLE",
+          "two_sided_minimum_p": null
+        }
+      },
+      {
+        "cohort": "new_people",
+        "metric": "change",
+        "model": "cbramod",
+        "paired_valid_blocks": 0,
+        "participants": [
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "007",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "008",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "009",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          },
+          {
+            "effect": null,
+            "night_medians": {
+              "001": null,
+              "002": null
+            },
+            "person": "010",
+            "reasons": [
+              "001:TOO_FEW_PAIRED_BLOCKS",
+              "002:TOO_FEW_PAIRED_BLOCKS"
+            ],
+            "status": "INCOMPLETE_NIGHTS"
+          }
+        ],
+        "records": [
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "007",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 6461,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6497,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6526,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6709,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "007",
+            "recording_id": "0fa6e0a3f7b427a97324923f",
+            "selected_blocks": 4,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 6737,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6779,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6818,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6858,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6901,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6940,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 6978,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7018,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7059,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7101,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7139,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7178,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "008",
+            "recording_id": "1374bafe2757e7b35f8353c5",
+            "selected_blocks": 12,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 7222,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7266,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7298,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7339,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7382,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7420,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7459,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7499,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7540,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7579,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7617,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 7659,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "008",
+            "recording_id": "586b7b2149fb788b2fdbeba9",
+            "selected_blocks": 12,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "009",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "009",
+            "recording_id": null,
+            "selected_blocks": 0,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 8712,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8739,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8779,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8825,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8860,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8907,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8937,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 8986,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9016,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9060,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9095,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "001",
+            "paired_valid_blocks": 0,
+            "person": "010",
+            "recording_id": "533f97c9580d3cf0d73d31c0",
+            "selected_blocks": 11,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          },
+          {
+            "excluded": [
+              {
+                "candidate_index": 9418,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9458,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9501,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9547,
+                "reason": "COHORT_INFERENCE_GATE"
+              },
+              {
+                "candidate_index": 9581,
+                "reason": "COHORT_INFERENCE_GATE"
+              }
+            ],
+            "median_effect": null,
+            "night": "002",
+            "paired_valid_blocks": 0,
+            "person": "010",
+            "recording_id": "9db5323cb23c54eec80a9136",
+            "selected_blocks": 5,
+            "status": "TOO_FEW_PAIRED_BLOCKS"
+          }
+        ],
+        "selected_blocks": 44,
+        "test": {
+          "alpha": 0.05,
+          "assignments": 0,
+          "extreme_count": null,
+          "family_size": 8,
+          "n": 0,
+          "observed_mean": null,
+          "p_bonferroni_eight": null,
+          "p_two_sided": null,
+          "reason": "COHORT_INFERENCE_GATE",
+          "sign_symmetry_assumption": "participant effects exchangeable under sign reversal",
+          "status": "NOT_ESTIMABLE",
+          "two_sided_minimum_p": null
+        }
+      },
+      {
+        "cohort": "new_sessions",
+        "metric": "geometry",
+        "model": "codebrain",
+        "paired_valid_blocks": 130,
+        "participants": [
+          {
+            "effect": 0.00678417299934328,
+            "night_medians": {
+              "003": 0.012816131237183871,
+              "004": 0.0007522147615026883
+            },
+            "person": "001",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.004320627772640154,
+            "night_medians": {
+              "003": 0.0913078149920255,
+              "004": -0.09994907053730581
+            },
+            "person": "002",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.04611629340731507,
+            "night_medians": {
+              "003": 0.032802594722099364,
+              "004": 0.05942999209253078
+            },
+            "person": "003",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.021127350461715773,
+            "night_medians": {
+              "003": -0.028389824829453306,
+              "004": 0.07064452575288485
+            },
+            "person": "004",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.014881790036588797,
+            "night_medians": {
+              "003": -0.03738122043075603,
+              "004": 0.06714480050393362
+            },
+            "person": "005",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.008413413212174814,
+            "night_medians": {
+              "003": -0.019177288140136424,
+              "004": 0.002350461715786796
+            },
+            "person": "006",
+            "reasons": [],
+            "status": "COMPLETE"
+          }
+        ],
+        "records": [
+          {
+            "excluded": [],
+            "median_effect": 0.012816131237183871,
+            "night": "003",
+            "paired_valid_blocks": 9,
+            "person": "001",
+            "recording_id": "8fcee35718c91d4e7ac7d529",
+            "selected_blocks": 9,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.0007522147615026883,
+            "night": "004",
+            "paired_valid_blocks": 8,
+            "person": "001",
+            "recording_id": "a8f1c640088d79f1fdc25387",
+            "selected_blocks": 8,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.0913078149920255,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "002",
+            "recording_id": "cad043988e4a5cc29a27ea7c",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.09994907053730581,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "002",
+            "recording_id": "943b4d505266fafc2c7e5a27",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.032802594722099364,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "003",
+            "recording_id": "2cee23cd1b9199d0cee8cc2a",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.05942999209253078,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "003",
+            "recording_id": "692fc9929daa7ddde2d890ab",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.028389824829453306,
+            "night": "003",
+            "paired_valid_blocks": 9,
+            "person": "004",
+            "recording_id": "1954fd06995a095113d5ed1c",
+            "selected_blocks": 9,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.07064452575288485,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "004",
+            "recording_id": "747248be763f180dd5d9ca8a",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.03738122043075603,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "005",
+            "recording_id": "9ad08b60cb89ce4973ac81a9",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.06714480050393362,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "005",
+            "recording_id": "8420824fdd77c456f8422dc1",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.019177288140136424,
+            "night": "003",
+            "paired_valid_blocks": 8,
+            "person": "006",
+            "recording_id": "4db090b59a372e712689746c",
+            "selected_blocks": 8,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.002350461715786796,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "006",
+            "recording_id": "55417dd7cef0dc3142a54637",
+            "selected_blocks": 12,
+            "status": "VALID"
+          }
+        ],
+        "selected_blocks": 130,
+        "test": {
+          "alpha": 0.05,
+          "assignments": 64,
+          "extreme_count": 12,
+          "family_size": 8,
+          "n": 6,
+          "observed_mean": 0.012695927653357994,
+          "p_bonferroni_eight": 1.0,
+          "p_two_sided": 0.1875,
+          "reason": null,
+          "sign_symmetry_assumption": "participant effects exchangeable under sign reversal",
+          "status": "COMPARED",
+          "two_sided_minimum_p": 0.03125
+        }
+      },
+      {
+        "cohort": "new_sessions",
+        "metric": "change",
+        "model": "codebrain",
+        "paired_valid_blocks": 130,
+        "participants": [
+          {
+            "effect": -0.05759803921568628,
+            "night_medians": {
+              "003": 0.05147058823529413,
+              "004": -0.16666666666666669
+            },
+            "person": "001",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.03921568627450982,
+            "night_medians": {
+              "003": 0.18995098039215688,
+              "004": -0.2683823529411765
+            },
+            "person": "002",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.09865196078431372,
+            "night_medians": {
+              "003": -0.02818627450980391,
+              "004": -0.16911764705882354
+            },
+            "person": "003",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.03247549019607843,
+            "night_medians": {
+              "003": -0.10049019607843138,
+              "004": 0.035539215686274515
+            },
+            "person": "004",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.0435049019607843,
+            "night_medians": {
+              "003": 0.008578431372549038,
+              "004": -0.09558823529411763
+            },
+            "person": "005",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.09865196078431374,
+            "night_medians": {
+              "003": -0.01960784313725491,
+              "004": -0.17769607843137256
+            },
+            "person": "006",
+            "reasons": [],
+            "status": "COMPLETE"
+          }
+        ],
+        "records": [
+          {
+            "excluded": [],
+            "median_effect": 0.05147058823529413,
+            "night": "003",
+            "paired_valid_blocks": 9,
+            "person": "001",
+            "recording_id": "8fcee35718c91d4e7ac7d529",
+            "selected_blocks": 9,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.16666666666666669,
+            "night": "004",
+            "paired_valid_blocks": 8,
+            "person": "001",
+            "recording_id": "a8f1c640088d79f1fdc25387",
+            "selected_blocks": 8,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.18995098039215688,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "002",
+            "recording_id": "cad043988e4a5cc29a27ea7c",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.2683823529411765,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "002",
+            "recording_id": "943b4d505266fafc2c7e5a27",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.02818627450980391,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "003",
+            "recording_id": "2cee23cd1b9199d0cee8cc2a",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.16911764705882354,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "003",
+            "recording_id": "692fc9929daa7ddde2d890ab",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.10049019607843138,
+            "night": "003",
+            "paired_valid_blocks": 9,
+            "person": "004",
+            "recording_id": "1954fd06995a095113d5ed1c",
+            "selected_blocks": 9,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.035539215686274515,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "004",
+            "recording_id": "747248be763f180dd5d9ca8a",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.008578431372549038,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "005",
+            "recording_id": "9ad08b60cb89ce4973ac81a9",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.09558823529411763,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "005",
+            "recording_id": "8420824fdd77c456f8422dc1",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.01960784313725491,
+            "night": "003",
+            "paired_valid_blocks": 8,
+            "person": "006",
+            "recording_id": "4db090b59a372e712689746c",
+            "selected_blocks": 8,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.17769607843137256,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "006",
+            "recording_id": "55417dd7cef0dc3142a54637",
+            "selected_blocks": 12,
+            "status": "VALID"
+          }
+        ],
+        "selected_blocks": 130,
+        "test": {
+          "alpha": 0.05,
+          "assignments": 64,
+          "extreme_count": 2,
+          "family_size": 8,
+          "n": 6,
+          "observed_mean": -0.061683006535947715,
+          "p_bonferroni_eight": 0.25,
+          "p_two_sided": 0.03125,
+          "reason": null,
+          "sign_symmetry_assumption": "participant effects exchangeable under sign reversal",
+          "status": "COMPARED",
+          "two_sided_minimum_p": 0.03125
+        }
+      },
+      {
+        "cohort": "new_sessions",
+        "metric": "geometry",
+        "model": "cbramod",
+        "paired_valid_blocks": 130,
+        "participants": [
+          {
+            "effect": 0.044965354562877785,
+            "night_medians": {
+              "003": -0.016766515218527595,
+              "004": 0.10669722434428316
+            },
+            "person": "001",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.029980532883009663,
+            "night_medians": {
+              "003": 0.007280902791738708,
+              "004": -0.06724196855775803
+            },
+            "person": "002",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.05030122096685564,
+            "night_medians": {
+              "003": 0.06270355031964939,
+              "004": 0.03789889161406189
+            },
+            "person": "003",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.038960201305402536,
+            "night_medians": {
+              "003": 0.015483226783536377,
+              "004": 0.0624371758272687
+            },
+            "person": "004",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.07977413453419645,
+            "night_medians": {
+              "003": -0.02475439936740246,
+              "004": 0.18430266843579535
+            },
+            "person": "005",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.04393001219626605,
+            "night_medians": {
+              "003": 0.05691367456073336,
+              "004": 0.030946349831798746
+            },
+            "person": "006",
+            "reasons": [],
+            "status": "COMPLETE"
+          }
+        ],
+        "records": [
+          {
+            "excluded": [],
+            "median_effect": -0.016766515218527595,
+            "night": "003",
+            "paired_valid_blocks": 9,
+            "person": "001",
+            "recording_id": "8fcee35718c91d4e7ac7d529",
+            "selected_blocks": 9,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.10669722434428316,
+            "night": "004",
+            "paired_valid_blocks": 8,
+            "person": "001",
+            "recording_id": "a8f1c640088d79f1fdc25387",
+            "selected_blocks": 8,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.007280902791738708,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "002",
+            "recording_id": "cad043988e4a5cc29a27ea7c",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.06724196855775803,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "002",
+            "recording_id": "943b4d505266fafc2c7e5a27",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.06270355031964939,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "003",
+            "recording_id": "2cee23cd1b9199d0cee8cc2a",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.03789889161406189,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "003",
+            "recording_id": "692fc9929daa7ddde2d890ab",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.015483226783536377,
+            "night": "003",
+            "paired_valid_blocks": 9,
+            "person": "004",
+            "recording_id": "1954fd06995a095113d5ed1c",
+            "selected_blocks": 9,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.0624371758272687,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "004",
+            "recording_id": "747248be763f180dd5d9ca8a",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.02475439936740246,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "005",
+            "recording_id": "9ad08b60cb89ce4973ac81a9",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.18430266843579535,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "005",
+            "recording_id": "8420824fdd77c456f8422dc1",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.05691367456073336,
+            "night": "003",
+            "paired_valid_blocks": 8,
+            "person": "006",
+            "recording_id": "4db090b59a372e712689746c",
+            "selected_blocks": 8,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.030946349831798746,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "006",
+            "recording_id": "55417dd7cef0dc3142a54637",
+            "selected_blocks": 12,
+            "status": "VALID"
+          }
+        ],
+        "selected_blocks": 130,
+        "test": {
+          "alpha": 0.05,
+          "assignments": 64,
+          "extreme_count": 4,
+          "family_size": 8,
+          "n": 6,
+          "observed_mean": 0.03799173178043146,
+          "p_bonferroni_eight": 0.5,
+          "p_two_sided": 0.0625,
+          "reason": null,
+          "sign_symmetry_assumption": "participant effects exchangeable under sign reversal",
+          "status": "COMPARED",
+          "two_sided_minimum_p": 0.03125
+        }
+      },
+      {
+        "cohort": "new_sessions",
+        "metric": "change",
+        "model": "cbramod",
+        "paired_valid_blocks": 130,
+        "participants": [
+          {
+            "effect": 0.09558823529411764,
+            "night_medians": {
+              "003": 0.06617647058823528,
+              "004": 0.125
+            },
+            "person": "001",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.024509803921568638,
+            "night_medians": {
+              "003": 0.07965686274509805,
+              "004": -0.030637254901960773
+            },
+            "person": "002",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": 0.00796568627450981,
+            "night_medians": {
+              "003": -0.013480392156862739,
+              "004": 0.02941176470588236
+            },
+            "person": "003",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.050857843137254916,
+            "night_medians": {
+              "003": -0.34313725490196084,
+              "004": 0.241421568627451
+            },
+            "person": "004",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.015931372549019617,
+            "night_medians": {
+              "003": -0.02205882352941179,
+              "004": -0.009803921568627444
+            },
+            "person": "005",
+            "reasons": [],
+            "status": "COMPLETE"
+          },
+          {
+            "effect": -0.016544117647058838,
+            "night_medians": {
+              "003": -0.042892156862745126,
+              "004": 0.00980392156862745
+            },
+            "person": "006",
+            "reasons": [],
+            "status": "COMPLETE"
+          }
+        ],
+        "records": [
+          {
+            "excluded": [],
+            "median_effect": 0.06617647058823528,
+            "night": "003",
+            "paired_valid_blocks": 9,
+            "person": "001",
+            "recording_id": "8fcee35718c91d4e7ac7d529",
+            "selected_blocks": 9,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.125,
+            "night": "004",
+            "paired_valid_blocks": 8,
+            "person": "001",
+            "recording_id": "a8f1c640088d79f1fdc25387",
+            "selected_blocks": 8,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.07965686274509805,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "002",
+            "recording_id": "cad043988e4a5cc29a27ea7c",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.030637254901960773,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "002",
+            "recording_id": "943b4d505266fafc2c7e5a27",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.013480392156862739,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "003",
+            "recording_id": "2cee23cd1b9199d0cee8cc2a",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.02941176470588236,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "003",
+            "recording_id": "692fc9929daa7ddde2d890ab",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.34313725490196084,
+            "night": "003",
+            "paired_valid_blocks": 9,
+            "person": "004",
+            "recording_id": "1954fd06995a095113d5ed1c",
+            "selected_blocks": 9,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.241421568627451,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "004",
+            "recording_id": "747248be763f180dd5d9ca8a",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.02205882352941179,
+            "night": "003",
+            "paired_valid_blocks": 12,
+            "person": "005",
+            "recording_id": "9ad08b60cb89ce4973ac81a9",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.009803921568627444,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "005",
+            "recording_id": "8420824fdd77c456f8422dc1",
+            "selected_blocks": 12,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": -0.042892156862745126,
+            "night": "003",
+            "paired_valid_blocks": 8,
+            "person": "006",
+            "recording_id": "4db090b59a372e712689746c",
+            "selected_blocks": 8,
+            "status": "VALID"
+          },
+          {
+            "excluded": [],
+            "median_effect": 0.00980392156862745,
+            "night": "004",
+            "paired_valid_blocks": 12,
+            "person": "006",
+            "recording_id": "55417dd7cef0dc3142a54637",
+            "selected_blocks": 12,
+            "status": "VALID"
+          }
+        ],
+        "selected_blocks": 130,
+        "test": {
+          "alpha": 0.05,
+          "assignments": 64,
+          "extreme_count": 50,
+          "family_size": 8,
+          "n": 6,
+          "observed_mean": 0.007455065359477121,
+          "p_bonferroni_eight": 1.0,
+          "p_two_sided": 0.78125,
+          "reason": null,
+          "sign_symmetry_assumption": "participant effects exchangeable under sign reversal",
+          "status": "COMPARED",
+          "two_sided_minimum_p": 0.03125
+        }
+      }
+    ],
+    "protocol_sha256": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9",
+    "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+    "schema": "eegt-validation-scientific-summary/v1",
+    "selected_blocks": 174,
+    "source_manifest_sha256": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+    "status": "COMPLETE_NUMERICAL_RECORD",
+    "support_failure_rows": 176
+  },
+  "engineering": {
+    "channels": [
+      "ELA",
+      "ELB",
+      "ELC",
+      "ELT",
+      "ELE",
+      "ELI",
+      "ERA",
+      "ERB",
+      "ERC",
+      "ERT",
+      "ERE",
+      "ERI"
+    ],
+    "input_acceptance_sha256": "9471b05137b885247c6986f736e89cc290daa16cb46e539d2545eafa88629d0e",
+    "interpretation": "technical support and event counts only; no population or device-transfer claim",
+    "model_status": {
+      "cbramod": "NOT_EVALUATED_FOR_12_CONTACTS",
+      "codebrain": "NOT_EVALUATED_FOR_12_CONTACTS"
+    },
+    "native_partitions": [
+      {
+        "accepted_rows": 32026,
+        "bytes": 4605828,
+        "event_rows": 50992,
+        "path": "data/derived/013/engineering/night-005-primary.jsonl.gz",
+        "rejected_rows": 18966,
+        "session": "005",
+        "sha256": "bd89eebea7ecb38e7cc011740ebe089d75294395705484a089941d4630a34391",
+        "support_runs": [
+          {
+            "channel_key": "channel_0",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 6.658017547621625e-10,
+            "derivative_epsilon_uv_per_second": 6.648434948434807e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 4.573899681031852,
+              "4-8Hz": 3.39350730852234,
+              "8-13Hz": 3.6772231969418994
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00046784201806824964,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_1",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 6.667246408693916e-10,
+            "derivative_epsilon_uv_per_second": 7.259215791738394e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 4.610797819274804,
+              "4-8Hz": 4.255178554743776,
+              "8-13Hz": 4.4918387627009455
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0005108218989792976,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_2",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 5.724854196833928e-10,
+            "derivative_epsilon_uv_per_second": 5.9137571535594725e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.971733990909253,
+              "4-8Hz": 3.24817955940855,
+              "8-13Hz": 3.7681611787086835
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00041614366426765694,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_3",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 5.460641342239846e-10,
+            "derivative_epsilon_uv_per_second": 5.550177404817153e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.7189108660647223,
+              "4-8Hz": 2.4459333702282375,
+              "8-13Hz": 3.1093010294973205
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0003905590139402293,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_4",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 5.200365965776107e-10,
+            "derivative_epsilon_uv_per_second": 5.398709902821641e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.636015217298117,
+              "4-8Hz": 2.211183370165071,
+              "8-13Hz": 3.2711219333275934
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00037990043604107734,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_5",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 5.124945598811491e-10,
+            "derivative_epsilon_uv_per_second": 5.333192130382244e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.6611753015512307,
+              "4-8Hz": 2.2483943507388267,
+              "8-13Hz": 3.185719403474743
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00037529003267319896,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_6",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 6.706497719127463e-10,
+            "derivative_epsilon_uv_per_second": 6.8101001163073705e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 4.662024613700426,
+              "4-8Hz": 2.6167767802158632,
+              "8-13Hz": 3.828862029409458
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0004792181929087132,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_7",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 8.405248128961229e-10,
+            "derivative_epsilon_uv_per_second": 8.37527242901609e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 5.794341869753251,
+              "4-8Hz": 3.2881157441320803,
+              "8-13Hz": 4.880646600277978
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0005893574029756757,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_8",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 9.08152313527029e-10,
+            "derivative_epsilon_uv_per_second": 9.663340106157925e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 6.255856444569037,
+              "4-8Hz": 6.431752371433541,
+              "8-13Hz": 5.833933413770653
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0006799971078319875,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_9",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 3.4526535291431173e-10,
+            "derivative_epsilon_uv_per_second": 3.449930023581791e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 2.3214761116975495,
+              "4-8Hz": 1.6318866407318597,
+              "8-13Hz": 1.9049005411242474
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00024276724326026937,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_10",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 4.160138295295065e-10,
+            "derivative_epsilon_uv_per_second": 4.209542228148892e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 2.8046433424282355,
+              "4-8Hz": 1.7950060672811987,
+              "8-13Hz": 2.2964986178474724
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0002962202001576831,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_11",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 4.691437907105142e-10,
+            "derivative_epsilon_uv_per_second": 4.81267255221915e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.2355911678240057,
+              "4-8Hz": 1.992832740298712,
+              "8-13Hz": 2.7694443909687503
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00033866172363797466,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          }
+        ]
+      },
+      {
+        "accepted_rows": 31705,
+        "bytes": 4485760,
+        "event_rows": 49620,
+        "path": "data/derived/013/engineering/night-006-primary.jsonl.gz",
+        "rejected_rows": 17915,
+        "session": "006",
+        "sha256": "c2cd2044a0402790876a54521724dbb38be553cb204495e0c57a7f8b6e962eca",
+        "support_runs": [
+          {
+            "channel_key": "channel_0",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 5.089152047405562e-10,
+            "derivative_epsilon_uv_per_second": 5.134778496227218e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.459248630981503,
+              "4-8Hz": 2.750655490558819,
+              "8-13Hz": 2.9506708296624367
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0003613279144099833,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_1",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 5.51627945158551e-10,
+            "derivative_epsilon_uv_per_second": 5.59374718911229e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.9376682502666824,
+              "4-8Hz": 3.4053804359418716,
+              "8-13Hz": 3.3512966282876886
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0003936249649451698,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_2",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 4.88162137382428e-10,
+            "derivative_epsilon_uv_per_second": 4.987666290477596e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.481246586107921,
+              "4-8Hz": 2.6706560090759304,
+              "8-13Hz": 3.0679624231638645
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0003509758132381763,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_3",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 4.33119334205383e-10,
+            "derivative_epsilon_uv_per_second": 4.562297445666759e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 2.982349037319815,
+              "4-8Hz": 2.8571684344475083,
+              "8-13Hz": 2.6818736444311275
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00032104314181653407,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_4",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 4.4284053286171945e-10,
+            "derivative_epsilon_uv_per_second": 4.56155615165549e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.1244753453108443,
+              "4-8Hz": 2.608569621194378,
+              "8-13Hz": 2.7625523133725727
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00032099097788789463,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_5",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 4.3467068001361554e-10,
+            "derivative_epsilon_uv_per_second": 4.592466190168688e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.091895024629867,
+              "4-8Hz": 2.906161318035164,
+              "8-13Hz": 2.784615328669143
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0003231660784805516,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_6",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 5.290552098172907e-10,
+            "derivative_epsilon_uv_per_second": 5.394609521371155e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 3.6435415187099065,
+              "4-8Hz": 2.5713924230374947,
+              "8-13Hz": 3.2446500497186586
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0003796118973477572,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_7",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 8.485379444894371e-10,
+            "derivative_epsilon_uv_per_second": 9.552586235240614e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 6.172154987275329,
+              "4-8Hz": 8.915479751046423,
+              "8-13Hz": 7.136398267246605
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0006722034970227212,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_8",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 8.511375466540042e-10,
+            "derivative_epsilon_uv_per_second": 1.018476521027144e-11,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 6.622434133200516,
+              "4-8Hz": 11.196311303837913,
+              "8-13Hz": 7.801625420956561
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0007166891375911631,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_9",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 3.3351288128385796e-10,
+            "derivative_epsilon_uv_per_second": 3.4813313694024575e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 2.3369593059112566,
+              "4-8Hz": 2.2652746305963682,
+              "8-13Hz": 2.236981100118623
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0002449769165311582,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_10",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 3.8002035868407905e-10,
+            "derivative_epsilon_uv_per_second": 3.9467040633278705e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 2.7327143962408362,
+              "4-8Hz": 2.5967449979935444,
+              "8-13Hz": 2.5492659924589867
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.0002777246085772659,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          },
+          {
+            "channel_key": "channel_11",
+            "clock_start_seconds": 0.0,
+            "curvature_epsilon_uv_per_second2": 4.2485788064114483e-10,
+            "derivative_epsilon_uv_per_second": 4.428107464894865e-12,
+            "end_sample": 15000,
+            "envelope_median_uv": {
+              "13-30Hz": 2.8439849579504632,
+              "4-8Hz": 2.3747244672645715,
+              "8-13Hz": 2.796575514142913
+            },
+            "guard_samples": 2736,
+            "guard_seconds": 5.472,
+            "guarded_valid_duration_seconds": 19.056,
+            "oscillation_status": {
+              "cycle:13-30Hz": "OK",
+              "cycle:4-8Hz": "OK",
+              "cycle:8-13Hz": "OK",
+              "envelope:13-30Hz": "OK",
+              "envelope:4-8Hz": "OK",
+              "envelope:8-13Hz": "OK"
+            },
+            "rejected_duration_seconds": 10.944,
+            "run_key": "run_0",
+            "segment_end_sample": 15000,
+            "segment_key": "segment_0",
+            "segment_start_sample": 0,
+            "slope_gate_uv_per_second": 0.00031160036138839104,
+            "start_sample": 0,
+            "status": "OK",
+            "valid_duration_seconds": 30.0
+          }
+        ]
+      }
+    ],
+    "p_values": null,
+    "primary_family_membership": false,
+    "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+    "sample_rate_hz": 500,
+    "schema": "eegt-validation-engineering-summary/v1",
+    "sessions": [
+      "005",
+      "006"
+    ],
+    "source": "EESM19",
+    "source_subject": "001",
+    "status": "COMPLETE_TECHNICAL_RECORD"
+  },
+  "models": {
+    "codebrain": {
+      "status": "COMPLETE",
+      "block_variant_runs": 650,
+      "shape": [
+        130,
+        5,
+        4,
+        30,
+        200
+      ],
+      "resources": {
+        "artifact_bytes": 1445812478,
+        "cpu_seconds": 53.984172,
+        "process_peak_rss_bytes": 785989632,
+        "wall_seconds": 53.992241041967645
+      },
+      "checkpoint_sha256": "d9714b8732c9883a04d022ee66254cd578ae1fa27f5458e6ab7f1aa96e9a7352"
+    },
+    "cbramod": {
+      "status": "COMPLETE",
+      "block_variant_runs": 650,
+      "shape": [
+        130,
+        5,
+        4,
+        30,
+        200
+      ],
+      "resources": {
+        "artifact_bytes": 1561995545,
+        "cpu_seconds": 21.928445,
+        "process_peak_rss_bytes": 616579072,
+        "wall_seconds": 21.961594791035168
+      },
+      "checkpoint_sha256": "0792cb808c14e6b7a2bb2ce1dff379bc47bc54c49a779825bdfeb33bf8157178"
+    }
+  },
+  "publication_state": "CANDIDATE_REVIEW_PENDING"
+}
