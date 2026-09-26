@@ -1,10 +1,12 @@
 """Synthetic and explicitly exposed checks for Experiment013 intake."""
 
+import gc
 import hashlib
 import importlib.util
 import json
 import os
 from pathlib import Path
+import weakref
 
 import numpy as np
 import pytest
@@ -207,6 +209,137 @@ def test_qualification_preserves_missing_and_rejects_source_sha_mismatch(tmp_pat
     assert result["records"][0]["reason"] == "SOURCE_SHA256_MISMATCH"
     assert result["records"][0]["sha256"] == hashlib.sha256(b"wrong").hexdigest()
     assert all(r["reason"] == "SOURCE_MISSING" for r in result["records"][1:])
+
+
+def test_qualification_releases_decoder_cycle_before_resource_check(tmp_path, monkeypatch):
+    from eegt import repeated
+
+    protocol, source = _identity_source()
+    first = source["records"][0]
+    first["file"].update(bytes=5, expected_digest=hashlib.sha256(b"right").hexdigest())
+    _json(tmp_path / intake.SOURCE_PATH, source)
+    _json(tmp_path / intake.PROTOCOL_PATH, protocol)
+    _json(tmp_path / intake.FREEZE_PATH, {"resource_bounds": {"rss_bytes": 2147483648}})
+    path = intake._record_path(tmp_path, source, first)
+    path.parent.mkdir(parents=True)
+    path.write_bytes(b"right")
+    _json(tmp_path / "results/013/acquisition.json", dict(
+        manifest_sha256=intake.digest(tmp_path / intake.SOURCE_PATH), completed=True,
+        records=[dict(recording_id=r["recording_id"], status="VERIFIED" if i == 0 else "FAILED",
+                      bytes=5 if i == 0 else None,
+                      sha256=first["file"]["expected_digest"] if i == 0 else None,
+                      reason=None if i == 0 else "SOURCE_MISSING")
+                 for i, r in enumerate(source["records"])]))
+    monkeypatch.setattr(intake, "require_accepted_freeze",
+                        lambda _root, _phase: ({}, protocol, source))
+
+    refs = []
+
+    class DecoderCycle:
+        def __init__(self):
+            self.cycle = self
+
+    def fake_qualify(_path, _record, _protocol):
+        cycle = DecoderCycle()
+        refs.append(weakref.ref(cycle))
+        return dict(gaps=[[2, 3]], decoder_warnings=["kept"],
+                    native_nonfinite_samples_by_channel={"RB": 0},
+                    digital_conversion={"checked_values": 12, "maximum_absolute_error_uv": 0.0},
+                    duration_seconds=1.0)
+
+    class Guard:
+        def __init__(self, *_args):
+            pass
+
+        def check(self):
+            return {}
+
+        def after_record(self, index, _recording_id):
+            if index == 0:
+                assert refs[0]() is None
+
+    monkeypatch.setattr(repeated, "qualify_record", fake_qualify)
+    monkeypatch.setattr(intake, "IntakeResources", Guard)
+    was_enabled = gc.isenabled()
+    gc.disable()
+    try:
+        receipt = intake.qualify_sources(tmp_path)
+    finally:
+        if was_enabled:
+            gc.enable()
+    row = receipt["records"][0]
+    assert row["status"] == "QUALIFIED"
+    assert row["decoder_warnings"] == ["kept"]
+    assert row["digital_conversion"]["checked_values"] == 12
+    assert row["gap_seconds"] == [dict(start_sample=2, stop_sample=3,
+                                        start_seconds=2 / intake.RATE,
+                                        stop_seconds=3 / intake.RATE)]
+
+
+def test_quality_releases_decoder_before_feature_extraction(tmp_path, monkeypatch):
+    import mne
+
+    protocol, source = _identity_source()
+    source["records"] = source["records"][:1]
+    src = source["records"][0]
+    for name, value in ((intake.SOURCE_PATH, source), (intake.PROTOCOL_PATH, protocol),
+                        (intake.FREEZE_PATH, {})):
+        _json(tmp_path / name, value)
+    path = intake._record_path(tmp_path, source, src)
+    path.parent.mkdir(parents=True)
+    path.write_bytes(b"right")
+    rec = dict(src, status="QUALIFIED", samples_per_channel=8, gaps=[],
+               sha256=intake.digest(path))
+    _json(tmp_path / "results/013/qualification.json", dict(
+        inputs={intake.SOURCE_PATH: intake.digest(tmp_path / intake.SOURCE_PATH)}))
+    monkeypatch.setattr(intake, "require_accepted_freeze", lambda *_: ({}, protocol, source))
+    monkeypatch.setattr(intake, "_verify_qualification", lambda *_: [rec])
+    refs, closed = [], []
+    samples = np.arange(32, dtype=np.float64).reshape(4, 8)
+
+    class Raw:
+        info, ch_names, n_times = {"sfreq": 250}, list(intake.CHANNELS), 8
+
+        def __init__(self):
+            self.cycle = self
+            refs.append(weakref.ref(self))
+
+        def get_data(self, **_kwargs):
+            return samples.copy()
+
+        def close(self):
+            closed.append(True)
+
+    class Guard:
+        def __init__(self, *_args):
+            pass
+
+        def check(self):
+            return {}
+
+        def after_record(self, *_args):
+            assert refs[0]() is None
+
+    def extract(x, gaps):
+        assert closed == [True] and refs[0]() is None
+        np.testing.assert_array_equal(x, samples * 1e6)
+        assert gaps == []
+        return np.empty(0), np.empty(0, dtype=bool)
+
+    monkeypatch.setattr(mne.io, "read_raw_eeglab", lambda *_a, **_k: Raw())
+    monkeypatch.setattr(intake, "extract_baseline_valid", extract)
+    monkeypatch.setattr(intake, "IntakeResources", Guard)
+    was_enabled = gc.isenabled()
+    gc.disable()
+    try:
+        receipt = intake.build_quality_census(tmp_path)
+    finally:
+        if was_enabled:
+            gc.enable()
+    archive = receipt["native_archives"][rec["recording_id"]]
+    with np.load(tmp_path / archive["path"], allow_pickle=False) as saved:
+        np.testing.assert_array_equal(saved["samples_uv"], samples * 1e6)
+        assert saved["valid"].all()
 
 
 def test_all_missing_sources_keep_9600_candidates_and_zero_shaped_arrays(tmp_path):

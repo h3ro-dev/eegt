@@ -1,0 +1,92 @@
+$ /Users/studio1/lanes.noindex/eco-uzwh8s.37.1/scratch/corpus-venv/bin/python -m pytest -q -p no:cacheprovider --import-mode=importlib --basetemp /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v2-quality-red-tmp /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v2-repo/tests/test_validation_intake.py::test_quality_releases_decoder_before_feature_extraction
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________ test_quality_releases_decoder_before_feature_extraction ____________
+
+tmp_path = PosixPath('/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v2-quality-red-tmp/test_quality_releases_decoder_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x106d59490>
+
+    def test_quality_releases_decoder_before_feature_extraction(tmp_path, monkeypatch):
+        import mne
+    
+        protocol, source = _identity_source()
+        source["records"] = source["records"][:1]
+        src = source["records"][0]
+        for name, value in ((intake.SOURCE_PATH, source), (intake.PROTOCOL_PATH, protocol),
+                            (intake.FREEZE_PATH, {})):
+            _json(tmp_path / name, value)
+        path = intake._record_path(tmp_path, source, src)
+        path.parent.mkdir(parents=True)
+        path.write_bytes(b"right")
+        rec = dict(src, status="QUALIFIED", samples_per_channel=8, gaps=[],
+                   sha256=intake.digest(path))
+        _json(tmp_path / "results/013/qualification.json", dict(
+            inputs={intake.SOURCE_PATH: intake.digest(tmp_path / intake.SOURCE_PATH)}))
+        monkeypatch.setattr(intake, "require_accepted_freeze", lambda *_: ({}, protocol, source))
+        monkeypatch.setattr(intake, "_verify_qualification", lambda *_: [rec])
+        refs, closed = [], []
+        samples = np.arange(32, dtype=np.float64).reshape(4, 8)
+    
+        class Raw:
+            info, ch_names, n_times = {"sfreq": 250}, list(intake.CHANNELS), 8
+    
+            def __init__(self):
+                self.cycle = self
+                refs.append(weakref.ref(self))
+    
+            def get_data(self, **_kwargs):
+                return samples.copy()
+    
+            def close(self):
+                closed.append(True)
+    
+        class Guard:
+            def __init__(self, *_args):
+                pass
+    
+            def check(self):
+                return {}
+    
+            def after_record(self, *_args):
+                assert refs[0]() is None
+    
+        def extract(x, gaps):
+            assert closed == [True] and refs[0]() is None
+            np.testing.assert_array_equal(x, samples * 1e6)
+            assert gaps == []
+            return np.empty(0), np.empty(0, dtype=bool)
+    
+        monkeypatch.setattr(mne.io, "read_raw_eeglab", lambda *_a, **_k: Raw())
+        monkeypatch.setattr(intake, "extract_baseline_valid", extract)
+        monkeypatch.setattr(intake, "IntakeResources", Guard)
+        was_enabled = gc.isenabled()
+        gc.disable()
+        try:
+>           receipt = intake.build_quality_census(tmp_path)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+v2-repo/tests/test_validation_intake.py:335: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/eegt/validation_intake.py:511: in build_quality_census
+    times, baseline_valid = extract_baseline_valid(x, gaps)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+x = array([[       0.,  1000000.,  2000000.,  3000000.,  4000000.,  5000000.,
+         6000000.,  7000000.],
+       [ 8000..., 23000000.],
+       [24000000., 25000000., 26000000., 27000000., 28000000., 29000000.,
+        30000000., 31000000.]])
+gaps = []
+
+    def extract(x, gaps):
+>       assert closed == [True] and refs[0]() is None
+E       AssertionError: assert ([True] == [True]
+E         
+E         Use -v to get more diff and <tests.test_validation_intake.test_quality_releases_decoder_before_feature_extraction.<locals>.Raw object at 0x10afdb020> is None)
+E        +  where <tests.test_validation_intake.test_quality_releases_decoder_before_feature_extraction.<locals>.Raw object at 0x10afdb020> = <weakref at 0x10b2fbab0; to 'Raw' at 0x10afdb020>()
+
+v2-repo/tests/test_validation_intake.py:324: AssertionError
+=========================== short test summary info ============================
+FAILED v2-repo/tests/test_validation_intake.py::test_quality_releases_decoder_before_feature_extraction
+1 failed in 8.27s

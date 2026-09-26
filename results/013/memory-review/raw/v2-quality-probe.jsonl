@@ -1,0 +1,4 @@
+{"event":"start","mne":"1.13.2","pid":88458,"rss_bound_bytes":2147483648,"scope":"two MNE reads with v2 raw close/delete/collect; no quality analysis","source_sha256":"4a48c81877a7ffffa1ccd090cfb2d9f3dfcfac478fff52640b16b9a7aef90efe"}
+{"cache_alive":false,"cached_bytes_before_delete":121645440,"current_rss_bytes":498860032,"event":"read","gc_collected":370,"index":0,"peak_rss_bytes":498843648,"raw_alive":false,"x_bytes":115200000,"x_sha256":"0a7509e080651c563f6e82bc272c728b6315176a9c7b2feece1cb3ad7aed55bd"}
+{"cache_alive":false,"cached_bytes_before_delete":121645440,"current_rss_bytes":620527616,"event":"read","gc_collected":9,"index":1,"peak_rss_bytes":620527616,"raw_alive":false,"x_bytes":115200000,"x_sha256":"0a7509e080651c563f6e82bc272c728b6315176a9c7b2feece1cb3ad7aed55bd"}
+{"bound_bytes":2147483648,"event":"result","outputs_equal":true,"peak_rss_bytes":620527616}

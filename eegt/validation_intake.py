@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from collections import Counter
 from datetime import datetime, timezone
+import gc
 import hashlib
 from importlib.metadata import version
 import json
@@ -342,6 +343,9 @@ def qualify_sources(root=ROOT):
                 except (ValueError, KeyError, OSError, IndexError) as exc:
                     row["reason"] = f"{type(exc).__name__}: {exc}"
         rows.append(row)
+        # The EEGLAB decoder can leave unreachable cycles holding native arrays.
+        # Reclaim them before the per-record RSS admission check.
+        gc.collect()
         guard.after_record(index, rec["recording_id"])
     receipt = dict(schema="eegt-validation-qualification/v1", records=rows,
                    resources=guard.check(),
@@ -496,6 +500,9 @@ def build_quality_census(root=ROOT):
                            dtype=np.float64)
         finally:
             raw.close()
+            # Embedded EEGLAB reads cache full arrays even with preload=False.
+            del raw
+            gc.collect()
         if x.shape != (4, n) or n != min(rec["samples_per_channel"], 4 * 3600 * RATE):
             raise ValueError("native source support changed")
         gaps = [tuple(g) if not isinstance(g, dict) else

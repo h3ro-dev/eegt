@@ -4,15 +4,10 @@
       "path": "results/013/protocol-review/REVIEW.json",
       "sha256": "620cd42504601894008c4fd2f5ba4165976aaca52be690dfcfe10b006fdc7da9",
       "status": "ACCEPTED"
-    },
-    {
-      "status": "ACCEPTED",
-      "path": "results/013/memory-review/REVIEW.md",
-      "sha256": "799637f43001e6067ee458330a860def54ad6bde02aec878de18c2fbd38a2451"
     }
   ],
   "created_utc": "2026-09-26T11:16:10.942831+00:00",
-  "execution_boundary": "Original scientific protocol fixed before access; implementation amendment001 accepted after technical qualification failure. Original seal and failure evidence preserved; fresh corrected stage profiles and root admissions required.",
+  "execution_boundary": "Source/protocol accepted before reserved payload acquisition; fresh native physical admission remains mandatory for each worker start/continuation. Root input and first-record/block admissions remain separate.",
   "inputs": {
     "eegt/__init__.py": "fb8c515d9d1e529126c493cfb674a144c75d0f4ad12de4e8ec190f4aeccc0959",
     "eegt/acquire.py": "120dfbfde3c717572035356db3fe9ba5cf8cddea1eeeeab91673313100d730a3",
@@ -35,7 +30,7 @@
     "eegt/signal.py": "c9f15e16cb289ac22ecdfad16f17c834c2453e77d1503d1177574e19e5d745d1",
     "eegt/transitions.py": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d",
     "eegt/validation_engineering.py": "311b4784045cc25c9cdc157c4087bc292cdaf6cea780e9d1bebf672eeb8a6299",
-    "eegt/validation_intake.py": "eb9cdbe5bc464d7ff4f3a56ab5c0bacd8189933e174d50b1c6f50ec05bd0b4cf",
+    "eegt/validation_intake.py": "c773b4159d907783df945e1e1e934efbddf8fd4e2bd851066e9172da65496761",
     "eegt/validation_provenance.py": "fa405fba4a1aea3ba21dc5ff520a7000a588f5d8998f66e06d0e5bc33ee23e97",
     "eegt/validation_study.py": "31568d7d54fd363bc0030bf28af999f6757ba02d45cd0dd13bbb7060aa97cdec",
     "eegt/vendor/cbramod/cbramod.py": "e8193e557ee3ca3f422c17ae661fb8e4df671d9228c413ea092d879af1b8296b",
@@ -71,13 +66,12 @@
     "tests/test_signal.py": "f0ce0f31fecb3b8500b24a5b44d6b1bd888476f6531f9661f7e99979bd701ae6",
     "tests/test_transitions.py": "118a9f3de5e3eb5cc38a5f52a07c3a9ff28f96f6483a184b386f994cf4b3ab82",
     "tests/test_validation_engineering.py": "f769617d9524306be2cc1e914b4bb466754cda3d17c1f1abf78474d813dbf395",
-    "tests/test_validation_intake.py": "5431a2a821e80af6df62e068f4dc5a5bccfd6c73357c10600d770c79f5ac195b",
+    "tests/test_validation_intake.py": "6280547db9c55a7b1614c24cd671e1ad90f0d9207e88690f45fbcb9a1b9fe902",
     "tests/test_validation_intake_resources.py": "6dce75554364e5dd149bd154508a649f624bcd8027d01cfbe0fb28f7bc82ba6c",
     "tests/test_validation_ledger.py": "02b80dc0d0fe3bca004cddcef21b4036e581f7f18e792d3e74b65fa9507d7ab7",
     "tests/test_validation_provenance.py": "b0dd38f2b16161339d5589a328426b48cca43816ee9539619620ceb8c50adbf9",
     "tests/test_validation_study.py": "a61d95a0c35b7360f48fed2a238c975d7d4b484228fec34aef2ab8d2499954f5",
-    "tests/test_waveform_events.py": "d0f73553906db2380203d5eaf21ee41751d90425b7613de69005a9c07dc96c2d",
-    "results/013/implementation-amendment-001.json": "c5d191dd316087279cc9931a6e616efbab987153f62988ef8236b61eda9b089e"
+    "tests/test_waveform_events.py": "d0f73553906db2380203d5eaf21ee41751d90425b7613de69005a9c07dc96c2d"
   },
   "models": {
     "cbramod": {
@@ -150,7 +144,6 @@
   },
   "schema": "eegt-validation-run-source-manifest/v1",
   "sealed_by": "session-13ffd342d925791b856652db872e4142",
-  "sealed_utc": "2026-09-26T13:22:45.185757+00:00",
-  "status": "ACCEPTED",
-  "amends_manifest_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e"
+  "sealed_utc": "2026-09-26T12:08:57.932827+00:00",
+  "status": "ACCEPTED"
 }

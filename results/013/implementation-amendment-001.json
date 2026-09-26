@@ -1,0 +1,35 @@
+{
+  "schema": "eegt-validation-implementation-amendment/v1",
+  "status": "ACCEPTED",
+  "amendment": 1,
+  "original_manifest_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e",
+  "original_commit": "da06219154e70b9337df06079f905a927ecb77eb",
+  "reason": "Record-boundary RSS failure caused by retained decoder allocations; qualification collection and quality raw release/collection preserve numerical behavior.",
+  "changed_sources": {
+    "eegt/validation_intake.py": "eb9cdbe5bc464d7ff4f3a56ab5c0bacd8189933e174d50b1c6f50ec05bd0b4cf",
+    "tests/test_validation_intake.py": "5431a2a821e80af6df62e068f4dc5a5bccfd6c73357c10600d770c79f5ac195b"
+  },
+  "scientific_protocol_unchanged": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9",
+  "source_manifest_unchanged": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+  "resource_bounds_unchanged": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "independent_review": {
+    "status": "ACCEPTED",
+    "path": "results/013/memory-review/REVIEW.md",
+    "sha256": "799637f43001e6067ee458330a860def54ad6bde02aec878de18c2fbd38a2451"
+  },
+  "technical_exposure": "All20 sources acquired; unknown subset technically decoded before failed qualification boundary. No quality selection, encoder or event outcome existed. This amendment is post-access, not a new pre-access scientific design.",
+  "preserved_attempt": "results/013/attempts/001-before-memory-correction",
+  "failed_peak_rss_bytes": 2215034880,
+  "root_verified_failure_report_sha256": "589a01e096b4c39572700406cf4aac0d71cd06365ef40cd4eee9ce5b1513d2e2",
+  "fresh_stage_profiles_required": true,
+  "accepted_by": "session-13ffd342d925791b856652db872e4142",
+  "accepted_utc": "2026-09-26T13:22:45.185757+00:00"
+}
