@@ -1,3 +1,15 @@
+# Model card: EEGT representations and fixed encoders
+
+The consolidated catalog distinguishes three small numerical tokenizer families from CodeBrain and CBraMod, two distinct pretrained continuous EEG encoders, and explicit waveform-event detectors. These are different representations and do not constitute independent language models discovering a universal alphabet. Their checkpoint/source hashes and complete experiment receipts are retained in the catalog and original releases.
+
+Experiments010–013 apply frozen adapters and waveform controls without fine-tuning the pretrained encoders. Experiment013 ran 650 fixed forwards per encoder on 130 eligible new-session blocks. Six complete people support the four model-event comparisons; all adjusted results are inconclusive. The new-person cohort fails the frozen complete-participant gate and contributes no manufactured model endpoint. Geometry and change effects, missing support and test families remain separate.
+
+Event detectors record numerical extrema, inflections, cycles and bursts, with support guards and rejected candidates. Such events also occur in noise; dense landmarks may match after phase randomization. Neither event counts nor continuous embedding agreement establishes a discrete semantic vocabulary, biological specificity, diagnosis or thought decoding.
+
+Pretraining data overlap, physiological calibration, spatial/reference equivalence and physical Neurable transfer remain UNKNOWN. The EESM19 12-contact engineering check runs native event detectors only; no four-channel encoder mapping is invented. Explicit identity, personal history and task/semantic labels are excluded from discovery inputs; trained models and acquisition still carry prior assumptions.
+
+The historical Experiment002 model card follows with its original scope.
+
 # Model card: numerical tokenizers v0.2.0
 
 These are small unsupervised numerical models, authored and implemented with an LLM. There is no pretrained EEG foundation model or language-model decoding backend in Experiment 002. Independent pretrained LLM discovery is a separate question; this release does not pass off K-means agreement as that evidence.

@@ -1,3 +1,15 @@
+# Data card: consolidated EEGT catalog v0.10.0
+
+This catalog joins accepted recording, source-file, experiment, model and result receipts. The independently rebuilt catalog contains 89 candidate recordings, 88 qualified recordings and 476.053296 qualified source hours. The released catalog summary supplies the authoritative counts; do not infer people or source hours from repeated experiment rows.
+
+Experiment013 qualified 20 pinned EESM23 recordings containing 151.8486311111111 source hours. Its fixed first-four-hour grid contains 9,600 thirty-second candidates (80 hours), 4,117 quality passes and 174 selected blocks (87 minutes before detector guards). Six complete new-session participants support four endpoints. Two complete new-person participants fail the prespecified minimum of three, leaving that cohort's four primary endpoints unestimated. Quality passes are engineering eligibility, not proof of artifact-free brain activity.
+
+The separate EESM19 check uses only the first 30 seconds from each of two sessions of one source participant, 12 native ear-EEG contacts at 500 Hz and documented masks. It adds no model test and establishes no physical Neurable compatibility. Stored microvolt units do not prove physiological calibration; source clock gaps, finite masks and conservative zero-tail exclusions retain separate meanings.
+
+Large selected-wave, model-output and event-ledger archives remain in immutable experiment releases. The consolidated package contains curator evidence sufficient to rebuild its index, not a new waveform corpus. Original file-level terms, dataset versions and source authors remain authoritative. Missing values stay null, unqualified recordings stay visible, and cross-dataset person overlap is UNKNOWN.
+
+The historical Experiment002 card below is preserved with its own denominators and scope.
+
 # Data card: Experiment 002
 
 This is a fixed, small around-ear EEG pilot, not a representative population sample or a diagnostic dataset. Sources are publicly released pseudonymous recordings. Excluding explicit identity metadata does not guarantee that neural or hardware signals carry no identifying information.

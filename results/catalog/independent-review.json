@@ -1,0 +1,348 @@
+{
+  "assignment": "v1",
+  "blocking_findings": [],
+  "extraction": {
+    "actual_files_including_embedded_manifest": 58,
+    "embedded_manifest_sha256": "1cd6976f6f7bc745ec3f0dae113c6c0d0e14bd578017ac1e3d04c7bed81b2aea",
+    "inventory_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-inventory.json",
+    "inventory_sha256": "a4b47e254aa197ca278d99583fc4643b18312d85123739070fae3e7fa64f27b3",
+    "member_bytes": 60558336,
+    "member_count": 57,
+    "no_symlinks": true,
+    "path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-extracted-v3",
+    "post_run_inventory_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-post-inventory.json",
+    "post_run_inventory_sha256": "474b3f9da8b420b94a0f534dab876e359f53fd911568415ae290af651a341ca9",
+    "post_run_inventory_status": "UNCHANGED_EXACT_INVENTORY",
+    "receipt_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-extraction.json",
+    "receipt_sha256": "799f8428d3b2ae5dc3c15ad29bbc887e355d6e3528a4984005a684628b78ebf1"
+  },
+  "independent_audit": {
+    "013_endpoint_disposition": {
+      "new_people_not_estimable": 4,
+      "new_sessions_compared_inconclusive": 4
+    },
+    "013_selected_cohort_blocks": {
+      "new_people": 44,
+      "new_sessions": 130
+    },
+    "all_36_inputs_rehashed": true,
+    "candidate_recordings": 89,
+    "coverage": [
+      {
+        "dataset_id": "ds004015",
+        "known_recording_hours": 47.28973222222222,
+        "recordings": 36,
+        "source_local_people": 36,
+        "source_sessions": 36,
+        "status": "QUALIFIED",
+        "unknown_duration_recordings": 0
+      },
+      {
+        "dataset_id": "ds005178",
+        "known_recording_hours": 238.23225222222223,
+        "recordings": 32,
+        "source_local_people": 10,
+        "source_sessions": 32,
+        "status": "QUALIFIED",
+        "unknown_duration_recordings": 0
+      },
+      {
+        "dataset_id": "ds005185",
+        "known_recording_hours": 14.350477777777778,
+        "recordings": 2,
+        "source_local_people": 1,
+        "source_sessions": 2,
+        "status": "QUALIFIED",
+        "unknown_duration_recordings": 0
+      },
+      {
+        "dataset_id": "ds005207",
+        "known_recording_hours": 176.18083333333334,
+        "recordings": 18,
+        "source_local_people": 18,
+        "source_sessions": 18,
+        "status": "QUALIFIED",
+        "unknown_duration_recordings": 0
+      },
+      {
+        "dataset_id": "ds005207",
+        "known_recording_hours": null,
+        "recordings": 1,
+        "source_local_people": 1,
+        "source_sessions": 1,
+        "status": "QUARANTINED",
+        "unknown_duration_recordings": 1
+      }
+    ],
+    "earlier_adjusted_p": {
+      "experiment_011": [
+        0.125,
+        0.125
+      ],
+      "experiment_012": [
+        0.5,
+        0.25,
+        1.0,
+        1.0
+      ]
+    },
+    "engineering": {
+      "native_contacts": 12,
+      "recordings": 2,
+      "sample_rate_hz": 500,
+      "sessions": [
+        "ses-005",
+        "ses-006"
+      ],
+      "source_local_people": 1
+    },
+    "path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-audit.json",
+    "published_013_manifest_sha256": "87caec95a2116cc3518c61e7888ae513d27fdc972c8edcb353f207e4f555177c",
+    "published_013_member_sha256": {
+      "protocol/corpus-manifest-013.json": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+      "protocol/experiment-013.json": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9",
+      "results/013/qualification.json": "40bc333cb1de9c59028f883dbf4132dcc547e7ab35465da4a2fcd60d3b22512b",
+      "results/013/summary.json": "545995685035b07091eba615250f39db2046a46675769320deb377326a8bf251"
+    },
+    "qualified_recordings": 88,
+    "qualified_source_hours": 476.05329555555556,
+    "sha256": "025277d94cd1352c0a8c8c507eef54ffa98af9dd0e26d32693d1aca65fbd0f8f",
+    "source_file_identities_unique": 158,
+    "source_receipts": "67 original corpus-v2, 2 EESM19 and 20 validation recording receipts compared exactly to database receipt_json; all 122+16+20 source-file receipts retained",
+    "table_counts": {
+      "artifacts": 9,
+      "catalog_metadata": 2,
+      "experiment_models": 8,
+      "experiment_recordings": 56,
+      "experiments": 9,
+      "inputs": 36,
+      "lineage": 3,
+      "models": 2,
+      "recording_files": 146,
+      "recordings": 89,
+      "results": 29,
+      "source_files": 158
+    }
+  },
+  "limits": [
+    "Catalog publication, public downloads and live readback were not performed or accepted by this reviewer.",
+    "The already published 013 receipt and its four imported member hashes were checked locally; live v0.9.0 services and all ten public assets were not re-fetched in this pass.",
+    "Historical waveform/model/event computations, Experiment 001/002 coverage and exact 012 phase-control values remain prior-release evidence, not outputs of this metadata rebuild.",
+    "The ds005185 source file URLs and hashes are retained; its original license text is not bundled. Original source terms govern any upstream reuse; this catalog package redistributes no raw waves.",
+    "CITATION.cff records 2026-09-26 as date-released; root must confirm it matches the actual v0.10.0 publication date when releasing the candidate.",
+    "No DOI has been deposited or issued."
+  ],
+  "offline_rebuild": {
+    "all_summary_fields_except_database_sha256_equal": true,
+    "command": "PYTHONDONTWRITEBYTECODE=1 /usr/bin/time -l python3 work/database-release/build_database.py --manifest work/database-release/final/catalog-input.json --root . --destination scratch/catalog-final-rebuilt.sqlite",
+    "exact_user_schema_and_rows": true,
+    "exit": 0,
+    "logical_content_sha256": "64efd3d566264f18c30a15d71eeca13ac7ec9f4060024228c1fc509996b58f1f",
+    "max_rss_bytes": 185008128,
+    "packaged_database_sha256": "cefcbd423b57cc8b9345f4731c542369a8c43b1cc2c09cd0473f2a16efe91790",
+    "rebuilt_database_sha256": "cefcbd423b57cc8b9345f4731c542369a8c43b1cc2c09cd0473f2a16efe91790",
+    "sqlite_foreign_key_violations": 0,
+    "sqlite_integrity_check": "ok",
+    "stderr_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-rebuild.stderr",
+    "stderr_sha256": "494d1b1e6cc3835d78d43c46557934a2d70f24a1f3b746ab191805e521259672",
+    "stdout_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-rebuild.stdout",
+    "stdout_sha256": "54153bca791649437ecc7b7c93da8e6ae49549c7f5a637483580d775c90f0ebf",
+    "system_cpu_seconds": 0.18,
+    "user_cpu_seconds": 1.14,
+    "wall_seconds": 1.57
+  },
+  "packet": {
+    "catalog_member_count": 57,
+    "catalog_member_manifest_sha256": "ce0b389c129d0cc2579b1a655c6646d3c920a713189bb2b21fbd5c223ec1d8b5",
+    "catalog_member_sha256": {
+      "workspace/outputs/eegt/CITATION.cff": "05532eac9db355b9fb9c105ddbb90fc6ac7eefd76a0c8fa574953fb74bc5d652",
+      "workspace/outputs/eegt/CONTRIBUTING.md": "d76accb69db9751bc39f90c7a2d012cee98bbd209a992e5a83ffdb0e0b6b4ea5",
+      "workspace/outputs/eegt/DATABASE.md": "35f7aaeeea2c87ed30d99eca7dffbe4d3c7790202c22ef37e1a0f6b59a631c21",
+      "workspace/outputs/eegt/DATA_CARD.md": "86af4f7ccbe1e7a549c464562331b50bf736bb3f141b9fb31d39b82ddd8215f5",
+      "workspace/outputs/eegt/LICENSE": "81d1fa0720e01c2b9e2c8b04e7d1713ee623c06db017b9583ea9a0b7e515abbd",
+      "workspace/outputs/eegt/MODEL_CARD.md": "451c8313ca0571cdc0c7d54bdcc4d1514b3a614f965cbbedd3e4892f2abc43bc",
+      "workspace/outputs/eegt/protocol/corpus-manifest-008.json": "2358ceb6673058989932ac70e83ae7fd52151b0dd5ab8dc53db5371b130807f5",
+      "workspace/outputs/eegt/protocol/corpus-manifest-013.json": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+      "workspace/outputs/eegt/protocol/corpus-manifest-v1.json": "a6dac5e85c6fe080f8665aa6223d45074b3880581c80701aff8bbfd32bc8d904",
+      "workspace/outputs/eegt/protocol/experiment-003.json": "1a0da132216c4da31dd78345950db95439ada3d543788664b42f6f5c0f0939a0",
+      "workspace/outputs/eegt/protocol/experiment-008.json": "bf19d4cfe6dd2b31f8d16f5e768ed00cbfff875b926f2af3fa75c27f3b0d7860",
+      "workspace/outputs/eegt/protocol/experiment-009.json": "5c45dc42d237b89653909bf536f3cf44927a28303f808ac1d0bc48b2c00562f1",
+      "workspace/outputs/eegt/protocol/experiment-010.json": "75f79f511d286254e544a50e470248153dc3b3fe38e1596936f748162cb3fa9b",
+      "workspace/outputs/eegt/protocol/experiment-011.json": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e",
+      "workspace/outputs/eegt/protocol/experiment-012.json": "60f02a8dce9a086be3a89fe612eb9437088054f007d14348c827292fae34e138",
+      "workspace/outputs/eegt/protocol/experiment-013.json": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9",
+      "workspace/outputs/eegt/results/003/summary.json": "1a867fe7a431f1d114271bcc46efa339ed8a22461d4575f992e93a25c23fe87d",
+      "workspace/outputs/eegt/results/006/summary.json": "37b95a3d488b18391f9e885b81bb1bad9a0947676c8a6b65b0eb6cc86437eab3",
+      "workspace/outputs/eegt/results/007/summary.json": "69317f811a5a5018586e807046e713df354fd67803c108ec90aea426258fd154",
+      "workspace/outputs/eegt/results/008/summary.json": "6321b09899edb38c0a1ab740ba58dc21c33fe68d60774899c26c2c43a8a51f63",
+      "workspace/outputs/eegt/results/009/inference.json": "e55295da6537b0762ec0ac96719b55aa3a704fd73211a7f9a8db77735ef4600d",
+      "workspace/outputs/eegt/results/009/summary.json": "bcc8d4e12f048adcad11505f15151b909c0c662f43ec838aac594dfd9587701e",
+      "workspace/outputs/eegt/results/010/inference.json": "be6ac5395f9c251df6e3e7e29540e642bcbe1da373391f47a6a28645df036201",
+      "workspace/outputs/eegt/results/010/prepared.json": "545186e75a2a1ca88b0e1da3dc08100fa6bf8d90c6c788358b523e224f3e367c",
+      "workspace/outputs/eegt/results/010/summary.json": "5c077f25e6e81ee6464ab8b2b42fc8ffb63c663f2357b455448f7ec8b8724bbc",
+      "workspace/outputs/eegt/results/011/inference.json": "28f66c7f97af94181810e6f5cf817b72ccc88b104e7a8d26f647ae666e6fb82a",
+      "workspace/outputs/eegt/results/011/summary.json": "d41df51751f81f6f7592d5fe74c1923519b8a683f7ac07ac5b55c25cc904665f",
+      "workspace/outputs/eegt/results/012/summary.json": "88ff8692d94a67f849e8b3537e461ec329f5696ac1df93b5e8a16bf766cddb6f",
+      "workspace/outputs/eegt/results/013/qualification.json": "40bc333cb1de9c59028f883dbf4132dcc547e7ab35465da4a2fcd60d3b22512b",
+      "workspace/outputs/eegt/results/013/summary.json": "545995685035b07091eba615250f39db2046a46675769320deb377326a8bf251",
+      "workspace/outputs/eegt/results/corpus-v2/corpus.sqlite": "b6c165596204df38d6f541c2cc90bfa7257f8d00175f5d945d36bb018da6ef10",
+      "workspace/outputs/eegt/scripts/extract_event_assets.py": "bd5037e0382738a1ef5129c0dee804ab645cb666a1c5773dba8644782e413a5a",
+      "workspace/outputs/eegt/scripts/package_event_assets.py": "02b77c2d87f4a8cd35b4b83cc99b7b0fcb78e37b300a815d7bafa2ddb07900c8",
+      "workspace/outputs/research/EEGT-v0.3.0-PUBLICATION.json": "0ab7d072a159b1b99d8553a3dcd89357fb44b535a903d467937de2f1a1cc9c9e",
+      "workspace/outputs/research/EEGT-v0.4.0-PUBLICATION.json": "e47a9a961c02267d0a8bef6e45407220a2a584fe0cb64bf1a50b6ee298ebaefd",
+      "workspace/outputs/research/EEGT-v0.5.0-PUBLICATION.json": "294fdf41b279b0254c56069421d0eb4409e0dbaf95c535cdf92f940be88add2d",
+      "workspace/outputs/research/EEGT-v0.6.0-PUBLICATION.json": "cc164b7caae2ff42a1a03a63f33c3e679481d29d73b2db4f5c91d5e9173b8e87",
+      "workspace/outputs/research/EEGT-v0.7.0-PUBLICATION.json": "9135301d40043595cc5aace19e2ca544bfd1739c0f3ae3e0b39f9b19b8465439",
+      "workspace/outputs/research/EEGT-v0.8.0-PUBLICATION.json": "9e4e70f1648afc3e8f65e0aba6078add3f696f6b9bfed854f21bfd88b120caca",
+      "workspace/outputs/research/EEGT-v0.9.0-PUBLICATION.json": "68889980a9dd543b55a9337905c2824070e8935a9d540edf64138f17a6250dd5",
+      "workspace/outputs/research/eesm19-intake/ACCEPTANCE.json": "347df18c9287bd2e0132a56f0a630b96acd0cd4f9c80f8123baa513ab6657371",
+      "workspace/work/database-release/DOI-METADATA.json": "3962839e008d9249a73685fba4ea3e6f586990ba1b9633c12ca65b9a04acc5aa",
+      "workspace/work/database-release/QUERIES.md": "1fa1339add1076f609d434a6084687b5b91e1d16df302b94fe4cdd77c2ec0ddf",
+      "workspace/work/database-release/REPRODUCE.md": "078243105ad75fe88b0ea63b92d7cadd34880200a72fafe9fae746fe957143b5",
+      "workspace/work/database-release/SYNTHESIS.md": "1850f014b1b3c315515995d0a3ed186004897ee68aad1daddc24dd8784e2f73a",
+      "workspace/work/database-release/build_database.py": "6bd27130d20c45f75beb1b065bec6726f9dda8f2e49849c7a55267000154b056",
+      "workspace/work/database-release/final/catalog-input.json": "44026eba046f64431fcad794daac2f32563f7ae1fc2d4d407bbd3fe94d3fe1d9",
+      "workspace/work/database-release/final/catalog-summary.json": "54153bca791649437ecc7b7c93da8e6ae49549c7f5a637483580d775c90f0ebf",
+      "workspace/work/database-release/final/catalog.sqlite": "cefcbd423b57cc8b9345f4731c542369a8c43b1cc2c09cd0473f2a16efe91790",
+      "workspace/work/database-release/package_catalog.py": "5ea4a9aa01052c30a7a0b16b81615e9c2c9eed6a05a0ad9711e23f2aaf215e9a",
+      "workspace/work/database-release/prepare_index.py": "b4deed90906ded88762f2fca57ea14f1cbee9e23572b32ca8de058c06d8ebb05",
+      "workspace/work/database-release/report_catalog.py": "0adee0faed497e48324e49de51f40dce5ebb322b0d35fd6098e6da5c18b77913",
+      "workspace/work/database-release/test_catalog_publication.py": "c6742e652e3f136f5a728f6dca588e110a34ba8be18b84868c5744bf62cf180a",
+      "workspace/work/database-release/test_database.py": "462a99387ff9ebca0edb992de93c4abe087853dbe291729297d3cd81130197a4",
+      "workspace/work/eesm19-intake/out/catalog.json": "b9d652e7553a87ec17a77e481e1bc8206ed83122affc735b86793930d0ea9501",
+      "workspace/work/eesm19-intake/out/catalog.sqlite": "dd07adf34498e62930be14bdd8543d3fff7222dbca35d1faabeb39cc3f84ff49",
+      "workspace/work/validation-publication/public-downloads/eegt-v0.9.0-data-manifest.json": "87caec95a2116cc3518c61e7888ae513d27fdc972c8edcb353f207e4f555177c"
+    },
+    "catalog_state": "CANDIDATE_NOT_ACCEPTED",
+    "declared_file_count": 7,
+    "input_manifest_sha256": "f374eb6b77b98151b1361eac307a638a2f1386d634dddd76eece696c63fcfb06",
+    "outer_file_sha256": {
+      "TESTS-review-corrections.log": "42f94c891c0b57c4165c6f90e36c8af154fb35a26e411d8d577c8f93d7480ff7",
+      "catalog.html": "ea565e4fe80f997d645edad1a83b463a6575c7c895bdd9db70e460d1219bd1dd",
+      "catalog.json": "54153bca791649437ecc7b7c93da8e6ae49549c7f5a637483580d775c90f0ebf",
+      "eegt-v0.10.0-catalog-SHA256SUMS.txt": "45836e6c0a43ab2a0b34aa95e9587723f2a5e08e1b0ce66c11cfd8351d8699d3",
+      "eegt-v0.10.0-catalog-manifest.json": "ce0b389c129d0cc2579b1a655c6646d3c920a713189bb2b21fbd5c223ec1d8b5",
+      "eegt-v0.10.0-catalog-part-001-of-001.tar.gz": "5b9e3ca3fe4aeeb773c28851a6c1dad1d803fc8c6b89bcfe8e8125f358422bbf",
+      "extract_event_assets.py": "bd5037e0382738a1ef5129c0dee804ab645cb666a1c5773dba8644782e413a5a"
+    },
+    "path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/catalog-final-v3"
+  },
+  "prior_findings": [
+    {
+      "disposition": "RESOLVED",
+      "evidence": "Parsed manifest bytes are hashed once, stored in catalog_metadata, and rehashed before commit and return. Mutation canary raised ValueError and left no committed or partial database.",
+      "id": "CAT-SR-01",
+      "source": "work/database-release/build_database.py:149-218"
+    },
+    {
+      "disposition": "RESOLVED",
+      "evidence": "Render and stage compare every summary field with database-derived evidence. Renderer takes 013 support from bound summary artifact and compares all eight result receipts. Six forged count/coverage operations rejected.",
+      "id": "CAT-SR-02",
+      "source": "work/database-release/build_database.py:138-146; work/database-release/report_catalog.py:8-27; work/database-release/package_catalog.py:10-15"
+    },
+    {
+      "disposition": "RESOLVED",
+      "evidence": "Every preparation workspace read is confined before open/bind, including both externally supplied publication paths. Absolute and traversal canaries rejected.",
+      "id": "CAT-SR-03",
+      "source": "work/database-release/prepare_index.py:9-29,118-139"
+    },
+    {
+      "disposition": "RESOLVED",
+      "evidence": "Shared dataset/revision/path identities coalesce with both links and complete receipt evidence; conflicting file ID, bytes, hash, URL or status reject.",
+      "id": "CAT-SR-04",
+      "source": "work/database-release/prepare_index.py:99-115"
+    }
+  ],
+  "public_claims": {
+    "013_complete_people": {
+      "new_people": 2,
+      "new_sessions": 6
+    },
+    "013_eight_fixed_endpoints": true,
+    "013_new_people_not_estimable": 4,
+    "013_new_sessions_inconclusive": 4,
+    "candidate_publication_label": "truthful prepublication snapshot",
+    "catalog_candidate_html_and_json_exact_fresh_render": true,
+    "doi_identifier_status": "NOT_ISSUED",
+    "doi_state": "PREPARED_NOT_DEPOSITED",
+    "no_numeric_discovery_identity_or_history_import": true,
+    "no_private_noticingmind_data_in_catalog": true,
+    "no_semantic_diagnostic_universal_language_claim": true,
+    "physical_calibration_reference_gain_clock_pretraining_and_device_equivalence": "UNKNOWN",
+    "source_hours_not_window_or_people_count": true,
+    "source_local_people_not_globally_unique": true
+  },
+  "reviewed_source_sha256": {
+    "outputs/eegt/CITATION.cff": "05532eac9db355b9fb9c105ddbb90fc6ac7eefd76a0c8fa574953fb74bc5d652",
+    "outputs/eegt/DATABASE.md": "35f7aaeeea2c87ed30d99eca7dffbe4d3c7790202c22ef37e1a0f6b59a631c21",
+    "outputs/eegt/DATA_CARD.md": "86af4f7ccbe1e7a549c464562331b50bf736bb3f141b9fb31d39b82ddd8215f5",
+    "outputs/eegt/LICENSE": "81d1fa0720e01c2b9e2c8b04e7d1713ee623c06db017b9583ea9a0b7e515abbd",
+    "outputs/eegt/MODEL_CARD.md": "451c8313ca0571cdc0c7d54bdcc4d1514b3a614f965cbbedd3e4892f2abc43bc",
+    "work/database-release/DOI-METADATA.json": "3962839e008d9249a73685fba4ea3e6f586990ba1b9633c12ca65b9a04acc5aa",
+    "work/database-release/QUERIES.md": "1fa1339add1076f609d434a6084687b5b91e1d16df302b94fe4cdd77c2ec0ddf",
+    "work/database-release/REPRODUCE.md": "078243105ad75fe88b0ea63b92d7cadd34880200a72fafe9fae746fe957143b5",
+    "work/database-release/SYNTHESIS.md": "1850f014b1b3c315515995d0a3ed186004897ee68aad1daddc24dd8784e2f73a",
+    "work/database-release/build_database.py": "6bd27130d20c45f75beb1b065bec6726f9dda8f2e49849c7a55267000154b056",
+    "work/database-release/final/catalog-input.json": "44026eba046f64431fcad794daac2f32563f7ae1fc2d4d407bbd3fe94d3fe1d9",
+    "work/database-release/final/catalog-summary.json": "54153bca791649437ecc7b7c93da8e6ae49549c7f5a637483580d775c90f0ebf",
+    "work/database-release/final/catalog.sqlite": "cefcbd423b57cc8b9345f4731c542369a8c43b1cc2c09cd0473f2a16efe91790",
+    "work/database-release/package_catalog.py": "5ea4a9aa01052c30a7a0b16b81615e9c2c9eed6a05a0ad9711e23f2aaf215e9a",
+    "work/database-release/prepare_index.py": "b4deed90906ded88762f2fca57ea14f1cbee9e23572b32ca8de058c06d8ebb05",
+    "work/database-release/report_catalog.py": "0adee0faed497e48324e49de51f40dce5ebb322b0d35fd6098e6da5c18b77913",
+    "work/database-release/test_catalog_publication.py": "c6742e652e3f136f5a728f6dca588e110a34ba8be18b84868c5744bf62cf180a",
+    "work/database-release/test_database.py": "462a99387ff9ebca0edb992de93c4abe087853dbe291729297d3cd81130197a4"
+  },
+  "reviewer_actor": "session-88981af3c741f4ce3c045aff76ce659b",
+  "reviewer_thread": "01a0de2e-79a9-7be0-a9e2-d9a38d94fb26",
+  "root_next_obligations": [
+    "Publish only after integrating this content review and preserving the immutable candidate package.",
+    "Verify catalog release asset downloads and live page bytes/readback against the accepted manifest and candidate presentation.",
+    "Record the actual publication date and DOI status truthfully; DOI issuance requires a later verified deposit."
+  ],
+  "root_owner_actor": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "schema": "eegt-catalog-final-independent-review/v1",
+  "scope": "Independent catalog numerical/provenance/source/package/public-claim content review; no publication action or live catalog readback",
+  "status": "ACCEPTED_FOR_PUBLICATION",
+  "tests": {
+    "candidate_html_exact_sha256": "ea565e4fe80f997d645edad1a83b463a6575c7c895bdd9db70e460d1219bd1dd",
+    "candidate_json_exact_sha256": "54153bca791649437ecc7b7c93da8e6ae49549c7f5a637483580d775c90f0ebf",
+    "candidate_renderer_exit": 0,
+    "focused_canaries": {
+      "CAT_SR_01": "manifest mutation rejected; no committed or partial database",
+      "CAT_SR_02": [
+        "candidate_recordings/render",
+        "candidate_recordings/stage",
+        "qualified_recordings/render",
+        "qualified_recordings/stage",
+        "coverage_recordings/render",
+        "coverage_recordings/stage"
+      ],
+      "CAT_SR_03": [
+        "/tmp/catalog-outside-stage.json",
+        "../catalog-outside-stage.json",
+        "/tmp/outside-publication.json"
+      ],
+      "CAT_SR_04": {
+        "evidence": 2,
+        "links": 2,
+        "rejected_conflicts": [
+          "file_id",
+          "bytes",
+          "sha256",
+          "url",
+          "status"
+        ]
+      },
+      "schema": "reviewer-catalog-final-canaries/v1",
+      "status": "PASS",
+      "synthetic_only": true
+    },
+    "focused_canaries_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-canaries.json",
+    "focused_canaries_sha256": "c91c4968c5d67375a105c8ae27db5b29826e6f6400871b7762c5edfa67ee7717",
+    "reviewer_metadata_suite": "21 passed, 0 failed; Python -W error; exit 0",
+    "reviewer_metadata_suite_stderr_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/catalog-final-tests.stderr",
+    "reviewer_metadata_suite_stderr_sha256": "ccd93de75c9034008537eac7f9d2f93b81d264b1931e2154569d7c3f88b06cdf",
+    "root_supplied_21_test_log_sha256": "42f94c891c0b57c4165c6f90e36c8af154fb35a26e411d8d577c8f93d7480ff7"
+  },
+  "work_id": "eco-uzwh8s.39.2"
+}
