@@ -1,0 +1,21 @@
+CBraMod model source vendored from Jiquan Wang et al., CBraMod.
+Upstream commit: b9e961003214326972c567eff390e75b0287e32a
+Source: https://github.com/wjq-learning/CBraMod/tree/b9e961003214326972c567eff390e75b0287e32a/models
+Code license: MIT; the unmodified upstream LICENSE is retained here.
+
+Original models/cbramod.py SHA-256: caa7c5a0e4acd488a6f625b56f7b54dc4e7190d6b68ef5b76dff2cef86874a14
+Vendored cbramod.py SHA-256: e8193e557ee3ca3f422c17ae661fb8e4df671d9228c413ea092d879af1b8296b
+Exact source change (line 5 only):
+-from models.criss_cross_transformer import TransformerEncoderLayer, TransformerEncoder
++from .criss_cross_transformer import TransformerEncoderLayer, TransformerEncoder
+
+Original and vendored models/criss_cross_transformer.py SHA-256:
+90e90b8c98ca7eb543c44e32afc29674d3f71cb090692ad9f82db3a43edf334c
+Original and vendored LICENSE SHA-256:
+eb839b706e4d7219842e96d7dc33285844abc794292602deb3498be7b699537c
+
+The separate author-linked checkpoint is hosted at
+https://huggingface.co/weighting666/CBraMod/resolve/500543c7e30bda1b22bfd51a49301b238dee21fd/pretrained_weights.pth?download=true
+Its model card declares Apache-2.0. Expected bytes: 19,775,842; SHA-256:
+0792cb808c14e6b7a2bb2ce1dff379bc47bc54c49a779825bdfeb33bf8157178.
+Checkpoint bytes are not vendored in source.

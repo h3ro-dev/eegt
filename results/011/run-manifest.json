@@ -1,0 +1,182 @@
+{
+  "executable_and_dependency_files": {
+    "eegt/acquire.py": {
+      "bytes": 5978,
+      "path": "eegt/acquire.py",
+      "sha256": "120dfbfde3c717572035356db3fe9ba5cf8cddea1eeeeab91673313100d730a3"
+    },
+    "eegt/cbramod.py": {
+      "bytes": 3346,
+      "path": "eegt/cbramod.py",
+      "sha256": "d09869e9c8644d620a896639269cf4ca7c4992a4dfd9ac15fd5a31a1cb8f7e0f"
+    },
+    "eegt/corpus.py": {
+      "bytes": 19734,
+      "path": "eegt/corpus.py",
+      "sha256": "e8be0e5d853af6d0d57a55bbbb8c704cca5e1feea35e4944db3ee477e525a640"
+    },
+    "eegt/cross_encoder_study.py": {
+      "bytes": 42250,
+      "path": "eegt/cross_encoder_study.py",
+      "sha256": "f5b54d32f7cf5e29160aa3b39be642c10e92e482d9808d89742459339a1a4c32"
+    },
+    "eegt/distributed_study.py": {
+      "bytes": 12875,
+      "path": "eegt/distributed_study.py",
+      "sha256": "0f4f670b16494c6626a0edd36f53e94cbae2c1462c466209bede6108e5996266"
+    },
+    "eegt/pretrained.py": {
+      "bytes": 4434,
+      "path": "eegt/pretrained.py",
+      "sha256": "f64fa16898852048dcdd14da2f843d7b239c5e4e697e7be3a71643fb838841a0"
+    },
+    "eegt/pretrained_study.py": {
+      "bytes": 25901,
+      "path": "eegt/pretrained_study.py",
+      "sha256": "80187b84274606d4d7d4c514d7eb05b892b4b8df96b8a92b6ea099293a232e3c"
+    },
+    "eegt/vendor/cbramod/cbramod.py": {
+      "bytes": 4587,
+      "path": "eegt/vendor/cbramod/cbramod.py",
+      "sha256": "e8193e557ee3ca3f422c17ae661fb8e4df671d9228c413ea092d879af1b8296b"
+    },
+    "eegt/vendor/cbramod/criss_cross_transformer.py": {
+      "bytes": 8521,
+      "path": "eegt/vendor/cbramod/criss_cross_transformer.py",
+      "sha256": "90e90b8c98ca7eb543c44e32afc29674d3f71cb090692ad9f82db3a43edf334c"
+    },
+    "eegt/vendor/codebrain/SGConv.py": {
+      "bytes": 13776,
+      "path": "eegt/vendor/codebrain/SGConv.py",
+      "sha256": "94f12f897ab4e8784a45d64fb65664184c872e6928159a6759fda2920c488be8"
+    },
+    "eegt/vendor/codebrain/SSSM.py": {
+      "bytes": 11847,
+      "path": "eegt/vendor/codebrain/SSSM.py",
+      "sha256": "9f7b892a3908ad838cb43a842c14c2a165e7f93d6243b31f0c9d32c90183253b"
+    },
+    "pyproject.toml": {
+      "bytes": 426,
+      "path": "pyproject.toml",
+      "sha256": "c79673d00faea95a564ab4348d67fbb424fdc3d891f126762263ad635e1299ec"
+    },
+    "requirements-encoder.lock": {
+      "bytes": 225,
+      "path": "requirements-encoder.lock",
+      "sha256": "c70edc4ff592cda5d77139b8b29912ebb0e2853c9c2b1139fab79022816b6182"
+    },
+    "requirements.lock": {
+      "bytes": 508,
+      "path": "requirements.lock",
+      "sha256": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6"
+    },
+    "scripts/reproduce_cross_encoder.py": {
+      "bytes": 2666,
+      "path": "scripts/reproduce_cross_encoder.py",
+      "sha256": "34ef60cb572e1242040a46860de8b7daae60b6bc18d0e0ae37ae411129da022f"
+    },
+    "tests/test_cross_encoder_study.py": {
+      "bytes": 7647,
+      "path": "tests/test_cross_encoder_study.py",
+      "sha256": "968565341b66102e7cfc11e7b05e757b272e9a07ee426c97edc8f5209cd589a8"
+    }
+  },
+  "expected_blocks": 122,
+  "expected_forwards": 610,
+  "frozen_at_utc": "2026-09-26T02:08:48.800030+00:00",
+  "input_files": {
+    "input/FREEZE.json": {
+      "bytes": 417,
+      "path": "input/FREEZE.json",
+      "sha256": "36929a2c4118f750ff74443456f3543006ad2ed866811bb3354bbb3a0f6d5082"
+    },
+    "input/adapter-acceptance.json": {
+      "bytes": 2286,
+      "path": "input/adapter-acceptance.json",
+      "sha256": "e05a41b9fa725ad7fec6a49aa52b013d883cce46b3cd0d735b3d1f12bc8a1011"
+    },
+    "input/experiment-011.json": {
+      "bytes": 9336,
+      "path": "input/experiment-011.json",
+      "sha256": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e"
+    },
+    "input/pretrained_weights.pth": {
+      "bytes": 19775842,
+      "path": "input/pretrained_weights.pth",
+      "sha256": "0792cb808c14e6b7a2bb2ce1dff379bc47bc54c49a779825bdfeb33bf8157178"
+    },
+    "repo/data/derived/010/embeddings.npz": {
+      "bytes": 54344219,
+      "path": "repo/data/derived/010/embeddings.npz",
+      "sha256": "5c961360971ed18c88a0c2e474fece27ca7db08d359ffa8223a81f1c64b7de40"
+    },
+    "repo/data/derived/010/prepared.npz": {
+      "bytes": 12275162,
+      "path": "repo/data/derived/010/prepared.npz",
+      "sha256": "894cfc2f49371223ea488b6b662d909ba366ad1e84c215d18a37c9d64a138abc"
+    },
+    "repo/eegt/distributed_study.py": {
+      "bytes": 12875,
+      "path": "repo/eegt/distributed_study.py",
+      "sha256": "0f4f670b16494c6626a0edd36f53e94cbae2c1462c466209bede6108e5996266"
+    },
+    "repo/eegt/pretrained_study.py": {
+      "bytes": 25901,
+      "path": "repo/eegt/pretrained_study.py",
+      "sha256": "80187b84274606d4d7d4c514d7eb05b892b4b8df96b8a92b6ea099293a232e3c"
+    },
+    "repo/protocol/experiment-010.json": {
+      "bytes": 10254,
+      "path": "repo/protocol/experiment-010.json",
+      "sha256": "75f79f511d286254e544a50e470248153dc3b3fe38e1596936f748162cb3fa9b"
+    },
+    "repo/protocol/experiment-011.json": {
+      "bytes": 9336,
+      "path": "repo/protocol/experiment-011.json",
+      "sha256": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e"
+    },
+    "repo/requirements.lock": {
+      "bytes": 508,
+      "path": "repo/requirements.lock",
+      "sha256": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6"
+    },
+    "repo/results/010/inference.json": {
+      "bytes": 216683,
+      "path": "repo/results/010/inference.json",
+      "sha256": "be6ac5395f9c251df6e3e7e29540e642bcbe1da373391f47a6a28645df036201"
+    },
+    "repo/results/010/prepared.json": {
+      "bytes": 3131630,
+      "path": "repo/results/010/prepared.json",
+      "sha256": "545186e75a2a1ca88b0e1da3dc08100fa6bf8d90c6c788358b523e224f3e367c"
+    }
+  },
+  "input_identity_rule": "Full receipts and archives plus every selected row and all variant input/output hashes validated before freeze",
+  "protocol_sha256": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e",
+  "runtime": {
+    "distributions": {
+      "numpy": {
+        "record_sha256": "674325c4a29783389903fa1b947dd21323278d9870e08500939f26e3146ed4be",
+        "version": "1.26.4"
+      },
+      "scipy": {
+        "record_sha256": "6422a28591d23f1d9cfb6940c5ac5ffc134383d3c31569afb03af32d64a967c1",
+        "version": "1.14.1"
+      },
+      "torch": {
+        "record_sha256": "33e898fbb37a460c10de49a53f23655b0730f3cb99305f9cd32ca988f646aea9",
+        "version": "2.4.1"
+      }
+    },
+    "executable": "/Users/studio1/lanes.noindex/eco-uzwh8s.30/scratch/venv/bin/python",
+    "executable_resolved": "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/bin/python3.12",
+    "executable_sha256": "ac60cfe0268614638d0ffa35f3b0284fc7b3a11482723793455e17eeb278509e",
+    "numpy": "1.26.4",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "scipy": "1.14.1",
+    "torch": "2.4.1"
+  },
+  "schema": "eegt-cross-encoder-run-manifest/v1",
+  "status": "FROZEN_BEFORE_INFERENCE"
+}

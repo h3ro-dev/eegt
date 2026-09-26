@@ -4,13 +4,21 @@
 
 The current experiment runs a continuous EEG encoder, not an LLM decoder or thought interpretation.
 
-An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release compares a pinned pretrained EEG encoder with frozen numerical views on time-distributed public around-ear EEG. This does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
+An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release compares two fixed pretrained EEG encoders on the same time-distributed public around-ear EEG. This does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
 
 - [Research Notes website](https://h3ro-dev.github.io/eegt/)
 - [Continuous corpus and transitions](https://h3ro-dev.github.io/eegt/growth.html)
 - [Database contract](DATABASE.md), [Experiment 003 protocol](protocol/experiment-003.json), and [input contract](https://github.com/h3ro-dev/eegt/blob/v0.6.0/protocol/INPUT-CONTRACT.md)
 - [Experiment 002 data card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/DATA_CARD.md), [results](https://github.com/h3ro-dev/eegt/blob/v0.6.0/results/002/metrics.json), and [model card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
+
+## Two-encoder comparison · v0.7.0
+
+[Experiment 011](https://h3ro-dev.github.io/eegt/cross-encoder.html) compares **CodeBrain and CBraMod** on the same **122 selected blocks**. CBraMod ran **610 new forward passes**; CodeBrain outputs were reused with exact hash checks. **Five paired people / 110 blocks** support both primary tests. Mean paired original-minus-phase effects are **0.0713 for geometry** and **0.0947 for change**. Both adjusted p values are **0.125**: positive observed contrasts, still inconclusive. No new source people or recorded hours enter this analysis.
+
+[Research Note](notes/experiment-011.md) · [Frozen protocol](protocol/experiment-011.json) · [Validation](notes/validation-011.md) · [Release](https://github.com/h3ro-dev/eegt/releases/tag/v0.7.0) · [Reproduction instructions](REPRODUCE-011.md).
+
+The data archive contains a complete `repo/` and `input/` reproduction packet, both latent archives and the selected numeric waves. Offline evaluation requires no checkpoint or model call. Preserve its original path layout and reproduce into a new output directory. The release keeps the original source seal, failed evaluation partial and explicit post-inference serialization/offline-dependency correction. Pretraining overlap, ear/scalp transfer, semantic meaning and universal tokenization remain unestablished.
 
 ## Time-distributed comparison · v0.6.0
 
@@ -153,3 +161,5 @@ The older scalp seed, Experiment 001, assigned 393 of 3,458 external windows (11
 Start with a proposed numbered protocol or a reproducible defect. Keep acquisition metadata outside model inputs; record source versions, checksums, units and channel geometry; retain all selected seeds/settings and failures. See [CONTRIBUTING.md](https://github.com/h3ro-dev/eegt/blob/v0.6.0/CONTRIBUTING.md) and [the repeatable workflow](RUNBOOK.md). Every completed batch gets an immutable release and Research Note; corrections are appended and linked. No semantic or clinical claim is a default interpretation of a token.
 
 Code: MIT. Derived numeric data/codebooks: CC0-1.0, with upstream source terms and attribution retained. See [LICENSE](LICENSE), [DATA_CARD.md](https://github.com/h3ro-dev/eegt/blob/v0.6.0/DATA_CARD.md), and [CITATION.cff](CITATION.cff).
+
+Experiment 011 scales calibrated microvolts as µV/100, following both encoders’ documented pretraining convention. This does not validate amplitude distributions, reference/calibration equivalence or four-ear-channel positional mapping against their scalp inputs; the public note links the audited sources.

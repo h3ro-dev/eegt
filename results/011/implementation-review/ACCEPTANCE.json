@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-implementation-review/v1",
+  "status": "ACCEPTED",
+  "utc": "2026-09-26T02:32:00.642154+00:00",
+  "reviewer": "root Astra independent of Sol implementation",
+  "native_worker": "01a0db6d-beff-7770-9d43-8c8a3ae5776a",
+  "checks": 6858,
+  "maximum_numeric_error": 3.3306690738754696e-16,
+  "synthetic_tests_passed": 9,
+  "root_offline_scientific_summary_exact_equal_excluding_database_hash": true,
+  "root_offline_sql_dump_identical": true,
+  "root_offline_database_bytes_identical": false,
+  "worker_offline_same_runtime_summary_and_sqlite_byte_identical": true,
+  "worker_manifest_files_verified": 45,
+  "post_inference_amendment_decision": "ACCEPTED: diff restricted to integer JSON serialization, verification of the amended source, and skipping checkpoint byte access in offline evaluation while retaining recorded checkpoint identity. No metric, support, aggregation or inference function changed; original seal and failed outputs preserved. Root independently recomputed all block scientific metrics and primary tests.",
+  "source_sha256": "cfc934775d663396713f3105dd121878186ff1d375c9531398f25a5a5c389eae",
+  "scientific_summary_sha256": "d41df51751f81f6f7592d5fe74c1923519b8a683f7ac07ac5b55c25cc904665f",
+  "boundary": "Implementation/numerical acceptance only; root-authored packaging/reporting requires separate review and release/live readback before .31 closes."
+}

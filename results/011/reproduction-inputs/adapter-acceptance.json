@@ -1,0 +1,32 @@
+{
+  "schema": "eegt-adapter-acceptance/v1",
+  "accepted_at_utc": "2026-09-26T01:49:57.339786+00:00",
+  "status": "ACCEPTED",
+  "bead": "eco-uzwh8s.30",
+  "independent_reviewer": "root Astra, distinct from author Sol worker",
+  "proof": {
+    "full_grid_author_equivalence": "PASS exact0error",
+    "review_forwards": 4,
+    "real_checkpoint_contract_tests": "4/4PASS, one forward",
+    "canonical_suite": "68tests,66PASS,2explicitoptionalcheckpointSKIP; realCBraMod4testscanary separatelyPASS",
+    "manifest": "27workerinput/output/source hashes verified; see worker-MANIFEST.json",
+    "nonscientific_limit": "No011 agreement output computed. Compatibility does not establish valid ear montage or generalization."
+  },
+  "files": {
+    "eegt/cbramod.py": "d09869e9c8644d620a896639269cf4ca7c4992a4dfd9ac15fd5a31a1cb8f7e0f",
+    "tests/test_cbramod.py": "cd723b03e7e4a165a50ec635a9c2e119783e94b1bc6fac99c543b57824e58c28",
+    "scripts/smoke_cbramod.py": "b59debfc531bcfd7e3fd6388335d9fe1d4e62d1c0d1d77eabac298e9ac208a31",
+    "eegt/vendor/cbramod/LICENSE": "eb839b706e4d7219842e96d7dc33285844abc794292602deb3498be7b699537c",
+    "eegt/vendor/cbramod/NOTICE": "0d7a6e86a934386c8019fbc54a2232c02455acdbf74cee1859bb60f61b797de1",
+    "eegt/vendor/cbramod/cbramod.py": "e8193e557ee3ca3f422c17ae661fb8e4df671d9228c413ea092d879af1b8296b",
+    "eegt/vendor/cbramod/criss_cross_transformer.py": "90e90b8c98ca7eb543c44e32afc29674d3f71cb090692ad9f82db3a43edf334c"
+  },
+  "reviewed_design": [
+    "Full-file byte-bound safe load; strict211statekeys; source vendoring only relativeimport",
+    "Frozen CPUeval/inference; copied numerical inputs and owned float32outputs",
+    "Malformed dtype/shape/NaN/Inf and alteredweights rejected; actual strictshape/key fixtures",
+    "Contextual one-secondpatches,19scalpordinalkernel andunknownpretrainingoverlap preserved"
+  ],
+  "integration_adjustment": "Smoke CLI now requires explicit --packet-root and fresh --output-dir, uses canonical adjacent package, preserves previous receipts. Syntax/help check; no adapter logic changed.",
+  "auxiliary_review": "Native .32 reviewer continuation was refused at pre-start resource gate and reported to router owner; not counted as review. Root independently reviewed adapter and ran native checkpoint proof."
+}

@@ -1,0 +1,104 @@
+--- repo/results/011/pre-amendment-cross_encoder_study.py	2026-09-25 20:12:47
++++ repo/eegt/cross_encoder_study.py	2026-09-25 20:17:01
+@@ -117,7 +117,7 @@
+     return ledger
+ 
+ 
+-def validate_inputs(packet_root):
++def validate_inputs(packet_root, require_checkpoint=True):
+     """Validate frozen protocol, full receipts, archives and all 610 hash pairs."""
+     packet = Path(packet_root)
+     root = packet / "repo"
+@@ -132,10 +132,11 @@
+         raise ValueError("adapter review not accepted")
+     for relative, sha in adapter["files"].items():
+         require_hash(root / relative, sha, f"accepted adapter {relative}")
+-    checkpoint = packet / "input/pretrained_weights.pth"
+-    if checkpoint.stat().st_size != protocol["cbramod"]["checkpoint_bytes"]:
+-        raise ValueError("CBraMod checkpoint byte count mismatch")
+-    require_hash(checkpoint, protocol["cbramod"]["checkpoint_sha256"], "CBraMod checkpoint")
++    if require_checkpoint:
++        checkpoint = packet / "input/pretrained_weights.pth"
++        if checkpoint.stat().st_size != protocol["cbramod"]["checkpoint_bytes"]:
++            raise ValueError("CBraMod checkpoint byte count mismatch")
++        require_hash(checkpoint, protocol["cbramod"]["checkpoint_sha256"], "CBraMod checkpoint")
+     for relative, sha in protocol["inputs"].items():
+         require_hash(root / relative, sha, f"frozen input {relative}")
+     prepared_receipt = read(root / protocol["selection"]["prepared_receipt"])
+@@ -215,13 +216,15 @@
+     return manifest
+ 
+ 
+-def verify_manifest(inputs):
++def verify_manifest(inputs, allow_analysis_amendment=False, require_checkpoint=True):
+     packet, root = inputs["packet"], inputs["root"]
+     path = root / "results/011/run-manifest.json"
+     manifest = read(path)
+     if manifest["protocol_sha256"] != PROTOCOL_SHA256 or manifest["status"] != "FROZEN_BEFORE_INFERENCE":
+         raise ValueError("run manifest mismatch")
+     for relative, record in manifest["input_files"].items():
++        if relative == "input/pretrained_weights.pth" and not require_checkpoint:
++            continue  # The pinned inference receipt binds weights; offline evaluation never loads them.
+         target = packet / relative
+         if target.stat().st_size != record["bytes"]:
+             raise ValueError(f"manifest input byte count mismatch: {relative}")
+@@ -229,8 +232,21 @@
+     for relative, record in manifest["executable_and_dependency_files"].items():
+         target = root / relative
+         if target.stat().st_size != record["bytes"]:
+-            raise ValueError(f"manifest source byte count mismatch: {relative}")
+-        require_hash(target, record["sha256"], f"manifest source {relative}")
++            changed = True
++        else:
++            changed = digest(target) != record["sha256"]
++        if changed:
++            if not allow_analysis_amendment or relative != "eegt/cross_encoder_study.py":
++                raise ValueError(f"manifest source mismatch: {relative}")
++            amendment_path = root / "results/011/analysis-amendment.json"
++            amendment = read(amendment_path)
++            if (amendment["schema"] != "eegt-cross-encoder-analysis-amendment/v1"
++                    or amendment["scope"] != "COUNT_SERIALIZATION_AND_WEIGHTLESS_REPRODUCTION"
++                    or amendment["base_manifest_sha256"] != digest(path)
++                    or amendment["source_before_sha256"] != record["sha256"]
++                    or amendment["source_after_sha256"] != digest(target)
++                    or amendment["source_before_sha256"] != digest(root / "results/011/pre-amendment-cross_encoder_study.py")):
++                raise ValueError("analysis amendment binding mismatch")
+     return manifest
+ 
+ 
+@@ -387,7 +403,7 @@
+                            mean_two_sessions=(float((sessions["001"]["median"] + sessions["002"]["median"]) / 2)
+                                               if valid else None)))
+     scores = [p["mean_two_sessions"] for p in people if p["status"] == "COMPLETE"]
+-    return dict(selected_blocks=len(selected), valid_blocks=sum(b["value"] is not None and np.isfinite(b["value"]) for b in blocks),
++    return dict(selected_blocks=len(selected), valid_blocks=int(sum(b["value"] is not None and np.isfinite(b["value"]) for b in blocks)),
+                 records=records, participants=people, complete_participants=len(scores),
+                 mean_participant_value=None if not scores else float(np.mean(scores)))
+ 
+@@ -658,14 +674,16 @@
+ 
+ def evaluate(packet_root, output_dir):
+     """Offline analysis; only the frozen arrays, receipts and sources are read."""
+-    inputs = validate_inputs(packet_root)
+-    verify_manifest(inputs)
++    inputs = validate_inputs(packet_root, require_checkpoint=False)
++    verify_manifest(inputs, allow_analysis_amendment=True, require_checkpoint=False)
+     root = inputs["root"]
+     inference = read(root / "results/011/inference.json")
+     if inference["status"] != "COMPLETE" or inference["run_manifest_sha256"] != digest(root / "results/011/run-manifest.json"):
+         raise ValueError("011 inference/manifest binding mismatch")
+     if inference["protocol_sha256"] != PROTOCOL_SHA256 or inference["block_variant_runs"] != 610:
+         raise ValueError("011 protocol/forward count mismatch")
++    if inference["checkpoint_sha256"] != inputs["protocol"]["cbramod"]["checkpoint_sha256"]:
++        raise ValueError("011 checkpoint receipt identity mismatch")
+     require_hash(root / inference["array_path"], inference["array_sha256"], "CBraMod archive")
+     with np.load(root / inference["array_path"], allow_pickle=False) as archive:
+         if set(archive.files) != {"embeddings", "candidate_indices", "variants"}:
+@@ -677,6 +695,7 @@
+         raise FileExistsError("preserve existing evaluation")
+     counts = write_sqlite(out / "analysis.sqlite", inputs, summary, inference)
+     summary["input_hashes"] = dict(run_manifest=digest(root / "results/011/run-manifest.json"),
++                                   analysis_amendment=digest(root / "results/011/analysis-amendment.json"),
+                                    cbramod_archive=inference["array_sha256"],
+                                    codebrain_archive=inputs["old_run"]["array_sha256"],
+                                    prepared_archive=inputs["prepared_receipt"]["array_sha256"])

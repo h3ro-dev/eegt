@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.31/repo/scripts/reproduce_cross_encoder.py", line 54, in <module>
+    main()
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.31/repo/scripts/reproduce_cross_encoder.py", line 47, in main
+    result = study.evaluate(packet, output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.31/repo/eegt/cross_encoder_study.py", line 678, in evaluate
+    counts = write_sqlite(out / "analysis.sqlite", inputs, summary, inference)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.31/repo/eegt/cross_encoder_study.py", line 625, in write_sqlite
+    None if test is None else test["p_bonferroni_two"], canonical_json(r)))
+                                                        ^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.31/repo/eegt/corpus.py", line 26, in canonical_json
+    return json.dumps(value, sort_keys=True, indent=2, allow_nan=False) + "\n"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
