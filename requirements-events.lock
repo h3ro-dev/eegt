@@ -1,0 +1,24 @@
+# Python 3.12.14; exact installed environment for eco-uzwh8s.33.
+# Install from the repository root with:
+# uv pip install --python .venv/bin/python -r requirements-events.lock
+# PyPI author source distributions were independently pinned and retained in the review packet.
+# The two local author source distributions have SHA256:
+# bycycle-1.2.0.tar.gz a025ac7f1e04afb0e9364a1ddb6c780d4f23ae11db344b3291a0f18805b4b86b
+# neurodsp-2.3.0.tar.gz 0aab3d2bf5729b06f9925f8251f5111f0e6119f07aaa5522a0a1f750765b5639
+bycycle==1.2.0
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.66.0
+kiwisolver==1.5.1
+matplotlib==3.11.2
+neurodsp==2.3.0
+numpy==1.26.4
+packaging==26.3
+pandas==2.3.2
+pillow==12.3.0
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+pytz==2026.4
+scipy==1.14.1
+six==1.17.0
+tzdata==2026.4
