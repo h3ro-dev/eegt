@@ -16,17 +16,17 @@ class EventAssetTests(unittest.TestCase):
                 (base / f'{i}.bin').write_bytes(bytes(range(256)) * 24)
             mapping = {f'repo/{i}.bin': f'{i}.bin' for i in range(5)}
             expected = assets.inventory(base, mapping)
-            a = assets.write_assets(base, mapping, base / 'a', 'eegt-test', expected_files=expected, shard_bytes=20480)
-            b = assets.write_assets(base, mapping, base / 'b', 'eegt-test', expected_files=expected, shard_bytes=20480)
+            a = assets.write_assets(base, mapping, base / 'a', 'eegt-v0.8.0-review-r1', expected_files=expected, shard_bytes=20480)
+            b = assets.write_assets(base, mapping, base / 'b', 'eegt-v0.8.0-review-r1', expected_files=expected, shard_bytes=20480)
             self.assertGreater(len(a['assets']), 1)
             self.assertEqual(a, b)
             all_members = [x for row in a['assets'].values() for x in row['members']]
             self.assertEqual(sorted(all_members), sorted(mapping))
             with self.assertRaises(FileExistsError):
-                assets.write_assets(base, mapping, base / 'a', 'eegt-test', expected_files=expected, shard_bytes=20480)
+                assets.write_assets(base, mapping, base / 'a', 'eegt-v0.8.0-review-r1', expected_files=expected, shard_bytes=20480)
             (base / '0.bin').write_bytes(b'changed')
             with self.assertRaisesRegex(ValueError, 'accepted inventory'):
-                assets.write_assets(base, mapping, base / 'c', 'eegt-test', expected_files=expected)
+                assets.write_assets(base, mapping, base / 'c', 'eegt-v0.8.0-review-r1', expected_files=expected)
 
     def test_reject_unsafe_paths_and_symlinks(self):
         with tempfile.TemporaryDirectory() as temp:

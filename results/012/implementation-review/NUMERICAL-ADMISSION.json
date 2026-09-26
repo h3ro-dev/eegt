@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-26T06:00:27.428691+00:00",
+  "mode": "existing root; no new worker",
+  "prior_numeric_state": "COMPLETE_AND_EXITED pid84146 exit0",
+  "host": "studio0",
+  "direct_measurements": {
+    "logical_cores": 32,
+    "load1": 13.04,
+    "cpu_idle_percent": 68.23,
+    "ram_unused_GiB": 57,
+    "memory_pressure_level": 1,
+    "swapins_sample": 0,
+    "swapouts_sample": 0,
+    "available_disk_KiB": 912538000
+  },
+  "task": "one sequential independent numerical audit then six detector regenerations",
+  "bound": {
+    "processes": 1,
+    "threads": 1,
+    "rss_bytes": 2147483648,
+    "cpu_seconds": 7200,
+    "new_output_bytes": 20000000
+  },
+  "scientific_source_changes": false,
+  "audit_plan_sha256": "abeca19b0688591c6137eae4871779acd94487918f1475fe8a770c87be1a1d5c"
+}

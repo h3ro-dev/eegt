@@ -88,7 +88,8 @@ def write_assets(root, mapping, output, prefix, *, expected_files, shard_bytes=D
     check. Input files are streamed. Existing or failed output is never replaced.
     """
     root, output = Path(root).resolve(), Path(output)
-    if not prefix or any(c not in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_' for c in prefix):
+    if (not prefix or not prefix[0].isalnum()
+            or any(c not in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.' for c in prefix)):
         raise ValueError('unsafe asset prefix')
     files = inventory(root, mapping)
     if files != expected_files:

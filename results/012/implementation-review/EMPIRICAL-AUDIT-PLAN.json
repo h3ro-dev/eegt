@@ -1,0 +1,15 @@
+{
+  "schema": "eegt-independent-audit-plan/v1",
+  "checker_sha256": "05514153410467f52b11c2f2bfd42aa17ba1ff12ba7d2d711b9b3ce3a5eff923",
+  "scope": "All primary block/person effects and native matching invariants, no study imports",
+  "detector_regeneration_rows": [
+    0,
+    61,
+    121
+  ],
+  "selection_reason": "Fixed first, middle, last archived array rows before full empirical results inspection; no agreement-based selection",
+  "numeric_process_limit": 1,
+  "detector_regeneration_all_native_variants": false,
+  "detector_regeneration_scope": "native primary and prepared original only, with exact frozen inputs; preserve cross-host floating differences if present",
+  "run_state": "WAIT_FOR_COMPLETE_PRIMARY_RUN"
+}

@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite this software release and the original EEG sources linked in notes/experiment-011.md."
+message: "Please cite this software release and the original EEG sources linked in notes/experiment-012.md."
 type: software
 title: "EEGT: Anonymous around-ear EEG tokenization experiments"
-version: 0.7.0
-date-released: 2026-09-25
+version: 0.8.0
+date-released: 2026-09-26
 authors:
   - name: EEGT contributors
 repository-code: "https://github.com/h3ro-dev/eegt"

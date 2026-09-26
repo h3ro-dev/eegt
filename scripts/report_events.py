@@ -86,6 +86,29 @@ def number(value):
     return 'not estimable' if value is None else f'{value:.4f}'
 
 
+def resolution_text(primary):
+    largest = max(r['people'] for r in primary)
+    if largest < 2:
+        return 'No endpoint has two complete people, so no participant-level exact test is estimable.'
+    minimum = 2 / 2 ** largest
+    return (f'The largest eligible endpoint has {largest} complete people. Its smallest attainable two-sided raw p is '
+            f'2/{2 ** largest} = {minimum:g}; with four primary tests the smallest adjusted p is {min(1, 4 * minimum):g}. '
+            'A smaller eligible sample makes resolution coarser. These p values are not probabilities that a universal language exists. '
+            'New people supply independent replication; thousands of windows from the same people do not.')
+
+
+def noise_text(rows):
+    trials = sorted({r['trials'] for r in rows})
+    cycles = [r for r in rows if r['method_and_band'].startswith('bycycle_1.2.0:')]
+    universal_detection = bool(cycles) and all(r['trials_with_detection'] == r['trials'] for r in cycles)
+    description = ('Cycle events occurred in every scored trial for all listed noise/band combinations. '
+                   if universal_detection else 'Cycle detections varied across the scored noise/band combinations. ')
+    return (f'The earlier synthetic battery scored {", ".join(map(str, trials))} independently seeded trials per listed condition, '
+            'using white or colored noise without a planted oscillator. ' + description +
+            'The table reports every condition, including burst detections. A detected oscillation or turning point cannot by itself establish a biological state. '
+            'These are numerical control detections, not clinical false-positive rates.')
+
+
 def run(root=ROOT):
     root = Path(root)
     data = collect(root)
@@ -107,15 +130,23 @@ def run(root=ROOT):
                    [[r['noise'], r['method_and_band'], f"{r['trials_with_detection']} / {r['trials']}", r['detection_rows']] for r in data['noise_controls']])
     resources = data['resources']
     native = data['native_primary']
+    middle = {r['variant']: r for r in data['native_controls'] if r['tolerance_seconds'] == .025}
+    unavailable = [name for name, row in middle.items() if row['pooled_agreement'] is None]
+    control_interpretation = (f"Independently phase-randomized signals still have pooled landmark agreement {number(middle['independent_phase']['pooled_agreement'])} at 25 milliseconds. "
+                              'Dense landmarks and a nonzero matching tolerance can produce high agreement even after local timing is disrupted; this is not evidence of the same brain state. '
+                              'Gain, offset and aligned polarity controls test expected numerical invariances. ')
+    if unavailable:
+        control_interpretation += 'The following controls have no estimable pooled agreement after the frozen support rules: ' + ', '.join(unavailable) + '. Undefined comparisons are retained, not scored as zero or perfect agreement.'
     sections = [
         ('The question', 'Do recurring turns in the signal provide a useful numerical description, and do two fixed EEG encoders reflect that description? A reproducible landmark is a starting point. Universality would additionally require stability across new people, sessions, devices and datasets. No semantic or clinical labels enter this experiment.'),
         ('What a turn means here', 'An extremum is a peak or trough in a filtered signal; an inflection is a change in curvature. These are separately defined derivative events. We also retain cycle shape, period, amplitude, slope, curvature, rise/decay asymmetry and two burst definitions. These engineered measurements are not automatically transitions between biological states. Waveform path length, turning angle and return distance remain undefined because no direct-waveform geometry was frozen for them.'),
         ('The complete denominator', f"The earlier census had 5,760 candidate thirty-second blocks, 2,973 quality passes and 122 time-selected blocks from six people and twelve recordings. Those 122 blocks represent 61 selected minutes within 48 already examined hours. This run adds zero source people or hours and makes zero new encoder forward passes. The native primary branch retains {native['candidate_event_rows']:,} event candidates: {native['accepted_event_rows']:,} accepted and {native['rejected_event_rows']:,} rejected. These counts include different and overlapping event families; they are not independent tokens or additional recordings."),
         ('Direct events and two encoders', 'The native branch analyzes the original selected 250 Hz microvolt data with 18 frozen variants. A separate branch analyzes five archived 200 Hz variants used by CodeBrain and CBraMod. For that comparison, accepted peaks, troughs and the two inflection directions form a 16-component count vector for each one-second interval across four channels. Geometry compares pairwise cosine-distance ranks; change compares adjacent-interval distance ranks. Each learned encoder vector still has whole-block context. These tests associate event-count patterns with continuous embeddings; they do not localize the models’ causal attention or learn a discrete vocabulary.'),
         ('Four primary tests', 'For each model and metric, the block effect is original event-to-embedding correlation minus its independently phase-randomized counterpart. A common complete support is required. Zero norms, insufficient intervals and arithmetically constant distance sequences abstain. Each recording needs at least three paired valid blocks; we take its median effect, average two nights, then weight each complete person equally. The table counts only blocks from complete people. All excluded people, nights and blocks remain in the machine-readable record. The exact two-sided sign-flip test assumes independent people and sign symmetry; four-test Bonferroni adjustment was frozen before output.'),
-        ('Why more windows cannot settle the test', 'With at most five complete people, the smallest attainable two-sided raw p is 2/32 = 0.0625; with four primary tests the smallest adjusted p is 0.25. A smaller eligible sample makes resolution coarser. This experiment can estimate direction and size descriptively but cannot meet a 0.05 adjusted threshold. The p values are not probabilities that a universal language exists. New people supply independent replication; thousands of windows from the same people do not.'),
+        ('The resolution of the test', resolution_text(primary)),
         ('Do landmarks survive changes to the input?', 'Every control is retained: gain, polarity, offset, known time shift, reference, passband, smoothing, line noise, phase, clipping and impulses. Synthetic gap tests are retained separately in the earlier detector validation. The table shows the middle prespecified tolerance, 25 milliseconds; 10 and 50 milliseconds are also reported in the data. Known time shifts and polarity are explicitly aligned. Matching requires full support inside common guarded intervals and one-to-one pairs. Pooled agreement is twice matched events divided by eligible events in both signals. It is a descriptive event-weighted score, not a participant-level test. Empty strata remain undefined, never perfect agreement.'),
-        ('Cycles and bursts also occur in noise', 'The earlier synthetic battery tested 100 independently seeded white-noise and colored-noise signals without a planted oscillator. Cycle detection occurs in all 100 trials for every listed band and both noise types; burst detectors also frequently return events. This is why a detected oscillation or turning point cannot by itself establish a biological state. The table retains all 100 trials, not just a smaller validation subset. These are numerical control detections, not clinical false-positive rates.'),
+        ('How to read high agreement and missing comparisons', control_interpretation),
+        ('Cycles and bursts also occur in noise', noise_text(data['noise_controls'])),
         ('Support, filtering and exposure', 'Every candidate and rejection remains in a compressed, hash-bound ledger with masks, filter coefficients, transformed input hashes and temporal support. Native event filtering and the inherited 200 Hz encoder preprocessing are distinct. Encoder inputs retain the earlier 0.3–75 Hz passband, 60 Hz notch and µV/100 scaling; the source reports 50 Hz mains. Neither this numerical scale nor successful execution proves scalp-to-ear positional or physiological calibration equivalence. Pretraining overlap remains unknown. The six development people and their selected nights are exposed data; reserved people 007–010 and later sessions remain untouched.'),
         ('Anonymous measurements still have assumptions', 'Input arrays contain wave values without identity, history, task or semantic labels. Curator keys join only for provenance and evaluation so repeated nights are not counted as independent people. Filtering, detector definitions, model pretraining and one-second bins still encode assumptions. Agreement among these procedures is evidence to investigate, not proof of an assumption-free or universal representation.'),
         ('Runtime and a transparent storage expansion', f"The complete detection and aggregation record reports {resources['cumulative_cpu_seconds']:.2f} CPU seconds, {resources['cumulative_wall_seconds']:.2f} cumulative work seconds and {resources['process_peak_rss_bytes']/1024**2:.1f} MiB peak process RSS. Work seconds exclude idle time between checkpoints. The first block projected more than the original 3 GB artifact ceiling. After verifying the checkpoint on a second host, the lead raised only storage to 6 GB, preserving the two-hour CPU and 2 GiB memory limits. Actual analysis artifacts total {resources['analysis_artifact_bytes']:,} bytes. Code and methods were frozen before the first empirical event call; no thresholds or tests were tuned on these results. Native provider cost is UNKNOWN. There was no paid API call per window."),

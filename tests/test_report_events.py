@@ -19,6 +19,15 @@ class ReportDenominators(unittest.TestCase):
         self.assertEqual((row['people'], row['primary_blocks'], row['all_paired_valid_blocks']), (1, 7, 15))
         self.assertIsNone(row['p_two_sided'])
 
+    def test_resolution_and_noise_prose_follow_actual_values(self):
+        self.assertIn('0.125', report.resolution_text([dict(people=6)]))
+        self.assertIn('0.25', report.resolution_text([dict(people=5)]))
+        self.assertIn('not', report.number(None))
+        rows = [dict(trials=100, trials_with_detection=99, method_and_band='bycycle_1.2.0:4-8')]
+        self.assertIn('varied', report.noise_text(rows))
+        rows[0]['trials_with_detection'] = 100
+        self.assertIn('every scored trial', report.noise_text(rows))
+
 
 if __name__ == '__main__':
     unittest.main()

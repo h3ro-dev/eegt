@@ -1,0 +1,359 @@
+{
+  "schema": "eegt-detector-sample-regeneration/v1",
+  "status": "DIFFERENCES_RETAINED",
+  "selection": [
+    0,
+    61,
+    121
+  ],
+  "selection_basis": "EMPIRICAL-AUDIT-PLAN.json fixed before full result inspection",
+  "partitions": [
+    {
+      "array_row": 0,
+      "branch": "native",
+      "variant": "primary",
+      "recorded_events": 16722,
+      "regenerated_events": 16722,
+      "differences": 8,
+      "partition_sha256": "7fa8ca0a25640c95255055a5902e8343fd496c1041c076e10b36422111a7d65b"
+    },
+    {
+      "array_row": 0,
+      "branch": "prepared",
+      "variant": "original",
+      "recorded_events": 11349,
+      "regenerated_events": 11349,
+      "differences": 8,
+      "partition_sha256": "7c0b7f8062147bd72e7c5e7a4375ec842cf97de7aaa438f6430beb1b808bf433"
+    },
+    {
+      "array_row": 61,
+      "branch": "native",
+      "variant": "primary",
+      "recorded_events": 17219,
+      "regenerated_events": 17219,
+      "differences": 8,
+      "partition_sha256": "e23c534139b6bcc7e1d4a2ec5b3eb5b1b0c4d49ecddf54d27ba44b8aae5c4e00"
+    },
+    {
+      "array_row": 61,
+      "branch": "prepared",
+      "variant": "original",
+      "recorded_events": 11731,
+      "regenerated_events": 11731,
+      "differences": 8,
+      "partition_sha256": "bdbd2eefd04128bb450f3d972d21c1fc8da09f7652529c63d8f6b89eab51e0ca"
+    },
+    {
+      "array_row": 121,
+      "branch": "native",
+      "variant": "primary",
+      "recorded_events": 13470,
+      "regenerated_events": 13470,
+      "differences": 8,
+      "partition_sha256": "cad28d30e116ebacc35113e4da6a87bca25fd3d4bdeaab0984275e72968920a3"
+    },
+    {
+      "array_row": 121,
+      "branch": "prepared",
+      "variant": "original",
+      "recorded_events": 8726,
+      "regenerated_events": 8726,
+      "differences": 8,
+      "partition_sha256": "8ed94ebd127e5145b8ff896f7336425b0c40d01fc8cb8df37c410c5e8ac77ba3"
+    }
+  ],
+  "difference_count": 48,
+  "differences": [
+    {
+      "path": "row-000/native-primary/runs/0/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/native-primary/runs/0/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/native-primary/runs/1/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/native-primary/runs/1/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/native-primary/runs/2/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/native-primary/runs/2/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/native-primary/runs/3/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/native-primary/runs/3/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/prepared-original/runs/0/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/prepared-original/runs/0/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/prepared-original/runs/1/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/prepared-original/runs/1/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/prepared-original/runs/2/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/prepared-original/runs/2/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/prepared-original/runs/3/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-000/prepared-original/runs/3/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/native-primary/runs/0/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/native-primary/runs/0/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/native-primary/runs/1/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/native-primary/runs/1/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/native-primary/runs/2/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/native-primary/runs/2/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/native-primary/runs/3/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/native-primary/runs/3/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/prepared-original/runs/0/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/prepared-original/runs/0/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/prepared-original/runs/1/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/prepared-original/runs/1/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/prepared-original/runs/2/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/prepared-original/runs/2/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/prepared-original/runs/3/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-061/prepared-original/runs/3/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/native-primary/runs/0/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/native-primary/runs/0/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/native-primary/runs/1/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/native-primary/runs/1/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/native-primary/runs/2/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/native-primary/runs/2/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/native-primary/runs/3/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/native-primary/runs/3/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/prepared-original/runs/0/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/prepared-original/runs/0/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/prepared-original/runs/1/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/prepared-original/runs/1/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/prepared-original/runs/2/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/prepared-original/runs/2/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/prepared-original/runs/3/curvature_epsilon_uv_per_second2",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    },
+    {
+      "path": "row-121/prepared-original/runs/3/derivative_epsilon_uv_per_second",
+      "kind": "TYPE",
+      "recorded_type": "float",
+      "regenerated_type": "float64"
+    }
+  ],
+  "cpu_seconds": 4.08071,
+  "scope": "Six partitions: full native primary morphology and prepared original landmarks; not all2,806partitions."
+}

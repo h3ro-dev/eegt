@@ -1,0 +1,13 @@
+# Experiment 012 validation evidence
+
+The frozen scientific implementation is unchanged after its first empirical event call. The run manifest binds the exact source, 122 native and prepared inputs, both archived model outputs, methods and runtime. The code review and numerical evidence are retained under `results/012/implementation-review/`.
+
+The root independently checked the worker's implementation before execution and resolved five concrete defects before freeze: portable runtime identity, bounded morphology aggregation, empty matching strata, cumulative resource accounting and arithmetically constant cosine geometry. The synthetic analytic check has 56 assertions; canonical integration checks passed 22 tests with the pinned numerical libraries and an existing pytest 8.4.2 installation. Earlier detector validation and its complete synthetic/noise battery remain unchanged.
+
+A separate empirical checker imports no EEGT analysis implementation. It verifies every inherited and partition hash, all 976 original/phase event-to-model correlations, all 488 paired effects, recording medians, person means, exact sign-flip tests and all 99,552 native matching-row invariants. All checks passed; the largest numerical discrepancy was 2.78×10⁻¹⁷. The 4,752,264 recorded assertions include routine event-record/type checks and should not be interpreted as millions of independent scientific tests.
+
+Detector regeneration covered six partitions chosen in advance: the native primary and prepared original branches for array rows 0, 61 and 121. All regenerated serialized values, events, acceptance flags, filter/support metadata and counts matched exactly. The first harness attempt compared in-memory NumPy scalar types with decoded JSON scalar types and reported 48 type differences. Its receipt and preimage are preserved; a documented JSON-serialization correction removed no value or tolerance check. It changed no detector, data or scientific result. This six-partition check is distinct from replaying the full archived ledger.
+
+The first independent publication/tooling review required stronger completeness, extraction and reviewer-provenance checks plus result-derived wording and checked public extraction. Its original findings and probes remain in `results/012/code-review-r1/`. Final review and complete extracted replay are separate release requirements; a staging acceptance is not publication acceptance.
+
+Current staging boundary: full extracted ledger replay, independent final release acceptance and live publication/readback are still pending. Their receipts will be added after those checks complete. No claim of a completed public release is made by this candidate packet.

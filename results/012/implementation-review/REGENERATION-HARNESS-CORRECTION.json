@@ -1,0 +1,9 @@
+{
+  "schema": "eegt-review-harness-correction/v1",
+  "time": "2026-09-26T06:03:29.171019+00:00",
+  "old_sha256": "1a6626abc537ddb77afd3af6ba21801defffd4ab637490596dae6d2069a4bdc9",
+  "new_sha256": "ee6e93e52ed8ad3057a7900183226203735a2504bd4379d66f585805bd1aee8a",
+  "change": "Apply the same JSON numeric serialization boundary to regenerated in-memory data before comparing it with decoded published JSON. First attempt retained48Pythonfloat-versus-NumPyfloat64 type differences, not value mismatches. No tolerance added; all values/keys/list order still exact. No source, detector, data, support, metric or scientific output modified.",
+  "retained_first_receipt": "detector-regeneration.json",
+  "next_receipt": "detector-regeneration-serialized.json"
+}

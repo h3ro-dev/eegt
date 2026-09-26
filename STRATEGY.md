@@ -95,3 +95,9 @@ A second repeated-session source has completed bounded technical intake: [EESM19
 ## Execution after Experiment011
 
 Two pretrained encoders have now run on the same exposed inputs. Their paired original-minus-phase effects are positive for all five complete people, but both adjusted tests remain inconclusive at0.125. The current priority is the accepted direct-extrema/inflection/cycle/burst implementation and its synthetic artifact/gap/clock battery, then a new frozen exposed-data experiment. Preserve the reserved new-person and later-session groups until these methods and the final validation protocol are accepted. The next release steps remain direct-event results, locked untouched validation and consolidated source/analysis provenance. Semantic meaning and physical Neurable calibration remain separate boundaries.
+
+## Execution after Experiment 012
+
+The direct-event experiment is now numerically complete on the previously selected 122 blocks. Keep its four inconclusive adjusted tests (0.50,0.25,1.00,1.00), all controls and every rejected candidate. CodeBrain and CBraMod do not show the same event-alignment pattern. Numerical inflections do not establish biological state changes; no direct-waveform path geometry or universal vocabulary has been validated.
+
+The critical path is now independent review, extracted reproduction and verified 012 publication, then eco-uzwh8s.37's untouched-data protocol, .38's locked run and .39's consolidated database. Freeze new-person and later-session cohorts separately, retain the small-person exact-test resolution limit, and preserve EESM19's actual 12-contact contract without inventing a four-channel mapping. Source qualification, selected analyzed support and statistical participant counts must remain separate.

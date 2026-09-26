@@ -1,0 +1,19 @@
+{
+  "status": "CODE_CORRECTIONS_CHECKED",
+  "source_sha256": {
+    "event_study.py": "7bf41138c5525d11516c4a0609cd635c9e0093843efacb754fb4acd09bbcd566",
+    "reproduce_events.py": "7c819c8460537d7afe36746ad342f473d03bf187ddadc4a9d7ccb84b7772ad29"
+  },
+  "run_source_manifest_sha256": "3359e83c54cdd1bc58d74f9779610a42ebe0f6b626c0cd786ef7ba159cef7ce0",
+  "original_review": "../pre-run-snapshot/REVIEW.json",
+  "dispositions": {
+    "I012-01": "RESOLVED: package/Python major.minor compatibility separate from original executable/platform provenance; pytest removed from numeric runtime",
+    "I012-02": "RESOLVED_IN_SOURCE: one-record scalar aggregation instead of retaining all event dictionaries; full-run observed peak still required",
+    "I012-03": "RESOLVED: fixed four strata including empty strata, independently exercised",
+    "I012-04": "RESOLVED_IN_SOURCE: persistent progress resource totals; full-run resume/readback still required",
+    "I012-05": "RESOLVED: constant-distance range <=32float64eps*max(1,max_abs_distance) abstains, frozen on analytic proportional vectors before empirical event call; no injected noise or rank rounding"
+  },
+  "independent_analytic_assertions": 56,
+  "first_block_report_bound_files_verified": 29,
+  "scientific_completion": "PENDING full122blockrun, independent numerical review, release extraction and publication"
+}
