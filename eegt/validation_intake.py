@@ -13,6 +13,7 @@ import gc
 import hashlib
 from importlib.metadata import version
 import json
+import multiprocessing
 import os
 from pathlib import Path
 import platform
@@ -144,6 +145,7 @@ class IntakeResources:
     def __init__(self, root, seal, stage):
         self.root, self.seal, self.stage = Path(root), seal, stage
         self.cpu, self.wall = time.process_time(), time.monotonic()
+        self.worker_cpu, self.worker_peak = 0.0, 0
         self.profile = self.root / f"results/013/first-record-{stage}.json"
         self.phase = "intake-" + stage
         self.check()
@@ -154,8 +156,19 @@ class IntakeResources:
         from .validation_study import _resource_snapshot, _check_bounds
         verify_loaded_sources(self.seal)
         measured = _resource_snapshot(self.root, self.cpu, self.wall)
+        if self.worker_peak:
+            measured["cpu_seconds"] += self.worker_cpu
+            measured["process_peak_rss_bytes"] += self.worker_peak
+            measured["worker_cpu_seconds"] = self.worker_cpu
+            measured["max_worker_peak_rss_bytes"] = self.worker_peak
+            measured["memory_accounting"] = "parent peak plus maximum sequential worker peak"
         _check_bounds(measured, self.seal["resource_bounds"])
         return measured
+
+    def account_worker(self, measured):
+        self.worker_cpu += measured["cpu_seconds"]
+        self.worker_peak = max(self.worker_peak, measured["process_peak_rss_bytes"])
+        self.check()
 
     def require_review(self):
         from .validation_study import require_first_block_review
@@ -293,10 +306,76 @@ def acquire_sources(root=ROOT):
     return receipt
 
 
-def qualify_sources(root=ROOT):
-    """Qualify previously acquired, pinned files; missing rows remain visible."""
+class _QualificationRejected(Exception):
+    """Preserve the decoder's original typed quarantine reason across a process."""
+
+
+def _qualification_process(connection, path, rec, technical, seal):
+    """One numerical record per fresh interpreter; return no waveform arrays."""
     from .repeated import qualify_record
 
+    verify_loaded_sources(seal)
+    try:
+        payload = {"result": qualify_record(path, rec, technical)}
+    except Exception as exc:
+        payload = {"error_type": type(exc).__name__, "error": str(exc),
+                   "quarantine": isinstance(exc, (ValueError, KeyError, OSError, IndexError))}
+    usage = resource.getrusage(resource.RUSAGE_SELF)
+    payload["resources"] = dict(cpu_seconds=usage.ru_utime + usage.ru_stime,
+                                process_peak_rss_bytes=usage.ru_maxrss)
+    try:
+        connection.send(payload)
+    finally:
+        connection.close()
+
+
+def _qualify_record_isolated(path, rec, technical, guard):
+    # Spawn, rather than fork, so native allocator arenas cannot accumulate
+    # across differently sized recordings. Only one worker runs at a time.
+    context = multiprocessing.get_context("spawn")
+    receiver, sender = context.Pipe(duplex=False)
+    before_children = resource.getrusage(resource.RUSAGE_CHILDREN)
+    worker = context.Process(target=_qualification_process,
+                             args=(sender, path, rec, technical, guard.seal))
+    try:
+        worker.start()
+        sender.close()
+        payload = receiver.recv()
+        worker.join()
+        if worker.exitcode != 0:
+            raise RuntimeError(f"qualification worker exited {worker.exitcode}")
+        # Account after join: the child's own pre-send sample misses interpreter
+        # shutdown. RUSAGE_CHILDREN includes complete reaped-process lifetime.
+        completed = resource.getrusage(resource.RUSAGE_CHILDREN)
+        payload["resources"] = dict(
+            cpu_seconds=(completed.ru_utime + completed.ru_stime -
+                         before_children.ru_utime - before_children.ru_stime),
+            process_peak_rss_bytes=max(completed.ru_maxrss,
+                                      payload["resources"]["process_peak_rss_bytes"]),
+            measurement_boundary="joined child lifetime; cumulative child RSS upper bound")
+    except EOFError as exc:
+        raise RuntimeError("qualification worker returned no result") from exc
+    finally:
+        sender.close()
+        receiver.close()
+        if worker.pid is not None:
+            if worker.is_alive():
+                worker.terminate()
+            worker.join()
+            worker.close()
+    print(json.dumps(dict(phase="qualification_record", recording_id=rec["recording_id"],
+                          resources=payload["resources"])), flush=True)
+    guard.account_worker(payload["resources"])
+    if "error_type" in payload:
+        reason = f"{payload['error_type']}: {payload['error']}"
+        if payload["quarantine"]:
+            raise _QualificationRejected(reason)
+        raise RuntimeError(f"qualification worker: {reason}")
+    return payload["result"]
+
+
+def qualify_sources(root=ROOT):
+    """Qualify previously acquired, pinned files; missing rows remain visible."""
     root = Path(root)
     seal, protocol, source = require_accepted_freeze(root, "corpus")
     acq_path = root / "results/013/acquisition.json"
@@ -334,12 +413,14 @@ def qualify_sources(root=ROOT):
             else:
                 row.update(bytes=f["bytes"], sha256=f["expected_digest"])
                 try:
-                    row.update(qualify_record(path, rec, technical))
+                    row.update(_qualify_record_isolated(path, rec, technical, guard))
                     row["gap_seconds"] = [dict(start_sample=a, stop_sample=b,
                                                start_seconds=a / RATE, stop_seconds=b / RATE)
                                           for a, b in row["gaps"]]
                     row["acquisition_clock_verified"] = None
                     row.update(status="QUALIFIED", reason=None)
+                except _QualificationRejected as exc:
+                    row["reason"] = str(exc)
                 except (ValueError, KeyError, OSError, IndexError) as exc:
                     row["reason"] = f"{type(exc).__name__}: {exc}"
         rows.append(row)

@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "intake-qualify",
+  "profile_sha256": "11db1c41f8fab459f003483f339ae598ee1420e84c5bc224dc0db26333416dd8",
+  "run_manifest_sha256": "d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-13ffd342d925791b856652db872e4142",
+  "reviewed_utc": "2026-09-26T13:24:39.018967+00:00",
+  "rationale": "Corrected first-record peak670384128B, independent12-record exposed qualification peak811368448B, largest/first frozen source ratio2.0654. Original2GiB bound retained; whole20-record fit must still pass. Root direct execution uses one process/thread in existing owned Studio1 workspace; current load6.53 on32cores,95percent memory free,3.06TB disk; no concurrent experiment process."
+}

@@ -239,7 +239,7 @@ def test_qualification_releases_decoder_cycle_before_resource_check(tmp_path, mo
         def __init__(self):
             self.cycle = self
 
-    def fake_qualify(_path, _record, _protocol):
+    def fake_qualify(_path, _record, _protocol, _guard):
         cycle = DecoderCycle()
         refs.append(weakref.ref(cycle))
         return dict(gaps=[[2, 3]], decoder_warnings=["kept"],
@@ -258,7 +258,7 @@ def test_qualification_releases_decoder_cycle_before_resource_check(tmp_path, mo
             if index == 0:
                 assert refs[0]() is None
 
-    monkeypatch.setattr(repeated, "qualify_record", fake_qualify)
+    monkeypatch.setattr(intake, "_qualify_record_isolated", fake_qualify)
     monkeypatch.setattr(intake, "IntakeResources", Guard)
     was_enabled = gc.isenabled()
     gc.disable()
@@ -432,3 +432,71 @@ def test_exposed_fixture_reuse_when_supplied():
     assert parity["baseline_masks_equal"]
     assert parity["selected_prepared_bytes_equal"]
     assert intake.digest(fixture / "results/exposed/prepared.json") == parity["new_prepared_sha256"]
+
+
+def test_isolated_qualification_matches_decoder_and_preserves_rejection(tmp_path):
+    from scipy.io import savemat
+    from eegt.repeated import qualify_record
+
+    names = [*intake.CHANNELS, "ELE"]
+    samples = np.tile(np.sin(np.arange(1250) / 250 * 18 * np.pi), (5, 1)).astype("float32")
+    path = tmp_path / "source.set"
+    savemat(path, dict(data=samples, srate=250, nbchan=5, pnts=1250, trials=1,
+                       xmin=0, xmax=1249 / 250,
+                       chanlocs=np.array([(n,) for n in names], dtype=[("labels", "O")])))
+    rec = dict(recording_id="fixture", channels=[dict(name=n, type="EEG", units="uV")
+                                                for n in names[:4]],
+               metadata=dict(EEGReference="average", SamplingFrequency=250,
+                             RecordingDuration=1249 / 250))
+    technical = dict(expected_channels=names[:4], expected_sample_rate_hz=250,
+                     analysis_seconds=4)
+    expected = qualify_record(path, rec, technical)
+
+    class Guard:
+        seal = {"inputs": {k: intake.digest(v) for k, v in loaded_sources().items()}}
+
+        def __init__(self):
+            self.measurements = []
+
+        def account_worker(self, measured):
+            self.measurements.append(measured)
+
+    guard = Guard()
+    import resource
+    before = resource.getrusage(resource.RUSAGE_CHILDREN)
+    assert intake._qualify_record_isolated(path, rec, technical, guard) == expected
+    after = resource.getrusage(resource.RUSAGE_CHILDREN)
+    completed_cpu = after.ru_utime + after.ru_stime - before.ru_utime - before.ru_stime
+    assert guard.measurements[0]["cpu_seconds"] == pytest.approx(completed_cpu, abs=1e-6)
+    rec["channels"][0]["units"] = "V"
+    with pytest.raises(intake._QualificationRejected,
+                       match="ValueError: declared EEG microvolt units required"):
+        intake._qualify_record_isolated(path, rec, technical, guard)
+    assert len(guard.measurements) == 2
+    assert all(m["measurement_boundary"].startswith("joined child lifetime")
+               for m in guard.measurements)
+    assert all(m["cpu_seconds"] > 0 and 0 < m["process_peak_rss_bytes"] < 2147483648
+               for m in guard.measurements)
+    guard.seal = {"inputs": {}}
+    with pytest.raises(RuntimeError, match="returned no result"):
+        intake._qualify_record_isolated(path, rec, technical, guard)
+
+
+def test_worker_resources_count_toward_stage_limits(tmp_path, monkeypatch):
+    from eegt import validation_study
+
+    guard = intake.IntakeResources.__new__(intake.IntakeResources)
+    guard.root, guard.cpu, guard.wall = tmp_path, 0, 0
+    guard.worker_cpu, guard.worker_peak = 0.0, 0
+    guard.seal = {"resource_bounds": {"cpu_seconds": 10, "rss_bytes": 100,
+                                       "artifact_bytes": 100}}
+    monkeypatch.setattr(intake, "verify_loaded_sources", lambda _: None)
+    monkeypatch.setattr(validation_study, "_resource_snapshot", lambda *_: dict(
+        cpu_seconds=1, wall_seconds=1, process_peak_rss_bytes=20, artifact_bytes=0))
+    guard.account_worker(dict(cpu_seconds=2, process_peak_rss_bytes=60))
+    guard.account_worker(dict(cpu_seconds=3, process_peak_rss_bytes=50))
+    measured = guard.check()
+    assert measured["cpu_seconds"] == 6
+    assert measured["process_peak_rss_bytes"] == 80
+    with pytest.raises(RuntimeError, match="bound exceeded"):
+        guard.account_worker(dict(cpu_seconds=5, process_peak_rss_bytes=50))

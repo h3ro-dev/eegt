@@ -9,17 +9,12 @@
       "path": "results/013/memory-review/REVIEW.md",
       "sha256": "799637f43001e6067ee458330a860def54ad6bde02aec878de18c2fbd38a2451",
       "status": "ACCEPTED"
-    },
-    {
-      "path": "results/013/memory-review/V4-REVIEW.md",
-      "sha256": "7c7e5b5dd89fa735673ad4e4e86f1ca78cefb1a892ed9d2a7177a49a1994a8dc",
-      "status": "ACCEPTED"
     }
   ],
   "amends_manifest_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e",
   "created_utc": "2026-09-26T11:16:10.942831+00:00",
-  "execution_boundary": "Original pre-access scientific protocol unchanged; post-access implementation amendments001 and002 preserve original seals/failures. Sequential qualification correction independently accepted; fresh profiles/admissions required.",
-  "implementation_amendment": "results/013/implementation-amendment-002.json",
+  "diagnostic_scope": "previously exposed Experiment008 001/001 fixture only",
+  "execution_boundary": "Original scientific protocol fixed before access; implementation amendment001 accepted after technical qualification failure. Original seal and failure evidence preserved; fresh corrected stage profiles and root admissions required.",
   "inputs": {
     "eegt/__init__.py": "fb8c515d9d1e529126c493cfb674a144c75d0f4ad12de4e8ec190f4aeccc0959",
     "eegt/acquire.py": "120dfbfde3c717572035356db3fe9ba5cf8cddea1eeeeab91673313100d730a3",
@@ -57,7 +52,6 @@
     "requirements-events.lock": "9d6ace62d69501fa83a8c6a0c4d7fd388e61aa715c71af48c29c429c061791ec",
     "requirements.lock": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6",
     "results/013/implementation-amendment-001.json": "c5d191dd316087279cc9931a6e616efbab987153f62988ef8236b61eda9b089e",
-    "results/013/implementation-amendment-002.json": "2d9615b77961022a86507a6ce7972a7d2bef91b41550f7ea95a91b35c3cdd6d2",
     "scripts/prepare_validation.py": "d5e70b221343d85189f7b7043b299fec2a949f6008028baaff55e97bb095ba34",
     "scripts/reproduce_validation.py": "fd701af01a84ab1db14df7b63ce4c34c8ee7e264f908b737c21af17b63813cbb",
     "tests/test_artifacts.py": "323c75faab14845dbb678941ebbbc71015c8028ad631a2f0f6f508292d46614b",
@@ -159,5 +153,5 @@
   "schema": "eegt-validation-run-source-manifest/v1",
   "sealed_by": "session-13ffd342d925791b856652db872e4142",
   "sealed_utc": "2026-09-26T13:22:45.185757+00:00",
-  "status": "ACCEPTED"
+  "status": "DIAGNOSTIC_ONLY_UNACCEPTED"
 }

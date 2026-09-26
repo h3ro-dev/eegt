@@ -1,0 +1,52 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_____ test_isolated_qualification_matches_decoder_and_preserves_rejection ______
+
+tmp_path = PosixPath('/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v3-red-pytest-tmp/test_isolated_qualification_ma0')
+
+    def test_isolated_qualification_matches_decoder_and_preserves_rejection(tmp_path):
+        from scipy.io import savemat
+        from eegt.repeated import qualify_record
+    
+        names = [*intake.CHANNELS, "ELE"]
+        samples = np.tile(np.sin(np.arange(1250) / 250 * 18 * np.pi), (5, 1)).astype("float32")
+        path = tmp_path / "source.set"
+        savemat(path, dict(data=samples, srate=250, nbchan=5, pnts=1250, trials=1,
+                           xmin=0, xmax=1249 / 250,
+                           chanlocs=np.array([(n,) for n in names], dtype=[("labels", "O")])))
+        rec = dict(recording_id="fixture", channels=[dict(name=n, type="EEG", units="uV")
+                                                    for n in names[:4]],
+                   metadata=dict(EEGReference="average", SamplingFrequency=250,
+                                 RecordingDuration=1249 / 250))
+        technical = dict(expected_channels=names[:4], expected_sample_rate_hz=250,
+                         analysis_seconds=4)
+        expected = qualify_record(path, rec, technical)
+    
+        class Guard:
+            seal = {"inputs": {k: intake.digest(v) for k, v in loaded_sources().items()}}
+    
+            def __init__(self):
+                self.measurements = []
+    
+            def account_worker(self, measured):
+                self.measurements.append(measured)
+    
+        guard = Guard()
+        import resource
+        before = resource.getrusage(resource.RUSAGE_CHILDREN)
+        assert intake._qualify_record_isolated(path, rec, technical, guard) == expected
+        after = resource.getrusage(resource.RUSAGE_CHILDREN)
+        completed_cpu = after.ru_utime + after.ru_stime - before.ru_utime - before.ru_stime
+>       assert guard.measurements[0]["cpu_seconds"] == pytest.approx(completed_cpu, abs=1e-6)
+E       assert 1.799833 == 1.940039 ± 1.0e-06
+E         
+E         comparison failed
+E         Obtained: 1.799833
+E         Expected: 1.940039 ± 1.0e-06
+
+tests/test_validation_intake.py:470: AssertionError
+----------------------------- Captured stdout call -----------------------------
+{"phase": "qualification_record", "recording_id": "fixture", "resources": {"cpu_seconds": 1.799833, "process_peak_rss_bytes": 118685696}}
+=========================== short test summary info ============================
+FAILED tests/test_validation_intake.py::test_isolated_qualification_matches_decoder_and_preserves_rejection
+1 failed in 5.12s

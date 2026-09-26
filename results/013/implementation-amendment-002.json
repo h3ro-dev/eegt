@@ -1,0 +1,36 @@
+{
+  "schema": "eegt-validation-implementation-amendment/v1",
+  "status": "ACCEPTED",
+  "amendment": 2,
+  "original_manifest_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e",
+  "original_commit": "da06219154e70b9337df06079f905a927ecb77eb",
+  "reason": "GC correction did not prevent accumulated allocator memory across varied records. Qualify each record in one sequential fresh interpreter, preserving numerical decoder and aggregate CPU/RSS bounds.",
+  "changed_sources": {
+    "eegt/validation_intake.py": "5429ea4e10da40ccafdf3d1baacdcd0d8f1f8edb5dba787443bb1a6182a1b2a8",
+    "tests/test_validation_intake.py": "ad9ca755e75e90ce274a49b3f19d4d5b7632e016354ce2a0be377f3912b122f3"
+  },
+  "scientific_protocol_unchanged": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9",
+  "source_manifest_unchanged": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+  "resource_bounds_unchanged": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "independent_review": {
+    "status": "ACCEPTED",
+    "path": "results/013/memory-review/V4-REVIEW.md",
+    "sha256": "7c7e5b5dd89fa735673ad4e4e86f1ca78cefb1a892ed9d2a7177a49a1994a8dc"
+  },
+  "technical_exposure": "All20 sources acquired; original failed subset unknown. The later diagnostic trace observed first14 records through 0fa6e0a3f7b427a97324923f. No quality, selected inputs, encoder or event outcomes existed. Post-access implementation amendment only.",
+  "preserved_attempt": "results/013/attempts/002-gc-correction",
+  "failed_peak_rss_bytes": 2420178944,
+  "fresh_stage_profiles_required": true,
+  "previous_manifest_sha256": "d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad",
+  "resource_accounting": "One fresh numerical child at a time. CPU uses joined-child RUSAGE_CHILDREN deltas, including interpreter shutdown, plus parent stage CPU. RSS uses parent peak plus conservative cumulative completed-child peak.",
+  "accepted_by": "session-13ffd342d925791b856652db872e4142",
+  "accepted_utc": "2026-09-26T14:00:53.438571+00:00"
+}

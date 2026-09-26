@@ -1,0 +1,26 @@
+--- update-root-v3/eegt/validation_intake.py	2026-09-26 07:32:27
++++ update-root-v4/eegt/validation_intake.py	2026-09-26 07:51:09
+@@ -334,6 +334,7 @@
+     # across differently sized recordings. Only one worker runs at a time.
+     context = multiprocessing.get_context("spawn")
+     receiver, sender = context.Pipe(duplex=False)
++    before_children = resource.getrusage(resource.RUSAGE_CHILDREN)
+     worker = context.Process(target=_qualification_process,
+                              args=(sender, path, rec, technical, guard.seal))
+     try:
+@@ -343,6 +344,15 @@
+         worker.join()
+         if worker.exitcode != 0:
+             raise RuntimeError(f"qualification worker exited {worker.exitcode}")
++        # Account after join: the child's own pre-send sample misses interpreter
++        # shutdown. RUSAGE_CHILDREN includes complete reaped-process lifetime.
++        completed = resource.getrusage(resource.RUSAGE_CHILDREN)
++        payload["resources"] = dict(
++            cpu_seconds=(completed.ru_utime + completed.ru_stime -
++                         before_children.ru_utime - before_children.ru_stime),
++            process_peak_rss_bytes=max(completed.ru_maxrss,
++                                      payload["resources"]["process_peak_rss_bytes"]),
++            measurement_boundary="joined child lifetime; cumulative child RSS upper bound")
+     except EOFError as exc:
+         raise RuntimeError("qualification worker returned no result") from exc
+     finally:

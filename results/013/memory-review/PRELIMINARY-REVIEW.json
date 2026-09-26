@@ -25,7 +25,6 @@
   },
   "corrected_source_preaccess_timing": "NOT_CLAIMED",
   "dollar_cost": "UNKNOWN",
-  "effective_user_policy": "2026-09-26.1 (replaces packet AGENTS.md 2026-09-24.4)",
   "exact_v2_draft_sha256": "8487b401f816bf26eb65ab22a389c680ccffdfe5fe4c70bb98b1f7998fff9e19",
   "exact_v2_source_sha256": "eb9cdbe5bc464d7ff4f3a56ab5c0bacd8189933e174d50b1c6f50ec05bd0b4cf",
   "exact_v2_test_sha256": "5431a2a821e80af6df62e068f4dc5a5bccfd6c73357c10600d770c79f5ac195b",
@@ -181,7 +180,7 @@
   },
   "release_boundary": "Source correction only. Root integrates, seals an additive accepted amendment, makes new profiles/admissions and verifies the real 20-record empirical stages. No publication or validation completion is asserted.",
   "review_markdown": "out/REVIEW.md",
-  "reviewed_at_mdt": "2026-09-26T07:23:13.495525-06:00",
+  "reviewed_at_mdt": "2026-09-26T07:22:11.240111-06:00",
   "reviewed_file_inventory": {
     "AGENTS.md": {
       "bytes": 27717,
