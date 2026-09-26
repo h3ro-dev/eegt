@@ -1,3 +1,13 @@
+# Consolidated catalog candidate
+
+The consolidated curator index joins recording identities, verified source files, experiment protocols, fixed model hashes, endpoint receipts and explicitly recorded artifact dependencies. Each imported row preserves its original JSON evidence and input hash. The final release includes a versioned SQLite database, the complete input manifest, all curator inputs and the deterministic builder. Large event/model arrays stay in their original immutable release archives.
+
+Use `REPRODUCE-CATALOG.md` to rebuild in a new directory and `CATALOG-QUERIES.md` to inspect source coverage, experiment support, endpoint exclusions and lineage. The rendered catalog summary supplies actual counts; adding experiment joins never adds source recordings or recorded hours. Unknown duration, calibration, reference, clock and physiological compatibility fields remain unknown. Same-numbered people in different datasets are not assumed to be the same or different real person.
+
+The release packet captures the prepublication build and its exact hashes. Independent review and publication receipts accompany that snapshot; do not edit captured files merely to change their historical candidate status. A changed catalog is a new version.
+
+The earlier continuous-database contract follows. Its experiment-specific paths and denominators remain historical evidence.
+
 # EEGT continuous database
 
 The database connects every derived observation to its original source file,

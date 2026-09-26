@@ -1,0 +1,105 @@
+{
+  "coverage": [
+    {
+      "dataset_id": "ds004015",
+      "known_recording_hours": 47.28973222222222,
+      "recordings": 36,
+      "source_local_people": 36,
+      "source_sessions": 36,
+      "status": "QUALIFIED",
+      "unknown_duration_recordings": 0
+    },
+    {
+      "dataset_id": "ds005178",
+      "known_recording_hours": 238.23225222222223,
+      "recordings": 32,
+      "source_local_people": 10,
+      "source_sessions": 32,
+      "status": "QUALIFIED",
+      "unknown_duration_recordings": 0
+    },
+    {
+      "dataset_id": "ds005185",
+      "known_recording_hours": 14.350477777777778,
+      "recordings": 2,
+      "source_local_people": 1,
+      "source_sessions": 2,
+      "status": "QUALIFIED",
+      "unknown_duration_recordings": 0
+    },
+    {
+      "dataset_id": "ds005207",
+      "known_recording_hours": 176.18083333333334,
+      "recordings": 18,
+      "source_local_people": 18,
+      "source_sessions": 18,
+      "status": "QUALIFIED",
+      "unknown_duration_recordings": 0
+    },
+    {
+      "dataset_id": "ds005207",
+      "known_recording_hours": null,
+      "recordings": 1,
+      "source_local_people": 1,
+      "source_sessions": 1,
+      "status": "QUARANTINED",
+      "unknown_duration_recordings": 1
+    }
+  ],
+  "database_sha256": "cefcbd423b57cc8b9345f4731c542369a8c43b1cc2c09cd0473f2a16efe91790",
+  "input_manifest_sha256": "44026eba046f64431fcad794daac2f32563f7ae1fc2d4d407bbd3fe94d3fe1d9",
+  "inputs": {
+    "outputs/eegt/protocol/corpus-manifest-008.json": "2358ceb6673058989932ac70e83ae7fd52151b0dd5ab8dc53db5371b130807f5",
+    "outputs/eegt/protocol/corpus-manifest-013.json": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+    "outputs/eegt/protocol/corpus-manifest-v1.json": "a6dac5e85c6fe080f8665aa6223d45074b3880581c80701aff8bbfd32bc8d904",
+    "outputs/eegt/protocol/experiment-003.json": "1a0da132216c4da31dd78345950db95439ada3d543788664b42f6f5c0f0939a0",
+    "outputs/eegt/protocol/experiment-008.json": "bf19d4cfe6dd2b31f8d16f5e768ed00cbfff875b926f2af3fa75c27f3b0d7860",
+    "outputs/eegt/protocol/experiment-009.json": "5c45dc42d237b89653909bf536f3cf44927a28303f808ac1d0bc48b2c00562f1",
+    "outputs/eegt/protocol/experiment-010.json": "75f79f511d286254e544a50e470248153dc3b3fe38e1596936f748162cb3fa9b",
+    "outputs/eegt/protocol/experiment-011.json": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e",
+    "outputs/eegt/protocol/experiment-012.json": "60f02a8dce9a086be3a89fe612eb9437088054f007d14348c827292fae34e138",
+    "outputs/eegt/protocol/experiment-013.json": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9",
+    "outputs/eegt/results/003/summary.json": "1a867fe7a431f1d114271bcc46efa339ed8a22461d4575f992e93a25c23fe87d",
+    "outputs/eegt/results/006/summary.json": "37b95a3d488b18391f9e885b81bb1bad9a0947676c8a6b65b0eb6cc86437eab3",
+    "outputs/eegt/results/007/summary.json": "69317f811a5a5018586e807046e713df354fd67803c108ec90aea426258fd154",
+    "outputs/eegt/results/008/summary.json": "6321b09899edb38c0a1ab740ba58dc21c33fe68d60774899c26c2c43a8a51f63",
+    "outputs/eegt/results/009/inference.json": "e55295da6537b0762ec0ac96719b55aa3a704fd73211a7f9a8db77735ef4600d",
+    "outputs/eegt/results/009/summary.json": "bcc8d4e12f048adcad11505f15151b909c0c662f43ec838aac594dfd9587701e",
+    "outputs/eegt/results/010/inference.json": "be6ac5395f9c251df6e3e7e29540e642bcbe1da373391f47a6a28645df036201",
+    "outputs/eegt/results/010/prepared.json": "545186e75a2a1ca88b0e1da3dc08100fa6bf8d90c6c788358b523e224f3e367c",
+    "outputs/eegt/results/010/summary.json": "5c077f25e6e81ee6464ab8b2b42fc8ffb63c663f2357b455448f7ec8b8724bbc",
+    "outputs/eegt/results/011/inference.json": "28f66c7f97af94181810e6f5cf817b72ccc88b104e7a8d26f647ae666e6fb82a",
+    "outputs/eegt/results/011/summary.json": "d41df51751f81f6f7592d5fe74c1923519b8a683f7ac07ac5b55c25cc904665f",
+    "outputs/eegt/results/012/summary.json": "88ff8692d94a67f849e8b3537e461ec329f5696ac1df93b5e8a16bf766cddb6f",
+    "outputs/eegt/results/013/qualification.json": "40bc333cb1de9c59028f883dbf4132dcc547e7ab35465da4a2fcd60d3b22512b",
+    "outputs/eegt/results/013/summary.json": "545995685035b07091eba615250f39db2046a46675769320deb377326a8bf251",
+    "outputs/eegt/results/corpus-v2/corpus.sqlite": "b6c165596204df38d6f541c2cc90bfa7257f8d00175f5d945d36bb018da6ef10",
+    "outputs/research/EEGT-v0.3.0-PUBLICATION.json": "0ab7d072a159b1b99d8553a3dcd89357fb44b535a903d467937de2f1a1cc9c9e",
+    "outputs/research/EEGT-v0.4.0-PUBLICATION.json": "e47a9a961c02267d0a8bef6e45407220a2a584fe0cb64bf1a50b6ee298ebaefd",
+    "outputs/research/EEGT-v0.5.0-PUBLICATION.json": "294fdf41b279b0254c56069421d0eb4409e0dbaf95c535cdf92f940be88add2d",
+    "outputs/research/EEGT-v0.6.0-PUBLICATION.json": "cc164b7caae2ff42a1a03a63f33c3e679481d29d73b2db4f5c91d5e9173b8e87",
+    "outputs/research/EEGT-v0.7.0-PUBLICATION.json": "9135301d40043595cc5aace19e2ca544bfd1739c0f3ae3e0b39f9b19b8465439",
+    "outputs/research/EEGT-v0.8.0-PUBLICATION.json": "9e4e70f1648afc3e8f65e0aba6078add3f696f6b9bfed854f21bfd88b120caca",
+    "outputs/research/EEGT-v0.9.0-PUBLICATION.json": "68889980a9dd543b55a9337905c2824070e8935a9d540edf64138f17a6250dd5",
+    "outputs/research/eesm19-intake/ACCEPTANCE.json": "347df18c9287bd2e0132a56f0a630b96acd0cd4f9c80f8123baa513ab6657371",
+    "work/eesm19-intake/out/catalog.json": "b9d652e7553a87ec17a77e481e1bc8206ed83122affc735b86793930d0ea9501",
+    "work/eesm19-intake/out/catalog.sqlite": "dd07adf34498e62930be14bdd8543d3fff7222dbca35d1faabeb39cc3f84ff49",
+    "work/validation-publication/public-downloads/eegt-v0.9.0-data-manifest.json": "87caec95a2116cc3518c61e7888ae513d27fdc972c8edcb353f207e4f555177c"
+  },
+  "limitation": "Source-local people are not globally unique people. Experiment joins add no source hours.",
+  "logical_content_sha256": "64efd3d566264f18c30a15d71eeca13ac7ec9f4060024228c1fc509996b58f1f",
+  "logical_hash_contract": "user schema SQL plus all table rows; canonical sorted JSON",
+  "schema": "eegt-consolidated-index-summary/v1",
+  "source_files": {
+    "files": 158,
+    "known_bytes": 28780692359,
+    "unknown_byte_files": 0
+  },
+  "state": "CONSOLIDATED_RELEASE_CANDIDATE",
+  "totals": {
+    "candidate_recordings": 89,
+    "known_qualified_hours": 476.05329555555556,
+    "qualified_recordings": 88,
+    "qualified_unknown_duration_recordings": 0
+  }
+}

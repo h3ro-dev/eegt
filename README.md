@@ -1,5 +1,7 @@
 # EEGT — EEG tokenization
 
+The [consolidated evidence catalog](https://h3ro-dev.github.io/eegt/catalog.html) brings the accepted source records and numerical results together: 89 candidate recordings, 88 qualified recordings and 476.053296 qualified source hours. Source-local people remain scoped to each dataset. See [research synthesis](RESEARCH-SYNTHESIS.md), [offline catalog rebuild](REPRODUCE-CATALOG.md), and [SQL queries](CATALOG-QUERIES.md). Catalog independent review and release readback are pending.
+
 **Project subtitle: An LLM’s interpretation of your brainwaves**
 
 The current experiment measures waveform landmarks and compares them with two continuous EEG encoders. It does not decode thoughts or run an LLM.

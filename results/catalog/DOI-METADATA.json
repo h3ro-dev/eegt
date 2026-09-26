@@ -1,0 +1,26 @@
+{
+  "schema": "eegt-doi-preparation/v1",
+  "state": "PREPARED_NOT_DEPOSITED",
+  "identifier_status": "NOT_ISSUED",
+  "title": "EEGT: consolidated numerical around-ear EEG research catalog and reproducibility handoff",
+  "version": "0.10.0",
+  "creators": [
+    {
+      "name": "EEGT contributors"
+    }
+  ],
+  "resource_type": "software and curator dataset",
+  "repository": "https://github.com/h3ro-dev/eegt",
+  "versioned_release": "https://github.com/h3ro-dev/eegt/releases/tag/v0.10.0",
+  "description": "Source-bound catalog, negative and inconclusive numerical results, frozen protocols and offline rebuild evidence. No semantic, diagnostic or universal EEG-language claim.",
+  "licenses": {
+    "original_code": "MIT",
+    "included_upstream_code": "Apache-2.0 where declared; retain notices",
+    "documented_numeric_derivatives": "CC0-1.0 where source terms permit; original source terms control",
+    "external_checkpoints": "Not redistributed; upstream terms apply"
+  },
+  "publication_date": null,
+  "source_commit": null,
+  "asset_checksums": "Final catalog release manifest; pending independent acceptance and publication",
+  "doi": null
+}
