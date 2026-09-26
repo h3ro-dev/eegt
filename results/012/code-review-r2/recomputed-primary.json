@@ -1,0 +1,91 @@
+{
+  "endpoints": [
+    {
+      "adjusted_p": 0.5,
+      "all_paired_blocks": 122,
+      "assignments": 32,
+      "complete_people": [
+        "001",
+        "002",
+        "004",
+        "005",
+        "006"
+      ],
+      "extreme": 4,
+      "mean": 0.035454196721113836,
+      "metric": "geometry",
+      "model": "codebrain",
+      "night_medians_checked": 12,
+      "primary_blocks": 110,
+      "raw_p": 0.125
+    },
+    {
+      "adjusted_p": 0.25,
+      "all_paired_blocks": 122,
+      "assignments": 32,
+      "complete_people": [
+        "001",
+        "002",
+        "004",
+        "005",
+        "006"
+      ],
+      "extreme": 2,
+      "mean": 0.07536764705882355,
+      "metric": "change",
+      "model": "codebrain",
+      "night_medians_checked": 12,
+      "primary_blocks": 110,
+      "raw_p": 0.0625
+    },
+    {
+      "adjusted_p": 1.0,
+      "all_paired_blocks": 122,
+      "assignments": 32,
+      "complete_people": [
+        "001",
+        "002",
+        "004",
+        "005",
+        "006"
+      ],
+      "extreme": 32,
+      "mean": 0.00542130232301242,
+      "metric": "geometry",
+      "model": "cbramod",
+      "night_medians_checked": 12,
+      "primary_blocks": 110,
+      "raw_p": 1.0
+    },
+    {
+      "adjusted_p": 1.0,
+      "all_paired_blocks": 122,
+      "assignments": 32,
+      "complete_people": [
+        "001",
+        "002",
+        "004",
+        "005",
+        "006"
+      ],
+      "extreme": 28,
+      "mean": 0.007843137254901966,
+      "metric": "change",
+      "model": "cbramod",
+      "night_medians_checked": 12,
+      "primary_blocks": 110,
+      "raw_p": 0.875
+    }
+  ],
+  "sqlite_tables": {
+    "block_effect": 488,
+    "candidates": 5760,
+    "completed_blocks": 122,
+    "morphology_block": 5368,
+    "native_match": 99552,
+    "native_timeline": 8296,
+    "partitions": 2806,
+    "prepared_metric": 2440
+  },
+  "status": "PASS"
+}

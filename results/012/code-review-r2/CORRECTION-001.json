@@ -1,0 +1,16 @@
+{
+  "schema": "eegt-release-code-correction/v1",
+  "finding": "R012-06",
+  "recorded_utc": "2026-09-26T06:44:34.582902+00:00",
+  "old_extractor_sha256": "0a009dd4ba25d94cb95395ab1b338ff83b6e0750031cc89a26264ab61082dc1a",
+  "correction": "Reject Windows drive paths, colon paths, trailing-dot/space components and reserved devices before extraction creates output. New staging revision is required; all numerical source and outputs are unchanged.",
+  "files": {
+    "scripts/extract_event_assets.py": "bd5037e0382738a1ef5129c0dee804ab645cb666a1c5773dba8644782e413a5a",
+    "tests/test_extract_event_assets.py": "1c1e9065cdb68e76dafab4865a5fb08d58243996091b5ec1bff607e6ec2e903f",
+    "index.html": "2dc552d264a1ccdd3135ead4eb14af86b95171db5d31e59b2866f6e5caec2b5e",
+    "site/index.html": "2dc552d264a1ccdd3135ead4eb14af86b95171db5d31e59b2866f6e5caec2b5e"
+  },
+  "other_change": "Home-page interpretation text now accurately states two pretrained backbones.",
+  "test_log_sha256": "ad3c2061b329aa5e22e63e2e67407e02e3191ffbda2edbca5eed794eb2ba1ed3",
+  "independent_recheck": "PENDING_FINAL_CHECKPOINT"
+}

@@ -1,0 +1,10 @@
+{
+  "thread_id": "01a0dc45-5aa8-7f21-9138-a2437735cd5c",
+  "turn_id": "01a0dc61-4b9c-72c3-8942-e9fa33b65bef",
+  "turn_status": "completed",
+  "observed_utc": "2026-09-26T06:43:00.365919+00:00",
+  "native_source": "Original conductor thread/read via work/native_status.py; work/continuation/transition-release-recheck-attempt2-status.json",
+  "verdict": "CHANGES_REQUIRED",
+  "scope": "bounded code and actual report recheck",
+  "review_artifact_sha256": "2b15bcb47015dfb2ef0d4603b58d03bf75215a64f7994a51846c4894ad974b06"
+}

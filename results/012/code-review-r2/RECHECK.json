@@ -1,0 +1,249 @@
+{
+  "actual_results_checks": {
+    "candidate_statuses": {
+      "ELIGIBLE": 122,
+      "QUALIFIED_UNSELECTED": 2851,
+      "REJECTED": 2787
+    },
+    "endpoints": [
+      {
+        "adjusted_p": 0.5,
+        "all_paired_blocks": 122,
+        "assignments": 32,
+        "complete_people": [
+          "001",
+          "002",
+          "004",
+          "005",
+          "006"
+        ],
+        "extreme": 4,
+        "mean": 0.035454196721113836,
+        "metric": "geometry",
+        "model": "codebrain",
+        "night_medians_checked": 12,
+        "primary_blocks": 110,
+        "raw_p": 0.125
+      },
+      {
+        "adjusted_p": 0.25,
+        "all_paired_blocks": 122,
+        "assignments": 32,
+        "complete_people": [
+          "001",
+          "002",
+          "004",
+          "005",
+          "006"
+        ],
+        "extreme": 2,
+        "mean": 0.07536764705882355,
+        "metric": "change",
+        "model": "codebrain",
+        "night_medians_checked": 12,
+        "primary_blocks": 110,
+        "raw_p": 0.0625
+      },
+      {
+        "adjusted_p": 1.0,
+        "all_paired_blocks": 122,
+        "assignments": 32,
+        "complete_people": [
+          "001",
+          "002",
+          "004",
+          "005",
+          "006"
+        ],
+        "extreme": 32,
+        "mean": 0.00542130232301242,
+        "metric": "geometry",
+        "model": "cbramod",
+        "night_medians_checked": 12,
+        "primary_blocks": 110,
+        "raw_p": 1.0
+      },
+      {
+        "adjusted_p": 1.0,
+        "all_paired_blocks": 122,
+        "assignments": 32,
+        "complete_people": [
+          "001",
+          "002",
+          "004",
+          "005",
+          "006"
+        ],
+        "extreme": 28,
+        "mean": 0.007843137254901966,
+        "metric": "change",
+        "model": "cbramod",
+        "night_medians_checked": 12,
+        "primary_blocks": 110,
+        "raw_p": 0.875
+      }
+    ],
+    "integrity_check": "ok",
+    "middle_tolerance_passband_0p5_40": {
+      "matched": 0,
+      "n_a": 0,
+      "n_b": 0,
+      "strata": 1952,
+      "undefined_strata": 1952
+    },
+    "middle_tolerance_phase": {
+      "matched": 308603,
+      "n_a": 370906,
+      "n_b": 368638,
+      "strata": 1952,
+      "undefined_strata": 0
+    },
+    "native_primary_events": {
+      "accepted": 1213086,
+      "candidate": 1991157,
+      "rejected": 778071
+    },
+    "native_variant_coverage": {
+      "native": 18,
+      "prepared": 5
+    },
+    "plot_visual_inspection": "four panels; five complete participant dots per panel; adjusted p labels 0.5, 0.25, 1, 1",
+    "public_json_regeneration_equal": true,
+    "sqlite_tables": {
+      "block_effect": 488,
+      "candidates": 5760,
+      "completed_blocks": 122,
+      "morphology_block": 5368,
+      "native_match": 99552,
+      "native_timeline": 8296,
+      "partitions": 2806,
+      "prepared_metric": 2440
+    },
+    "status": "PASS",
+    "undefined_direct_geometry_fields": [
+      "waveform_path_length",
+      "waveform_return_distance",
+      "waveform_turning_angle"
+    ]
+  },
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s repo/tests -p 'test_package*.py' -v",
+      "result": "PASS, five tests"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s repo/tests -p 'test_report_events.py' -v",
+      "result": "PASS, two tests"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s repo/tests -p 'test_extract_event_assets.py' -v",
+      "result": "PASS, three tests"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B scratch/adversarial_r2.py",
+      "result": "PASS, nine adversarial gate cases including malformed tar members and stage deltas"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B scratch/recompute_primary.py",
+      "result": "PASS, 48 night medians and all four complete-person exact tests"
+    },
+    {
+      "command": "report_events.collect on a temporary scratch root with symlinked actual summary, progress and read-only SQLite",
+      "result": "PASS; regenerated presentation JSON object equals repo/site/data/events.json"
+    },
+    {
+      "command": "Read-only exact-row assertions against repo/site/events.html and repo/notes/experiment-012.md",
+      "result": "PASS, all four primary table rows, inference count and control caveat"
+    }
+  ],
+  "cost": "UNKNOWN (no API spending or numerical model run by this reviewer)",
+  "decompressed_sqlite_sha256": "427627c73149bce542b77ca152d2e0a4c0c32eb0b6b983839d360e8967c949bb",
+  "new_findings": [
+    {
+      "id": "R012-06",
+      "issue": "safe_name validates only PurePosixPath. The release writer and extractor both accept archive path C:/escape.txt. On Windows, destination / C:/escape.txt resolves to C:\\escape.txt and can write outside the requested extraction directory; colon paths may also name alternate streams.",
+      "line": 18,
+      "path": "repo/scripts/extract_event_assets.py",
+      "priority": "P1_FOR_PUBLIC_EXTRACTOR",
+      "release_effect": "The current official file inventory appears safe, but a public extraction tool claiming path safety must reject the demonstrated escape. Root reports a canonical fix outside this immutable packet; this review has not inspected its bytes.",
+      "reproduction": "PYTHONDONTWRITEBYTECODE=1 python3 -B -c \"import sys; from pathlib import PureWindowsPath; sys.path.insert(0, 'repo/scripts'); from extract_event_assets import safe_name; safe_name('C:/escape.txt'); print(PureWindowsPath('extracted') / 'C:/escape.txt')\"",
+      "required_change": "Reject Windows drive-qualified and colon-containing paths before archive preflight and before writing; add a regression for names in both manifest and tar. Then supply fresh source hashes for re-review.",
+      "status": "OPEN_IN_THIS_PACKET"
+    }
+  ],
+  "packet_integrity": {
+    "drift": [],
+    "manifest_sha256": "ad58eb6ea1907ece1e701a94e95c5ddb838e7023b90d066a43b76f36338fcb82",
+    "verified_entries": 58
+  },
+  "prior_finding_dispositions": [
+    {
+      "evidence": "verify_science reads the SQLite index read-only, checks integrity and eight table cardinalities, selected block identities, all 122 x 23 variant keys, every partition path/size/SHA, and exact index/report/disk partition sets. Synthetic self-reported counts with empty SQLite are refused. Actual scratch SQLite cardinalities and integrity pass. Full package invocation belongs to root.",
+      "id": "R012-01",
+      "status": "RESOLVED_IN_REVIEWED_CODE"
+    },
+    {
+      "evidence": "Final package path requires ACCEPTED numerical review plus generated reproduction receipt, full summary, 122/2806, frozen manifest and index hashes, extraction receipt, staged manifest and every staged asset; forged wrapper without generated receipt is refused. Actual extracted replay has not been furnished at this checkpoint.",
+      "id": "R012-02",
+      "status": "IMPLEMENTED_PENDING_NATIVE_REPLAY"
+    },
+    {
+      "evidence": "Final review requires exact pre-review file inventory, review artifact digest and disposition binding, named native reviewer thread, and native handoff artifact fields; release review artifacts enter only after the gate. Current code checks locally supplied provenance records; actual native provenance and final inventory await the later checkpoint.",
+      "id": "R012-03",
+      "status": "IMPLEMENTED_PENDING_NATIVE_FINAL_REVIEW"
+    },
+    {
+      "evidence": "Resolution and noise prose derive from actual counts; reporter counts blocks only for complete people. Actual output has five complete people and 110 primary blocks per endpoint, four estimable tests and zero adjusted p below 0.05. Current reporter regenerates public JSON exactly as a JSON object.",
+      "id": "R012-04",
+      "status": "RESOLVED_AND_ACTUAL_REPORT_VERIFIED"
+    },
+    {
+      "evidence": "Extractor preflights exact shard members and rejects POSIX traversal, duplicates, omissions, extras and links before writing; adversarial fixtures pass. It accepts C:/escape.txt and D:relative.txt, which are drive qualified on Windows. See R012-06.",
+      "id": "R012-05",
+      "status": "PARTIAL_NEW_CROSS_PLATFORM_ESCAPE"
+    }
+  ],
+  "review_limits": [
+    "No reserved people or sessions were opened.",
+    "No empirical run, model forward, detector rerun, or full numerical replay was performed by this reviewer.",
+    "No actual staged shard extraction, generated replay receipt, final release inventory, final native review, or public page readback was supplied for this checkpoint.",
+    "Staged and final package commands were inspected and probed with small fixtures, not executed on the full several-gigabyte packet.",
+    "Canonical source correction reported by root is outside the immutable reviewed packet and requires a new hash-bound checkpoint.",
+    "The native handoff JSON is checked for fields and hashes by code; its authenticity must be verified against the actual native channel at the later checkpoint."
+  ],
+  "reviewed_file_sha256": {
+    "RECHECK-BRIEF.md": "33364694c7a771833abae1bee465e9781092e0ec9cbbc70b5bc9e11eaab08709",
+    "RECHECK-MANIFEST.json": "ad58eb6ea1907ece1e701a94e95c5ddb838e7023b90d066a43b76f36338fcb82",
+    "analysis.sqlite.gz": "75765b2aecc989d14a33bcb8c4ead8617eb1ac662eccfb4068412a7bac0cc480",
+    "repo/REPRODUCE-012.md": "b1601a04efd471284f7e4ccca895131c29278ae957ceae421dad38f6e7a60fbb",
+    "repo/notes/experiment-012.md": "57ee803b6d6ef309e4b88f62a335b3d0ebb7d573745b9891a695afc047fa87b3",
+    "repo/notes/validation-012.md": "2013f0aea5535509a1af7e17241c9a5a9b5380cfb42031cb6e43b4fa8b01de86",
+    "repo/protocol/experiment-012-methods.md": "86f41254f1fc35a0d95e4e9aab45bec0e12d1964ec18d8a38a7d92c57daf92e9",
+    "repo/protocol/experiment-012.json": "60f02a8dce9a086be3a89fe612eb9437088054f007d14348c827292fae34e138",
+    "repo/results/012/RUN-SOURCE-MANIFEST.json": "3359e83c54cdd1bc58d74f9779610a42ebe0f6b626c0cd786ef7ba159cef7ce0",
+    "repo/results/012/implementation-review/ACCEPTANCE.json": "d3e7c255e82e703a2e0630d2ba04c708e239befab2e23e1f56a14e2dc3d9401b",
+    "repo/results/012/implementation-review/independent-numerical-check.json": "f3685d6733a53136883cd8830b063a2a48cddc15532cfa0311b0d1a6f35acfb1",
+    "repo/results/012/run-progress.json": "e542a9baae15e4032c3f4c79b56959d1da84ff99275f452731db378c3f772829",
+    "repo/results/012/summary.json": "88ff8692d94a67f849e8b3537e461ec329f5696ac1df93b5e8a16bf766cddb6f",
+    "repo/scripts/extract_event_assets.py": "0a009dd4ba25d94cb95395ab1b338ff83b6e0750031cc89a26264ab61082dc1a",
+    "repo/scripts/package_event_assets.py": "02b77c2d87f4a8cd35b4b83cc99b7b0fcb78e37b300a815d7bafa2ddb07900c8",
+    "repo/scripts/package_events.py": "20e37581ea0e4e90f53225f8f6aac4eacab995bb1f27d8767f892d56523c4168",
+    "repo/scripts/report_events.py": "c864d59aafaa59cb4f27c674bb8eb87dafa761e7dc4c5a9252149b3a25739f92",
+    "repo/scripts/reproduce_events.py": "7c819c8460537d7afe36746ad342f473d03bf187ddadc4a9d7ccb84b7772ad29",
+    "repo/site/data/events-summary.png": "361108b9cbaae7415369a8344f425a187470babc21a291b43dae69be380f1c34",
+    "repo/site/data/events.json": "34696db66fbf5c6a2927e95b4d4023323d2ad2e0046c9ae41cd47b748d09da8d",
+    "repo/site/events.html": "e55adc9ad1ac993c1ac5c66420f8052e1e79ad6b2390c93a720cbc8c99974c35",
+    "repo/tests/test_extract_event_assets.py": "5a6b63ef3dcb1483f2ff0c4dc6b90348f9f412578a21ec6d2618d7b576a052ac",
+    "repo/tests/test_package_event_assets.py": "6ec8e4bc9b45edda2102bc40d4348741aee8d4b2ff7eb3626e7f7c76b30faa42",
+    "repo/tests/test_package_events.py": "308c531ccd527cbc208237625fe031e4e074e29299c96b23e6418069d0d9366d",
+    "repo/tests/test_report_events.py": "941684aad73da7e5450102b4bd01f3b0754c680e3a467700127538905be07958",
+    "review-r1/REVIEW.md": "e0082d0d6a8e60144802f9a30632e367059f528b946f445f53492ca7f8c2e41d"
+  },
+  "reviewed_utc": "2026-09-26T06:39:30.806973+00:00",
+  "reviewer_agent_id": "session-55c40e2da45f1ac9368e0335d8f7ac92",
+  "reviewer_native_thread_id": "01a0dc45-5aa8-7f21-9138-a2437735cd5c",
+  "schema": "eegt-012-independent-recheck-r2/v1",
+  "scope": "CODE_AND_REPORT_ONLY",
+  "status": "CHANGES_REQUIRED",
+  "work_id": "eco-uzwh8s.34.3"
+}
