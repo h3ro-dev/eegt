@@ -1,0 +1,120 @@
+{
+  "bead": "eco-uzwh8s.38.2",
+  "check_mapping": [
+    {
+      "adapter": "unchanged replay_events called at adapter lines 89-91; original code still performs these checks",
+      "original": "replay_events: freeze/input acceptance, selected inputs, exact model archives and SQLite candidate identity, lines 1081-1089 and 835-878",
+      "result": "PRESERVED"
+    },
+    {
+      "adapter": "PartitionGate.census lines 20-32 requires completed equal eligible and exact indexed identity set; stricter completion requirement",
+      "original": "verify_indexed_partitions: completed subset of eligible and exact 23-partition per-block membership, lines 967-979",
+      "result": "PRESERVED_STRONGER"
+    },
+    {
+      "adapter": "census lines 34-41 binds safe resolved path to deterministic identity; read lines 65-72 checks bytes before payload; final verify lines 56-60 rehashes every member",
+      "original": "verify_indexed_partitions: safe indexed path, byte length, compressed SHA256, lines 980-983",
+      "result": "PRESERVED"
+    },
+    {
+      "adapter": "read lines 70-76 calls unchanged original_read exactly once per indexed member, then compares saved canonical header and identity",
+      "original": "read_partition: gzip/JSON header row and event row types, event count and canonical content hash, lines 774-789",
+      "result": "PRESERVED"
+    },
+    {
+      "adapter": "census lines 34-41 checks path identity; read lines 74-76 checks decoded header equals saved header and indexed key",
+      "original": "verify_indexed_partitions: saved canonical header and candidate/branch/variant identity, lines 984-990",
+      "result": "PRESERVED"
+    },
+    {
+      "adapter": "unchanged replay_events executes these comparisons with wrapper's validated result; duplicate or unindexed reads rejected at lines 68-69",
+      "original": "replay_events: prepared metric/effect and native timeline/match exact comparisons, lines 1090-1125",
+      "result": "PRESERVED"
+    },
+    {
+      "adapter": "second gate lines 53-63 requires unchanged inventory, complete visited census and final compressed rehash; unchanged evaluate_index performs effects/endpoints",
+      "original": "evaluate_index: second partition verification, exact effect census and endpoint recomputation, lines 994-1023",
+      "result": "PRESERVED"
+    },
+    {
+      "adapter": "unchanged replay_events compares summary; wrapper lines 92-101 additionally requires complete status/flags/partition denominator",
+      "original": "replay_events: recorded summary canonical equality and replay flags, lines 1126-1137",
+      "result": "PRESERVED"
+    },
+    {
+      "adapter": "wrapper lines 84-99 hashes SQLite before/after closed frozen replay; stage inventory postcheck required separately",
+      "original": "Replay should not alter indexed scientific data",
+      "result": "ADDED_CHECK"
+    },
+    {
+      "adapter": "main lines 114-140 fixes thread env before import, validates frozen runtime, enforces RLIMIT_CPU, RSS/CPU checks and artifact bound; external run retains 7200-second cap",
+      "original": "Frozen resource bounds and one-thread events runtime",
+      "result": "PRESERVED"
+    }
+  ],
+  "failure_path_audit": "Census mismatch, unsafe or duplicate path, changed compressed bytes, bad gzip/JSON/header/content, repeated or missing read, unexpected gate order, incomplete summary, SQLite mutation, or resource breach raises before an accepted result. Original functions are restored by finally even on error.",
+  "final_science_acceptance": "PENDING_CORRECTED_REPLAY",
+  "findings": [],
+  "frozen_source": {
+    "extracted_sha256": "31568d7d54fd363bc0030bf28af999f6757ba02d45cd0dd13bbb7060aa97cdec",
+    "path": "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_study.py",
+    "sha256": "31568d7d54fd363bc0030bf28af999f6757ba02d45cd0dd13bbb7060aa97cdec"
+  },
+  "manifest": {
+    "file_count": 6,
+    "files": {
+      "DESIGN.md": {
+        "bytes": 2782,
+        "sha256": "f4f91698ca0821af60d7521a9cb814bb0dcab19fdb8c810447f66300a8b957e7"
+      },
+      "TESTS-r3.log": {
+        "bytes": 1945,
+        "sha256": "3f5e66366fc0cdfc440cad3ab56170121158762d214d21ca0f5a0035ddaf448a"
+      },
+      "final-replay.json": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "final-replay.stderr": {
+        "bytes": 813,
+        "sha256": "60779b0b5f4eb3486b01480809e137b3bbd431c1b463209f612c8e808fb4a379"
+      },
+      "replay_validation_bounded.py": {
+        "bytes": 6705,
+        "sha256": "e12c6e64d0a5d670f24c5d7c37e8a71ccfbc1abf8bacce9dfd4fe01a7b286591"
+      },
+      "test_replay_adapter.py": {
+        "bytes": 8600,
+        "sha256": "25ea8e9ed930376a68ce55ec4c85ad89ce510ed9413e62b063dae787cf988d8a"
+      }
+    },
+    "path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/replay-repair-v1/INPUT-MANIFEST.json",
+    "sha256": "c7e5fd9ca7b3dc7fa0321c862646746d0273044bd7491e005cc5f96bc39b5559"
+  },
+  "method_boundary": "Only verification reads are adapted. Frozen numerical calculations, model archive checks and summary equality remain unchanged. No dataset-scale event cache, EEG fixture, detector regeneration, model forward, source retune or scientific claim is introduced.",
+  "original_failed_run": {
+    "exit_code": 152,
+    "review_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/out/FINAL-OUTPUT-REVIEW.json",
+    "review_sha256": "96628bee50c472a9ac71c56f05cbe07908cfdf808c659c5c628af95525433232",
+    "stderr_sha256": "60779b0b5f4eb3486b01480809e137b3bbd431c1b463209f612c8e808fb4a379",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "remaining_gate": "Exactly one corrected replay with original CPU/RSS/artifact caps, complete scientific summary and post-run exact stage inventory; prior morphology must remain index/summary bound.",
+  "reviewed_utc": "2026-09-26T18:33:52.861805+00:00",
+  "reviewer_actor": "session-88981af3c741f4ce3c045aff76ce659b",
+  "reviewer_thread": "01a0de2e-79a9-7be0-a9e2-d9a38d94fb26",
+  "root_actor": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "schema": "eegt-013-replay-adapter-independent-review/v1",
+  "status": "ACCEPTABLE_FOR_ONE_BOUNDED_REPLAY",
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=$PWD/replay-repair-v1 /Users/studio1/lanes.noindex/eco-uzwh8s.37.2/scratch/events/bin/python -m unittest -v test_replay_adapter",
+    "count": 14,
+    "exit": 0,
+    "exit_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/replay-adapter-tests.exit",
+    "exit_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "stderr_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/replay-adapter-tests.stderr",
+    "stderr_sha256": "eed322b121ab6ed9524161f7dde8d71ea85df65f030e462428a68ef964e63723",
+    "stdout_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/validation-output-review/scratch/replay-adapter-tests.stdout",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

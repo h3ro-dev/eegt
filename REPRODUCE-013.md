@@ -1,6 +1,6 @@
 # Reproduce Experiment 013
 
-Release candidate: independent output review, archive extraction and public readback are pending. Do not treat this document as a published release receipt.
+Release candidate: extraction and morphology checks passed; complete replay, final independent output acceptance and public readback are pending. Do not treat this document as a published release receipt.
 
 The v0.9.0 captured dataset is designed for exact replay of the recorded event ledger. It contains the frozen scientific source and protocol, all 9,600 candidate receipts, selected numeric inputs, both encoders' archived outputs, complete event partitions, the SQLite index, resource admissions and preserved failed attempts. Replay recomputes comparisons and the eight-endpoint scientific summary; it does not regenerate detector outputs or run neural inference.
 
@@ -27,15 +27,17 @@ shasum -a 256 repo/data/cache/models/codebrain.pth repo/data/cache/models/cbramo
 The expected SHA256 values, respectively, are `d9714b8732c9883a04d022ee66254cd578ae1fa27f5458e6ab7f1aa96e9a7352` and `0792cb808c14e6b7a2bb2ce1dff379bc47bc54c49a779825bdfeb33bf8157178`. Stop if either differs; the replay verifier also enforces these hashes.
 
 
-Use the frozen events runtime: Python 3.12.14, NumPy 1.26.4, SciPy 1.14.1, bycycle 1.2.0 and NeuroDSP 2.3.0. The requirements file records the event packages; the freeze records the actual runtime contract. In an environment with those exact versions:
+Use the frozen events runtime: Python 3.12.14, NumPy 1.26.4, SciPy 1.14.1, bycycle 1.2.0 and NeuroDSP 2.3.0. The requirements file records the event packages; the freeze records the actual runtime contract. The original frozen runner reached its CPU ceiling during independent replay without producing a complete receipt. Its failure and resource log are retained under `results/013/replay-original-failure.*`. The additive verification adapter passed independent source review and 14 focused tests; its first full corrected replay is in progress. It calls the unchanged frozen replay and numerical functions, decodes each payload once, and requires a complete final inventory and compressed-byte rehash. The original limits remain unchanged. This engineering correction does not establish successful reproduction until its full receipt is accepted.
+
+The immutable data archive retains the earlier candidate instructions. Use the adapter and these instructions from the versioned source checkout as a separate companion to that captured data. Its exact reviewed SHA256 is `e12c6e64d0a5d670f24c5d7c37e8a71ccfbc1abf8bacce9dfd4fe01a7b286591`. From the source checkout, in an environment with those exact versions, substitute the actual absolute extraction path:
 
 ```sh
-python repo/scripts/reproduce_validation.py replay --root repo > replay.json
-python repo/scripts/verify_validation_release.py check-replay --root repo --replay replay.json
-python repo/scripts/verify_validation_release.py morphology --root repo > morphology-replay.json
+PYTHONDONTWRITEBYTECODE=1 python scripts/replay_validation_bounded.py --root /absolute/path/extracted/repo > replay.json
+python scripts/verify_validation_release.py check-replay --root /absolute/path/extracted/repo --replay replay.json
+python scripts/verify_validation_release.py morphology --root /absolute/path/extracted/repo > morphology-replay.json
 ```
 
-Run from `extracted`. The runner sets all five numerical thread controls to one and rejects changed source, runtime, checkpoint, numeric archive and event-partition bindings. A complete successful receipt must have `status=REPLAYED_RECORDED_EVENTS`, `full_scientific_summary=true`, `completed_blocks=174` and `partitions=4002`, plus the exact run-manifest and input-acceptance hashes. Status or exit code alone is insufficient: the unchanged replay routine can return its replay status for a partial ledger. The release additionally checks all morphology rows against the archived native-primary partitions, because that comparison is outside the frozen replay routine. Retain this stdout receipt outside the captured input inventory. Do not edit the manifest or lower checks to make a mismatch pass.
+Keep output receipts outside the captured input inventory. The runner sets all five numerical thread controls to one and rejects changed source, runtime, checkpoint, numeric archive and event-partition bindings. A complete successful receipt must have `status=REPLAYED_RECORDED_EVENTS`, `full_scientific_summary=true`, `completed_blocks=174` and `partitions=4002`, plus the exact run-manifest and input-acceptance hashes. Status or exit code alone is insufficient: the unchanged replay routine can return its replay status for a partial ledger. The release additionally checks all morphology rows against the archived native-primary partitions, because that comparison is outside the frozen replay routine. Retain this stdout receipt outside the captured input inventory. Do not edit the manifest or lower checks to make a mismatch pass.
 
 Fresh raw-data preparation, encoder inference and detector regeneration are separate operations. Preserve the original artifacts, use the exact frozen sources and scientific rules, and follow the first-record/block admission gates and resource ceilings. They are not needed for recorded-ledger replay. Upstream model-pretraining overlap, physiological calibration and equivalence to physical Neurable hardware remain unknown.
 

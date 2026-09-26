@@ -12,6 +12,8 @@ There are eight primary tests: two cohorts, two encoders and two comparisons. We
 
 The completed separate technical check used the first 30 seconds of each of two already-qualified EESM19 recordings, with their 12 real ear-EEG contacts and documented masks. This is a descriptive event-detector check. The four-channel model adapters are not applied to those 12-contact recordings.
 
+Independent extraction and post-run hashing verified all 4,826 captured members and the two declared checkpoint dependencies. Morphology reproduced all 7,656 rows from 174 blocks. The original full replay reached its fixed CPU ceiling and exited 152 without a complete receipt: the termination log records 7,219.75 CPU seconds and 1,404,698,624 bytes maximum RSS. No scientific mismatch was observed before termination, but that incomplete run is not accepted reproduction. A separately reviewed verification adapter removes repeated decoding while preserving every frozen numerical function and all byte/header/content/census checks. Its corrected full run is pending; the original failure remains part of the release history.
+
 Publication checklist to fill only from accepted outputs:
 
 - Actual acquisition and qualification, including missing and quarantined recordings.
