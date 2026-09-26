@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "assertions": 56,
+  "source_sha256": "7bf41138c5525d11516c4a0609cd635c9e0093843efacb754fb4acd09bbcd566",
+  "scope": "Independent analytic arithmetic, counts, empty strata, support and hierarchy; no empirical event detector calls",
+  "warnings": [
+    "paired_valid_blocks in helper summary includes all valid paired blocks, including incomplete people; public primary-block denominator must use COMPLETE people only"
+  ]
+}

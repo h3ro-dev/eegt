@@ -1,0 +1,65 @@
+{
+  "evidence": {
+    "input/METHOD-RECHECK.json": {
+      "sha256": "3c7e055404f2e7c894d9f806c89994c85c50aa8f739baf8a787eaf4021bf9869"
+    },
+    "input/METHODS.md": {
+      "sha256": "7aefc9cb2fee774bc24d1ec3a6a85c467311e4e8660e2388792cfa7dde2df10c"
+    },
+    "input/REPORT.md": {
+      "sha256": "5c57c80b1dec7ad025f5d7863a261eff95e11667f3ffefae812c75540f5c118c"
+    },
+    "input/ROOT-R1-CHECK.json": {
+      "sha256": "3f1b8fd6b7ac9562bb4d4943dddc0aaafeaff135df35daf840f8e373b82f03fa"
+    },
+    "input/cross_encoder_study.py": {
+      "sha256": "cfc934775d663396713f3105dd121878186ff1d375c9531398f25a5a5c389eae"
+    },
+    "input/distributed_study.py": {
+      "sha256": "0f4f670b16494c6626a0edd36f53e94cbae2c1462c466209bede6108e5996266"
+    },
+    "input/experiment-011.json": {
+      "sha256": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e"
+    },
+    "input/pretrained_study.py": {
+      "sha256": "80187b84274606d4d7d4c514d7eb05b892b4b8df96b8a92b6ea099293a232e3c"
+    },
+    "input/revision-r1/ARTIFACT-ESTIMATE-DETAIL.json": {
+      "sha256": "73c765fa59f484be644cf7971d79c6be997a9a6495f9c27db658aca23e0dd102"
+    },
+    "input/revision-r1/MANIFEST.json": {
+      "sha256": "5a2d0ef72a6a7076183b3a3c4207f227695b8dcb174b863ca994a30252c6f280"
+    },
+    "input/revision-r1/PREPARATION-ACCEPTANCE.json": {
+      "sha256": "e3f985cdbb6572179f8ac5bdb00592325aee414399434f3bf9561fbd2cb198a7"
+    },
+    "input/revision-r1/PROTOCOL-DRAFT.md": {
+      "sha256": "86f41254f1fc35a0d95e4e9aab45bec0e12d1964ec18d8a38a7d92c57daf92e9"
+    },
+    "input/revision-r1/transitions.py": {
+      "sha256": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d"
+    },
+    "input/waveform_events.py": {
+      "sha256": "80a9b8f62693e551c7f385a911fa15ca321325b7983f63da8fc7373ba451f572"
+    },
+    "out/FILES.json": {
+      "sha256": "4bb172616ac0f3d57f597e82e6d3e996ac131e6be0c3ab935b25b541c90d47d6"
+    },
+    "out/REVIEW.json": {
+      "sha256": "062a45fb629a342b53812330617dd101363c223a05261f6b5b841156c8f380ab"
+    },
+    "out/REVIEW.md": {
+      "sha256": "fbc2a4dbeefb5e106d9a3e87818ea5961c0a2dee6b05c1d7733a0f94386af699"
+    }
+  },
+  "outputs": {
+    "out/recheck-r1/RECHECK.json": {
+      "sha256": "5050fb4f2138d69a2fa02b5a2df990f695be32a820e96ea2d501c567ff361384"
+    },
+    "out/recheck-r1/RECHECK.md": {
+      "sha256": "1dbeb544d8b0f2e22586a1e42c0c4137385eadfdc5d0d7a84d6e68dd84c5bc79"
+    }
+  },
+  "schema": "eegt-protocol-recheck-files/v1",
+  "self_excluded": "out/recheck-r1/FILES.json"
+}

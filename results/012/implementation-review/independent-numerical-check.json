@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "schema": "eegt-012-independent-numerical-check/v1",
+  "assertions": 4752264,
+  "maximum_absolute_error": 2.7755575615628914e-17,
+  "primary": [
+    {
+      "model": "codebrain",
+      "metric": "geometry",
+      "people": 5,
+      "primary_blocks": 110,
+      "test": {
+        "assignments": 32,
+        "extreme_count": 4,
+        "n": 5,
+        "observed_mean": 0.03545419672111384,
+        "p_bonferroni_four": 0.5,
+        "p_two_sided": 0.125,
+        "reason": null,
+        "status": "COMPARED"
+      }
+    },
+    {
+      "model": "codebrain",
+      "metric": "change",
+      "people": 5,
+      "primary_blocks": 110,
+      "test": {
+        "assignments": 32,
+        "extreme_count": 2,
+        "n": 5,
+        "observed_mean": 0.07536764705882355,
+        "p_bonferroni_four": 0.25,
+        "p_two_sided": 0.0625,
+        "reason": null,
+        "status": "COMPARED"
+      }
+    },
+    {
+      "model": "cbramod",
+      "metric": "geometry",
+      "people": 5,
+      "primary_blocks": 110,
+      "test": {
+        "assignments": 32,
+        "extreme_count": 32,
+        "n": 5,
+        "observed_mean": 0.00542130232301242,
+        "p_bonferroni_four": 1.0,
+        "p_two_sided": 1.0,
+        "reason": null,
+        "status": "COMPARED"
+      }
+    },
+    {
+      "model": "cbramod",
+      "metric": "change",
+      "people": 5,
+      "primary_blocks": 110,
+      "test": {
+        "assignments": 32,
+        "extreme_count": 28,
+        "n": 5,
+        "observed_mean": 0.007843137254901968,
+        "p_bonferroni_four": 1.0,
+        "p_two_sided": 0.875,
+        "reason": null,
+        "status": "COMPARED"
+      }
+    }
+  ],
+  "expected_table_counts": {
+    "candidates": 5760,
+    "partitions": 2806,
+    "native_timeline": 8296,
+    "native_match": 99552,
+    "prepared_metric": 2440,
+    "block_effect": 488,
+    "morphology_block": 5368,
+    "completed_blocks": 122
+  },
+  "summary_sha256": "88ff8692d94a67f849e8b3537e461ec329f5696ac1df93b5e8a16bf766cddb6f",
+  "index_sha256": "427627c73149bce542b77ca152d2e0a4c0c32eb0b6b983839d360e8967c949bb",
+  "checker_sha256": "05514153410467f52b11c2f2bfd42aa17ba1ff12ba7d2d711b9b3ce3a5eff923",
+  "cpu_seconds": 25.048607,
+  "scope": "No EEGT study imports: all inherited/partition hashes; complete original/phase event counts, support, 976 correlations and 488 effects; exact night/person tests; all 99,552 matching row invariants. Detector event regeneration and secondary metrics are separate checks."
+}

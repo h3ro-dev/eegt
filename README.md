@@ -2,15 +2,23 @@
 
 **Project subtitle: An LLM’s interpretation of your brainwaves**
 
-The current experiment runs a continuous EEG encoder, not an LLM decoder or thought interpretation.
+The current experiment measures waveform landmarks and compares them with two continuous EEG encoders. It does not decode thoughts or run an LLM.
 
-An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release compares two fixed pretrained EEG encoders on the same time-distributed public around-ear EEG. This does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
+An open research notebook asking which recurring voltage patterns different tokenizers agree on. The current release compares direct waveform landmarks with two fixed pretrained EEG encoders on public around-ear EEG. This does not establish independent discovery by pretrained LLMs, semantic brain meaning, or a universal token vocabulary.
 
 - [Research Notes website](https://h3ro-dev.github.io/eegt/)
 - [Continuous corpus and transitions](https://h3ro-dev.github.io/eegt/growth.html)
 - [Database contract](DATABASE.md), [Experiment 003 protocol](protocol/experiment-003.json), and [input contract](https://github.com/h3ro-dev/eegt/blob/v0.6.0/protocol/INPUT-CONTRACT.md)
 - [Experiment 002 data card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/DATA_CARD.md), [results](https://github.com/h3ro-dev/eegt/blob/v0.6.0/results/002/metrics.json), and [model card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
+
+## Direct waveform landmarks · v0.8.0
+
+[Experiment 012](https://h3ro-dev.github.io/eegt/events.html) measures extrema, inflections, cycles and bursts across **122 already selected blocks**. It retains **2,806 complete event partitions**, **99,552 native matching rows** and **2,440 event-to-encoder comparison rows**. Five paired people contribute 110 primary blocks. CodeBrain's mean original-minus-phase differences are **0.0355 for geometry** and **0.0754 for change**; CBraMod's are **0.0054** and **0.0078**. Adjusted p values are **0.50, 0.25, 1.00 and 1.00** respectively: all inconclusive. No new people, source hours or model forward passes are counted.
+
+[Research Note](notes/experiment-012.md) · [Frozen protocol](protocol/experiment-012.json) · [Exact methods](protocol/experiment-012-methods.md) · [Validation](notes/validation-012.md) · [Release](https://github.com/h3ro-dev/eegt/releases/tag/v0.8.0) · [Reproduction](REPRODUCE-012.md).
+
+Download every data shard to obtain the complete captured packet. Offline reproduction checks the complete event ledger and recomputes matching, correlations and person-level tests without a model call. Derivative landmarks are numerical definitions, not confirmed transitions between brain states. Cycles and bursts also occur in oscillator-absent noise. Untouched-person and later-session validation is the next locked experiment; semantic and clinical meaning remain deferred.
 
 ## Two-encoder comparison · v0.7.0
 

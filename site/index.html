@@ -33,12 +33,12 @@
   <main id="main">
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Open research notebook <span class="eyebrow-rule" aria-hidden="true"></span> 001—011</p>
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Open research notebook <span class="eyebrow-rule" aria-hidden="true"></span> 001—012</p>
         <h1 id="hero-title">Signals,<br><em>before stories.</em></h1>
         <p class="hero-subtitle"><small>Project subtitle</small><br>An LLM’s interpretation of your brainwaves</p>
-        <p class="hero-lede">EEGT studies whether a small vocabulary of numeric tokens can retain useful structure in EEG recordings. The current study compares numerical EEG embeddings; it runs no LLM decoder and does not interpret thoughts. The notebook shows the inputs, tests, and limits behind each result.</p>
+        <p class="hero-lede">EEGT studies whether a small vocabulary of numeric tokens can retain useful structure in EEG recordings. The current study compares waveform landmarks with numerical EEG embeddings; it runs no LLM decoder and does not interpret thoughts. The notebook shows the inputs, tests, and limits behind each result.</p>
         <div class="hero-actions">
-          <a class="button button-ink" href="cross-encoder.html">Read current notes <span aria-hidden="true">↘</span></a>
+          <a class="button button-ink" href="events.html">Read current notes <span aria-hidden="true">↘</span></a>
           <a class="text-link" href="#methods">See the method <span aria-hidden="true">→</span></a>
         </div>
         <p class="hero-caveat">Token IDs describe measured signal patterns. They are not words, thoughts, diagnoses, or interpretations of a person.</p>
@@ -71,7 +71,7 @@
 
     <div class="status-strip" aria-label="Notebook at a glance">
       <div class="shell status-grid">
-        <p><span>Current protocol</span><strong>Two-encoder comparison · 011</strong></p>
+        <p><span>Current protocol</span><strong>Waveform landmarks · 012</strong></p>
         <p><span>Input</span><strong>Open around-ear EEG</strong></p>
         <p><span>Release rule</span><strong>Numbers after verification</strong></p>
       </div>
@@ -151,7 +151,15 @@
         </div>
 
         <div class="note-stack">
-          <article class="note-card current-note" id="experiment-011" aria-labelledby="cross-encoder-title">
+          <article class="note-card current-note" id="experiment-012" aria-labelledby="events-title">
+            <div class="note-topline"><span>NOTE 012 / DIRECT WAVEFORM LANDMARKS</span><span class="complete-badge">Four tests · all inconclusive</span></div>
+            <div class="note-heading"><h3 id="events-title">Measuring where the waveform turns.</h3><span class="note-index" aria-hidden="true">12</span></div>
+            <p class="note-description">We measured extrema, inflections, cycles and bursts on the same 122 selected segments, retaining every candidate and rejection across 2,806 event partitions.</p>
+            <p class="note-description">Event-to-encoder alignment differs between CodeBrain and CBraMod. Adjusted p values are 0.50, 0.25, 1.00 and 1.00. Recurrent numerical turns do not yet establish universal tokens or transitions between brain states.</p>
+            <div class="note-foot"><span>Five paired people · no new source hours</span><a href="events.html">Read Experiment 012 <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="note-card" id="experiment-011" aria-labelledby="cross-encoder-title">
             <div class="note-topline"><span>NOTE 011 / TWO PRETRAINED ENCODERS</span><span class="complete-badge">Positive contrasts · tests inconclusive</span></div>
             <div class="note-heading"><h3 id="cross-encoder-title">Two encoders. Some alignment. An open question.</h3><span class="note-index" aria-hidden="true">11</span></div>
             <p class="note-description">CodeBrain and CBraMod receive the same 122 selected wave segments and controls. Within-block original-minus-phase contrasts are positive in all five paired people.</p>
@@ -245,7 +253,7 @@
         <aside class="limits-card" aria-labelledby="limits-title">
           <p class="limits-kicker">INTERPRETATION BOUNDARY</p>
           <h3 id="limits-title">A token is a label for a measured pattern.</h3>
-          <p>The notebook includes authored numerical baselines and a fixed pretrained EEG backbone. Agreement on this exposed recording set does not establish that independent LLMs discovered a universal brain language.</p>
+          <p>The notebook includes authored numerical baselines and two fixed pretrained EEG backbones. Agreement on this exposed recording set does not establish that independent LLMs discovered a universal brain language.</p>
           <ul>
             <li>No semantic or clinical claim is tested.</li>
             <li>A compact vocabulary can lose signal detail.</li>
@@ -265,10 +273,10 @@
         </div>
         <div class="resource-list">
           <a href="https://github.com/h3ro-dev/eegt"><span class="resource-number">01</span><span><strong>Project repository</strong><small>Code and run documentation</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
-          <a href="https://github.com/h3ro-dev/eegt/releases/tag/v0.7.0"><span class="resource-number">02</span><span><strong>Experiment 011 data release</strong><small>Selected waves, two model archives, full ledger and checksums</small></span><span class="resource-arrow" aria-hidden="true">↓</span></a>
+          <a href="https://github.com/h3ro-dev/eegt/releases/tag/v0.8.0"><span class="resource-number">02</span><span><strong>Experiment 012 data release</strong><small>All event partitions, selected waves, two model archives and checksums</small></span><span class="resource-arrow" aria-hidden="true">↓</span></a>
           <a href="https://openneuro.org/datasets/ds004015"><span class="resource-number">03</span><span><strong>OpenNeuro ds004015</strong><small>Source dataset</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
           <a href="https://openneuro.org/datasets/ds005207"><span class="resource-number">04</span><span><strong>OpenNeuro ds005207</strong><small>Source dataset</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
-          <a href="https://openneuro.org/datasets/ds005178/versions/1.0.0"><span class="resource-number">05</span><span><strong>EESM23 · ds005178 v1.0.0</strong><small>Repeated-night source for Experiments 008–011</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://openneuro.org/datasets/ds005178/versions/1.0.0"><span class="resource-number">05</span><span><strong>EESM23 · ds005178 v1.0.0</strong><small>Repeated-night source for Experiments 008–012</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
           <a href="https://github.com/jingyingma01/CodeBrain/tree/22d350caf68246d2fda4f630ef837420db3fb130"><span class="resource-number">06</span><span><strong>Pinned CodeBrain source</strong><small>Pretrained EEGSSM backbone and attribution</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
         </div>
       </div>
