@@ -1,0 +1,226 @@
+{
+  "actual_checks": {
+    "decompressed_index_sha256": "427627c73149bce542b77ca152d2e0a4c0c32eb0b6b983839d360e8967c949bb",
+    "embedded_file_manifest_sha256": "54ed88f13783ad63315b39cc7b1ba5bfc3e45bcf0849079bc5d01bc88c4b78c1",
+    "extraction_assets_equal_stage": true,
+    "extraction_files_equal_stage": true,
+    "final_inventory_files": 2979,
+    "frozen_input_hashes_match_staged_inventory": true,
+    "frozen_source_files_match_run_manifest": true,
+    "generated_reproduction": {
+      "blocks": 122,
+      "cpu_seconds": 1517.143595,
+      "full_scientific_summary": true,
+      "index_sha256": "427627c73149bce542b77ca152d2e0a4c0c32eb0b6b983839d360e8967c949bb",
+      "partitions": 2806,
+      "peak_rss_bytes": 1232977920,
+      "run_manifest_sha256": "3359e83c54cdd1bc58d74f9779610a42ebe0f6b626c0cd786ef7ba159cef7ce0",
+      "status": "REPRODUCED",
+      "wall_seconds": 1529.9249450410716
+    },
+    "home_page_corrected_and_alias_equal": true,
+    "locally_supplied_inventory_files_hashed": 157,
+    "native_execution": {
+      "elapsed_wall_seconds": 1530.5760668329895,
+      "ended_utc": "2026-09-26T07:19:26.983293+00:00",
+      "exit_code": 0,
+      "generated_receipt_sha256": "8f316918c467ac5b24aa5ca8103f256d32362dcfda57355d036f9b0fa0e29ff5",
+      "machine": "studio0",
+      "owner": "session-13ffd342d925791b856652db872e4142",
+      "started_utc": "2026-09-26T06:53:56.389064+00:00",
+      "stdout_log_equals_generated_receipt": true
+    },
+    "packet_bytes_verified": true,
+    "post_stage_deltas": 11,
+    "post_stage_gate": "actual map accepted; undisclosed map and science mutation refused",
+    "prior_numerical_check_reused": {
+      "adjusted_p_values": [
+        0.5,
+        0.25,
+        1.0,
+        1.0
+      ],
+      "complete_people_per_endpoint": 5,
+      "primary_blocks_per_endpoint": 110,
+      "summary_and_gzip_and_reporter_hashes_unchanged": true
+    },
+    "stage_assets": 3,
+    "stage_files": 2970,
+    "stage_manifest_sha256": "1ed73399dafc3a859860406bf6ea73298432435aa3311828c0754bfa455be6c8",
+    "stage_member_coverage": "exact, one membership per file",
+    "summary_sha256": "88ff8692d94a67f849e8b3537e461ec329f5696ac1df93b5e8a16bf766cddb6f"
+  },
+  "checks": [
+    {
+      "name": "focused stdlib package tests",
+      "result": "PASS, five tests"
+    },
+    {
+      "name": "focused stdlib reporter tests",
+      "result": "PASS, two tests"
+    },
+    {
+      "name": "focused stdlib corrected extractor tests",
+      "result": "PASS, four tests"
+    },
+    {
+      "name": "portable adversarial paths",
+      "result": "PASS, eight forbidden names and four coherent manifest/tar fixtures refused before output"
+    },
+    {
+      "name": "actual evidence and final inventory script",
+      "result": "PASS, 183 packet hashes, stage/extraction/generated/native bindings, 2,979-file object_sha, actual stage-delta gate and negative mutations"
+    },
+    {
+      "name": "prior independent participant/readback checks",
+      "result": "REUSED, exact summary, gzip index and reporter hashes unchanged"
+    }
+  ],
+  "dispositions": [
+    {
+      "evidence": "The unchanged release gate checks SQLite integrity, eight cardinalities, selected block and 122 x 23 variant identities, and exact disk/index/report partition coverage. The current 2,970-file staged inventory and extraction receipt agree exactly; accepted numerical index hash 427627c7... is reproduced by streaming the supplied gzip. Prior independent readback checked 48 night medians and all four participant tests on these unchanged bytes.",
+      "id": "R012-01",
+      "status": "RESOLVED"
+    },
+    {
+      "evidence": "The raw generated receipt and native stdout log are identical JSON; they report REPRODUCED, full summary, 122 blocks, 2,806 partitions and the same frozen manifest/index hashes. The wrapper binds generated receipt, extraction receipt, corrected staged manifest and native execution receipt by exact SHA256. Native receipt records exit code 0, the extracted cwd/runner, one numeric process and a 1,530.6 s wall interval.",
+      "id": "R012-02",
+      "status": "RESOLVED"
+    },
+    {
+      "evidence": "The unchanged final gate requires exact pre-review inventory, this independent review artifact, nonempty resolved dispositions, expected reviewer thread and a separate native completion handoff; it adds those final artifacts only after review. The supplied FINAL-FILES.json object_sha is bound here; root must verify this turn at the native source and supply its handoff after completion.",
+      "id": "R012-03",
+      "status": "RESOLVED"
+    },
+    {
+      "evidence": "Unchanged actual summary/public JSON/Experiment 012 article retain five complete people and 110 primary blocks per endpoint, four estimable inconclusive tests and explicit undefined controls. The home page now says two fixed pretrained EEG backbones; its site/root copies hash equally.",
+      "id": "R012-04",
+      "status": "RESOLVED"
+    },
+    {
+      "evidence": "Extractor preflights exact shards, canonical paths, member sets, types and sizes before output, then hashes extracted files and complete tree. Four extractor unit tests pass; staged membership covers each of 2,970 captured files exactly once and the root extraction receipt matches all files/assets.",
+      "id": "R012-05",
+      "status": "RESOLVED"
+    },
+    {
+      "evidence": "Corrected safe_name rejects Windows drive/colon paths, trailing dot/space components and reserved devices. Eight direct forbidden-name cases plus four coherent manifest/tar cases fail before destination creation; corrected extractor regression passes. The staged corrected extractor hash is bd5037e0382738a1ef5129c0dee804ab645cb666a1c5773dba8644782e413a5a.",
+      "id": "R012-06",
+      "status": "RESOLVED"
+    }
+  ],
+  "files_inventory_count": 2979,
+  "files_inventory_sha256": "eb5992c8448aa5dabca8f0821015a89f1da66aa36ebeea7aa9df148470891742",
+  "monetary_cost": "UNKNOWN (no paid API or per-window model work in this review)",
+  "packet_files_verified": 183,
+  "packet_manifest_sha256": "ae0d00cf875606b2051bdd7e5b063271f6d7134ac6e2fadb6ca5ce35019700d7",
+  "post_stage_deltas": {
+    "repo/notes/validation-012.md": {
+      "after_sha256": "301505e42c3a50fbf9a30cb14e21fb36d6042949d1aa938f011364bb61d18ccb",
+      "before_sha256": "2013f0aea5535509a1af7e17241c9a5a9b5380cfb42031cb6e43b4fa8b01de86"
+    },
+    "repo/results/012/extracted-reproduction.json": {
+      "after_sha256": "33320cca43e031be80af0caa7ec4063c0328b45c6d3453561fb0c33592b463c0",
+      "before_sha256": null
+    },
+    "repo/results/012/extraction-receipt.json": {
+      "after_sha256": "ae38d8ba0533d29ddd61c6bf6c30c241ee67db750324bd3451c360b68a6a9171",
+      "before_sha256": null
+    },
+    "repo/results/012/generated-reproduction.json": {
+      "after_sha256": "8f316918c467ac5b24aa5ca8103f256d32362dcfda57355d036f9b0fa0e29ff5",
+      "before_sha256": null
+    },
+    "repo/results/012/implementation-review/ACCEPTANCE.json": {
+      "after_sha256": "1e009e3866b6a52643ea3aa6c90812d7c09d2809f950bf88ab9d4dddb1a95379",
+      "before_sha256": "d3e7c255e82e703a2e0630d2ba04c708e239befab2e23e1f56a14e2dc3d9401b"
+    },
+    "repo/results/012/implementation-review/history/generated-reproduction-r1.json": {
+      "after_sha256": "0efa5cdc0f9d1f91e36dd8e32348a94a3d72b4e57322a30f20d8040d88ca66af",
+      "before_sha256": null
+    },
+    "repo/results/012/implementation-review/history/native-replay-r1.json": {
+      "after_sha256": "8bebb5c085ede6aa7255d6fa43188a4beacc2f73391acf341a666f03a7d3fbce",
+      "before_sha256": null
+    },
+    "repo/results/012/implementation-review/history/native-replay-r2.json": {
+      "after_sha256": "e22a4afdb5bd1f6f313a14ed34b2a07d8a3a4ef0ed5e48f4ee7e1d7bf7a684a0",
+      "before_sha256": null
+    },
+    "repo/results/012/implementation-review/history/native-replay-r2.log": {
+      "after_sha256": "8f316918c467ac5b24aa5ca8103f256d32362dcfda57355d036f9b0fa0e29ff5",
+      "before_sha256": null
+    },
+    "repo/results/012/implementation-review/history/run_transition_replay_r2.py": {
+      "after_sha256": "0410b3a07f61f216126285a2690c5ecf0c1f51081d50370b0547ee2f61cd92fe",
+      "before_sha256": null
+    },
+    "repo/results/012/implementation-review/history/stage-review-r2-manifest.json": {
+      "after_sha256": "1ed73399dafc3a859860406bf6ea73298432435aa3311828c0754bfa455be6c8",
+      "before_sha256": null
+    }
+  },
+  "post_stage_deltas_sha256": "f2fa3988f01945c145b20d270aadbfcec394ccba3ea2e04d38c8f0444a1c1c59",
+  "release_state": "REVIEWED_CANDIDATE_UNPUBLISHED",
+  "reviewed_file_sha256": {
+    "FINAL-FILES.json": "eb5992c8448aa5dabca8f0821015a89f1da66aa36ebeea7aa9df148470891742",
+    "FINAL-PACKET-MANIFEST.json": "ae0d00cf875606b2051bdd7e5b063271f6d7134ac6e2fadb6ca5ce35019700d7",
+    "FINAL-REVIEW-BRIEF.md": "e16b89b0ed84da7bf003fcb953c0b49372bffa9f3472845c4f412aa583c95bb7",
+    "POST-STAGE-DELTAS.json": "f2fa3988f01945c145b20d270aadbfcec394ccba3ea2e04d38c8f0444a1c1c59",
+    "analysis.sqlite.gz": "75765b2aecc989d14a33bcb8c4ead8617eb1ac662eccfb4068412a7bac0cc480",
+    "dist/eegt-v0.8.0-review-r2-manifest.json": "1ed73399dafc3a859860406bf6ea73298432435aa3311828c0754bfa455be6c8",
+    "repo/REPRODUCE-012.md": "b1601a04efd471284f7e4ccca895131c29278ae957ceae421dad38f6e7a60fbb",
+    "repo/eegt/event_study.py": "7bf41138c5525d11516c4a0609cd635c9e0093843efacb754fb4acd09bbcd566",
+    "repo/eegt/waveform_events.py": "80a9b8f62693e551c7f385a911fa15ca321325b7983f63da8fc7373ba451f572",
+    "repo/index.html": "2dc552d264a1ccdd3135ead4eb14af86b95171db5d31e59b2866f6e5caec2b5e",
+    "repo/notes/experiment-012.md": "57ee803b6d6ef309e4b88f62a335b3d0ebb7d573745b9891a695afc047fa87b3",
+    "repo/notes/validation-012.md": "301505e42c3a50fbf9a30cb14e21fb36d6042949d1aa938f011364bb61d18ccb",
+    "repo/protocol/experiment-012-methods.md": "86f41254f1fc35a0d95e4e9aab45bec0e12d1964ec18d8a38a7d92c57daf92e9",
+    "repo/protocol/experiment-012.json": "60f02a8dce9a086be3a89fe612eb9437088054f007d14348c827292fae34e138",
+    "repo/results/012/RUN-SOURCE-MANIFEST.json": "3359e83c54cdd1bc58d74f9779610a42ebe0f6b626c0cd786ef7ba159cef7ce0",
+    "repo/results/012/code-review-r2/CORRECTION-001.json": "2cd0dfef5ab70ca41f7cd69ee56d14838b7750c7636589198bb40b89bfa70eb8",
+    "repo/results/012/code-review-r2/NATIVE-CHECKPOINT.json": "2600ef8194205ee7b582a8d2c174adf897bd638945aa103ea1c9fbd6dd6f32d3",
+    "repo/results/012/extracted-reproduction.json": "33320cca43e031be80af0caa7ec4063c0328b45c6d3453561fb0c33592b463c0",
+    "repo/results/012/extraction-receipt.json": "ae38d8ba0533d29ddd61c6bf6c30c241ee67db750324bd3451c360b68a6a9171",
+    "repo/results/012/generated-reproduction.json": "8f316918c467ac5b24aa5ca8103f256d32362dcfda57355d036f9b0fa0e29ff5",
+    "repo/results/012/implementation-review/ACCEPTANCE.json": "1e009e3866b6a52643ea3aa6c90812d7c09d2809f950bf88ab9d4dddb1a95379",
+    "repo/results/012/implementation-review/history/native-replay-r2.json": "e22a4afdb5bd1f6f313a14ed34b2a07d8a3a4ef0ed5e48f4ee7e1d7bf7a684a0",
+    "repo/results/012/implementation-review/history/native-replay-r2.log": "8f316918c467ac5b24aa5ca8103f256d32362dcfda57355d036f9b0fa0e29ff5",
+    "repo/results/012/implementation-review/history/run_transition_replay_r2.py": "0410b3a07f61f216126285a2690c5ecf0c1f51081d50370b0547ee2f61cd92fe",
+    "repo/results/012/implementation-review/history/stage-review-r2-manifest.json": "1ed73399dafc3a859860406bf6ea73298432435aa3311828c0754bfa455be6c8",
+    "repo/results/012/implementation-review/independent-numerical-check.json": "f3685d6733a53136883cd8830b063a2a48cddc15532cfa0311b0d1a6f35acfb1",
+    "repo/results/012/run-progress.json": "e542a9baae15e4032c3f4c79b56959d1da84ff99275f452731db378c3f772829",
+    "repo/results/012/summary.json": "88ff8692d94a67f849e8b3537e461ec329f5696ac1df93b5e8a16bf766cddb6f",
+    "repo/scripts/extract_event_assets.py": "bd5037e0382738a1ef5129c0dee804ab645cb666a1c5773dba8644782e413a5a",
+    "repo/scripts/package_event_assets.py": "02b77c2d87f4a8cd35b4b83cc99b7b0fcb78e37b300a815d7bafa2ddb07900c8",
+    "repo/scripts/package_events.py": "20e37581ea0e4e90f53225f8f6aac4eacab995bb1f27d8767f892d56523c4168",
+    "repo/scripts/report_events.py": "c864d59aafaa59cb4f27c674bb8eb87dafa761e7dc4c5a9252149b3a25739f92",
+    "repo/scripts/reproduce_events.py": "7c819c8460537d7afe36746ad342f473d03bf187ddadc4a9d7ccb84b7772ad29",
+    "repo/site/data/events-summary.png": "361108b9cbaae7415369a8344f425a187470babc21a291b43dae69be380f1c34",
+    "repo/site/data/events.json": "34696db66fbf5c6a2927e95b4d4023323d2ad2e0046c9ae41cd47b748d09da8d",
+    "repo/site/events.html": "e55adc9ad1ac993c1ac5c66420f8052e1e79ad6b2390c93a720cbc8c99974c35",
+    "repo/site/index.html": "2dc552d264a1ccdd3135ead4eb14af86b95171db5d31e59b2866f6e5caec2b5e",
+    "repo/tests/test_extract_event_assets.py": "1c1e9065cdb68e76dafab4865a5fb08d58243996091b5ec1bff607e6ec2e903f",
+    "repo/tests/test_package_event_assets.py": "6ec8e4bc9b45edda2102bc40d4348741aee8d4b2ff7eb3626e7f7c76b30faa42",
+    "repo/tests/test_package_events.py": "308c531ccd527cbc208237625fe031e4e074e29299c96b23e6418069d0d9366d",
+    "repo/tests/test_report_events.py": "941684aad73da7e5450102b4bd01f3b0754c680e3a467700127538905be07958",
+    "review-r1/REVIEW.json": "a09f60056c0e418b1e1f887a1a63c6c457e9d80bd5539162a6987dcf67c399d9",
+    "review-r2/RECHECK.json": "2b15bcb47015dfb2ef0d4603b58d03bf75215a64f7994a51846c4894ad974b06",
+    "review-r2/recomputed-primary.json": "07b2c086e5da9362c53dfb95061d9303b5f477a1a100a03ef1965548440dba91"
+  },
+  "reviewed_utc": "2026-09-26T07:31:40.189242+00:00",
+  "reviewer_agent_id": "session-55c40e2da45f1ac9368e0335d8f7ac92",
+  "reviewer_thread_id": "01a0dc45-5aa8-7f21-9138-a2437735cd5c",
+  "schema": "eegt-012-independent-final-release-review/v1",
+  "scope": "FINAL_RELEASE",
+  "status": "ACCEPTED",
+  "test_environment_note": "An initial broad test_package*.py discovery also imported unrelated test_package_cross_encoder.py and test_package_pretrained.py, which require unavailable pytest/eegt imports in this review environment. Both exact relevant package modules passed independently. Python 3.14 emitted a PurePath.is_reserved deprecation warning; release reproduction pins Python 3.12.",
+  "verification_limits": [
+    "This accepts a complete release candidate; final packaging, publication and public download/page readback are owned by the original lead and remain pending.",
+    "Three several-gigabyte shard bytes and 2,806 individual partition bytes were not supplied locally. Their exact identities and full 2,970-file extraction are supported by the retained root extraction receipt and generated full replay, not by a second reviewer extraction.",
+    "The reviewer directly hashed all 183 supplied packet files, 157 locally present final-inventory files and the decompressed SQLite stream; the other 16 nonpartition inventory files were represented by staged extraction and replay receipts.",
+    "The root performed the complete extracted numerical replay. This reviewer checked its generated receipt, stdout log, native execution receipt, source and hash bindings without running a second replay.",
+    "The reviewer did not open reserved people or sessions, acquire raw data, run detectors, make model forwards or modify canonical source/results.",
+    "The native completed-turn receipt for this review does not yet exist. Root must verify it at the native source and bind this artifact before final package gate execution."
+  ],
+  "work_id": "eco-uzwh8s.34.3"
+}
