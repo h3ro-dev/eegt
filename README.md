@@ -12,13 +12,13 @@ An open research notebook asking which recurring voltage patterns different toke
 - [Experiment 002 data card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/DATA_CARD.md), [results](https://github.com/h3ro-dev/eegt/blob/v0.6.0/results/002/metrics.json), and [model card](https://github.com/h3ro-dev/eegt/blob/v0.6.0/MODEL_CARD.md)
 - [Release data and checksums](https://github.com/h3ro-dev/eegt/releases)
 
-## Fixed validation · Experiment 013 candidate
+## Fixed validation · Experiment 013
 
 The completed numerical run adds 20 pinned recordings (151.848631 source hours), censuses 9,600 candidate blocks and selects 174 under frozen quality and time rules. Six complete new-session participants support four comparisons; adjusted p values are 1.00, 0.25, 0.50 and 1.00, all inconclusive. Only two new-person participants qualify, so that cohort fails the frozen minimum and its four primary results remain not estimable.
 
-Both pinned encoders completed 650 forwards. The ledger has 4,002 event partitions, 141,984 native matching rows and 7,656 morphology rows. A separate descriptive engineering check used two 30-second EESM19 sessions with 12 contacts. Independent final output review, extracted replay and publication readback remain pending; this is not yet a published validation release.
+Both pinned encoders completed 650 forwards. The ledger has 4,002 event partitions, 141,984 native matching rows and 7,656 morphology rows. A separate descriptive engineering check used two 30-second EESM19 sessions with 12 contacts. Independent numerical output review accepted the complete extracted replay and all morphology rows. The bounded verification adapter completed in 5,306.66 CPU seconds with 1,447,821,312 bytes peak RSS; the original CPU-limit failure remains preserved. [Release and data](https://github.com/h3ro-dev/eegt/releases/tag/v0.9.0).
 
-[Candidate note](notes/experiment-013.md) · [Frozen protocol](protocol/experiment-013.json) · [Candidate reproduction guide](REPRODUCE-013.md) · [Numerical summary](results/013/summary.json).
+[Research note](notes/experiment-013.md) · [Frozen protocol](protocol/experiment-013.json) · [Reproduction guide](REPRODUCE-013.md) · [Numerical summary](results/013/summary.json).
 
 ## Direct waveform landmarks · v0.8.0
 

@@ -33,12 +33,12 @@
   <main id="main">
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Open research notebook <span class="eyebrow-rule" aria-hidden="true"></span> 001—012</p>
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Open research notebook <span class="eyebrow-rule" aria-hidden="true"></span> 001—013</p>
         <h1 id="hero-title">Signals,<br><em>before stories.</em></h1>
         <p class="hero-subtitle"><small>Project subtitle</small><br>An LLM’s interpretation of your brainwaves</p>
         <p class="hero-lede">EEGT studies whether a small vocabulary of numeric tokens can retain useful structure in EEG recordings. The current study compares waveform landmarks with numerical EEG embeddings; it runs no LLM decoder and does not interpret thoughts. The notebook shows the inputs, tests, and limits behind each result.</p>
         <div class="hero-actions">
-          <a class="button button-ink" href="events.html">Read current notes <span aria-hidden="true">↘</span></a>
+          <a class="button button-ink" href="validation.html">Read current notes <span aria-hidden="true">↘</span></a>
           <a class="text-link" href="#methods">See the method <span aria-hidden="true">→</span></a>
         </div>
         <p class="hero-caveat">Token IDs describe measured signal patterns. They are not words, thoughts, diagnoses, or interpretations of a person.</p>
@@ -71,7 +71,7 @@
 
     <div class="status-strip" aria-label="Notebook at a glance">
       <div class="shell status-grid">
-        <p><span>Current protocol</span><strong>Waveform landmarks · 012</strong></p>
+        <p><span>Current protocol</span><strong>Fixed validation · 013</strong></p>
         <p><span>Input</span><strong>Open around-ear EEG</strong></p>
         <p><span>Release rule</span><strong>Numbers after verification</strong></p>
       </div>
@@ -151,7 +151,15 @@
         </div>
 
         <div class="note-stack">
-          <article class="note-card current-note" id="experiment-012" aria-labelledby="events-title">
+          <article class="note-card current-note" id="experiment-013" aria-labelledby="validation-title">
+            <div class="note-topline"><span>NOTE 013 / FIXED METHODS, NEW RECORDINGS</span><span class="complete-badge">Four estimable · all inconclusive</span></div>
+            <div class="note-heading"><h3 id="validation-title">Keeping new people separate from new nights.</h3><span class="note-index" aria-hidden="true">13</span></div>
+            <p class="note-description">Twenty pinned recordings yielded 9,600 candidates and 174 fixed selections. Six complete new-session participants support four comparisons; adjusted p values are 1.00, 0.25, 0.50 and 1.00.</p>
+            <p class="note-description">Only two new-person participants met the input rules, so that cohort remains unestimable. Independent recorded-ledger reproduction verified all 4,002 event partitions; neither this result nor model agreement establishes semantic meaning.</p>
+            <div class="note-foot"><span>151.85 source hours · 87 selected minutes</span><a href="validation.html">Read Experiment 013 <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="note-card" id="experiment-012" aria-labelledby="events-title">
             <div class="note-topline"><span>NOTE 012 / DIRECT WAVEFORM LANDMARKS</span><span class="complete-badge">Four tests · all inconclusive</span></div>
             <div class="note-heading"><h3 id="events-title">Measuring where the waveform turns.</h3><span class="note-index" aria-hidden="true">12</span></div>
             <p class="note-description">We measured extrema, inflections, cycles and bursts on the same 122 selected segments, retaining every candidate and rejection across 2,806 event partitions.</p>

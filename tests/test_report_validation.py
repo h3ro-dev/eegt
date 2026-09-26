@@ -34,4 +34,14 @@ class PresentationBoundary(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'input bindings'):report.render(root)
             self.assertFalse((root/'validation.html').exists())
 
+    def test_acceptance_cannot_be_reused_for_changed_output(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);self.fixture(root);folder=root/'results/013'
+            review=folder/'release-review.json';review.write_text(json.dumps({'status':'ACCEPTED'}))
+            approval={'status':'ACCEPTED_FOR_PUBLICATION','review_sha256':report.sha(review),
+                      'files':{'repo/results/013/summary.json':{'sha256':'0'*64}}}
+            (folder/'release-acceptance.json').write_text(json.dumps(approval))
+            with self.assertRaisesRegex(ValueError,'Approved presentation input changed'):report.render(root)
+            self.assertFalse((root/'validation.html').exists())
+
 if __name__=='__main__':unittest.main()

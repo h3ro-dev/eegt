@@ -16,6 +16,15 @@ def table(headers, rows):
 
 def render(root):
     result=root/'results/013'; summary=read(result/'summary.json');prepared=read(result/'prepared.json');qualification=read(result/'qualification.json');eng=read(result/'engineering/summary.json')
+    accepted=False
+    if (result/'release-acceptance.json').exists():
+        approval=read(result/'release-acceptance.json');review=read(result/'release-review.json')
+        if approval.get('status')!='ACCEPTED_FOR_PUBLICATION' or review.get('status')!='ACCEPTED' or approval.get('review_sha256')!=sha(result/'release-review.json'):
+            raise ValueError('Independent publication approval binding differs')
+        for relative in ['results/013/summary.json','results/013/prepared.json','results/013/qualification.json','results/013/engineering/summary.json','results/013/inference-codebrain.json','results/013/inference-cbramod.json','protocol/experiment-013.json']:
+            if approval['files']['repo/'+relative]['sha256']!=sha(root/relative):
+                raise ValueError('Approved presentation input changed: '+relative)
+        accepted=True
     if summary['status']!='COMPLETE_NUMERICAL_RECORD' or eng['status']!='COMPLETE_TECHNICAL_RECORD': raise ValueError('Complete primary and engineering records required')
     protocol=read(root/'protocol/experiment-013.json')
     expected={(x['cohort'],x['model'],x['metric']) for x in protocol['primary_endpoints']}
@@ -44,8 +53,10 @@ def render(root):
         if d['block_variant_runs']!=d['shape'][0]*len(d['variants']) or len(d['measurements'])!=d['block_variant_runs']: raise ValueError('Model forward census differs: '+name)
     model_text='; '.join(f"{name}: {d['block_variant_runs']} forwards ({d['shape'][0]} blocks × {len(d['variants'])} controls)" for name,d in models.items())
     payload={'schema':'eegt-013-presentation/v1','summary_sha256':sha(result/'summary.json'),'prepared_sha256':sha(result/'prepared.json'),'qualification_sha256':sha(result/'qualification.json'),'engineering_summary_sha256':sha(result/'engineering/summary.json'),'qualified_source_hours':hours,'totals':totals,'full_scientific_summary':summary,'engineering':eng,'models':{n:{k:v[k] for k in ['status','block_variant_runs','shape','resources','checkpoint_sha256']} for n,v in models.items()},'publication_state':'CANDIDATE_REVIEW_PENDING'}
+    if accepted:payload['publication_state']='NUMERICAL_REPRODUCTION_ACCEPTED'
+    state_text=('Independent numerical output review and complete recorded-ledger reproduction accepted.' if accepted else 'Release candidate — independent output review and publication readback are pending.')
     headline=f'{compared} of eight fixed comparisons were estimable; {significant} cleared the adjusted 0.05 threshold.'
-    body=f'''<a href="./">← EEGT research notebook</a><p class="eyebrow">Research Notes · Experiment 013 · September 2026</p><h1>Fixed methods. New recordings.</h1><p><strong>Release candidate — independent output review and publication readback are pending.</strong></p><p>{headline} These are numerical comparisons of waveform events and two pretrained EEG encoders, not evidence of a universal language or a thought decoder.</p>
+    body=f'''<a href="./">← EEGT research notebook</a><p class="eyebrow">Research Notes · Experiment 013 · September 2026</p><h1>Fixed methods. New recordings.</h1><p><strong>{state_text}</strong></p><p>{headline} These are numerical comparisons of waveform events and two pretrained EEG encoders, not evidence of a universal language or a thought decoder.</p>
 <section><h2>What was actually measured</h2><p>All 20 pinned recordings qualified, totaling {hours:.6f} source hours. The fixed first-four-hour candidate grid contains {totals['candidate_blocks']:,} thirty-second blocks. Quality rules passed {totals['quality_qualified_blocks']:,}; time-based selection retained {totals['eligible_blocks']}. Source hours, selected support and independent people are different denominators.</p>{table(['Cohort','Candidates','Quality pass','Selected blocks','Complete people at input gate','Input gate'],cohort_rows)}<p>The new-person cohort fails the frozen minimum of three complete participants. Its selected waveforms remain in the descriptive event ledger, but no model effects or primary tests are manufactured for that cohort. New-session evidence concerns new nights from development participants; it is not new-person replication.</p></section>
 <section><h2>The complete eight-test family</h2><p>Geometry and change effects compare the original-minus-independent-phase event-to-encoder correlations. Fixed within-night medians are combined across both required nights, then tested at participant level. Missing results remain in the eight-test correction family.</p>{table(['Cohort','Model','Metric','Status','Test people','Primary paired blocks','Mean effect','Raw p','Adjusted p (×8)'],endpoints)}<p>With at most six complete people, the smallest possible two-sided exact p is 2/64 = 0.03125; multiplying by eight gives 0.25. This design cannot establish adjusted significance even with maximally consistent effects. Effect direction, magnitude, exclusions and replication limits are the useful record; thousands of windows do not create thousands of independent people.</p></section>
 <section><h2>Captured evidence</h2><p>The ledger contains {summary['completed_event_blocks']} completed blocks and {summary['indexed_partitions']:,} event partitions. The pinned model runs are {model_text}, on the eligible new-session cohort. Selected inputs, masks, pinned model output hashes, partition membership and cohort gates remain linked to the frozen source.</p><p><a href="data/validation.json">Full results and exclusions as JSON</a>. The recorded-ledger replay checks every partition and recomputes comparisons and the scientific summary. It does not regenerate detectors or repeat neural inference.</p></section>
@@ -57,7 +68,7 @@ def render(root):
         (prefix/'data').mkdir(exist_ok=True)
         (prefix/'validation.html').write_text(page)
         (prefix/'data/validation.json').write_text(json.dumps(payload,indent=2,allow_nan=False)+'\n')
-    return {'status':'CANDIDATE_RENDERED','summary_sha256':payload['summary_sha256'],'estimable':compared,'adjusted_significant':significant}
+    return {'status':'ACCEPTED_NUMERICAL_RECORD_RENDERED' if accepted else 'CANDIDATE_RENDERED','summary_sha256':payload['summary_sha256'],'estimable':compared,'adjusted_significant':significant}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);a=p.parse_args();print(json.dumps(render(a.root)))

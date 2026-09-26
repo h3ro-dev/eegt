@@ -1,6 +1,6 @@
 # Research Note 013 — Do the patterns persist in untouched recordings?
 
-DRAFT — the main numerical run is complete; the separate engineering check is also complete; reproduction and independent output acceptance remain pending. This document is not a published release.
+The main numerical run, separate engineering check, complete extracted recorded-ledger reproduction and independent scientific output review are accepted. Release and live-page verification are separate publication records.
 
 The question is whether the fixed waveform-event measurements and two pretrained EEG encoders behave similarly on recordings that this project has not previously examined. We keep new people separate from new nights belonging to development participants. Neither cohort proves transfer to another device, and overlap with the encoders' pretraining data is unknown.
 
@@ -12,9 +12,9 @@ There are eight primary tests: two cohorts, two encoders and two comparisons. We
 
 The completed separate technical check used the first 30 seconds of each of two already-qualified EESM19 recordings, with their 12 real ear-EEG contacts and documented masks. This is a descriptive event-detector check. The four-channel model adapters are not applied to those 12-contact recordings.
 
-Independent extraction and post-run hashing verified all 4,826 captured members and the two declared checkpoint dependencies. Morphology reproduced all 7,656 rows from 174 blocks. The original full replay reached its fixed CPU ceiling and exited 152 without a complete receipt: the termination log records 7,219.75 CPU seconds and 1,404,698,624 bytes maximum RSS. No scientific mismatch was observed before termination, but that incomplete run is not accepted reproduction. A separately reviewed verification adapter removes repeated decoding while preserving every frozen numerical function and all byte/header/content/census checks. Its corrected full run is pending; the original failure remains part of the release history.
+Independent extraction and post-run hashing verified all 4,826 captured members and the two declared checkpoint dependencies. Morphology reproduced all 7,656 rows from 174 blocks. The original full replay reached its fixed CPU ceiling and exited 152 without a complete receipt: the termination log records 7,219.75 CPU seconds and 1,404,698,624 bytes maximum RSS. No scientific mismatch was observed before termination, but that incomplete run is not accepted reproduction. A separately reviewed verification adapter removes repeated decoding while preserving every frozen numerical function and all byte/header/content/census checks. The corrected full run completed successfully in 5,306.66 CPU seconds with 1,447,821,312 bytes peak RSS. Independent review accepted the exact scientific summary, every partition and unchanged staged inventory. The original failure remains part of the release history.
 
-Publication checklist to fill only from accepted outputs:
+The accompanying evidence preserves:
 
 - Actual acquisition and qualification, including missing and quarantined recordings.
 - Source hours, analysis support, quality passes and selected blocks, with separate denominators.
