@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "inference-cbramod",
+  "profile_sha256": "99635d4f7d312814d4e89e0f0679d68ddc580123926db456957fe8287fa26f4b",
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "reviewed_utc": "2026-09-26T14:38:47.617815+00:00",
+  "rationale": "First block375554048B, projected19.53CPU seconds for130blocks. Artifact projection incorrectly multiplies existing corpus; actual increment129parts of447397B and final62.4MB embedding array over existing1.45GB remains under10GB. Fresh Studio1 load8.48/32cores,91percent memory free; CodeBrain exited COMPLETE650forwards; one process maintained."
+}

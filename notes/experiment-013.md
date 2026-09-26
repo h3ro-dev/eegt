@@ -1,0 +1,24 @@
+# Research Note 013 — Do the patterns persist in untouched recordings?
+
+DRAFT — the main numerical run is complete; the separate engineering check is also complete; reproduction and independent output acceptance remain pending. This document is not a published release.
+
+The question is whether the fixed waveform-event measurements and two pretrained EEG encoders behave similarly on recordings that this project has not previously examined. We keep new people separate from new nights belonging to development participants. Neither cohort proves transfer to another device, and overlap with the encoders' pretraining data is unknown.
+
+We fixed the source list, quality rules, time-based selection, waveform controls and analysis before opening these recordings. We do not change thresholds to find a favorable result. Models receive numeric waveforms; participant identity, history and task labels stay outside the discovery inputs.
+
+Acquisition retrieved all 20 pinned files (3,312,979,776 bytes). Qualification stopped at the unchanged 2 GiB memory bound. A first independently reviewed cleanup correction preserved output parity on an exposed fixture, but the varied-record run still exceeded the bound at 2,420,178,944 bytes. The original failed subset was not logged; a later technical diagnostic reached the first 14 records. We preserve that exposure history. No quality selection or model/event output was generated during those failed attempts. A sequential process-isolation correction subsequently passed independent review, including full child-lifetime CPU accounting. All 20 records then passed qualification, totaling 151.8486311111111 recorded source hours with an aggregate parent-plus-child peak of 1,363,345,408 bytes. The quality ledger records all 9,600 candidate blocks, including failures. Fixed preparation passed 4,117 blocks and selected 174; 5,483 failed quality and 3,943 passed but were unselected. The new-session cohort has six complete participants and 130 selected blocks. The new-person cohort has only two complete participants, below the frozen minimum of three, so it remains INSUFFICIENT_PARTICIPANTS; its 44 selected blocks do not become a primary cohort by relaxing the gate. CodeBrain and CBraMod each completed 650 fixed forwards on the 130 eligible new-session blocks. The completed ledger contains 174 blocks, 4,002 event partitions, 141,984 native matching rows and 7,656 morphology rows. Four new-session tests were estimable with six people each. CodeBrain geometry/change adjusted p-values are 1.00/0.25; CBraMod geometry/change adjusted p-values are 0.50/1.00. Their mean effects are respectively 0.01269593, -0.06168301, 0.03799173 and 0.00745507. None clears the adjusted threshold. All four new-person endpoints are not estimable. The 176 missing block-effect rows are the 44 new-person blocks times four endpoints, not failed ready-cohort model outputs. The main event/evaluation process exited successfully after 3,255.88 CPU seconds with 1,689,108,480 bytes maximum RSS, within the unchanged bounds. These are post-access engineering corrections to a pre-access scientific design.
+
+There are eight primary tests: two cohorts, two encoders and two comparisons. We preserve the entire family when data are missing or a result is undefined. With at most four and six paired people in the respective cohorts, these exact tests have limited resolution: even maximally consistent effects cannot reach the prespecified adjusted 0.05 threshold. The useful result is therefore the size, direction, consistency and limits of replication, not a declaration of universal tokens.
+
+The completed separate technical check used the first 30 seconds of each of two already-qualified EESM19 recordings, with their 12 real ear-EEG contacts and documented masks. This is a descriptive event-detector check. The four-channel model adapters are not applied to those 12-contact recordings.
+
+Publication checklist to fill only from accepted outputs:
+
+- Actual acquisition and qualification, including missing and quarantined recordings.
+- Source hours, analysis support, quality passes and selected blocks, with separate denominators.
+- Each cohort's paired people and nights, every endpoint, missing support and adjusted result.
+- Native-event sensitivity to filtering, polarity, gain, offset, clipping, phase controls and reference changes.
+- Measured resources, actual cost or UNKNOWN, exact source/model/runtime hashes and first-record/block admissions.
+- Independent output review, extracted reproduction, permanent release downloads and live-page readback.
+
+Two continuous EEG backbones agreeing numerically would still not establish a discrete universal language, a semantic decoder or a clinical diagnostic. Apparent waveform cycles also occur in noise. Raw numerical regularity, model agreement, biological specificity and meaning remain separate claims.

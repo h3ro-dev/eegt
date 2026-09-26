@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "intake-qualify",
+  "profile_sha256": "2f72844016a28c4a5fa681074b60357e723335052571ebaa7e36b0afc9591ca9",
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-13ffd342d925791b856652db872e4142",
+  "reviewed_utc": "2026-09-26T14:02:32.319682+00:00",
+  "rationale": "Fresh sequential-child first record aggregate peak776716288B, complete joined-child CPU included. Independent four-read exact parity held1063059456B. Largest/first source bytes ratio2.0654 remains below2GiB projected isolated decoder plus parent. Scientific bound unchanged and each complete record checked. Studio1 load6.50/32cores,96percent memory free,3.057TBfree, no concurrent experiment process."
+}

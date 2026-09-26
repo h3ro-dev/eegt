@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "intake-quality",
+  "profile_sha256": "aff45f45cb65ec012f54855ffd75869626a43a07e31044ae1b52c86b6840a7f1",
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-13ffd342d925791b856652db872e4142",
+  "reviewed_utc": "2026-09-26T14:04:22.301228+00:00",
+  "rationale": "First full4h quality record26.881477CPU seconds,489324544Bpeak,65.826MB artifacts;20record projection below7200CPU seconds and10GB. Source-size scaling and independent quality lifetime evidence support2GiB limit; actual per-record checks remain. Same original root-owned workspace, no concurrent experiment."
+}
