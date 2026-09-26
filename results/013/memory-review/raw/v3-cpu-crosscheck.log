@@ -1,0 +1,22 @@
+{"binding_status":"DIAGNOSTIC_ONLY_UNACCEPTED","blas_threads":1,"bound_bytes":2147483648,"diagnostic_binding_sha256":"3c9df28613eab51b5ea1a3a5106d7900f768cfadc594b0bbc6e0f359976e38b6","event":"start","fixture_sha256":"4a48c81877a7ffffa1ccd090cfb2d9f3dfcfac478fff52640b16b9a7aef90efe","iterations":2,"numerical_workers_max":1,"original_seal_sha256":"d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad","parent_pid":54923}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 1.6801840000000001, "process_peak_rss_bytes": 806125568}}
+{"accounted_child_cpu_seconds":1.6801840000000001,"aggregate_cpu_seconds":2.897875,"aggregate_peak_rss_bytes":1061584896,"event":"record","fields":["channels","decoder_warnings","digital_conversion","duration_metadata_error_samples","duration_seconds","excluded_undeclared_channels","gaps","native_nonfinite_samples_by_channel","sample_rate_hz","samples_per_channel"],"fields_equal":true,"index":0,"os_child_cpu_seconds":1.8099889999999998,"parent_peak_rss_bytes":255459328,"post_snapshot_cpu_gap_seconds":0.12980499999999973,"worker_cpu_seconds":1.6801840000000001,"worker_peak_rss_bytes":806125568}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 1.64366, "process_peak_rss_bytes": 807092224}}
+{"accounted_child_cpu_seconds":1.6436600000000001,"aggregate_cpu_seconds":4.553531,"aggregate_peak_rss_bytes":1062551552,"event":"record","fields":["channels","decoder_warnings","digital_conversion","duration_metadata_error_samples","duration_seconds","excluded_undeclared_channels","gaps","native_nonfinite_samples_by_channel","sample_rate_hz","samples_per_channel"],"fields_equal":true,"index":1,"os_child_cpu_seconds":1.7758440000000002,"parent_peak_rss_bytes":255459328,"post_snapshot_cpu_gap_seconds":0.13218400000000008,"worker_cpu_seconds":3.3238440000000002,"worker_peak_rss_bytes":807092224}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 1.3392929999999998, "process_peak_rss_bytes": 112377856}}
+{"event":"known_decoder_rejection","reason":"ValueError: declared EEG microvolt units required"}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 1.357316, "process_peak_rss_bytes": 112410624}}
+{"event":"unexpected_worker_error","fatal":"qualification worker: TypeError: 'NoneType' object is not subscriptable"}
+Process SpawnProcess-5:
+Traceback (most recent call last):
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v3-repo/eegt/validation_intake.py", line 317, in _qualification_process
+    verify_loaded_sources(seal)
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v3-repo/eegt/validation_provenance.py", line 39, in verify_loaded_sources
+    raise ValueError(f'loaded EEGT source differs from accepted freeze: {relative}')
+ValueError: loaded EEGT source differs from accepted freeze: eegt/repeated.py
+{"active_children":0,"event":"source_drift","fatal":"qualification worker returned no result"}
+{"aggregate_cpu_seconds":7.279305,"all_ten_fields_equal":true,"diagnostic_only":true,"event":"result","iterations":2,"max_aggregate_peak_rss_bytes":1062551552,"max_worker_peak_rss_bytes":807092224,"measured_worker_cpu_seconds":6.020453,"no_active_children":true,"os_children_cpu_seconds_including_startup_and_failure_probes":7.963988,"parent_peak_rss_bytes":255475712,"rss_bound_bytes":2147483648,"wall_seconds":10.872308333055116}

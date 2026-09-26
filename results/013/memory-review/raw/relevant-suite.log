@@ -1,0 +1,702 @@
+$ /Users/studio1/lanes.noindex/eco-uzwh8s.37.1/scratch/corpus-venv/bin/python -m pytest -q -p no:cacheprovider --import-mode=importlib --basetemp /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/relevant-suite-tmp /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/candidate/tests/test_validation_intake.py /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/candidate/tests/test_validation_intake_resources.py /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/candidate/tests/test_validation_provenance.py /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/candidate/tests/test_validation_study.py
+........s........F.FFF.F..FFFFF..                               [100%]
+=================================== FAILURES ===================================
+___ ValidationContractTests.test_engineering_numeric_mask_and_night_contract ___
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_engineering_numeric_mask_and_night_contract>
+
+    def test_engineering_numeric_mask_and_night_contract(self):
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:275: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+___ ValidationContractTests.test_exposed_012_full_first_block_numeric_parity ___
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_exposed_012_full_first_block_numeric_parity>
+
+    def test_exposed_012_full_first_block_numeric_parity(self):
+>       result = study.verify_exposed_012(PACKET, PACKET / "supplement-exposed012",
+                                          PACKET / "scratch/exposed012/analysis.sqlite")
+
+../candidate/tests/test_validation_study.py:422: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+packet = PosixPath('/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1')
+supplement = PosixPath('/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/supplement-exposed012')
+sqlite_path = PosixPath('/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/exposed012/analysis.sqlite')
+
+    def verify_exposed_012(packet: Path, supplement: Path, sqlite_path: Path) -> dict:
+        """Exact archived hashes and one full per-block 012 numeric parity proof.
+    
+        The supplement supplies row zero's 23 event partitions and the complete
+        accepted SQL ledger. No forward or detector is invoked here.
+        """
+        packet, supplement, sqlite_path = Path(packet), Path(supplement), Path(sqlite_path)
+        manifest = read_json(packet / "INPUT-MANIFEST.json")
+        old_paths = ("repo/results/010/prepared.json", "repo/results/010/inference.json",
+                     "repo/results/011/inference.json", "repo/data/derived/010/prepared.npz",
+                     "repo/data/derived/010/embeddings.npz", "repo/data/derived/011/embeddings.npz",
+                     "repo/data/derived/012/native-selected.npz", "repo/results/012/summary.json")
+>       verify_hash_map(packet, {name: manifest["files"][name] for name in old_paths}, label="exposed 012 packet")
+                                       ^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'repo/results/010/prepared.json'
+
+../candidate/eegt/validation_study.py:1168: KeyError
+____ ValidationContractTests.test_failed_forward_preserves_explicit_failure ____
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_failed_forward_preserves_explicit_failure>
+
+    def test_failed_forward_preserves_explicit_failure(self):
+        class FailingEncoder:
+            def __init__(self, checkpoint):
+                pass
+            def encode(self, x):
+                raise RuntimeError("synthetic forward failure")
+    
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:368: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+__ ValidationContractTests.test_failed_synthetic_event_preserves_failure_row ___
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_failed_synthetic_event_preserves_failure_row>
+
+    def test_failed_synthetic_event_preserves_failure_row(self):
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:403: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+_ ValidationContractTests.test_hash_checked_first_block_and_deterministic_resume _
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_hash_checked_first_block_and_deterministic_resume>
+
+    def test_hash_checked_first_block_and_deterministic_resume(self):
+        class FakeEncoder:
+            calls = 0
+            def __init__(self, checkpoint):
+                self.checkpoint = checkpoint
+            def encode(self, x):
+                FakeEncoder.calls += 1
+                return x.copy()
+    
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:319: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+_ ValidationContractTests.test_no_ready_cohort_writes_empty_model_archive_without_forward _
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_no_ready_cohort_writes_empty_model_archive_without_forward>
+
+    def test_no_ready_cohort_writes_empty_model_archive_without_forward(self):
+        base = synthetic_case(people=1, per_record=2)
+        pairs = {(r["source_subject"], r["session"]) for r in base[1]["records"]}
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2, failed_pairs=pairs))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:382: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+_ ValidationContractTests.test_real_encoder_torch_version_mismatch_refused_before_forward _
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_real_encoder_torch_version_mismatch_refused_before_forward>
+
+    def test_real_encoder_torch_version_mismatch_refused_before_forward(self):
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:353: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+_ ValidationContractTests.test_shared_verifier_cannot_bypass_analysis_freeze_checks _
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_shared_verifier_cannot_bypass_analysis_freeze_checks>
+
+    def test_shared_verifier_cannot_bypass_analysis_freeze_checks(self):
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:254: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+__ ValidationContractTests.test_source_changes_and_missing_freeze_fail_closed __
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_source_changes_and_missing_freeze_fail_closed>
+
+    def test_source_changes_and_missing_freeze_fail_closed(self):
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:240: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+_ ValidationContractTests.test_synthetic_first_event_block_and_recorded_replay _
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+>           return next(cls.discover(name=name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:397: StopIteration
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_validation_study.ValidationContractTests testMethod=test_synthetic_first_event_block_and_recorded_replay>
+
+    def test_synthetic_first_event_block_and_recorded_replay(self):
+        with tempfile.TemporaryDirectory() as td:
+>           root = synthetic_frozen_root(Path(td), synthetic_case(people=1, per_record=2))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_study.py:390: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../candidate/tests/test_validation_study.py:118: in synthetic_frozen_root
+    "events": study.phase_runtime("events")})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../candidate/eegt/validation_study.py:109: in phase_runtime
+    result.update(bycycle=importlib.metadata.version("bycycle"),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:889: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:862: in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'importlib.metadata.Distribution'>, name = 'bycycle'
+
+    @classmethod
+    def from_name(cls, name: str):
+        """Return the Distribution for the given package name.
+    
+        :param name: The name of the distribution package to search for.
+        :return: The Distribution instance (or subclass thereof) for the named
+            package, if found.
+        :raises PackageNotFoundError: When the named package's distribution
+            metadata cannot be found.
+        :raises ValueError: When an invalid value is supplied for name.
+        """
+        if not name:
+            raise ValueError("A distribution name is required.")
+        try:
+            return next(cls.discover(name=name))
+        except StopIteration:
+>           raise PackageNotFoundError(name)
+E           importlib.metadata.PackageNotFoundError: No package metadata was found for bycycle
+
+../../../.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py:399: PackageNotFoundError
+=========================== short test summary info ============================
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_engineering_numeric_mask_and_night_contract
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_exposed_012_full_first_block_numeric_parity
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_failed_forward_preserves_explicit_failure
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_failed_synthetic_event_preserves_failure_row
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_hash_checked_first_block_and_deterministic_resume
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_no_ready_cohort_writes_empty_model_archive_without_forward
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_real_encoder_torch_version_mismatch_refused_before_forward
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_shared_verifier_cannot_bypass_analysis_freeze_checks
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_source_changes_and_missing_freeze_fail_closed
+FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_synthetic_first_event_block_and_recorded_replay
+10 failed, 22 passed, 1 skipped, 9 subtests passed in 10.70s

@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "engineering",
+  "profile_sha256": "ddc20301342b77a81ab5d7944b486fcbf701fb630b25f8ac217c3db9de39bf6c",
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "reviewed_utc": "2026-09-26T15:38:56.397268+00:00",
+  "rationale": "First engineering block3.690008CPU seconds,386056192B peak. Total current artifacts6621847974B plus one additional partition estimated4605828B is below10GB. Profile raw total-times-two overcounts previously complete corpus; incremental calculation used without changing limits. Prior event process and engineering first block exited0. One numerical process retained."
+}

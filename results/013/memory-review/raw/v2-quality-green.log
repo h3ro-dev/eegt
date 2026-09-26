@@ -1,0 +1,3 @@
+$ /Users/studio1/lanes.noindex/eco-uzwh8s.37.1/scratch/corpus-venv/bin/python -m pytest -q -p no:cacheprovider --import-mode=importlib --basetemp /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v2-quality-green-tmp /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v2-repo/tests/test_validation_intake.py::test_quality_releases_decoder_before_feature_extraction
+.                                                                        [100%]
+1 passed in 1.91s

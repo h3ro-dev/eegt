@@ -1,0 +1,26 @@
+{"recording_id": "8fcee35718c91d4e7ac7d529", "peak_rss": 670760960, "current_rss": 670760960}
+{"recording_id": "a8f1c640088d79f1fdc25387", "peak_rss": 1183170560, "current_rss": 1183170560}
+{"recording_id": "cad043988e4a5cc29a27ea7c", "peak_rss": 1661190144, "current_rss": 1661190144}
+{"recording_id": "943b4d505266fafc2c7e5a27", "peak_rss": 1661435904, "current_rss": 1661435904}
+{"recording_id": "2cee23cd1b9199d0cee8cc2a", "peak_rss": 1661468672, "current_rss": 1661468672}
+{"recording_id": "692fc9929daa7ddde2d890ab", "peak_rss": 1661468672, "current_rss": 1661468672}
+{"recording_id": "1954fd06995a095113d5ed1c", "peak_rss": 1661468672, "current_rss": 1661468672}
+{"recording_id": "747248be763f180dd5d9ca8a", "peak_rss": 2080866304, "current_rss": 2080866304}
+{"recording_id": "9ad08b60cb89ce4973ac81a9", "peak_rss": 2080866304, "current_rss": 2080866304}
+{"recording_id": "8420824fdd77c456f8422dc1", "peak_rss": 2080866304, "current_rss": 2080866304}
+{"recording_id": "4db090b59a372e712689746c", "peak_rss": 2080882688, "current_rss": 2080882688}
+{"recording_id": "55417dd7cef0dc3142a54637", "peak_rss": 2080882688, "current_rss": 2080882688}
+{"recording_id": "22ae77e0133917ef4ca64d36", "peak_rss": 2080882688, "current_rss": 2080882688}
+{"recording_id": "0fa6e0a3f7b427a97324923f", "peak_rss": 2417770496, "current_rss": 2417770496}
+Traceback (most recent call last):
+  File "<stdin>", line 8, in <module>
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 349, in qualify_sources
+    guard.after_record(index, rec["recording_id"])
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 165, in after_record
+    measured = self.check()
+               ^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 157, in check
+    _check_bounds(measured, self.seal["resource_bounds"])
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_study.py", line 576, in _check_bounds
+    raise RuntimeError("fixed CPU/RSS/artifact bound exceeded")
+RuntimeError: fixed CPU/RSS/artifact bound exceeded

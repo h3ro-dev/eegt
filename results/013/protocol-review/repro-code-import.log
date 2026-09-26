@@ -1,0 +1,22 @@
+frozen_root_study_sha 3266ec0a8d933b03c6cb8aecc4ddee79bb2c5b35f0ae87984abe085e8beab340
+executing_study_sha 15a808eb7dd5ccf8dbccf9d0cdef9296e43755c52b17bbb84a4bf872e6fa6a1f
+same False
+freeze_accepted_with_other_executable ACCEPTED
+        3.09 real         1.11 user         0.34 sys
+            95584256  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13175  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 336  voluntary context switches
+                4303  involuntary context switches
+          3841987608  instructions retired
+          2854165117  cycles elapsed
+            66781760  peak memory footprint

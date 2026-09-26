@@ -1,0 +1,19 @@
+{"empirical_call":false,"freeze_present":true,"freeze_status":"ACCEPTED_AND_HASH_VERIFIED","input_acceptance_present":false,"protocol_sha256":"680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9","source_manifest_sha256":"533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3","source_records":20,"status":"SOURCE_CENSUS_VERIFIED"}
+       12.61 real         1.08 user         0.54 sys
+            96010240  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12055  page reclaims
+                1139  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1289  voluntary context switches
+                6984  involuntary context switches
+          3986766822  instructions retired
+          3357520707  cycles elapsed
+            67207720  peak memory footprint

@@ -1,0 +1,15 @@
+{
+  "executable": "/Users/studio1/lanes.noindex/eco-uzwh8s.37.1/scratch/corpus-venv/bin/python",
+  "mne": "1.13.2",
+  "numpy": "2.5.3",
+  "python": "3.12.14",
+  "scipy": "1.18.1",
+  "thread_env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "threadpools": []
+}

@@ -1,0 +1,887 @@
+{
+  "created_at_utc": "2026-09-26T14:02:48.895155+00:00",
+  "inputs": {
+    "protocol/corpus-manifest-013.json": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+    "protocol/experiment-013.json": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9",
+    "results/013/RUN-SOURCE-MANIFEST.json": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+    "results/013/acquisition.json": "ade003e9284e7f74ed7cfa20b362d90e4a4648188c9b9fce46c2e8808b6b09bc"
+  },
+  "records": [
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 116646624,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 228,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 3.552713678800501e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 19439.54,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 116646624,
+      "expected_sha256": "3d331979443542af8c59dcf9cde009d288770b8c9eb2b9ef04cbdbf295780d7e",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 20428,
+        "LT": 20548,
+        "RB": 20462,
+        "RT": 20574
+      },
+      "path": "data/cache/ds005178/sub-001/ses-003/eeg/sub-001_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "8fcee35718c91d4e7ac7d529",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 4859885,
+      "session": "003",
+      "sha256": "3d331979443542af8c59dcf9cde009d288770b8c9eb2b9ef04cbdbf295780d7e",
+      "source_subject": "001",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 132178624,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 356,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 4.547473508864641e-13,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 22028.208,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 132178624,
+      "expected_sha256": "ee204686ed25700d78a2b2c2873fbb1fb702e229e0cd682cc06f42c37d08bb64",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 40148,
+        "LT": 38907,
+        "RB": 39974,
+        "RT": 38640
+      },
+      "path": "data/cache/ds005178/sub-001/ses-004/eeg/sub-001_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "a8f1c640088d79f1fdc25387",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 5507052,
+      "session": "004",
+      "sha256": "ee204686ed25700d78a2b2c2873fbb1fb702e229e0cd682cc06f42c37d08bb64",
+      "source_subject": "001",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 157100160,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 356,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 3.552713678800501e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 26181.796,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 157100160,
+      "expected_sha256": "dd88f112e91496805af3a86949c0b9ba5123ce92700e4aa8b0e6e2f3600cf74b",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 7909,
+        "LT": 7913,
+        "RB": 7888,
+        "RT": 7896
+      },
+      "path": "data/cache/ds005178/sub-002/ses-003/eeg/sub-002_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "cad043988e4a5cc29a27ea7c",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 6545449,
+      "session": "003",
+      "sha256": "dd88f112e91496805af3a86949c0b9ba5123ce92700e4aa8b0e6e2f3600cf74b",
+      "source_subject": "002",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 142377424,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 352,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 1.4210854715202004e-14,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 23728.008,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 142377424,
+      "expected_sha256": "490a3f33ed50f62bc76c0c0ccf9439c5f3fd4932acdf8b59ce8cc85831b9e707",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 7019,
+        "LT": 7044,
+        "RB": 7032,
+        "RT": 7037
+      },
+      "path": "data/cache/ds005178/sub-002/ses-004/eeg/sub-002_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "943b4d505266fafc2c7e5a27",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 5932002,
+      "session": "004",
+      "sha256": "490a3f33ed50f62bc76c0c0ccf9439c5f3fd4932acdf8b59ce8cc85831b9e707",
+      "source_subject": "002",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 147424672,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 352,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 7.105427357601002e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 24569.216,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 147424672,
+      "expected_sha256": "2670a9c6dd7d366cbfd6350db44ba16ef73e9c3b0463066a02bbf5fb7f8bcd86",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 7143,
+        "LT": 7145,
+        "RB": 7151,
+        "RT": 7153
+      },
+      "path": "data/cache/ds005178/sub-003/ses-003/eeg/sub-003_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "2cee23cd1b9199d0cee8cc2a",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 6142304,
+      "session": "003",
+      "sha256": "2670a9c6dd7d366cbfd6350db44ba16ef73e9c3b0463066a02bbf5fb7f8bcd86",
+      "source_subject": "003",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 116852208,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 352,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 3.552713678800501e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 19473.804,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 116852208,
+      "expected_sha256": "9a2969ee9adae7dccba732855336ad1ef7d3c7fe52f49989511282e35427b605",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 6795,
+        "LT": 7084,
+        "RB": 6846,
+        "RT": 6880
+      },
+      "path": "data/cache/ds005178/sub-003/ses-004/eeg/sub-003_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "692fc9929daa7ddde2d890ab",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 4868451,
+      "session": "004",
+      "sha256": "9a2969ee9adae7dccba732855336ad1ef7d3c7fe52f49989511282e35427b605",
+      "source_subject": "003",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 142522576,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 352,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 1.1368683772161603e-13,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 23752.2,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 142522576,
+      "expected_sha256": "04ebc750dfac108cd7dc7237ca3ecb81eb92068f7453983a9db0e271a9bb6ae8",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 244072,
+        "LT": 248246,
+        "RB": 245979,
+        "RT": 246303
+      },
+      "path": "data/cache/ds005178/sub-004/ses-003/eeg/sub-004_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "1954fd06995a095113d5ed1c",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 5938050,
+      "session": "003",
+      "sha256": "04ebc750dfac108cd7dc7237ca3ecb81eb92068f7453983a9db0e271a9bb6ae8",
+      "source_subject": "004",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 189872224,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 356,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 7.105427357601002e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 31643.808,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 189872224,
+      "expected_sha256": "3aadc4565f1174581d1258c5f08492b01abbb3c7aab5ae0af5c835cfcb96cf25",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 10218,
+        "LT": 10775,
+        "RB": 10629,
+        "RT": 10424
+      },
+      "path": "data/cache/ds005178/sub-004/ses-004/eeg/sub-004_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "747248be763f180dd5d9ca8a",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 7910952,
+      "session": "004",
+      "sha256": "3aadc4565f1174581d1258c5f08492b01abbb3c7aab5ae0af5c835cfcb96cf25",
+      "source_subject": "004",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 153338256,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 356,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 3.552713678800501e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 25554.812,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 153338256,
+      "expected_sha256": "fa81fcda5c8434efcf2370710842d3e3b4066b29bf0b223eccfa2bbfb99af062",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 8240,
+        "LT": 8227,
+        "RB": 8238,
+        "RT": 8218
+      },
+      "path": "data/cache/ds005178/sub-005/ses-003/eeg/sub-005_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "9ad08b60cb89ce4973ac81a9",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 6388703,
+      "session": "003",
+      "sha256": "fa81fcda5c8434efcf2370710842d3e3b4066b29bf0b223eccfa2bbfb99af062",
+      "source_subject": "005",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 163793824,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 352,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 7.105427357601002e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 27297.408,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 163793824,
+      "expected_sha256": "4b7dc58cdcfcb5691fa91032250d7337b22d86cd40c483958ea71a3375857feb",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 8260,
+        "LT": 8262,
+        "RB": 8264,
+        "RT": 8257
+      },
+      "path": "data/cache/ds005178/sub-005/ses-004/eeg/sub-005_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "8420824fdd77c456f8422dc1",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 6824352,
+      "session": "004",
+      "sha256": "4b7dc58cdcfcb5691fa91032250d7337b22d86cd40c483958ea71a3375857feb",
+      "source_subject": "005",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 175121712,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 356,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 9.094947017729282e-13,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 29185.388,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 175121712,
+      "expected_sha256": "18e22cad33fd40c28136aceae41cbaca8eec95f23e82ecfd7e85627a10e6b207",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 84231,
+        "LT": 84473,
+        "RB": 84194,
+        "RT": 84370
+      },
+      "path": "data/cache/ds005178/sub-006/ses-003/eeg/sub-006_ses-003_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "4db090b59a372e712689746c",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 7296347,
+      "session": "003",
+      "sha256": "18e22cad33fd40c28136aceae41cbaca8eec95f23e82ecfd7e85627a10e6b207",
+      "source_subject": "006",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 184337760,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_sessions",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 352,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 7.105427357601002e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 30721.396,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 184337760,
+      "expected_sha256": "b8d15e1b69ff52a03a15454d4642299458ccf5b935a653fc0e214ee5e38d3dfc",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 9849,
+        "LT": 9840,
+        "RB": 9859,
+        "RT": 9840
+      },
+      "path": "data/cache/ds005178/sub-006/ses-004/eeg/sub-006_ses-004_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "55417dd7cef0dc3142a54637",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 7680349,
+      "session": "004",
+      "sha256": "b8d15e1b69ff52a03a15454d4642299458ccf5b935a653fc0e214ee5e38d3dfc",
+      "source_subject": "006",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 184541856,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_people",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 352,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 2.842170943040401e-14,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 30755.412,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 184541856,
+      "expected_sha256": "c68011c4aede441e5ccfb8e9ae9d33e07d03e51c50503f9e1534b6f506cec911",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 60367,
+        "LT": 60052,
+        "RB": 59939,
+        "RT": 60363
+      },
+      "path": "data/cache/ds005178/sub-007/ses-001/eeg/sub-007_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "22ae77e0133917ef4ca64d36",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 7688853,
+      "session": "001",
+      "sha256": "c68011c4aede441e5ccfb8e9ae9d33e07d03e51c50503f9e1534b6f506cec911",
+      "source_subject": "007",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 230041504,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_people",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 252,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 1.1368683772161603e-13,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 0.9999999990686774,
+      "duration_seconds": 32861.732,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 230041504,
+      "expected_sha256": "a64a10451aa9e4c282ba23daabcfc0c1ae5869b92df8b237d54bd6864428849d",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 282107,
+        "LT": 283128,
+        "RB": 282049,
+        "RT": 282899
+      },
+      "path": "data/cache/ds005178/sub-007/ses-002/eeg/sub-007_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "0fa6e0a3f7b427a97324923f",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 8215433,
+      "session": "002",
+      "sha256": "a64a10451aa9e4c282ba23daabcfc0c1ae5869b92df8b237d54bd6864428849d",
+      "source_subject": "007",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 170831760,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_people",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 352,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 3.552713678800501e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 28470.396,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 170831760,
+      "expected_sha256": "fd979142c4428ba3d0fd3ef448667e592d0d54b4f6fc9bf3426a69b89bd874fb",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 9493,
+        "LT": 9497,
+        "RB": 9494,
+        "RT": 9495
+      },
+      "path": "data/cache/ds005178/sub-008/ses-001/eeg/sub-008_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "1374bafe2757e7b35f8353c5",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 7117599,
+      "session": "001",
+      "sha256": "fd979142c4428ba3d0fd3ef448667e592d0d54b4f6fc9bf3426a69b89bd874fb",
+      "source_subject": "008",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 172995312,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_people",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 256,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 1.4210854715202004e-14,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 28830.988,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 172995312,
+      "expected_sha256": "02a5e653ad4acb9f08822588fa9c0fb1f83a9b17e9ea62d7b4db803eedd2f0bd",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 8219,
+        "LT": 8208,
+        "RB": 8214,
+        "RT": 8212
+      },
+      "path": "data/cache/ds005178/sub-008/ses-002/eeg/sub-008_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "586b7b2149fb788b2fdbeba9",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 7207747,
+      "session": "002",
+      "sha256": "02a5e653ad4acb9f08822588fa9c0fb1f83a9b17e9ea62d7b4db803eedd2f0bd",
+      "source_subject": "008",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 211030752,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_people",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 227,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 1.4210854715202004e-14,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 35170.228,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 211030752,
+      "expected_sha256": "8f87c0f6b1adc2707f1a2cfb2bfc8b7b29326418408ffa649e3343c779aecb6f",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 32946,
+        "LT": 32910,
+        "RB": 33197,
+        "RT": 32956
+      },
+      "path": "data/cache/ds005178/sub-009/ses-001/eeg/sub-009_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "fb0ebd3541bd298ec4a0bf42",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 8792557,
+      "session": "001",
+      "sha256": "8f87c0f6b1adc2707f1a2cfb2bfc8b7b29326418408ffa649e3343c779aecb6f",
+      "source_subject": "009",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 240919408,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_people",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 228,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 2.842170943040401e-14,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 40151.672,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 240919408,
+      "expected_sha256": "7d68e494d5aed99b8a19b1f79a81bd7db76cfd92aaf19a6c666e5748d68e559c",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 1810021,
+        "LT": 1810389,
+        "RB": 1810141,
+        "RT": 1810341
+      },
+      "path": "data/cache/ds005178/sub-009/ses-002/eeg/sub-009_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "2cb9b5564134776c20bacff3",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 10037918,
+      "session": "002",
+      "sha256": "7d68e494d5aed99b8a19b1f79a81bd7db76cfd92aaf19a6c666e5748d68e559c",
+      "source_subject": "009",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 141395760,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_people",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 128,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 3.552713678800501e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 23564.396,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 141395760,
+      "expected_sha256": "778a81a38c8b40e78eebd1112cc52683e243aabadf29328547d45d6e82c8a720",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 72983,
+        "LT": 72692,
+        "RB": 72768,
+        "RT": 72810
+      },
+      "path": "data/cache/ds005178/sub-010/ses-001/eeg/sub-010_ses-001_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "533f97c9580d3cf0d73d31c0",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 5891099,
+      "session": "001",
+      "sha256": "778a81a38c8b40e78eebd1112cc52683e243aabadf29328547d45d6e82c8a720",
+      "source_subject": "010",
+      "status": "QUALIFIED"
+    },
+    {
+      "acquisition_clock_verified": null,
+      "bytes": 139657360,
+      "channels": [
+        "RB",
+        "RT",
+        "LB",
+        "LT"
+      ],
+      "cohort": "new_people",
+      "decoder_warnings": [],
+      "digital_conversion": {
+        "checked_values": 252,
+        "decoder_unit": "V",
+        "factor_to_uv": 1000000.0,
+        "maximum_absolute_error_uv": 3.552713678800501e-15,
+        "physical_calibration_verified": false
+      },
+      "duration_metadata_error_samples": 1.0,
+      "duration_seconds": 23274.664,
+      "excluded_undeclared_channels": [
+        "ELE"
+      ],
+      "expected_bytes": 139657360,
+      "expected_sha256": "a17ba70fa45d527b08b480cf0e5f52abe011503b434df55aaed73124547045ca",
+      "gap_seconds": [],
+      "gaps": [],
+      "native_nonfinite_samples_by_channel": {
+        "LB": 45993,
+        "LT": 45469,
+        "RB": 44753,
+        "RT": 44857
+      },
+      "path": "data/cache/ds005178/sub-010/ses-002/eeg/sub-010_ses-002_task-sleep_acq-earEEG_eeg.set",
+      "reason": null,
+      "recording_id": "9db5323cb23c54eec80a9136",
+      "sample_rate_hz": 250.0,
+      "samples_per_channel": 5818666,
+      "session": "002",
+      "sha256": "a17ba70fa45d527b08b480cf0e5f52abe011503b434df55aaed73124547045ca",
+      "source_subject": "010",
+      "status": "QUALIFIED"
+    }
+  ],
+  "resources": {
+    "artifact_bytes": 1605525,
+    "cpu_seconds": 16.167221,
+    "max_worker_peak_rss_bytes": 1253228544,
+    "memory_accounting": "parent peak plus maximum sequential worker peak",
+    "process_peak_rss_bytes": 1363345408,
+    "wall_seconds": 16.315578749985434,
+    "worker_cpu_seconds": 13.889558000000003
+  },
+  "runtime": {
+    "mne": "1.13.2",
+    "numpy": "2.5.3",
+    "python": "3.12.14",
+    "scipy": "1.18.1"
+  },
+  "schema": "eegt-validation-qualification/v1"
+}

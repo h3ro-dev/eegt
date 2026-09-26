@@ -1,0 +1,61 @@
+test_duplicate_and_misjoined_identities_rejected (tests.test_validation_study.ValidationContractTests.test_duplicate_and_misjoined_identities_rejected) ... ok
+test_engineering_numeric_mask_and_night_contract (tests.test_validation_study.ValidationContractTests.test_engineering_numeric_mask_and_night_contract) ... ok
+test_exact_signflip_fixed_eight_test_resolution (tests.test_validation_study.ValidationContractTests.test_exact_signflip_fixed_eight_test_resolution) ... ok
+test_exposed_012_full_first_block_numeric_parity (tests.test_validation_study.ValidationContractTests.test_exposed_012_full_first_block_numeric_parity) ... ERROR
+test_failed_forward_preserves_explicit_failure (tests.test_validation_study.ValidationContractTests.test_failed_forward_preserves_explicit_failure) ... ok
+test_failed_synthetic_event_preserves_failure_row (tests.test_validation_study.ValidationContractTests.test_failed_synthetic_event_preserves_failure_row) ... ok
+test_generic_counts_and_distinct_actual_nights (tests.test_validation_study.ValidationContractTests.test_generic_counts_and_distinct_actual_nights) ... ok
+test_hash_checked_first_block_and_deterministic_resume (tests.test_validation_study.ValidationContractTests.test_hash_checked_first_block_and_deterministic_resume) ... ok
+test_missing_model_and_support_failures_never_create_positive_p (tests.test_validation_study.ValidationContractTests.test_missing_model_and_support_failures_never_create_positive_p) ... ok
+test_missing_night_and_no_cohort_borrowing (tests.test_validation_study.ValidationContractTests.test_missing_night_and_no_cohort_borrowing) ... ok
+test_no_ready_cohort_writes_empty_model_archive_without_forward (tests.test_validation_study.ValidationContractTests.test_no_ready_cohort_writes_empty_model_archive_without_forward) ... ok
+test_real_encoder_torch_version_mismatch_refused_before_forward (tests.test_validation_study.ValidationContractTests.test_real_encoder_torch_version_mismatch_refused_before_forward) ... ok
+test_shared_verifier_cannot_bypass_analysis_freeze_checks (tests.test_validation_study.ValidationContractTests.test_shared_verifier_cannot_bypass_analysis_freeze_checks) ... ok
+test_source_changes_and_missing_freeze_fail_closed (tests.test_validation_study.ValidationContractTests.test_source_changes_and_missing_freeze_fail_closed) ... ok
+test_synthetic_first_event_block_and_recorded_replay (tests.test_validation_study.ValidationContractTests.test_synthetic_first_event_block_and_recorded_replay) ... ok
+test_under_three_people_cannot_generate_positive_inference (tests.test_validation_study.ValidationContractTests.test_under_three_people_cannot_generate_positive_inference) ... ok
+test_zero_eligible_and_insufficient_people_are_explicit (tests.test_validation_study.ValidationContractTests.test_zero_eligible_and_insufficient_people_are_explicit) ... ok
+
+======================================================================
+ERROR: test_exposed_012_full_first_block_numeric_parity (tests.test_validation_study.ValidationContractTests.test_exposed_012_full_first_block_numeric_parity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/packet/repo/tests/test_validation_study.py", line 416, in test_exposed_012_full_first_block_numeric_parity
+    result = study.verify_exposed_012(PACKET, PACKET / "supplement-exposed012",
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/packet/repo/eegt/validation_study.py", line 1135, in verify_exposed_012
+    manifest = read_json(packet / "INPUT-MANIFEST.json")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/packet/repo/eegt/validation_study.py", line 63, in read_json
+    return json.loads(Path(path).read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/studio1/lanes.noindex/eco-uzwh8s.37.3/scratch/packet/INPUT-MANIFEST.json'
+
+----------------------------------------------------------------------
+Ran 17 tests in 22.945s
+
+FAILED (errors=1)
+       25.11 real        15.88 user         1.56 sys
+           612859904  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               92332  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 429  voluntary context switches
+               56188  involuntary context switches
+         85144579104  instructions retired
+         37639919353  cycles elapsed
+           524157840  peak memory footprint

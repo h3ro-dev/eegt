@@ -1,0 +1,26 @@
+{"binding_status":"DIAGNOSTIC_ONLY_UNACCEPTED","blas_threads":1,"bound_bytes":2147483648,"diagnostic_binding_sha256":"3c9df28613eab51b5ea1a3a5106d7900f768cfadc594b0bbc6e0f359976e38b6","event":"start","fixture_sha256":"4a48c81877a7ffffa1ccd090cfb2d9f3dfcfac478fff52640b16b9a7aef90efe","iterations":4,"numerical_workers_max":1,"original_seal_sha256":"d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad","parent_pid":47113}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 2.065414, "process_peak_rss_bytes": 805863424}}
+{"aggregate_cpu_seconds":3.916333,"aggregate_peak_rss_bytes":1061322752,"event":"record","fields":["channels","decoder_warnings","digital_conversion","duration_metadata_error_samples","duration_seconds","excluded_undeclared_channels","gaps","native_nonfinite_samples_by_channel","sample_rate_hz","samples_per_channel"],"fields_equal":true,"index":0,"parent_peak_rss_bytes":255459328,"worker_cpu_seconds":2.065414,"worker_peak_rss_bytes":805863424}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 2.044976, "process_peak_rss_bytes": 806633472}}
+{"aggregate_cpu_seconds":5.9772810000000005,"aggregate_peak_rss_bytes":1062092800,"event":"record","fields":["channels","decoder_warnings","digital_conversion","duration_metadata_error_samples","duration_seconds","excluded_undeclared_channels","gaps","native_nonfinite_samples_by_channel","sample_rate_hz","samples_per_channel"],"fields_equal":true,"index":1,"parent_peak_rss_bytes":255459328,"worker_cpu_seconds":4.110390000000001,"worker_peak_rss_bytes":806633472}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 2.044424, "process_peak_rss_bytes": 806420480}}
+{"aggregate_cpu_seconds":8.037002,"aggregate_peak_rss_bytes":1062092800,"event":"record","fields":["channels","decoder_warnings","digital_conversion","duration_metadata_error_samples","duration_seconds","excluded_undeclared_channels","gaps","native_nonfinite_samples_by_channel","sample_rate_hz","samples_per_channel"],"fields_equal":true,"index":2,"parent_peak_rss_bytes":255459328,"worker_cpu_seconds":6.154814,"worker_peak_rss_bytes":806633472}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 2.029395, "process_peak_rss_bytes": 806289408}}
+{"aggregate_cpu_seconds":10.082356999999998,"aggregate_peak_rss_bytes":1062092800,"event":"record","fields":["channels","decoder_warnings","digital_conversion","duration_metadata_error_samples","duration_seconds","excluded_undeclared_channels","gaps","native_nonfinite_samples_by_channel","sample_rate_hz","samples_per_channel"],"fields_equal":true,"index":3,"parent_peak_rss_bytes":255459328,"worker_cpu_seconds":8.184209,"worker_peak_rss_bytes":806633472}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 1.612328, "process_peak_rss_bytes": 112230400}}
+{"event":"known_decoder_rejection","reason":"ValueError: declared EEG microvolt units required"}
+{"phase": "qualification_record", "recording_id": "994b9095fb35625b16fd1e8f", "resources": {"cpu_seconds": 1.6353039999999999, "process_peak_rss_bytes": 112820224}}
+{"event":"unexpected_worker_error","fatal":"qualification worker: TypeError: 'NoneType' object is not subscriptable"}
+Process SpawnProcess-7:
+Traceback (most recent call last):
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/studio1/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v3-repo/eegt/validation_intake.py", line 317, in _qualification_process
+    verify_loaded_sources(seal)
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/v3-repo/eegt/validation_provenance.py", line 39, in verify_loaded_sources
+    raise ValueError(f'loaded EEGT source differs from accepted freeze: {relative}')
+ValueError: loaded EEGT source differs from accepted freeze: eegt/repeated.py
+{"active_children":0,"event":"source_drift","fatal":"qualification worker returned no result"}
+{"aggregate_cpu_seconds":13.369504999999998,"all_ten_fields_equal":true,"diagnostic_only":true,"event":"result","iterations":4,"max_aggregate_peak_rss_bytes":1062092800,"max_worker_peak_rss_bytes":806633472,"measured_worker_cpu_seconds":11.431840999999999,"no_active_children":true,"os_children_cpu_seconds_including_startup_and_failure_probes":14.414764,"parent_peak_rss_bytes":255459328,"rss_bound_bytes":2147483648,"wall_seconds":16.320737874950282}

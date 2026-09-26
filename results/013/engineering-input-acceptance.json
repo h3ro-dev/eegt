@@ -1,0 +1,11 @@
+{
+  "schema": "eegt-validation-engineering-input-acceptance/v1",
+  "status": "ACCEPTED",
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "inputs": {
+    "results/013/engineering-prepared.json": "b4c7026f4dd7a2845a2c891c54ec67541259e46f5e5c073120536c324ca63486",
+    "data/derived/013/engineering-input/engineering-native.npz": "90f7937611c0926a1b6264e37968202ae59509f6dd3b57f0235c2252f2c007bd"
+  },
+  "accepted_by": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "scope": "Frozen first30seconds of EESM19 ses005/006,12nativeEEGcontacts; separate descriptive engineering only"
+}

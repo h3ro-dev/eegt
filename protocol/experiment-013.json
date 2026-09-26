@@ -1,0 +1,300 @@
+{
+  "aggregation": {
+    "between_people": "equal weight; cohorts separate",
+    "minimum_complete_people_per_cohort": 3,
+    "minimum_paired_metric_blocks_per_recording": 3,
+    "missing": "null with specific reasons; no imputation, person borrowing or alternative nights",
+    "within_person": "mean of both separately named night medians",
+    "within_recording": "median valid original-minus-independent-phase effect"
+  },
+  "bead": "eco-uzwh8s.37",
+  "channels": [
+    "RB",
+    "RT",
+    "LB",
+    "LT"
+  ],
+  "cohorts": [
+    {
+      "dataset": "ds005178",
+      "id": "new_people",
+      "interpretation": "Previously unexamined people within the audited EEGT program; same source/setup. Foundation-model pretraining overlap UNKNOWN.",
+      "people": [
+        "007",
+        "008",
+        "009",
+        "010"
+      ],
+      "sessions": [
+        "001",
+        "002"
+      ]
+    },
+    {
+      "dataset": "ds005178",
+      "id": "new_sessions",
+      "interpretation": "New nights for development people. Do not pool with new people or call them new people.",
+      "people": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006"
+      ],
+      "sessions": [
+        "003",
+        "004"
+      ]
+    }
+  ],
+  "created_utc": "2026-09-26T06:55:12.768003+00:00",
+  "experiment_candidate": "013",
+  "freeze_execution_gate": "Protocol candidate bytes frozen for independent review; no empirical access until root-owned ACCEPTED RUN-SOURCE-MANIFEST binds accepted reviews, these exact bytes, executable source and native resource admission.",
+  "inherited_source_sha256": {
+    "eegt/cbramod.py": "d09869e9c8644d620a896639269cf4ca7c4992a4dfd9ac15fd5a31a1cb8f7e0f",
+    "eegt/cross_encoder_study.py": "cfc934775d663396713f3105dd121878186ff1d375c9531398f25a5a5c389eae",
+    "eegt/distributed_study.py": "0f4f670b16494c6626a0edd36f53e94cbae2c1462c466209bede6108e5996266",
+    "eegt/event_study.py": "7bf41138c5525d11516c4a0609cd635c9e0093843efacb754fb4acd09bbcd566",
+    "eegt/pretrained.py": "f64fa16898852048dcdd14da2f843d7b239c5e4e697e7be3a71643fb838841a0",
+    "eegt/pretrained_study.py": "80187b84274606d4d7d4c514d7eb05b892b4b8df96b8a92b6ea099293a232e3c",
+    "eegt/repeated.py": "5f39bbd820147fb4d4d1df715cd5b818c8fd9f3be46797cf090098812105b6c3",
+    "eegt/transitions.py": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d",
+    "eegt/waveform_events.py": "80a9b8f62693e551c7f385a911fa15ca321325b7983f63da8fc7373ba451f572",
+    "protocol/experiment-010.json": "75f79f511d286254e544a50e470248153dc3b3fe38e1596936f748162cb3fa9b",
+    "protocol/experiment-011.json": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e",
+    "protocol/experiment-012-methods.md": "86f41254f1fc35a0d95e4e9aab45bec0e12d1964ec18d8a38a7d92c57daf92e9",
+    "protocol/experiment-012.json": "60f02a8dce9a086be3a89fe612eb9437088054f007d14348c827292fae34e138",
+    "requirements-encoder.lock": "c70edc4ff592cda5d77139b8b29912ebb0e2853c9c2b1139fab79022816b6182",
+    "requirements-events.lock": "9d6ace62d69501fa83a8c6a0c4d7fd388e61aa715c71af48c29c429c061791ec",
+    "requirements.lock": "350343d0cbfe4fd641d1ca252f451929a8347ceaba5201c4e25df1a4ead6ffb6"
+  },
+  "input_manifest": "protocol/corpus-manifest-013.json",
+  "input_manifest_sha256": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+  "intake_resource_control": {
+    "bounds": {
+      "artifact_bytes": 10000000000,
+      "cpu_seconds": 7200,
+      "rss_bytes": 2147483648
+    },
+    "cpu_scope": "Per stage invocation; repeated first-record work is recorded separately, not hidden.",
+    "first_record_gate": "Each stage stops after the first fixed source record for a hash-bound root resource admission before proceeding. A missing or quarantined first record is explicitly limited evidence; admission must consider the exposed full-record profile and planned source sizes. First-record replay preserves equal numeric arrays.",
+    "measurement_boundary": "Before and after each full record; CPU/RSS/artifact checks are record-boundary refusals, not OS hard limits. One record can overshoot before refusal.",
+    "stages": [
+      "qualify",
+      "quality",
+      "prepare"
+    ]
+  },
+  "multiplicity": {
+    "alpha": 0.05,
+    "family_size": 8,
+    "method": "Bonferroni",
+    "minimum_adjusted_p_by_maximum_cohort_n": {
+      "new_people_n4": 1.0,
+      "new_sessions_n6": 0.25
+    },
+    "raw_test": "Exact participant sign flip with sign-symmetry assumption; same scientific statistic as Experiment 012.",
+    "scope": "All eight primary cohort/model/metric tests; no cohort selection after results.",
+    "two_sided": true
+  },
+  "native_units": "microvolt",
+  "native_variants": [
+    "primary",
+    "gain_x2",
+    "polarity_xneg1",
+    "additive_offset_50uv",
+    "smoothing_21ms",
+    "smoothing_51ms",
+    "passband_0p5_40",
+    "passband_1_30",
+    "notch_50hz",
+    "notch_60hz",
+    "add_50hz",
+    "add_60hz",
+    "common_mean_reference",
+    "spike_100uv_8ms",
+    "symmetric_clipping_50uv",
+    "independent_phase",
+    "shared_phase",
+    "shift_plus_200ms"
+  ],
+  "open_before_freeze": [
+    "Implement interfaces without editing released scientific functions",
+    "Prove new interface against synthetic and exposed fixtures only",
+    "Independent protocol/interface/exposure review",
+    "Seal actual executable source and runtime after acceptance, before any reserved payload acquisition or opening"
+  ],
+  "owner": "session-13ffd342d925791b856652db872e4142",
+  "pre_freeze_corrections": [
+    "INTERFACE-CORRECTION-001.json",
+    "INTERFACE-CORRECTION-002.json"
+  ],
+  "prepared_units": "microvolt/100",
+  "prepared_variants": [
+    "original",
+    "gain_half",
+    "polarity_flip",
+    "channel_reverse",
+    "independent_phase"
+  ],
+  "preprocessing": {
+    "band_hz": [
+      0.3,
+      75
+    ],
+    "butter_order": 4,
+    "filter": "Per-block scipy fourth-order Butterworth bandpass0.3-75Hz, sosfiltfilt with10seconds reflected padding inside the30sblock; then60Hz IIR notch Q30 with the same pad length. No filter crosses block/gap boundaries.",
+    "notch_hz": 60,
+    "notch_q": 30,
+    "pad_seconds": 10,
+    "resampling": "scipy resample_poly up4 down5, default Kaiser beta5.0 antialias filter, constant padding, axis=time; exact6000samples.",
+    "scale": "Known microvolt values divided by100; no fitted normalization, channel substitution, interpolation, imputation or reference change.",
+    "target_rate_hz": 200,
+    "training_recipe_limit": "Band and notch frequencies and uV/100 scale follow author sources; exact filtering implementation is an explicit engineering choice, not a claim of byte-identical pretraining preprocessing."
+  },
+  "prerequisites": [
+    "eco-uzwh8s.31",
+    "eco-uzwh8s.34",
+    "eco-uzwh8s.36"
+  ],
+  "primary_endpoints": [
+    {
+      "cohort": "new_people",
+      "metric": "geometry",
+      "model": "codebrain"
+    },
+    {
+      "cohort": "new_people",
+      "metric": "change",
+      "model": "codebrain"
+    },
+    {
+      "cohort": "new_people",
+      "metric": "geometry",
+      "model": "cbramod"
+    },
+    {
+      "cohort": "new_people",
+      "metric": "change",
+      "model": "cbramod"
+    },
+    {
+      "cohort": "new_sessions",
+      "metric": "geometry",
+      "model": "codebrain"
+    },
+    {
+      "cohort": "new_sessions",
+      "metric": "change",
+      "model": "codebrain"
+    },
+    {
+      "cohort": "new_sessions",
+      "metric": "geometry",
+      "model": "cbramod"
+    },
+    {
+      "cohort": "new_sessions",
+      "metric": "change",
+      "model": "cbramod"
+    }
+  ],
+  "quality": {
+    "all_four_native_channels_finite": true,
+    "baseline_all_28_centers_must_pass": true,
+    "maximum_preprocessed_absolute_uv": 100,
+    "minimum_blocks_per_record": 3,
+    "minimum_complete_participants": 3,
+    "minimum_native_channel_std_uv": 0.05,
+    "rule": "Unchanged Experiment009 numerical predicates. Preserve every candidate, all rejection reasons and separate quality qualification from time-stratified selection. No threshold adjustment, re-referencing, amplitude normalization or filtering change after this freeze. Native gap overlap rejects the block. Same selected original support for all five waveform variants."
+  },
+  "rate_hz": 250,
+  "release_dependency": "Experiment 012 must be accepted and publicly verified before final validation protocol acceptance.",
+  "resource_proposals_not_yet_applied": {
+    "download_bytes": 4000000000,
+    "first_complete_block_gate": true,
+    "fresh_measurement_required": true,
+    "native_monetary_cost": "UNKNOWN",
+    "numeric_processes": 1,
+    "numeric_threads": 1,
+    "per_window_paid_api_calls": 0
+  },
+  "runtime_phases": {
+    "corpus": {
+      "mne": "1.13.2",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "stages": [
+        "qualification",
+        "baseline_quality",
+        "preparation"
+      ]
+    },
+    "encoder": {
+      "numpy": "1.26.4",
+      "scipy": "1.14.1",
+      "stages": [
+        "inference"
+      ],
+      "torch": "2.4.1"
+    },
+    "events": {
+      "bycycle": "1.2.0",
+      "neurodsp": "2.3.0",
+      "numpy": "1.26.4",
+      "scipy": "1.14.1",
+      "stages": [
+        "events",
+        "engineering"
+      ]
+    }
+  },
+  "schema": "eegt-untouched-validation-design/v1",
+  "second_source": {
+    "dataset": "ds005185",
+    "decision": "Include the prespecified native-only engineering check, pending independent protocol acceptance; both encoder statuses remain NOT_EVALUATED_FOR_12_CONTACTS.",
+    "encoder_reason": "Both currently accepted EEGT adapters require four channels. No reviewed 12-contact mapping, so no fabricated channel/position or physiological-scale substitution.",
+    "encoder_status": "NOT_EVALUATED_FOR_12_CONTACTS",
+    "native_channels": 12,
+    "native_engineering_scope": {
+      "additional_source_download_bytes": 0,
+      "channels": "All12 actual ear EEG contacts in the accepted qualification order; exclude EOGr",
+      "inference": "Descriptive technical support/event counts only; no p values, population transfer, universal tokens or brain-state interpretation",
+      "inputs": "Exact qualified source hashes and conservative validity masks; record numeric sample/mask hashes before detector invocation",
+      "rate_hz": 500,
+      "selection": "First30seconds of each of the two already-qualified EESM19nights005and006, no adaptive replacement",
+      "variants": [
+        "primary"
+      ]
+    },
+    "native_rate_hz": 500,
+    "people": [
+      "001"
+    ],
+    "proposal": "First 30 seconds of both qualified nights, all 12 actual EEG contacts and accepted masks, unchanged native waveform detector; no adaptive replacement. Independent review must accept this optional small engineering scope before freeze.",
+    "sessions": [
+      "005",
+      "006"
+    ],
+    "source_role": "Previously technically qualified development intake, not held-out population transfer",
+    "version": "1.0.2"
+  },
+  "secondary_cross_encoder": {
+    "reuse": "Accepted scientific distance/rank/support calculations; no new fit",
+    "scope": "Descriptive numerical replication of geometry and change; no alternate primary success claim"
+  },
+  "selection": {
+    "block_seconds": 30,
+    "candidate_blocks": 9600,
+    "candidate_blocks_per_recording": 480,
+    "candidate_recordings": 20,
+    "hop_seconds": 30,
+    "maximum_selected_per_recording": 12,
+    "maximum_selected_total": 240,
+    "rule": "Lower temporal median of fixed quality-passing candidates in each nonempty stratum; no substitution or later-session extension. Keep missing source records and short support as explicit rejected candidates.",
+    "seconds_per_recording": 14400,
+    "stratum_seconds": 1200
+  },
+  "state": "FROZEN"
+}

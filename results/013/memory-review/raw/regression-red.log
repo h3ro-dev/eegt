@@ -1,0 +1,82 @@
+$ /Users/studio1/lanes.noindex/eco-uzwh8s.37.1/scratch/corpus-venv/bin/python -m pytest -q -p no:cacheprovider --import-mode=importlib --basetemp /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/regression-red-tmp /Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/candidate/tests/test_validation_intake.py::test_qualification_releases_decoder_cycle_before_resource_check
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______ test_qualification_releases_decoder_cycle_before_resource_check ________
+
+tmp_path = PosixPath('/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/regression-red-tmp/test_qualification_releases_de0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b5b7f50>
+
+    def test_qualification_releases_decoder_cycle_before_resource_check(tmp_path, monkeypatch):
+        from eegt import repeated
+    
+        protocol, source = _identity_source()
+        first = source["records"][0]
+        first["file"].update(bytes=5, expected_digest=hashlib.sha256(b"right").hexdigest())
+        _json(tmp_path / intake.SOURCE_PATH, source)
+        _json(tmp_path / intake.PROTOCOL_PATH, protocol)
+        _json(tmp_path / intake.FREEZE_PATH, {"resource_bounds": {"rss_bytes": 2147483648}})
+        path = intake._record_path(tmp_path, source, first)
+        path.parent.mkdir(parents=True)
+        path.write_bytes(b"right")
+        _json(tmp_path / "results/013/acquisition.json", dict(
+            manifest_sha256=intake.digest(tmp_path / intake.SOURCE_PATH), completed=True,
+            records=[dict(recording_id=r["recording_id"], status="VERIFIED" if i == 0 else "FAILED",
+                          bytes=5 if i == 0 else None,
+                          sha256=first["file"]["expected_digest"] if i == 0 else None,
+                          reason=None if i == 0 else "SOURCE_MISSING")
+                     for i, r in enumerate(source["records"])]))
+        monkeypatch.setattr(intake, "require_accepted_freeze",
+                            lambda _root, _phase: ({}, protocol, source))
+    
+        refs = []
+    
+        class DecoderCycle:
+            def __init__(self):
+                self.cycle = self
+    
+        def fake_qualify(_path, _record, _protocol):
+            cycle = DecoderCycle()
+            refs.append(weakref.ref(cycle))
+            return dict(gaps=[[2, 3]], decoder_warnings=["kept"],
+                        native_nonfinite_samples_by_channel={"RB": 0},
+                        digital_conversion={"checked_values": 12, "maximum_absolute_error_uv": 0.0},
+                        duration_seconds=1.0)
+    
+        class Guard:
+            def __init__(self, *_args):
+                pass
+    
+            def check(self):
+                return {}
+    
+            def after_record(self, index, _recording_id):
+                if index == 0:
+                    assert refs[0]() is None
+    
+        monkeypatch.setattr(repeated, "qualify_record", fake_qualify)
+        monkeypatch.setattr(intake, "IntakeResources", Guard)
+        was_enabled = gc.isenabled()
+        gc.disable()
+        try:
+>           receipt = intake.qualify_sources(tmp_path)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+../candidate/tests/test_validation_intake.py:266: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../original/eegt/validation_intake.py:345: in qualify_sources
+    guard.after_record(index, rec["recording_id"])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <tests.test_validation_intake.test_qualification_releases_decoder_cycle_before_resource_check.<locals>.Guard object at 0x10f5d6de0>
+index = 0, _recording_id = '751863a11490eda2102d0bcc'
+
+    def after_record(self, index, _recording_id):
+        if index == 0:
+>           assert refs[0]() is None
+E           AssertionError: assert <tests.test_validation_intake.test_qualification_releases_decoder_cycle_before_resource_check.<locals>.DecoderCycle object at 0x10f5d6e40> is None
+E            +  where <tests.test_validation_intake.test_qualification_releases_decoder_cycle_before_resource_check.<locals>.DecoderCycle object at 0x10f5d6e40> = <weakref at 0x10f5f0ea0; to 'DecoderCycle' at 0x10f5d6e40>()
+
+../candidate/tests/test_validation_intake.py:259: AssertionError
+=========================== short test summary info ============================
+FAILED ../candidate/tests/test_validation_intake.py::test_qualification_releases_decoder_cycle_before_resource_check
+1 failed in 7.83s

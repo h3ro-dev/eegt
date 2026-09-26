@@ -1,0 +1,20 @@
+.......s...                                                           [100%]
+10 passed, 1 skipped, 3 subtests passed in 12.85s
+       14.58 real         3.09 user         1.05 sys
+           169672704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23300  page reclaims
+                1166  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2224  voluntary context switches
+               19372  involuntary context switches
+         11870916752  instructions retired
+          8798751680  cycles elapsed
+           142164568  peak memory footprint

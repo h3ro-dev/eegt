@@ -1,0 +1,23 @@
+selected_blocks= 0
+completed_event_blocks= 0
+indexed_partitions= 0
+status= COMPLETE_NUMERICAL_RECORD
+endpoints= {'NOT_ESTIMABLE'}
+        2.85 real         1.15 user         0.34 sys
+            98385920  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13356  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 313  voluntary context switches
+                4787  involuntary context switches
+          3806520562  instructions retired
+          2863562236  cycles elapsed
+            68600384  peak memory footprint

@@ -1,0 +1,39 @@
+[
+  {
+    "name": "regression-red",
+    "tree": "original",
+    "exit_code": 1,
+    "seconds": 9.48,
+    "log": "out/raw/regression-red.log",
+    "last_lines": [
+      "../candidate/tests/test_validation_intake.py:259: AssertionError",
+      "=========================== short test summary info ============================",
+      "FAILED ../candidate/tests/test_validation_intake.py::test_qualification_releases_decoder_cycle_before_resource_check",
+      "1 failed in 7.83s"
+    ]
+  },
+  {
+    "name": "regression-green",
+    "tree": "candidate",
+    "exit_code": 0,
+    "seconds": 5.05,
+    "log": "out/raw/regression-green.log",
+    "last_lines": [
+      ".                                                                        [100%]",
+      "1 passed in 4.17s"
+    ]
+  },
+  {
+    "name": "relevant-suite",
+    "tree": "candidate",
+    "exit_code": 1,
+    "seconds": 11.559,
+    "log": "out/raw/relevant-suite.log",
+    "last_lines": [
+      "FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_shared_verifier_cannot_bypass_analysis_freeze_checks",
+      "FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_source_changes_and_missing_freeze_fail_closed",
+      "FAILED ../candidate/tests/test_validation_study.py::ValidationContractTests::test_synthetic_first_event_block_and_recorded_replay",
+      "10 failed, 22 passed, 1 skipped, 9 subtests passed in 10.70s"
+    ]
+  }
+]

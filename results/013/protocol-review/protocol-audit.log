@@ -1,0 +1,13 @@
+protocol_state DRAFT_NOT_FROZEN
+inherited_source_count 16 mismatches {}
+freeze_draft_input_count 59 mismatches {}
+prepared_variants_equal True
+native_variants_equal True
+primary_endpoint_count 8 family_size 8
+exact_eight_endpoints True
+fixed_test Bonferroni Exact participant sign flip with sign-symmetry assumption; same scientific statistic as Experiment 012.
+cohort_max_adjusted_resolution {'new_people': 1, 'new_sessions': 0.25}
+checkpoint_refs_match_011 {'codebrain': True, 'cbramod': True}
+checkpoint_bytes_in_packet {'codebrain': False, 'cbramod': False}
+draft_status DRAFT_NOT_ACCEPTED accepted_review_count 0
+proposed_download_cap 4000000000 planned_source_bytes 3312979776

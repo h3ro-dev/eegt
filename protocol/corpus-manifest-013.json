@@ -1,0 +1,1059 @@
+{
+  "candidate_manifest_sha256": "e1a12cdb1801a394070e9d5319bfaa10cec47e8b3324d3a97b17ba7f956922c1",
+  "created_utc": "2026-09-26T07:28:31.495080+00:00",
+  "interpretation": "Curator metadata only. No labels or identities enter numerical models; final independent protocol/source freeze remains required before acquisition.",
+  "metadata_archive_sha256": "1d0874fcf38fdec59c07d2655c0e7a821120ec459a1bfd03757e9696cb2dad97",
+  "metadata_canonicalization": "eegt.corpus.canonical_json: sort_keys=True, indent=2, allow_nan=False, trailing newline",
+  "payloads_opened": 0,
+  "records": [
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 116646624,
+        "expected_digest": "3d331979443542af8c59dcf9cde009d288770b8c9eb2b9ef04cbdbf295780d7e",
+        "path": "sub-001/ses-003/eeg/sub-001_ses-003_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-001/ses-003/eeg/sub-001_ses-003_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 19439.536,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "1f42b434d3f320da677cd455b22fd7c818e58005682da0a6a33891e9e66a972d",
+      "metadata_sha256": "ffa1a5324b6526d7a6d4d65f2ba11515753d0c2b29a6b6e7e470804cb9d1f6d3",
+      "recording_id": "8fcee35718c91d4e7ac7d529",
+      "session": "003",
+      "source_subject": "001"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 132178624,
+        "expected_digest": "ee204686ed25700d78a2b2c2873fbb1fb702e229e0cd682cc06f42c37d08bb64",
+        "path": "sub-001/ses-004/eeg/sub-001_ses-004_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-001/ses-004/eeg/sub-001_ses-004_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 22028.204,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "df2aa82ca75a87986d5917ad9e92fde8dd7fd6dbd5a60d37b3fb8ed4fbab3f40",
+      "metadata_sha256": "b2522b3e733d37365c723ccacc4f93c8c9431b5715637ebc468841c364e46ed0",
+      "recording_id": "a8f1c640088d79f1fdc25387",
+      "session": "004",
+      "source_subject": "001"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 157100160,
+        "expected_digest": "dd88f112e91496805af3a86949c0b9ba5123ce92700e4aa8b0e6e2f3600cf74b",
+        "path": "sub-002/ses-003/eeg/sub-002_ses-003_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-002/ses-003/eeg/sub-002_ses-003_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 26181.792,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "8191db5ab4e0fcc2a6cc618ee52991252ee1cf047da97d35122fbde1085e39c8",
+      "metadata_sha256": "e8b8f9d0859457b7c1ef6a0efdc54cb6bb83523ad5075486d38df05dd8c2491f",
+      "recording_id": "cad043988e4a5cc29a27ea7c",
+      "session": "003",
+      "source_subject": "002"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 142377424,
+        "expected_digest": "490a3f33ed50f62bc76c0c0ccf9439c5f3fd4932acdf8b59ce8cc85831b9e707",
+        "path": "sub-002/ses-004/eeg/sub-002_ses-004_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-002/ses-004/eeg/sub-002_ses-004_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 23728.004,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "929d66e4b33718fe60992768557023cf1ae773ad7d2fbc2c961a254233b663c2",
+      "metadata_sha256": "8e5616313b863545b66cd40b88495f4cb3d0336c43a6f13eb39f6af11a843fc3",
+      "recording_id": "943b4d505266fafc2c7e5a27",
+      "session": "004",
+      "source_subject": "002"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 147424672,
+        "expected_digest": "2670a9c6dd7d366cbfd6350db44ba16ef73e9c3b0463066a02bbf5fb7f8bcd86",
+        "path": "sub-003/ses-003/eeg/sub-003_ses-003_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-003/ses-003/eeg/sub-003_ses-003_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 24569.212,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "c74fc83321d1ca9babaab8bcc86ef26fba92cb22e19c404ceb4e7f70707a8483",
+      "metadata_sha256": "c783efd139f807bc640600939b5fddae952559fcf45ca36d98cfeac34b1419a0",
+      "recording_id": "2cee23cd1b9199d0cee8cc2a",
+      "session": "003",
+      "source_subject": "003"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 116852208,
+        "expected_digest": "9a2969ee9adae7dccba732855336ad1ef7d3c7fe52f49989511282e35427b605",
+        "path": "sub-003/ses-004/eeg/sub-003_ses-004_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-003/ses-004/eeg/sub-003_ses-004_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 19473.8,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "de73a276b8a5dbad0c5257f9400130045e8779148f0d4fbb5a449d5d7be457d6",
+      "metadata_sha256": "643587e82806c5df974b09f0ea9d7576392a0b00f118e43c58943545758bcdb4",
+      "recording_id": "692fc9929daa7ddde2d890ab",
+      "session": "004",
+      "source_subject": "003"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 142522576,
+        "expected_digest": "04ebc750dfac108cd7dc7237ca3ecb81eb92068f7453983a9db0e271a9bb6ae8",
+        "path": "sub-004/ses-003/eeg/sub-004_ses-003_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-004/ses-003/eeg/sub-004_ses-003_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 23752.196,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "8b4c4a38dce4a08a757f58f05097d69a0555e4948866fb76c799be7bb6cc0c5f",
+      "metadata_sha256": "a0207d6323d68d341bc3dd63d7863e0cbbb65bcc0579515f59fa21f1ff58d779",
+      "recording_id": "1954fd06995a095113d5ed1c",
+      "session": "003",
+      "source_subject": "004"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 189872224,
+        "expected_digest": "3aadc4565f1174581d1258c5f08492b01abbb3c7aab5ae0af5c835cfcb96cf25",
+        "path": "sub-004/ses-004/eeg/sub-004_ses-004_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-004/ses-004/eeg/sub-004_ses-004_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 31643.804,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "eafd69d3b56bf3836a799d1997918c31793637814a3a67725fc8d77a29f5f5fe",
+      "metadata_sha256": "9602219380cd1db05b98da7db6774a2124b756dc4615028a4f6ecd69d0ed3d60",
+      "recording_id": "747248be763f180dd5d9ca8a",
+      "session": "004",
+      "source_subject": "004"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 153338256,
+        "expected_digest": "fa81fcda5c8434efcf2370710842d3e3b4066b29bf0b223eccfa2bbfb99af062",
+        "path": "sub-005/ses-003/eeg/sub-005_ses-003_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-005/ses-003/eeg/sub-005_ses-003_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 25554.808,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "f2edbbdaf81a44a36ef61a36827d3e09fa81685659461b074548daf1e01ba26b",
+      "metadata_sha256": "aa1f4d54c24d49262194c6da8c70314c920d55e0c1bb53371b825afc9a07094e",
+      "recording_id": "9ad08b60cb89ce4973ac81a9",
+      "session": "003",
+      "source_subject": "005"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 163793824,
+        "expected_digest": "4b7dc58cdcfcb5691fa91032250d7337b22d86cd40c483958ea71a3375857feb",
+        "path": "sub-005/ses-004/eeg/sub-005_ses-004_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-005/ses-004/eeg/sub-005_ses-004_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 27297.404,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "91e7efcee5bf653c7eb966da6396c32131109226b166977a75646b32f78ab6af",
+      "metadata_sha256": "fdd776bdeaa7e58c355965345b423230a001b12deb0d4442c4ab31baa549f8d4",
+      "recording_id": "8420824fdd77c456f8422dc1",
+      "session": "004",
+      "source_subject": "005"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 175121712,
+        "expected_digest": "18e22cad33fd40c28136aceae41cbaca8eec95f23e82ecfd7e85627a10e6b207",
+        "path": "sub-006/ses-003/eeg/sub-006_ses-003_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-006/ses-003/eeg/sub-006_ses-003_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 29185.384,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "252d3d1212b590ec10c13b0da6ecf1f962ab6aa20aa5fbf4be12e46ab0db0f94",
+      "metadata_sha256": "a9536106bbcb79042627c6db2adf2aca93e5f019ccead0453103435b38e9c294",
+      "recording_id": "4db090b59a372e712689746c",
+      "session": "003",
+      "source_subject": "006"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_sessions",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 184337760,
+        "expected_digest": "b8d15e1b69ff52a03a15454d4642299458ccf5b935a653fc0e214ee5e38d3dfc",
+        "path": "sub-006/ses-004/eeg/sub-006_ses-004_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-006/ses-004/eeg/sub-006_ses-004_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 30721.392,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "3049eeafb66eb209ab9fb1a54ee6ef75689d138b2b0b8d06af168fa096c946ae",
+      "metadata_sha256": "a3ee6c5318d5641cf2b7e6e9bc0f44066184c7ea895ef2761a0a802af35f78b0",
+      "recording_id": "55417dd7cef0dc3142a54637",
+      "session": "004",
+      "source_subject": "006"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_people",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 184541856,
+        "expected_digest": "c68011c4aede441e5ccfb8e9ae9d33e07d03e51c50503f9e1534b6f506cec911",
+        "path": "sub-007/ses-001/eeg/sub-007_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-007/ses-001/eeg/sub-007_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 30755.408,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "6a8b968862e50bedc33bc34779aad2cfa1b2c48eea575cbace075ed899ec869f",
+      "metadata_sha256": "b9cf5d7c9904b3ae7e0f976cab0914a773def80c133257b6b117f2b45e6074c5",
+      "recording_id": "22ae77e0133917ef4ca64d36",
+      "session": "001",
+      "source_subject": "007"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_people",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 230041504,
+        "expected_digest": "a64a10451aa9e4c282ba23daabcfc0c1ae5869b92df8b237d54bd6864428849d",
+        "path": "sub-007/ses-002/eeg/sub-007_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-007/ses-002/eeg/sub-007_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 32861.728,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "0ef41ea739afaf88cc523c9afd3031b7f5b6921d43661d9e89d980204a65bd47",
+      "metadata_sha256": "44e119e901b2082f302ca5fccd64329f4524d4b6a4d0cb5972ff4ed5d687aa06",
+      "recording_id": "0fa6e0a3f7b427a97324923f",
+      "session": "002",
+      "source_subject": "007"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_people",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 170831760,
+        "expected_digest": "fd979142c4428ba3d0fd3ef448667e592d0d54b4f6fc9bf3426a69b89bd874fb",
+        "path": "sub-008/ses-001/eeg/sub-008_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-008/ses-001/eeg/sub-008_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 28470.392,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "6169662c221847bc893e957167b0151e11a5a0315fae550f4566dc2f7200d160",
+      "metadata_sha256": "73d72f23ded3b5c02f86a510cc2ff5483129be244b7e7ce58bc6a55b886a9806",
+      "recording_id": "1374bafe2757e7b35f8353c5",
+      "session": "001",
+      "source_subject": "008"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_people",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 172995312,
+        "expected_digest": "02a5e653ad4acb9f08822588fa9c0fb1f83a9b17e9ea62d7b4db803eedd2f0bd",
+        "path": "sub-008/ses-002/eeg/sub-008_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-008/ses-002/eeg/sub-008_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 28830.984,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "2761303374551044d0d19debe0e5a457187807b5ba05e386c3c91ada1c750ff6",
+      "metadata_sha256": "ddb78bf470c5085e9d65171efd73b0d68badadf1e1e3e4c3dac786b2075434d2",
+      "recording_id": "586b7b2149fb788b2fdbeba9",
+      "session": "002",
+      "source_subject": "008"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_people",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 211030752,
+        "expected_digest": "8f87c0f6b1adc2707f1a2cfb2bfc8b7b29326418408ffa649e3343c779aecb6f",
+        "path": "sub-009/ses-001/eeg/sub-009_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-009/ses-001/eeg/sub-009_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 35170.224,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "8b240f0bc4f6e350d5514d337a6ab971180fc8add3ec0c2c697f48ffabb141a9",
+      "metadata_sha256": "40a0d26309ca1c0cab2289bf4031ed805ed4781bdde6bc890b04cdb7f3040a73",
+      "recording_id": "fb0ebd3541bd298ec4a0bf42",
+      "session": "001",
+      "source_subject": "009"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_people",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 240919408,
+        "expected_digest": "7d68e494d5aed99b8a19b1f79a81bd7db76cfd92aaf19a6c666e5748d68e559c",
+        "path": "sub-009/ses-002/eeg/sub-009_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-009/ses-002/eeg/sub-009_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 40151.668,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "8d6bb1a7e3863f34cac6d862bf27a9232f58d2bc3d25978f50bd6a8a8f30420c",
+      "metadata_sha256": "ea47fe653a4ad77d7e1c4c0714733d849caf7e96536aa4c91a33adb580bc1fb0",
+      "recording_id": "2cb9b5564134776c20bacff3",
+      "session": "002",
+      "source_subject": "009"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_people",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 141395760,
+        "expected_digest": "778a81a38c8b40e78eebd1112cc52683e243aabadf29328547d45d6e82c8a720",
+        "path": "sub-010/ses-001/eeg/sub-010_ses-001_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-010/ses-001/eeg/sub-010_ses-001_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 23564.392,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "2789afbd28fad3c82ef71609f70be0a83350cb33d2f3b2f842f34fa75d00859c",
+      "metadata_sha256": "b0c98cfd4c06ba535f4c9f2c0fad2611bb9dbafbeda5d2c0844c659f81c16d7d",
+      "recording_id": "533f97c9580d3cf0d73d31c0",
+      "session": "001",
+      "source_subject": "010"
+    },
+    {
+      "channels": [
+        {
+          "name": "RB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "RT",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LB",
+          "type": "EEG",
+          "units": "uV"
+        },
+        {
+          "name": "LT",
+          "type": "EEG",
+          "units": "uV"
+        }
+      ],
+      "channels_raw_sha256": "ea1f6b7548595e0d604c7ec9737fcd10eb4c81292fc4cf19e4ec5a9fe46b49cf",
+      "cohort": "new_people",
+      "file": {
+        "algorithm": "sha256",
+        "bytes": 139657360,
+        "expected_digest": "a17ba70fa45d527b08b480cf0e5f52abe011503b434df55aaed73124547045ca",
+        "path": "sub-010/ses-002/eeg/sub-010_ses-002_task-sleep_acq-earEEG_eeg.set",
+        "url": "https://s3.amazonaws.com/openneuro.org/ds005178/sub-010/ses-002/eeg/sub-010_ses-002_task-sleep_acq-earEEG_eeg.set"
+      },
+      "metadata": {
+        "EEGPlacementScheme": "ear-EEG",
+        "EEGReference": "average",
+        "InstitutionAddress": "Finlandsgade 22, 8200 Aarhus N",
+        "InstitutionName": "Aarhus University",
+        "InstitutionalDepartmentName": "Department of Engineering",
+        "PowerLineFrequency": 50,
+        "RecordingDuration": 23274.66,
+        "SamplingFrequency": 250,
+        "SoftwareFilters": "n/a",
+        "TaskDescription": "sleep",
+        "TaskName": "sleep",
+        "TriggerChannelCount": 1
+      },
+      "metadata_raw_sha256": "94ac1f80843362196532908e2aa4743a3b24711363fb3d70dd83da0d44bea1bf",
+      "metadata_sha256": "126c018e362b900a621c92819ac41ad8361322f26e97514c4c17d2cf3d66fd34",
+      "recording_id": "9db5323cb23c54eec80a9136",
+      "session": "002",
+      "source_subject": "010"
+    }
+  ],
+  "schema": "eegt-validation-curator-source-draft/v1",
+  "source": {
+    "commit": "a57deb78cf1294497db88d73aaed06813850f236",
+    "dataset": "ds005178",
+    "license": "CC0-1.0",
+    "version": "1.0.0"
+  },
+  "state": "DRAFT_NOT_FROZEN",
+  "total_download_bytes": 3312979776
+}

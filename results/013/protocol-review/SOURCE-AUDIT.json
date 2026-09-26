@@ -1,0 +1,56 @@
+{
+  "schema": "eegt-review-source-audit/v1",
+  "status": "PASS",
+  "errors": [],
+  "planned_pairs": 20,
+  "new_people_pairs": 8,
+  "new_sessions_pairs": 12,
+  "prior_exposed_pairs": 12,
+  "overlap": 0,
+  "pinned_bytes": 3312979776,
+  "prior_receipts_locally_hashed": [
+    "repo/protocol/corpus-manifest-008.json",
+    "repo/results/008/qualification.json",
+    "repo/results/009/prepared.json",
+    "repo/results/010/prepared.json"
+  ],
+  "filename_audits": [
+    {
+      "path": "input/LOCAL-EXPOSURE-AUDIT.json",
+      "scanned_files": 126,
+      "candidate_filename_matches": [],
+      "declared_payloads_opened": 0,
+      "scope": "Local canonical cache and known intake work paths plus accepted receipts; metadata and filenames only. Does not prove absence from every device or upstream model pretraining."
+    },
+    {
+      "path": "input/REMOTE-EXPOSURE-AUDIT.json",
+      "scanned_files": 4,
+      "candidate_filename_matches": [],
+      "declared_payloads_opened": 0,
+      "scope": "Known Beads EEGT lane directories only; filenames and stat, no waveform bytes read. Other projects and model pretraining remain outside this audit."
+    },
+    {
+      "path": "input/REMOTE-EXPOSURE-AUDIT-studio4.json",
+      "scanned_files": 14,
+      "candidate_filename_matches": [],
+      "declared_payloads_opened": 0,
+      "scope": "Known EEGT Beads lane directories; filename/stat only, no wave bytes read. Unrelated projects and upstream pretraining excluded."
+    },
+    {
+      "path": "input/REMOTE-EXPOSURE-AUDIT-studio6.json",
+      "scanned_files": 1,
+      "candidate_filename_matches": [],
+      "declared_payloads_opened": 0,
+      "scope": "Known EEGT Beads lane directories; filename/stat only, no wave bytes read. Unrelated projects and upstream pretraining excluded."
+    },
+    {
+      "path": "input/REMOTE-EXPOSURE-AUDIT-jamess-macbook-pro-2.json",
+      "scanned_files": 0,
+      "candidate_filename_matches": [],
+      "declared_payloads_opened": 0,
+      "scope": "Known EEGT Beads lane directories; filename/stat only, no wave bytes read. Unrelated projects and upstream pretraining excluded."
+    }
+  ],
+  "pretraining_overlap": "UNKNOWN",
+  "limits": "Filename/stat and retained receipt coverage only; no proof about all historical machines or model pretraining."
+}

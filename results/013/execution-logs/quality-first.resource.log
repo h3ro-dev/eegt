@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/scripts/prepare_validation.py", line 61, in <module>
+    main()
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/scripts/prepare_validation.py", line 45, in main
+    result = intake.build_quality_census(args.root)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 603, in build_quality_census
+    guard.after_record(i, rec["recording_id"])
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 185, in after_record
+    raise RuntimeError(f"first-record review required: {self.phase}")
+RuntimeError: first-record review required: intake-quality
+       27.07 real        26.89 user         0.16 sys
+           489324544  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               43095  page reclaims
+                  20  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  26  voluntary context switches
+                 309  involuntary context switches
+        300172654334  instructions retired
+         96895353194  cycles elapsed
+           461423384  peak memory footprint

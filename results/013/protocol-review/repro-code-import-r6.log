@@ -1,0 +1,22 @@
+frozen_study_sha 15a808eb7dd5ccf8dbccf9d0cdef9296e43755c52b17bbb84a4bf872e6fa6a1f
+executing_study_sha 31568d7d54fd363bc0030bf28af999f6757ba02d45cd0dd13bbb7060aa97cdec
+same False
+freeze_refused ValueError loaded EEGT source differs from accepted freeze: eegt/validation_study.py
+        7.20 real         1.22 user         0.63 sys
+            94846976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12180  page reclaims
+                 958  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1577  voluntary context switches
+                8033  involuntary context switches
+          4092490265  instructions retired
+          3711319954  cycles elapsed
+            66306624  peak memory footprint

@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 6.643,
+  "last_lines": [
+    "........s.......                                                [100%]",
+    "15 passed, 1 skipped, 9 subtests passed in 5.82s"
+  ],
+  "log": "out/raw/intake-suite.log"
+}

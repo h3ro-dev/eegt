@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/fixture_boundary.py", line 128, in <module>
+    main()
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/fixture_boundary.py", line 112, in main
+    receipt = intake.qualify_sources(WORK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/candidate/eegt/validation_intake.py", line 354, in qualify_sources
+    FREEZE_PATH: digest(root / FREEZE_PATH),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/candidate/eegt/acquire.py", line 14, in digest
+    with open(path, "rb") as handle:
+         ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/studio1/lanes.noindex/eco-uzwh8s.38.3.1/scratch/fixture-boundary/results/013/RUN-SOURCE-MANIFEST.json'
+       11.28 real         5.50 user         2.45 sys
+           810369024  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              572570  page reclaims
+                  33  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1638  voluntary context switches
+               17575  involuntary context switches
+         22869364896  instructions retired
+         14670110840  cycles elapsed
+           782599176  peak memory footprint

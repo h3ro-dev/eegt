@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/scripts/prepare_validation.py", line 61, in <module>
+    main()
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/scripts/prepare_validation.py", line 47, in main
+    result = intake.prepare_validation(args.root)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 823, in prepare_validation
+    return prepare_from_handoff(root, source, protocol, qualification, quality,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 770, in prepare_from_handoff
+    resource_guard.after_record(record_index, rid)
+  File "/Users/studio1/lanes.noindex/eco-uzwh8s.38.1/repo/eegt/validation_intake.py", line 185, in after_record
+    raise RuntimeError(f"first-record review required: {self.phase}")
+RuntimeError: first-record review required: intake-prepare
+        2.25 real         1.64 user         0.15 sys
+           358547456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               31519  page reclaims
+                 987  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 996  voluntary context switches
+                 975  involuntary context switches
+         19462477848  instructions retired
+          6554226318  cycles elapsed
+           331416248  peak memory footprint

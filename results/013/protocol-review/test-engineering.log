@@ -1,0 +1,28 @@
+test_layout_contact_order_and_masks (tests.test_validation_engineering.EngineeringTests.test_layout_contact_order_and_masks) ... ok
+test_no_undeclared_contact_or_unit_substitution (tests.test_validation_engineering.EngineeringTests.test_no_undeclared_contact_or_unit_substitution) ... ok
+test_preparation_receipt_array_join (tests.test_validation_engineering.EngineeringTests.test_preparation_receipt_array_join) ... ok
+test_source_change_and_short_support_refused (tests.test_validation_engineering.EngineeringTests.test_source_change_and_short_support_refused) ... ok
+test_unaccepted_freeze_prevents_source_access (tests.test_validation_engineering.EngineeringTests.test_unaccepted_freeze_prevents_source_access) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 6.489s
+
+OK
+        8.41 real         1.30 user         0.39 sys
+           108052480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15847  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1416  voluntary context switches
+                6050  involuntary context switches
+          5081817711  instructions retired
+          3607035472  cycles elapsed
+            79184400  peak memory footprint

@@ -1,0 +1,27 @@
+acquire FileNotFoundError RUN-SOURCE-MANIFEST.json
+qualify FileNotFoundError RUN-SOURCE-MANIFEST.json
+quality FileNotFoundError RUN-SOURCE-MANIFEST.json
+prepare FileNotFoundError RUN-SOURCE-MANIFEST.json
+engineering_prepare FileNotFoundError RUN-SOURCE-MANIFEST.json
+acquire_file_calls 0
+qualify_record_calls 0
+read_raw_eeglab_calls 0
+engineering_read_window_calls 0
+        3.28 real         1.67 user         0.38 sys
+           119898112  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14772  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 491  voluntary context switches
+                7155  involuntary context switches
+          6994210399  instructions retired
+          4097066626  cycles elapsed
+            92275216  peak memory footprint

@@ -1,0 +1,27 @@
+baseline_centers 28797
+baseline_valid 27916
+candidate_rows 480
+candidate_field_mismatches []
+selected_count 11
+selected_byte_differences []
+baseline_times_equal True
+baseline_valid_equal True
+fixture_receipt_sha256 59a6b51289fbe411156fc93656d16dc0807bbec47516730303e1843827c6009d
+        1.43 real         0.78 user         0.12 sys
+            62603264  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4205  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 110  voluntary context switches
+                3373  involuntary context switches
+          2999155402  instructions retired
+          1955288402  cycles elapsed
+            49447344  peak memory footprint

@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "intake-prepare",
+  "profile_sha256": "90e7d436d3d903de51095cb19944710d9a86e069ec59b6c7b747802d122b7862",
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "reviewed_utc": "2026-09-26T14:35:09.282839+00:00",
+  "rationale": "Root verified all9600 quality rows and20 native/baseline hashes under accepted seal. First prepare record358481920B,1.624399CPU seconds. Full20 record CPU projection33s; accumulated selected native/prepared/mask arrays at240 maximum under100MB plus bounded per-record arrays; below2GiB. Existing1.284GB artifacts below10GB. Studio1 fresh96percent memory free and2.8TiB disk free, load12.94; single numerical process. Scientific caps unchanged."
+}

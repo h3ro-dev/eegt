@@ -1,0 +1,22 @@
+--- update-root-v3/tests/test_validation_intake.py	2026-09-26 07:32:27
++++ update-root-v4-regression/test_validation_intake.py	2026-09-26 07:52:03
+@@ -462,12 +462,19 @@
+             self.measurements.append(measured)
+ 
+     guard = Guard()
++    import resource
++    before = resource.getrusage(resource.RUSAGE_CHILDREN)
+     assert intake._qualify_record_isolated(path, rec, technical, guard) == expected
++    after = resource.getrusage(resource.RUSAGE_CHILDREN)
++    completed_cpu = after.ru_utime + after.ru_stime - before.ru_utime - before.ru_stime
++    assert guard.measurements[0]["cpu_seconds"] == pytest.approx(completed_cpu, abs=1e-6)
+     rec["channels"][0]["units"] = "V"
+     with pytest.raises(intake._QualificationRejected,
+                        match="ValueError: declared EEG microvolt units required"):
+         intake._qualify_record_isolated(path, rec, technical, guard)
+     assert len(guard.measurements) == 2
++    assert all(m["measurement_boundary"].startswith("joined child lifetime")
++               for m in guard.measurements)
+     assert all(m["cpu_seconds"] > 0 and 0 < m["process_peak_rss_bytes"] < 2147483648
+                for m in guard.measurements)
+     guard.seal = {"inputs": {}}

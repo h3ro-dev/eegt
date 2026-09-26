@@ -1,0 +1,221 @@
+{
+  "bead": "eco-uzwh8s.38.3.1",
+  "checks": {
+    "archived_ten_qualification_fields_equal_in_four_reads": true,
+    "both_packet_manifests_match_all_declared_hashes": true,
+    "complete_child_cpu_includes_startup_send_and_shutdown": true,
+    "crashed_child_reaped": true,
+    "final_overlay_differs_from_v3_only_in_source_and_test": true,
+    "four_child_cpu_accounting_gaps_seconds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "four_reaped_child_cpu_deltas_equal_v4_accounted_cpu": true,
+    "four_reaped_child_cpu_deltas_seconds": [
+      2.1303229999999997,
+      2.2129190000000003,
+      2.2163500000000003,
+      2.1768710000000002
+    ],
+    "four_v4_accounted_child_cpu_deltas_seconds": [
+      2.1303229999999997,
+      2.2129190000000003,
+      2.2163500000000003,
+      2.1768710000000002
+    ],
+    "known_decoder_rejection_reason_preserved": true,
+    "one_blas_thread": true,
+    "one_numerical_child_at_a_time_and_parent_waits": true,
+    "original_protocol_source_list_decoder_and_scientific_code_unchanged": true,
+    "parent_peak_plus_max_child_peak_bytes": 1063059456,
+    "parent_plus_child_under_two_gib_on_exposed_fixture": true,
+    "regression_test_supersedes_v4_packet_test_only": true,
+    "root_local_tests": "18 passed, 1 skipped (packet evidence only)",
+    "scientific_cpu_bound_seconds": 7200,
+    "scientific_rss_bound_bytes": 2147483648,
+    "source_drift_fatal_inside_child": true,
+    "unexpected_worker_failure_fatal": true,
+    "v4_pinned_focused_tests": "11 passed, 1 skipped",
+    "v4_regression_red_on_v3": "1 failed at CPU equality (1.799833 versus 1.940039 seconds)"
+  },
+  "diagnostic_binding_sha256": "3059b4325b3a7c3b115dbdcfe16ffd8fee438c5e182f0245ee1e67d7eeb9076c",
+  "dollar_cost": "UNKNOWN",
+  "effective_user_policy": "2026-09-26.2",
+  "exact_reviewed_file_inventory": {
+    "AMENDMENT-CONTRACT.md": {
+      "bytes": 2202,
+      "sha256": "31f6673062635f688a011d69e63d5bda0937c7c7277c5ab94d9cbd0417196335"
+    },
+    "evidence/qualification-output.json": {
+      "bytes": 485,
+      "sha256": "beaaf226d72b9988b6893a9a8f95809a8e8dc95fdbc3e45d635023555355ede0"
+    },
+    "out/REVIEW.json": {
+      "bytes": 106988,
+      "sha256": "c541d61d2a2d824afbe4f1ebcf70b46f738fc2bdc0eff689d18995f04fd6081f"
+    },
+    "out/REVIEW.md": {
+      "bytes": 4996,
+      "sha256": "799637f43001e6067ee458330a860def54ad6bde02aec878de18c2fbd38a2451"
+    },
+    "out/V3-REVIEW.json": {
+      "bytes": 10428,
+      "sha256": "79157968698009487083fd1bf5091c5f2f0e9463a556d2c4327afefacca76528"
+    },
+    "out/V3-REVIEW.md": {
+      "bytes": 7308,
+      "sha256": "b268fe785518ccb9fa125e5dff2ff9530ce5451353618a5225e0b6e080c92fae"
+    },
+    "scratch/v4-diagnostic-binding.json": {
+      "bytes": 9998,
+      "sha256": "3059b4325b3a7c3b115dbdcfe16ffd8fee438c5e182f0245ee1e67d7eeb9076c"
+    },
+    "scratch/v4-repo/eegt/repeated.py": {
+      "bytes": 22639,
+      "sha256": "5f39bbd820147fb4d4d1df715cd5b818c8fd9f3be46797cf090098812105b6c3"
+    },
+    "scratch/v4-repo/eegt/validation_intake.py": {
+      "bytes": 55095,
+      "sha256": "5429ea4e10da40ccafdf3d1baacdcd0d8f1f8edb5dba787443bb1a6182a1b2a8"
+    },
+    "scratch/v4-repo/eegt/validation_study.py": {
+      "bytes": 84667,
+      "sha256": "31568d7d54fd363bc0030bf28af999f6757ba02d45cd0dd13bbb7060aa97cdec"
+    },
+    "scratch/v4-repo/protocol/corpus-manifest-013.json": {
+      "bytes": 36047,
+      "sha256": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3"
+    },
+    "scratch/v4-repo/protocol/engineering-input-013.json": {
+      "bytes": 34211,
+      "sha256": "93d4769d8d1653f26ed4c64bfaf312083f1e0511a47fb830c4319d2a5326fe17"
+    },
+    "scratch/v4-repo/protocol/experiment-013.json": {
+      "bytes": 11752,
+      "sha256": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9"
+    },
+    "scratch/v4-repo/tests/test_validation_intake.py": {
+      "bytes": 24857,
+      "sha256": "ad9ca755e75e90ce274a49b3f19d4d5b7632e016354ce2a0be377f3912b122f3"
+    },
+    "update-root-v3/eegt/validation_intake.py": {
+      "bytes": 54381,
+      "sha256": "e103cfb1d1b45a649f9446d3b4f1e9f7580c510b129e13efcac6b0641eab1225"
+    },
+    "update-root-v3/failure-evidence/qualify-amendment-full.resource.log": {
+      "bytes": 1860,
+      "sha256": "a526b560d979c18e320340fccae870d40d96885b9836d77ae85b13af25d093e3"
+    },
+    "update-root-v3/failure-evidence/qualify-memory-trace.log": {
+      "bytes": 2140,
+      "sha256": "908e494671c07948166f2385a5cbe8070726bc05352eed37a4b0a040fa1506cc"
+    },
+    "update-root-v3/results/013/RUN-SOURCE-MANIFEST.json": {
+      "bytes": 9901,
+      "sha256": "d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad"
+    },
+    "update-root-v3/tests/test_validation_intake.py": {
+      "bytes": 24423,
+      "sha256": "99bef8f1f68e407fa01d2415f101b6677d5534161b06ad4b20f750a63cb6e4c2"
+    },
+    "update-root-v4-regression/INPUT-MANIFEST.json": {
+      "bytes": 191,
+      "sha256": "b53be427d230285e072e2540771f4ff127ac7b91d37bf5f9c74081948befe6ee"
+    },
+    "update-root-v4-regression/local-tests.log": {
+      "bytes": 110,
+      "sha256": "a942b01338d9d6aed44d06dda2720e7ae3e912a2b3d25fbb1f68a63bceca8866"
+    },
+    "update-root-v4-regression/test_validation_intake.py": {
+      "bytes": 24857,
+      "sha256": "ad9ca755e75e90ce274a49b3f19d4d5b7632e016354ce2a0be377f3912b122f3"
+    },
+    "update-root-v4/INPUT-MANIFEST.json": {
+      "bytes": 296,
+      "sha256": "a80347f0771f01162e346b1b3ce80389088bae75b22a662024b6ade10708f612"
+    },
+    "update-root-v4/eegt/validation_intake.py": {
+      "bytes": 55095,
+      "sha256": "5429ea4e10da40ccafdf3d1baacdcd0d8f1f8edb5dba787443bb1a6182a1b2a8"
+    },
+    "update-root-v4/local-tests.log": {
+      "bytes": 110,
+      "sha256": "55064e952a17678705be90e29d2ceb59439eeb5917cba7f1a124ca03b0305bac"
+    },
+    "update-root-v4/tests/test_validation_intake.py": {
+      "bytes": 24544,
+      "sha256": "a4c0bd0eeeabc60379af7c036b9ef3f02ecedcc8d8ef03d23a9180368ad6e90a"
+    }
+  },
+  "integrator": "session-13ffd342d925791b856652db872e4142",
+  "limits": [
+    "Only the previously exposed Experiment008 sub-001/ses-001 waveform was used; varied 20-record fit remains unknown.",
+    "The supplied accepted seal is v2 and does not bind v4 source or final test. The review's fixture binding is diagnostic only.",
+    "Prior failure logs and the original unknown-subset technical-exposure statement remain preserved.",
+    "No empirical quality, preparation or model stage was run."
+  ],
+  "original_preaccess_seal_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e",
+  "prior_accepted_v2_seal_sha256": "d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad",
+  "prior_v2_review_json_sha256": "c541d61d2a2d824afbe4f1ebcf70b46f738fc2bdc0eff689d18995f04fd6081f",
+  "prior_v3_review_json_sha256": "79157968698009487083fd1bf5091c5f2f0e9463a556d2c4327afefacca76528",
+  "prior_v3_verdict": "CHANGES_REQUIRED",
+  "prior_varied_record_failure": {
+    "limit_bytes": 2147483648,
+    "peak_rss_bytes": 2420178944,
+    "quality_or_model_outcomes": false
+  },
+  "raw_independent_evidence_inventory": {
+    "out/raw/v3-runtime.json": {
+      "bytes": 380,
+      "sha256": "0b0c0d76eb9e5e904a551452d5b9a332f0a6a29ad1c2401710e0df8868a3a7ae"
+    },
+    "out/raw/v4-fixture-probe.log": {
+      "bytes": 5893,
+      "sha256": "06551838eab23105bec30401f06046b2cab01d8b182fce64e972fcc4aec03fcb"
+    },
+    "out/raw/v4-focused-tests.log": {
+      "bytes": 111,
+      "sha256": "9b48a8ad237b8d205f7fd0f275f053fe7fd9da6b62139bd88867d3ad33fdc7bf"
+    },
+    "out/raw/v4-packet-audit.json": {
+      "bytes": 2180,
+      "sha256": "7950e66a5fdce2e5886f49bbd5e0d519e24002559cdc1174d36a4c665fab5c8c"
+    },
+    "out/raw/v4-regression-red-on-v3.log": {
+      "bytes": 2829,
+      "sha256": "5b99c7def736300468e06a39c08805d7a9601e7fc6a50c9f2969f42a143ce7cb"
+    },
+    "out/raw/v4-source.diff": {
+      "bytes": 1486,
+      "sha256": "7001a24795f6619b7711c82d3e93f799c5b07755d61891bc6476c1f2d5615026"
+    },
+    "out/raw/v4-test.diff": {
+      "bytes": 1219,
+      "sha256": "98489261f4bb04f962e77093ebd842d315e1e74e676242a7a31870a9d1d969d8"
+    },
+    "scratch/v3_fixture_probe.py": {
+      "bytes": 6533,
+      "sha256": "b62cdfb558deec26972424fb68f75c9702268124d90e1c2c9879945bcc87cefe"
+    },
+    "scratch/v4_audit.py": {
+      "bytes": 3307,
+      "sha256": "12b224b5182f30bc929760eeeb371b8cad11aa4d921b259fe43489aff5cda5b7"
+    },
+    "scratch/v4_fixture_probe.py": {
+      "bytes": 6533,
+      "sha256": "033c2f0859ca4c734e815680fa2b3f817902cf7a97cdd87f52d0d3b573a1d931"
+    }
+  },
+  "reviewer": "session-042fe928e14bb348f5818bc4c41b84c1",
+  "root_next_action": "Integrate exactly the v4 source hash and final regression test hash, check actual final bindings, preserve original and second-failure evidence, accept additive amendment002, and obtain fresh staged profiles/admissions before renewed empirical execution.",
+  "schema": "eegt-013-independent-v4-source-review/v1",
+  "scope": "v4 completion of the v3 sequential qualification CPU accounting correction relative to accepted v2; source-correction only",
+  "status": "ACCEPTED",
+  "v4_accepted_empirical_freeze": false,
+  "v4_final_source_sha256": "5429ea4e10da40ccafdf3d1baacdcd0d8f1f8edb5dba787443bb1a6182a1b2a8",
+  "v4_final_test_sha256": "ad9ca755e75e90ce274a49b3f19d4d5b7632e016354ce2a0be377f3912b122f3",
+  "v4_packet_manifest_sha256": "a80347f0771f01162e346b1b3ce80389088bae75b22a662024b6ade10708f612",
+  "v4_regression_manifest_sha256": "b53be427d230285e072e2540771f4ff127ac7b91d37bf5f9c74081948befe6ee"
+}

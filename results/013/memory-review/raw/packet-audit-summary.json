@@ -1,0 +1,44 @@
+{
+  "schema": "eegt-013-independent-packet-audit/v1",
+  "input_manifest_sha256": "f2a596cc27d162af95eccc67881fd23fa43c28baeda070c57d47e07a2a8d56d4",
+  "declared_count": 583,
+  "actual_count": 583,
+  "packet_mismatches": [],
+  "source_binding_mismatches": [],
+  "report_artifact_mismatches": [],
+  "report_source_hash_mismatches": [],
+  "changed_tree_files": [
+    {
+      "path": "eegt/validation_intake.py",
+      "original": {
+        "sha256": "c773b4159d907783df945e1e1e934efbddf8fd4e2bd851066e9172da65496761",
+        "bytes": 50970
+      },
+      "candidate": {
+        "sha256": "acb6a283f1a38ee422fd6344f5907e36cd6059dc3350da26c61b1d5b676231a7",
+        "bytes": 51148
+      }
+    },
+    {
+      "path": "tests/test_validation_intake.py",
+      "original": {
+        "sha256": "6280547db9c55a7b1614c24cd671e1ad90f0d9207e88690f45fbcb9a1b9fe902",
+        "bytes": 16308
+      },
+      "candidate": {
+        "sha256": "da8dc5be011b34ca81716d4f2538235dd1991bdc34d07a0a0dfc59cf53c34f17",
+        "bytes": 18985
+      }
+    }
+  ],
+  "original_manifest_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e",
+  "draft_amends_original": true,
+  "frozen_unchanged": {
+    "resource_bounds": true,
+    "runtimes": true,
+    "models": true,
+    "protocol_bytes": true,
+    "source_list_bytes": true,
+    "source_binding_count": true
+  }
+}

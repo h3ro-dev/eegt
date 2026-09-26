@@ -1,0 +1,19 @@
+{"block_effects_verified":4,"detector_regenerated":false,"event_partitions_verified":23,"full_event_blocks_verified":1,"model_forward_called":false,"model_outputs_verified":1220,"native_matches_verified":816,"native_timelines_verified":68,"original_packet_manifest_sha256":"2897dd09d63c7e3f635e46bc88f4f50d345bb3ee59c47ffbae09df872a12dd10","prepared_metrics_verified":20,"prepared_variant_inputs_verified":610,"schema":"eegt-validation-exposed-parity/v1","selected_numeric_rows_verified":122,"sqlite_sha256":"427627c73149bce542b77ca152d2e0a4c0c32eb0b6b983839d360e8967c949bb","status":"EXACT_ROW_ZERO_PARITY","supplement_manifest_sha256":"ef832eb6a22fba331909f25c1ef07a49cabeaa519c6582cd488ec1704109d9ce"}
+       44.52 real        29.50 user         1.62 sys
+          1656717312  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              108479  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  89  voluntary context switches
+               93289  involuntary context switches
+        106476580880  instructions retired
+         65452309895  cycles elapsed
+          1627752104  peak memory footprint

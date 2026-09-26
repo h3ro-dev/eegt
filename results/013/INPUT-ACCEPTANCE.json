@@ -1,0 +1,13 @@
+{
+  "schema": "eegt-validation-input-acceptance/v1",
+  "status": "ACCEPTED",
+  "run_source_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "inputs": {
+    "results/013/prepared.json": "b3297aa9571d8221a54f91efc3e434a2fb859f8c940d82edc565b49e617c80f5",
+    "data/derived/013/native-selected.npz": "1b65adf61d5b355b8c6d0262b434665d167a83c27459dd8717d439a07bbd23f5",
+    "data/derived/013/prepared.npz": "5c86188a3e8e4c3fcadafb0b1becb8525acf3c7eb56d92018aef1a92fa24f794"
+  },
+  "accepted_by": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "accepted_utc": "2026-09-26T14:36:02.311509+00:00",
+  "evidence": "Independent root quality census/hash checks plus unchanged validate_prepared recomputed complete9600row census, selection, array hashes/masks/shapes and separate cohort gates. New_people INSUFFICIENT_PARTICIPANTS(2); new_sessions READY(6). No retuning."
+}

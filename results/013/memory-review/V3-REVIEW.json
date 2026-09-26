@@ -1,0 +1,224 @@
+{
+  "bead": "eco-uzwh8s.38.3.1",
+  "checks": {
+    "additive_failure_log_hashes_recorded": true,
+    "all_ten_qualification_fields_equal_archived": true,
+    "blas_threads": 1,
+    "changed_paths_exactly_validation_intake_and_its_test": true,
+    "complete_reaped_child_cpu_summed_in_v3_gate": false,
+    "exposed_fixture_reads": 4,
+    "four_read_parent_plus_max_child_peak_bytes": 1062092800,
+    "four_read_peak_below_2gib": true,
+    "fresh_child_verifies_loaded_sources": true,
+    "known_decoder_rejection_reason_equal": true,
+    "numeric_worker_at_a_time": true,
+    "packet_declared_hashes_and_names_match": true,
+    "parent_waits_and_reaps_worker_before_next_read": true,
+    "patch_applied_cleanly_to_exact_v2_scratch_copy": true,
+    "protocol_source_list_decoder_and_scientific_code_unchanged": true,
+    "root_supplied_tests": "18 passed, 1 skipped (packet evidence only)",
+    "scientific_rss_bound_bytes": 2147483648,
+    "source_drift_is_fatal_and_no_child_remains": true,
+    "unexpected_worker_error_is_fatal": true,
+    "v3_focused_tests": "11 passed, 1 skipped (independent pinned 3.12.14)",
+    "v3_resource_and_provenance_tests": "7 passed, 9 subtests passed (independent pinned 3.12.14)",
+    "worker_memory_aggregated_as_parent_peak_plus_max_child_peak": true
+  },
+  "dollar_cost": "UNKNOWN",
+  "effective_user_policy": "2026-09-26.2",
+  "exact_reviewed_file_inventory": {
+    "AMENDMENT-CONTRACT.md": {
+      "bytes": 2202,
+      "sha256": "31f6673062635f688a011d69e63d5bda0937c7c7277c5ab94d9cbd0417196335"
+    },
+    "PLAN.md": {
+      "bytes": 1516,
+      "sha256": "aafdb2e104e2b70cc518dfe68fecb21fe9ad9171277f90d28d234cab8df6a981"
+    },
+    "evidence/qualification-output.json": {
+      "bytes": 485,
+      "sha256": "beaaf226d72b9988b6893a9a8f95809a8e8dc95fdbc3e45d635023555355ede0"
+    },
+    "out/REVIEW.json": {
+      "bytes": 106988,
+      "sha256": "c541d61d2a2d824afbe4f1ebcf70b46f738fc2bdc0eff689d18995f04fd6081f"
+    },
+    "out/REVIEW.md": {
+      "bytes": 4996,
+      "sha256": "799637f43001e6067ee458330a860def54ad6bde02aec878de18c2fbd38a2451"
+    },
+    "scratch/v3-diagnostic-binding.json": {
+      "bytes": 9998,
+      "sha256": "3c9df28613eab51b5ea1a3a5106d7900f768cfadc594b0bbc6e0f359976e38b6"
+    },
+    "scratch/v3-repo/eegt/repeated.py": {
+      "bytes": 22639,
+      "sha256": "5f39bbd820147fb4d4d1df715cd5b818c8fd9f3be46797cf090098812105b6c3"
+    },
+    "scratch/v3-repo/eegt/validation_intake.py": {
+      "bytes": 54381,
+      "sha256": "e103cfb1d1b45a649f9446d3b4f1e9f7580c510b129e13efcac6b0641eab1225"
+    },
+    "scratch/v3-repo/eegt/validation_study.py": {
+      "bytes": 84667,
+      "sha256": "31568d7d54fd363bc0030bf28af999f6757ba02d45cd0dd13bbb7060aa97cdec"
+    },
+    "scratch/v3-repo/protocol/corpus-manifest-013.json": {
+      "bytes": 36047,
+      "sha256": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3"
+    },
+    "scratch/v3-repo/protocol/engineering-input-013.json": {
+      "bytes": 34211,
+      "sha256": "93d4769d8d1653f26ed4c64bfaf312083f1e0511a47fb830c4319d2a5326fe17"
+    },
+    "scratch/v3-repo/protocol/experiment-013.json": {
+      "bytes": 11752,
+      "sha256": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9"
+    },
+    "scratch/v3-repo/tests/test_validation_intake.py": {
+      "bytes": 24423,
+      "sha256": "99bef8f1f68e407fa01d2415f101b6677d5534161b06ad4b20f750a63cb6e4c2"
+    },
+    "update-root-v2/eegt/validation_intake.py": {
+      "bytes": 51272,
+      "sha256": "eb9cdbe5bc464d7ff4f3a56ab5c0bacd8189933e174d50b1c6f50ec05bd0b4cf"
+    },
+    "update-root-v2/tests/test_validation_intake.py": {
+      "bytes": 21381,
+      "sha256": "5431a2a821e80af6df62e068f4dc5a5bccfd6c73357c10600d770c79f5ac195b"
+    },
+    "update-root-v3/INPUT-MANIFEST.json": {
+      "bytes": 491,
+      "sha256": "0c43c28957149598ed1fe261c4d7fe75ec757e292badf998cce215bcb6414aae"
+    },
+    "update-root-v3/delta.patch": {
+      "bytes": 10084,
+      "sha256": "b081105cd4bf7f6a4b674404ab6658d852574b4f1072282ae80bdf516d519bab"
+    },
+    "update-root-v3/eegt/validation_intake.py": {
+      "bytes": 54381,
+      "sha256": "e103cfb1d1b45a649f9446d3b4f1e9f7580c510b129e13efcac6b0641eab1225"
+    },
+    "update-root-v3/failure-evidence/qualify-amendment-first.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "update-root-v3/failure-evidence/qualify-amendment-first.resource.log": {
+      "bytes": 1542,
+      "sha256": "8a3eecb3f422448fd8a93675f439059098598ca7e44bd7258196af2ffb786a65"
+    },
+    "update-root-v3/failure-evidence/qualify-amendment-full.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "update-root-v3/failure-evidence/qualify-amendment-full.resource.log": {
+      "bytes": 1860,
+      "sha256": "a526b560d979c18e320340fccae870d40d96885b9836d77ae85b13af25d093e3"
+    },
+    "update-root-v3/failure-evidence/qualify-memory-trace.log": {
+      "bytes": 2140,
+      "sha256": "908e494671c07948166f2385a5cbe8070726bc05352eed37a4b0a040fa1506cc"
+    },
+    "update-root-v3/local-tests.log": {
+      "bytes": 110,
+      "sha256": "b91c24b98df34b94062f5874676b5a9596e3e2a5ca4a059a6134c64d164eb019"
+    },
+    "update-root-v3/results/013/RUN-SOURCE-MANIFEST.json": {
+      "bytes": 9901,
+      "sha256": "d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad"
+    },
+    "update-root-v3/tests/test_validation_intake.py": {
+      "bytes": 24423,
+      "sha256": "99bef8f1f68e407fa01d2415f101b6677d5534161b06ad4b20f750a63cb6e4c2"
+    }
+  },
+  "integrator": "session-13ffd342d925791b856652db872e4142",
+  "limits": [
+    "Only the previously exposed Experiment008 sub-001/ses-001 waveform was read in this review.",
+    "Repeated exposed-fixture success does not prove fit for the varied 20-record Experiment013 set.",
+    "The packet's accepted seal is the prior v2 seal and does not bind v3 source; diagnostic binding is not an empirical execution freeze.",
+    "The failed technical attempt's original unknown-subset exposure remains preserved; copied second-failure logs add evidence without changing that historical claim.",
+    "No empirical quality, preparation or model stage was run or inferred."
+  ],
+  "original_preaccess_seal_sha256": "3c62792612383e548cb358aa3ed7090cc0bd74ee39853b322c2dd71c1978c03e",
+  "prior_accepted_v2_seal_sha256": "d1eaf8101bf2c11ba17baf3f1afa05af29e9dd5bfb4bede361f84a949d661dad",
+  "prior_v2_review_json_sha256": "c541d61d2a2d824afbe4f1ebcf70b46f738fc2bdc0eff689d18995f04fd6081f",
+  "prior_v2_review_remains_accepted_in_bounded_scope": true,
+  "prior_varied_record_failure": {
+    "failure_log": "update-root-v3/failure-evidence/qualify-amendment-full.resource.log",
+    "limit_bytes": 2147483648,
+    "peak_rss_bytes": 2420178944,
+    "quality_or_model_outcomes": false,
+    "trace_last_reported_peak_rss_bytes": 2417770496,
+    "trace_log": "update-root-v3/failure-evidence/qualify-memory-trace.log"
+  },
+  "raw_independent_evidence_inventory": {
+    "out/raw/v3-cpu-audit.json": {
+      "bytes": 832,
+      "sha256": "bcb1450c3ad9bda42f10b496e509dbc1442c2031a0214b95f8a22b4ef295e330"
+    },
+    "out/raw/v3-cpu-crosscheck.log": {
+      "bytes": 3896,
+      "sha256": "23056a531a3507f14db6dad031e7dac6ea9b9b9ff9d85c44dec249e7c374e3be"
+    },
+    "out/raw/v3-fixture-probe.log": {
+      "bytes": 4837,
+      "sha256": "b52b945642d2f41845f71c0a06110f4e32dabd1dddfc8d551a89c148f0cee81f"
+    },
+    "out/raw/v3-focused-tests.log": {
+      "bytes": 111,
+      "sha256": "f0dca88eabf7d2f141cb376c6c8d2a1a36b9c258d104e421617b5000e9f6ab91"
+    },
+    "out/raw/v3-packet-audit.json": {
+      "bytes": 3705,
+      "sha256": "5e8a21e85ceb847e860065495370d59a889642b526b350084284a4d46fc9b2c0"
+    },
+    "out/raw/v3-resource-provenance-tests.log": {
+      "bytes": 109,
+      "sha256": "742bb66502d6b0b86d42663840e28ab0f0c651ce8325b855fd299a147e0360a3"
+    },
+    "out/raw/v3-runtime.json": {
+      "bytes": 380,
+      "sha256": "0b0c0d76eb9e5e904a551452d5b9a332f0a6a29ad1c2401710e0df8868a3a7ae"
+    },
+    "scratch/v3_audit.py": {
+      "bytes": 3677,
+      "sha256": "0fd38d44e1c023f17f3987e4ada45cce9d38a584f70babeec54c2703dcf2341d"
+    },
+    "scratch/v3_cpu_audit.py": {
+      "bytes": 1691,
+      "sha256": "cacbea796465982c7e5102eb5e31fa8370f556acb3e8b77e811415d27d1d8b81"
+    },
+    "scratch/v3_fixture_probe.py": {
+      "bytes": 6533,
+      "sha256": "b62cdfb558deec26972424fb68f75c9702268124d90e1c2c9879945bcc87cefe"
+    }
+  },
+  "required_change": {
+    "actual_complete_aggregate_cpu_after_two_reads_seconds": 4.81552,
+    "finding": "v3 samples worker CPU before IPC send and interpreter teardown, then treats the incomplete sample as complete child CPU. The cumulative CPU admission can undercount.",
+    "illustrative_false_pass_bound_seconds": 4.6845255,
+    "measured_post_snapshot_cpu_gaps_seconds": [
+      0.12980499999999973,
+      0.13218400000000008
+    ],
+    "measured_total_underaccounted_after_two_reads_seconds": 0.2619889999999998,
+    "original_scientific_cpu_bound_seconds": 7200,
+    "repair_direction": "After each worker join, account the reaped child's full user+system CPU (for example a RUSAGE_CHILDREN delta), then apply the unchanged stage CPU gate and log the complete value.",
+    "source_lines": [
+      "update-root-v3/eegt/validation_intake.py:323",
+      "update-root-v3/eegt/validation_intake.py:340",
+      "update-root-v3/eegt/validation_intake.py:343",
+      "update-root-v3/eegt/validation_intake.py:168"
+    ],
+    "v3_reported_aggregate_cpu_after_two_reads_seconds": 4.553531
+  },
+  "reviewer": "session-042fe928e14bb348f5818bc4c41b84c1",
+  "root_next_action": "Repair complete child CPU accounting in the sequential qualification delta and resubmit exact hashes for focused independent review; then root owns additive amendment002, fresh staged profiles/admissions and any empirical execution.",
+  "schema": "eegt-013-independent-v3-source-review/v1",
+  "scope": "v3 two-file sequential fresh-process qualification delta relative to exact accepted v2; source-correction review only",
+  "status": "CHANGES_REQUIRED",
+  "v3_diagnostic_binding_executable_empirical_freeze": false,
+  "v3_diagnostic_binding_sha256": "3c9df28613eab51b5ea1a3a5106d7900f768cfadc594b0bbc6e0f359976e38b6",
+  "v3_packet_input_manifest_sha256": "0c43c28957149598ed1fe261c4d7fe75ec757e292badf998cce215bcb6414aae"
+}

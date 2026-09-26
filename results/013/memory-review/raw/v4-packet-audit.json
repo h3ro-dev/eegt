@@ -1,0 +1,37 @@
+{
+  "exact_two_file_delta": true,
+  "regression_declared_hashes_match": true,
+  "regression_declared_names_match": true,
+  "regression_inventory": {
+    "INPUT-MANIFEST.json": "b53be427d230285e072e2540771f4ff127ac7b91d37bf5f9c74081948befe6ee",
+    "local-tests.log": "a942b01338d9d6aed44d06dda2720e7ae3e912a2b3d25fbb1f68a63bceca8866",
+    "test_validation_intake.py": "ad9ca755e75e90ce274a49b3f19d4d5b7632e016354ce2a0be377f3912b122f3"
+  },
+  "regression_manifest_sha256": "b53be427d230285e072e2540771f4ff127ac7b91d37bf5f9c74081948befe6ee",
+  "schema": "eegt-v4-review-packet-audit/v1",
+  "unchanged_decoder_sha256": "5f39bbd820147fb4d4d1df715cd5b818c8fd9f3be46797cf090098812105b6c3",
+  "unchanged_protocol_hashes": {
+    "protocol/corpus-manifest-013.json": "533ec22c1bae6d6a2e31c531d60ace463afd32513d7dc24129f17c489f2cb7d3",
+    "protocol/engineering-input-013.json": "93d4769d8d1653f26ed4c64bfaf312083f1e0511a47fb830c4319d2a5326fe17",
+    "protocol/experiment-013.json": "680b442a3d3cb556748c541e3f50ab8711164b95ef6deff170e1d12c1c5bf9f9"
+  },
+  "unchanged_resource_gate_code_sha256": "31568d7d54fd363bc0030bf28af999f6757ba02d45cd0dd13bbb7060aa97cdec",
+  "v2_review_json_sha256": "c541d61d2a2d824afbe4f1ebcf70b46f738fc2bdc0eff689d18995f04fd6081f",
+  "v3_review_json_sha256": "79157968698009487083fd1bf5091c5f2f0e9463a556d2c4327afefacca76528",
+  "v3_v4_changed_paths": [
+    "eegt/validation_intake.py",
+    "tests/test_validation_intake.py"
+  ],
+  "v4_final_test_matches_regression": true,
+  "v4_packet_declared_hashes_match": true,
+  "v4_packet_declared_names_match": true,
+  "v4_packet_inventory": {
+    "INPUT-MANIFEST.json": "a80347f0771f01162e346b1b3ce80389088bae75b22a662024b6ade10708f612",
+    "eegt/validation_intake.py": "5429ea4e10da40ccafdf3d1baacdcd0d8f1f8edb5dba787443bb1a6182a1b2a8",
+    "local-tests.log": "55064e952a17678705be90e29d2ceb59439eeb5917cba7f1a124ca03b0305bac",
+    "tests/test_validation_intake.py": "a4c0bd0eeeabc60379af7c036b9ef3f02ecedcc8d8ef03d23a9180368ad6e90a"
+  },
+  "v4_packet_manifest_sha256": "a80347f0771f01162e346b1b3ce80389088bae75b22a662024b6ade10708f612",
+  "v4_regression_changes_only_test": true,
+  "v4_source_matches_packet": true
+}

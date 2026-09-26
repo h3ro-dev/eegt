@@ -1,0 +1,22 @@
+prepared_record= p0
+indexed_before= (0, 'p0', 'ELIGIBLE')
+tampered_indexed_person= wrong-person
+resume_refused= True ValueError existing event index identity/census mismatch
+        9.30 real         1.16 user         0.56 sys
+           135823360  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14362  page reclaims
+                1280  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1543  voluntary context switches
+                9209  involuntary context switches
+          4743349069  instructions retired
+          3648626582  cycles elapsed
+           106054208  peak memory footprint

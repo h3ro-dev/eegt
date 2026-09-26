@@ -1,0 +1,22 @@
+prepared_record= p0
+indexed_before= (0, 'p0', 'ELIGIBLE')
+indexed_after_resume= (0, 'wrong-person', 'ELIGIBLE')
+resume_refused= False
+        5.70 real         1.10 user         0.36 sys
+           135512064  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15607  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 383  voluntary context switches
+                4899  involuntary context switches
+          4457958451  instructions retired
+          2936652171  cycles elapsed
+           105742912  peak memory footprint

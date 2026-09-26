@@ -1,0 +1,19 @@
+{
+  "schema": "eegt-validation-first-block-review/v1",
+  "status": "ADMITTED",
+  "phase": "events",
+  "profile_sha256": "d573f9db8cdb2d861fe39ca5bcede0b7cd358db1e6f0d5944f2bd4c5098d7158",
+  "run_manifest_sha256": "512adbd8b125c3b6590626bdfd47c608bcc635d97946e6b6ee66852dc5e117c5",
+  "resource_bounds": {
+    "artifact_bytes": 10000000000,
+    "blas_threads": 1,
+    "cpu_seconds": 7200,
+    "first_block_required": true,
+    "max_download_bytes": 4000000000,
+    "numeric_processes": 1,
+    "rss_bytes": 2147483648
+  },
+  "admitted_by": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "reviewed_utc": "2026-09-26T14:41:26.877563+00:00",
+  "rationale": "First event block14.469426CPU seconds,1119715328B peak.174selected blocks projects2517.7CPU seconds<7200. Actual first block event partitions24881096B and SQLite4825088B; fixed existing artifacts1.562GB plus174x29.707MB projects6.732GB<10GB. Profile naive multiplication of preexisting corpus is not incremental growth. Per-block resource checks retained; no cap increase. Both encoder processes exited COMPLETE; only event process will run; Studio1 load8.48/32 and91percent memory free at latest observation."
+}
