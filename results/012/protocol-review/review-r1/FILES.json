@@ -1,0 +1,59 @@
+{
+  "evidence": {
+    "input/MANIFEST.json": {
+      "sha256": "d944de7ec3482b63ae9bb63c8f133be01d64bef6affbc931b63fd3061cc70f50"
+    },
+    "input/METHOD-RECHECK.json": {
+      "sha256": "3c7e055404f2e7c894d9f806c89994c85c50aa8f739baf8a787eaf4021bf9869"
+    },
+    "input/METHODS.md": {
+      "sha256": "7aefc9cb2fee774bc24d1ec3a6a85c467311e4e8660e2388792cfa7dde2df10c"
+    },
+    "input/PROTOCOL-DRAFT.md": {
+      "sha256": "a63ec70031c58ca1ebb56677c903a522d70eb4e776d99fbb9dafc3061788346a"
+    },
+    "input/REPORT.md": {
+      "sha256": "5c57c80b1dec7ad025f5d7863a261eff95e11667f3ffefae812c75540f5c118c"
+    },
+    "input/ROOT-R1-CHECK.json": {
+      "sha256": "3f1b8fd6b7ac9562bb4d4943dddc0aaafeaff135df35daf840f8e373b82f03fa"
+    },
+    "input/SYNTHETIC.json": {
+      "sha256": "bc8f2ec07e520f4c08901ab7785fa416854e39b52b3f80c628c0ee0e3072fd37"
+    },
+    "input/cross_encoder_study.py": {
+      "sha256": "cfc934775d663396713f3105dd121878186ff1d375c9531398f25a5a5c389eae"
+    },
+    "input/distributed_study.py": {
+      "sha256": "0f4f670b16494c6626a0edd36f53e94cbae2c1462c466209bede6108e5996266"
+    },
+    "input/experiment-011.json": {
+      "sha256": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e"
+    },
+    "input/pretrained_study.py": {
+      "sha256": "80187b84274606d4d7d4c514d7eb05b892b4b8df96b8a92b6ea099293a232e3c"
+    },
+    "input/reproduce_cross_encoder.py": {
+      "sha256": "34ef60cb572e1242040a46860de8b7daae60b6bc18d0e0ae37ae411129da022f"
+    },
+    "input/requirements-events.lock": {
+      "sha256": "0397711648cd5473266b6196d4ae010ba8cd713362b2ff69d5d282b01e6fe7c4"
+    },
+    "input/test_waveform_events.py": {
+      "sha256": "a6c53c4a416062c6b7a59dd79fc737ddbf293894a867cff749356ba2704783ac"
+    },
+    "input/waveform_events.py": {
+      "sha256": "80a9b8f62693e551c7f385a911fa15ca321325b7983f63da8fc7373ba451f572"
+    }
+  },
+  "outputs": {
+    "out/REVIEW.json": {
+      "sha256": "062a45fb629a342b53812330617dd101363c223a05261f6b5b841156c8f380ab"
+    },
+    "out/REVIEW.md": {
+      "sha256": "fbc2a4dbeefb5e106d9a3e87818ea5961c0a2dee6b05c1d7733a0f94386af699"
+    }
+  },
+  "schema": "eegt-review-files/v1",
+  "self_excluded": "out/FILES.json"
+}

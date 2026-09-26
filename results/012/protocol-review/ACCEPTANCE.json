@@ -1,0 +1,21 @@
+{
+  "schema": "eegt-protocol-acceptance/v1",
+  "status": "ACCEPTED",
+  "bead": "eco-uzwh8s.34.1",
+  "accepted_utc": "2026-09-26T04:53:46.880329+00:00",
+  "method_sha256": "86f41254f1fc35a0d95e4e9aab45bec0e12d1964ec18d8a38a7d92c57daf92e9",
+  "independent_native_task": "01a0dbfc-3247-7363-99db-51d22e64d03a",
+  "independent_native_turn": "01a0dc08-411d-7731-ac62-533a2db3dd83",
+  "independent_review_sha256": "5050fb4f2138d69a2fa02b5a2df990f695be32a820e96ea2d501c567ff361384",
+  "root_verified_input_output_hashes": 19,
+  "dispositions": {
+    "P012-01": "RESOLVED",
+    "P012-02": "RESOLVED",
+    "P012-03": "RESOLVED",
+    "P012-04": "RESOLVED",
+    "P012-05": "RESOLVED",
+    "P012-06": "RESOLVED_AS_PRE_RUN_GATE"
+  },
+  "scope": "Protocol design accepted; P012-06 remains a mandatory first-block resource gate. Empirical results and release are not yet run/accepted.",
+  "integration_correction": "An initial assertion wrongly required the resource-gate disposition to equal RESOLVED. It failed before acceptance/freeze. Subsequent accidental Beads closure was immediately reopened; this script validates the actual accepted gate semantics before closure."
+}

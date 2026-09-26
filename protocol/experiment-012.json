@@ -1,0 +1,117 @@
+{
+  "schema": "eegt-direct-event-experiment/v1",
+  "experiment": "012",
+  "status": "FROZEN",
+  "frozen_at_utc": "2026-09-26T04:53:46.897189+00:00",
+  "method": "protocol/experiment-012-methods.md",
+  "method_status": "The exact reviewed text retains pre-freeze wording as evidence. This immutable wrapper records subsequent root acceptance and freeze. No scientific text changed after recheck.",
+  "independent_review": "results/012/protocol-review/recheck-r1/RECHECK.json",
+  "independent_review_sha256": "5050fb4f2138d69a2fa02b5a2df990f695be32a820e96ea2d501c567ff361384",
+  "inputs": {
+    "protocol/experiment-012-methods.md": "86f41254f1fc35a0d95e4e9aab45bec0e12d1964ec18d8a38a7d92c57daf92e9",
+    "protocol/experiment-010.json": "75f79f511d286254e544a50e470248153dc3b3fe38e1596936f748162cb3fa9b",
+    "protocol/experiment-011.json": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e",
+    "results/010/prepared.json": "545186e75a2a1ca88b0e1da3dc08100fa6bf8d90c6c788358b523e224f3e367c",
+    "results/010/inference.json": "be6ac5395f9c251df6e3e7e29540e642bcbe1da373391f47a6a28645df036201",
+    "results/011/inference.json": "28f66c7f97af94181810e6f5cf817b72ccc88b104e7a8d26f647ae666e6fb82a",
+    "data/derived/010/prepared.npz": "894cfc2f49371223ea488b6b662d909ba366ad1e84c215d18a37c9d64a138abc",
+    "data/derived/010/embeddings.npz": "5c961360971ed18c88a0c2e474fece27ca7db08d359ffa8223a81f1c64b7de40",
+    "data/derived/011/embeddings.npz": "26e6deb6c7b93ef0f1df7103c71f2e785a3035982770295b61e9886ba0e54504",
+    "data/derived/012/native-selected.npz": "ca834711d7aada6f191b4b3eb05c1a3e1e4e40b7b4a1dde0af35f81843683533",
+    "data/derived/012/native-selected-curator.json": "0423b46177767e36d52232dd74f9f035509b5d63900fb610d31e7f60887d871b",
+    "eegt/waveform_events.py": "80a9b8f62693e551c7f385a911fa15ca321325b7983f63da8fc7373ba451f572",
+    "eegt/transitions.py": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d",
+    "eegt/pretrained_study.py": "80187b84274606d4d7d4c514d7eb05b892b4b8df96b8a92b6ea099293a232e3c",
+    "requirements-events.lock": "9d6ace62d69501fa83a8c6a0c4d7fd388e61aa715c71af48c29c429c061791ec",
+    "scripts/prepare_waveform_inputs.py": "ff839f9ee20b4a0c2f91692a42d11f437aa339841c0dbc24fe5359b7c926be79"
+  },
+  "input_contract": {
+    "native_archive": "data/derived/012/native-selected.npz",
+    "native_curator": "data/derived/012/native-selected-curator.json",
+    "native_shape": [
+      122,
+      4,
+      7500
+    ],
+    "native_rate_hz": 250,
+    "prepared_archive": "data/derived/010/prepared.npz",
+    "prepared_shape": [
+      122,
+      4,
+      30,
+      200
+    ],
+    "prepared_rate_hz": 200,
+    "native_units": "microvolt",
+    "prepared_units": "microvolt/100",
+    "selection_receipt": "results/010/prepared.json",
+    "source_exposure": "exact122alreadyexposedselectedblocks; no reserved people or new source hours"
+  },
+  "models": {
+    "codebrain": {
+      "archive": "data/derived/010/embeddings.npz",
+      "receipt": "results/010/inference.json"
+    },
+    "cbramod": {
+      "archive": "data/derived/011/embeddings.npz",
+      "receipt": "results/011/inference.json"
+    }
+  },
+  "native_variants": [
+    "primary",
+    "gain_x2",
+    "polarity_xneg1",
+    "additive_offset_50uv",
+    "smoothing_21ms",
+    "smoothing_51ms",
+    "passband_0p5_40",
+    "passband_1_30",
+    "notch_50hz",
+    "notch_60hz",
+    "add_50hz",
+    "add_60hz",
+    "common_mean_reference",
+    "spike_100uv_8ms",
+    "symmetric_clipping_50uv",
+    "independent_phase",
+    "shared_phase",
+    "shift_plus_200ms"
+  ],
+  "prepared_variants": [
+    "original",
+    "gain_half",
+    "polarity_flip",
+    "channel_reverse",
+    "independent_phase"
+  ],
+  "primary_endpoints": [
+    {
+      "model": "codebrain",
+      "metric": "geometry"
+    },
+    {
+      "model": "codebrain",
+      "metric": "change"
+    },
+    {
+      "model": "cbramod",
+      "metric": "geometry"
+    },
+    {
+      "model": "cbramod",
+      "metric": "change"
+    }
+  ],
+  "source_freeze": "After implementation tests and before first empirical detector call, seal an immutable run manifest with all actual analysis source, protocol/input hashes and installed versions. Preserve amendments and failed partial runs.",
+  "resource_gate": {
+    "first_array_row": 0,
+    "first_candidate_index": 62,
+    "numeric_processes": 1,
+    "blas_threads": 1,
+    "rss_bytes": 2147483648,
+    "artifact_reassessment_bytes": 3000000000,
+    "cpu_reassessment_seconds": 7200,
+    "rule": "Measure full first-block workload and project122 before other121; stop for root documented resource reassessment if unsupported. No omitted candidates."
+  },
+  "publication": "Independent output/code review, reproducible extracted package and live/download readback required before closing parent.34; no universality/semantic/clinical claim."
+}

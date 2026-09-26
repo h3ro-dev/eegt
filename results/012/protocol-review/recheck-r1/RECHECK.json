@@ -1,0 +1,126 @@
+{
+  "arithmetic": {
+    "development_fixture_estimated_compressed_bytes_122": 3402418716,
+    "estimated_excess_over_decimal_3GB_bytes": 402418716,
+    "five_person_bonferroni_four_p": 0.25,
+    "five_person_minimum_two_sided_raw_p": 0.0625,
+    "native_phase_rotated_bins": 3749,
+    "native_settings_including_primary": 18,
+    "prepared_variants_per_block": 5
+  },
+  "bead": "eco-uzwh8s.34.1",
+  "dispositions": [
+    {
+      "disposition": "RESOLVED",
+      "evidence_refs": [
+        "input/revision-r1/PROTOCOL-DRAFT.md:69-73",
+        "input/revision-r1/transitions.py:493-510",
+        "input/revision-r1/PREPARATION-ACCEPTANCE.json:1-12"
+      ],
+      "id": "P012-01",
+      "prior_severity": "BLOCKER",
+      "reason": "The revision pins one native float64 [4,7500] phase_surrogate source, seed, whole-block invalid-mask abstention, 3749 rotated positive-frequency bins, independent [4,3749] versus shared [1,3749] draw shapes, unchanged DC/Nyquist, output hashes and a separate 200 Hz prepared path. The supplied function implements those FFT and RNG operations. The preparation receipt is a root-owned acceptance assertion; this source review does not re-open its array."
+    },
+    {
+      "disposition": "RESOLVED",
+      "evidence_refs": [
+        "input/revision-r1/PROTOCOL-DRAFT.md:75-79",
+        "input/METHODS.md:47-49",
+        "input/waveform_events.py:325-346",
+        "input/waveform_events.py:519-529"
+      ],
+      "id": "P012-02",
+      "prior_severity": "BLOCKER",
+      "reason": "The revision explicitly chooses the conservative two-stage rule required by accepted METHODS: intersect guarded center intervals, then require each complete already expanded row support inside that intersection. It separately records raw overlap and guarded C duration, reports C once per channel/variant, and pools counts/matches without duplicating exposure. No matching-row event rate is inferred from C."
+    },
+    {
+      "disposition": "RESOLVED",
+      "evidence_refs": [
+        "input/revision-r1/PROTOCOL-DRAFT.md:81-87",
+        "input/waveform_events.py:219-238",
+        "input/waveform_events.py:487-529"
+      ],
+      "id": "P012-03",
+      "prior_severity": "BLOCKER",
+      "reason": "Common reference requires all four contact masks true and never averages a changing subset. Shift copies samples and masks by exactly 50 at 250 Hz, retains an invalid prefix, refuses multi-segment inputs, and maps all seconds/support/valid and guarded intervals into comparison-only source-clock copies. Native emitted rows remain unchanged. The polarity comparison copy maps peak/trough and both curvature directions."
+    },
+    {
+      "disposition": "RESOLVED",
+      "evidence_refs": [
+        "input/revision-r1/PROTOCOL-DRAFT.md:89-95",
+        "input/waveform_events.py:177-195",
+        "input/cross_encoder_study.py:482-490"
+      ],
+      "id": "P012-04",
+      "prior_severity": "MAJOR",
+      "reason": "Prepared bins use integer indices [200k,200(k+1)), fixed channel/event component order, and the original/independent_phase all-channel eligible set K for both models. Geometry and change use fixed required vectors/pairs and whole-metric abstention, never post hoc interval deletion. Each other variant has a fixed K intersection and shared descriptive support across encoders."
+    },
+    {
+      "disposition": "RESOLVED",
+      "evidence_refs": [
+        "input/revision-r1/PROTOCOL-DRAFT.md:48",
+        "input/revision-r1/PROTOCOL-DRAFT.md:97-101",
+        "input/cross_encoder_study.py:411-421"
+      ],
+      "id": "P012-05",
+      "prior_severity": "MINOR",
+      "reason": "The exact person-level sign-flip comparison reuses the Experiment011 1e-12 inclusive-tie convention, with all 2^n assignments and Bonferroni across four endpoints. Recording quantiles, method-specific guarded exposure, no duplicated time, null zero-exposure rates and night002-minus-night001 differences are now explicit."
+    },
+    {
+      "disposition": "RESOLVED_AS_PRE_RUN_GATE",
+      "evidence_refs": [
+        "input/revision-r1/PROTOCOL-DRAFT.md:103-107",
+        "input/revision-r1/ARTIFACT-ESTIMATE-DETAIL.json:1-9",
+        "input/revision-r1/PREPARATION-ACCEPTANCE.json:1-12"
+      ],
+      "id": "P012-06",
+      "prior_severity": "MAJOR",
+      "reason": "The planning estimate is reproducible from the supplied fixture receipt: 122*(1,539,410 + 22*1,197,694)=3,402,418,716 compressed bytes, already above the 3 GB reassessment point before metadata. The protocol now fixes the first selected block, measures all 18 native settings, five prepared variants and archived representations, projects CPU/RSS/complete compressed bytes, and stops before the remaining 121 blocks if unsupported. Complete rows and denominators cannot be dropped to fit."
+    }
+  ],
+  "handoff": "Original root may use this ACCEPTED design review in its own freeze gate; it must still verify exact live inputs/implementation, then measure the fixed first block and honor the stated stop point before any remaining empirical run.",
+  "implementation_ready_without_scientific_guesswork": true,
+  "remaining_unknown": [
+    "This source-only recheck does not independently establish the 122 native masks as all true: PREPARATION-ACCEPTANCE.json states 244 independent checks and array/curator hashes but does not expose per-mask counts, and the underlying array/script bytes were not supplied. The frozen preflight must reject any changed or invalid mask for a native phase variant as specified.",
+    "The actual 010 prepared and both 010/011 embedding archives, model weights and native SET bytes were not supplied or opened. Their hash, row-order, calibration and model-output checks remain root-owned input gates, not findings about the protocol design.",
+    "Actual first-block detector CPU/RSS/compressed bytes and the 122-block projection are unknown until the explicitly bounded post-freeze measurement. The 3,402,418,716-byte receipt is a development-fixture estimate, not observed Experiment012 size.",
+    "Event counts, support loss under the intentional additional guard, endpoint estimability, person-level effects and night differences are unknown. No empirical outcome or reserve was inspected in this recheck.",
+    "The protocol remains an unfrozen candidate. Freeze, implementation/release verification and publication are owned by the original root. Native model monetary cost remains UNKNOWN."
+  ],
+  "residual_contradictions_requiring_scientific_choice": [],
+  "review_scope": "Bounded source-only planning recheck of revision 86f41254 against the six prior findings; no protocol edits, empirical EEG/model weights/reserve, detector execution or freeze.",
+  "reviewed_new_input_sha256": {
+    "input/revision-r1/ARTIFACT-ESTIMATE-DETAIL.json": "73c765fa59f484be644cf7971d79c6be997a9a6495f9c27db658aca23e0dd102",
+    "input/revision-r1/MANIFEST.json": "5a2d0ef72a6a7076183b3a3c4207f227695b8dcb174b863ca994a30252c6f280",
+    "input/revision-r1/PREPARATION-ACCEPTANCE.json": "e3f985cdbb6572179f8ac5bdb00592325aee414399434f3bf9561fbd2cb198a7",
+    "input/revision-r1/PROTOCOL-DRAFT.md": "86f41254f1fc35a0d95e4e9aab45bec0e12d1964ec18d8a38a7d92c57daf92e9",
+    "input/revision-r1/transitions.py": "f0c7c3dbf47f819aed52216369a7878cdf792b305999759704a86bcc3615bf0d"
+  },
+  "reviewed_reference_sha256": {
+    "input/METHOD-RECHECK.json": "3c7e055404f2e7c894d9f806c89994c85c50aa8f739baf8a787eaf4021bf9869",
+    "input/METHODS.md": "7aefc9cb2fee774bc24d1ec3a6a85c467311e4e8660e2388792cfa7dde2df10c",
+    "input/REPORT.md": "5c57c80b1dec7ad025f5d7863a261eff95e11667f3ffefae812c75540f5c118c",
+    "input/ROOT-R1-CHECK.json": "3f1b8fd6b7ac9562bb4d4943dddc0aaafeaff135df35daf840f8e373b82f03fa",
+    "input/cross_encoder_study.py": "cfc934775d663396713f3105dd121878186ff1d375c9531398f25a5a5c389eae",
+    "input/distributed_study.py": "0f4f670b16494c6626a0edd36f53e94cbae2c1462c466209bede6108e5996266",
+    "input/experiment-011.json": "792b56402d7d95eef8a7ed4b727d73b22819a521b6b99af34a37cacf2877ca2e",
+    "input/pretrained_study.py": "80187b84274606d4d7d4c514d7eb05b892b4b8df96b8a92b6ea099293a232e3c",
+    "input/waveform_events.py": "80a9b8f62693e551c7f385a911fa15ca321325b7983f63da8fc7373ba451f572",
+    "out/FILES.json": "4bb172616ac0f3d57f597e82e6d3e996ac131e6be0c3ab935b25b541c90d47d6",
+    "out/REVIEW.json": "062a45fb629a342b53812330617dd101363c223a05261f6b5b841156c8f380ab",
+    "out/REVIEW.md": "fbc2a4dbeefb5e106d9a3e87818ea5961c0a2dee6b05c1d7733a0f94386af699"
+  },
+  "schema": "eegt-experiment-012-protocol-recheck/v1",
+  "status": "ACCEPTED",
+  "verification": {
+    "detector_battery_rerun": false,
+    "empirical_eeg_accessed": false,
+    "model_weights_accessed": false,
+    "native_monetary_cost": "UNKNOWN",
+    "original_review_preserved": true,
+    "reserve_accessed": false,
+    "revision_manifest_entries": 4,
+    "revision_manifest_hashes_and_sizes_match": true,
+    "source_only": true
+  }
+}
