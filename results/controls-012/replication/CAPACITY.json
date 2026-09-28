@@ -1,0 +1,499 @@
+{
+  "audit_script_sha256": "c6b78fcf97308bfc11f908b689d4df55cda17daba2c395787adbad010bebeae8",
+  "channel_metadata": {
+    "PSG": {
+      "ear_contact_names_declared": [
+        "ELA",
+        "ELB",
+        "ELC",
+        "ELT",
+        "ELE",
+        "ELI",
+        "ERA",
+        "ERB",
+        "ERC",
+        "ERT",
+        "ERE",
+        "ERI"
+      ],
+      "ear_reference_declared": [
+        "average"
+      ],
+      "ear_units_declared": [
+        "uV"
+      ],
+      "exact_reference_set": "UNKNOWN",
+      "physical_calibration": "UNKNOWN",
+      "reserved_record_header_verification": "NOT_RUN",
+      "total_channels_declared": 25
+    },
+    "earEEG": {
+      "ear_contact_names_declared": [
+        "ELA",
+        "ELB",
+        "ELC",
+        "ELT",
+        "ELE",
+        "ELI",
+        "ERA",
+        "ERB",
+        "ERC",
+        "ERT",
+        "ERE",
+        "ERI"
+      ],
+      "ear_reference_declared": [
+        "average"
+      ],
+      "ear_units_declared": [
+        "uV"
+      ],
+      "exact_reference_set": "UNKNOWN",
+      "physical_calibration": "UNKNOWN",
+      "reserved_record_header_verification": "NOT_RUN",
+      "total_channels_declared": 13
+    }
+  },
+  "dataset": "ds005185:1.0.2",
+  "denominators": {
+    "recorded_exposed_people": 1,
+    "recorded_exposed_sessions": 2,
+    "recorded_exposed_source_hours": 14.350477777777778,
+    "recorded_unexposed_candidate_people_all_acquisitions": 19,
+    "recorded_unexposed_candidate_sessions_all_acquisitions": 184,
+    "source_acquisition_sessions": {
+      "PSG": 80,
+      "earEEG": 120
+    },
+    "source_payload_bytes": 272924565618,
+    "source_payload_files": 400,
+    "source_people": 20,
+    "source_sessions": 200
+  },
+  "design_consequences": [
+    "Ear-only acquisition offers at most 9 recorded-unexposed candidate people, so a target of 12 complete people is infeasible within that acquisition family.",
+    "PSG sessions offer 19 candidate people and 76 candidate sessions, contingent on a separately frozen ear-contact measurement contract and quality qualification.",
+    "PSG and ear-only session counts must not be treated as independent people or pooled without a prespecified acquisition-family design.",
+    "Nine is only an attainable adjusted-p floor for the prior eight-test family, not adequate power. The minimum scientifically worthwhile effect and transferable variance remain unspecified.",
+    "No additional reserved waveform access is authorized by this audit; protocol freeze and independent review remain required."
+  ],
+  "ear_only_capacity": {
+    "candidate_event_count": null,
+    "candidate_people": [
+      "sub-003",
+      "sub-004",
+      "sub-010",
+      "sub-013",
+      "sub-014",
+      "sub-017",
+      "sub-018",
+      "sub-019",
+      "sub-020"
+    ],
+    "candidate_person_count": 9,
+    "candidate_selected_windows": null,
+    "candidate_session_count": 108,
+    "candidate_source_hours": null,
+    "capacity_is_metadata_upper_bound": true,
+    "new_person_waveform_access": "NOT_RUN",
+    "qualification_status": "NOT_ASSESSED",
+    "qualified_person_count_established_by_this_audit": 0
+  },
+  "exposure_evidence": {
+    "catalog_recordings": [
+      {
+        "duration_seconds": 28491.98,
+        "session_id": "005",
+        "source_subject": "001",
+        "status": "QUALIFIED"
+      },
+      {
+        "duration_seconds": 23169.74,
+        "session_id": "006",
+        "source_subject": "001",
+        "status": "QUALIFIED"
+      }
+    ],
+    "meaning": "No prior waveform exposure recorded in the accepted project audit/catalog for the other EESM19 source IDs. Cross-dataset person overlap, external use and foundation-model pretraining overlap remain UNKNOWN.",
+    "whole_person_exclusions": [
+      "sub-001"
+    ]
+  },
+  "inputs_sha256": {
+    "outputs/research/eesm19-metadata-audit/out/REPORT.json": "417f8ebbe76c960a75479af6f8f522a02eb7424ea4883a6979ff99fe6bd81b37",
+    "outputs/research/eesm19-metadata-audit/sources/graphql-inventory.json": "4efc9e676ab78dd0f286c425bd8c58668164f71246467f7cd23fbb9fe376071e",
+    "outputs/research/eesm19-metadata-audit/sources/metadata-sources.json": "4168e64366c4221d4ab592cc3af591522c4f79800a9ffb5f639ab62b0960dc44",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/acq-PSG_channels.tsv": "02dae542d43bf99b560169a28d749a04b07533a03e69456657e3f3c4c24c1e74",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/acq-earEEG_channels.tsv": "9e74c06702f537df46f1f62b3feb4c28634afe82aa2b6700c41fd9eb0440fe76",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-001/sub-001_sessions.tsv": "f0833331657646be4091b5bc47f30035b219f97dd01f7dc76d9a78af93ee60eb",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-002/sub-002_sessions.tsv": "0481e17d0678447d020f85bb79c887816af60081a002650ea1385d833e0f75a5",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-003/sub-003_sessions.tsv": "7ad580d543070c5092f5be7a3a94b5f92e57bfde4d851b22913f016d30807cf1",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-004/sub-004_sessions.tsv": "05dc9a21ecab082e4c2db127c19a6d10a1b6afa53f071d8b1b5de64364a74c0e",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-005/sub-005_sessions.tsv": "cf0554434f9bd656d41d6363700b114453a0b363fb4adc72c9e948c361f7c1ce",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-006/sub-006_sessions.tsv": "8ee71033594227287b5fd74aa703d30b355aac72c00f03a65907a61325764bbd",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-007/sub-007_sessions.tsv": "94cf1042072020152f1e9b771eca4a1fc43911decdae9a17f187c00fa8541288",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-008/sub-008_sessions.tsv": "b747b08b9ef60e474a64420fde778988093bdb3616620383fd73f69780c5384c",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-009/sub-009_sessions.tsv": "2125b6c4f380c823deb69454610759ae8a5f5f87c88e38629e94d9d179ccd792",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-010/sub-010_sessions.tsv": "8071f296248fa67c275bf117fa31ea14fe3f9e24c81bb222e01155f8d4b1698e",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-011/sub-011_sessions.tsv": "e830e5bcdbb0935a8430830f12c1c6f19138e68a2e0eac733b081444e3f37b8b",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-012/sub-012_sessions.tsv": "f8c7e38c14681b78300816eb83d750520558503e2f6027afec37c1a2e5888f33",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-013/sub-013_sessions.tsv": "df43f7020ac4cfe92321345ad10b3a74af49e478929f8c8af1e4a9435083a9f8",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-014/sub-014_sessions.tsv": "1d126dea51c8ec30e7b79243cdbd4d8a54be77b0d9fb9dc59b5f47ef825aa7d5",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-015/sub-015_sessions.tsv": "268fc578983192937181bcae2028e4f9827c682c15842ce249844b053a708ff2",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-016/sub-016_sessions.tsv": "8dc62c6f7cb55ca118ff4903144b66d7eea5f8ef28a9e553eca882fa5dbf9ef1",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-017/sub-017_sessions.tsv": "1279299521bcac0796ec2c44aec35dd60cf03e0f293bee52d5fd3cc18d8b8387",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-018/sub-018_sessions.tsv": "34551a88b28ee954c31014664a06414d6d68a238cfd87fdc090b3dad674c57a1",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-019/sub-019_sessions.tsv": "8fd9a3a6f4dcd37ec4546b2f2263921325016ed7a2f3a053a30071dfe13f1728",
+    "outputs/research/eesm19-metadata-audit/sources/pinned/sub-020/sub-020_sessions.tsv": "d5a3d523a84368c5a017e08159be66eedd7919eb449db4f48fc9787ad733d6c5",
+    "work/database-release/final/catalog.sqlite": "cefcbd423b57cc8b9345f4731c542369a8c43b1cc2c09cd0473f2a16efe91790"
+  },
+  "psg_session_ear_contact_capacity": {
+    "candidate_event_count": null,
+    "candidate_people": [
+      "sub-002",
+      "sub-003",
+      "sub-004",
+      "sub-005",
+      "sub-006",
+      "sub-007",
+      "sub-008",
+      "sub-009",
+      "sub-010",
+      "sub-011",
+      "sub-012",
+      "sub-013",
+      "sub-014",
+      "sub-015",
+      "sub-016",
+      "sub-017",
+      "sub-018",
+      "sub-019",
+      "sub-020"
+    ],
+    "candidate_person_count": 19,
+    "candidate_selected_windows": null,
+    "candidate_session_count": 76,
+    "candidate_source_hours": null,
+    "capacity_is_metadata_upper_bound": true,
+    "new_person_waveform_access": "NOT_RUN",
+    "qualification_status": "NOT_ASSESSED",
+    "qualified_person_count_established_by_this_audit": 0
+  },
+  "schema": "eegt-replication-capacity/1",
+  "source_commit": "0857858f7a2ba1582930f23eca3ec56f90a96da9",
+  "source_person_sessions": {
+    "sub-001": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-002": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-003": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-004": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-005": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-006": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-007": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-008": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-009": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-010": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-011": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-012": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-013": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-014": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-015": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-016": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": []
+    },
+    "sub-017": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-018": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-019": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    },
+    "sub-020": {
+      "PSG": [
+        "ses-001",
+        "ses-002",
+        "ses-003",
+        "ses-004"
+      ],
+      "earEEG": [
+        "ses-005",
+        "ses-006",
+        "ses-007",
+        "ses-008",
+        "ses-009",
+        "ses-010",
+        "ses-011",
+        "ses-012",
+        "ses-013",
+        "ses-014",
+        "ses-015",
+        "ses-016"
+      ]
+    }
+  },
+  "source_scope": "Previously acquired pinned inventory and metadata only; no EEG, media, task scoring or reserved waveform payload read.",
+  "source_url": "https://openneuro.org/datasets/ds005185/versions/1.0.2",
+  "status": "METADATA_AUDITED_PENDING_INDEPENDENT_REVIEW"
+}

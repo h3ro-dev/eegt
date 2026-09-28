@@ -1,5 +1,7 @@
 # EEGT — EEG tokenization
 
+The [conditional timing-control supplement](https://h3ro-dev.github.io/eegt/controls.html) reuses twelve existing blocks from six people. Mean block raw F1 is 0.8478 versus a mean within-bin timing-null median of 0.6634; the descriptive gap does not establish neural origin or meaning. [Research note](notes/conditional-timing-012.md) · [Offline reproduction](REPRODUCE-CONTROLS.md). No source people or hours are added.
+
 The [consolidated evidence catalog](https://h3ro-dev.github.io/eegt/catalog.html) brings the accepted source records and numerical results together: 89 candidate recordings, 88 qualified recordings and 476.053296 qualified source hours. Source-local people remain scoped to each dataset. See [research synthesis](RESEARCH-SYNTHESIS.md), [offline catalog rebuild](REPRODUCE-CATALOG.md), and [SQL queries](CATALOG-QUERIES.md). The catalog passed independent extraction, row-by-row rebuild and content review; its versioned release retains all evidence.
 
 **Project subtitle: An LLM’s interpretation of your brainwaves**

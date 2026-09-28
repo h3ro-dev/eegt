@@ -1,0 +1,11 @@
+{
+  "accepted_capacity_sha256": "919a798d3915741575d61a788fb57a27433967683b7fd467460306208f663cc7",
+  "audit_script_sha256": "c6b78fcf97308bfc11f908b689d4df55cda17daba2c395787adbad010bebeae8",
+  "byte_equal_to_accepted": true,
+  "captured_audit_stdout": "{\n  \"status\": \"METADATA_AUDITED_PENDING_INDEPENDENT_REVIEW\",\n  \"denominators\": {\n    \"source_people\": 20,\n    \"source_sessions\": 200,\n    \"source_acquisition_sessions\": {\n      \"PSG\": 80,\n      \"earEEG\": 120\n    },\n    \"source_payload_files\": 400,\n    \"source_payload_bytes\": 272924565618,\n    \"recorded_exposed_people\": 1,\n    \"recorded_exposed_sessions\": 2,\n    \"recorded_exposed_source_hours\": 14.350477777777778,\n    \"recorded_unexposed_candidate_people_all_acquisitions\": 19,\n    \"recorded_unexposed_candidate_sessions_all_acquisitions\": 184\n  },\n  \"ear_only_candidates\": 9,\n  \"psg_candidates\": 19\n}\n",
+  "inputs_verified": 26,
+  "no_eeg_payload_opened": true,
+  "replayed_capacity_sha256": "919a798d3915741575d61a788fb57a27433967683b7fd467460306208f663cc7",
+  "schema": "eegt-offline-metadata-capacity-replay/v1",
+  "status": "COMPLETE_MATCH"
+}

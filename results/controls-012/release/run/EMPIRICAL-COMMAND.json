@@ -1,0 +1,29 @@
+{
+  "schema": "eegt-offline-empirical-replay-command/v1",
+  "created_utc": "2026-09-28T15:56:22Z",
+  "cwd": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/release/stage/packet",
+  "argv": [
+    "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/.venv/bin/python",
+    "work/next-study/release/replay_adapter.py",
+    "empirical"
+  ],
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "stdout": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/release/run/EMPIRICAL.stdout",
+  "stderr": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/release/run/EMPIRICAL.stderr",
+  "new_output": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/release/stage/packet/work/next-study/release/replay/EMPIRICAL-REPLAY.json",
+  "manifest_sha256": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+  "adapter_sha256": "34212a595c52574e2d0e3a0629335eeeecf77384724bf977d7cda874c7a81c59",
+  "adapter_review_sha256": "4087662accfc5313fecbe7925e543f5b1325ff37dbec061221b1305260c0f61a",
+  "root_admission_sha256": "155949cabf55b3570203cf53475fa866f704a94ee31f83fa966e1476f1dd67cd",
+  "planned_rows": [0, 11, 23, 35, 47, 48, 59, 71, 81, 92, 104, 112],
+  "cpu_hard_limit_seconds": 7200,
+  "rss_polling_limit_bytes": 2147483648,
+  "stage_policy": "one process, one numerical thread, fixed 12 rows, no accepted source edits"
+}

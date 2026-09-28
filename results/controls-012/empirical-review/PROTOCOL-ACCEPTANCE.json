@@ -1,0 +1,66 @@
+{
+  "schema": "eegt-independent-conditional-timing-protocol-review/v1",
+  "status": "ACCEPTED",
+  "protocol_sha256": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+  "scope": "Frozen exposed-012 event-only descriptive timing-null tranche; first-unit gate only, remaining stage still requires root resource admission and all empirical outputs require independent review",
+  "review_method": "Static code, pinned metadata/header and receipt inspection; no reviewer numerical runs or waveform access",
+  "reviewed_source_sha256": {
+    "PROTOCOL.md": "7c31e051ab06a1e53818c56a5e1b1f113218d88f17a2ff6b2197d81e5c9d8047",
+    "PROTOCOL.json": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+    "empirical_null.py": "0a812d0f3d4111a46ddc0a25d290a37965fd9a26f5a131c29d8cf0771fea2534",
+    "test_empirical_null.py": "def0acd1fb246bf24182cce389f1474f477fa61095b880999fc590fae5a10bb3",
+    "SYNTHETIC-TESTS.json": "bf207506aee3fdc6a6c0ac530c127c9e6d7ab897079c56e9aa7374524468e70c"
+  },
+  "blocking_findings": [],
+  "resolved_findings": [
+    "Exact Python/NumPy/SciPy runtime pinned, checked and reported",
+    "SIGXCPU raises caught ResourceStop; between-draw CPU/RSS checks preserve failure accounting with planned unrun IDs",
+    "Five-test durable synthetic receipt matches reviewed source and protocol hashes"
+  ],
+  "verified": {
+    "source_seals": 12,
+    "partition_header_size_hash_checks": 24,
+    "selection_matches_first_curator_row_per_cell": true,
+    "selected_array_rows": [
+      0,
+      11,
+      23,
+      35,
+      47,
+      48,
+      59,
+      71,
+      81,
+      92,
+      104,
+      112
+    ],
+    "people": 6,
+    "person_sessions": 12,
+    "source_blocks": 122,
+    "not_selected": 110,
+    "native_match_receipts_per_selected_block": 48,
+    "native_timeline_receipts_per_selected_block": 4,
+    "common_guarded_interval_seconds": [
+      5.472,
+      24.528
+    ],
+    "clock_mapping": "identical block clock",
+    "clock_error_bound_seconds": 0,
+    "draws": 99,
+    "bin_seconds": 1,
+    "primary_tolerance_seconds": 0.025,
+    "sensitivity_tolerances_seconds": [
+      0.01,
+      0.05
+    ],
+    "synthetic_tests_passed": 5
+  },
+  "scientific_assessment": "Conditional timing null preserves phase-side event signature, count, complete support width, common interval and bin. Same draws across tolerances; exact accepted matcher/count parity required. Count pooling and two-session person summaries correct. Descriptive-only raw-minus-null-median interpretation; no empirical p-value, population test, causal attribution or original-release replacement.",
+  "resource_assessment": "One process/thread. CPU hard7200, soft7190, preemptive6900 between draws; RSS2GiB checked between draws/blocks. A matcher invocation can exceed a polling threshold before return, which is documented. First-unit row0 must satisfy CPU*12*3<=6000 and RSS<=1GiB with separate root admission before remaining11. No claim of hard instantaneous RSS enforcement.",
+  "remaining_gates": [
+    "Root first-unit resource admission bound to first-unit and protocol hashes",
+    "Independent empirical output review before interpreting results"
+  ],
+  "replication_capacity_review": "ACCEPTED_METADATA_ONLY; see REPLICATION-REVIEW.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "eegt-independent-release-adapter-review/v1",
+  "status": "ACCEPTED",
+  "scope": "Exact explicit-allowlist packet build and one offline scientific replay, subject to root resource admission. Final replay parity, archive and publication remain unaccepted until checked.",
+  "manifest_sha256": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+  "builder_sha256": "409a475a6a964edae12288d24ad8850a9ae66f3c1c3af0249e05dc2852981b32",
+  "adapter_sha256": "34212a595c52574e2d0e3a0629335eeeecf77384724bf977d7cda874c7a81c59",
+  "reviewed_files_sha256": {
+    "README.md": "47c7b8392e231c498bb1f396d7a411c51bade822e26b25b6049a8a60798fea97",
+    "requirements-replay.txt": "6343483ce55e8cadaa6adcfba6f353897212f4e9167b22cab5e56434c1445cd4",
+    "test_release.py": "cbb9d2cc6391cd0e884aeb1908cb3b7310865a97d2565156a11988030b9b64eb",
+    "PRE-REPLAY-CHECKS.json": "0b402ee7dacbe5065240a637ca6bb6bcf5a907f51a512a0ceb028ec79bc94896"
+  },
+  "protocol_sha256": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+  "payload_files": 97,
+  "payload_bytes": 519169666,
+  "counts_by_kind": {
+    "explicit_support": 35,
+    "protocol_source": 12,
+    "replication_metadata_input": 26,
+    "selected_event_partition": 24
+  },
+  "blocking_findings": [],
+  "resolved_findings": [
+    "Removed optional controls/DESIGN.md containing actual private-intake observations and three unnecessary prototype files; original scientific sources untouched",
+    "Added resource check after every evaluate_row and before COMPLETE_MATCH",
+    "README defers exact sizes to manifest and distinguishes omitted event partitions from historical receipts in the whole accepted index"
+  ],
+  "static_checks": [
+    "All97manifest payload size/hash seals independently checked with zero mismatches",
+    "12protocol source seals,24selected event partitions,26capacity inputs,35explicit support paths; no recursive copy",
+    "Path traversal and source symlinks refused; new destination and exclusive receipt creation preserve originals",
+    "Privacy assessment inspected selected text content and read-only database schemas/dataset membership, not only forbidden path names; remaining private mentions are generic NOT_RUN or scope exclusions without private intake observations",
+    "Only public-source datasets ds004015,ds005178,ds005185,ds005207 occur in catalog recording IDs; no waveform array/model checkpoint/media/mail/vendor payload in allowlist",
+    "Original runner, matcher, null helper, protocol, events and result bytes stay identical; adapter maps relative paths and calls unchanged evaluate_row/descriptive_summary",
+    "Whole scientific row including all99draws at3tolerances and six-person summary require exact object equality to accepted results",
+    "Metadata redirects audit.HERE output only; ROOT,inputpaths,__file__,code remain frozen and output requires exact CAPACITY byte equality",
+    "CPU hard7200/soft7190,SIGXCPU caught; CPU6900/RSS2GiB checks before draws and after each row; exact Python3.12.12/NumPy2.5.3/SciPy1.18.1; five thread variables=1",
+    "Durable pre-replay receipt binds three non-numerical test passes and builder verification; reviewer did not rerun experiments"
+  ],
+  "limitations": [
+    "No kernel instantaneous RSS cap; a matcher call can temporarily cross polling threshold before returning",
+    "Pre-replay acceptance does not certify future replay output or archive contents",
+    "Historical source absolute paths retained as provenance; relocation does not alter sealed protocol",
+    "Root retains execution and publication ownership"
+  ],
+  "remaining_gates": [
+    "Root admit one sequential bounded replay",
+    "Independent exact scientific parity review",
+    "Final archive membership/checksum and candidate publication review"
+  ]
+}

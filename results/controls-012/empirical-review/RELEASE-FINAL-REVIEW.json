@@ -1,0 +1,51 @@
+{
+  "administrative_additions_permitted": [
+    "Byte-exact copies of this final review",
+    "Root approval binding this review, candidate manifest and archive",
+    "SHA256SUMS accurately generated from final release assets"
+  ],
+  "archive": {
+    "bytes": 61279325,
+    "manifest_sha256": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+    "prior_streamed_member_verification_preserved": true,
+    "regular_members": 98,
+    "sha256": "6b1569ffdff50629726c7a1ce4bb7186bd6e836e7a3338583b8ae92a66fe787b"
+  },
+  "base_commit": "a56279e499d7bd1282a4e16dd39c82bbdf45bd97",
+  "blockers": [],
+  "branch": "codex/density-controls",
+  "candidate_manifest": {
+    "path": "work/next-study/intake-2026-09-28/PUBLIC-CANDIDATE.json",
+    "sha256": "f1c126f2745fef044d62e8dd0e9a6556d4006b38c903bb21d205aec800fcee42"
+  },
+  "delivery_state": "NOT_VERIFIED: root must perform publication and native public artifact/Pages readback; any delivery receipt remains local. Administrative additions do not permit changed scientific inputs, code, results or presentation.",
+  "external_description_sha256": {
+    "PR-BODY.md": "93e666bb8ba09155ace7f98a67c07435f5c3a550d4b00b7157d1f6523ffb7b5e",
+    "RELEASE-BODY.md": "1c042fceef47f1205d8e22c4d75948ee45234f79e42f074da9a2db04855d54e9"
+  },
+  "prior_review_sha256": {
+    "OUTPUT-REVIEW.json": "c5278bec3b7365d313fbb15f9ed3c74b8242b66f661d903f64fa2f58cded44cd",
+    "RELEASE-ADAPTER-ACCEPTANCE.json": "4087662accfc5313fecbe7925e543f5b1325ff37dbec061221b1305260c0f61a",
+    "RELEASE-CONTENT-REVIEW.json": "5ba0f76c99e278e7d758776087e55448653f62faffab0c6f6a834d8fc930397d",
+    "RELEASE-REPLAY-ARCHIVE-REVIEW.json": "e97c515c9c5b349e455c2c16ded3d6f0bfa00bb0605982388e9754804fbedb2c"
+  },
+  "privacy_review": "Exact candidate text and paths checked, receipt copies matched to accepted sources, and archive hash matched prior full member-content verification. No actual private intake observations, EEG/media, mailbox/vendor correspondence, raw waveform arrays or model weights added. Generic exclusions, historical NOT_RUN labels and public Neurable capability/limitations references remain; these are not private observations. Previously excluded controls/DESIGN.md remains absent.",
+  "review_actions": "Read-only hashes, Git inventory, source-copy comparisons and content review; wrote only owned review files. No experimental matching, numerical replay, private waveform access, external publication or descendants.",
+  "reviewed_at_utc": "2026-09-28T16:11:32.116124+00:00",
+  "schema": "eegt-release-final-file-set-review/v1",
+  "scientific_review": "Descriptions preserve mean-block versus count-pooled distinction, conditional timing-null interpretation and loss of fine spacing/synchrony/waveform constraints, six exposed people/twelve existing blocks, no added exposure, no neural/semantic/playback-mechanism or population conclusion. Replication capacities remain unqualified metadata upper bounds; nine-person sign-flip/Bonferroni floor is not adequate power. Prior complete-row and summary parity review remains bound by exact hashes.",
+  "scope": "Exact candidate files and external descriptions accepted for root-owned existing-repository PR, merge, release and Pages publication. No publication performed by reviewer.",
+  "status": "ACCEPTED",
+  "verified": {
+    "all_candidate_sizes_and_sha256_match": true,
+    "all_eight_presentation_seals_unchanged": true,
+    "byte_identical_receipt_copies": 53,
+    "git_changed_and_untracked_set_equals_candidate": true,
+    "license_asset_matches_repository_license": true,
+    "no_blocking_findings": true,
+    "public_repository_bytes": 1885620,
+    "public_repository_files": 65,
+    "release_asset_bytes": 61541100,
+    "release_assets": 10
+  }
+}

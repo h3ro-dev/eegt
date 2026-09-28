@@ -1,0 +1,30 @@
+{
+  "schema": "eegt-conditional-timing-null-command/v1",
+  "stage": "remaining",
+  "created_utc": "2026-09-28T15:24:09Z",
+  "authorized_scope": "fixed remaining 11 rows only; stop after this stage",
+  "cwd": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical",
+  "argv": [
+    "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/.venv/bin/python",
+    "empirical_null.py",
+    "remaining",
+    "--review",
+    "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical-review/PROTOCOL-ACCEPTANCE.json",
+    "--admission",
+    "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/intake-2026-09-28/RESOURCE-ADMISSION.json"
+  ],
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "protocol_sha256": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+  "review_sha256": "c296b9af4612f73361fd48f2beebff5da33fef70c201354ad7b4f624ad2c6479",
+  "resource_admission_sha256": "50f09eab8abe090827cebef324fbdc3c0ea3ab130c35382c8f931fb89518dbd1",
+  "first_unit_sha256": "7b57252f38d13ceaf08efe0c143d1e42d79672dd5e49331a7e80e3f5d8f08ecd",
+  "runner_sha256": "0a812d0f3d4111a46ddc0a25d290a37965fd9a26f5a131c29d8cf0771fea2534",
+  "synthetic_tests_sha256": "bf207506aee3fdc6a6c0ac530c127c9e6d7ab897079c56e9aa7374524468e70c",
+  "stdout_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical/REMAINING.stdout",
+  "stderr_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical/REMAINING.stderr"
+}

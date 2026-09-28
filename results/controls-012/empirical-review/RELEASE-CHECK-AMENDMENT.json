@@ -1,0 +1,24 @@
+{
+  "accepted_figure_sha256_from_prior_review": "fa57e0f181031b1468aa2cc154c839a7367fce0f0630e6f15ae713a30004f82c",
+  "at_utc": "2026-09-28T16:14:09.819818+00:00",
+  "blockers": [],
+  "corrected_pr_body_sha256": "c491d99dcf01cdf1ac83a7de897d1db9ff5ea0536539336c5b51d8bce83e1bf6",
+  "decision": "Accept preserving the unchanged reviewed Matplotlib SVG bytes and explicit disclosure of generated trailing whitespace. The corrected PR no longer claims an unrestricted whitespace pass. No scientific, resource, archive or publication-scope change.",
+  "prior_final_review_sha256": "673da8a8a1758029e7dd11b3df99925b782d50790abef89361a5af2238996e52",
+  "publication_state": "UNPUBLISHED per root; root approval must bind this amendment and corrected PR hash.",
+  "receipt_observations": {
+    "affected_files": [
+      "data/density-control.svg",
+      "site/data/density-control.svg"
+    ],
+    "authored_text_scoped_check_exit_code": 0,
+    "full_staged_whitespace_exit_code": 2,
+    "generated_svg_issues": 2546
+  },
+  "schema": "eegt-release-check-amendment/v1",
+  "scope": "Correction to precommit whitespace validation wording only; prior final review remains unchanged.",
+  "status": "ACCEPTED",
+  "superseded_pr_body_sha256": "93e666bb8ba09155ace7f98a67c07435f5c3a550d4b00b7157d1f6523ffb7b5e",
+  "verification_limit": "Inspected corrected PR body and root whitespace receipt; did not rerun the earlier checks. Whitespace outcomes are receipt-supported. Frozen figure hash is bound from prior independent review; root reports those bytes unchanged.",
+  "whitespace_receipt_sha256": "5b74752a037e8025a1f3a8ce37355ebe0648c1b2f361a90e180293191480cfa0"
+}

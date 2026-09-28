@@ -1,0 +1,32 @@
+{
+  "cpu_seconds": 0.014907000000000004,
+  "created_utc": "2026-09-28T15:19:32.980299+00:00",
+  "errors": [],
+  "failures": [],
+  "peak_rss_bytes": 113131520,
+  "protocol_sha256": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+  "runtime": {
+    "numpy": "2.5.3",
+    "python": "3.12.12",
+    "scipy": "1.18.1"
+  },
+  "schema": "eegt-conditional-timing-null-synthetic-tests/v1",
+  "scope": "synthetic generated event rows and temporary gzip only; empirical event partitions and waveforms NOT_RUN",
+  "source_sha256": {
+    "PROTOCOL.json": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+    "PROTOCOL.md": "7c31e051ab06a1e53818c56a5e1b1f113218d88f17a2ff6b2197d81e5c9d8047",
+    "empirical_null.py": "0a812d0f3d4111a46ddc0a25d290a37965fd9a26f5a131c29d8cf0771fea2534",
+    "test_empirical_null.py": "def0acd1fb246bf24182cce389f1474f477fa61095b880999fc590fae5a10bb3"
+  },
+  "status": "PASS",
+  "test_ids": [
+    "test_empirical_null.SyntheticAdapterTests.test_common_support_and_fixed_seed",
+    "test_empirical_null.SyntheticAdapterTests.test_order_summary_and_person_denominators",
+    "test_empirical_null.SyntheticAdapterTests.test_partition_digest_header_and_count_fail_closed",
+    "test_empirical_null.SyntheticAdapterTests.test_recomputed_match_parity_and_dense_chance",
+    "test_empirical_null.SyntheticAdapterTests.test_runtime_identity_and_graceful_resource_refusal"
+  ],
+  "test_log": "test_common_support_and_fixed_seed (test_empirical_null.SyntheticAdapterTests.test_common_support_and_fixed_seed) ... ok\ntest_order_summary_and_person_denominators (test_empirical_null.SyntheticAdapterTests.test_order_summary_and_person_denominators) ... ok\ntest_partition_digest_header_and_count_fail_closed (test_empirical_null.SyntheticAdapterTests.test_partition_digest_header_and_count_fail_closed) ... ok\ntest_recomputed_match_parity_and_dense_chance (test_empirical_null.SyntheticAdapterTests.test_recomputed_match_parity_and_dense_chance) ... ok\ntest_runtime_identity_and_graceful_resource_refusal (test_empirical_null.SyntheticAdapterTests.test_runtime_identity_and_graceful_resource_refusal) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.014s\n\nOK\n",
+  "tests_run": 5,
+  "wall_seconds": 0.017364916973747313
+}

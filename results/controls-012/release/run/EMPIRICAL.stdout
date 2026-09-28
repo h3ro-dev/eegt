@@ -1,0 +1,14 @@
+{
+  "completed_rows": 12,
+  "not_run": [],
+  "output": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/release/stage/packet/work/next-study/release/replay/EMPIRICAL-REPLAY.json",
+  "output_sha256": "6bb36490c96b5e53ae84112b8a0780047dd2fc6e7a19d89cf14b24b215c82cd9",
+  "resources": {
+    "cpu_hard_limit_seconds": 7200,
+    "cpu_seconds": 197.08542799999998,
+    "cpu_soft_limit_seconds": 7190,
+    "peak_rss_bytes": 477675520,
+    "wall_seconds": 198.32456316694152
+  },
+  "status": "COMPLETE_MATCH"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "eegt-offline-packet-pre-replay-checks/v1",
+  "created_utc": "2026-09-28T15:50:27Z",
+  "status": "NON_NUMERICAL_CHECKS_PASS_PENDING_INDEPENDENT_REVIEW",
+  "packet_payload_state": "PLAN_SEALED_NOT_COPIED",
+  "manifest_sha256": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+  "builder_sha256": "409a475a6a964edae12288d24ad8850a9ae66f3c1c3af0249e05dc2852981b32",
+  "adapter_sha256": "34212a595c52574e2d0e3a0629335eeeecf77384724bf977d7cda874c7a81c59",
+  "test_sha256": "cbb9d2cc6391cd0e884aeb1908cb3b7310865a97d2565156a11988030b9b64eb",
+  "readme_sha256": "47c7b8392e231c498bb1f396d7a411c51bade822e26b25b6049a8a60798fea97",
+  "requirements_sha256": "6343483ce55e8cadaa6adcfba6f353897212f4e9167b22cab5e56434c1445cd4",
+  "builder_verify": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 /Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/.venv/bin/python build_packet.py verify",
+    "cwd": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/release",
+    "exit_code": 0,
+    "status": "SOURCES_VERIFIED_NOT_COPIED",
+    "payload_file_count": 97,
+    "payload_bytes": 519169666,
+    "categories": {
+      "protocol_source": 12,
+      "selected_event_partition": 24,
+      "replication_metadata_input": 26,
+      "explicit_support": 35
+    }
+  },
+  "unit_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 /Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/.venv/bin/python -m unittest -v test_release.py",
+    "exit_code": 0,
+    "passed": 3,
+    "failed": 0,
+    "covered": [
+      "relative-path deny policy",
+      "symlink refusal",
+      "exact frozen allowlist category membership"
+    ]
+  },
+  "path_scan": {
+    "forbidden_private_vendor_mailbox_raw_weight_credential_segments_or_payload_extensions": 0,
+    "excluded_private_intake_controls_design_and_prototype_files": 4
+  },
+  "not_run": [
+    "packet_copy",
+    "metadata_capacity_replay",
+    "empirical_timing_replay",
+    "final_archive",
+    "publication"
+  ]
+}

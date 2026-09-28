@@ -1,0 +1,33 @@
+{
+  "schema": "eegt-offline-packet-execution-plan/v1",
+  "created_utc": "2026-09-28T15:54:49Z",
+  "status": "AUTHORIZED_BY_ROOT_NOT_YET_EXECUTED_AT_CREATION",
+  "admission_sha256": "155949cabf55b3570203cf53475fa866f704a94ee31f83fa966e1476f1dd67cd",
+  "adapter_review_sha256": "4087662accfc5313fecbe7925e543f5b1325ff37dbec061221b1305260c0f61a",
+  "manifest_sha256": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+  "builder_sha256": "409a475a6a964edae12288d24ad8850a9ae66f3c1c3af0249e05dc2852981b32",
+  "adapter_sha256": "34212a595c52574e2d0e3a0629335eeeecf77384724bf977d7cda874c7a81c59",
+  "source_project_root": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language",
+  "packet_root": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/release/stage/packet",
+  "python": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/.venv/bin/python",
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "ordered_commands": [
+    "build_packet.py build",
+    "replay_adapter.py verify",
+    "replay_adapter.py metadata",
+    "replay_adapter.py empirical"
+  ],
+  "stdout_stderr_dir": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/release/run",
+  "empirical_cpu_limit_seconds": 7200,
+  "empirical_rss_polling_limit_bytes": 2147483648,
+  "no_parallel_empirical_processes": true,
+  "archive_candidate_after_clean_replay": "eegt-v0.11.0-controls.tar.gz",
+  "archive_entry_policy": "exact 97 manifest payload paths plus FILE-MANIFEST.json under top-level packet/; replay outputs excluded"
+}

@@ -1,0 +1,60 @@
+{
+  "admission_projection": {
+    "arithmetic_gate_pass": true,
+    "cpu_projection_gate_seconds": 6000,
+    "cpu_seconds_first_times_12_times_3": 591.593976,
+    "first_peak_rss_bytes": 397524992,
+    "first_rss_gate_bytes": 1073741824,
+    "root_resource_admission": "PENDING"
+  },
+  "claim_limit": "One exposed selected block from one person and one session; exploratory, no inferential p-value or physiological attribution",
+  "command": [
+    "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/.venv/bin/python",
+    "empirical_null.py",
+    "first-unit",
+    "--review",
+    "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical-review/PROTOCOL-ACCEPTANCE.json"
+  ],
+  "command_sha256": "910d94c2d1e114a14855b3a7debc8bbe620e5294a185a6baec544dbee92bcc7a",
+  "completed_rows": [
+    0
+  ],
+  "created_utc": "2026-09-28T15:22:38.301132+00:00",
+  "cwd": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical",
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "not_run_rows": [
+    11,
+    23,
+    35,
+    47,
+    48,
+    59,
+    71,
+    81,
+    92,
+    104,
+    112
+  ],
+  "protocol_sha256": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+  "resource_profile": {
+    "cpu_hard_limit_seconds": 7200,
+    "cpu_seconds": 16.433166,
+    "cpu_soft_limit_seconds": 7190,
+    "peak_rss_bytes": 397524992,
+    "wall_seconds": 16.561444082995877
+  },
+  "review_sha256": "c296b9af4612f73361fd48f2beebff5da33fef70c201354ad7b4f624ad2c6479",
+  "schema": "eegt-conditional-timing-null-execution-receipt/v1",
+  "shell_exit_code": 0,
+  "stage": "first-unit",
+  "stage_sha256": "7b57252f38d13ceaf08efe0c143d1e42d79672dd5e49331a7e80e3f5d8f08ecd",
+  "status": "COMPLETE",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "50b7ccfd6c75a7d3ee6c77d29bc6b77c423f7dd0f74e00ca0633b4f376983e1c"
+}

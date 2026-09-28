@@ -1,0 +1,29 @@
+{
+  "schema": "eegt-receipt-only-figure/v1",
+  "inputs": {
+    "FIRST-UNIT.json": "7b57252f38d13ceaf08efe0c143d1e42d79672dd5e49331a7e80e3f5d8f08ecd",
+    "REMAINING.json": "9bf843ba2e41793c83826bd4fe699f2616169fb4c8d93f43e7546ff046720a39"
+  },
+  "person_raw": {
+    "001": 0.8491292370793424,
+    "002": 0.8648450369034542,
+    "003": 0.8190619637785466,
+    "004": 0.8563287910039322,
+    "005": 0.8347503327367021,
+    "006": 0.862676153429514
+  },
+  "person_mean_block_null_median": {
+    "001": 0.6569721258879311,
+    "002": 0.6755426964973823,
+    "003": 0.647743995712482,
+    "004": 0.6672397230306835,
+    "005": 0.6602558992828347,
+    "006": 0.6728443406512243
+  },
+  "script_sha256": "7b661a1d8a64aa71bb85a4fb7bc647e9abb39d132ca02157ffd63c9168098c83",
+  "outputs": {
+    "density-control.png": "e80f253c98524bdb18b88e52afd4b9d33c31c5c773736ca5b6068a4b29577625",
+    "density-control.svg": "fa57e0f181031b1468aa2cc154c839a7367fce0f0630e6f15ae713a30004f82c"
+  },
+  "scope": "Visualization of completed receipts only; no new numerical experiment or waveform access."
+}

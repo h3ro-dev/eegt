@@ -1,0 +1,50 @@
+{
+  "schema": "eegt-independent-replication-capacity-review/v1",
+  "status": "ACCEPTED",
+  "scope": "Pinned metadata capacity only; no qualification, waveform access, power adequacy or prospective execution approval",
+  "capacity_sha256": "919a798d3915741575d61a788fb57a27433967683b7fd467460306208f663cc7",
+  "script_sha256": "c6b78fcf97308bfc11f908b689d4df55cda17daba2c395787adbad010bebeae8",
+  "evidence": {
+    "input_hashes_checked": 26,
+    "input_hash_mismatches": 0,
+    "source_snapshot": "ds005185:1.0.2",
+    "source_commit": "0857858f7a2ba1582930f23eca3ec56f90a96da9",
+    "unique_source_person_sessions": 200,
+    "source_set_fdt_pairs": 200,
+    "source_acquisition_counts": {
+      "earEEG": 120,
+      "PSG": 80
+    },
+    "read_only_catalog_exposure": [
+      [
+        "001",
+        "005"
+      ],
+      [
+        "001",
+        "006"
+      ]
+    ],
+    "excluded_whole_people": [
+      "sub-001"
+    ],
+    "ear_only": {
+      "people": 9,
+      "sessions": 108
+    },
+    "psg": {
+      "people": 19,
+      "sessions": 76
+    }
+  },
+  "findings": [],
+  "limitations": [
+    "No numerical rerun or payload read by reviewer; independent metadata enumeration and file hashes only",
+    "No qualified participants or usable candidate source hours established",
+    "Catalog exclusion establishes recorded project exposure only; external/pretraining overlap UNKNOWN",
+    "12-person target infeasible in 9-person ear-only family; 19 PSG candidates do not establish adequate power",
+    "PSG contact/reference/units/clock contract and prospective review required before reserved access",
+    "Source IDs establish source-local people only; cross-dataset person overlap UNKNOWN. Latest wording-only audit preserves all capacity counts."
+  ],
+  "design_sha256": "c70442b110642e51a0d2e5d32fdbe49b62d3a1d019952ad51bfe6fff1917a6cd"
+}
