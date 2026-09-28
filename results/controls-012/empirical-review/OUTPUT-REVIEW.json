@@ -1,0 +1,57 @@
+{
+  "schema": "eegt-independent-conditional-timing-output-review/v1",
+  "status": "ACCEPTED",
+  "scope": "Frozen exposed-012 exploratory descriptive tranche and receipt-only figure; not population inference, physiological attribution or publication authorization",
+  "protocol_sha256": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+  "method": "Static code/receipt/source-index checks and arithmetic over saved summaries only; no matching, detector rerun, event-body or waveform access",
+  "reviewed_sha256": {
+    "empirical/FIRST-UNIT.json": "7b57252f38d13ceaf08efe0c143d1e42d79672dd5e49331a7e80e3f5d8f08ecd",
+    "empirical/FIRST-UNIT-EXECUTION.json": "8339acc993c634f31e4f88dc6edbad83d73062ca57811f63f1307387cb0e5336",
+    "empirical/REMAINING.json": "9bf843ba2e41793c83826bd4fe699f2616169fb4c8d93f43e7546ff046720a39",
+    "empirical/REMAINING-EXECUTION.json": "842b759ec8a1bf0bed652c340e54205f057755f076caa6cd90521915a3692d76",
+    "empirical/REPORT.md": "a18650f1c7616c93b7bf617ac596bcf227c506ff9b71a27fff75c6ea41d47680",
+    "intake-2026-09-28/RESOURCE-ADMISSION.json": "50f09eab8abe090827cebef324fbdc3c0ea3ab130c35382c8f931fb89518dbd1",
+    "intake-2026-09-28/FIGURE-MANIFEST.json": "bdb90e88224f8237ace7b49da2261ed8f1ae084d76054943b3e4db1120632544",
+    "intake-2026-09-28/plot_controls.py": "7b661a1d8a64aa71bb85a4fb7bc647e9abb39d132ca02157ffd63c9168098c83",
+    "intake-2026-09-28/density-control.png": "e80f253c98524bdb18b88e52afd4b9d33c31c5c773736ca5b6068a4b29577625",
+    "intake-2026-09-28/density-control.svg": "fa57e0f181031b1468aa2cc154c839a7367fce0f0630e6f15ae713a30004f82c"
+  },
+  "blocking_findings": [],
+  "resolved_findings": [
+    "Report corrected combined completion versus historical first-unit eleven pending rows; no numerical result changed"
+  ],
+  "verified": {
+    "planned_and_completed_blocks": 12,
+    "source_selected_blocks": 122,
+    "other_blocks_not_run": 110,
+    "source_local_people": 6,
+    "person_sessions": 12,
+    "estimable_two_session_people": 6,
+    "raw_count_receipt_comparisons": 36,
+    "null_draws_per_row_tolerance": 99,
+    "null_order_statistics_and_excess_arithmetic_match": true,
+    "person_and_figure_arithmetic_match": true,
+    "source_seals_unchanged": 12,
+    "execution_bindings_match": true,
+    "primary_eligible_events": 38143,
+    "phase_eligible_events": 37910,
+    "raw_matched_pairs_25ms": 32279,
+    "mean_block_raw_f1_25ms": 0.8477985858219153,
+    "count_pooled_tranche_raw_f1_25ms": 0.8488554034686338,
+    "mean_block_null_median_25ms": 0.6634331301770896,
+    "equal_person_mean_excess_25ms": 0.18436545564482562,
+    "first_unit_cpu_seconds": 16.433166,
+    "first_unit_peak_rss_bytes": 397524992,
+    "remaining_cpu_seconds": 184.827297,
+    "remaining_peak_rss_bytes": 467894272,
+    "both_shell_exit_codes": 0,
+    "both_stderr_bytes": 0
+  },
+  "interpretation": "Positive excess is a contrast against a null that also removes fine spacing, refractory structure, cross-channel synchrony and waveform-realizability constraints. It is not neural origin, semantics, causality or population significance. Original broader 012/013 results remain unchanged.",
+  "limitations": [
+    "No independent stochastic matching rerun; reviewed source-bound code and saved output arithmetic",
+    "Null matched-pair details are not emitted; invariants rely on reviewed code and successful source-bound stages",
+    "RSS remains polling-bounded, not instantaneous kernel cap",
+    "Root reported separate visual inspection; reviewer checked figure script/caption, hashes and arithmetic"
+  ]
+}

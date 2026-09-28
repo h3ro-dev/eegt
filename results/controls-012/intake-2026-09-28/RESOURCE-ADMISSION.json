@@ -1,0 +1,48 @@
+{
+  "schema": "eegt-root-first-unit-resource-admission/v1",
+  "status": "ACCEPTED",
+  "at_utc": "2026-09-28T15:23:04.664366+00:00",
+  "owner": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "protocol_sha256": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+  "first_unit_sha256": "7b57252f38d13ceaf08efe0c143d1e42d79672dd5e49331a7e80e3f5d8f08ecd",
+  "protocol_review_sha256": "c296b9af4612f73361fd48f2beebff5da33fef70c201354ad7b4f624ad2c6479",
+  "selection_admitted": [
+    11,
+    23,
+    35,
+    47,
+    48,
+    59,
+    71,
+    81,
+    92,
+    104,
+    112
+  ],
+  "first_unit_resources": {
+    "cpu_hard_limit_seconds": 7200,
+    "cpu_seconds": 16.433166,
+    "cpu_soft_limit_seconds": 7190,
+    "peak_rss_bytes": 397524992,
+    "wall_seconds": 16.561444082995877
+  },
+  "cpu_projection_first_unit_times_12_times_3": 591.593976,
+  "projection_limit_seconds": 6000,
+  "first_unit_rss_limit_bytes": 1073741824,
+  "fleet": {
+    "name": "studio0",
+    "observedAt": "2026-09-28T15:19:48+00:00",
+    "cpuBusyFraction": 0.56,
+    "loadPerCore": 1.1976318359375,
+    "diskFreeBytes": 690927140864.0
+  },
+  "memory": {
+    "kernel_pressure_level": 1,
+    "ram_immediate_floor_bytes": 263307264,
+    "ram_reclaimable_estimate_bytes": 13634633728,
+    "ram_reclaimable_ceiling_bytes": 189409722368
+  },
+  "judgment": "First stage exited; source/matcher parity completed. Fixed CPU projection and RSS gate pass. Normal memory pressure and reclaimable estimate support one further CPU process under the frozen 2GiB/7200-second bound. Admission uses feasibility only and makes no scientific output claim. Instantaneous RSS remains polling-bounded, not a hard kernel memory cap.",
+  "one_process_owner": "controls_and_design",
+  "independent_scientific_output_review": "REQUIRED"
+}

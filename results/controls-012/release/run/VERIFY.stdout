@@ -1,0 +1,19 @@
+{
+  "file_count": 98,
+  "manifest_sha256": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+  "relocated_source_paths": {
+    "accepted_012_methods": "work/transition-extracted-final/repo/protocol/experiment-012-methods.md",
+    "accepted_curator": "work/transition-extracted-final/repo/data/derived/012/native-selected-curator.json",
+    "accepted_event_study": "work/transition-extracted-final/repo/eegt/event_study.py",
+    "accepted_index": "work/transition-extracted-final/repo/results/012/analysis.sqlite",
+    "accepted_matcher": "work/transition-extracted-final/repo/eegt/waveform_events.py",
+    "accepted_summary": "work/transition-extracted-final/repo/results/012/summary.json",
+    "draft_protocol_text": "work/next-study/empirical/PROTOCOL.md",
+    "extracted_report": "work/transition-extracted-final/out/REPORT.json",
+    "prior_control_receipt": "work/next-study/controls/RESULTS.json",
+    "prior_timing_helper": "work/next-study/controls/null_controls.py",
+    "proposed_runner": "work/next-study/empirical/empirical_null.py",
+    "synthetic_tests": "work/next-study/empirical/test_empirical_null.py"
+  },
+  "status": "FROZEN_PACKET_VERIFIED"
+}

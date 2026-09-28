@@ -1,0 +1,16 @@
+{
+  "all_member_hashes_match_manifest": true,
+  "archive_bytes": 61279325,
+  "archive_name": "eegt-v0.11.0-controls.tar.gz",
+  "archive_sha256": "6b1569ffdff50629726c7a1ce4bb7186bd6e836e7a3338583b8ae92a66fe787b",
+  "manifest_sha256": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+  "member_count": 98,
+  "published": false,
+  "regular_file_members_only": true,
+  "replay_outputs_excluded": true,
+  "schema": "eegt-controls-archive-candidate/v1",
+  "separate_empirical_replay_sha256": "6bb36490c96b5e53ae84112b8a0780047dd2fc6e7a19d89cf14b24b215c82cd9",
+  "separate_metadata_replay_receipt_sha256": "e0a2b6b58a9cd152460c50fbdf981aeeaadb9383ddc8a09ce89451cbda7028d0",
+  "status": "EXACT_INPUT_PACKET_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+  "top_level_prefix": "packet/"
+}

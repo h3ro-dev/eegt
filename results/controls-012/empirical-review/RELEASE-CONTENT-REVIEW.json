@@ -1,0 +1,47 @@
+{
+  "schema": "eegt-release-content-review/v1",
+  "status": "SCIENTIFIC_CONTENT_ACCEPTED",
+  "scope": "Staged public presentation only; portable adapter/replay and release publication not yet reviewed",
+  "candidate_sha256": {
+    "notes/conditional-timing-012.md": "04df86d1de48f0dbe78f1645f48e31540affbded604255938dc38f31746ba4ad",
+    "controls.html": "7da1ff801d264704ac2ab2a9d95440ade7ccc9a3482a4b01f3e9492b8a7f8791",
+    "site/controls.html": "7da1ff801d264704ac2ab2a9d95440ade7ccc9a3482a4b01f3e9492b8a7f8791",
+    "README.md": "a63f5d150e7631a039c6cc104958a3beee0a3ddfadeaabe122e006de27a2cffe",
+    "RESEARCH-SYNTHESIS.md": "3d89675fc77e955449b948fb97c0e5ed6855a7b7501cd91e75c8644627daace9",
+    "index.html": "4fd7c383029a868e1362c60fb3e4af28409b785222497a411a75e082fb001fb7",
+    "site/index.html": "4fd7c383029a868e1362c60fb3e4af28409b785222497a411a75e082fb001fb7",
+    "REPRODUCE-CONTROLS.md": "92ae6ca3ff56744cdb9a51ff1e2651e9526004d2bfa6844038dbb4f2f666e832"
+  },
+  "verified": {
+    "byte_identical_explicit_receipt_copies": 23,
+    "root_site_controls_and_index_identical": true,
+    "figure_copies_identical": true,
+    "nominal_selected_seconds": 360,
+    "common_guarded_seconds_once_per_block": 228.672,
+    "people_source_local": 6,
+    "person_sessions": 12,
+    "blocks": 12,
+    "source_blocks_not_run": 110,
+    "block_draw_sets": 1188,
+    "mean_block_raw_f1": 0.8477986,
+    "mean_block_null_median": 0.6634331,
+    "equal_person_excess": 0.1843655,
+    "separate_count_pooled_f1": 0.8488554,
+    "ear_only_candidates": [
+      9,
+      108
+    ],
+    "psg_candidates": [
+      19,
+      76
+    ]
+  },
+  "requested_wording_corrections": [
+    "Qualify nine-person attainable significance floor as specific to two-sided exact participant sign-flip with prior eight-test Bonferroni family in note, controls page and synthesis",
+    "README: label statistic mean block raw F1 rather than generic mean matching F1"
+  ],
+  "scientific_interpretation": "Preserves conditional-null loss of fine spacing/waveform constraints; no neural origin/meaning/playback mechanism/population claim. Capacity remains metadata upper bound; overlap, measurement qualification and power unresolved.",
+  "delivery_limit": "Offline reproduction and v0.11.0 URLs are candidate links pending actual packet/release. This review does not assert publication or replay completion.",
+  "requested_wording_corrections_status": "RESOLVED",
+  "reproduction_document_review": "ACCEPTED_CANDIDATE: distinguishes Git receipts/full archive, checksum verification/fresh output, unchanged code with relocation, exact POSIX runtime pins, resource polling and scope limits. Archive root packet/ and release asset availability require final delivery checks."
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "eegt-independent-release-replay-archive-review/v1",
+  "status": "ACCEPTED",
+  "scope": "Exact offline replay parity and explicit-allowlist archive candidate; root retains publication ownership, external availability not yet established",
+  "archive": {
+    "name": "eegt-v0.11.0-controls.tar.gz",
+    "bytes": 61279325,
+    "sha256": "6b1569ffdff50629726c7a1ce4bb7186bd6e836e7a3338583b8ae92a66fe787b",
+    "top_level": "packet/",
+    "regular_members": 98,
+    "exact_allowlist_membership": true,
+    "duplicate_names": 0,
+    "links_or_special_members": 0,
+    "all98_content_hashes_match": true,
+    "replay_outputs_in_archive": false
+  },
+  "reviewed_sha256": {
+    "manifest": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+    "empirical_replay": "6bb36490c96b5e53ae84112b8a0780047dd2fc6e7a19d89cf14b24b215c82cd9",
+    "metadata_replay": "e0a2b6b58a9cd152460c50fbdf981aeeaadb9383ddc8a09ce89451cbda7028d0",
+    "capacity_replay": "919a798d3915741575d61a788fb57a27433967683b7fd467460306208f663cc7",
+    "execution_receipt": "7a6a5153f2abae59dbd18696761cb737cf8b0f3670a4d2ecf8814b7eeec3a46a",
+    "archive_receipt": "bf10654ef56cb7b05ad7475a7423a3fdede1732fdd0deaece93f3a3ae99cdbe3",
+    "root_admission": "155949cabf55b3570203cf53475fa866f704a94ee31f83fa966e1476f1dd67cd"
+  },
+  "blocking_findings": [],
+  "verified": [
+    "All12 full scientific replay row objects exactly equal original accepted rows, including99draws at3tolerances, counts, support cells and identities",
+    "Canonical row hashes independently recomputed and equal; six-person descriptive summary exactly equal",
+    "Metadata capacity output byte-identical to accepted CAPACITY",
+    "All97source and staged payload hashes unchanged after replay",
+    "Five execution command stages exit0 with all stdout/stderr hashes matching and empty stderr; plan/admission/adapter-review/manifest bindings match",
+    "Archive independently enumerated and every member streamed for content hash without extraction or execution;97payload plus manifest only",
+    "Privacy exclusions persist: no omitted private design/prototype extras, raw waveform, mail/vendor payload, model weights or replay outputs added"
+  ],
+  "resources": {
+    "empirical_cpu_seconds": 197.085428,
+    "peak_rss_bytes": 477675520,
+    "cpu_hard_limit_seconds": 7200,
+    "rss_polling_limit_bytes": 2147483648
+  },
+  "method": "Read-only artifact/header/hash/arithmetic inspection; no experiment, matching, detector or model rerun",
+  "claim_limit": "Exact replay demonstrates reproducibility of existing exposed exploratory results only; no independent people, population inference, neural/semantic or playback mechanism claim",
+  "remaining_gate": "Root final public candidate file set/assets and external delivery readback"
+}

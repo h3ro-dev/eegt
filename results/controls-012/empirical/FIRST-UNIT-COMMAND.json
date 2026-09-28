@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/.venv/bin/python",
+    "empirical_null.py",
+    "first-unit",
+    "--review",
+    "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical-review/PROTOCOL-ACCEPTANCE.json"
+  ],
+  "authorized_scope": "row0 only; stop before remaining11",
+  "created_utc": "2026-09-28T15:21:34.946015+00:00",
+  "cwd": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical",
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "protocol_sha256": "6631cec40013e0f9b84e6c538049e6492fa2d20563211689077d015fa02cdabe",
+  "review_sha256": "c296b9af4612f73361fd48f2beebff5da33fef70c201354ad7b4f624ad2c6479",
+  "runner_sha256": "0a812d0f3d4111a46ddc0a25d290a37965fd9a26f5a131c29d8cf0771fea2534",
+  "schema": "eegt-conditional-timing-null-command/v1",
+  "stage": "first-unit",
+  "stderr_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical/FIRST-UNIT.stderr",
+  "stdout_path": "/Users/utlyze/Documents/Codex/2026-09-24/eeg-token-language/work/next-study/empirical/FIRST-UNIT.stdout",
+  "synthetic_tests_sha256": "bf207506aee3fdc6a6c0ac530c127c9e6d7ab897079c56e9aa7374524468e70c"
+}

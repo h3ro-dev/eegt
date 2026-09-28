@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An independently reviewed exploratory timing control on six previously exposed people. Fixed event counts still produce substantial landmark matching; no neural or semantic claim follows.">
+  <title>EEGT · Conditional timing controls</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>main{max-width:1100px;margin:auto;padding:48px 24px}p{max-width:88ch;line-height:1.7}h1{font-size:clamp(2rem,6vw,4rem);line-height:1.1}h2{margin-top:2rem}.table-scroll{overflow:auto}table{border-collapse:collapse;width:100%}th,td{padding:12px;text-align:left;border-bottom:1px solid #ccc}figure{margin:2rem 0}figure img{display:block;width:100%;height:auto}figcaption{line-height:1.6;max-width:90ch;margin-top:1rem}.scope{border-left:4px solid #1266a4;padding-left:18px}</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<main id="main">
+  <a href="./">← EEGT research notebook</a>
+  <p>Exploratory follow-up to Experiment 012 · 28 September 2026 · v0.11.0</p>
+  <h1>How much matching survives a timing shuffle?</h1>
+  <p><strong>Independent protocol and scientific output review accepted.</strong> On six previously exposed people, mean landmark matching was 0.8478 F1 for original versus independently phase-randomized EEG. Retiming the phase-side events within one-second bins reduced the mean block-null median to 0.6634.</p>
+  <p class="scope">The descriptive gap is 0.1844. The timing control also breaks fine spacing and waveform constraints, so this gap cannot establish neural origin, meaning or a playback-interference mechanism. No population significance test was run.</p>
+  <figure>
+    <img src="data/density-control.png" width="1800" height="1152" alt="Paired means for six source-local people. Raw landmark matching is approximately 0.82 to 0.86 F1 and matching to retimed events approximately 0.65 to 0.68. All are descriptive averages of two session-specific blocks.">
+    <figcaption>Each person contributes two existing blocks. Gray dots average the two block-specific medians of 99 timing draws; blue dots average the two raw F1 values. No uncertainty interval or independent replication is implied.</figcaption>
+  </figure>
+  <h2>A fixed, bounded comparison</h2>
+  <p>The first selected block in each person/session cell was fixed before this analysis: twelve of the original 122 thirty-second blocks. All selected blocks and draws completed. The other 110 blocks were not analyzed here. The same accepted matcher, guarded support and 25 ms tolerance were retained; 10 and 50 ms were sensitivity views.</p>
+  <div class="table-scroll"><table>
+    <thead><tr><th scope="col">Measure</th><th scope="col">Denominator or result</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">People / sessions / blocks</th><td>6 / 12 / 12, all previously exposed</td></tr>
+      <tr><th scope="row">Selected time / common guarded support</th><td>360 seconds / 228.672 seconds, counted once per block</td></tr>
+      <tr><th scope="row">Original / phase eligible events</th><td>38,143 / 37,910</td></tr>
+      <tr><th scope="row">Raw matched pairs at 25 ms</th><td>32,279</td></tr>
+      <tr><th scope="row">Mean block raw F1 / mean block-null median</th><td>0.8477986 / 0.6634331</td></tr>
+      <tr><th scope="row">Equal-person mean difference</th><td>0.1843655; descriptive only</td></tr>
+    </tbody>
+  </table></div>
+  <p>Retiming keeps event counts in each channel, stratum and one-second bin, along with support widths. It does not keep fine event spacing, refractory structure, synchrony or a realizable waveform. Substantial matching survives this control, but the remaining gap cannot identify its cause. One block per session also cannot establish full-session reliability.</p>
+  <h2>The independent-person pool is smaller for ear-only recordings</h2>
+  <p>A pinned metadata audit found nine remaining EESM19 ear-only candidate people with 108 sessions. Ear contacts from PSG sessions offer nineteen candidate people with 76 sessions. These are source-local metadata upper bounds; qualification, usable hours, measurement compatibility and relevant cross-dataset overlap are not established.</p>
+  <p>A twelve-person ear-only design cannot be filled from that pool. Nine people is only the first attainable significance size for a two-sided exact participant sign-flip test with the prior eight-test Bonferroni family, not evidence of adequate power. A PSG-session design needs its own measurement contract, effect margin and power analysis before reserved waveforms are examined.</p>
+  <h2>Inspect the evidence</h2>
+  <p><a href="https://github.com/h3ro-dev/eegt/blob/main/notes/conditional-timing-012.md">Complete research note and source links</a> · <a href="https://github.com/h3ro-dev/eegt/blob/main/results/controls-012/empirical-review/OUTPUT-REVIEW.md">Independent output review</a> · <a href="https://github.com/h3ro-dev/eegt/blob/main/REPRODUCE-CONTROLS.md">Offline reproduction</a> · <a href="https://github.com/h3ro-dev/eegt/releases/tag/v0.11.0">Versioned supplement and checksums</a></p>
+  <p>No new people or source hours enter the corpus. The <a href="catalog.html">consolidated catalog</a> remains at 89 candidate recordings, 88 qualified recordings and 476.053296 qualified source hours. Earlier experiments retain their original results. Physical Neurable equivalence, physiological calibration and semantic interpretation remain unestablished.</p>
+</main>
+</body>
+</html>

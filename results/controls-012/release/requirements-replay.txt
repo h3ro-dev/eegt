@@ -1,0 +1,6 @@
+# Exact accepted runtime; Python interpreter must be 3.12.12.
+numpy==2.5.3
+scipy==1.18.1
+
+# Optional only for regenerating the included receipt-only figure.
+matplotlib==3.11.2

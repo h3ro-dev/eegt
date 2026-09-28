@@ -1,0 +1,11 @@
+{
+  "schema": "eegt-source-whitespace-check/v1",
+  "full_check_exit_code": 2,
+  "generated_svg_issues": 2546,
+  "files": [
+    "data/density-control.svg",
+    "site/data/density-control.svg"
+  ],
+  "authored_text_check_exit_code": 0,
+  "decision": "Preserve accepted generated SVG bytes. Trailing whitespace is generated path formatting; no authored text issue."
+}

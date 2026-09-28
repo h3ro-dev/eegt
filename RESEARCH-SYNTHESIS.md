@@ -43,6 +43,12 @@ None meets the adjusted threshold. The negative CodeBrain change contrast and di
 
 The separate EESM19 engineering check completed two 30-second sessions from one person using 12 native contacts at 500 Hz. It supports a native-detector technical check only. No four-channel encoder mapping or physical Neurable equivalence is inferred.
 
+## Subsequent exploratory timing control · 2026-09-28
+
+An independently reviewed follow-up reuses twelve existing 012 blocks: six source-local people, two sessions per person and one block per session. At 25 ms, mean block raw F1 is 0.8477986 and the mean of the block-specific 99-draw timing-null medians is 0.6634331. The equal-person descriptive difference is 0.1843655. The null preserves local counts and support widths but breaks fine spacing and waveform constraints. This difference does not establish neural origin or meaning, and no population test was run. The other 110 selected source blocks were not included; the published 012/013 primary results and catalog counts remain unchanged.
+
+A pinned metadata audit narrows the EESM19 replication options to nine remaining ear-only candidate people (108 sessions), or nineteen PSG-session candidate people (76 sessions). These are source-local metadata upper bounds with reserved waveform qualification, relevant overlap and power adequacy unestablished. Nine is only an attainable significance floor for a two-sided exact participant sign-flip test with the previous eight-test Bonferroni family. See the [timing-control note](notes/conditional-timing-012.md), [independent output review](results/controls-012/empirical-review/OUTPUT-REVIEW.md) and [replication design](results/controls-012/replication/DESIGN.md).
+
 ## What the open release enables
 
 A researcher can inspect the frozen choices, reconstruct selected inputs, replay published event/model evidence, see every exclusion and propose a new falsifiable test. The catalog must preserve original source terms, hash identities, masks, exposure state and immutable release links. Discovery receives numeric arrays; grouping metadata stays in provenance/evaluation. Anonymous inputs still contain measurement and pretrained-model assumptions.

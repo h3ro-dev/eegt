@@ -1,0 +1,37 @@
+{
+  "schema": "eegt-root-offline-replay-admission/v1",
+  "status": "ACCEPTED",
+  "at_utc": "2026-09-28T15:53:51.130428+00:00",
+  "owner": "session-7d995ee36dfadbe8794a95f2638b0157",
+  "bead": "eco-uzwh8s.43",
+  "adapter_review_sha256": "4087662accfc5313fecbe7925e543f5b1325ff37dbec061221b1305260c0f61a",
+  "manifest_sha256": "43c60d842d3a8d3a9105749f965622a7106bc269d45065a06066bd272232f6e3",
+  "adapter_sha256": "34212a595c52574e2d0e3a0629335eeeecf77384724bf977d7cda874c7a81c59",
+  "builder_sha256": "409a475a6a964edae12288d24ad8850a9ae66f3c1c3af0249e05dc2852981b32",
+  "authorized_steps": [
+    "Build one new exact-allowlist packet",
+    "Verify the packet, then one metadata replay to a new output",
+    "One sequential empirical replay over exactly12 frozen rows",
+    "Prepare an exact-manifest archive candidate after clean replay; no publication until final review"
+  ],
+  "prior_empirical_cpu_seconds": 201.260463,
+  "prior_empirical_peak_rss_bytes": 467894272,
+  "cpu_hard_limit_seconds": 7200,
+  "rss_polling_limit_bytes": 2147483648,
+  "numerical_process_owner": "controls_and_design",
+  "no_active_empirical_process_observed": true,
+  "fleet": {
+    "name": "studio0",
+    "observedAt": "2026-09-28T15:50:44+00:00",
+    "cpuBusyFraction": 0.49,
+    "loadPerCore": 0.5556488037109375,
+    "diskFreeBytes": 686795776000.0
+  },
+  "memory": {
+    "kernel_pressure_level": 1,
+    "ram_immediate_floor_bytes": 27345354752,
+    "ram_reclaimable_estimate_bytes": 40240398336
+  },
+  "privacy_review": "Removed optional prior prototype design containing private intake observations. Exact97-file allowlist contains public-source derivatives/metadata and generic provenance only; original files unchanged. No private raw/identifying/media/mail/vendor payload.",
+  "publication": "PENDING_FINAL_REPLAY_ARCHIVE_REVIEW"
+}
